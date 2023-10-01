@@ -6,16 +6,17 @@
   "scripts": {
     "build": "run-s \"build:*\"",
     "build:css": "npm run generate:css -- --minify",
-    "build:zola": "zola build",
+    "build:zola": "zola-bin build",
     "dev": "run-p \"dev:*\"",
     "dev:css": "npm run generate:css -- --watch",
-    "dev:next": "zola serve",
-    "generate:css": "tailwindcss -i ./public/input.css -o ./public/style.css"
+    "dev:next": "zola-bin serve",
+    "generate:css": "tailwindcss -i ./static/input.css -o ./static/style.css"
   },
   "author": "Oliver Ni <oliverni@berkeley.edu>",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
     "npm-run-all": "^4.1.5",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "zola-bin": "^0.3.7"
   }
 }
