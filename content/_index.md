@@ -3,72 +3,79 @@ title = "Berkeley Math Tournament"
 template = "section.html"
 +++
 
-# Markdown syntax guide
+This is an work-in-progress version of the new BMT website, currently very
+minimal but with more to be added as it is developed. If you're a BMT member,
+feedback is appreciated.
 
-## Headers
+For the general public, please visit the current site at
+<https://bmt.berkeley.edu/>.
 
-# This is a Heading h1
+# Promoting advanced math to middle and high school students
 
-## This is a Heading h2
+The Berkeley Math Tournament is a UC Berkeley student-led organization that aims
+to spread mathematics and the spirit of mathematical competition globally by
+presenting students with interesting, original, hand-crafted problems. As of
+2023, we are one of the largest student-run math competitions on the West Coast
+with over 2000 contestants.
 
-###### This is a Heading h6
+![](/bmt-203.jpg)
 
-## Emphasis
+(This could be an image carousel??)
 
-_This text will be italic_ _This will also be italic_
+---
 
-**This text will be bold** **This will also be bold**
+# Berkeley Math Tournament 2023
 
-_You **can** combine them_
+## BMT (November 4th, 2023)
 
-## Lists
+Our live fall tournament offers teams of high school students the opportunity to
+share their interest in mathematics with like-minded individuals and to get a
+taste of the concepts studied in higher mathematics. Registration will be
+opening soon, and look out for more information on satellite tournaments coming
+soon!
 
-### Unordered
+[More Information](/events/bmt-2023)
 
-- Item 1
-- Item 2
-- Item 2a
-- Item 2b
+---
 
-### Ordered
+# Berkeley mini Math Tournament 2023
 
-1. Item 1
-1. Item 2
-1. Item 3
-1. Item 3a
-1. Item 3b
+{% grid(class="grid-cols-3") %}
 
-## Images
+- #### April 15, 2023
 
-![This is an alt text.](/image/sample.png "This is a sample image.")
+  ## BmMT
 
-## Links
+  Offered in the spring, this “mini” in-person tournament aims to instill an
+  appreciation for mathematics in teams of **advanced elementary or middle
+  school students** and to prepare them for future mathematical endeavors.
 
-You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
+  [Register Now](http://contestdojo.com/)
 
-## Blockquotes
+- #### May 27, 2023
 
-> Markdown is a lightweight markup language with plain-text-formatting syntax,
-> created in 2004 by John Gruber with Aaron Swartz.
->
-> > Markdown is often used to format readme files, for writing messages in
-> > online discussion forums, and to create rich text using a plain text editor.
+  ## BmMT China
 
-## Tables
+  BmMT China, hosted through our partner, ASDAN, includes **both the Chinese and
+  English translations**, and students outside of China who would prefer to
+  compete in BmMT China due to firewall or time zone preference are welcome to
+  do so.
 
-| Left columns | Right columns |
-| ------------ | :-----------: |
-| left foo     |   right foo   |
-| left bar     |   right bar   |
-| left baz     |   right baz   |
+  [ASDAN Website](http://seed-static.seedasdan.com/wordpress/2021/12/BmMT-ASDAN.png)
 
-## Blocks of code
+- #### April 16, 2023
 
-```
-let message = 'Hello world';
-alert(message);
-```
+  ## BmMT Toronto
 
-## Inline code
+  BmMT Toronto, hosted through our partner, University of Toronto Schools. We
+  are super excited to partner with UTS to offer BmMT in Canada and for students
+  who would like to compete closer to the East Coast.
 
-This web site is using `markedjs/marked`.
+  [UTS Website](https://math.utschools.ca/bmmt-global-toronto/)
+
+{% end %}
+
+# Don’t miss out on contest news!
+
+Receive tournament announcements, registration deadlines, info on pre-tournament
+activities, and other math competition opportunities!
