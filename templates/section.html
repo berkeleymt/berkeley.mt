@@ -1,7 +1,5 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="prose prose-h1:font-bold">
-  {{ section.content | safe }}
-</section>
+{{ macros::prose(content=section.content) }}
 {% endblock %}

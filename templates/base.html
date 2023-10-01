@@ -7,27 +7,27 @@
 <head>
   <meta charset="utf-8" />
   <title>Berkeley Math Tournament</title>
-  <link rel="stylesheet" type="text/css" href="{{ get_url(path='style.css') }}">
+  <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 
 <body>
-  <div class="max-w-3xl p-8 mx-auto flex flex-col gap-8">
+  <div class="max-w-4xl p-8 mx-auto flex flex-col gap-8">
     {% block navbar %}
     <nav class="flex flex-col items-center gap-4">
-      <img src="{{ get_url(path='logo.png') }}" width="80">
+      <img src="/logo.png" width="80">
       <p class="text-2xl font-bold">Berkeley Math Tournament</p>
 
       <div class="flex gap-4">
         {{ macros::nav_link(path="@/_index.md", label="Home") }}
         {{ macros::nav_link(path="@/about.md", label="About") }}
-        {{ macros::nav_link(path="@/events/bmt-2023.md", label="BMT 2023") }}
+        {{ macros::nav_link(path="@/events/bmmt-2023.md", label="BmMT 2023") }}
       </div>
     </nav>
     {% endblock %}
 
     <hr>
 
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-8">
       {% block content %}{% endblock %}
     </div>
   </div>

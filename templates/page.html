@@ -2,15 +2,18 @@
 
 {% block content %}
 
-<h1 class="text-center text-4xl font-bold">{{ page.title }}</h1>
+<div class="flex flex-col gap-3">
+  <h1 class="text-center text-4xl font-bold">{{ page.title }}</h1>
 
-{% if page.date %}
-<h2 class="text-center text-xl">
-  {{ page.date | date(format="%B %-d, %Y") }}
-</h2>
-{% endif %}
+  {% if page.date %}
+  <h2 class="text-center text-xl">
+    {{ page.date | date(format="%B %-d, %Y") }}
+  </h2>
+  {% endif %}
+</div>
 
-<section class="prose prose-h1:font-bold">
-  {{ page.content | safe }}
-</section>
+<hr>
+
+{{ macros::prose(content=page.content) }}
+
 {% endblock %}
