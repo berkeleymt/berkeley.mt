@@ -1,6 +1,6 @@
 +++
 title = "Berkeley Math Tournament"
-template = "index.html"
+template = "section.html"
 +++
 
 # Markdown syntax guide
