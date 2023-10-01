@@ -18,7 +18,7 @@ presenting students with interesting, original, hand-crafted problems. As of
 2023, we are one of the largest student-run math competitions on the West Coast
 with over 2000 contestants.
 
-![](/bmt-203.jpg)
+![](big-image.jpg)
 
 (This could be an image carousel??)
 
