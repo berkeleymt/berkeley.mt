@@ -18,6 +18,8 @@
 
 <hr>
 
-{{ macros::prose(content=page.content) }}
+<div class="{{ prose_cls }}">
+  {{ page.content | safe }}
+</div>
 
 {% endblock %}

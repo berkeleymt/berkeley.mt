@@ -3,13 +3,6 @@ title = "Berkeley Math Tournament"
 template = "section.html"
 +++
 
-This is an work-in-progress version of the new BMT website, currently very
-minimal but with more to be added as it is developed. If you're a BMT member,
-feedback is appreciated.
-
-For the general public, please visit the current site at
-<https://bmt.berkeley.edu/>.
-
 # Promoting advanced math to middle and high school students
 
 The Berkeley Math Tournament is a UC Berkeley student-led organization that aims

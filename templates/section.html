@@ -5,5 +5,7 @@
 {% endblock %}
 
 {% block content %}
-{{ macros::prose(content=section.content) }}
+<div class="{{ prose_cls }}">
+  {{ section.content | safe }}
+</div>
 {% endblock %}

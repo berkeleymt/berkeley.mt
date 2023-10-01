@@ -1,5 +1,8 @@
 {% import "macros.html" as macros %}
 
+{% set_global prose_cls = "prose prose-h1:font-bold prose-h1:mt-16 first:prose-h1:mt-0 prose-a:text-blue-500
+max-w-none" %}
+
 <!DOCTYPE html>
 
 <html lang="en" class="bg-gray-50">
@@ -35,6 +38,19 @@
       </div>
     </nav>
     {% endblock %}
+
+    <hr>
+
+    <div class="{{ prose_cls }}">
+      <p>
+        This is a work-in-progress version of the new BMT website, very minimal at the moment but with more to be added
+        as it is developed. If you're a BMT member, feedback is appreciated.
+      </p>
+      <p>
+        For the general public, please visit the current site at
+        <a href="https://bmt.berkeley.edu">https://bmt.berkeley.edu</a>.
+      </p>
+    </div>
 
     <hr>
 
