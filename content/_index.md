@@ -28,7 +28,7 @@ soon!
   appreciation for mathematics in teams of **advanced elementary or middle
   school students** and to prepare them for future mathematical endeavors.
 
-  [Register Now](http://contestdojo.com/)
+  Archive coming soon!
 
 - #### May 27, 2023
 
