@@ -7,16 +7,14 @@
 {% block content %}
 
 <div class="flex flex-col gap-3">
-  <h1 class="text-center text-4xl font-bold">{{ page.title }}</h1>
+  <h1 class="text-3xl font-semibold">{{ page.title }}</h1>
 
   {% if page.date %}
-  <h2 class="text-center text-xl">
+  <h2 class="text-xl">
     {{ page.date | date(format="%B %-d, %Y") }}
   </h2>
   {% endif %}
 </div>
-
-<hr>
 
 <div class="{{ prose_cls }}">
   {{ page.content | safe }}

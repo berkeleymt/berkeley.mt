@@ -5,7 +5,30 @@
 {% endblock %}
 
 {% block content %}
+<div class="flex flex-col gap-3">
+  <h1 class="text-4xl font-semibold">{{ section.title }}</h1>
+</div>
+
+{% if section.pages %}
+<div class="grid grid-cols-[max-content_1fr] gap-x-8 gap-y-4 -mt-4">
+  {% for year, pages in section.pages | group_by(attribute="year") %}
+  <h2 class="mt-4 col-span-2 text-sm text-gray-400">{{ year }}</h2>
+
+  {% for page in pages %}
+  <p class="text-gray-500 leading-7">{{ page.date | date(format="%b %-d") }}</p>
+  <p class="text-xl">
+    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+  </p>
+  {% endfor %}
+
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if section.content %}
 <div class="{{ prose_cls }}">
   {{ section.content | safe }}
 </div>
+{% endif %}
+
 {% endblock %}

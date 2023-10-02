@@ -1,6 +1,5 @@
 +++
 title = "Berkeley Math Tournament"
-template = "section.html"
 +++
 
 # Promoting advanced math to middle and high school students
