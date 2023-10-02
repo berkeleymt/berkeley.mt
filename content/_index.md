@@ -33,7 +33,7 @@ soon!
 
 # Berkeley mini Math Tournament 2023
 
-{% grid(class="grid-cols-3") %}
+{% grid(class="md:grid-cols-3") %}
 
 - #### April 15, 2023
 
