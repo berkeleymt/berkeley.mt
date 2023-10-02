@@ -1,7 +1,46 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="{{ prose_cls }}">
-  {{ section.content | safe }}
+
+{% set news_section = get_section(path="news/_index.md") %}
+{% set new_news_post = news_section.pages | first %}
+{% if new_news_post %}
+<a href="{{ new_news_post.permalink }}"
+  class="bg-pink-50 hover:bg-pink-100 hover:-translate-y-1 transition-all border border-pink-200 p-4 rounded-xl grid grid-cols-[1fr_auto] gap-2">
+  <p class="uppercase text-xs text-gray-500 flex gap-2 items-center">
+    <i class="bi bi-megaphone-fill"></i>
+    <span>News</span>
+  </p>
+
+  <span class="row-span-2 flex items-center">
+    <i class="bi bi-chevron-right"></i>
+  </span>
+
+  <p class="text-base font-medium">
+    {{ new_news_post.title }}
+  </p>
+</a>
+{% endif %}
+
+<div id="banner" class="bg-black p-8 rounded-xl">
+  <p class="h-full text-3xl font-bold text-white flex flex-col justify-between">
+    <span class="order-0 after:content-['…'] text-left">Promoting advanced math</span>
+    <span class="order-2 before:content-['…'] text-right">to middle and high school students</span>
+    <span class="order-1 text-center">
+      $$F(z) = \sum_{n=0}^\infty f_n \frac{z^n}{n!}$$
+    </span>
+  </p>
 </div>
+
+<div>
+  <p class="text-xl leading-relaxed">
+    A UC Berkeley student-led organization that aims to spread mathematics and the spirit of mathematical competition
+    globally by presenting students with interesting, original, hand-crafted problems. As of 2023, we are one of the
+    largest student-run math competitions on the West Coast with over 2,000 contestants.
+  </p>
+</div>
+
+{# <div class="{{ prose_cls }}">
+  {{ section.content | safe }}
+</div> #}
 {% endblock %}

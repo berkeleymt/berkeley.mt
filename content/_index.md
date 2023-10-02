@@ -2,20 +2,6 @@
 title = "Berkeley Math Tournament"
 +++
 
-# Promoting advanced math to middle and high school students
-
-The Berkeley Math Tournament is a UC Berkeley student-led organization that aims
-to spread mathematics and the spirit of mathematical competition globally by
-presenting students with interesting, original, hand-crafted problems. As of
-2023, we are one of the largest student-run math competitions on the West Coast
-with over 2000 contestants.
-
-![](big-image.jpg)
-
-(This could be an image carousel??)
-
----
-
 # Berkeley Math Tournament 2023
 
 ## BMT (November 4th, 2023)

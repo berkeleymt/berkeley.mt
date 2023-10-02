@@ -6,9 +6,16 @@
   font-family: "Inter", sans-serif;
 }
 
-
 @supports (font-variation-settings: normal) {
   :root {
     font-family: "Inter var", sans-serif;
   }
+}
+
+#banner {
+  background-image:
+    linear-gradient(rgba(0 0 0 / 75%), rgba(0 0 0 / 75%)),
+    url(/assets/banner.jpg);
+  background-size: cover;
+  background-position: center;
 }
