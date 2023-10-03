@@ -1,0 +1,43 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: Production
+      url: https://berkeley.mt/
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install node dependencies
+        run: npm install
+
+      - name: Install zola
+        run: >
+          wget -q -O -
+          "https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz"
+          | tar xzf - -C /usr/local/bin
+
+      - name: Build site
+        run: npm run build
+
+      - name: Deploy
+        uses: burnett01/rsync-deployments@6.0.0
+        with:
+          switches: -avPh --delete
+          path: public/
+          remote_path: ~/public_html/new
+          remote_host: tsunami.ocf.berkeley.edu
+          remote_user: bmt
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
