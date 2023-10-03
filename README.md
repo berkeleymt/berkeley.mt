@@ -18,7 +18,9 @@ that doesn't involve a custom element or layout). Stay tuned for that!
 ## Adding content
 
 Most content is rendered from Markdown files that live in the `content/`
-directory. To add a page, simply create a file in the appropriate location:
+directory.
+
+To add or edit a page, simply work on a file in the appropriate location:
 
 | Path                        | Page               | Notes                                        |
 | --------------------------- | ------------------ | -------------------------------------------- |
