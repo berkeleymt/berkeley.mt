@@ -52,7 +52,7 @@ called _shortcodes_:
     <td>Button</td>
     <td>
 <pre>
-{% button_link(href="https://example.com") %}
+{% button_link(href="https://contestdojo.com/") %}
 Register on ContestDojo
 {% end %}
 </pre>
