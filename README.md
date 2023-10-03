@@ -30,6 +30,47 @@ To add or edit a page, simply work on a file in the appropriate location:
 | `content/news/*.md`         | News posts         | File names should be prefixed with the date  |
 | `content/events/*.md`       | Event detail pages |                                              |
 
+## Writing Markdown
+
+These content files are written in Markdown, which is a lightweight way to add
+formatting to plain text documents. If you've sent bold text on Discord (or many
+other platforms), you've already used Markdown!
+
+For those unfamiliar, a cheat sheet is available
+[here](https://commonmark.org/help/).
+
+In addition to standard Markdown, we provide the following special components,
+called _shortcodes_:
+
+<table>
+  <thead>
+    <th>Shortcode</th>
+    <th>Example</th>
+    <th>Rendered</th>
+  </thead>
+  <tbody>
+    <td>Button</td>
+    <td>
+<pre>
+{% button_link(href="https://example.com") %}
+Register on ContestDojo
+{% end %}
+</pre>
+    </td>
+    <td>
+      <img src="button-example.png">
+    </td>
+  </tbody>
+</table>
+
+Every Markdown file in this repository also has a special block at the very top
+called _front matter_, delimited by `+++`. Here, you can specify additional
+properties for each page, such as the title or date.
+
+If you're adding a new page and not sure what to put for front matter, try
+looking at a page similar to the one you're adding and basing it on that. Feel
+free to ask the Tech team any questions.
+
 ## Editing templates
 
 Changing how content is rendered or adding special elements (like the banner on
