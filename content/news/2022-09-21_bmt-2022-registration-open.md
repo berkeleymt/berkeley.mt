@@ -26,4 +26,6 @@ If you have any questions, feel free to email us at <questions@bmt.berkeley.edu>
 
 **We hope to see you there!**
 
-Best regards, BMT
+Best regards,
+
+BMT
