@@ -14,12 +14,12 @@ demonstrated financial need.
 
 The contests that the Berkeley Math Tournament Group offers are:
 
-- **BmMT: Berkeley mini Math Tournament.** Offered in the fall, this "mini"
+- **BmMT: Berkeley mini Math Tournament.** Offered in the spring, this "mini"
   tournament aims to instill an appreciation for mathematics in teams of
   advanced elementary or middle school students and to prepare them for future
   mathematical endeavors.
 
-- **BMT: Berkeley Math Tournament.** The spring tournament offers teams of high
+- **BMT: Berkeley Math Tournament.** The fall tournament offers teams of high
   school students the opportunity to share their interest in mathematics with
   likeminded individuals and to get a taste of the type of concepts studied in
   higher mathematics.
