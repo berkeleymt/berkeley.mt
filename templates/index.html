@@ -17,6 +17,27 @@
 </a>
 {% endmacro %}
 
+{# Macro for event cards #}
+
+{% macro event(name, date, description, href, class="") %}
+<div class="group rounded-xl overflow-hidden {{ class }} transition-all hover:-translate-y-1">
+  <a href="{{ href }}"
+    class="p-6 flex flex-col gap-4 group-hover:backdrop-sepia group-hover:backdrop-brightness-75 transition-all">
+    <div class="flex flex-col gap-1">
+      <h3 class="font-bold text-2xl flex items-center gap-2">
+        <span>{{ name }}</span>
+        <i class="bi bi-chevron-right text-base transition-transform"></i>
+      </h3>
+      <p class="text-sm font-medium opacity-50">{{ date }}</p>
+    </div>
+
+    <p class="text-base opacity-90">
+      {{ description}}
+    </p>
+  </a>
+</div>
+{% endmacro %}
+
 {# =============================== #}
 {# = STARTING THE ACTUAL CONTENT = #}
 {# =============================== #}
@@ -49,6 +70,59 @@
     globally by presenting students with interesting, original, hand-crafted problems. As of 2023, we are one of the
     largest student-run math competitions on the West Coast with over 2,000 contestants.
   </p>
+</div>
+
+<hr>
+
+{# Events section #}
+
+<h2 class="font-bold text-3xl">Recent & Upcoming Events</h2>
+
+<div class="flex flex-col md:grid grid-cols-6 gap-4 max-w-4xl">
+  {{ self::event(
+  class="col-span-4 bg-gradient-to-br shadow-lg from-orange-700 to-orange-900 text-white",
+  name="Berkeley Math Tournament 2023",
+  date="November 4, 2023",
+  href="/events/bmt-2023/",
+  description="Our live fall tournament offers teams of high school students the opportunity to share their interest in
+  mathematics with like-minded individuals and to get a taste of the concepts studied in higher mathematics."
+  ) }}
+
+  {{ self::event(
+  class="col-span-2 bg-gradient-to-br from-slate-100 to-slate-300",
+  name="BMT China 🇨🇳",
+  date="December 2–3, 2023",
+  href="http://www.seedasdan.asia/en/bmt-en/",
+  description="Our partner ASDAN serves students in China. This tournament also includes
+  Chinese translations!"
+  ) }}
+
+  {{ self::event(
+  class="col-span-6 bg-gradient-to-br shadow-lg from-cyan-700 to-cyan-900 text-white",
+  name="Berkeley mini Math Tournament 2023",
+  date="April 15, 2023",
+  href="/events/bmmt-2023/",
+  description="Our annual “mini” in-person tournament for middle school and advanced elementary school students
+  showcases the beauty and fun of mathematics through exciting formats like the Puzzle Round and Relay Round, preparing
+  them for future mathematical endeavors."
+  ) }}
+
+  {{ self::event(
+  class="col-span-3 bg-gradient-to-br from-slate-100 to-slate-300",
+  name="BmMT Toronto 🇨🇦",
+  date="April 16, 2023",
+  href="https://math.utschools.ca/bmmt-global-toronto/bmmt-global-toronto-schedule/",
+  description="We are super excited to partner with University of Toronto Schools to offer BmMT to students on the East
+  Coast and in Canada."
+  ) }}
+
+  {{ self::event(
+  class="col-span-3 bg-gradient-to-br from-slate-100 to-slate-300",
+  name="BmMT China 🇨🇳",
+  date="May 27–28, 2023",
+  href="http://www.seedasdan.asia/en/bmmt-en/",
+  description="Hosted by our partner ASDAN, this satellite brings BmMT to students in China and other nearby regions."
+  ) }}
 </div>
 
 <hr>
