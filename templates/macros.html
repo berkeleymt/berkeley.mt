@@ -2,6 +2,6 @@
 {% set href = get_url(path=path) %}
 <p class="first:hidden text-gray-400">⁄</p>
 <a href="{{ href }}" class="{% if current_url == href %} font-semibold {% endif %}">
-    {{ label }}
+  {{ label }}
 </a>
 {% endmacro nav_link %}

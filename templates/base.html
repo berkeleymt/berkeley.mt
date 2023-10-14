@@ -36,57 +36,55 @@ max-w-none" %}
     onload="renderMathInElement(document.body);"></script>
 </head>
 
-<body>
-  <div class="max-w-4xl p-8 mx-auto flex flex-col gap-8">
-    {% block header %}
-    <nav class="flex flex-col items-center gap-4">
-      <a href="/"><img src="/assets/logo.png" alt="BMT Logo" width="80"></a>
-      <p class="text-2xl font-bold">Berkeley Math Tournament</p>
+<body class="max-w-4xl p-8 mx-auto flex flex-col gap-8">
+  {% block header %}
+  <nav class="flex flex-col items-center gap-4">
+    <a href="/"><img src="/assets/logo.png" alt="BMT Logo" width="80"></a>
+    <p class="text-2xl font-bold">Berkeley Math Tournament</p>
 
-      <div class="flex gap-4">
-        {{ macros::nav_link(path="@/_index.md", label="Home") }}
-        {{ macros::nav_link(path="@/news/_index.md", label="News") }}
-        {{ macros::nav_link(path="@/about.md", label="About") }}
-        {{ macros::nav_link(path="@/sponsors/index.md", label="Sponsors") }}
-        {{ macros::nav_link(path="@/events/bmt-2023.md", label="BMT 2023") }}
-      </div>
-    </nav>
-    {% endblock %}
-
-    <hr>
-
-    <div class="flex flex-col gap-8">
-      {% block content %}{% endblock %}
+    <div class="flex gap-4">
+      {{ macros::nav_link(path="@/_index.md", label="Home") }}
+      {{ macros::nav_link(path="@/news/_index.md", label="News") }}
+      {{ macros::nav_link(path="@/about.md", label="About") }}
+      {{ macros::nav_link(path="@/sponsors/index.md", label="Sponsors") }}
+      {{ macros::nav_link(path="@/events/bmt-2023.md", label="BMT 2023") }}
     </div>
+  </nav>
+  {% endblock %}
 
-    <hr>
+  <hr>
 
-    {% block footer %}
-    <div class="flex flex-col items-center justify-between md:items-start text-center md:flex-row gap-4 mb-12">
-      <div class="flex flex-col gap-6 items-center md:items-start">
-        <img class="-ml-1 grayscale brightness-0" src="/assets/logo.png" alt="BMT Logo" width="50">
-
-        <div class="flex gap-4 text-xl">
-          <a href="https://www.instagram.com/berkeley_mt/"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.tiktok.com/@berkeley_mt"><i class="bi bi-tiktok"></i></a>
-          <a href="mailto:questions@bmt.berkeley.edu"><i class="bi bi-envelope-fill"></i></a>
-        </div>
-      </div>
-
-      <div class="flex flex-col gap-4 items-center md:items-end md:text-right max-w-xs">
-        <a href="https://ocf.berkeley.edu">
-          <img src="http://ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" width="80"
-            alt="Hosted by the OCF" />
-        </a>
-
-        <p class="text-xs">
-          We are a student group acting independently of the University of California. We take full responsibility for
-          our organization and this web site.
-        </p>
-      </div>
-    </div>
-    {% endblock %}
+  <div class="flex flex-col gap-8">
+    {% block content %}{% endblock %}
   </div>
+
+  <hr>
+
+  {% block footer %}
+  <div class="flex flex-col items-center justify-between md:items-start text-center md:flex-row gap-4 mb-12">
+    <div class="flex flex-col gap-6 items-center md:items-start">
+      <img class="-ml-1 grayscale brightness-0" src="/assets/logo.png" alt="BMT Logo" width="50">
+
+      <div class="flex gap-4 text-xl">
+        <a href="https://www.instagram.com/berkeley_mt/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com/@berkeley_mt"><i class="bi bi-tiktok"></i></a>
+        <a href="mailto:questions@bmt.berkeley.edu"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4 items-center md:items-end md:text-right max-w-xs">
+      <a href="https://ocf.berkeley.edu">
+        <img src="http://ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" width="80"
+          alt="Hosted by the OCF" />
+      </a>
+
+      <p class="text-xs">
+        We are a student group acting independently of the University of California. We take full responsibility for
+        our organization and this web site.
+      </p>
+    </div>
+  </div>
+  {% endblock %}
 </body>
 
 </html>
