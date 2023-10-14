@@ -17,7 +17,7 @@ activities, and other math competition opportunities!
         <div id="mce-responses" class="clear">
             <div class="response" id="mce-error-response" style="display: none;"></div>
             <div class="response" id="mce-success-response" style="display: none;"></div>
-        </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_24d4cef68c36baccb820775ad_385ee9d1d1" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
+        </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_24d4cef68c36baccb820775ad_385ee9d1d1" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe" autocomplete="email"></div>
     </div>
 </form>
 </div>

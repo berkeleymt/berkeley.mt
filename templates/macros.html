@@ -1,7 +1,22 @@
 {% macro nav_link(path, label) %}
 {% set href = get_url(path=path) %}
-<p class="first:hidden text-gray-400">⁄</p>
-<a href="{{ href }}" class="{% if current_url == href %} font-semibold {% endif %}">
+
+{# Desktop version #}
+<p class="hidden md:block first:hidden text-gray-400">⁄</p>
+<a href="{{ href }}" class="hidden md:block {% if current_url == href %} font-semibold {% endif %}">
   {{ label }}
 </a>
+
+{# Mobile version #}
+{% if current_url == href %}
+<button class="md:hidden order-1 font-semibold border py-2 px-3 rounded-xl relative" onclick="thing()">
+  {{ label }}
+  <i class="bi bi-chevron-down [.open_&]:-scale-y-100 transition-transform absolute right-4"></i>
+</button>
+{% else %}
+<a href="{{ href }}" class="py-2 px-3 bg-gray-100 border rounded-xl nav-hidden order-2">
+  {{ label }}
+</a>
+{% endif %}
+
 {% endmacro nav_link %}
