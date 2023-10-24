@@ -25,6 +25,8 @@
 </div>
 {% endif %}
 
+{% block before_section_content %}{% endblock %}
+
 {% if section.content %}
 <div class="{{ prose_cls }}">
   {{ section.content | safe }}
