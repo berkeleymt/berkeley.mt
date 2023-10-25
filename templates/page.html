@@ -16,6 +16,8 @@
   {% endif %}
 </div>
 
+{% block before_page_content %}{% endblock %}
+
 <div class="{{ prose_cls }}">
   {{ page.content | safe }}
 </div>
