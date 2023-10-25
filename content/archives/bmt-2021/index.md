@@ -36,4 +36,29 @@ solutions = "guts-solutions.pdf"
 title = "Power"
 problems = "power-problems.pdf"
 solutions = "power-solutions.pdf"
+
+[[extra.tests]]
+title = "General Tiebreaker"
+problems = "general-tiebreaker-problems.pdf"
+solutions = "general-tiebreaker-solutions.pdf"
+
+[[extra.tests]]
+title = "Algebra Tiebreaker"
+problems = "algebra-tiebreaker-problems.pdf"
+solutions = "algebra-tiebreaker-solutions.pdf"
+
+[[extra.tests]]
+title = "Calculus Tiebreaker"
+problems = "calculus-tiebreaker-problems.pdf"
+solutions = "calculus-tiebreaker-solutions.pdf"
+
+[[extra.tests]]
+title = "Discrete Tiebreaker"
+problems = "discrete-tiebreaker-problems.pdf"
+solutions = "discrete-tiebreaker-solutions.pdf"
+
+[[extra.tests]]
+title = "Geometry Tiebreaker"
+problems = "geometry-tiebreaker-problems.pdf"
+solutions = "geometry-tiebreaker-solutions.pdf"
 +++
