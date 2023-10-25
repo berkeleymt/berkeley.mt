@@ -5,9 +5,30 @@
 {% endblock %}
 
 {% block content %}
+
+{# =================== #}
+{# = SECTION HEADING = #}
+{# =================== #}
+
 <div class="flex flex-col gap-3">
   <h1 class="text-4xl font-semibold">{{ section.title }}</h1>
 </div>
+
+{# ==================== #}
+{# = MARKDOWN CONTENT = #}
+{# ==================== #}
+
+{% block before_section_content %}{% endblock %}
+
+{% if section.content %}
+<div class="{{ prose_cls }}">
+  {{ section.content | safe }}
+</div>
+{% endif %}
+
+{# ================ #}
+{# = PAGE LISTING = #}
+{# ================ #}
 
 {% if section.pages %}
 
@@ -31,14 +52,6 @@
   {% endfor %}
 
   {% endfor %}
-</div>
-{% endif %}
-
-{% block before_section_content %}{% endblock %}
-
-{% if section.content %}
-<div class="{{ prose_cls }}">
-  {{ section.content | safe }}
 </div>
 {% endif %}
 
