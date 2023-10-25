@@ -37,5 +37,3 @@ title = "Power"
 problems = "power-problems.pdf"
 solutions = "power-solutions.pdf"
 +++
-
-{% button_link(href="results.pdf") %} Contest Results {% end %}
