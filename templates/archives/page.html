@@ -1,17 +1,15 @@
 {% extends "page.html" %}
 
 {% block before_page_content %}
-{% set tests = page.extra | get(key="tests", default=[]) %}
-
-{% if tests %}
 <table class="{{ prose_cls }}">
     <thead>
         <th>Round</th>
-        <th>Problems</th>
-        <th>Solutions</th>
+        {% for column in page.extra.archive.columns %}
+        <th>{{ column.label }}</th>
+        {% endfor %}
     </thead>
     <tbody>
-        {% for test in tests %}
+        {% for test in page.extra.archive.tests %}
         <tr>
             <td>{{ test.title }}</td>
             <td><a href="{{ test.problems }}">Problems</a></td>
@@ -20,6 +18,4 @@
         {% endfor %}
     </tbody>
 </table>
-{% endif %}
-
 {% endblock %}
