@@ -1,10 +1,12 @@
 +++
-title = "Registration is closed for BMT 2023!"
+title = "Registration is closed for BMT 2023 US"
 +++
 
 We've hit our cap of 700 student registrations for the 2023 Berkeley Math
-Tournament! Registration for BMT 2023 is now closed, and we are excited 
-to see everyone on November 4th this year!
+Tournament (on Berkeley Campus)! Registration for BMT 2023 is now closed, and we
+are excited to see everyone on November 4th this year!
+
+Registration for our satellite tournaments may still be open.
 
 Event details are below:
 
