@@ -254,25 +254,5 @@ the team has reached at least 4 scores, of which we will take the average.
 Although we will provide an official ranking as well as certificates for
 top-scoring teams, there will not be physical awards for the online tournament.
 
-### I’m in a different timezone or non-local and can’t compete live. What are my options?
-
-There will be BMT Satellite competitions held through our partners across the
-globe for competitors wishing to compete in a different time zone.
-
-### Will lunch be provided?
-
-Lunch is **not provided** for BMT 2023. Students, coaches and parents are free
-to find food in Berkeley. Restaurants can be found on the south side of campus
-(~5 minute walk from homerooms) and downtown (~15 minute walk from home rooms)
-
-### Where can I find parking / How can I get around Berkeley?
-
-BMT will not be providing parking or travel arrangements for students — it is up
-to coaches and/or parents to handle travel logistics. There are a number of
-parking garages around the campus, including Underhill Structure, Lower Hearst
-Structure, and the RSF garage. In addition, UC Berkeley campus is very public
-transport friendly. If you are staying in Emeryville, Bus Line 36 will take you
-directly to campus, and the Downtown Berkeley BART station is next to campus
-
 [Team-Finder]:
   https://docs.google.com/spreadsheets/d/1VTS3qT-5ZGub5Q1FHm-Ruybz-i0EKDH_PmMxmPRS7fM/edit?usp=sharing
