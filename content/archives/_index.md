@@ -1,7 +1,7 @@
 +++
 title = "Archives"
 page_template = "archives/page.html"
-order_by = "date"
+sort_by = "date"
 +++
 
 We're currently moving Archives from our

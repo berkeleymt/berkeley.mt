@@ -32,19 +32,11 @@
 
 {% if section.pages %}
 
-{# group by years, in reverse order of year #}
-{% set map = section.pages | group_by(attribute="year") %}
-{% set_global years = [] %}
-{% for year, _ in map %}
-{% set_global years = years | concat(with=year) %}
-{% endfor %}
-{% set_global years = years | sort | reverse %}
-
 <div class="grid grid-cols-[max-content_1fr] gap-x-8 gap-y-4 -mt-4">
-  {% for year in years %}
+  {% for year, pages in section.pages | group_by(attribute="year") %}
   <h2 class="mt-4 col-span-2 text-sm text-gray-400">{{ year }}</h2>
 
-  {% for page in map[year] %}
+  {% for page in pages %}
   <p class="text-gray-500 leading-7">{{ page.date | date(format="%b %-d") }}</p>
   <p class="text-xl">
     <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
