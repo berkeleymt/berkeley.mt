@@ -8,23 +8,33 @@ Interested in sponsoring us? Contact us at <finance@bmt.berkeley.edu>!
 
 ## Diamond Sponsors
 
-![Daily Challenge with Po-Shen Loh](daily-challenge.png)
+[![Jane Street](jane-street.svg)](https://www.janestreet.com/)
 
-![Jane Street](jane-street.png)
+[![blackpenredpen](bprp.png)](https://www.blackpenredpen.com/)
 
-![blackpenredpen](bprp.png)
-
-![ContestDojo](contestdojo.png)
+[![ContestDojo](contestdojo.png)](https://contestdojo.com/)
 
 ## Gold Sponsors
 
-![Susquehana International Group](sig.png)
+{% grid(class="grid-cols-2") %}
+
+- [![Citadel](citadel.svg)](https://www.citadel.com/)
+- [![Susquehana International Group](sig.svg)](https://sig.com/)
+- [![Atomic Grader](ag.svg)](https://atomicgrader.com/)
+
+{% end %}
 
 ## Blue Sponsors
 
-{% grid(class="grid-cols-4") %}
+{% grid(class="grid-cols-3") %}
 
 - ![HRT](hrt.png)
 - ![Simons Institute](simons.png)
 
 {% end %}
+
+<style>
+    .prose img {
+        width: 100%;
+    }
+</style>
