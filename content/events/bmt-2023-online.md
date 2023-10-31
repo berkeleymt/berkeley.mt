@@ -86,8 +86,6 @@ provided below:
 | 3:30 – 4:30 PM         | Speaker Event            |
 | 4:30 – 5:00 PM         | Closing Ceremony         |
 
-## Asynchronous Power Round
-
 # BMT Rounds
 
 ### Power Round (90 mins)
