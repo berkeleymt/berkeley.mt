@@ -12,8 +12,14 @@
         {% for test in page.extra.archive.tests %}
         <tr>
             <td>{{ test.title }}</td>
-            <td><a href="{{ test.problems }}">Problems</a></td>
-            <td><a href="{{ test.solutions }}">Solutions</a></td>
+            {% for column in page.extra.archive.columns %}
+            <td>
+                {% set href = test | get(key=column.key, default="") %}
+                {% if href %}
+                <a href="{{ href }}">{{ href | split(pat=".") | last | upper }}</a>
+                {% endif %}
+            </td>
+            {% endfor %}
         </tr>
         {% endfor %}
     </tbody>
