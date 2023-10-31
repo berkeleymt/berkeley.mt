@@ -151,15 +151,6 @@ correct answers.
             </td>
             <td>Submitted and scored live in sets of 3</td>
         </tr>
-        <tr>
-            <th>Location</td>
-            <td colspan="4">
-                Assigned Classrooms — See Tournament Guide
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
         <tr style="text-align: center">
             <th># of Questions</td>
             <td>TBA</td>
