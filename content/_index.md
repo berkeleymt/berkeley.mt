@@ -1,5 +1,6 @@
 +++
 title = "Berkeley Math Tournament"
+description = "A UC Berkeley student-led organization that aims to spread mathematics and the spirit of mathematical competition throughout the Bay Area by presenting students with interesting, hand-crafted problems."
 +++
 
 # Don’t miss out on contest news!

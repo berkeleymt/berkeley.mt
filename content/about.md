@@ -6,11 +6,14 @@ The Berkeley Math Tournament Group hosts and organizes mathematical contests for
 middle and high school students. In organizing these tournaments, the team
 strives to encourage mathematical exploration and understanding by introducing
 concepts not covered in the typical pre-college curricula to students with high
-mathematical aptitude and interest. Each contest emphasizes collaboration
-between team members, while still allowing individuals to prove their own
-ability. Any individual currently enrolled in a pre-college institute for youth
-is welcome to compete, and accommodations may be made for teams with
-demonstrated financial need.
+mathematical aptitude and interest.
+
+<!-- more -->
+
+Each contest emphasizes collaboration between team members, while still allowing
+individuals to prove their own ability. Any individual currently enrolled in a
+pre-college institute for youth is welcome to compete, and accommodations may be
+made for teams with demonstrated financial need.
 
 The contests that the Berkeley Math Tournament Group offers are:
 
