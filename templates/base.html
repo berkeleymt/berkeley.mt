@@ -11,6 +11,14 @@ prose-td:border-r last:prose-td:border-r-0 prose-th:border-r last:prose-th:borde
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  {% set permalink = section.permalink
+  | default(value=page.permalink
+  | default(value="")) %}
+
+  {% if permalink %}
+  <link rel="canonical" href="{{ permalink | safe }}" />
+  {% endif %}
+
   {% set title = section.title
   | default(value=page.title
   | default(value="Berkeley Math Tournament")) %}
