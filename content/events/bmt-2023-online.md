@@ -1,6 +1,7 @@
 +++
 title = "BMT 2023 Online"
 date = 2024-01-20
+aliases = ["/bmmt-2023-online"]
 +++
 
 The online, synchronous version of our flagship high school tournament! For

@@ -1,5 +1,6 @@
 +++
 title = "About"
+alises = ["/about-bmt"]
 +++
 
 The Berkeley Math Tournament Group hosts and organizes mathematical contests for
