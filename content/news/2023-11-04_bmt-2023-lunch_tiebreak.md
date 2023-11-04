@@ -1,5 +1,5 @@
 +++
-title = "BMT 2023 Tiebreakers will be announced at 2:30!"
+title = "BMT 2023 Tiebreakers will be announced at 2:50"
 +++
 
 To all coaches and students,
