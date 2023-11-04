@@ -6,7 +6,7 @@ date = 2023-11-04T14:40:00
 We are excited to announce that the following students have qualified for the
 tiebreaker round of BMT!
 
-## 2:50 PM Block
+## 3:00 PM Block
 
 ### Discrete
 
@@ -20,7 +20,7 @@ The following students should report to **SOCS 175 at 3:00 PM**:
 - 030F - Brian Xue
 - 118A - Alex Zhao
 
-## 3:10 PM Block
+## 3:20 PM Block
 
 ### Calculus
 
@@ -45,7 +45,7 @@ The following students should report to **SOCS 185 at 3:20 PM**:
 - 106D - Xinyu Meng
 - 115F - Vivian Loh
 
-## 3:30 PM Block
+## 3:40 PM Block
 
 ### Algebra
 
