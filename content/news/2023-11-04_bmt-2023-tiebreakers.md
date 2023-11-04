@@ -43,6 +43,7 @@ The following students should report to **SOCS 185 at 3:20 PM**:
 - 043E - Advaith Avadhanam
 - 105F - Elliott Liu
 - 106D - Xinyu Meng
+- 115D - Neal Yan
 - 115F - Vivian Loh
 
 ## 3:40 PM Block
