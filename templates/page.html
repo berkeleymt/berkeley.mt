@@ -7,7 +7,7 @@
 
   {% if page.date %}
   <h2 class="text-xl">
-    {{ page.date | date(format="%B %-d, %Y") }}
+    {{ page.date | date(format="%B %-d, %Y, %-I:%M %p") | trim_end_matches(pat=", 12:00 AM") }}
   </h2>
   {% endif %}
 </div>
