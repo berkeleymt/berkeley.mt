@@ -32,7 +32,7 @@
     </div>
 
     <p class="text-base opacity-90">
-      {{ description}}
+      {{ description }}
     </p>
   </a>
 </div>
@@ -58,9 +58,7 @@
   <p class="h-full text-xl md:text-3xl font-bold text-white flex flex-col justify-between">
     <span class="order-0 after:content-['…'] text-left">Promoting advanced math</span>
     <span class="order-2 before:content-['…'] text-right">to middle and high school students</span>
-    <span class="order-1 text-center">
-      $$F(z) = \sum_{n=0}^\infty f_n \frac{z^n}{n!}$$
-    </span>
+    <span class="order-1 text-center">{{ macros::index_math() }}</span>
   </p>
 </div>
 
