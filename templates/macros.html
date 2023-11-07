@@ -3,12 +3,12 @@
 
 {# Desktop version #}
 <p class="hidden md:block first:hidden text-gray-400">⁄</p>
-<a href="{{ href }}" class="hidden md:block {% if current_url == href %} font-semibold {% endif %}">
+<a href="{{ href }}" class="hidden md:block {% if current_url | default(value='') == href %} font-semibold {% endif %}">
   {{ label }}
 </a>
 
 {# Mobile version #}
-{% if current_url == href %}
+{% if current_url | default(value="") == href %}
 <button class="md:hidden order-1 font-semibold border py-2 px-3 rounded-xl relative" onclick="thing()">
   {{ label }}
   <i class="bi bi-chevron-down [.open_&]:-scale-y-100 transition-transform absolute right-4"></i>
