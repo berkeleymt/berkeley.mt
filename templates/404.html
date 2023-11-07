@@ -16,14 +16,14 @@
 
   function normalizeOffset(xOffset, yOffset) {
     const length = Math.sqrt(xOffset ** 2 + yOffset ** 2);
-    const effLength = Math.min(length / 200, 1)
+    const effLength = Math.min(length / 400, 0.5)
     return [xOffset / length * effLength, yOffset / length * effLength];
   }
 
 
   function layerShadow(xOffset, yOffset) {
-    // Repeat 10 times, with increasing offset and color
-    return [...Array(10).keys()].map((i) =>
+    // Repeat 20 times, with increasing offset and color
+    return [...Array(20).keys()].map((i) =>
       `${xOffset * i}px ${yOffset * i}px ${shadowColor}`
     ).join(", ");
   }
