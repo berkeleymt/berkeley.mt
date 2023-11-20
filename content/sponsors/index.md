@@ -28,8 +28,17 @@ Interested in sponsoring us? Contact us at <finance@bmt.berkeley.edu>!
 
 {% grid(class="grid-cols-3") %}
 
-- ![HRT](hrt.png)
-- ![Simons Institute](simons.png)
+- [![HRT](hrt.png)](https://www.hudsonrivertrading.com/)
+- [![Simons Institute](simons.png)](https://simons.berkeley.edu/)
+
+{% end %}
+
+# Friends of BMT
+
+{% grid(class="grid-cols-2 gap-16") %}
+
+- [![Stanford Math Tournament](smt.png)](https://www.stanfordmathtournament.com/)
+- [![Mustang Math](mmt.png)](https://mustangmath.com/)
 
 {% end %}
 

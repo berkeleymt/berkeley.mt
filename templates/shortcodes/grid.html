@@ -1,4 +1,4 @@
-<div class="grid gap-4 [&>li]:list-none {% if class %}{{ class }}{% endif %}">
+<div class="grid gap-4 items-center [&>li]:list-none {% if class %}{{ class }}{% endif %}">
     {# This is dumb but ok #}
     {{ body | markdown | trim_start_matches(pat="<ul>") | trim_end_matches(pat="</ul>") | safe }}
 </div>
