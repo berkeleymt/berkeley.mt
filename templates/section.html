@@ -7,7 +7,9 @@
 {# =================== #}
 
 <div class="flex flex-col gap-3">
-  <h1 class="text-4xl font-semibold">{{ section.title }}</h1>
+  <h1 class="text-4xl font-semibold">
+    {{ macros::newline_break(str=section.title) }}
+  </h1>
 </div>
 
 {# ==================== #}
@@ -45,7 +47,9 @@
   </p>
 
   <p class="text-xl">
-    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    <a href="{{ page.permalink | safe }}">
+      {{ macros::newline_break(str=page.title) }}
+    </a>
   </p>
   {% endfor %}
 
