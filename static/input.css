@@ -2,14 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: "Inter", sans-serif;
+@font-face {
+  src: url('/fonts/IBMPlexSansVar-Roman.woff2') format('woff2-variations');
+  font-family: 'IBM Plex Sans Variable';
+  font-style: normal;
 }
 
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: "Inter var", sans-serif;
-  }
+@font-face {
+  src: url('/fonts/IBMPlexSansVar-Italic.woff2') format('woff2-variations');
+  font-family: 'IBM Plex Sans Variable';
+  font-style: italic;
+}
+
+:root {
+  font-family: "IBM Plex Sans Variable", sans-serif;
 }
 
 #banner {
