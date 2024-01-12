@@ -20,7 +20,9 @@ there is **no lower age limit** to compete in BMT; advanced middle school
 students are welcome to compete. You may register **up to 6 students per team**.
 There are no restrictions on how many teams/students can participate.
 
-{% button_link(href="https://contestdojo.com/") %} Registration Portal {% end %}
+{% button_link(href="/news/bmt-2023-online-logistics") %} Event Logistics
+{% end %} {% button_link(href="https://contestdojo.com/") %} Registration Portal
+{% end %}
 
 # Registration Information
 
