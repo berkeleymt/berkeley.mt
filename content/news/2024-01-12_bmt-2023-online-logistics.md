@@ -16,16 +16,18 @@ these details is crucial to ensuring a smooth experience at the event.
 ## Important Information
 
 For any directions, questions or concerns before or during the event, ask a BMT
-staff member by emailing questions@bmt.berkeley.edu.
+staff member by emailing
+[questions@bmt.berkeley.edu](mailto:questions@bmt.berkeley.edu).
 
 ## Registration and Check-in
 
 Registration for BMT 2023 Online closed after January 10, 2024 at 11:59 US
 Pacific Time. As of the evening of Thursday, January 11, rosters are now frozen.
 If there are any remaining issues with your team's roster, **please email
-questions@bmt.berkeley.edu** as soon as possible. We are still working on
-resolving currently pending issues; if you emailed us previously and your issue
-has not been solved, feel free to follow up.
+[questions@bmt.berkeley.edu](mailto:questions@bmt.berkeley.edu)** as soon as
+possible. We are still working on resolving currently pending issues; if you
+emailed us previously and your issue has not been solved, feel free to follow
+up.
 
 There is no check-in required for this event; however, no more roster changes
 will be made after January 13 8:00 AM US Pacific Time.
@@ -57,7 +59,7 @@ As this process might take some time, we encourage teams to reserve at least 30
 minutes to submit their work to ensure that all work can be submitted before the
 deadline.
 
-## 1/20 Main Event
+## 1/20 Main Event Logistics
 
 The main event will take place on January 20, 2024. A schedule is provided
 below:
@@ -76,15 +78,17 @@ as the testing rounds, will take place over Zoom. A link to join the Zoom
 meeting will be sent out closer to the event date; please watch out for another
 email about that.
 
-The General, Focus, and Guts Rounds will be taken on the ContestDojo platform.
-Students will use the platform to view problems, submit answers, as well as
-collaborate with their teams on the Guts Round.
+The General, Focus, and Guts Rounds will be taken on the
+[ContestDojo](https://contestdojo.com/) platform. Students will use the platform
+to view problems, submit answers, as well as collaborate with their teams on the
+Guts Round.
 
 All students should ensure that they can login to ContestDojo prior to the
 event. If students were registered by a coach, they have received an email
 containing their sign-in details. If students are having trouble logging in or
 locating the BMT 2023 Online event, please try the Forgot Password function, or
-email questions@bmt.berkeley.edu for assistance.
+email [questions@bmt.berkeley.edu](mailto:questions@bmt.berkeley.edu) for
+assistance.
 
 On Tuesday, January 16, a sample test will be opened on ContestDojo for students
 to familiarize themselves with the platform. A brief guide on how to use the
