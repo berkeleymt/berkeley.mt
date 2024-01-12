@@ -45,7 +45,7 @@ proof-based team round, and will be graded by our staff.
 The test will be released at the following Google Drive link at 9:00 AM US
 Pacific Time on Saturday, January 13, 2024:
 
-https://drive.google.com/drive/folders/1SmUPCBwORUJEisJ2OmARqMG-cLednx65?usp=sharing
+[https://drive.google.com/drive/folders/1SmUPCBwORUJEisJ2OmARqMG-cLednx65?usp=sharing](https://drive.google.com/drive/folders/1SmUPCBwORUJEisJ2OmARqMG-cLednx65?usp=sharing)
 
 Teams may spend as little or as much time as they would like on the test, as
 long as the test is submitted by 8:59 PM US Pacific Time on Sunday, January
