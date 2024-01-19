@@ -14,7 +14,7 @@ here as well.
 
 <!-- more -->
 
-Reminder that the time of the event is Saturday, January 18, 2024 at 10:00 AM US
+Reminder that the time of the event is Saturday, January 20, 2024 at 10:00 AM US
 Pacific Time (UTC–8).
 
 {% button_link(href="/events/bmt-2023-online") %} Event Details {% end %}
