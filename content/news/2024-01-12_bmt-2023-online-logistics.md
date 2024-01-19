@@ -12,6 +12,8 @@ these details is crucial to ensuring a smooth experience at the event.
 <!-- more -->
 
 {% button_link(href="/events/bmt-2023-online") %} Event Details {% end %}
+{% button_link(href="/news/bmt-2023-online-logistics-update") %} 1/18 Logistics
+Update {% end %}
 
 ## Important Information
 

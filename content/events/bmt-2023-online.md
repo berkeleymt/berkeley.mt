@@ -21,8 +21,9 @@ students are welcome to compete. You may register **up to 6 students per team**.
 There are no restrictions on how many teams/students can participate.
 
 {% button_link(href="/news/bmt-2023-online-logistics") %} Event Logistics
-{% end %} {% button_link(href="https://contestdojo.com/") %} Registration Portal
-{% end %}
+{% end %} {% button_link(href="/news/bmt-2023-online-logistics-update") %} 1/18
+Logistics Update {% end %} {% button_link(href="https://contestdojo.com/") %}
+Registration Portal {% end %}
 
 # Registration Information
 
