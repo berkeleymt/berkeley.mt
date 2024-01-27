@@ -18,7 +18,7 @@ Interested in sponsoring us? Contact us at <finance@bmt.berkeley.edu>!
 
 {% grid(class="grid-cols-2") %}
 
-- [![Citadel](citadel.svg)](https://www.citadel.com/)
+- [![Citadel](citadel.png)](https://www.citadel.com/)
 - [![Susquehana International Group](sig.svg)](https://sig.com/)
 - [![Atomic Grader](ag.svg)](https://atomicgrader.com/)
 
@@ -35,10 +35,11 @@ Interested in sponsoring us? Contact us at <finance@bmt.berkeley.edu>!
 
 # Friends of BMT
 
-{% grid(class="grid-cols-2 gap-16") %}
+{% grid(class="grid-cols-3 gap-16") %}
 
 - [![Stanford Math Tournament](smt.png)](https://www.stanfordmathtournament.com/)
 - [![Mustang Math](mmt.png)](https://mustangmath.com/)
+- [![CALICO]()]
 
 {% end %}
 
