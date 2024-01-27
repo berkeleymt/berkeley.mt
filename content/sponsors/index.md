@@ -38,8 +38,8 @@ Interested in sponsoring us? Contact us at <finance@bmt.berkeley.edu>!
 {% grid(class="grid-cols-3 gap-16") %}
 
 - [![Stanford Math Tournament](smt.png)](https://www.stanfordmathtournament.com/)
+- [![CALICO](calico.png)](https://calico.cs.berkeley.edu/)
 - [![Mustang Math](mmt.png)](https://mustangmath.com/)
-- [![CALICO]()]
 
 {% end %}
 
