@@ -43,7 +43,7 @@ problems = "guts-problems.pdf"
 [[extra.archive.tests]]
 title = "Power"
 problems = "power-problems.pdf"
-#solutions = "power-solutions.pdf"
+solutions = "power-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "General Tiebreaker"
