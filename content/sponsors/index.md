@@ -2,7 +2,7 @@
 title = "Sponsors"
 +++
 
-Interested in sponsoring us? Contact us at <finance@bmt.berkeley.edu>!
+Interested in sponsoring us? Contact us at <finance@berkeley.mt>!
 
 {% button_link(href="packet.pdf") %} Sponsorship Packet {% end %}
 
