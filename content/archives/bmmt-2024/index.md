@@ -13,7 +13,7 @@ key = "solutions"
 [[extra.archive.tests]]
 title = "Puzzle"
 problems = "puzzle-problems.pdf"
-solutions = "puzzle-answers.pdf"
+solutions = "puzzle-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Individual"
