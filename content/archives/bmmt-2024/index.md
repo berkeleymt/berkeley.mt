@@ -31,6 +31,6 @@ problems = "relay-problems.pdf"
 solutions = "relay-answers.pdf"
 +++
 
-Under construction currently! Puzzle rules and problem solutions out soon!
+Under construction currently! Puzzle rules, satellite results, and problem solutions out soon!
 
 {% button_link(href="results.pdf") %} Contest Results {% end %}
