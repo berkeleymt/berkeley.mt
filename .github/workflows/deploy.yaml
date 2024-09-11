@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     environment:
       name: Production
@@ -27,14 +27,28 @@ jobs:
       - name: Build website for production
         run: nix build .#for-production
 
-      - name: Test
-        run: ls -al
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: result
+          path: result/
 
-      - name: Deploy
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: Production
+      url: https://berkeley.mt/
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: result
+
+      - name: Deploy to OCF
         uses: burnett01/rsync-deployments@6.0.0
         with:
           switches: -avPh --delete --exclude=.htaccess
-          path: result/
+          path: .
           remote_path: ~/public_html/new
           remote_host: tsunami.ocf.berkeley.edu
           remote_user: bmt
