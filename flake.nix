@@ -20,8 +20,8 @@
         serve = {
           type = "app";
           program = toString (pkgs.writers.writeBash "serve" ''
-            ${pkgs.tailwindcss}/bin/tailwindcss -i ./static/input.css -o ./static/style.css --watch &
-            ${pkgs.zola}/bin/zola serve
+            ${pkgs.zola}/bin/zola serve &
+            ${pkgs.tailwindcss}/bin/tailwindcss -i ./static/input.css -o ./static/style.css --watch
           '');
         };
       });
