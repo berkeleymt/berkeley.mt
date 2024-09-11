@@ -1,0 +1,52 @@
+name: Build and Deploy Preview
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v11
+
+      - name: Setup Nix build cache
+        uses: DeterminateSystems/magic-nix-cache-action@v6
+
+      - name: Check Nix flake inputs
+        uses: DeterminateSystems/flake-checker-action@v7
+
+      - name: Build website
+        run: nix build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: result
+          path: result/
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: Preview
+      url: pr-${{ github.event.number }}.berkeley-mt.pages.dev
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: result
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 44d0498f26e72b3e24b3ba9d152ca879
+          projectName: berkeley-mt
+          branch: pr-${{ github.event.number }}
+          directory: .
