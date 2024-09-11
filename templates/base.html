@@ -28,7 +28,9 @@
   | default(value=page.description
   | default(value=page.summary
   | default(value=""))))
-  | striptags %}
+  | striptags
+  | split(pat="\n")
+  | join(sep=" ") %}
 
   {% if description %}
   <meta name="description" content="{{ description }}" />
