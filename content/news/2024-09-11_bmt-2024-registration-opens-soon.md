@@ -5,7 +5,7 @@ title = "Registration for BMT 2024 will open on September 16, 2024"
 How are you doing, fellow math enthusiasts?
 
 BMT is coming back on Saturday, November 2nd, and we're excited to see you
-there! Registration will open on **Monday, September 16 at 12:01 AM PT**. This
+there! Registration will open on **Monday, September 16 at 9:00 AM PT**. This
 year, registration will take place in two phases to give smaller organizations
 an opportunity to register.
 
