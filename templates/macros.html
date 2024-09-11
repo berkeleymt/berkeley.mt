@@ -36,3 +36,43 @@
 {% if not loop.last %}<br>{% endif %}
 {% endfor %}
 {% endmacro newline_break %}
+
+{% macro toc(toc, top=true) %}
+<ul class="{% if not top %} hidden pl-4 {% endif %} has-[.active]:block">
+  {% for heading in toc %}
+  <li class="group overflow-hidden whitespace-nowrap text-ellipsis">
+    <a
+      class="text-gray-500 text-sm  hover:text-gray-800 hover:font-medium group-[.active]:text-black group-[.active]:font-semibold"
+      href="{{ heading.permalink | safe }}"
+    >
+      {{ heading.title }}
+    </a>
+
+    {% if heading.children %}
+    {{ self::toc(toc=heading.children, top=false) }}
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro toc_link %}
+
+{% macro toc_js() %}
+<script>
+const OFFSET = 100;
+
+const wrapper = document.querySelector("#content-wrapper");
+const headings = document.querySelectorAll("#content > h1, #content > h2, #content > h3, #content > h4, #content > h5, #content > h6");
+const links = document.querySelectorAll('#toc li');
+
+window.addEventListener("scroll", event => {
+  const scrollTop = -wrapper.getBoundingClientRect().top;
+  for (const link of links) link.classList.remove("active");
+  for (let i = headings.length - 1; i >= 0; i--) {
+    if (scrollTop > headings[i].offsetTop - OFFSET) {
+      links[i].classList.add("active");
+      break;
+    }
+  }
+});
+</script>
+{% endmacro toc_js %}
