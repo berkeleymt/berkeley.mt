@@ -35,7 +35,7 @@ jobs:
     needs: build
     environment:
       name: Preview
-      url: pr-${{ github.event.number }}.berkeley-mt.pages.dev
+      url: https://pr-${{ github.event.number }}.berkeley-mt.pages.dev
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v4
