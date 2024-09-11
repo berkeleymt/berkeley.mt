@@ -86,30 +86,50 @@ a tab to the tab bar, probably belong here.
 
 ## Running the site locally
 
-First, ensure that you have [Zola](https://getzola.org/) and
-[Node.js](https://nodejs.org/) installed. Then, simply clone the repository and
-run the following commands to get the site running locally:
+It is recommended to test the site using the [Nix package manager]:
 
 ```bash
-npm install
-npm run dev
+nix run .#serve
 ```
+
+If you don't have Flakes configured globally, you may need to pass in
+`--extra-experimental-features "nix-command flakes"`.
 
 A development server should now be running at http://localhost:1111. It should
 update automatically as you edit the site, so this is suitable for development.
 
-## Deploying
-
-To make a production build, run:
+To test the site without Nix, ensure that you have [Zola] and [Tailwind CSS]
+installed. Then, simply run the following commands to get the site running:
 
 ```bash
-npm run build
+tailwindcss -i ./static/input.css -o ./static/style.css --watch &
+zola serve
+```
+
+## Deploying
+
+It is recommended to build the site using the [Nix package manager]:
+
+```bash
+nix build
 ```
 
 This will make a static build of the site and place the files in the `public/`
 folder. Simply copy these files to a web host using your tool of choice to
 deploy.
 
+To make a production build for use at https://berkeley.mt/, run:
+
+```bash
+nix build .#for-production
+```
+
+This sets the `base_url` option correctly, so that SEO is optimized.
+
 Commits to the `main` branch on the main repository will automatically be
 deployed to the live site. Look out for little green check marks next to commits
 on GitHub!
+
+[Nix package manager]: https://nixos.org/
+[Zola]: https://getzola.org/
+[Tailwind CSS]: https://tailwindcss.com/blog/standalone-cli

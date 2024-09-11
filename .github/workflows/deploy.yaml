@@ -12,32 +12,26 @@ jobs:
       name: Production
       url: https://berkeley.mt/
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Clone repository
+        uses: actions/checkout@v4
 
-      - name: Install node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: npm
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v11
 
-      - name: Install node dependencies
-        run: npm install
+      - name: Setup Nix build cache
+        uses: DeterminateSystems/magic-nix-cache-action@v6
 
-      - name: Install zola
-        run: >
-          wget -q -O -
-          "https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz"
-          | tar xzf - -C /usr/local/bin
+      - name: Check Nix flake inputs
+        uses: DeterminateSystems/flake-checker-action@v7
 
-      - name: Build site
-        run: npm run build
+      - name: Build website for production
+        run: nix build .#for-production
 
       - name: Deploy
         uses: burnett01/rsync-deployments@6.0.0
         with:
           switches: -avPh --delete --exclude=.htaccess
-          path: public/
+          path: result/
           remote_path: ~/public_html/new
           remote_host: tsunami.ocf.berkeley.edu
           remote_user: bmt

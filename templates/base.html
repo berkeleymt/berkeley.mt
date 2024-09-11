@@ -12,7 +12,7 @@
   | default(value=page.permalink
   | default(value="")) %}
 
-  {% if permalink %}
+  {% if permalink and permalink is not starting_with("/") %}
   <link rel="canonical" href="{{ permalink | safe }}" />
   {% endif %}
 
