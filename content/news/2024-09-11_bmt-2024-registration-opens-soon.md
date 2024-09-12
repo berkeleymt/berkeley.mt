@@ -13,10 +13,10 @@ an opportunity to register.
 BMT 2024 Event Page
 {% end %}
 
-Due to room constraints, we will limit the number of registrations. The exact
-limit is yet to be finalized, but it will be greater than 750 students. While we
-don't expect to reach this limit in Phase 1, we encourage coaches to register as
-soon as possible to guarantee space.
+Due to room constraints, there is a limited number of seats available for this
+event. The exact limit is yet to be finalized, but it will be greater than 750
+students. While we don't expect to reach this limit in Phase 1, we encourage
+coaches to register as soon as possible to guarantee space.
 
 | Dates         | Registration Period | Price Per Student | Additional Notes                                                                       |
 | ------------- | ------------------- | ----------------- | -------------------------------------------------------------------------------------- |
