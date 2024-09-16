@@ -1,27 +1,19 @@
-{% extends "base.html" %}
-
-{# Macro for news post notifications #}
-
-{% macro news_post(title, href) %}
-<a class="bg-rose-50 hover:bg-rose-100 hover:-translate-y-1 transition-all border border-rose-200 p-4 rounded-xl flex items-center gap-2"
-  href="{{ href }}">
+{% extends "base.html" %} {# Macro for news post notifications #} {% macro news_post(title, href) %}
+<a
+  class="bg-rose-50 hover:bg-rose-100 hover:-translate-y-1 transition-all border border-rose-200 p-4 rounded-xl flex items-center gap-2"
+  href="{{ href }}"
+>
   <div class="flex-1 flex flex-col gap-2">
     <p class="uppercase text-xs text-gray-500 flex gap-2 items-center">
       <i class="bi bi-megaphone-fill"></i>
       <span>News</span>
     </p>
-    <p class="text-base font-medium">
-      {{ title | split(pat="\n") | join(sep=" • ") }}
-    </p>
+    <p class="text-base font-medium">{{ title | split(pat="\n") | join(sep=" • ") }}</p>
   </div>
 
   <i class="bi bi-chevron-right"></i>
 </a>
-{% endmacro %}
-
-{# Macro for event cards #}
-
-{% macro event(name, date, description, href, class="") %}
+{% endmacro %} {# Macro for event cards #} {% macro event(name, date, description, href, class="") %}
 <div class="group rounded-xl overflow-hidden {{ class }} transition-all hover:-translate-y-1">
   <a href="{{ href }}" class="p-6 flex flex-col gap-4 group-hover:backdrop-brightness-75 transition-all h-full">
     <div class="flex flex-col gap-1">
@@ -32,28 +24,13 @@
       <p class="text-sm font-medium opacity-50">{{ date }}</p>
     </div>
 
-    <p class="text-base opacity-90">
-      {{ description }}
-    </p>
+    <p class="text-base opacity-90">{{ description | safe }}</p>
   </a>
 </div>
-{% endmacro %}
-
-{# =============================== #}
-{# = STARTING THE ACTUAL CONTENT = #}
-{# =============================== #}
-
-{% block content %}
-
-{# News post notification, if there is one #}
-
-{% set news_section = get_section(path="news/_index.md") %}
-{% set news_post = news_section.pages | first %}
-{% if news_post %}
-{{ self::news_post(title=news_post.title, href=news_post.permalink) }}
-{% endif %}
-
-{# Main banner & description #}
+{% endmacro %} {# =============================== #} {# = STARTING THE ACTUAL CONTENT = #} {#
+=============================== #} {% block content %} {# News post notification, if there is one #} {% set news_section
+= get_section(path="news/_index.md") %} {% set news_post = news_section.pages | first %} {% if news_post %} {{
+self::news_post(title=news_post.title, href=news_post.permalink) }} {% endif %} {# Main banner & description #}
 
 <div id="banner" class="bg-black p-6 md:p-8 rounded-xl">
   <p class="h-full text-xl md:text-3xl font-bold text-white flex flex-col justify-between">
@@ -71,55 +48,33 @@
   </p>
 </div>
 
-<hr>
+<hr />
 
 {# Events section #}
 
 <h2 class="font-bold text-xl md:text-3xl">Recent & Upcoming Events</h2>
 
 <div class="flex flex-col md:grid grid-cols-6 gap-4 max-w-4xl">
-  {{ self::event(
-  class="col-span-4 bg-gradient-to-br shadow-lg from-fuchsia-700 to-fuchsia-900 text-white",
-  name="Berkeley Math Tournament 2024",
-  date="November 2, 2024",
-  href="/events/bmt-2024/",
-  description="Our on-campus fall tournament offers teams of high school students the opportunity to share their interest in
-  mathematics with like-minded individuals and to get a taste of the concepts studied in higher mathematics."
-  ) }}
-
-  {{ self::event(
-  class="col-span-2 bg-gradient-to-br shadow-lg from-red-600 to-red-800 text-white",
-  name="BMT 2024 China",
-  date="Nov 30 – Dec 1, 2024",
-  href="http://www.seedasdan.asia/en/bmt-en/",
-  description="Our partner ASDAN hosts this in-person tournament in Beijing for students in East Asia."
-  ) }}
-
-  {{ self::event(
-  class="col-span-6 bg-gradient-to-br from-slate-200 to-slate-300",
-  name="BMT 2024 Online",
-  date="To be announced",
-  href="javascript:void",
-  description="The online version of our flagship high school tournament, for students who can't make it to Berkeley!"
-  ) }}
-
-  {{ self::event(
-  class="col-span-6 bg-gradient-to-br shadow-lg from-emerald-700 to-emerald-900 text-white",
-  name="Berkeley mini Math Tournament 2024",
-  date="April 14, 2024",
-  href="/events/bmmt-2024/",
-  description="Our annual &quot;mini&quot; in-person tournament for middle school and advanced elementary school students
-  showcases the beauty and fun of mathematics through exciting formats like the Puzzle Round and Relay Round, preparing
-  them for future mathematical endeavors."
-  ) }}
+  {{ self::event( class="col-span-4 bg-gradient-to-br shadow-lg from-fuchsia-700 to-fuchsia-900 text-white",
+  name="Berkeley Math Tournament 2024", date="November 2, 2024", href="/events/bmt-2024/", description="Our on-campus
+  fall tournament offers teams of high school students the opportunity to share their interest in mathematics with
+  like-minded individuals and to get a taste of the concepts studied in higher mathematics." ) }} {{ self::event(
+  class="col-span-2 bg-gradient-to-br shadow-lg from-red-600 to-red-800 text-white", name="BMT 2024 China", date="Nov 30
+  – Dec 1, 2024", href="http://www.seedasdan.asia/en/bmt-en/", description="Our partner ASDAN hosts this in-person
+  tournament in Beijing for students in East Asia." ) }} {{ self::event( class="col-span-6 bg-gradient-to-br
+  from-slate-200 to-slate-300", name="BMT 2024 Online", date="To be announced", href="javascript:void", description="The
+  online version of our flagship high school tournament, for students who can't make it to Berkeley!" ) }} {{
+  self::event( class="col-span-6 bg-gradient-to-br shadow-lg from-emerald-700 to-emerald-900 text-white", name="Berkeley
+  mini Math Tournament 2024", date="April 14, 2024", href="/events/bmmt-2024/", description="Our annual &quot;mini&quot;
+  in-person tournament for middle school and advanced elementary school students showcases the beauty and fun of
+  mathematics through exciting formats like the Puzzle Round and Relay Round, preparing them for future mathematical
+  endeavors." ) }}
 </div>
 
-<hr>
+<hr />
 
 {# Rest of content (rendered from markdown) #}
 
-<div class="prose">
-  {{ section.content | safe }}
-</div>
+<div class="prose">{{ section.content | safe }}</div>
 
 {% endblock %}
