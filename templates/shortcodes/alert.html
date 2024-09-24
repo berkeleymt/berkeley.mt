@@ -6,10 +6,12 @@
   {% set icon_class = "bi bi-info-circle-fill" %}
 {% endif %}
 
-<div class="{{ class }} border p-4 rounded-xl not-prose flex-1 flex flex-col gap-2">
-  <p class="uppercase text-xs text-gray-500 flex gap-2 items-center">
+<div class="{{ class }} border p-4 rounded-xl flex-1 flex flex-col gap-2">
+  <p class="not-prose uppercase text-xs text-gray-500 flex gap-2 items-center">
     <i class="{{ icon_class }}"></i>
     <span>{{ title }}</span>
   </p>
-  <p class="text-base font-medium">{{ body }}</p>
+  <div class="prose text-base font-medium">
+    {{ body | markdown | safe }}
+  </div>
 </div>
