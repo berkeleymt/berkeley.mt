@@ -6,4 +6,4 @@ If you have questions about BMT, math competitions in general, or questions abou
 
 You can pre-submit questions and RSVP for the Zoom link through the following Google Form:
 
-{% button_link(href="https://forms.gle/Mr1xJY4Pz27XuScf6") %} Apply Now! {% end %}
+{% button_link(href="https://forms.gle/Mr1xJY4Pz27XuScf6") %} Submit Questions and RSVP Now! {% end %}
