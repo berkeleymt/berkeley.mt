@@ -1,5 +1,6 @@
 +++
 title = "BMT 2024 Q&A Session on October 11, 4–5 pm!"
+aliases = ["/qanda", "/QandA", "/QAndA"]
 +++
 
 If you have questions about BMT, math competitions in general, or questions about how our tournament will go on November 2nd, come to our Zoom Q&A on Friday, October 11 from 4–5 pm!
