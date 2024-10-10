@@ -19,7 +19,7 @@ Interested in sponsoring us? Contact us at <finance@berkeley.mt>!
 {% grid(class="grid-cols-2") %}
 
 - [![Citadel](citadel.png)](https://www.citadel.com/)
-- [![Susquehana International Group](sig.svg)](https://sig.com/)
+- [![HRT](hrt.png)](https://www.hudsonrivertrading.com/)
 - [![Atomic Grader](ag.svg)](https://atomicgrader.com/)
 
 {% end %}
@@ -28,7 +28,6 @@ Interested in sponsoring us? Contact us at <finance@berkeley.mt>!
 
 {% grid(class="grid-cols-3") %}
 
-- [![HRT](hrt.png)](https://www.hudsonrivertrading.com/)
 - [![Simons Institute](simons.png)](https://simons.berkeley.edu/)
 
 {% end %}
