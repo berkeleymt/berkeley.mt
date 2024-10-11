@@ -10,7 +10,7 @@ Interested in sponsoring us? Contact us at <finance@berkeley.mt>!
 
 [![Jane Street](jane-street.svg)](https://www.janestreet.com/)
 
-[![blackpenredpen](bprp.png)](https://www.blackpenredpen.com/)
+[![blackpenredpen](bprp.png)](https://www.youtube.com/c/blackpenredpen/)
 
 [![ContestDojo](contestdojo.png)](https://contestdojo.com/)
 
