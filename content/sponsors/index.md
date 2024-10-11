@@ -29,6 +29,7 @@ Interested in sponsoring us? Contact us at <finance@berkeley.mt>!
 {% grid(class="grid-cols-3") %}
 
 - [![Simons Institute](simons.png)](https://simons.berkeley.edu/)
+- [![Wolfram](wolfram.png)](https://www.wolfram.com/))
 
 {% end %}
 
