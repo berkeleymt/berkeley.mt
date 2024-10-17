@@ -23,7 +23,7 @@ If you are unfamiliar with ContestDojo, please read our [ContestDojo Guide].
 {% alert(title="For teams of 1 and 2", status="info") %}
 We noticed many organizations with only 1 or 2 seats purchased. We believe the team-based aspects are crucial to the BMT experience, and **strongly** recommend teams of at least 4. Additionally, teams smaller than 4 students will be disadvantaged by our scoring model.
 
-Although it is too late to purchase additional seats, you may merge with other organizations who are already registered for the event. We have organized a [Teammate Finder] spreadsheet for this use. Instructions are located on the spreadsheet.
+Although it is too late to purchase additional seats, you may merge with other organizations who are already registered for the event. We have organized a [Teammate Finder](https://docs.google.com/spreadsheets/d/1u5m7o9AKRmRdWDF1NqUc9Hs3rYGWKwtpREvVAGL5YvE/edit?gid=0#gid=0) spreadsheet for this use. Instructions are located on the spreadsheet.
 {% end %}
 
 ## Schedule and Check-in
