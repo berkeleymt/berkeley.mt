@@ -4,6 +4,9 @@
 {% elif status == "info" %}
   {% set class = "bg-blue-50 border-blue-200" %}
   {% set icon_class = "bi bi-info-circle-fill" %}
+{% elif status == "warning" %}
+  {% set class = "bg-orange-50 border-orange-200" %}
+  {% set icon_class = "bi bi-exclamation-circle-fill" %}
 {% endif %}
 
 <div class="{{ class }} border p-4 rounded-xl flex-1 flex flex-col gap-2">
