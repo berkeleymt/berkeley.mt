@@ -1,0 +1,30 @@
+{% extends "page.html" %} {% block after_page_content %}
+<div class="prose">
+    <h2>Our Team</h2>
+
+    {% set current_term = page.extra.about.terms | first %}
+
+    <div class="grid grid-flow-col gap-4 not-prose">
+        {% for column in current_term.columns %}
+        <div class="flex flex-col gap-4 items-start">
+            {% for role in column %}
+            <div>
+                {% if role.heading %}
+                <h3 class="font-semibold text-xl">{{ role.title }}</h3>
+                {% else %}
+                <h4 class="font-semibold">{{ role.title }}</h4>
+                {% endif %}
+                {% if role.members %}
+                <ul class="not-prose">
+                    {% for member in role.members %}
+                    <li>{{ member }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
