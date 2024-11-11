@@ -13,7 +13,7 @@ experience as well.
 
 The online tournament will consist of an asynchronous Power Round on **November
 30–December 1, 2024**, as well as the live event, including the Guts and 
-Focus/General rounds on **January 20, 2024**.
+Focus/General rounds on **December 7, 2024**.
 
 BMT is open to high school students in **grades 12 or below**. In particular,
 there is **no lower age limit** to compete in BMT; advanced middle school
@@ -250,4 +250,4 @@ Although we will provide an official ranking as well as certificates for
 top-scoring teams, there will not be physical awards for the online tournament.
 
 [Team-Finder]:
-  https://docs.google.com/spreadsheets/d/1VTS3qT-5ZGub5Q1FHm-Ruybz-i0EKDH_PmMxmPRS7fM/edit?usp=sharing
+  https://docs.google.com/spreadsheets/d/1mY4kX2pINp2-4qBjuHhf_3gyhyZVl_dsg5D_iBrMNQw/edit?usp=sharing 
