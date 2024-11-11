@@ -20,8 +20,7 @@ there is **no lower age limit** to compete in BMT; advanced middle school
 students are welcome to compete. You may register **up to 6 students per team**.
 There are no restrictions on how many teams/students can participate.
 
-{% button_link(href="/news/bmt-2024-online-logistics") %} Event Logistics
-{% end %} {% button_link(href="https://contestdojo.com/") %}
+{% button_link(href="https://contestdojo.com/") %}
 Registration Portal {% end %}
 
 # Registration Information
@@ -29,7 +28,7 @@ Registration Portal {% end %}
 ## Registration, Waivers, and Pricing
 
 You may register for BMT 2024 Online on ContestDojo any time until November 27,
-2024 at 11:59 US Pacific Time.
+2024 at 11:59 PM US Pacific Time.
 
 Registration is performed on ContestDojo. Coaches may register up to 6 people
 per team, and ContestDojo will allow them to assign and modify teams up until
