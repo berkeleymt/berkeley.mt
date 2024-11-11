@@ -52,7 +52,7 @@ late registration.
 
 - Students must be in **grade 12 or below** to be eligible for BMT.
 - Students do not have to be from the same school.
-- Students **must not have competed in a prior iteration of BMT 2023**,
+- Students **must not have competed in a prior iteration of BMT 2024**,
   including the California version or any of our satellites.
 - Coaches may register as few or as many teams as they wish.
 
