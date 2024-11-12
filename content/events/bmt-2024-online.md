@@ -42,7 +42,7 @@ consent waivers through this portal. Contestants will NOT be allowed to take the
 contest without having a signed liability waiver.**
 
 Any questions about the ContestDojo portal should be directed to us at
-<team@berkeley.mt>
+<team@berkeley.mt>.
 
 \*For students facing financial hardship, please contact
 <finance@berkeley.mt> for a fee waiver. We will not honor refunds during
