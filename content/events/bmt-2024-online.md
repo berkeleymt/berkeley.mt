@@ -15,10 +15,10 @@ The online tournament will consist of an asynchronous Power Round on **November
 30–December 1, 2024**, as well as the live event, including the Guts and 
 Focus/General rounds on **December 7, 2024**.
 
-BMT is open to high school students in **grades 12 or below**. In particular,
-there is **no lower age limit** to compete in BMT; advanced middle school
-students are welcome to compete. You may register **up to 6 students per team**.
-There are no restrictions on how many teams/students can participate.
+BMT is intended for high school students, but is open to all students **12th grade 
+and below**, including advanced students at younger grade levels. You may register
+**up to 6 students per team**. There are no restrictions on how many teams/students 
+can participate.
 
 {% button_link(href="https://contestdojo.com/") %}
 Registration Portal {% end %}
@@ -42,10 +42,10 @@ consent waivers through this portal. Contestants will NOT be allowed to take the
 contest without having a signed liability waiver.**
 
 Any questions about the ContestDojo portal should be directed to us at
-<questions@bmt.berkeley.edu>.
+<team@berkeley.mt>
 
 \*For students facing financial hardship, please contact
-<finance@bmt.berkeley.edu> for a fee waiver. We will not honor refunds during
+<finance@berkeley.mt> for a fee waiver. We will not honor refunds during
 late registration.
 
 ## Student Eligibility
