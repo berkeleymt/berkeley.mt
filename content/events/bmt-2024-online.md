@@ -23,8 +23,6 @@ can participate.
 {% button_link(href="https://contestdojo.com/") %}
 Registration Portal {% end %}
 
-# Registration Information
-
 ## Registration, Waivers, and Pricing
 
 You may register for BMT 2024 Online on ContestDojo any time until November 28,
@@ -63,7 +61,7 @@ team of at least 4 due to our scoring guidelines. For students who do not have a
 full team, we have organized a [Teammate Finder] spreadsheet. Follow all
 outlined steps in the spreadsheet.
 
-# Online Tournament Logistics
+## Online Tournament Logistics
 
 BMT 2024 Online will take place in two parts:
 
