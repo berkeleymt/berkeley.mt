@@ -80,7 +80,7 @@ Power Round will be a proof-based team round, and will be graded by our staff.
 | November 30, 9:00 AM    | Power Round Released  |
 | December 1, 8:59 PM    | Power Submissions Due |
 
-The live event will take place on December 7, 2024. A **prelimary** schedule is
+The live event will take place on December 7, 2024. A **preliminary** schedule is
 provided below:
 
 | Time (US Pacific Time) | Event                    |
