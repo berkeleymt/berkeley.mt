@@ -86,8 +86,8 @@ provided below:
 | Time (US Pacific Time) | Event                    |
 | ---------------------- | ------------------------ |
 | 10:00 – 10:30 AM       | Opening Ceremony         |
-| 10:30 – 12:45 PM       | General and Focus Rounds |
-| 12:45 PM – 1:45        | Lunch                    |
+| 10:30 AM – 12:45 PM       | General and Focus Rounds |
+| 12:45 – 1:45 PM        | Lunch                    |
 | 1:45 – 3:30 PM         | Guts Round               |
 | 3:30 – 4:30 PM         | Speaker Event            |
 | 4:30 – 5:00 PM         | Closing Ceremony         |
