@@ -146,6 +146,9 @@ more students/teams. Additionally, if a student takes the General Test instead
 of the two Focus Tests, their score will only count for half as many points as
 the Focus Test combinations would.
 
+The asynchronous Power Round will not be counted towards the overall team score;
+we will have a separate ranking category for the Power Round.
+
 ### Tiebreakers
 
 A tiebreaking procedure is employed for top awards for each test. Ties are not
@@ -239,9 +242,9 @@ last submission will be considered.
     </tr>
     <tr>
       <th>% of Score</td>
-      <td>30%</td>
-      <td colspan="2">40%</td>
-      <td>30%</td>
+      <td>Separate Ranking</td>
+      <td colspan="2">60%</td>
+      <td>40%</td>
     </tr>
     <tr>
       <th>Important Scoring Notes</td>
