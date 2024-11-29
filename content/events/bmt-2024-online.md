@@ -20,8 +20,8 @@ and below**, including advanced students at younger grade levels. You may regist
 **up to 6 students per team**. There are no restrictions on how many teams/students
 can participate.
 
-{% button_link(href="https://contestdojo.com/") %}
-Registration Portal {% end %}
+{% button_link(href="https://contestdojo.com/") %} Registration Portal {% end %}
+{% button_link(href="/news/bmt-2024-online-logistics/") %} Logistics Page {% end %}
 
 ## Registration, Waivers, and Pricing
 
@@ -68,27 +68,7 @@ BMT 2024 Online will take place in two parts:
 - **Asynchronous Power Round**: November 30–December 1, 2024
 - **Live Event**: December 7, 2024
 
-The asynchronous Power Round will take place on November 30–December 1, 2024.
-Tests will be released on November 30, 2024 at 9:00 AM US Pacific Time, and
-submissions will be due on December 1, 2024 at 8:59 PM US Pacific Time. The
-Power Round will be a proof-based team round, and will be graded by our staff.
-
-| Time (US Pacific Time) | Event                 |
-| ---------------------- | --------------------- |
-| November 30, 9:00 AM   | Power Round Released  |
-| December 1, 8:59 PM    | Power Submissions Due |
-
-The live event will take place on December 7, 2024. A **preliminary** schedule is
-provided below:
-
-| Time (US Pacific Time) | Event                    |
-| ---------------------- | ------------------------ |
-| 10:00 – 10:30 AM       | Opening Ceremony         |
-| 10:30 AM – 12:45 PM    | General and Focus Rounds |
-| 12:45 – 1:45 PM        | Lunch                    |
-| 1:45 – 3:30 PM         | Guts Round               |
-| 3:30 – 4:30 PM         | Activities               |
-| 4:30 – 5:00 PM         | Closing Ceremony         |
+For more details, see our [logistics page](/news/bmt-2024-online-logistics/).
 
 ## Contest Format
 

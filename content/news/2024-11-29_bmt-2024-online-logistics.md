@@ -109,15 +109,15 @@ one with more correct answers.
 After the Guts Round, we will be hosting student activities. These are optional
 activities that promote recreational math, and include the following:
 
-- **Estimathon** — A team-based contest that combines
-  trivia, game theory, strategy, and mathematical thinking. Teams of ~6 will be
-  under a time limit to work on a set of 13 Fermi-style problems.
+- **Estimathon** — A contest combining trivia, strategic planning, and sharp
+  mathematical thinking. Teams of ~6 will race against the clock to tackle a
+  challenging set of 13 Fermi-style problems, testing their ability to think fast
+  and outsmart the competition.
 
-- **Fraudulent Math** — Attention all students, mathematics is under attack by
-  people who claim that we need “rigor” and “logic” to justify our answers. Join
-  us for an event of Fraudulent Math, where we will compete to see who can come
-  up with the most outlandish, mind bending proofs of false statements and who
-  can create impossible constructions.
+- **Fraudulent Math** — Attention all students! Mathematics is under attack by
+  people who claim that we need _rigor_ and _logic_ to justify our answers.
+  Compete to see who can come up with the most outlandish, mind-bending falsehoods
+  and impossible constructions.
 
 - **Puzzle Platter** — Dive into a delectable feast of mind-bending puzzles from
   BmMT's greatest hits! Challenge yourself with our curated collection of the most
