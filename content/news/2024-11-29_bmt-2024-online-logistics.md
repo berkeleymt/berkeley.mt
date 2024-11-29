@@ -55,6 +55,11 @@ As this process might take some time, we encourage teams to reserve at least 30
 minutes to submit their work to ensure that all work can be submitted before the
 deadline.
 
+**Only one team member should upload their Gradescope submission.** Please
+ensure that the email on your Gradescope account matches the email address
+on ContestDojo. Please also clearly indicate the team name and ID on your
+submission PDF.
+
 ## 12/7 Main Event Logistics
 
 The main event will take place on December 7, 2024. A schedule is provided
