@@ -72,7 +72,7 @@ For more details, see our [logistics page](/news/bmt-2024-online-logistics/).
 
 ## Contest Format
 
-### Power Round (90 mins)
+### Power Round (Async)
 
 The Power Round is a **proof-based team round.** Contestants will answer a
 series of questions centered around a single topic not typically seen in
@@ -213,7 +213,7 @@ last submission will be considered.
     </tr>
     <tr>
       <th>Duration</td>
-      <td>90 mins</td>
+      <td>Async</td>
       <td>90 mins</td>
       <td>60 mins</td>
       <td>75 mins</td>
