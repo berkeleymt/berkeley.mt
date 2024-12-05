@@ -12,6 +12,8 @@ understand the logistics of the event!
 <!-- more -->
 
 {% button_link(href="/events/bmt-2024-online") %} Event Details {% end %}
+{% button_link(href="/news/bmt-2024-online-logistics-update") %} 12/5 Logistics
+Update {% end %}
 
 ## Important Information
 

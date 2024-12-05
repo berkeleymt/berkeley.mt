@@ -22,6 +22,8 @@ can participate.
 
 {% button_link(href="https://contestdojo.com/") %} Registration Portal {% end %}
 {% button_link(href="/news/bmt-2024-online-logistics/") %} Logistics Page {% end %}
+{% button_link(href="/news/bmt-2024-online-logistics-update/") %} 12/5 Logistics
+Update {% end %}
 
 ## Registration, Waivers, and Pricing
 
