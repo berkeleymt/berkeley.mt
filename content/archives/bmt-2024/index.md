@@ -51,38 +51,3 @@ title = "Power"
 problems = "power-problems.pdf"
 #answers = "power-answers.pdf"
 #solutions = "power-solutions.pdf"
-
-[[extra.archive.tests]]
-title = "General Tiebreaker"
-problems = "general-tiebreaker-problems.pdf"
-#answers = "general-tiebreaker-answers.pdf"
-solutions = "general-tiebreaker-solutions.pdf"
-
-[[extra.archive.tests]]
-title = "Algebra Tiebreaker"
-problems = "algebra-tiebreaker-problems.pdf"
-#answers = "algebra-tiebreaker-answers.pdf"
-solutions = "algebra-tiebreaker-solutions.pdf"
-
-[[extra.archive.tests]]
-title = "Calculus Tiebreaker"
-problems = "calculus-tiebreaker-problems.pdf"
-#answers = "calculus-tiebreaker-answers.pdf"
-solutions = "calculus-tiebreaker-solutions.pdf"
-
-[[extra.archive.tests]]
-title = "Discrete Tiebreaker"
-problems = "discrete-tiebreaker-problems.pdf"
-#answers = "discrete-tiebreaker-answers.pdf"
-solutions = "discrete-tiebreaker-solutions.pdf"
-
-[[extra.archive.tests]]
-title = "Geometry Tiebreaker"
-problems = "geometry-tiebreaker-problems.pdf"
-#answers = "geometry-tiebreaker-answers.pdf"
-solutions = "geometry-tiebreaker-solutions.pdf"
-+++
-
-{% button_link(href="results.pdf") %} Contest Results {% end %}
-{% button_link(href="results-china.pdf") %} Contest Results (China) {% end %}
-{% button_link(href="results-online.pdf") %} Contest Results (Online) {% end %}
