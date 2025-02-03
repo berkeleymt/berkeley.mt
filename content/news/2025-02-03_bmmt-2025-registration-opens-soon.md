@@ -2,6 +2,13 @@
 title = "Registration for BmMT 2025 and BmMT 2025 Online opens on February 10"
 +++
 
+{% alert(title="BmMT 2025 Q&A session", status="info") %}
+We will be holding a Q&A session about math competitions and BmMT on February 6
+from 7–8 PM. If you are interested, please visit the
+[news post](/news/bmmt-2025-qanda-session/) for details on how to attend and
+submit questions!
+{% end %}
+
 How are you doing, fellow math enthusiasts?
 
 BmMT is coming back on Saturday, April 12, and we're excited to see you
