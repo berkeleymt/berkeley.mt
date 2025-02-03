@@ -6,13 +6,13 @@ aliases = ["/bmmt-2025-online"]
 
 The online, synchronous version of our middle school tournament! For those who
 are unable to travel long-distance to California, or weren't able to register
-for BMT 2024 due to capacity limitations, we're offering an online experience as
+for BmMT 2025 due to capacity limitations, we're offering an online experience as
 well.
 
 <!-- more -->
 
 The online tournament will take place synchronously on **June 7, 2025**.
-If you're looking for our in-person tournament on April 12, 2024, details can
+If you're looking for our in-person tournament on April 12, 2025, details can
 be found on the [BmMT 2025 Event Page](/events/bmmt-2025/).
 
 This page contains primarily registration details. Detailed information on the
