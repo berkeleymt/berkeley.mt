@@ -30,7 +30,7 @@ event date.
 
 ## Registration Timeline
 
-Registration will open on **Monday, February 20 at 9:00 AM PT** and will close
+Registration will open on **Monday, February 10 at 9:00 AM PT** and will close
 **Friday, May 30 at 11:59 PM PT**.
 
 The fee for the online tournament is **$8 per student**.
