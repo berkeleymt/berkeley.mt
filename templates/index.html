@@ -47,11 +47,13 @@
 
 {# News post notification, if there is one #}
 
+<div class="flex flex-col gap-4">
 {% set news_section = get_section(path="news/_index.md") %}
-{% set news_post = news_section.pages | first %}
-{% if news_post %}
+{% set news_posts = news_section.pages | slice(end=2) %}
+{% for news_post in news_posts %}
 {{ self::news_post(title=news_post.title, href=news_post.permalink) }}
-{% endif %}
+{% endfor %}
+</div>
 
 {# Main banner & description #}
 
