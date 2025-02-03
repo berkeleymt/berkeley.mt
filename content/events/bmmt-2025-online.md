@@ -11,6 +11,13 @@ well.
 
 <!-- more -->
 
+{% alert(title="BmMT 2025 Q&A session", status="info") %}
+We will be holding a Q&A session about math competitions and BmMT on February 6
+from 7–8 PM. If you are interested, please visit the
+[news post](/news/bmmt-2025-qanda-session/) for details on how to attend and
+submit questions!
+{% end %}
+
 The online tournament will take place synchronously on **June 7, 2025**.
 If you're looking for our in-person tournament on April 12, 2025, details can
 be found on the [BmMT 2025 Event Page](/events/bmmt-2025/).
