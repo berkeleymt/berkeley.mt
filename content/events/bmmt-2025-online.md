@@ -18,10 +18,10 @@ from 7–8 PM. If you are interested, please visit the
 submit questions!
 {% end %}
 
-BmMT is open to middle school students in **grades 8 or below**. In particular,
+BmMT Online is open to middle school students in **grades 8 or below**. In particular,
 there is **no lower age limit** to participate; advanced elementary school
 students are welcome to compete. Teams may have up to 5 students. You do not
-have to be local to the Bay Area or California to register for BmMT.
+have to be local to the Bay Area or California to register for BmMT Online.
 
 The online tournament will take place synchronously on **June 7, 2025**.
 If you're looking for our in-person tournament on April 12, 2025, details can
