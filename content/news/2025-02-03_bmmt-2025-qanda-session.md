@@ -23,3 +23,7 @@ If you know anyone who is interested in math competitions but might not be as
 familiar, please spread the word about the Q&A!
 
 ~ The BMT Team
+
+## Update: Slides Posted!
+
+View the slides from the Q&A session [here](/uploads/sp25/bmmt-2025-qanda-slides.pdf).
