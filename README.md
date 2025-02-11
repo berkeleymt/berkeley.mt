@@ -5,10 +5,9 @@ Welcome! This is the new website for the
 organization that aims to spread mathematics and the spirit of mathematical
 competition globally.
 
-This site is still in early development. One of the primary goals is to make it
-easy for anyone to add and update content. To that end, the site is built with
-[Zola](https://getzola.org/), a static-site-generator that renders content from
-Markdown files.
+One of the primary goals is to make it easy for anyone to add and update
+content. To that end, the site is built with [Zola](https://getzola.org/), a
+static-site-generator that renders content from Markdown files.
 
 If you're familiar with Git and GitHub, it should already be fairly easy to edit
 content following the instructions listed in this readme. However, we're also
