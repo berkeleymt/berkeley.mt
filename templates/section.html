@@ -46,11 +46,21 @@
     {% endif %}
   </p>
 
-  <p class="text-xl">
-    <a href="{{ page.permalink | safe }}">
-      {{ macros::newline_break(str=page.title) }}
-    </a>
-  </p>
+  <a href="{{ page.permalink | safe }}" class="transition-all rounded origin-left hover:bg-gray-200 hover:-m-1 hover:p-1 ">
+    <div class="flex flex-col gap-2">
+      <p class="text-xl">
+        {{ macros::newline_break(str=page.title) }}
+      </p>
+
+      {% if page.taxonomies["tags"] %}
+      <p class="text-sm text-gray-500 flex gap-2">
+        {% for tag in page.taxonomies["tags"] %}
+        <span>#{{ tag }}</span>
+        {% endfor %}
+      </p>
+      {% endif %}
+    </div>
+  </a>
   {% endfor %}
 
   {% endfor %}
