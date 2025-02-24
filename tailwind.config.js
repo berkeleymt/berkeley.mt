@@ -6,6 +6,7 @@ module.exports = {
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
+            "--tw-prose-hr": theme("colors.gray.300"),
             maxWidth: "none",
             h1: {
               fontWeight: "bold",
