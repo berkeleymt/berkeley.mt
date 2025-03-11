@@ -9,8 +9,19 @@
 
   {% if page.date %}
   <h2 class="text-xl">
+    {% if page.authors %}
+    {{ page.authors | join(sep=", ") }} •
+    {% endif %}
     {{ page.date | date(format="%A, %B %-d, %Y, %-I:%M %p") | trim_end_matches(pat=", 12:00 AM") }}
   </h2>
+  {% endif %}
+
+  {% if page.taxonomies["tags"] %}
+  <p class="text-sm text-gray-500 flex gap-2">
+    {% for tag in page.taxonomies["tags"] %}
+    <span>#{{ tag }}</span>
+    {% endfor %}
+  </p>
   {% endif %}
 </div>
 

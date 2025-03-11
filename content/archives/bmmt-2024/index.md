@@ -7,7 +7,7 @@ label = "Problems"
 key = "problems"
 
 [[extra.archive.columns]]
-label = "Answers"
+label = "Solutions"
 key = "solutions"
 
 [[extra.archive.tests]]
@@ -18,19 +18,21 @@ solutions = "puzzle-solutions.pdf"
 [[extra.archive.tests]]
 title = "Individual"
 problems = "individual-problems.pdf"
-solutions = "individual-answers.pdf"
+#solutions = "individual-answers.pdf"
+solutions = "individual-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Team"
 problems = "team-problems.pdf"
-solutions = "team-answers.pdf"
+#solutions = "team-answers.pdf"
+solutions = "team-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Relay"
 problems = "relay-problems.pdf"
-solutions = "relay-answers.pdf"
+#solutions = "relay-answers.pdf"
+solutions = "relay-solutions.pdf"
 +++
 
-Under construction currently! Puzzle rules, satellite results, and problem solutions out soon!
 
 {% button_link(href="results.pdf") %} Contest Results {% end %}
