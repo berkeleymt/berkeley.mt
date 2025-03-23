@@ -38,6 +38,14 @@ We are offering lunch for $12 per sandwich, which can be purchased as add-ons on
 
 Students, coaches and parents are also free to find their own food. Many restaurants can be found on the south side of campus (~10 minute walk from rooms) and in Downtown Berkeley (~15 minute walk from rooms).
 
+## Hotels
+
+As a reminder, for teams who are interested in booking a hotel room, we have a 
+[Hotel Room Block](https://tinyurl.com/Bay-Area-Math-Tournament-Grp) with discounted rates around contest weekend at the Hotel Shattuck Plaza. The cost is $239 per night before taxes and fees.
+
+Teams wishing to join the hotel block must book by Tuesday, March 25.
+
+
 ---
 
 As a reminder, the event page for BmMT 2025 can be viewed at <https://berkeley.mt/events/bmmt-2025/>.
