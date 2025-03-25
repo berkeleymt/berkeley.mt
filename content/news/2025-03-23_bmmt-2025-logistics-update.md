@@ -2,7 +2,11 @@
 title = "BmMT 2025 Logistics Update"
 +++
 
-Dear coaches,
+_Shown below is a transcription of an email sent out to all coaches and students registered for BmMT 2025._
+
+---
+
+Dear coaches and students,
 
 Thank you for registering for BmMT 2025 on Saturday, April 12, 2025! This year’s BmMT will be the largest tournament we’ve run to date, with 1,200 expected students, and we’re excited to have you. Please read this email **in its entirety** to ensure your team is ready for the event.
 
