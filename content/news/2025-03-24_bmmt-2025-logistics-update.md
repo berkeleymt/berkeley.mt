@@ -14,7 +14,7 @@ Thank you for registering for BmMT 2025 on Saturday, April 12, 2025! This yearâ€
 
 {% button_link(href="/events/bmmt-2025") %} Event Details {% end %}
 
-## Rosters, Waivers, Refunds of Unused Seats
+## Registration Reminders
 
 Each seat signifies a spot for one student at BmMT. Note that having purchased seats alone does not constitute a completed registration; you must also invite students and assign students to teams on ContestDojo. **Only students that have been assigned a team will be able to participate.** Additionally, all students must complete a waiver and photo release form through ContestDojo.
 
@@ -47,7 +47,7 @@ More details about check-in and the online check-in option will be released soon
 
 We are aware that some students may have morning obligations conflicting with the start of BmMT. Unfortunately, we are not able to make any further rearrangements to the schedule at this time.
 
-We highly encourage students to be there for the whole event, students may arrive late. Coaches with students arriving late should check them in with the rest of their team in the morning, and coordinate with them to join their team directly, in their testing room, once they arrive.
+While we highly encourage students to be there for the whole event, students may arrive late. Coaches with students arriving late should check them in with the rest of their team in the morning, and coordinate with them to join their team directly, in their testing room, once they arrive.
 
 We will also have an information booth in Dwinelle Hall to help late students know where they need to go.
 
