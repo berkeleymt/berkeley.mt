@@ -1,5 +1,5 @@
 +++
-title = "BmMT 2025 Logistics Update 1"
+title = "BmMT 2025 Logistics Update"
 +++
 
 Dear coaches,
@@ -26,11 +26,28 @@ You have until Friday, April 4 to purchase additional late registration seats, a
 
 ## Schedule and Check-in
 
-BmMT 2025 will begin at 8:00am and end before 6:30pm.
+BmMT 2025 will run from 8:00 AM to 6:30 PM.
+
+| Time     | Student Event              |
+| -------- | -------------------------- |
+| 8:00 AM  | Check-in                   |
+| 9:00 AM  | Puzzle & Individual Rounds |
+| 12:00 PM | Lunch                      |
+| 1:15 PM  | Team & Relay Rounds        |
+| 4:00 PM  | Activities                 |
+| 5:30 PM  | Awards                     |
 
 As in past years, coaches must check in their teams, where they will receive room assignments, tournament guides, pre-ordered T-shirts, and other materials. Coaches will also have the option to **check-in online** during the week before the tournament to expedite the morning process. Coaches that choose to check-in online must still come to the check-in area to pick up their materials.
 
-More details about check-in and the online check-in option will be released soon, along with a detailed schedule of events for the day. **Please stay alert for this email, as understanding the check-in process is crucial to ensuring your students will be able to begin their tests on time.** Because of the scale of this year’s event, check-in will also be split between multiple rooms, so please take extra care.
+More details about check-in and the online check-in option will be released soon, along with a detailed schedule of events for the day. **Please stay alert for this email, as understanding the check-in process is crucial to ensuring your students will be able to begin their tests on time.**
+
+### Late Arrivals
+
+We are aware that some students may have morning obligations conflicting with the start of BmMT. Unfortunately, we are not able to make any further rearrangements to the schedule at this time.
+
+We highly encourage students to be there for the whole event, students may arrive late. Coaches with students arriving late should check them in with the rest of their team in the morning, and coordinate with them to join their team directly, in their testing room, once they arrive.
+
+We will also have an information booth in Dwinelle Hall to help late students know where they need to go.
 
 ## Food
 
@@ -40,11 +57,10 @@ Students, coaches and parents are also free to find their own food. Many restaur
 
 ## Hotels
 
-As a reminder, for teams who are interested in booking a hotel room, we have a 
+As a reminder, for teams who are interested in booking a hotel room, we have a
 [Hotel Room Block](https://tinyurl.com/Bay-Area-Math-Tournament-Grp) with discounted rates around contest weekend at the Hotel Shattuck Plaza. The cost is $239 per night before taxes and fees.
 
 Teams wishing to join the hotel block must book by **Tuesday, March 25**.
-
 
 ---
 
