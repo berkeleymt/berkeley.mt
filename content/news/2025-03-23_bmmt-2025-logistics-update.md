@@ -16,8 +16,6 @@ Thank you for registering for BmMT 2025 on Saturday, April 12, 2025! This yearâ€
 
 ## Rosters, Waivers, Refunds of Unused Seats
 
-If you have more than one seat purchased, you have received an email from us with this announcement's text.
-
 Each seat signifies a spot for one student at BmMT. Note that having purchased seats alone does not constitute a completed registration; you must also invite students and assign students to teams on ContestDojo. **Only students that have been assigned a team will be able to participate.** Additionally, all students must complete a waiver and photo release form through ContestDojo.
 
 If you are unfamiliar with ContestDojo, please read our [ContestDojo Guide].
