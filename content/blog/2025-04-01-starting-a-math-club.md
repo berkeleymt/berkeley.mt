@@ -35,7 +35,8 @@ Once you have a rough guideline for activities and goals for your club, feel fre
 
 When asking your teacher, be mindful of their busy schedule and be prepared to independently run your club. Once you secure a teacher-sponsor, make sure you communicate with them frequently about your plans and what times work best. And if it doesn’t work out, keep trying!
 
-###Advertise!
+### Advertise!
+
 If you can, find a group of friends to help you set up the club by being in leadership positions. Once you have people and a location, decide on a time for the first meeting and make a flyer! Put up the flyer in classes where you think people might be interested, ask teachers to make announcements, try to get on your school news or school announcements, and make a social media account! If you want, get in on the fundraiser opportunities your school might have so you can make some money for events!
 
 ###First Meeting!
