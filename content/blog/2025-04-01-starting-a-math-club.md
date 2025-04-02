@@ -39,7 +39,8 @@ When asking your teacher, be mindful of their busy schedule and be prepared to i
 
 If you can, find a group of friends to help you set up the club by being in leadership positions. Once you have people and a location, decide on a time for the first meeting and make a flyer! Put up the flyer in classes where you think people might be interested, ask teachers to make announcements, try to get on your school news or school announcements, and make a social media account! If you want, get in on the fundraiser opportunities your school might have so you can make some money for events!
 
-###First Meeting!
+### First Meeting!
+
 Prepare a presentation for your first meeting! Talk about your plans for the club, including your activities, any competitions you might want to register for (like BMT!), different topics you’re interested in, and more! 
 
 ---
