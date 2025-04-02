@@ -29,7 +29,8 @@ If you want your club to focus on preparing for competitions or learning new con
 
 You should check out our [test archives](https://berkeley.mt/archives/ ) to find an ample amount of questions to practice with. We’re also excited that we’ve just released our first two Berkeley mini Math Training Worksheets which will be in the same location as the old tests. These worksheets are meant to introduce the concepts that commonly show up in math competitions despite not being in standard school curriculum. One worksheet covers a fundamental principle of combinatorics, and another covers modular arithmetic, a key concept of number theory.
 
-###Ask a teacher!
+### Ask a teacher!
+
 Once you have a rough guideline for activities and goals for your club, feel free to ask a teacher for a classroom space or a signature if you need to register your club. They don’t have to be a math teacher - ask any teacher you're comfortable with, but your favorite math teacher might be a good place to start. 
 
 When asking your teacher, be mindful of their busy schedule and be prepared to independently run your club. Once you secure a teacher-sponsor, make sure you communicate with them frequently about your plans and what times work best. And if it doesn’t work out, keep trying!
