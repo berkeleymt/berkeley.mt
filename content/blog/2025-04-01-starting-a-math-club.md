@@ -3,7 +3,7 @@ title = "Starting a Math Club"
 authors = ["Nathan Alejandria, Claire Foster, Carlyana Kwong"]
 
 [taxonomies] 
-tags = ["advice", "bmmt", "math-competitions" "math clubs"]
+tags = ["advice", "math-clubs"]
 +++
 So you want to start a math club...
 
