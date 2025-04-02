@@ -17,7 +17,8 @@ Welcome back to the BMT Blog! With BmMT 2025 and BmMT 2025 Online approaching, m
 
 With that being said, here are some steps you can take to start up your own math club:
 
-###Brainstorm!
+### Brainstorm!
+
 What would you like to do with the club? Ideas include:
 - Studying and reviewing together.
 - Running practice competitions.
