@@ -26,4 +26,4 @@ familiar, please spread the word about the Q&A!
 
 ## Update: Slides Posted!
 
-View the slides from the Q&A session [here](/uploads/sp25/bmmt-2025-qanda-slides.pdf).
+View the slides from the Q&A session [here](/assets/bmmt-2025/qanda-slides.pdf).
