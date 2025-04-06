@@ -129,7 +129,7 @@ More parking options are listed at the [UC Berkeley Parking and Transportation w
   <td>
     <b>Pre-purchased Lunch Pick-up</b> — Outside Dwinelle Hall
     <br><b>T-shirt Sales</b> <i>(while supplies last)</i> — Outside Dwinelle Hall
-    <br><b>Problem Disputes</b> <i>(Power, Individual)</i> — Dwinelle 215
+    <br><b>Problem Disputes</b> <i>(Puzzle, Individual)</i> — Dwinelle 215
   </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ More parking options are listed at the [UC Berkeley Parking and Transportation w
   <td>
     <b>Activities</b> — See activities descriptions below
     <br><b>Tiebreaker</b> <i>(by invite only*)</i> — Wheeler 130
-    <br><b>Problem Disputes</b> (guts) — Wheeler 126
+    <br><b>Problem Disputes</b> <i>(Team, Relay)</i> — Wheeler 126
   </td>
 </tr>
 <tr>
