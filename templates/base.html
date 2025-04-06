@@ -116,6 +116,14 @@
     </div>
     {% endblock %}
   </div>
+
+  <script type="module">
+    import twemoji from 'https://cdn.jsdelivr.net/npm/twemoji@14.0.2/+esm'
+    twemoji.parse(document.body, {
+      className: "inline w-[1.25em] h-[1.25em] not-prose",
+      base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/',
+    })
+  </script>
 </body>
 
 </html>

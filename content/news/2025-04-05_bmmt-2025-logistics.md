@@ -229,21 +229,46 @@ activities that promote recreational math, and include the following:
 
   A few lucky students will even go home with a free Klein bottle!
 
+- **Estimathon [Hearst Field Annex A1]** — A contest combining trivia,
+  strategic planning, and sharp mathematical thinking. Teams of \~6 will race
+  against the clock to tackle a challenging set of 13 Fermi-style problems,
+  testing their ability to think fast and outsmart the competition.
+
 - **Countdown [Dwinelle 179, 182, 183, 187]** — Face off against 63 other
   challengers in the ultimate mental math showdown! In this fast-paced,
   single-elimination bracket, you'll need to bring both speed and smarts... win
   and move on, lose and you're out! Seconds matter, and only the quickest will
   survive. Just one will come out on top... will it be you?
 
-- **Estimathon [Hearst Field Annex A1]** — A contest combining trivia,
-  strategic planning, and sharp mathematical thinking. Teams of \~6 will race
-  against the clock to tackle a challenging set of 13 Fermi-style problems,
-  testing their ability to think fast and outsmart the competition.
-
-- **Proofs Without Words [Dwinelle 223, 229]** — Get ready to see math like
-  never before! Take concepts you might already know and explore them in fun,
-  visual, and totally different ways. We'll give you new ways to think and cool
-  ideas to show off the next time you find yourself in a boring classroom.
+- <div class="flex flex-col gap-4 items-start">
+    <div class="flex gap-4">
+      <span>📐🧠🖼️🙊❌🗣️</span>
+      <span>👉</span>
+      <span>🇩​🇼​🇮​🇳</span>
+      <span>2️⃣2️⃣3️⃣➕2️⃣2️⃣9️⃣</span>
+      <span>👈</span>
+    </div>
+    <div class="col-span-2 grid grid-cols-[repeat(9,1.25em)] gap-1">
+    <i></i><i></i><i></i><i></i>🟩<i></i><i></i><i></i><i></i>
+    <i></i><i></i>🟨<i></i>🟩<i></i>🟥🟨🟩
+    🟥➕🟨➕🟩🟰🟨🟨🟩
+    <i></i><i></i>🟨<i></i>🟩<i></i>🟩🟩🟩
+    <i></i><i></i><i></i><i></i>🟩<i></i><i></i><i></i><i></i>
+    </div>
+    <button
+      class="not-prose inline-block text-sm bg-teal-500 text-white py-1 px-2 rounded shadow-sm hover:-translate-y-0.5 hover:shadow transition-all {% if class %}{{ class }}{% endif %}"
+      onclick="document.getElementById('pww').classList.toggle('hidden')"
+    >
+        Click to toggle textual description
+    </button>
+    <div id="pww" class="hidden p-2 bg-gray-200 rounded">
+      <b>Proofs Without Words [Dwinelle 223, 229]</b> — Get ready to see math
+      like never before! Take concepts you might already know and explore them
+      in fun, visual, and totally different ways. We'll give you new ways to
+      think and cool ideas to show off the next time you find yourself in a
+      boring classroom.
+    </div>
+  </div>
 
 - **Origami [Wheeler 200, 202, 204]** — Want to take home a cute souvenir from
   BmMT, or build a beautiful spiky ball with us? We've got a variety of paper
