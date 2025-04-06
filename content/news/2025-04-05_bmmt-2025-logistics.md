@@ -150,7 +150,7 @@ More parking options are listed at the [UC Berkeley Parking and Transportation w
   <td>
     Activities
     <br>Tiebreaker
-    <br>Disputes (5:00 – 5:30)
+    <br>Disputes (4:00–4:30)
   </td>
   <td>
     <b>Activities</b> — See activities descriptions below
