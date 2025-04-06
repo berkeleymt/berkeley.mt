@@ -201,7 +201,8 @@ Additionally, we will have the following activites for parents.
   UC Berkeley campus! Signups will be announced in the parent lounge, after Dr.
   Po-Shen Loh's talk.
 
-- **Tangled Topology: The Magic of Klein Bottles! (4 PM) [Dwinelle 155]** —
+- **Tangled Topology: A Journey Through Mathematical Surfaces! (4 PM)
+  [Dwinelle 155]** —
   Join us for an engaging presentation by Cliff Stoll—astronomer, author, and
   creator of handcrafted glass Klein bottles through his company Acme Klein
   Bottle. Hear about the fascinating world of topology, exploring concepts such
@@ -213,7 +214,8 @@ Additionally, we will have the following activites for parents.
 After the Relay Round, we will be hosting student activities. These are optional
 activities that promote recreational math, and include the following:
 
-- **Tangled Topology: The Magic of Klein Bottles! [Dwinelle 155]** — Join us
+- **Tangled Topology: A Journey Through Mathematical Surfaces!
+  [Dwinelle 155]** — Join us
   for an engaging presentation by Cliff Stoll—astronomer, author, and creator
   of handcrafted glass Klein bottles through his company Acme Klein Bottle. Hear
   about the fascinating world of topology, exploring concepts such as Möbius
