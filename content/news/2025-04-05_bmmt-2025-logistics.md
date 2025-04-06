@@ -40,7 +40,7 @@ Starting April 5, coaches can optionally begin the check-in process online on
 recommend all organizations that are ready to check in to do so online before
 Saturday.
 
-If you check-in online, you must still show up in the morning to pick up materials.
+If you check in online, you must still show up in the morning to pick up materials.
 {% end %}
 
 Check-in / materials pick-up will happen in Dwinelle Hall at **8:00 AM**:
