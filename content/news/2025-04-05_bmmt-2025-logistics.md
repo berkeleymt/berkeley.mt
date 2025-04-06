@@ -20,12 +20,17 @@ Coaches will receive physical copies of the Tournament Guide at check-in.
 
 ## Important Information
 
-During BMT, we will be posting updates to the website (<https://berkeley.mt>),
+During BmMT, we will be posting updates to the website (<https://berkeley.mt>),
 including Tiebreaker qualifiers. Please be on the lookout for any announcements.
 For any day-of directions, questions or concerns ask a BMT staff member or
 volunteer wearing a dark purple shirt.
 
 An annotated campus map is provided at the bottom of this page.
+
+### Information Booth
+
+For students lost or arriving late, we will hold an information booth in
+the lobby of Dwinelle Hall after the Puzzle Round begins at 9:00 AM.
 
 ## Arrival and Check-in
 
@@ -40,8 +45,8 @@ If you check-in online, you must still show up in the morning to pick up materia
 
 Check-in / materials pick-up will happen in Dwinelle Hall at **8:00 AM**:
 
-- **Dwinelle 155** — Check-in
-- **Dwinelle 145** — Materials pick-up for teams that checked in online
+- **Check-in** _(if haven't checked in online)_ — Dwinelle 155
+- **Materials Pick-up** _(if checked in online)_ — Dwinelle 145
 
 At check-in, coaches will receive:
 
@@ -61,10 +66,10 @@ At check-in, coaches will receive:
 - A voucher for pre-ordered t-shirts. This voucher can be redeemed at a table
   near the check-in area.
 
-- A vouchers for pre-ordered lunches, which can be redeemed during the lunch
+- A voucher for pre-ordered lunches, which can be redeemed during the lunch
   break in front of Wheeler Hall.
 
-**Check in closes promptly at 8:45 AM**, so please be on time. If you arrive
+**Check-in closes promptly at 8:45 AM**, so please be on time. If you arrive
 after this time, your team will be late to the Puzzle Round, which puts them at
 a great disadvantage.
 
@@ -154,7 +159,7 @@ More parking options are listed at the [UC Berkeley Parking and Transportation w
   </td>
 </tr>
 <tr>
-  <td>6:45 – 7:30 PM</td>
+  <td>5:30 – 6:30 PM</td>
   <td>Awards Ceremony</td>
   <td>
     The Awards Ceremony will take place simultaneously in Pauley Ballroom
