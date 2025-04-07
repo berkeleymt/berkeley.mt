@@ -67,7 +67,7 @@ At check-in, coaches will receive:
   near the check-in area.
 
 - A voucher for pre-ordered lunches, which can be redeemed during the lunch
-  break in front of Wheeler Hall.
+  break in front of Dwinelle Hall.
 
 **Check-in closes promptly at 8:45 AM**, so please be on time. If you arrive
 after this time, your team will be late to the Puzzle Round, which puts them at
