@@ -230,7 +230,7 @@ activities that promote recreational math, and include the following:
   A few lucky students will even go home with a free Klein bottle!
 
 - **Estimathon [Hearst Field Annex A1]** — A contest combining trivia,
-  strategic planning, and sharp mathematical thinking. Teams of \~6 will race
+  strategic planning, and sharp mathematical thinking. Teams of \~3 will race
   against the clock to tackle a challenging set of 13 Fermi-style problems,
   testing their ability to think fast and outsmart the competition.
 
