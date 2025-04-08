@@ -220,25 +220,25 @@ After the Relay Round, we will be hosting student activities. These are optional
 activities that promote recreational math, and include the following:
 
 - **Tangled Topology: A Journey Through Mathematical Surfaces!
-  [Dwinelle 155]** — Join us
-  for an engaging presentation by Cliff Stoll—astronomer, author, and creator
-  of handcrafted glass Klein bottles through his company Acme Klein Bottle. Hear
-  about the fascinating world of topology, exploring concepts such as Möbius
-  loops and the Klein bottle, a surface with no distinguishable "inside" or
-  "outside."
+  [Dwinelle 155]** —
+  Join us for an engaging presentation by Cliff Stoll—astronomer, author, and
+  creator of handcrafted glass Klein bottles through his company Acme Klein
+  Bottle. Hear about the fascinating world of topology, exploring concepts such
+  as Möbius loops and the Klein bottle, a surface with no distinguishable
+  "inside" or "outside."
 
   A few lucky students will even go home with a free Klein bottle!
 
-- **Estimathon [Hearst Field Annex A1]** — A contest combining trivia,
-  strategic planning, and sharp mathematical thinking. Teams of \~6 will race
-  against the clock to tackle a challenging set of 13 Fermi-style problems,
-  testing their ability to think fast and outsmart the competition.
+- **Estimathon [Hearst Field Annex A1]** — Got wit and strategy? Come to our
+  Estimathon®, a contest combining trivia, strategic planning, and sharp
+  mathematical thinking. Teams of up to 3 will race against the clock to
+  tackle a challenging set of 13 Fermi-style problems, testing their ability
+  to think fast and outsmart the competition.
 
 - **Countdown [Dwinelle 179, 182, 183, 187]** — Face off against 63 other
-  challengers in the ultimate mental math showdown! In this fast-paced,
-  single-elimination bracket, you'll need to bring both speed and smarts... win
-  and move on, lose and you're out! Seconds matter, and only the quickest will
-  survive. Just one will come out on top... will it be you?
+  challengers in a mental math showdown! In this fast-paced, single-elimination
+  bracket, you'll need to bring both speed and smarts. Seconds matter, and only
+  the quickest will survive. One will come out on top... will it be you?
 
 - <div class="flex flex-col gap-4 items-start">
     <div class="flex gap-4">
