@@ -49,7 +49,7 @@ Overall, enjoy the day! Have a fun time, bond with your team and think about som
 
 After the tests, we have lots of options for activities, so we encourage you to feel free to go to whatever activity interests you. We hope activities are a place where you can meet new people and make new friends, so don’t feel like you necessarily have to stick with your team. For Countdown, make sure to be there right at the start of the activity in order to participate.
 
-Students - Thank your parents and coaches for supporting you and waiting around while you solve math problems all day! Parents - we hope you have a good time, too! Check out our parent activities described in the [logistics post](https://berkeley.mt/news/bmmt-2025-logistics/). Feel free to tag any photos or posts on social media with #BMMT2025.
+Students - Thank your parents and coaches for supporting you and waiting around while you solve math problems all day! Parents - we hope you have a good time, too! Check out our parent activities described in the [logistics post](https://berkeley.mt/news/bmmt-2025-logistics/). Feel free to tag any photos or posts on social media with #BmMT2025.
 
 ---
 
