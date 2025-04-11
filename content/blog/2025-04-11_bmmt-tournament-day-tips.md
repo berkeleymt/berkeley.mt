@@ -22,7 +22,7 @@ ii. Make sure you bring
 
 iii. Read the [tournament guide]((https://berkeley.mt/assets/bmmt-2025/tournament-guide.pdf). It’s a one-stop shop for information about the day’s schedule, important locations (and a map!)
 
-iv. Remember that we will be posting updates during the tournament to the [website](<[https://berkeley.mt](https://berkeley.mt)>), so be on the lookout for announcements.
+iv. Remember that we will be posting updates during the tournament to the [website](https://berkeley.mt), so be on the lookout for announcements.
 iii. If you pre-purchased lunch, you can pick it up outside Dwinelle Hall at lunchtime with the vouchers your coach was given at check in. We will also be selling our extra T-shirts (while supplies last).
 v. The day will be long, so get enough sleep the night before! We don’t advise cramming for the tournament and sacrificing sleep, it won’t be worth it and we want you to enjoy the day!
 
