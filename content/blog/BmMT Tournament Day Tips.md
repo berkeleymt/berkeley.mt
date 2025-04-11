@@ -12,7 +12,7 @@ Hi everyone! Here is some advice about how to maximize your experience at BmMT, 
 ---
 
 ### 1. Logistics Reminders  
-i. Arrive early, read the \[logistics post\](https://berkeley.mt/news/bmmt-2025-logistics/) carefully. It’s especially helpful if you can **check in online**, and read the check in logistics so you know what to expect!  
+i. Arrive early, read the [logistics post](https://berkeley.mt/news/bmmt-2025-logistics/) carefully. It’s especially helpful if you can **check in online**, and read the check in logistics so you know what to expect!  
 
 ii. Make sure you bring 
 
@@ -22,7 +22,7 @@ ii. Make sure you bring
 
 iii. Read the [tournament guide]([https://berkeley.mt/assets/bmmt-2025/tournament-guide.pdf](https://berkeley.mt/assets/bmmt-2025/tournament-guide.pdf). It’s a one-stop shop for information about the day’s schedule, important locations (and a map!) 
 
-iv. Remember that we will be posting updates during the tournament to the \[website\]([https://berkeley.mt](https://berkeley.mt)), so be on the lookout for announcements.  
+iv. Remember that we will be posting updates during the tournament to the [website]([https://berkeley.mt](https://berkeley.mt)), so be on the lookout for announcements.  
 iii. If you pre-purchased lunch, you can pick it up outside Dwinelle Hall at lunchtime with the vouchers your coach was given at check in. We will also be selling our extra T-shirts (while supplies last).  
 v. The day will be long, so get enough sleep the night before! We don’t advise cramming for the tournament and sacrificing sleep, it won’t be worth it and we want you to enjoy the day!
 
@@ -39,7 +39,7 @@ v. The day will be long, so get enough sleep the night before! We don’t advise
    - Some students may feel more confident in some topics than others, so it is advisable to read every problem!  
    - When approaching a problem that seems very difficult, start by thinking about the key aspects of the problem. Try to make yourself think about everything you know about that is relevant (formulas, properties, etc.) and then go from there.  
    - If you find yourself stuck on a single problem for a long time, feel free to move on and come back to that problem later on during the round.  
-   - In general, don’t be discouraged if the problems look very tricky. They are meant to be challenging and make you think. Just showing up and learning something is a big accomplishment\! We hope this is an experience that helps you grow in your journey of learning and doing math.
+   - In general, don’t be discouraged if the problems look very tricky. They are meant to be challenging and make you think. Just showing up and learning something is a big accomplishment! We hope this is an experience that helps you grow in your journey of learning and doing math.
 
 ### 3. Beyond the test
 
@@ -47,12 +47,12 @@ Overall, enjoy the day! Have a fun time, bond with your team and think about som
 
 After the tests, we have lots of options for activities, so we encourage you to feel free to go to whatever activity interests you. We hope activities are a place where you can meet new people and make new friends, so don’t feel like you necessarily have to stick with your team. For Countdown, make sure to be there right at the start of the activity in order to participate. 
 
-Students - Thank your parents and coaches for supporting you and waiting around while you solve math problems all day! Parents - we hope you have a good time, too! Check out our parent activities described in the [logistics post](https://berkeley.mt/news/bmmt-2025-logistics/). Feel free to tag any photos or posts on social media with \#BMMT2025. 
+Students - Thank your parents and coaches for supporting you and waiting around while you solve math problems all day! Parents - we hope you have a good time, too! Check out our parent activities described in the [logistics post](https://berkeley.mt/news/bmmt-2025-logistics/). Feel free to tag any photos or posts on social media with #BMMT2025. 
 
 ---
 
 We’re so excited to see you, and hope you have a great time!
 
-Best, \<br\>  
+Best,<br>  
 Your friends at BMT
 
