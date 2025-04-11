@@ -20,7 +20,7 @@ ii. Make sure you bring
 - Water bottle
 - Snacks (that aren’t messy, please keep the classrooms clean!)
 
-iii. Read the [tournament guide]([https://berkeley.mt/assets/bmmt-2025/tournament-guide.pdf](https://berkeley.mt/assets/bmmt-2025/tournament-guide.pdf). It’s a one-stop shop for information about the day’s schedule, important locations (and a map!)
+iii. Read the [tournament guide]((https://berkeley.mt/assets/bmmt-2025/tournament-guide.pdf). It’s a one-stop shop for information about the day’s schedule, important locations (and a map!)
 
 iv. Remember that we will be posting updates during the tournament to the [website](<[https://berkeley.mt](https://berkeley.mt)>), so be on the lookout for announcements.
 iii. If you pre-purchased lunch, you can pick it up outside Dwinelle Hall at lunchtime with the vouchers your coach was given at check in. We will also be selling our extra T-shirts (while supplies last).
