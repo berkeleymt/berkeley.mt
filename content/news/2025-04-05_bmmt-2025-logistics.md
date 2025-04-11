@@ -50,11 +50,6 @@ Check-in / materials pick-up will happen in Dwinelle Hall at **8:00 AM**:
 
 At check-in, coaches will receive:
 
-- An envelope for submitting the Puzzle Round for each team in their
-  organization. **Teams will not be able to compete in the Puzzle Round without
-  this envelope.** It is the coaches responsibility to pass the envelopes to the
-  students.
-
 - A sticker sheet containing name tags for each student with their ID, as well
   as their room assignments. **Students are responsible for remembering their
   student ID throughout the day. If a student writes an incorrect ID on their
