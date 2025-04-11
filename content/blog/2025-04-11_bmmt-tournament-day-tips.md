@@ -3,7 +3,7 @@ title = "How to get the most out of BmMT"
 authors = ["BMT Team"]
 
 [taxonomies]
-tags = ["advice", "bmmt", "tournament day"]
+tags = ["advice", "bmmt", "tournament-day"]
 +++
 
 Hi everyone! Here is some advice about how to maximize your experience at BmMT, which is in person _this Saturday_, April 12!
