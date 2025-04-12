@@ -16,6 +16,3 @@ Reminder that we have a new [Automatic Tiebreaking Policy](https://berkeley.mt/e
 - 202C — Daniel Li
 - 204B — William Wu
 - 236A — Skanda Mahesh
-
-- 013E — Benjamin Fu (Seattle Infinity Math Circle, Washington Gold)
-- 027A — Alex Zhan (Think Academy, Think Team A)
