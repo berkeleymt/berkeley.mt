@@ -3,3 +3,5 @@ result/
 public/
 static/processed_images/
 static/style.css
+.DS_Store
+**/.DS_Store
