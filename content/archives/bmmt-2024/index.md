@@ -34,5 +34,8 @@ problems = "relay-problems.pdf"
 solutions = "relay-solutions.pdf"
 +++
 
-
 {% button_link(href="results.pdf") %} Contest Results {% end %}
+
+We have [walkthrough videos](https://www.youtube.com/playlist?list=PLaoLAdRXfERVxzquznE7C5Mimqw7I2tEJ) now! 
+{{ youtube_list(id="PLaoLAdRXfERVxzquznE7C5Mimqw7I2tEJ") }}
+
