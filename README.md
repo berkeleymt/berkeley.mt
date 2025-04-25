@@ -109,6 +109,8 @@ zola serve
 
 It is recommended to build the site using the [Nix package manager]:
 
+For those looking to install Nix, it is recommended to use the [Deterministic Systems Installer](https://determinate.systems/nix-installer/) in the case that you decide to uninstall Nix in the future.
+
 ```bash
 nix build
 ```
