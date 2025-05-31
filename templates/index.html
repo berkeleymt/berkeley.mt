@@ -48,7 +48,7 @@
 {# News post notification, if there is one #}
 <div class="flex flex-col gap-4">
   {% set news_section = get_section(path="news/_index.md") %}
-  {% set news_posts = news_section.pages | slice(end=2) %}
+  {% set news_posts = news_section.pages | slice(end=1) %}
   {% for news_post in news_posts %}
   {{ self::post_notification(
     title=news_post.title,
@@ -60,7 +60,7 @@
   {% endfor %}
 
   {% set blog_section = get_section(path="blog/_index.md") %}
-  {% set blog_posts = blog_section.pages | slice(end=1) %}
+  {% set blog_posts = blog_section.pages | slice(end=0) %}
   {% for blog_post in blog_posts %}
   {{ self::post_notification(
     title=blog_post.title,
@@ -99,6 +99,15 @@
 
 <div class="flex flex-col md:grid grid-cols-6 gap-4 max-w-4xl">
   {{ self::event(
+  class="col-span-6 bg-gradient-to-br shadow-lg from-fuchsia-700 to-fuchsia-900 text-white",
+  name="Berkeley Math Tournament 2025",
+  date="November 8, 2025",
+  href="#",
+  description="Our on-campus fall tournament offers teams of high school students the opportunity to share their interest in
+  mathematics with like-minded individuals and to get a taste of the concepts studied in higher mathematics."
+  ) }}
+
+  {{ self::event(
   class="col-span-4 bg-gradient-to-br shadow-lg from-indigo-700 to-indigo-900 text-white",
   name="Berkeley mini Math Tournament 2025",
   date="April 12, 2025",
@@ -122,15 +131,6 @@
   date="May 24–25, 2025",
   href="https://www.seedasdan.asia/en/bmmt-en/",
   description="Our partner ASDAN hosts this in-person tournament in Beijing, China for students in East Asia."
-  ) }}
-
-  {{ self::event(
-  class="col-span-6 bg-gradient-to-br shadow-lg from-fuchsia-700 to-fuchsia-900 text-white",
-  name="Berkeley Math Tournament 2024",
-  date="November 2, 2024",
-  href="/events/bmt-2024/",
-  description="Our on-campus fall tournament offers teams of high school students the opportunity to share their interest in
-  mathematics with like-minded individuals and to get a taste of the concepts studied in higher mathematics."
   ) }}
 </div>
 
