@@ -32,11 +32,12 @@ schedule and other day-of-tournament details will be released closer to the
 event date.
 
 {% button_link(href="https://contestdojo.com/") %} Registration Portal {% end %}
+{% button_link(href="/news/bmmt-2025-online-logistics/") %} Logistics Page {% end %}
 
 ## Registration Timeline
 
 Registration will open on **Monday, February 10 at 9:00 AM PT** and will close
-**Friday, May 30 at 11:59 PM PT**.
+**Friday, June 6 at 11:59 PM PT**.
 
 The fee for the online tournament is **$8 per student**.
 
@@ -78,9 +79,7 @@ BmMT 2025 Online Teammate Finder
 
 ## Schedule
 
-We expect the event to begin no earlier than 7:30 AM PT and end no later than 7:30 PM PT.
-
-A detailed event schedule will be released closer to the event date.
+For detailed event logistics, see our [logistics page](/news/bmmt-2025-online-logistics/).
 
 ## Contest Format & Scoring
 
@@ -97,9 +96,7 @@ incorrect, even if equivalent.
 
 ## Activities
 
-During the afternoon, we will be hosting student activities. These are optional
-activities that promote recreational math. Detailed information about activities
-will be released closer to the event date.
+For information about activities, see our [logistics page](/news/bmmt-2025-online-logistics/).
 
 ## Frequently Asked Questions
 
