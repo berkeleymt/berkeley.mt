@@ -47,8 +47,7 @@ The fee for the online tournament is **$8 per student**.
 - Students do not have to be local to the Bay Area, California, or the U.S. to
   participate in BmMT. However, we also online BmMT 2025 on June 7, 2025, which
   may be more convenient for some students.
-- Coaches may register multiple teams under the same organization. We ask that
-  organizations provide at least one adult chaperone for every two teams.
+- Coaches may register multiple teams under the same organization.
 
 ## How to Register
 
@@ -103,11 +102,10 @@ For information about activities, see our [logistics page](/news/bmmt-2025-onlin
 ### Are calculators or other reference material allowed?
 
 Graph paper and calculators are prohibited, but protractors, rulers, and
-compasses are permitted. Blank white scratch paper will be provided for all
-participants. All answers must be exact, reduced, and simplified. Illegible
-answers will not be graded. Cheating in any form will not be tolerated, and
-failure to comply with all rules may result in immediate and irreversible
-disqualification.
+compasses are permitted. Blank white scratch paper is allowed. All answers must
+be exact, reduced, and simplified. Illegible answers will not be graded.
+Cheating in any form will not be tolerated, and failure to comply with all rules
+may result in immediate and irreversible disqualification.
 
 ### Can middle school students compete? What if I don't have a team?
 
