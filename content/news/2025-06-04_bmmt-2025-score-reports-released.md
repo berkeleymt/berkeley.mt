@@ -10,12 +10,13 @@ delay is not acceptable and we have streamlined the process for future events.
 On ContestDojo, students can download their **individual score report**, which
 details their own performance on the Individual Round, and their team's
 performance on the Puzzle, Team, and Relay Rounds, with accompanying statistics.
-The report also contains a scan of each answer sheet submitted.
+The report also contains a scan of each answer sheet submitted, and certificates
+for Honorable Mention and Distinguished Honorable Mention winners.
 
 In addition to the individual score reports for each member, coaches can also
-download **team score reports**, which contain the Individual Round details and
-scans for _all_ team members, as well as a detailed breakdown of the calculation
-of the team's overall score.
+download **team score reports**, which contain the Individual Round details,
+scans, and certificates for _all_ team members, as well as a detailed breakdown
+of the calculation of the team's overall score.
 
 Due to an error in our automatic tiebreaking procedure this past April, we’ve
 decided to void the auto tiebreaking policy for all rounds. Students’ updated
