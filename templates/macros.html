@@ -1,6 +1,14 @@
 {% macro nav_link(path, label) %}
 {% set href = get_url(path=path) %}
-{% set active = current_url | default(value='') == href %}
+{% set base_url = get_url(path='/') ~ '/'  %}
+{% set curr_default = current_url | default(value='') %}
+{% if curr_default == '' or curr_default == '/' or href == base_url %}
+	{% set active = curr_default == href %}
+{% elif curr_default is starting_with(href) %}
+	{% set active = true %}
+{% else %}
+	{% set active = false %}
+{% endif %}
 
 {# Desktop version #}
 <p class="hidden md:block first:hidden text-gray-400">⁄</p>
