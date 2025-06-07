@@ -1,5 +1,5 @@
 +++
-title = "BmMT Online 2025 Final Reminders"
+title = "BmMT 2025 Online Final Reminders"
 +++
 
 We hope that you are as excited as we are about BmMT Online tomorrow! Here are some final announcements and reminders before the contest tomorrow. Please read this update carefully!
