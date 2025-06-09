@@ -1,6 +1,6 @@
 +++
-title = "BmMT 2025 Archive"
-date = 2025-04-12
+title = "BmMT 2025 Online Archive"
+date = 2025-06-07
 
 [[extra.archive.columns]]
 label = "Rules"
@@ -42,4 +42,3 @@ solutions = "relay-solutions.pdf"
 +++
 
 {% button_link(href="results.pdf") %} Contest Results {% end %}
-{% button_link(href="results-china.pdf") %} Contest Results (China) {% end %}
