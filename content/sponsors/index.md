@@ -10,6 +10,8 @@ Interested in sponsoring us? Contact us at <finance@berkeley.mt>!
 
 [![Jane Street](jane-street.svg)](https://www.janestreet.com/)
 
+[![Citadel](citadel.png)](https://www.citadel.com/)
+
 [![blackpenredpen](bprp.png)](https://www.youtube.com/c/blackpenredpen/)
 
 [![ContestDojo](contestdojo.png)](https://contestdojo.com/)
@@ -18,7 +20,6 @@ Interested in sponsoring us? Contact us at <finance@berkeley.mt>!
 
 {% grid(class="grid-cols-2") %}
 
-- [![Citadel](citadel.png)](https://www.citadel.com/)
 - [![HRT](hrt.png)](https://www.hudsonrivertrading.com/)
 - [![Atomic Grader](ag.svg)](https://atomicgrader.com/)
 
