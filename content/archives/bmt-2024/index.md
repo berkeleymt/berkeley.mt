@@ -7,48 +7,48 @@ label = "Problems"
 key = "problems"
 
 [[extra.archive.columns]]
-label = "Answers"
-key = "answers"
+label = "Solutions"
+key = "solutions"
 
 [[extra.archive.tests]]
 title = "General"
 problems = "general-problems.pdf"
-answers = "general-answers.pdf"
-#solutions = "general-solutions.pdf"
+#answers = "general-answers.pdf"
+solutions = "general-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Algebra"
 problems = "algebra-problems.pdf"
-answers = "algebra-answers.pdf"
-#solutions = "algebra-solutions.pdf"
+#answers = "algebra-answers.pdf"
+solutions = "algebra-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Calculus"
 problems = "calculus-problems.pdf"
-answers = "calculus-answers.pdf"
-#solutions = "calculus-solutions.pdf"
+#answers = "calculus-answers.pdf"
+solutions = "calculus-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Discrete"
 problems = "discrete-problems.pdf"
-answers = "discrete-answers.pdf"
-#solutions = "discrete-solutions.pdf"
+#answers = "discrete-answers.pdf"
+solutions = "discrete-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Geometry"
 problems = "geometry-problems.pdf"
-answers = "geometry-answers.pdf"
-#solutions = "geometry-solutions.pdf"
+#answers = "geometry-answers.pdf"
+solutions = "geometry-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Guts"
 problems = "guts-problems.pdf"
-answers = "guts-answers.pdf"
-#solutions = "guts-solutions.pdf"
+#answers = "guts-answers.pdf"
+solutions = "guts-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Power"
 problems = "power-problems.pdf"
 #answers = "power-answers.pdf"
-#solutions = "power-solutions.pdf"
+solutions = "power-solutions.pdf"
 +++
