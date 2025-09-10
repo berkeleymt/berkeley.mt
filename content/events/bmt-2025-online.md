@@ -13,7 +13,9 @@ experience as well.
 
 The online tournament will consist of an asynchronous Power Round on **November
 29–30, 2025**, as well as the live event, including the Guts and Focus/General
-rounds on **December 6, 2025**.
+rounds on **December 6, 2025**. If you're looking for our in-person tournament
+on November 8, 2025, details can be found on the
+[BMT 2025 Event Page](/events/bmt-2025/).
 
 BMT is intended for high school students, but is open to all students **12th grade
 and below**, including advanced students at younger grade levels. You may register
