@@ -26,8 +26,8 @@ can participate.
 
 ## Registration, Waivers, and Pricing
 
-You may register for BMT 2025 Online on ContestDojo any time until November 27,
-2025 at 11:59 PM US Pacific Time.
+You may register for BMT 2025 Online on ContestDojo starting Monday, September
+15 at 9:00 AM and until November 27, 2025 at 11:59 PM US Pacific Time.
 
 Registration is performed on ContestDojo. Coaches may register up to 6 people
 per team, and ContestDojo will allow them to assign and modify teams up until
