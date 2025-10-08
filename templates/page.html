@@ -27,9 +27,11 @@
 
 {% block before_page_content %}{% endblock %}
 
+{% if page.content %}
 <main id="content" class="prose">
   {{ page.content | safe }}
 </main>
+{% endif %}
 
 {% block after_page_content %}{% endblock %}
 

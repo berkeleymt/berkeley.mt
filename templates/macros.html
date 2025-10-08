@@ -1,3 +1,44 @@
+{% macro section_listing(section) %}
+{% if section.pages %}
+<div class="grid grid-cols-[max-content_1fr] gap-x-8 gap-y-4 -mt-4">
+  {% for year, pages in section.pages | group_by(attribute="year") %}
+  <h2 class="mt-4 col-span-2 text-sm text-gray-400">{{ year }}</h2>
+
+  {% for page in pages %}
+  <p class="text-gray-400 leading-7 text-sm">
+    {% set date = page.date | date(format="%b %-d") %}
+    {% set time = page.date | date(format="%-I:%M %p") %}
+
+    {% if time == "12:00 AM" %}
+    <span class="text-gray-500 text-base">{{ date }}</span>
+    {% else %}
+    <span class="text-gray-500 text-base">{{ date }}</span>, {{ time }}
+    {% endif %}
+  </p>
+
+  <a href="{{ page.permalink | safe }}" class="transition-all rounded origin-left hover:bg-gray-200 -m-1 p-1 hover:scale-[101%]">
+    <div class="flex flex-col gap-2">
+      <p class="text-xl">
+        {{ macros::newline_break(str=page.title) }}
+      </p>
+
+      {% if page.taxonomies["tags"] %}
+      <p class="text-sm text-gray-500 flex gap-2">
+        {% for tag in page.taxonomies["tags"] %}
+        <span>#{{ tag }}</span>
+        {% endfor %}
+      </p>
+      {% endif %}
+    </div>
+  </a>
+  {% endfor %}
+
+  {% endfor %}
+</div>
+{% endif %}
+{% endmacro section_listing %}
+
+
 {% macro nav_link(path, label) %}
 {% set href = get_url(path=path) %}
 {% set active = current_url | default(value='') == href %}

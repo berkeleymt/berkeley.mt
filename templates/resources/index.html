@@ -1,0 +1,33 @@
+{% import "macros.html" as macros %}
+
+{% extends "page.html" %}
+
+{% block after_page_content %}
+
+{% set sections = [
+  get_section(path="resources/bmmt-worksheets/_index.md"),
+  get_section(path="resources/bmt-to-aime/_index.md"),
+  get_section(path="resources/archives/_index.md"),
+] %}
+
+{% for section in sections %}
+
+{% if loop.index > 1 %}
+<hr />
+{% endif %}
+
+<div class="prose">
+  <h3>
+    {{ macros::newline_break(str=section.title) }}
+  </h3>
+
+  {% if section.content %}
+  {{ section.content | safe }}
+  {% endif %}
+</div>
+
+{{ macros::section_listing(section=section) }}
+
+{% endfor %}
+
+{% endblock %}
