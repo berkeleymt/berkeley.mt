@@ -21,13 +21,12 @@ directory.
 
 To add or edit a page, simply work on a file in the appropriate location:
 
-| Path                        | Page               | Notes                                        |
-| --------------------------- | ------------------ | -------------------------------------------- |
-| `content/_index.md`         | The Home tab       | Fancy banner is in the `index.html` template |
-| `content/about.md`          | The About tab      |                                              |
-| `content/sponsors/index.md` | The Sponsors tab   | In a folder to colocate sponsor logos        |
-| `content/news/*.md`         | News posts         | File names should be prefixed with the date  |
-| `content/events/*.md`       | Event detail pages |                                              |
+| Path                  | Page               | Notes                                        |
+| --------------------- | ------------------ | -------------------------------------------- |
+| `content/_index.md`   | The Home tab       | Fancy banner is in the `index.html` template |
+| `content/about.md`    | The About tab      |                                              |
+| `content/news/*.md`   | News posts         | File names should be prefixed with the date  |
+| `content/events/*.md` | Event detail pages |                                              |
 
 ## Writing Markdown
 

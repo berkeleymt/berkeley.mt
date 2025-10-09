@@ -62,7 +62,7 @@
 </head>
 
 <body>
-  <div class="max-w-4xl min-h-screen p-4 md:p-8 mx-auto flex flex-col gap-4 md:gap-8">
+  <div class="max-w-4xl min-h-screen p-4 md:p-8 mx-auto flex flex-col gap-8">
     {% block header %}
     <header class="flex flex-col gap-4 text-center">
       <a class="mx-auto" href="/"><img src="/assets/logo.svg" alt="BMT Logo" width="80"></a>
@@ -74,7 +74,6 @@
         {{ macros::nav_link(path="@/news/_index.md", label="News") }}
         {{ macros::nav_link(path="@/blog/_index.md", label="Blog") }}
         {{ macros::nav_link(path="@/about.md", label="About") }}
-        {{ macros::nav_link(path="@/sponsors/index.md", label="Sponsors") }}
         {{ macros::nav_link(path="@/resources/index.md", label="Resources") }}
         {{ macros::nav_link(path="@/events/bmt-2025.md", label="BMT 2025") }}
         {{ macros::nav_link(path="@/events/bmt-2025-online.md", label="BMT 2025 Online") }}
@@ -84,7 +83,7 @@
 
     <hr>
 
-    <div id="content-wrapper" class="flex-1 flex flex-col gap-4 md:gap-8 relative">
+    <div id="content-wrapper" class="flex-1 flex flex-col gap-8 relative">
       {% block content %}{% endblock %}
     </div>
 

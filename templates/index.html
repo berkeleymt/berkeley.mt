@@ -39,6 +39,23 @@
 </div>
 {% endmacro %}
 
+{# Macro for sponsor tier #}
+
+{% macro sponsor_tier(title, sponsors, grid_cols) %}
+{% if sponsors %}
+<div>
+  <h3 class="font-bold text-lg md:text-2xl mb-4">{{ title }}</h3>
+  <div class="grid {{ grid_cols }} gap-8">
+    {% for sponsor in sponsors %}
+    <a href="{{ sponsor.href }}" class="hover:opacity-80 transition-opacity">
+      <img src="{{ sponsor.src }}" alt="{{ sponsor.alt }}" class="w-full">
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+{% endmacro %}
+
 {# =============================== #}
 {# = STARTING THE ACTUAL CONTENT = #}
 {# =============================== #}
@@ -95,7 +112,7 @@
 
 {# Events section #}
 
-<h2 class="font-bold text-xl md:text-3xl">Recent & Upcoming Events</h2>
+<h2 class="font-bold text-2xl">Recent & Upcoming Events</h2>
 
 <div class="flex flex-col md:grid grid-cols-6 gap-4 max-w-4xl">
   {{ self::event(
@@ -141,5 +158,26 @@
 <div class="prose">
   {{ section.content | safe }}
 </div>
+
+<hr>
+
+{# Sponsors #}
+
+<h2 class="font-bold text-2xl">2025–2026 Sponsors</h2>
+
+{% for tier in section.extra.sponsor_tiers %}
+{% if loop.index > 1 %}
+<hr>
+{% endif %}
+
+<p class="text-gray-500 text-center text-base">{{ tier.title }}</p>
+<div class="flex gap-x-16 gap-y-4 flex-wrap justify-center items-center">
+  {% for sponsor in tier.sponsors %}
+  <a href="{{ sponsor.href }}">
+    <img src="{{ sponsor.src }}" alt="{{ sponsor.alt }}" class="{{ tier.img_class }}">
+  </a>
+  {% endfor %}
+</div>
+{% endfor %}
 
 {% endblock %}

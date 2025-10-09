@@ -1,9 +1,35 @@
 +++
 title = "Berkeley Math Tournament"
 description = "A UC Berkeley student-led organization that aims to spread mathematics and the spirit of mathematical competition throughout the Bay Area by presenting students with interesting, original, hand-crafted problems."
+
+[[extra.sponsor_tiers]]
+title = "Platinum Sponsors"
+img_class = "max-h-12"
+sponsors = [
+  { alt = "Hudson River Trading", src = "assets/sponsors/hrt.png", href = "https://www.hudsonrivertrading.com/" },
+]
+
+[[extra.sponsor_tiers]]
+title = "Diamond Sponsors"
+img_class = "max-w-36 max-h-18"
+sponsors = [
+  { alt = "Citadel | Citadel Securities", src = "assets/sponsors/citadel.png", href = "https://www.citadel.com/" },
+  { alt = "Jane Street", src = "assets/sponsors/jane-street.svg", href = "https://www.janestreet.com/" },
+  { alt = "blackpenredpen", src = "assets/sponsors/bprp.png", href = "https://www.youtube.com/c/blackpenredpen/" },
+  { alt = "ContestDojo", src = "assets/sponsors/contestdojo.png", href = "https://contestdojo.com/" },
+]
+
+[[extra.sponsor_tiers]]
+title = "Gold Sponsors & Friends of BMT"
+img_class = "max-w-24 max-h-12"
+sponsors = [
+  { alt = "Atomic Grader", src = "assets/sponsors/ag.svg", href = "https://atomicgrader.com/" },
+  { alt = "Stanford Math Tournament", src = "assets/sponsors/smt.png", href = "https://www.stanfordmathtournament.com/" },
+  { alt = "Mustang Math", src = "assets/sponsors/mmt.png", href = "https://mustangmath.com/" },
+]
 +++
 
-# Don’t miss out on contest news!
+## Don’t miss out on contest news!
 
 Receive tournament announcements, registration deadlines, info on pre-tournament
 activities, and other math competition opportunities!
