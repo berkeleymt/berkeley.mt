@@ -20,10 +20,17 @@ sponsors = [
 ]
 
 [[extra.sponsor_tiers]]
-title = "Gold Sponsors & Friends of BMT"
+title = "Gold Sponsors"
 img_class = "max-w-24 max-h-12"
 sponsors = [
   { alt = "Atomic Grader", src = "assets/sponsors/ag.svg", href = "https://atomicgrader.com/" },
+]
+
+[[extra.sponsor_tiers]]
+title = "Blue Sponsors & Friends of BMT"
+img_class = "max-w-24 max-h-12"
+sponsors = [
+  { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
   { alt = "Stanford Math Tournament", src = "assets/sponsors/smt.png", href = "https://www.stanfordmathtournament.com/" },
   { alt = "Mustang Math", src = "assets/sponsors/mmt.png", href = "https://mustangmath.com/" },
 ]
