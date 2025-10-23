@@ -26,10 +26,11 @@ the calculus Focus Test and optional integration bee activity.
 Our goals in hosting BMT include for you to have the best experience possible,
 especially by offering you problems that are interesting and appropriately
 challenging for you. We **strongly** encourage you to try previous BMT general
-and Focus Tests in our archive (link) to determine which choice is right for
-you. In particular, if the Focus Tests feel prohibitively difficult, please
-consider taking the General Test, and if the General Test does not provide the
-challenge you are looking for, please consider taking a focus pair.
+and Focus Tests in our [archive](https://berkeley.mt/resources/) to determine
+which choice is right for you. In particular, if the Focus Tests feel
+prohibitively difficult, please consider taking the General Test, and if the
+General Test does not provide the challenge you are looking for, please consider
+taking a focus pair.
 
 ### For coaches and parents:
 
