@@ -157,7 +157,7 @@ hardest, and so on.
 If a tie remains on the Individual Round after the preceding automatic
 tiebreaking procedure -- i.e., if two students correctly answered precisely the
 same set of problems, then those students will participate in an additional
-Tiebreaker Round. Ties that remain on the Guts Round or Power Round will be
+Tiebreaker Round. Ties that remain on the Guts Round or Power Round will not be
 tiebroken.
 
 This 15-minute test will consist of either three (for the Focus Tests) or five
