@@ -1,6 +1,6 @@
 +++
 title = "BMT to AIME 2021 Edition"
-date = 2025-10-08
+date = 2025-10-28
 
 [[extra.archive.columns]]
 label = "Problems"
