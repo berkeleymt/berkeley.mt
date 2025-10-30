@@ -115,8 +115,7 @@ Individuals are only ranked within the tests they choose to take. Individual
 Round scores are determined by the number of correct answers. Each correct
 answer is worth 1 point, i.e. there is no weighting among the problems.
 
-Team scores are determined based on a combination of teams' scores on the Guts
-and Power Rounds, as well as the Individual Round scores of their team members.
+Team scores are determined based on a combination of teams' scores on the Guts Round and the Individual Round scores of their team members.
 The weights are displayed in the table in summary table below.
 
 When weighting team scores, scores for a given test will be normalized by either

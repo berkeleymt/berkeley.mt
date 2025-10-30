@@ -34,6 +34,9 @@ columns = [ [
     { title = "Calculus Test Organizers", members = ["Aarush Chaubey", "Evan Kniffen"] },
     { title = "Discrete Test Organizer", members = ["Jordan Truong"] },
     { title = "Geometry Test Organizers", members = ["Stephanie Yao", "Wen Cao"] },
+    { title = "General Test Organizers", members = ["Harsh Ambardekar", "Ylann Bouis"] },
+    { title = "Guts Test Organizers", members = ["Arthur Chen", "Benjamin Chen", "Justin Park"] },
+    { title = "Power Test Organizers", members = ["Brian Sui", "Jonathan Sy", "Kiran Parthasarathy"] },
     { title = "Problem Writers", members = [
         "Aaron Arellano", "Aaron Cho", "Aarush Chaubey", "Aditya Baireddy", "Aedan Hui",
         "Andrew Huang", "Annie Yao", "Aritra Mukhopadhyay", "Arjun Damerla", "Arthur Chen",
