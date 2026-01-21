@@ -23,9 +23,6 @@ and below**, including advanced students at younger grade levels. You may regist
 can participate.
 
 {% button_link(href="https://contestdojo.com/") %} Registration Portal {% end %}
-{% button_link(href="/news/bmt-2025-online-logistics/") %}
-Tournament Logistics
-{% end %}
 
 ## Registration, Waivers, and Pricing
 

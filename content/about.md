@@ -44,7 +44,7 @@ columns = [ [
         "Harsh Ambardekar", "Helena Zhang", "Isaac Li", "Jason Guo", "Jessica Li", "Jiazhen Tan",
         "Jonathan Sy", "Jordan Truong", "Justin Park", "Kiran Parthasarathy", "Lucas Fowler",
         "Moor Xu", "Nikhil Shanbhag", "Samik Krishnan", "Shrey Chaudhary", "Stanley Li",
-        "Stephanie Yao", "Sushanth Sathish Kumar", "Theo Danial", "Tushar Gona", "Vignesh Nydhruva", "Viraj Aggarwal",
+        "Stephanie Yao", "Sushanth Sathish Kumar", "Theo Danial", "Tushar Gona", "Viraj Aggarwal",
         "Wen Cao", "William Wu", "William Xu", "Ylann Bouis", "Ittai Nelken-Regev",
     ] }
 ] ]
