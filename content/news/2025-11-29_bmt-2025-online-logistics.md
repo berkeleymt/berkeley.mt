@@ -143,7 +143,7 @@ After the Guts Round, we will be hosting student activities. These are optional
 activities that promote recreational math, and include the following:
 
 - **Estimathon** — A contest combining trivia, strategic planning, and sharp
-  mathematical thinking. Teams of ~6 will race against the clock to tackle a
+  mathematical thinking. Teams of 3 will race against the clock to tackle a
   challenging set of 13 Fermi-style problems, testing their ability to think fast
   and outsmart the competition.
 
