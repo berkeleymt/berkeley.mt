@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 
-{% block extra_head %}
+{% block canonical %}
   <link rel="canonical" href="{{ page.extra.url | safe }}">
+{% endblock canonical %}
 
+{% block extra_head %}
   <noscript>
     <meta http-equiv="refresh" content="0; url={{ page.extra.url | safe }}">
   </noscript>
@@ -10,7 +12,7 @@
   <script>
     window.location.replace("{{ page.extra.url | safe }}");
   </script>
-{% endblock %}
+{% endblock extra_head %}
 
 {% block content %}
   <p>If you are not redirected automatically, follow <a href="{{ page.extra.url | safe }}" data-redirect="true" data-permanent="{% if page.extra.permanent %}true{% else %}false{% endif %}">this link</a> to be redirected</p>
