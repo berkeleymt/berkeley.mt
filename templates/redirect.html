@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+  <link rel="canonical" href="{{ page.extra.url | safe }}">
+
+  <noscript>
+    <meta http-equiv="refresh" content="0; url={{ page.extra.url | safe }}">
+  </noscript>
+
+  <script>
+    window.location.replace("{{ page.extra.url | safe }}");
+  </script>
+{% endblock %}
+
+{% block content %}
+  <p>If you are not redirected automatically, follow <a href="{{ page.extra.url | safe }}" data-redirect="true" data-permanent="{% if page.extra.permanent %}true{% else %}false{% endif %}">this link</a> to be redirected</p>
+{% endblock content %}
