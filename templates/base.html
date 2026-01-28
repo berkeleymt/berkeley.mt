@@ -8,6 +8,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  {% block canonical %}
   {% set permalink = section.permalink
   | default(value=page.permalink
   | default(value="")) %}
@@ -15,6 +16,7 @@
   {% if permalink and permalink is not starting_with("/") %}
   <link rel="canonical" href="{{ permalink | safe }}" />
   {% endif %}
+  {% endblock %}
 
   {% set title = section.title
   | default(value=page.title
@@ -65,6 +67,8 @@
       icon.classList.toggle("bi-x-lg", isOpen);
     }
   </script>
+
+  {% block extra_head %}{% endblock %}
 </head>
 
 <body>
