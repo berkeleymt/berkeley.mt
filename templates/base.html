@@ -55,21 +55,48 @@
   <meta name="theme-color" content="#ffffff">
 
   <script>
-    function thing() {
-      document.getElementById("navbar").classList.toggle("open");
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobile-menu");
+      const btn = document.getElementById("mobile-menu-btn");
+      const icon = btn.querySelector("i");
+      menu.classList.toggle("hidden");
+      const isOpen = !menu.classList.contains("hidden");
+      icon.classList.toggle("bi-list", !isOpen);
+      icon.classList.toggle("bi-x-lg", isOpen);
     }
   </script>
 </head>
 
 <body>
+  <div id="mobile-menu" class="md:hidden hidden fixed inset-x-0 top-0 bg-white z-50 border-b shadow-lg">
+    <div class="flex justify-between items-center p-4">
+      <img src="/assets/logo.svg" alt="BMT Logo" width="44" class="-mt-1">
+      <button class="p-2" onclick="toggleMobileMenu()">
+        <i class="bi bi-x-lg text-2xl"></i>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-2 p-4 pt-0">
+      {{ macros::mobile_nav_link(path="@/_index.md", label="Home") }}
+      {{ macros::mobile_nav_link(path="@/news/_index.md", label="News") }}
+      {{ macros::mobile_nav_link(path="@/blog/_index.md", label="Blog") }}
+      {{ macros::mobile_nav_link(path="@/about.md", label="About") }}
+      {{ macros::mobile_nav_link(path="@/resources/index.md", label="Resources") }}
+      {{ macros::mobile_nav_link(path="@/events/bmmt-2026.md", label="BmMT 2026") }}
+      {{ macros::mobile_nav_link(path="@/events/bmt-2025-online.md", label="BMT 2025 Online") }}
+    </nav>
+  </div>
+
   <div class="max-w-4xl min-h-screen p-4 md:p-8 mx-auto flex flex-col gap-8">
+    <button id="mobile-menu-btn" class="md:hidden fixed top-4 right-4 border py-2 px-3 rounded-xl bg-white z-50" onclick="toggleMobileMenu()">
+      <i class="bi bi-list text-xl"></i>
+    </button>
+
     {% block header %}
     <header class="flex flex-col gap-4 text-center">
       <a class="mx-auto" href="/"><img src="/assets/logo.svg" alt="BMT Logo" width="80"></a>
       <p class="text-2xl font-bold">Berkeley Math Tournament</p>
 
-      <nav id="navbar"
-        class="[&.open>a.nav-hidden]:block [&>a.nav-hidden]:hidden flex flex-col md:flex-row md:mx-auto gap-4 items-stretch">
+      <nav class="hidden md:flex md:flex-row md:mx-auto gap-4 items-stretch">
         {{ macros::nav_link(path="@/_index.md", label="Home") }}
         {{ macros::nav_link(path="@/news/_index.md", label="News") }}
         {{ macros::nav_link(path="@/blog/_index.md", label="Blog") }}
