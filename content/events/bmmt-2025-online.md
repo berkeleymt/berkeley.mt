@@ -6,8 +6,8 @@ aliases = ["/bmmt-2025-online"]
 
 The online, synchronous version of our middle school tournament! For those who
 are unable to travel long-distance to California, or weren't able to register
-for BmMT 202 due to capacity limitations, we're offering an online experience as
-well. We
+for BmMT 2025 due to capacity limitations, we're offering an online experience as
+well.
 
 <!-- more -->
 
