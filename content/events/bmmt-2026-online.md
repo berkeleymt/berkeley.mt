@@ -1,43 +1,39 @@
 +++
-title = "BmMT 2025 Online"
-date = 2025-06-07
-aliases = ["/bmmt-2025-online"]
+title = "BmMT 2026 Online"
+date = 2026-06-06
+aliases = ["/bmmt-2026-online"]
 +++
+
+{% alert(title="BmMT Updates", status="info") %}
+This year, we plan on restructuring the online tournament! More details on the new contest format will be released on this page soon, but registration will still open **Monday, February 9 at 9:00 AM PT**.
+{% end %}
 
 The online, synchronous version of our middle school tournament! For those who
 are unable to travel long-distance to California, or weren't able to register
-for BmMT 2025 due to capacity limitations, we're offering an online experience as
-well.
+for BmMT 2026 due to capacity limitations, we're offering an online experience as
+well. 
 
 <!-- more -->
-
-{% alert(title="BmMT 2025 Q&A session", status="info") %}
-We will be holding a Q&A session about math competitions and BmMT on February 6
-from 7–8 PM. If you are interested, please visit the
-[news post](/news/bmmt-2025-qanda-session/) for details on how to attend and
-submit questions!
-{% end %}
 
 BmMT Online is open to middle school students in **grades 8 or below**. In particular,
 there is **no lower age limit** to participate; advanced elementary school
 students are welcome to compete. Teams may have up to 5 students. You do not
 have to be local to the Bay Area or California to register for BmMT Online.
 
-The online tournament will take place synchronously on **June 7, 2025**.
-If you're looking for our in-person tournament on April 12, 2025, details can
-be found on the [BmMT 2025 Event Page](/events/bmmt-2025/).
+The online tournament will take place synchronously on **June 6, 2026**.
+If you're looking for our in-person tournament on April 12, 2026, details can
+be found on the [BmMT 2026 Event Page](/events/bmmt-2026/).
 
 This page contains primarily registration details. Detailed information on the
 schedule and other day-of-tournament details will be released closer to the
 event date.
 
 {% button_link(href="https://contestdojo.com/") %} Registration Portal {% end %}
-{% button_link(href="/news/bmmt-2025-online-logistics/") %} Logistics Page {% end %}
 
 ## Registration Timeline
 
-Registration will open on **Monday, February 10 at 9:00 AM PT** and will close
-**Friday, June 6 at 11:59 PM PT**.
+Registration will open on **Monday, February 9 at 9:00 AM PT** and will close
+**Friday, June 5 at 11:59 PM PT**.
 
 The fee for the online tournament is **$8 per student**.
 
@@ -45,8 +41,7 @@ The fee for the online tournament is **$8 per student**.
 
 - Students must be in **grade 8 or below** to be eligible for BmMT.
 - Students do not have to be local to the Bay Area, California, or the U.S. to
-  participate in BmMT. However, we also host online BmMT 2025 on June 7, 2025, which
-  may be more convenient for some students.
+  participate in BmMT Online.
 - Coaches may register multiple teams under the same organization.
 
 ## How to Register
@@ -72,40 +67,23 @@ team of at least 3 due to our scoring guidelines. For students who do not have a
 full team, we have organized Teammate Finder spreadsheets. Follow all
 outlined steps in the spreadsheet.
 
-{% button_link(href="https://docs.google.com/spreadsheets/d/1lDeiIkENpZx5Ddpnvr6y2qUgDRPUX5uPqlJpC_u0qMY/edit") %}
-BmMT 2025 Online Teammate Finder
+{% button_link(href="https://docs.google.com/spreadsheets/d/1ooYpADSfROQdLR2vKL5n4kvsFyNPC7K8CZSoZ9RWyIA/edit?usp=sharing") %}
+BmMT 2026 Online Teammate Finder
 {% end %}
 
 ## Schedule
 
-For detailed event logistics, see our [logistics page](/news/bmmt-2025-online-logistics/).
+More details to be released soon!
 
 ## Contest Format & Scoring
 
-Please visit our [BmMT 2025 In-Person Event Page](/events/bmmt-2025/#contest-format)
-for details on the contest format and scoring.
-
-### Acceptable Answers
-
-Students are responsible for familiarizing themselves with the [acceptable
-answer formats document](/assets/answer-formats.pdf) and [common notions
-document](/assets/common-notions.pdf) for details on how their answers should be
-submitted. Answers not submitted in the listed formats will be graded as
-incorrect, even if equivalent.
+More details to be released soon!
 
 ## Activities
 
-For information about activities, see our [logistics page](/news/bmmt-2025-online-logistics/).
+More details to be released soon!
 
 ## Frequently Asked Questions
-
-### Are calculators or other reference material allowed?
-
-Graph paper and calculators are prohibited, but protractors, rulers, and
-compasses are permitted. Blank white scratch paper is allowed. All answers must
-be exact, reduced, and simplified. Illegible answers will not be graded.
-Cheating in any form will not be tolerated, and failure to comply with all rules
-may result in immediate and irreversible disqualification.
 
 ### Can middle school students compete? What if I don't have a team?
 
@@ -116,5 +94,4 @@ due to our scoring guidelines.
 
 ### Will there be awards?
 
-Although we will provide an official ranking as well as certificates for
-top-scoring teams, there will not be physical awards for the online tournament.
+Although we are restructuring the online tournament, we will still provide certificates for top-scoring teams. However, there will not be physical awards.
