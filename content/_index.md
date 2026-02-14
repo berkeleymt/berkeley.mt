@@ -14,8 +14,8 @@ title = "Diamond Sponsors"
 img_class = "max-w-36 max-h-18"
 sponsors = [
   { alt = "Citadel | Citadel Securities", src = "assets/sponsors/citadel.png", href = "https://www.citadel.com/" },
-  { alt = "Jane Street", src = "assets/sponsors/jane-street.svg", href = "https://www.janestreet.com/" },
   { alt = "Susquehanna", src = "assets/sponsors/susquehanna.png", href = "https://sig.com/", img_class = "max-w-48 max-h-18" },
+  { alt = "Jane Street", src = "assets/sponsors/jane-street.svg", href = "https://www.janestreet.com/" },
   { alt = "blackpenredpen", src = "assets/sponsors/bprp.png", href = "https://www.youtube.com/c/blackpenredpen/" },
 ]
 
