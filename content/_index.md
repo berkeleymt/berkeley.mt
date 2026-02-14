@@ -17,7 +17,6 @@ sponsors = [
   { alt = "Jane Street", src = "assets/sponsors/jane-street.svg", href = "https://www.janestreet.com/" },
   { alt = "Susquehanna", src = "assets/sponsors/susquehanna.png", href = "https://sig.com/" },
   { alt = "blackpenredpen", src = "assets/sponsors/bprp.png", href = "https://www.youtube.com/c/blackpenredpen/" },
-  { alt = "ContestDojo", src = "assets/sponsors/contestdojo.png", href = "https://contestdojo.com/" },
 ]
 
 [[extra.sponsor_tiers]]
@@ -25,6 +24,7 @@ title = "Gold Sponsors"
 img_class = "max-w-64 max-h-12"
 sponsors = [
   { alt = "Atomic Grader", src = "assets/sponsors/ag.svg", href = "https://atomicgrader.com/" },
+  { alt = "ContestDojo", src = "assets/sponsors/contestdojo.png", href = "https://contestdojo.com/" },
 ]
 
 [[extra.sponsor_tiers]]
