@@ -163,7 +163,7 @@
 <div class="flex gap-x-16 gap-y-4 flex-wrap justify-center items-center">
   {% for sponsor in tier.sponsors %}
   <a href="{{ sponsor.href }}">
-    <img src="{{ sponsor.src }}" alt="{{ sponsor.alt }}" class="{{ tier.img_class }}">
+    <img src="{{ sponsor.src }}" alt="{{ sponsor.alt }}" class="{{ sponsor.img_class | default(value=tier.img_class) }}">
   </a>
   {% endfor %}
 </div>
