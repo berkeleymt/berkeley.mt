@@ -1,6 +1,6 @@
 +++
 title = "About"
-alises = ["/about-bmt"]
+aliases = ["/about-bmt"]
 template = "about.html"
 
 [[extra.about.terms]]
@@ -32,9 +32,9 @@ columns = [ [
     { title = "Problem Writing", heading = true },
     { title = "Head Problem Writers", members = ["Aarush Chaubey", "Wen Cao"] },
     { title = "Head of Test-solving", members = ["Ylann Bouis"] },
-    { title = "Puzzle Test Organizer", members = ["Aedan Hui", "Jordan Truong", "Kiran Parthasarathy", "Troy Pham"] },
+    { title = "Puzzle Test Organizers", members = ["Aedan Hui", "Jordan Truong", "Kiran Parthasarathy", "Troy Pham"] },
     { title = "Individual Test Organizers", members = ["Forrest Chou", "Harsh Ambardekar", "Jessica Li"] },
-    { title = "Team Test Organizer", members = ["Brian Zhou", "Jessie Tan", "Stephanie Yao"] },
+    { title = "Team Test Organizers", members = ["Brian Zhou", "Jessie Tan", "Stephanie Yao"] },
     { title = "Relay Test Organizers", members = ["Arthur Chen", "Benjamin Chen", "Ylann Bouis"] },
     { title = "Problem Writers", members = [
         "Aaron Arellano", "Aaron Cho", "Aarush Chaubey", "Aditya Baireddy", "Aedan Hui",
