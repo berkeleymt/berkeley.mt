@@ -7,15 +7,16 @@ template = "about.html"
 label = "Spring 2025"
 columns = [ [
     { title = "Logistics", heading = true },
-    { title = "Heads of Logistics", members = ["Mary Laska", "Oliver Ni"] },
-    { title = "Operations Leads", members = ["Benji Van Lienden", "Viraj Aggarwal"] },
+    { title = "Heads of Logistics", members = ["Jeslyn Nguyen", "Viraj Aggarwal"] },
+    { title = "Operations Leads", members = ["Aedan Hui", "Benji Van Lienden"] },
     { title = "Outreach Lead", members = ["Carlyana Kwong"] },
-    { title = "Design Lead", members = ["Clara Castellar"] },
+    { title = "Design Lead", members = ["Golden Peng"] },
     { title = "Activities Lead", members = ["Jeslyn Nguyen"] },
     { title = "Technology Lead", members = ["Oliver Ni"] },
-    { title = "Finance Lead", members = ["Mary Laska", "Jou Yoshida"] },
+    { title = "Finance Lead", members = ["Dario Huang"] },
+    { title = "Satellites Lead", members = ["Golden Peng"] },
     { title = "Logistics Members", members = [
-        "Adriel Becerra", "Aedan Hui", "Andrew Ku", "Annie Yao", "Benji Van Lienden",
+        "Adriel Becerra", "Aedan Hui", "Andrew Ku", "Annie Yao", "Anton Luu", "Benji Van Lienden",
         "Brice Schilling", "Brody Scott", "Carlyana Kwong", "Clara Castellar", "Dario Huang",
         "Danielle Murphy", "Ethan Zhou", "Golden Peng", "Haoran Xi", "Hrishikesh Lakshman",
         "Ian Kim", "Ishwar Suriyaprakash", "Jeslyn Nguyen", "Jiazhen Tan", "Junehee Lee",
@@ -25,23 +26,20 @@ columns = [ [
         "Viraj Aggarwal", "Yuxuan Cai",
     ] },
     { title = "Advising", members = [
-        "Andrew Liu", "Jonathan Sy", "Moor Xu",
+        "Andrew Liu", "Jonathan Sy", "Moor Xu", "Oliver Ni"
     ] }
 ], [
     { title = "Problem Writing", heading = true },
-    { title = "Head Problem Writer", members = ["Theo Danial"] },
-    { title = "Algebra Test Organizer", members = ["Jessica Li"] },
-    { title = "Calculus Test Organizers", members = ["Aarush Chaubey", "Evan Kniffen"] },
-    { title = "Discrete Test Organizer", members = ["Jordan Truong"] },
-    { title = "Geometry Test Organizers", members = ["Stephanie Yao", "Wen Cao"] },
-    { title = "General Test Organizers", members = ["Harsh Ambardekar", "Ylann Bouis"] },
-    { title = "Guts Test Organizers", members = ["Arthur Chen", "Benjamin Chen", "Justin Park"] },
-    { title = "Power Test Organizers", members = ["Brian Sui", "Jonathan Sy", "Kiran Parthasarathy"] },
+    { title = "Head Problem Writer", members = ["Aarush Chaubey", "Wen Cao"] },
+    { title = "Head of Test-solving", members = ["Ylann Bouis"] },
+    { title = "Puzzle Test Organizer", members = ["Aedan Hui", "Jordan Truong", "Kiran Parthasarathy", "Troy Pham"] },
+    { title = "Individual Test Organizers", members = ["Forrest Chou", "Harsh Ambardekar", "Jessica Li"] },
+    { title = "Team Test Organizer", members = ["Brian Zhou", "Jessie Tan", "Stephanie Yao"] },
+    { title = "Relay Test Organizers", members = ["Arthur Chen", "Benjamin Chen", "Ylann Bouis"] },
     { title = "Problem Writers", members = [
         "Aaron Arellano", "Aaron Cho", "Aarush Chaubey", "Aditya Baireddy", "Aedan Hui",
         "Andrew Huang", "Annie Yao", "Aritra Mukhopadhyay", "Arjun Damerla", "Arthur Chen",
-        "Austin Lei", "Benji Van Lienden", "Brandon Yea", "Brian Sui", "Evan Kniffen",
-        "Harsh Ambardekar", "Helena Zhang", "Isaac Li", "Jason Guo", "Jessica Li", "Jiazhen Tan",
+        "Austin Lei", "Benjamin Chen", "Benji Van Lienden", "Brandon Yea", "Brian Sui", "Evan Kniffen", "Forrest Chou", "Harsh Ambardekar", "Helena Zhang", "Isaac Li", "Jason Guo", "Jessica Li", "Jiazhen Tan",
         "Jonathan Sy", "Jordan Truong", "Justin Park", "Kiran Parthasarathy", "Lucas Fowler",
         "Moor Xu", "Nikhil Shanbhag", "Samik Krishnan", "Shrey Chaudhary", "Stanley Li",
         "Stephanie Yao", "Sushanth Sathish Kumar", "Theo Danial", "Tushar Gona", "Vignesh Nydhruva", "Viraj Aggarwal",
