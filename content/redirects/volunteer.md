@@ -7,5 +7,5 @@ template = "redirect.html"
 aliases = ["/volunteer"]
 
 # The page to redirect to
-extra.url = "https://docs.google.com/forms/d/e/1FAIpQLSclFu3ke1T9xQbNevUPkn7WqvNsSuZwj5opRDXco7448Do5Gw/viewform?usp=preview"
+extra.url = "https://docs.google.com/forms/d/e/1FAIpQLSdFevLn-MAR0dRCYdXHbwkIkdjX_tKusDB5qjMCHPa4MRi4KQ/viewform?usp=dialog"
 +++
