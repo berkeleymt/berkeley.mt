@@ -108,6 +108,8 @@
   </p>
 </div>
 
+<div class="ad-slot" data-delay="1500"></div>
+
 <hr>
 
 {# Events section #}
@@ -140,6 +142,8 @@
   ) }}
 </div>
 
+<div class="ad-slot" data-delay="2500"></div>
+
 <hr>
 
 {# Rest of content (rendered from markdown) #}
@@ -147,6 +151,20 @@
 <div class="prose">
   {{ section.content | safe }}
 </div>
+
+<div class="ad-slot" data-delay="3500"></div>
+
+<hr>
+
+<div class="ad-slot" data-delay="2000"></div>
+
+<hr>
+
+<div class="ad-slot" data-delay="4000"></div>
+
+<hr>
+
+<div class="ad-slot" data-delay="3000"></div>
 
 <hr>
 
@@ -169,4 +187,60 @@
 </div>
 {% endfor %}
 
+<script>
+  const adImages = [
+    { src: "/assets/ads/ad1_mathcoin.png", alt: "MathCoin - Mine crypto by solving integrals" },
+    { src: "/assets/ads/ad2_ti84.png", alt: "TI-84 Plus CE Quantum Edition" },
+    { src: "/assets/ads/ad3_mathlete.png", alt: "MATHLETE Protein Powder" },
+    { src: "/assets/ads/ad4_proof.png", alt: "Proof by Intimidation Masterclass" },
+    { src: "/assets/ads/ad5_cologne.png", alt: "Euler's Identity Cologne" },
+    { src: "/assets/ads/ad6_wolfram.png", alt: "Wolfram Alpha Ultra Premium Platinum" },
+  ];
+
+  document.querySelectorAll('.ad-slot').forEach((slot, i) => {
+    const ad = adImages[i % adImages.length];
+    const delay = parseInt(slot.dataset.delay) || 2000;
+    setTimeout(() => {
+      const img = document.createElement('img');
+      img.src = ad.src;
+      img.alt = ad.alt;
+      img.style.cssText = 'width:100%;max-width:728px;cursor:pointer;display:block;margin:0 auto;';
+      img.onclick = () => alert('April Fools! \ud83e\udd21');
+      slot.appendChild(img);
+    }, delay);
+  });
+</script>
+
+{% endblock %}
+
+{% block sidebar_ads %}
+<style>
+  .sidebar-ad { display: none; position: fixed; top: 50%; transform: translateY(-50%); width: 160px; z-index: 40; cursor: pointer; }
+  @media (min-width: 1280px) {
+    .sidebar-ad.loaded { display: block; }
+  }
+  @keyframes tux-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  .spinning-tux {
+    animation: tux-spin 2s linear infinite;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 80px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 8px rgba(255,255,0,0.6));
+  }
+</style>
+<div id="sidebar-ad-left" class="sidebar-ad" style="left: calc((100vw - 896px) / 2 - 180px);">
+  <img src="/assets/ads/sidebar_left.png" alt="Free Math IQ Test" style="width:160px;" onclick="alert('April Fools! \ud83e\udd21')">
+</div>
+<div id="sidebar-ad-right" class="sidebar-ad" style="right: calc((100vw - 896px) / 2 - 180px);">
+  <img src="/assets/ads/sidebar_right.png" alt="Calculus Survival Kit" style="width:160px;" onclick="alert('April Fools! \ud83e\udd21')">
+</div>
+<img id="spinning-tux" src="/assets/ads/tux.png" alt="Tux" class="spinning-tux" style="display:none;" onclick="alert('🐧 I use Arch btw')">
+<script>
+  setTimeout(() => { document.getElementById('sidebar-ad-left').classList.add('loaded'); }, 2000);
+  setTimeout(() => { document.getElementById('sidebar-ad-right').classList.add('loaded'); }, 3500);
+  setTimeout(() => { document.getElementById('spinning-tux').style.display = 'block'; }, 1000);
+</script>
 {% endblock %}
