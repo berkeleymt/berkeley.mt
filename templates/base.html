@@ -74,7 +74,7 @@
     Skip to main content
   </a>
 
-  <div id="mobile-menu" class="md:hidden hidden fixed inset-x-0 top-0 bg-white z-50 border-b shadow-lg">
+  <div id="mobile-menu" class="md:hidden hidden fixed inset-x-0 top-0 bg-white/95 backdrop-blur-md z-50 border-b border-gray-200 shadow-lg">
     <div class="flex justify-between items-center p-4">
       <img src="/assets/logo.svg" alt="BMT Logo" width="44" class="-mt-1">
       <button class="p-2" onclick="toggleMobileMenu()">
@@ -89,14 +89,14 @@
       {{ macros::mobile_nav_link(path="@/resources/index.md", label="Resources") }}
       {{ macros::mobile_nav_link(path="@/events/bmmt-2026.md", label="BmMT 2026") }}
       {{ macros::mobile_nav_link(path="@/events/bmmt-2026-online.md", label="BmMT 2026 Online") }}
-      <a href="https://contestdojo.com/" class="py-2 px-4 rounded-lg bg-teal-500 text-white font-semibold text-center mt-2">
-        Register
+      <a href="https://contestdojo.com/" class="py-2.5 px-4 rounded-lg bg-teal-600 text-white font-semibold text-center mt-2 hover:bg-teal-700">
+        Register &rarr;
       </a>
     </nav>
   </div>
 
   <div class="max-w-4xl min-h-screen p-4 md:p-8 mx-auto flex flex-col gap-8">
-    <button id="mobile-menu-btn" class="md:hidden fixed top-4 right-4 border py-2 px-3 rounded-xl bg-white z-50" onclick="toggleMobileMenu()">
+    <button id="mobile-menu-btn" class="md:hidden fixed top-4 right-4 border border-gray-200 py-2 px-3 rounded-xl bg-white/90 backdrop-blur-sm z-50 shadow-sm hover:shadow" onclick="toggleMobileMenu()">
       <i class="bi bi-list text-xl"></i>
     </button>
 
@@ -113,9 +113,9 @@
         {{ macros::nav_link(path="@/resources/index.md", label="Resources") }}
         {{ macros::nav_link(path="@/events/bmmt-2026.md", label="BmMT 2026") }}
         {{ macros::nav_link(path="@/events/bmmt-2026-online.md", label="BmMT 2026 Online") }}
-        <p class="first:hidden text-gray-400">⁄</p>
-        <a href="https://contestdojo.com/" class="bg-teal-500 text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-teal-600 transition-colors flex items-center">
-          Register
+        <p class="first:hidden text-gray-300">⁄</p>
+        <a href="https://contestdojo.com/" class="text-teal-600 font-semibold hover:text-teal-700 flex items-center">
+          Register &rarr;
         </a>
       </nav>
     </header>
@@ -132,26 +132,26 @@
     {% block footer %}
     <footer class="flex flex-col gap-8 mb-12">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
-        <div class="flex flex-col gap-2">
-          <h3 class="font-semibold text-gray-900">Tournaments</h3>
+        <div class="flex flex-col gap-2.5">
+          <h3 class="font-semibold text-gray-900 text-xs uppercase tracking-wider">Tournaments</h3>
           <a href="/events/bmmt-2026/" class="text-gray-500 hover:text-gray-800 transition-colors">BmMT 2026</a>
           <a href="/events/bmmt-2026-online/" class="text-gray-500 hover:text-gray-800 transition-colors">BmMT 2026 Online</a>
           <a href="/resources/" class="text-gray-500 hover:text-gray-800 transition-colors">Past Archives</a>
         </div>
-        <div class="flex flex-col gap-2">
-          <h3 class="font-semibold text-gray-900">Resources</h3>
+        <div class="flex flex-col gap-2.5">
+          <h3 class="font-semibold text-gray-900 text-xs uppercase tracking-wider">Resources</h3>
           <a href="/resources/" class="text-gray-500 hover:text-gray-800 transition-colors">Worksheets & Archives</a>
           <a href="/blog/" class="text-gray-500 hover:text-gray-800 transition-colors">Blog</a>
           <a href="/news/" class="text-gray-500 hover:text-gray-800 transition-colors">News</a>
         </div>
-        <div class="flex flex-col gap-2">
-          <h3 class="font-semibold text-gray-900">Organization</h3>
+        <div class="flex flex-col gap-2.5">
+          <h3 class="font-semibold text-gray-900 text-xs uppercase tracking-wider">Organization</h3>
           <a href="/about/" class="text-gray-500 hover:text-gray-800 transition-colors">About Us</a>
           <a href="mailto:team@berkeley.mt" class="text-gray-500 hover:text-gray-800 transition-colors">Contact Us</a>
           <a href="https://contestdojo.com/" class="text-gray-500 hover:text-gray-800 transition-colors">Register</a>
         </div>
-        <div class="flex flex-col gap-2">
-          <h3 class="font-semibold text-gray-900">Connect</h3>
+        <div class="flex flex-col gap-2.5">
+          <h3 class="font-semibold text-gray-900 text-xs uppercase tracking-wider">Connect</h3>
           <a href="https://www.instagram.com/berkeley_mt/" class="text-gray-500 hover:text-gray-800 transition-colors flex items-center gap-2">
             <i class="bi bi-instagram"></i> Instagram
           </a>

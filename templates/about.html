@@ -4,20 +4,20 @@
 
     {% set current_term = page.extra.about.terms | first %}
 
-    <div class="grid grid-cols-1 md:grid-flow-col md:auto-cols-fr gap-8 md:gap-4 not-prose">
+    <div class="grid grid-cols-1 md:grid-flow-col md:auto-cols-fr gap-6 not-prose">
         {% for column in current_term.columns %}
-        <div class="flex flex-col gap-4 items-start">
+        <div class="bg-white rounded-xl border border-gray-200 p-5 md:p-6 shadow-sm flex flex-col gap-5">
             {% for role in column %}
-            <div>
+            <div class="w-full {% if not loop.first %}pt-5 border-t border-gray-100{% endif %}">
                 {% if role.heading %}
-                <h3 class="font-semibold text-xl">{{ role.title }}</h3>
+                <h3 class="font-bold text-lg mb-2">{{ role.title }}</h3>
                 {% else %}
-                <h4 class="font-semibold">{{ role.title }}</h4>
+                <h4 class="font-semibold text-xs text-gray-400 uppercase tracking-widest mb-2">{{ role.title }}</h4>
                 {% endif %}
                 {% if role.members %}
-                <ul class="not-prose">
+                <ul class="not-prose space-y-0.5">
                     {% for member in role.members %}
-                    <li>{{ member }}</li>
+                    <li class="text-gray-700">{{ member }}</li>
                     {% endfor %}
                 </ul>
                 {% endif %}

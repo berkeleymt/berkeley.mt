@@ -3,36 +3,36 @@
 {# Macro for news post notifications #}
 
 {% macro post_notification(title, href, class, icon_class, label) %}
-<a class="{{ class }} hover:-translate-y-1 transition-all border p-4 rounded-xl flex items-center gap-2"
+<a class="{{ class }} hover:-translate-y-0.5 hover:shadow-md transition-all border p-4 rounded-xl flex items-center gap-3"
   href="{{ href }}">
-  <div class="flex-1 flex flex-col gap-2">
-    <p class="uppercase text-xs text-gray-500 flex gap-2 items-center">
+  <div class="flex-1 flex flex-col gap-1.5">
+    <p class="uppercase text-xs text-gray-500 flex gap-2 items-center font-medium tracking-wide">
       <i class="bi {{ icon_class }}"></i>
       <span>{{ label }}</span>
     </p>
     <p class="text-base font-medium">
-      {{ title | split(pat="\n") | join(sep=" • ") }}
+      {{ title | split(pat="\n") | join(sep=" &bull; ") }}
     </p>
   </div>
 
-  <i class="bi bi-chevron-right"></i>
+  <i class="bi bi-chevron-right text-gray-400"></i>
 </a>
 {% endmacro %}
 
 {# Macro for event cards #}
 
 {% macro event(name, date, description, href, class="") %}
-<div class="group rounded-xl overflow-hidden {{ class }} transition-all hover:-translate-y-1">
-  <a href="{{ href }}" class="p-6 flex flex-col gap-4 group-hover:backdrop-brightness-75 transition-all h-full">
+<div class="group rounded-2xl overflow-hidden {{ class }} transition-all hover:-translate-y-1 hover:shadow-2xl shadow-lg">
+  <a href="{{ href }}" class="p-6 md:p-8 flex flex-col gap-4 group-hover:backdrop-brightness-90 transition-all h-full">
     <div class="flex flex-col gap-1">
-      <h3 class="font-bold text-lg md:text-2xl flex items-center gap-2">
+      <p class="text-xs font-semibold uppercase tracking-widest opacity-50">{{ date }}</p>
+      <h3 class="font-bold text-xl md:text-2xl flex items-center gap-2">
         <span>{{ name }}</span>
-        <i class="bi bi-chevron-right text-base transition-transform"></i>
+        <i class="bi bi-arrow-right text-sm opacity-50 group-hover:translate-x-1 transition-transform"></i>
       </h3>
-      <p class="text-sm font-medium opacity-50">{{ date }}</p>
     </div>
 
-    <p class="text-base opacity-90">
+    <p class="text-sm md:text-base opacity-75 leading-relaxed">
       {{ description | safe }}
     </p>
   </a>
@@ -92,7 +92,7 @@
 
 {# Main banner & description #}
 
-<div id="banner" class="bg-black p-6 md:p-8 rounded-xl">
+<div id="banner" class="bg-black p-8 md:p-12 rounded-2xl shadow-lg">
   <p class="h-full text-xl md:text-3xl font-bold text-white flex flex-col justify-between">
     <span class="order-0 after:content-['…'] text-left">Promoting advanced math</span>
     <span class="order-2 before:content-['…'] text-right">to middle and high school students</span>
@@ -100,11 +100,11 @@
   </p>
 </div>
 
-<div>
-  <p class="text-lg md:text-xl leading-relaxed">
+<div class="bg-white rounded-xl border border-gray-200 p-6 md:p-8 shadow-sm">
+  <p class="text-lg md:text-xl leading-relaxed text-gray-600">
     A UC Berkeley student-led organization that aims to spread mathematics and the spirit of mathematical competition
     globally by presenting students with interesting, original, hand-crafted problems. With over 4,000 annual student
-    participants from all across the globe, BMT is the largest student-run math competition in the world.
+    participants from all across the globe, BMT is the <span class="text-gray-900 font-medium">largest student-run math competition in the world</span>.
   </p>
 </div>
 
@@ -112,9 +112,12 @@
 
 {# Events section #}
 
-<h2 class="font-bold text-2xl">Recent & Upcoming Events</h2>
+<div>
+  <h2 class="font-bold text-2xl">Recent & Upcoming Events</h2>
+  <div class="mt-2 h-1 w-10 rounded-full bg-teal-400"></div>
+</div>
 
-<div class="flex flex-col md:grid grid-cols-6 gap-4 max-w-4xl">
+<div class="flex flex-col md:grid grid-cols-6 gap-4">
   {{ self::event(
   class="col-span-6 bg-gradient-to-br shadow-lg from-fuchsia-700 to-fuchsia-900 text-white",
   name="Berkeley mini Math Tournament 2026",
@@ -144,7 +147,7 @@
 
 {# Rest of content (rendered from markdown) #}
 
-<div class="prose">
+<div class="newsletter-section bg-white rounded-xl border border-gray-200 p-6 md:p-8 shadow-sm prose">
   {{ section.content | safe }}
 </div>
 
@@ -152,21 +155,27 @@
 
 {# Sponsors #}
 
-<h2 class="font-bold text-2xl">2025–2026 Sponsors</h2>
+<div class="bg-white rounded-xl border border-gray-200 p-6 md:p-8 shadow-sm">
+  <h2 class="font-bold text-2xl mb-10 text-center">2025–2026 Sponsors</h2>
 
-{% for tier in section.extra.sponsor_tiers %}
-{% if loop.index > 1 %}
-<hr>
-{% endif %}
+  <div class="flex flex-col gap-8">
+    {% for tier in section.extra.sponsor_tiers %}
+    {% if loop.index > 1 %}
+    <hr class="my-0">
+    {% endif %}
 
-<p class="text-gray-500 text-center text-base">{{ tier.title }}</p>
-<div class="flex gap-x-16 gap-y-4 flex-wrap justify-center items-center">
-  {% for sponsor in tier.sponsors %}
-  <a href="{{ sponsor.href }}">
-    <img src="{{ sponsor.src }}" alt="{{ sponsor.alt }}" class="{{ sponsor.img_class | default(value=tier.img_class) }}">
-  </a>
-  {% endfor %}
+    <div>
+      <p class="text-gray-400 text-center text-xs font-medium uppercase tracking-widest mb-6">{{ tier.title }}</p>
+      <div class="flex gap-x-16 gap-y-6 flex-wrap justify-center items-center">
+        {% for sponsor in tier.sponsors %}
+        <a href="{{ sponsor.href }}" class="hover:opacity-70 transition-opacity">
+          <img src="{{ sponsor.src }}" alt="{{ sponsor.alt }}" class="{{ sponsor.img_class | default(value=tier.img_class) }}">
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
-{% endfor %}
 
 {% endblock %}
