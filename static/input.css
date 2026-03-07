@@ -20,12 +20,62 @@
   font-family: "IBM Plex Sans Variable", sans-serif;
 }
 
+/* Smooth transitions on interactive elements */
+a, button, input, select, textarea {
+  transition: color 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease, box-shadow 0.15s ease,
+    opacity 0.15s ease, transform 0.15s ease;
+}
+
+/* Better focus-visible states for keyboard navigation */
+:focus-visible {
+  outline: 2px solid theme('colors.teal.400');
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Selection color matching brand */
+::selection {
+  background-color: theme('colors.teal.100');
+  color: theme('colors.teal.900');
+}
+
 #banner {
   background-image:
-    linear-gradient(rgba(0 0 0 / 75%), rgba(0 0 0 / 75%)),
+    linear-gradient(rgba(0 0 0 / 70%), rgba(0 0 0 / 70%)),
     url(/assets/banner.jpg);
   background-size: cover;
   background-position: center;
+}
+
+/* Newsletter section card styling */
+.newsletter-section h2 {
+  @apply text-xl font-bold;
+}
+
+/* Clean up Mailchimp embed */
+#mc_embed_shell {
+  @apply !p-0;
+}
+
+#mc_embed_shell .button {
+  @apply !bg-teal-600 hover:!bg-teal-700 !rounded-lg !h-auto !py-2.5 !px-6 !text-sm !font-semibold !border-0 !m-0;
+}
+
+#mc_embed_shell input[type="email"] {
+  @apply !rounded-lg !border-gray-300 !py-2.5 !px-3 !text-sm !w-full;
+}
+
+#mc_embed_shell label {
+  @apply !font-medium !text-sm !text-gray-700;
+}
+
+#mc_embed_shell #mc_embed_signup {
+  @apply !bg-transparent;
+}
+
+#mc_embed_shell .mc-field-group {
+  @apply !pb-0;
 }
 
 #text-404 {
