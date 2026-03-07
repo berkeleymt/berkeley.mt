@@ -1,11 +1,11 @@
 {% if not status or status == "error" %}
-  {% set class = "bg-red-50 border-red-200" %}
+  {% set class = "bg-rose-50 border-rose-200" %}
   {% set icon_class = "bi bi-exclamation-triangle-fill" %}
 {% elif status == "info" %}
-  {% set class = "bg-cyan-50 border-cyan-200" %}
+  {% set class = "bg-blue-50 border-blue-200" %}
   {% set icon_class = "bi bi-info-circle-fill" %}
 {% elif status == "warning" %}
-  {% set class = "bg-amber-50 border-amber-200" %}
+  {% set class = "bg-orange-50 border-orange-200" %}
   {% set icon_class = "bi bi-exclamation-circle-fill" %}
 {% endif %}
 
