@@ -30,7 +30,7 @@ any outstanding concerns with your team's roster, **please email
 
 ## Schedule
 
-BmMT 2025 Online will take place on Saturday, June 7, 2024. A schedule is
+BmMT 2025 Online will take place on Saturday, June 7, 2025. A schedule is
 provided below:
 
 | Time (US Pacific Time) | Event                    |
