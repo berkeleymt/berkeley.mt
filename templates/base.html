@@ -43,8 +43,6 @@
   <meta property="og:site_name" content="Berkeley Math Tournament" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
-  <link rel="preconnect" href="https://rsms.me/">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <link rel="stylesheet" href="/style.css?{{ get_random(end=1000000) }}">
 
@@ -72,6 +70,10 @@
 </head>
 
 <body>
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:rounded focus:shadow-lg focus:text-teal-600 focus:font-semibold">
+    Skip to main content
+  </a>
+
   <div id="mobile-menu" class="md:hidden hidden fixed inset-x-0 top-0 bg-white z-50 border-b shadow-lg">
     <div class="flex justify-between items-center p-4">
       <img src="/assets/logo.svg" alt="BMT Logo" width="44" class="-mt-1">
@@ -79,7 +81,7 @@
         <i class="bi bi-x-lg text-2xl"></i>
       </button>
     </div>
-    <nav class="flex flex-col gap-2 p-4 pt-0">
+    <nav class="flex flex-col gap-2 p-4 pt-0" aria-label="Mobile navigation">
       {{ macros::mobile_nav_link(path="@/_index.md", label="Home") }}
       {{ macros::mobile_nav_link(path="@/news/_index.md", label="News") }}
       {{ macros::mobile_nav_link(path="@/blog/_index.md", label="Blog") }}
@@ -87,6 +89,9 @@
       {{ macros::mobile_nav_link(path="@/resources/index.md", label="Resources") }}
       {{ macros::mobile_nav_link(path="@/events/bmmt-2026.md", label="BmMT 2026") }}
       {{ macros::mobile_nav_link(path="@/events/bmmt-2026-online.md", label="BmMT 2026 Online") }}
+      <a href="https://contestdojo.com/" class="py-2 px-4 rounded-lg bg-teal-500 text-white font-semibold text-center mt-2">
+        Register
+      </a>
     </nav>
   </div>
 
@@ -100,7 +105,7 @@
       <a class="mx-auto" href="/"><img src="/assets/logo.svg" alt="BMT Logo" width="80"></a>
       <p class="text-2xl font-bold">Berkeley Math Tournament</p>
 
-      <nav class="hidden md:flex md:flex-row md:mx-auto gap-4 items-stretch">
+      <nav class="hidden md:flex md:flex-row md:mx-auto gap-4 items-stretch" aria-label="Main navigation">
         {{ macros::nav_link(path="@/_index.md", label="Home") }}
         {{ macros::nav_link(path="@/news/_index.md", label="News") }}
         {{ macros::nav_link(path="@/blog/_index.md", label="Blog") }}
@@ -108,42 +113,80 @@
         {{ macros::nav_link(path="@/resources/index.md", label="Resources") }}
         {{ macros::nav_link(path="@/events/bmmt-2026.md", label="BmMT 2026") }}
         {{ macros::nav_link(path="@/events/bmmt-2026-online.md", label="BmMT 2026 Online") }}
+        <p class="first:hidden text-gray-400">⁄</p>
+        <a href="https://contestdojo.com/" class="bg-teal-500 text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-teal-600 transition-colors flex items-center">
+          Register
+        </a>
       </nav>
     </header>
     {% endblock %}
 
     <hr>
 
-    <div id="content-wrapper" class="flex-1 flex flex-col gap-8 relative">
+    <div id="main-content" class="flex-1 flex flex-col gap-8 relative">
       {% block content %}{% endblock %}
     </div>
 
     <hr>
 
     {% block footer %}
-    <div class="flex flex-col items-center justify-between md:items-start text-center md:flex-row gap-4 mb-12">
-      <div class="flex flex-col gap-6 items-center md:items-start">
-        <img class="-ml-1 grayscale brightness-0" src="/assets/logo.svg" alt="BMT Logo" width="50">
-
-        <div class="flex gap-4 text-xl">
-          <a href="https://www.instagram.com/berkeley_mt/"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.tiktok.com/@berkeley_mt"><i class="bi bi-tiktok"></i></a>
-          <a href="mailto:team@berkeley.mt"><i class="bi bi-envelope-fill"></i></a>
+    <footer class="flex flex-col gap-8 mb-12">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+        <div class="flex flex-col gap-2">
+          <h3 class="font-semibold text-gray-900">Tournaments</h3>
+          <a href="/events/bmmt-2026/" class="text-gray-500 hover:text-gray-800 transition-colors">BmMT 2026</a>
+          <a href="/events/bmmt-2026-online/" class="text-gray-500 hover:text-gray-800 transition-colors">BmMT 2026 Online</a>
+          <a href="/resources/" class="text-gray-500 hover:text-gray-800 transition-colors">Past Archives</a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="font-semibold text-gray-900">Resources</h3>
+          <a href="/resources/" class="text-gray-500 hover:text-gray-800 transition-colors">Worksheets & Archives</a>
+          <a href="/blog/" class="text-gray-500 hover:text-gray-800 transition-colors">Blog</a>
+          <a href="/news/" class="text-gray-500 hover:text-gray-800 transition-colors">News</a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="font-semibold text-gray-900">Organization</h3>
+          <a href="/about/" class="text-gray-500 hover:text-gray-800 transition-colors">About Us</a>
+          <a href="mailto:team@berkeley.mt" class="text-gray-500 hover:text-gray-800 transition-colors">Contact Us</a>
+          <a href="https://contestdojo.com/" class="text-gray-500 hover:text-gray-800 transition-colors">Register</a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="font-semibold text-gray-900">Connect</h3>
+          <a href="https://www.instagram.com/berkeley_mt/" class="text-gray-500 hover:text-gray-800 transition-colors flex items-center gap-2">
+            <i class="bi bi-instagram"></i> Instagram
+          </a>
+          <a href="https://www.tiktok.com/@berkeley_mt" class="text-gray-500 hover:text-gray-800 transition-colors flex items-center gap-2">
+            <i class="bi bi-tiktok"></i> TikTok
+          </a>
+          <a href="mailto:team@berkeley.mt" class="text-gray-500 hover:text-gray-800 transition-colors flex items-center gap-2">
+            <i class="bi bi-envelope-fill"></i> team@berkeley.mt
+          </a>
         </div>
       </div>
 
-      <div class="flex flex-col gap-4 items-center md:items-end md:text-right max-w-xs">
-        <a href="https://ocf.berkeley.edu">
-          <img src="https://ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" width="80"
-            alt="Hosted by the OCF" />
-        </a>
+      <hr>
 
-        <p class="text-xs">
-          We are a student group acting independently of the University of California. We take full responsibility for
-          our organization and this web site.
-        </p>
+      <div class="flex flex-col items-center justify-between md:items-start text-center md:flex-row gap-4">
+        <div class="flex items-center gap-4">
+          <img class="grayscale brightness-0" src="/assets/logo.svg" alt="BMT Logo" width="36">
+          <p class="text-xs text-gray-500">
+            &copy; {{ now() | date(format="%Y") }} Berkeley Math Tournament
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-2 items-center md:items-end md:text-right">
+          <a href="https://ocf.berkeley.edu">
+            <img src="https://ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" width="80"
+              alt="Hosted by the OCF" />
+          </a>
+
+          <p class="text-xs text-gray-500">
+            We are a student group acting independently of the University of California. We take full responsibility for
+            our organization and this web site.
+          </p>
+        </div>
       </div>
-    </div>
+    </footer>
     {% endblock %}
   </div>
 
