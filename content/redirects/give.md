@@ -7,5 +7,5 @@ template = "redirect.html"
 aliases = ["/give"]
 
 # The page to redirect to
-extra.url = "https://givingday.berkeley.edu/giving-day/90821/donate?dept=91708"
+extra.url = "https://givingday.berkeley.edu/giving-day/108613/donate?dept=109439"
 +++
