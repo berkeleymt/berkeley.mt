@@ -28,6 +28,39 @@
   background-position: center;
 }
 
+.prose details {
+  @apply border border-gray-200 rounded-xl;
+}
+
+.prose details + details {
+  @apply mt-3;
+}
+
+.prose details summary {
+  @apply cursor-pointer select-none list-none font-medium p-4;
+}
+
+.prose details summary::-webkit-details-marker {
+  display: none;
+}
+
+.prose details summary::before {
+  content: "▶";
+  @apply inline-block mr-2 text-xs text-gray-400 transition-transform duration-200;
+}
+
+.prose details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.prose details[open] summary {
+  @apply border-b border-gray-200;
+}
+
+.prose details > :not(summary) {
+  @apply px-4;
+}
+
 #text-404 {
   @apply bg-gradient-to-br from-teal-400 to-emerald-300 bg-clip-text text-transparent;
   font-size: 12rem;

@@ -85,13 +85,5 @@ More details to be released soon!
 
 ## Frequently Asked Questions
 
-### Can middle school students compete? What if I don't have a team?
-
-Yes! BmMT is open to any student in 8th grade or below, including those who
-haven't entered middle school. While students are allowed to compete as
-individuals, we highly recommend that students compete on a team of at least 3
-due to our scoring guidelines.
-
-### Will there be awards?
-
-Although we are restructuring the online tournament, we will still provide certificates for top-scoring teams. However, there will not be physical awards.
+See our [FAQ page](/faqs/) for answers to common questions about registration,
+eligibility, and more.
