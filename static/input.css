@@ -37,7 +37,7 @@
 }
 
 .prose details[open] {
-  @apply bg-transparent;
+  @apply bg-transparent pb-4;
 }
 
 .prose details > :last-child {
