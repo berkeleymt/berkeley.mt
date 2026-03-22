@@ -16,10 +16,10 @@ find what you're looking for, feel free to email us at <team@berkeley.mt>.
 Registration is handled through [ContestDojo](https://contestdojo.com/). To
 register:
 
-1. An adult (coach, parent, or guardian) creates a **Coach account** on
+1. An adult (coach, parent, or guardian) creates a **coach account** on
    ContestDojo.
-2. The coach creates an **Organization** (e.g., your school or club name) and
-   receives an **Organization Join Code**.
+2. The coach creates an **organization** (e.g., your school or club name) and
+   receives an **organization join code**.
 3. Students create their own ContestDojo accounts and join the organization
    using that code.
 4. The coach assigns students to a team and purchases seats.
@@ -35,7 +35,7 @@ If you are unfamiliar with ContestDojo, please read our
 Yes! Any adult — parent, guardian, tutor, or otherwise — can register as a
 "coach" on ContestDojo. The coach is simply the adult responsible for the team.
 You do not need to be affiliated with a school. When ContestDojo asks you to
-create an "Organization," this is just a label — you can use your family name,
+create an "organization," this is just a label — you can use your family name,
 a club name, or anything you'd like.
 
 </details>
@@ -107,19 +107,28 @@ chaperone for every two teams.
 <summary>Where can I find parking? How can I get to Berkeley?</summary>
 
 We do not provide travel or parking for students — coaches should arrange their
-own travel logistics. There are a number of parking garages around campus,
-including the Telegraph-Channing Garage, Underhill Structure, Lower Hearst
-Structure, and the RSF Garage.
+own travel logistics.
 
-The Telegraph-Channing Garage is recommended for most people; it is cheaper than
-campus-owned garages (and free up to an hour) and more conveniently located than
-most of the garages listed.
+If convenient, we recommend taking **BART** (Bay Area Rapid Transit) to avoid
+parking challenges and traffic. The **Downtown Berkeley BART station** is a
+10-minute walk from the tournament venues, and is a good option for those
+commuting from San Francisco or the East Bay.
 
-Berkeley is also public-transport-friendly. The Downtown Berkeley BART station
-is next to campus, and may be a good fit for those commuting from San Francisco
-or the East Bay. For teams staying in Emeryville, bus line 36 will take you
-directly to campus. Check the [AC Transit](https://www.actransit.org/) website
-for more options.
+If you prefer to drive, there are a number of parking garages near campus,
+including:
+
+- Telegraph-Channing Garage _(recommended — cheaper than campus garages and
+  free up to an hour)_
+- Underhill Garage
+- RSF Garage
+- Stadium Parking Garage
+- Lower Hearst Structure
+- Allston Way Garage
+- Center Street Garage
+
+More options are listed on the [UC Berkeley Parking and Transportation
+website](https://pt.berkeley.edu/parking/visitor-parking/lots-pricing). Detailed
+parking and campus maps are included in the logistics post for each event.
 
 </details>
 
