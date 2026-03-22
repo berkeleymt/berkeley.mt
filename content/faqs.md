@@ -32,10 +32,10 @@ If you are unfamiliar with ContestDojo, please read our
 <details>
 <summary>I'm a parent, not a teacher. Can I register my child?</summary>
 
-Yes! Any adult — parent, guardian, tutor, or otherwise — can register as a
+Yes! Any adult (parent, guardian, tutor, or otherwise) can register as a
 "coach" on ContestDojo. The coach is simply the adult responsible for the team.
 You do not need to be affiliated with a school. When ContestDojo asks you to
-create an "organization," this is just a label — you can use your family name,
+create an "organization," this is just a label: you can use your family name,
 a club name, or anything you'd like.
 
 We strongly recommend participating as part of a team — much of the tournament
