@@ -61,6 +61,11 @@
   @apply px-4;
 }
 
+.prose details ol,
+.prose details ul {
+  @apply pl-8;
+}
+
 #text-404 {
   @apply bg-gradient-to-br from-teal-400 to-emerald-300 bg-clip-text text-transparent;
   font-size: 12rem;
