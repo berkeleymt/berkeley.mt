@@ -38,16 +38,22 @@ You do not need to be affiliated with a school. When ContestDojo asks you to
 create an "organization," this is just a label — you can use your family name,
 a club name, or anything you'd like.
 
+We strongly recommend participating as part of a team — much of the tournament
+experience is collaborative, and several rounds are team-based. If your child
+doesn't have teammates yet, check the Teammate Finder spreadsheet linked on
+each event page to connect with other students.
+
 </details>
 
 <details>
 <summary>What if I don't have enough students for a full team?</summary>
 
 Students are allowed to register and compete individually or in small teams.
-However, we recommend forming a full team if possible due to our scoring
-guidelines (at least 4 for BMT, at least 3 for BmMT). Check the Teammate Finder
-spreadsheet linked on each event page to connect with other students looking for
-teammates.
+However, we strongly recommend forming a full team if possible — several rounds
+are team-based, and teams smaller than the recommended size (at least 4 for BMT,
+at least 3 for BmMT) will be disadvantaged by our scoring model. Check the
+Teammate Finder spreadsheet linked on each event page to connect with other
+students looking for teammates.
 
 </details>
 
