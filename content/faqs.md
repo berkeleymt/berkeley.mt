@@ -16,10 +16,10 @@ find what you're looking for, feel free to email us at <team@berkeley.mt>.
 Registration is handled through [ContestDojo](https://contestdojo.com/). To
 register:
 
-1. An adult (coach, parent, or guardian) creates a **coach account** on
+1. An adult (coach, parent, or guardian) creates a coach account on
    ContestDojo.
-2. The coach creates an **organization** (e.g., your school or club name) and
-   receives an **organization join code**.
+2. The coach creates an organization (e.g., your school or club name) and
+   receives an organization join code.
 3. Students create their own ContestDojo accounts and join the organization
    using that code.
 4. The coach assigns students to a team and purchases seats.
@@ -109,8 +109,8 @@ chaperone for every two teams.
 We do not provide travel or parking for students — coaches should arrange their
 own travel logistics.
 
-If convenient, we recommend taking **BART** (Bay Area Rapid Transit) to avoid
-parking challenges and traffic. The **Downtown Berkeley BART station** is a
+If convenient, we recommend taking BART (Bay Area Rapid Transit) to avoid
+parking challenges and traffic. The Downtown Berkeley BART station is a
 10-minute walk from the tournament venues, and is a good option for those
 commuting from San Francisco or the East Bay.
 
@@ -156,8 +156,8 @@ or the U.S. to participate. Teams may have up to **6 students**.
 <details>
 <summary>What is the difference between Focus Tests and the General Test?</summary>
 
-Each student chooses **either** two Focus Tests (60 min each, subject-specific:
-Algebra, Geometry, Discrete, Calculus) **or** the General Test (90 min, covering
+Each student chooses either two Focus Tests (60 min each, subject-specific:
+Algebra, Geometry, Discrete, Calculus) or the General Test (90 min, covering
 all subjects). Focus Tests are harder but count for more toward your team's
 score. Students who are confident in specific subjects should consider Focus
 Tests; those who prefer a broader challenge should take the General Test.
