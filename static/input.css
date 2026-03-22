@@ -29,7 +29,7 @@
 }
 
 .prose details {
-  @apply border border-gray-200 rounded-xl transition-colors duration-150;
+  @apply border border-gray-200 rounded-xl px-4 transition-colors duration-150;
 }
 
 .prose details:hover {
@@ -37,7 +37,7 @@
 }
 
 .prose details[open] {
-  @apply bg-transparent;
+  @apply bg-transparent pb-4;
 }
 
 .prose details + details {
@@ -45,7 +45,7 @@
 }
 
 .prose details summary {
-  @apply cursor-pointer select-none list-none font-medium p-4;
+  @apply -mx-4 cursor-pointer select-none list-none font-medium p-4;
   @apply flex items-center justify-between;
   @apply transition-colors duration-150 rounded-xl;
 }
@@ -78,9 +78,6 @@
   @apply border-b border-gray-200 bg-gray-50;
 }
 
-.prose details > :not(summary) {
-  @apply mx-4;
-}
 
 #text-404 {
   @apply bg-gradient-to-br from-teal-400 to-emerald-300 bg-clip-text text-transparent;
