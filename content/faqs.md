@@ -152,7 +152,7 @@ should review before the tournament.
 
 </details>
 
-## BMT-Specific
+## BMT (High School)
 
 <details>
 <summary>What is the difference between Focus Tests and the General Test?</summary>
@@ -175,7 +175,7 @@ latest details.
 
 </details>
 
-## BmMT-Specific
+## BmMT (Middle School)
 
 <details>
 <summary>I'm in a different timezone or non-local and can't compete live at BmMT. What are my options?</summary>

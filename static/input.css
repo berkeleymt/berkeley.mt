@@ -29,7 +29,15 @@
 }
 
 .prose details {
-  @apply border border-gray-200 rounded-xl;
+  @apply border border-gray-200 rounded-xl transition-colors duration-150;
+}
+
+.prose details:hover {
+  @apply border-gray-300 bg-gray-50/50;
+}
+
+.prose details[open] {
+  @apply bg-transparent;
 }
 
 .prose details + details {
@@ -38,23 +46,36 @@
 
 .prose details summary {
   @apply cursor-pointer select-none list-none font-medium p-4;
+  @apply flex items-center justify-between;
+  @apply transition-colors duration-150 rounded-xl;
+}
+
+.prose details summary:hover {
+  @apply bg-gray-50;
+}
+
+.prose details[open] summary {
+  @apply rounded-b-none;
 }
 
 .prose details summary::-webkit-details-marker {
   display: none;
 }
 
-.prose details summary::before {
-  content: "▶";
-  @apply inline-block mr-2 text-xs text-gray-400 transition-transform duration-200;
+.prose details summary::after {
+  content: "";
+  @apply inline-block transition-transform duration-200;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid theme("colors.gray.400");
 }
 
-.prose details[open] summary::before {
-  transform: rotate(90deg);
+.prose details[open] summary::after {
+  transform: rotate(180deg);
 }
 
-.prose details[open] summary {
-  @apply border-b border-gray-200;
+.prose details[open] > summary {
+  @apply border-b border-gray-200 bg-gray-50;
 }
 
 .prose details > :not(summary) {
