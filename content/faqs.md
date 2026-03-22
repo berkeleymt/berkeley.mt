@@ -182,11 +182,13 @@ Each student chooses either two Focus Tests (60 min each, subject-specific:
 Algebra, Geometry, Discrete, Calculus) or the General Test (90 min, covering
 all subjects). Focus Tests are harder and may require knowledge or problem
 solving techniques not commonly taught in high school classes. They do count
-for more toward your team's score, but we recommend most students take the
-General Test unless they have tried past Focus Tests from our
-[archive](/resources/) and feel comfortable with the difficulty. If the Focus
-Tests feel prohibitively difficult, take the General Test; if the General Test
-doesn't provide the challenge you're looking for, consider a focus pair.
+for more toward your team's score.
+
+We recommend most students take the General Test unless they have tried past
+Focus Tests from our [archive](/resources/) and feel comfortable with the
+difficulty. If the Focus Tests feel prohibitively difficult, take the General
+Test; if the General Test doesn't provide the challenge you're looking for,
+consider a focus pair.
 
 </details>
 
