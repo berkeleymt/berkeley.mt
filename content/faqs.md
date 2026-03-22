@@ -8,7 +8,7 @@ find what you're looking for, feel free to email us at <team@berkeley.mt>.
 
 <!-- more -->
 
-## Registration
+### Registration & Fees
 
 <details>
 <summary>How do I register my team?</summary>
@@ -34,7 +34,9 @@ If you are unfamiliar with ContestDojo, please read our
 
 Yes! Any adult — parent, guardian, tutor, or otherwise — can register as a
 "coach" on ContestDojo. The coach is simply the adult responsible for the team.
-You do not need to be affiliated with a school.
+You do not need to be affiliated with a school. When ContestDojo asks you to
+create an "Organization," this is just a label — you can use your family name,
+a club name, or anything you'd like.
 
 </details>
 
@@ -77,27 +79,7 @@ can help you cancel and switch.
 
 </details>
 
-## Eligibility
-
-<details>
-<summary>Who is eligible to compete in BMT?</summary>
-
-BMT is open to any student in **grade 12 or below**, including advanced middle
-school students. Students do not have to be local to the Bay Area, California,
-or the U.S. to participate. Teams may have up to **6 students**.
-
-</details>
-
-<details>
-<summary>Who is eligible to compete in BmMT?</summary>
-
-BmMT is open to any student in **grade 8 or below**, including advanced
-elementary school students. Students do not have to be local to the Bay Area,
-California, or the U.S. to participate. Teams may have up to **5 students**.
-
-</details>
-
-## Tournament Day
+### Tournament Day
 
 <details>
 <summary>Are calculators or other reference material allowed?</summary>
@@ -141,8 +123,6 @@ for more options.
 
 </details>
 
-## Preparing for the Tournament
-
 <details>
 <summary>How can I prepare? Are there practice problems available?</summary>
 
@@ -153,7 +133,16 @@ should review before the tournament.
 
 </details>
 
-## BMT (High School)
+### BMT (High School)
+
+<details>
+<summary>Who is eligible to compete in BMT?</summary>
+
+BMT is open to any student in **grade 12 or below**, including advanced middle
+school students. Students do not have to be local to the Bay Area, California,
+or the U.S. to participate. Teams may have up to **6 students**.
+
+</details>
 
 <details>
 <summary>What is the difference between Focus Tests and the General Test?</summary>
@@ -166,27 +155,29 @@ Tests; those who prefer a broader challenge should take the General Test.
 
 </details>
 
-<details>
-<summary>I'm in a different timezone or non-local and can't compete live at BMT. What are my options?</summary>
+### BmMT (Middle School)
 
-There may be BMT Satellite competitions held through our partners across the
-globe for competitors wishing to compete in a different time zone. Additionally,
-we offer BMT Online for remote participation. Check the event pages for the
-latest details.
+<details>
+<summary>Who is eligible to compete in BmMT?</summary>
+
+BmMT is open to any student in **grade 8 or below**, including advanced
+elementary school students. Students do not have to be local to the Bay Area,
+California, or the U.S. to participate. Teams may have up to **5 students**.
 
 </details>
 
-## BmMT (Middle School)
+### Online Competitions
 
 <details>
-<summary>I'm in a different timezone or non-local and can't compete live at BmMT. What are my options?</summary>
+<summary>I can't compete in person. What are my options?</summary>
 
-We offer BmMT Online as a synchronous online event for those who cannot make it
-to campus. Check the event pages for the latest dates and details.
+Both BMT and BmMT offer online versions for remote participation. For BMT,
+there may also be Satellite competitions held through our partners across the
+globe. Check the event pages for the latest dates and details.
 
 </details>
 
-## After the Tournament
+### After the Tournament
 
 <details>
 <summary>When will scores and certificates be available?</summary>
