@@ -79,12 +79,7 @@
 }
 
 .prose details > :not(summary) {
-  @apply px-4;
-}
-
-.prose details ol,
-.prose details ul {
-  @apply pl-8;
+  @apply mx-4;
 }
 
 #text-404 {
