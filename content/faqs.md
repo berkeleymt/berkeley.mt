@@ -8,7 +8,7 @@ find what you're looking for, feel free to email us at <team@berkeley.mt>.
 
 <!-- more -->
 
-### Registration & Fees
+### Registration & fees
 
 <details>
 <summary>How do I register my team?</summary>
@@ -85,7 +85,7 @@ can help you cancel and switch.
 
 </details>
 
-### Tournament Day
+### At the competition
 
 <details>
 <summary>Are calculators or other reference material allowed?</summary>
@@ -148,7 +148,7 @@ should review before the tournament.
 
 </details>
 
-### BMT (High School)
+### BMT (high school)
 
 <details>
 <summary>Who is eligible to compete in BMT?</summary>
@@ -156,6 +156,22 @@ should review before the tournament.
 BMT is open to any student in **grade 12 or below**, including advanced middle
 school students. Students do not have to be local to the Bay Area, California,
 or the U.S. to participate. Teams may have up to **6 students**.
+
+</details>
+
+<details>
+<summary>What are the contest rounds?</summary>
+
+BMT consists of three rounds:
+
+1. **Power Round** (90 min) — a proof-based team round centered around a single
+   topic. No prior background in the topic is expected.
+2. **Individual Round** — students choose either two Focus Tests (60 min each,
+   subject-specific) or the General Test (90 min, all subjects).
+3. **Guts Round** (75 min) — a team round where problems are given in sets of 3
+   and scored live.
+
+See the event page for full details on format and scoring.
 
 </details>
 
@@ -170,7 +186,17 @@ Tests; those who prefer a broader challenge should take the General Test.
 
 </details>
 
-### BmMT (Middle School)
+<details>
+<summary>How is the team score calculated?</summary>
+
+Team scores are based on a weighted combination of Power Round (30%), Individual
+Round (40%), and Guts Round (30%) scores. If a team has fewer than 4 members,
+scores of 0 are added for the missing spots. Taking the General Test counts for
+half as many individual points as the Focus Tests.
+
+</details>
+
+### BmMT (middle school)
 
 <details>
 <summary>Who is eligible to compete in BmMT?</summary>
@@ -181,7 +207,33 @@ California, or the U.S. to participate. Teams may have up to **5 students**.
 
 </details>
 
-### Online Competitions
+<details>
+<summary>What are the contest rounds?</summary>
+
+BmMT consists of four rounds:
+
+1. **Puzzle Round** (75 min) — a team round with a variety of mathematical
+   challenges designed to promote inductive reasoning and lateral thinking.
+2. **Individual Round** (60 min) — 20 short-answer questions covering algebra,
+   geometry, counting, probability, and number theory.
+3. **Team Round** (60 min) — 20 short-answer questions worked on as a team.
+4. **Relay Round** (40 min) — 20 problems where some answers depend on prior
+   answers in the relay.
+
+See the event page for full details on format and scoring.
+
+</details>
+
+<details>
+<summary>How is the team score calculated?</summary>
+
+Team scores are based on a weighted combination of Puzzle (20%), Individual
+(40%), Team (30%), and Relay (10%) scores. If a team has fewer than 3 members,
+scores of 0 are added for the missing spots.
+
+</details>
+
+### Online competitions
 
 <details>
 <summary>I can't compete in person. What are my options?</summary>
@@ -192,7 +244,7 @@ globe. Check the event pages for the latest dates and details.
 
 </details>
 
-### After the Tournament
+### Scores & awards
 
 <details>
 <summary>When will scores and certificates be available?</summary>
