@@ -61,9 +61,10 @@ organization name and the number of seats you need waived.
 <details>
 <summary>What is the refund or cancellation policy?</summary>
 
-If you need to cancel a registration, please email <team@berkeley.mt>. If you
-need to swap a student on your team rather than cancel entirely, we can help
-with that as well.
+We provide refunds under some circumstances. If you need to cancel a
+registration, please email <team@berkeley.mt>. Since ContestDojo registration
+is seat-based (not student-based), you can swap which students fill your seats
+at any time without contacting us.
 
 </details>
 
@@ -71,8 +72,8 @@ with that as well.
 <summary>Can I switch between online and in-person registration?</summary>
 
 Online and in-person tournaments are separate registrations on ContestDojo. If
-you'd like to switch, email <team@berkeley.mt> and we can help you cancel one
-registration and set up the other.
+you accidentally registered for the wrong one, email <team@berkeley.mt> and we
+can help you cancel and switch.
 
 </details>
 
