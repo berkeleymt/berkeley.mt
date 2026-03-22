@@ -120,7 +120,7 @@ chaperone for every two teams.
 
 </details>
 
-<details>
+<details id="where-can-i-find-parking-how-can-i-get-to-berkeley">
 <summary>Where can I find parking? How can I get to Berkeley?</summary>
 
 We do not provide travel or parking for students — coaches should arrange their
