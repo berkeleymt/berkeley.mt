@@ -18,11 +18,12 @@ register:
 
 1. An adult (coach, parent, or guardian) creates a coach account on
    ContestDojo.
-2. The coach creates an organization (e.g., your school or club name) and
-   receives an organization join code.
+2. The coach creates an organization (e.g., your school or club name),
+   registers the organization for an event, and receives an organization
+   join code.
 3. Students create their own ContestDojo accounts and join the organization
    using that code.
-4. The coach assigns students to a team and purchases seats.
+4. The coach purchases seats and assigns students to a team.
 
 If you are unfamiliar with ContestDojo, please read our
 [ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide).
@@ -40,8 +41,13 @@ a club name, or anything you'd like.
 
 We strongly recommend participating as part of a team — much of the tournament
 experience is collaborative, and several rounds are team-based. If your child
-doesn't have teammates yet, check the Teammate Finder spreadsheet linked on
-each event page to connect with other students.
+doesn't have teammates yet, you can use the Teammate Finder spreadsheet to
+connect with other coaches. The Teammate Finder is listed under the "How to
+Register" section for each event.
+
+You can complete your registration and purchase seats before finding teammates.
+If you later need to move students between organizations, email
+<team@berkeley.mt> and we can help.
 
 </details>
 
@@ -51,9 +57,10 @@ each event page to connect with other students.
 Students are allowed to register and compete individually or in small teams.
 However, we strongly recommend forming a full team if possible — several rounds
 are team-based, and teams smaller than the recommended size (at least 4 for BMT,
-at least 3 for BmMT) will be disadvantaged by our scoring model. Check the
-Teammate Finder spreadsheet linked on each event page to connect with other
-students looking for teammates.
+at least 3 for BmMT) will be disadvantaged by our scoring model. You can use the
+Teammate Finder spreadsheet to connect with other coaches looking for teammates.
+The Teammate Finder is listed under the "How to Register" section for each
+event.
 
 </details>
 
@@ -61,8 +68,10 @@ students looking for teammates.
 <summary>Do you offer fee waivers or financial aid?</summary>
 
 Yes! We want our tournaments to be accessible to all students. If your team
-needs financial assistance, please contact <team@berkeley.mt> with your
-organization name and the number of seats you need waived.
+needs financial assistance, please contact <team@berkeley.mt> with the number
+of seats you need waived after you have created a coach account and an
+organization on ContestDojo, and registered your organization for the event you
+will attend.
 
 </details>
 
@@ -70,9 +79,11 @@ organization name and the number of seats you need waived.
 <summary>What is the refund or cancellation policy?</summary>
 
 We provide refunds under some circumstances. If you need to cancel a
-registration, please email <team@berkeley.mt>. Since ContestDojo registration
-is seat-based (not student-based), you can swap which students fill your seats
-at any time without contacting us.
+registration, please email <team@berkeley.mt>. Since the seats you purchased on
+ContestDojo belong to your organization, you can swap students in and out of
+your teams without contacting us. However, if you have already checked in
+online for an in-person event, you cannot change your team rosters after
+check-in.
 
 </details>
 
@@ -86,6 +97,16 @@ can help you cancel and switch.
 </details>
 
 ### At the competition
+
+<details>
+<summary>What should I bring to the competition?</summary>
+
+Students should bring pencils, erasers, and any permitted tools (protractors,
+rulers, compasses). Blank scratch paper will be provided. Do not bring
+calculators, graph paper, or other reference materials. We also recommend
+bringing a water bottle and any personal items you may need for the day.
+
+</details>
 
 <details>
 <summary>Are calculators or other reference material allowed?</summary>
@@ -103,9 +124,9 @@ disqualification.
 <summary>Does my team need an adult chaperone?</summary>
 
 Yes. Every team must have an adult chaperone present on tournament day. The
-chaperone is the person who registered as the "coach" on ContestDojo (or a
-designated substitute). We ask that organizations provide at least one adult
-chaperone for every two teams.
+chaperone is typically the person who registered as the "coach" on ContestDojo,
+but any responsible adult may serve as the chaperone. We ask that organizations
+provide at least one adult chaperone for every two teams.
 
 </details>
 
@@ -148,7 +169,7 @@ should review before the tournament.
 
 </details>
 
-### BMT (high school)
+### BMT (targeted to high schoolers)
 
 <details>
 <summary>Who is eligible to compete in BMT?</summary>
@@ -202,7 +223,7 @@ half as many individual points as the Focus Tests.
 
 </details>
 
-### BmMT (middle school)
+### BmMT (targeted to middle schoolers)
 
 <details>
 <summary>Who is eligible to compete in BmMT?</summary>
@@ -268,5 +289,7 @@ you need a certificate reissued or have a question about your score, email
 For in-person tournaments, awards are physically presented to contestants at the
 closing ceremony. For online tournaments, we provide official rankings and
 digital certificates for top-scoring teams, but there are no physical awards.
+Participation certificates are available for both in-person and online
+tournaments.
 
 </details>
