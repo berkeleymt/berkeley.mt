@@ -285,8 +285,12 @@ score, email <team@berkeley.mt>.
 <details>
 <summary>How are awards handled?</summary>
 
-For in-person tournaments, awards are physically presented to contestants at the
-closing ceremony. For online tournaments, we provide official rankings for
-top-scoring teams, but there are no physical awards.
+For each test, honorable mention is awarded to the top 50%, distinguished
+honorable mention to the top 20%, and the top 10 scorers are recognized. The
+same structure applies to team scores.
+
+For in-person tournaments, awards are physically presented at the closing
+ceremony. For online tournaments, we provide official rankings for top-scoring
+teams, but there are no physical awards.
 
 </details>
