@@ -285,8 +285,8 @@ score, email <team@berkeley.mt>.
 <details>
 <summary>How are awards handled?</summary>
 
-For each individual test, honorable mention is awarded to the top 50%,
-distinguished honorable mention to the top 20%, and the top 10 scorers are
+For each individual test, Honorable Mention is awarded to the top 50%,
+Distinguished Honorable Mention to the top 20%, and the top 10 scorers are
 recognized. For team rounds and overall team scores, the top 10 teams are
 recognized.
 
