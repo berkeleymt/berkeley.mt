@@ -274,12 +274,11 @@ globe. Check the event pages for the latest dates and details.
 ### Scores & awards
 
 <details>
-<summary>When will scores and certificates be available?</summary>
+<summary>When will scores be available?</summary>
 
-Score reports and participation certificates are typically available on
-ContestDojo after the tournament. Results slides are posted on our website. If
-you need a certificate reissued or have a question about your score, email
-<team@berkeley.mt>.
+Score reports are typically available on ContestDojo after the tournament.
+Results slides are posted on our website. If you have a question about your
+score, email <team@berkeley.mt>.
 
 </details>
 
@@ -287,9 +286,7 @@ you need a certificate reissued or have a question about your score, email
 <summary>How are awards handled?</summary>
 
 For in-person tournaments, awards are physically presented to contestants at the
-closing ceremony. For online tournaments, we provide official rankings and
-digital certificates for top-scoring teams, but there are no physical awards.
-Participation certificates are available for both in-person and online
-tournaments.
+closing ceremony. For online tournaments, we provide official rankings for
+top-scoring teams, but there are no physical awards.
 
 </details>
