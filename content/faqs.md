@@ -290,6 +290,8 @@ Distinguished Honorable Mention to the top 20%, and the top 10 scorers are
 recognized. For team rounds and overall team scores, the top 10 teams are
 recognized.
 
+We do not offer participation certificates.
+
 For in-person tournaments, awards are physically presented at the closing
 ceremony. For online tournaments, we provide official rankings for top-scoring
 teams, but there are no physical awards.
