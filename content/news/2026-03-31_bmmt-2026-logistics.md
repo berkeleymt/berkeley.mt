@@ -2,7 +2,7 @@
 title = "BmMT 2026 April 12 Tournament Day Logistics"
 +++
 
-_Shown below is a transcription of an email sent out to all coaches and students registered for BmMT 2025._
+_Shown below is a transcription of an email sent out to all coaches and students registered for BmMT 2026._
 
 ---
 
@@ -15,22 +15,21 @@ Coaches will receive physical copies of the Tournament Guide at check-in.
 
 <!-- more -->
 
-{% button_link(href="/events/bmmt-2025") %} Event Details {% end %}
-{% button_link(href="/assets/bmmt-2025/tournament-guide.pdf") %} Tournament Guide PDF {% end %}
+{% button_link(href="/events/bmmt-2026") %} Event Details {% end %}
+{% button_link(href="/assets/bmmt-2026/tournament-guide.pdf") %} Tournament Guide PDF {% end %}
 
 ## Important Information
 
 During BmMT, we will be posting updates to the website (<https://berkeley.mt>),
 including Tiebreaker qualifiers. Please be on the lookout for any announcements.
 For any day-of directions, questions or concerns ask a BMT staff member or
-volunteer wearing a dark purple shirt.
+volunteer wearing a dark green shirt.
 
 An annotated campus map is provided at the bottom of this page.
 
-### Information Booth
+### Information Desk
 
-For students lost or arriving late, we will hold an information booth in
-the lobby of Dwinelle Hall after the Puzzle Round begins at 9:00 AM.
+For students lost or arriving late, we will hold an information booth in Dwinelle Plaza after the Puzzle Round begins at 9:00 AM.
 
 ## Arrival and Check-in
 
@@ -45,8 +44,8 @@ If you check in online, you must still show up in the morning to pick up materia
 
 Check-in / materials pick-up will happen in Dwinelle Hall at **8:00 AM**:
 
-- **Check-in** _(if haven't checked in online)_ — Dwinelle 155
-- **Materials Pick-up** _(if checked in online)_ — Dwinelle 145
+- **Dwinelle 145** — Coaches who haven't checked in online should go here.
+- **Dwinelle 155** — Coaches who have checked in online should go here for materials pick-up.
 
 At check-in, coaches will receive:
 
@@ -64,21 +63,42 @@ At check-in, coaches will receive:
 - A voucher for pre-ordered lunches, which can be redeemed during the lunch
   break in front of Dwinelle Hall.
 
-**Check-in closes promptly at 8:45 AM**, so please be on time. If you arrive
+**Check-in closes promptly at 9:00 AM**, so please be on time. If you arrive
 after this time, your team will be late to the Puzzle Round, which puts them at
 a great disadvantage.
 
-### Parking
+### What to pack
 
-Parking can be found near campus at the following locations:
+We suggest students bring the following items to BmMT:
 
-- Telegraph Channing Garage _(recommended)_
-- Underhill Garage
+- A backpack or small bag for carrying materials and swag
+- Multiple pencils and erasers
+- Lunch or money for lunch, if you didn't order it
+- A water bottle to stay hydrated throughout the day
+- Comfortable walking shoes (you'll be moving between buildings)
+- Layers of clothing (temperatures can vary)
+
+Scratch paper will be provided for all participants, so please do not bring your
+own.
+
+### Travel and Transportation
+
+If convenient, we recommend taking BART (Bay Area Rapid Transit) to campus. The **Downtown Berkeley BART station** is located just a few blocks from campus and provides easy access to the tournament venues. From the station, it's approximately a 10-minute walk to Dwinelle Hall. Taking BART can help you avoid parking challenges and traffic, especially during peak hours.
+
+If you would prefer to drive, parking can be found near campus at many
+locations. We recommend the following options, which are also highlighted on the
+map attached below:
+
+- Telegraph-Channing Garage
 - RSF Garage
-- Lower Sproul Garage
-- Ellsworth Garage
+- Underhill Parking
+- Stadium Parking Garage
+- Allston Way Garage
+- Center Street Garage
+- Lower Hearst Structure
+- UNEX Lot
 
-More parking options are listed at the [UC Berkeley Parking and Transportation website] and the [City of Berkeley Parking website].
+![Annotated Parking Map](/assets/bmmt-2026/parking-map.jpg)
 
 ## Schedule of Events
 
@@ -93,7 +113,7 @@ More parking options are listed at the [UC Berkeley Parking and Transportation w
 </thead>
 <tbody>
 <tr>
-  <td>8:00 AM – 8:45 AM</td>
+  <td>7:45 AM – 9:00 AM</td>
   <td>Check-in <i>(coaches only)</i></td>
   <td>
     After arrival, coaches should proceed to one of the two auditoriums in Dwinelle Hall, depending on whether they have already checked in online or not.
@@ -115,16 +135,18 @@ More parking options are listed at the [UC Berkeley Parking and Transportation w
   <!-- td continued from previous row -->
 </tr>
 <tr>
-  <td>12:00 – 1:00 PM</td>
+  <td>12:00 – 1:15 PM</td>
   <td>
     Lunch
+    <br>Free Sponsor Swag Pick-up
     <br>Extra T-shirt Sales
     <br>Disputes (12:00–12:30)
   </td>
   <td>
     <b>Pre-purchased Lunch Pick-up</b> — Outside Dwinelle Hall
+    <br><b>Free Sponsor Swag Pick-up</b> — Outside Dwinelle Hall
     <br><b>T-shirt Sales</b> <i>(while supplies last)</i> — Outside Dwinelle Hall
-    <br><b>Problem Disputes</b> <i>(Puzzle, Individual)</i> — Wheeler 126
+    <br><b>Problem Disputes</b> <i>(Puzzle, Individual)</i> — Dwinelle 234
   </td>
 </tr>
 <tr>
@@ -136,29 +158,28 @@ More parking options are listed at the [UC Berkeley Parking and Transportation w
   </td>
 </tr>
 <tr>
-  <td>2:45 – 4:00 PM</td>
+  <td>2:45 – 3:30 PM</td>
   <td>Relay Round</td>
   <!-- td continued from previous row -->
 </tr>
 <tr>
-  <td>4:00 – 5:30 PM</td>
+  <td>3:30 – 5:00 PM</td>
   <td>
     Activities
     <br>Tiebreaker
-    <br>Disputes (4:00–4:30)
+    <br>Disputes (3:30–4:00)
   </td>
   <td>
     <b>Activities</b> — See activities descriptions below
-    <br><b>Tiebreaker</b> <i>(by invite only*)</i> — Wheeler 130
-    <br><b>Problem Disputes</b> <i>(Team, Relay)</i> — Wheeler 126
+    <br><b>Tiebreaker</b> <i>(by invite only*)</i> — Dwinelle 229
+    <br><b>Problem Disputes</b> <i>(Team, Relay)</i> — Dwinelle 234
   </td>
 </tr>
 <tr>
-  <td>5:30 – 6:30 PM</td>
+  <td>5:00 – 6:00 PM</td>
   <td>Awards Ceremony</td>
   <td>
-    The Awards Ceremony will take place simultaneously in Pauley Ballroom
-    and Dwinelle 155.
+    The Awards Ceremony will take place simultaneously in Dwinelle Hall, Pauley Ballroom, and VLSB.
     <br>You will be assigned an awards room at check-in. <i>Going to a
     different room may result in your awards being delayed.</i>
   </td>
@@ -187,104 +208,67 @@ campus.
 
 ## Activities
 
-### Parent Activities
-
-Between 9:00 AM and 5:30 PM, we will have a parent lounge in Pauley Ballroom.
-Additionally, we will have the following activites for parents.
-
-- **Po-Shen Loh Talk (9–11 AM) [Pauley Ballroom]** — A talk by Dr. Po-Shen Loh,
-  mathematician and professor at Carnegie Mellon University, founder of LIVE, a
-  revolutionary way to learn math online, and former coach of the US International
-  Mathematical Olympiad team. Come join to hear his insights into math education!
-
-- **Campus Tour (11 AM) [Pauley Ballroom]** — Join us on a tour of the beautiful
-  UC Berkeley campus! Signups will be announced in the parent lounge, after Dr.
-  Po-Shen Loh's talk.
-
-- **Tangled Topology: A Journey Through Mathematical Surfaces! (4 PM)
-  [Dwinelle 155]** —
-  Join us for an engaging presentation by Cliff Stoll—astronomer, author, and
-  creator of handcrafted glass Klein bottles through his company Acme Klein
-  Bottle. Hear about the fascinating world of topology, exploring concepts such
-  as Möbius loops and the Klein bottle, a surface with no distinguishable
-  "inside" or "outside."
-
 ### Student Activities
 
 After the Relay Round, we will be hosting student activities. These are optional
 activities that promote recreational math, and include the following:
 
-- **Tangled Topology: A Journey Through Mathematical Surfaces!
-  [Dwinelle 155]** —
-  Join us for an engaging presentation by Cliff Stoll—astronomer, author, and
-  creator of handcrafted glass Klein bottles through his company Acme Klein
-  Bottle. Hear about the fascinating world of topology, exploring concepts such
-  as Möbius loops and the Klein bottle, a surface with no distinguishable
-  "inside" or "outside."
+- **HRT Puzzle Hunt [Pauley Ballroom]** — todo
 
-  A few lucky students will even go home with a free Klein bottle!
+- **Float Your Boat: The Archimedes Challenge [Dwinelle 106, 109]** — In 250 BC, Archimedes discovered the principle of buoyancy, noticing it in his bathtub and using it to prove the kings’ crowns were made of gold! Can you use it to keep heavy boats afloat? Come experiment with the physics that keeps everything from toy rafts to cargo ships above water.
+  
+- **Cal Origami [Dwinelle 246, 247]** — Do you want to bring home a cute souvenir from BmMT? Come make your own origami polyhedra! We will be offering multiple paper patterns and instructions, and teaching from the basics of modular origami. No prior craft experience is needed!
 
-- **Estimathon [Hearst Field Annex A1]** — Got wit and strategy? Come to our
+- **Estimathon [Dwinelle 155]** — Got wit and strategy? Come to our
   Estimathon®, a contest combining trivia, strategic planning, and sharp
   mathematical thinking. Teams of up to 3 will race against the clock to
   tackle a challenging set of 13 Fermi-style problems, testing their ability
   to think fast and outsmart the competition.
 
-- **Countdown [Dwinelle 179, 182, 183, 187]** — Face off against 63 other
-  challengers in a mental math showdown! In this fast-paced, single-elimination
-  bracket, you'll need to bring both speed and smarts. Seconds matter, and only
-  the quickest will survive. One will come out on top... will it be you?
+- **Plank Countdown [Dwinelle 182, 187]** — Miss the excitement of the MATHCOUNTS® Countdown Round? Want to show off mental math in a countdown match... while planking? If you'd enjoy that exciting and silly experience, come join us for our Plank Countdown tournament!
+  
+- **Mathematician Mash [Dwinelle 145]** — Test your math intuition in this fast-paced game inspired by the classic game show Family Feud! Teams will try to guess the most popular answers to math-themed questions. The goal isn’t just to be correct — it’s to think like everyone else and guess the most common answers. Work with your teammates, buzz in quickly, and see if your mathematical instincts can lead your team to the top!
+  
+- **Games Lounge [Dwinelle 258]** — Looking for a place to chill out? Come to the Games Lounge! We’ll have a variety of games (and seats) for students, parents, and coaches to unwind after a day of testing.
 
-- <div class="flex flex-col gap-4 items-start">
-    <div class="flex gap-4">
-      <span>📐🧠🖼️🙊❌🗣️</span>
-      <span>👉</span>
-      <span>🇩​🇼​🇮​🇳</span>
-      <span>2️⃣2️⃣3️⃣➕2️⃣2️⃣9️⃣</span>
-      <span>👈</span>
-    </div>
-    <div class="col-span-2 grid grid-cols-[repeat(9,1.25em)] gap-1">
-    <i></i><i></i><i></i><i></i>🟩<i></i><i></i><i></i><i></i>
-    <i></i><i></i>🟨<i></i>🟩<i></i>🟥🟨🟩
-    🟥➕🟨➕🟩🟰🟨🟨🟩
-    <i></i><i></i>🟨<i></i>🟩<i></i>🟩🟩🟩
-    <i></i><i></i><i></i><i></i>🟩<i></i><i></i><i></i><i></i>
-    </div>
-    <button
-      class="not-prose inline-block text-sm bg-teal-500 text-white py-1 px-2 rounded shadow-sm hover:-translate-y-0.5 hover:shadow transition-all {% if class %}{{ class }}{% endif %}"
-      onclick="document.getElementById('pww').classList.toggle('hidden')"
-    >
-        Click to toggle textual description
-    </button>
-    <div id="pww" class="hidden p-2 bg-gray-200 rounded">
-      <b>Proofs Without Words [Dwinelle 223, 229]</b> — Get ready to see math
-      like never before! Take concepts you might already know and explore them
-      in fun, visual, and totally different ways. We'll give you new ways to
-      think and cool ideas to show off the next time you find yourself in a
-      boring classroom.
-    </div>
-  </div>
+### Parent Activities
 
-- **Origami [Wheeler 200, 202, 204]** — Want to take home a cute souvenir from
-  BmMT, or build a beautiful spiky ball with us? We've got a variety of paper
-  patterns and instructions, and we'll teach from the basics of modular origami.
-  No prior craft experience is needed!
+Between 9:00 AM and 5:30 PM, we will have a parent lounge in Dwinelle 155.
+Additionally, we will have the following activites for parents.
 
-- **Float, Fly, Fascinate! [Dwinelle 215, 219]** — Every wondered how boats
-  stay afloat and how airplanes soar through the sky? Join the Society of
-  Physics Students at Berkeley for exciting hands-on demonstrations that reveal
-  the physics behind the everyday wonders you take for granted.
+- **Isaac Li Talk (9–11 AM) [Dwinelle 155]** — What makes a math contest problem good? And how can math contests offer students a gateway to deep and compelling mathematical investigations? In this talk, curriculum developer Isaac Li will draw on his experiences as a mathlete and contest writer to explore how contests, at their best, can encourage students to persist through difficulty, approach problems more strategically, and develop agency over their own learning.
+
+  Isaac Li is a math curriculum developer at Art of Problem Solving. He has served as a test organizer for the Berkeley Math Tournament and contributed problems to the USA Mathematical Talent Search (USAMTS), among other competitions.
+
+- **Campus Tour (11 AM) [Dwinelle 155]** — Join us on a tour of the beautiful
+  UC Berkeley campus! Signups will be announced in the parent lounge, after Isaac Li's talk.
+
+- **Po-Shen Loh Table (11 AM) [Dwinelle Hall]** —
+  todo tbd work on this chat
 
 ## Awards Ceremony
 
-The Awards Ceremony will take place simultaneously in Dwinelle 155 and Pauley
-Ballroom. Organizations will be assigned a room at check-in. Teams attending
+The Awards Ceremony will take place simultaneously in Dwinelle Hall, Pauley Ballroom, and VLSB. Organizations will be assigned a room at check-in. Teams attending
 Awards Ceremony **must attend in the auditorium they are assigned**, or else
 they may not receive their award on time.
 
+## Disqualification Information
+
+Contestants will be immediately disqualified for any of the following reasons:
+- Cheating (looking at another student’s paper, phone use, etc.)
+- Using slurs 
+- Causing harm to others
+
+Contestants will be disqualified after being given two warnings for any of the following reasons:
+- Rowdy or disruptive behavior across teams or that disrupts entire room from testing 
+  - Includes: students that are talking to each other loudly/disturbing others around them while not aiming to
+- Eating paper or throwing paper 
+- Entering other teams’ space (ex. crawling on the floor)
+
+
 ## Campus Map
 
-![Annotated Campus Map](/assets/bmmt-2025/campus-map.png)
+![Annotated Campus Map](/assets/bmmt-2026/campus-map.png)
 
 ---
 
