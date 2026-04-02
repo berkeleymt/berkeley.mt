@@ -8,7 +8,7 @@ _Shown below is a transcription of an email sent out to all coaches and students
 
 To all coaches and students,
 
-We are a week away from BmMT! Please read this email **in its entirety** as it
+BmMT is rapidly approaching! Please read this email **in its entirety** as it
 contains the tournament day logistics. Also attached is the Tournament Guide,
 a concise two-page document containing the schedule of events and activities.
 Coaches will receive physical copies of the Tournament Guide at check-in.
@@ -16,7 +16,8 @@ Coaches will receive physical copies of the Tournament Guide at check-in.
 <!-- more -->
 
 {% button_link(href="/events/bmmt-2026") %} Event Details {% end %}
-{% button_link(href="/assets/bmmt-2026/tournament-guide.pdf") %} Tournament Guide PDF {% end %}
+Tournament guide will be added soon.
+<!-- {% button_link(href="/assets/bmmt-2026/tournament-guide.pdf") %} Tournament Guide PDF {% end %} -->
 
 ## Important Information
 
