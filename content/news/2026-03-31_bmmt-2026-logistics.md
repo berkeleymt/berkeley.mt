@@ -29,7 +29,7 @@ An annotated campus map is provided at the bottom of this page.
 
 ### Information Desk
 
-For students lost or arriving late, we will hold an information booth in Dwinelle Plaza after the Puzzle Round begins at 9:00 AM.
+For students who get lost or are arriving late, we will hold an information booth in Dwinelle Plaza after the Puzzle Round begins at 9:00 AM.
 
 ## Arrival and Check-in
 
@@ -83,9 +83,7 @@ own.
 
 ### Travel and Transportation
 
-If convenient, we recommend taking BART (Bay Area Rapid Transit) to campus. The **Downtown Berkeley BART station** is located just a few blocks from campus and provides easy access to the tournament venues. From the station, it's approximately a 10-minute walk to Dwinelle Hall. Taking BART can help you avoid parking challenges and traffic, especially during peak hours.
-
-If you would prefer to drive, parking can be found near campus at many
+Parking can be found near campus at many
 locations. We recommend the following options, which are also highlighted on the
 map attached below:
 
@@ -97,6 +95,8 @@ map attached below:
 - Center Street Garage
 - Lower Hearst Structure
 - UNEX Lot
+
+Have a backup parking garage planned, as we have had parking garages fill up in previous years.
 
 ![Annotated Parking Map](/assets/bmmt-2026/parking.svg)
 
@@ -209,9 +209,10 @@ campus.
 After the Relay Round, we will be hosting student activities. These are optional
 activities that promote recreational math, and include the following:
 
-#### ⭐ HRT Puzzle Hunt _[Pauley Ballroom]_
+#### ⭐ Time Mix-up Puzzle Hunt _by Hudson River Trading [Pauley Ballroom]_
 
-todo
+Ready to unleash your puzzle-solving skills? Join our puzzle hunt! You and a team of Time Un-mixers will embark on one of the adventures of all time and earn cool prizes along the way. Will you and your team save the clocks, or will you get stuck spinning your gears? No prior experience with puzzles is expected, just bring an open mind and your problem solving brain!
+
 
 #### Float Your Boat: The Archimedes Challenge _by [Berkeley Society of Physics Students](https://sps.studentorg.berkeley.edu/)[Dwinelle 106, 109]_ 
 
@@ -220,6 +221,10 @@ In 250 BC, Archimedes discovered the principle of buoyancy, noticing it in his b
 #### Origami _by [Cal Origami](https://calorigami.studentorg.berkeley.edu/) [Dwinelle 246, 247]_ 
 
 Do you want to bring home a cute souvenir from BmMT? Come make your own origami polyhedra! We will be offering multiple paper patterns and instructions, and teaching from the basics of modular origami. No prior craft experience is needed!
+
+#### Mathematician Mash _[Dwinelle 145]_
+
+Test your math intuition in this fast-paced game inspired by the classic game show Family Feud! Teams will try to guess the most popular answers to math-themed questions. The goal isn’t just to be correct — it’s to think like everyone else and guess the most common answers. Work with your teammates, buzz in quickly, and see if your mathematical instincts can lead your team to the top!
 
 #### Estimathon _[Dwinelle 155]_
 
@@ -233,17 +238,13 @@ Got wit and strategy? Come to our
 
 Miss the excitement of the MATHCOUNTS® Countdown Round? Want to show off mental math in a countdown match... while planking? If you'd enjoy that exciting and silly experience, come join us for our Plank Countdown tournament!
   
-#### Mathematician Mash _[Dwinelle 145]_
-
-Test your math intuition in this fast-paced game inspired by the classic game show Family Feud! Teams will try to guess the most popular answers to math-themed questions. The goal isn’t just to be correct — it’s to think like everyone else and guess the most common answers. Work with your teammates, buzz in quickly, and see if your mathematical instincts can lead your team to the top!
-  
 #### Games Lounge _[Dwinelle 258]_
 
 Looking for a place to chill out? Come to the Games Lounge! We’ll have a variety of games (and seats) for students, parents, and coaches to unwind after a day of testing.
 
-### Parent Activities
+### Parent / Coach Activities
 
-Between 9:00 AM and 5:30 PM, we will have a parent lounge in Dwinelle 155.
+Between 9:00 AM and 5:00 PM, we will have a parent lounge in Dwinelle 155.
 Additionally, we will have the following activites for parents.
 
 #### ⭐ Po-Shen Loh Table (11 AM) _[Dwinelle Hall]_
@@ -253,7 +254,8 @@ Additionally, we will have the following activites for parents.
   revolutionary way to learn math online, and former coach of the US International
   Mathematical Olympiad team. Come join to hear his insights into math education!
 
-#### Isaac Li Talk (9–11 AM) _[Dwinelle 155]_
+#### A Closer Look at Problem Solving in Math Contests
+ _by Isaac Li (9–11 AM) [Dwinelle 155]_
 
 What makes a math contest problem good? And how can math contests offer students a gateway to deep and compelling mathematical investigations? In this talk, curriculum developer Isaac Li will draw on his experiences as a mathlete and contest writer to explore how contests, at their best, can encourage students to persist through difficulty, approach problems more strategically, and develop agency over their own learning.
 
