@@ -17,7 +17,8 @@ Coaches will receive physical copies of the Tournament Guide at check-in. -->
 
 <!-- more -->
 
-{% button_link(href="/events/bmmt-2026") %} Event Details {% end %}
+{% button_link(href="/events/bmmt-2026") %} Event Details {% end %} 
+
 Tournament guide will be added soon.
 <!-- {% button_link(href="/assets/bmmt-2026/tournament-guide.pdf") %} Tournament Guide PDF {% end %} -->
 
@@ -32,7 +33,7 @@ An annotated campus map is provided at the bottom of this page.
 
 ### Information Desk
 
-For students who get lost or are arriving late, we will hold an information booth in Dwinelle Plaza after the Puzzle Round begins at 9:00 AM.
+For students who get lost, are arriving late, or have additional questions, there will be an information table in Dwinelle Plaza after the Puzzle Round begins at 8:00 AM.
 
 ## Arrival and Check-in
 
@@ -57,14 +58,13 @@ At check-in, coaches will receive:
   student ID throughout the day. If a student writes an incorrect ID on their
   test, they may not receive a score.**
 
-- An information packet about the tournament, containing a schedule, map, and
+- An information packet about the tournament, containing a schedule, maps, and
   other relevant information.
 
-- A voucher for pre-ordered t-shirts. This voucher can be redeemed at a table
-  near the check-in area.
+- A voucher for pre-ordered lunches, which can be redeemed in front of Dwinelle Hall during the lunch
+  break.
 
-- A voucher for pre-ordered lunches, which can be redeemed during the lunch
-  break in front of Dwinelle Hall.
+- T-shirts if pre-ordered
 
 **Check-in closes promptly at 9:00 AM**, so please be on time. If you arrive
 after this time, your team will be late to the Puzzle Round, which puts them at
@@ -216,8 +216,7 @@ activities that promote recreational math, and include the following:
 
 Ready to unleash your puzzle-solving skills? Join our puzzle hunt! You and a team of Time Un-mixers will embark on one of the adventures of all time and earn cool prizes along the way. Will you and your team save the clocks, or will you get stuck spinning your gears? No prior experience with puzzles is expected, just bring an open mind and your problem solving brain!
 
-
-#### Float Your Boat: The Archimedes Challenge _by [Berkeley Society of Physics Students](https://sps.studentorg.berkeley.edu/)[Dwinelle 106, 109]_ 
+#### Float Your Boat: The Archimedes Challenge _by [Berkeley Society of Physics Students](https://sps.studentorg.berkeley.edu/) [Dwinelle 106, 109]_ 
 
 In 250 BC, Archimedes discovered the principle of buoyancy, noticing it in his bathtub and using it to prove the kings’ crowns were made of gold! Can you use it to keep heavy boats afloat? Come experiment with the physics that keeps everything from toy rafts to cargo ships above water.
   
@@ -225,7 +224,7 @@ In 250 BC, Archimedes discovered the principle of buoyancy, noticing it in his b
 
 Do you want to bring home a cute souvenir from BmMT? Come make your own origami polyhedra! We will be offering multiple paper patterns and instructions, and teaching from the basics of modular origami. No prior craft experience is needed!
 
-#### Mathematician Mash _[Dwinelle 145]_
+#### ⭐ Mathematician Mash _[Dwinelle 145]_
 
 Test your math intuition in this fast-paced game inspired by the classic game show Family Feud! Teams will try to guess the most popular answers to math-themed questions. The goal isn’t just to be correct — it’s to think like everyone else and guess the most common answers. Work with your teammates, buzz in quickly, and see if your mathematical instincts can lead your team to the top!
 
@@ -247,47 +246,42 @@ Looking for a place to chill out? Come to the Games Lounge! We’ll have a varie
 
 ### Parent / Coach Activities
 
-Between 9:00 AM and 5:00 PM, we will have a parent lounge in Dwinelle 155.
-Additionally, we will have the following activites for parents.
+Between 9:00 AM and 3:00 PM, we will have a parent lounge in Dwinelle 155. Additionally, we will have the following activites for parents.
 
-#### ⭐ Po-Shen Loh Table (11 AM) _[Dwinelle Hall]_
-
-  A talk by Dr. Po-Shen Loh,
-  mathematician and professor at Carnegie Mellon University, founder of LIVE, a
-  revolutionary way to learn math online, and former coach of the US International
-  Mathematical Olympiad team. Come join to hear his insights into math education!
-
-#### A Closer Look at Problem Solving in Math Contests
- _by Isaac Li (9–11 AM) [Dwinelle 155]_
+#### ⭐ A Closer Look at Problem Solving in Math Contests - Isaac Li (9AM – 10AM) _[Dwinelle 155]_
 
 What makes a math contest problem good? And how can math contests offer students a gateway to deep and compelling mathematical investigations? In this talk, curriculum developer Isaac Li will draw on his experiences as a mathlete and contest writer to explore how contests, at their best, can encourage students to persist through difficulty, approach problems more strategically, and develop agency over their own learning.
 
 Isaac Li is a math curriculum developer at Art of Problem Solving. He has served as a test organizer for the Berkeley Math Tournament and contributed problems to the USA Mathematical Talent Search (USAMTS), among other competitions.
 
+#### Po-Shen Loh's Advice Table
+
+Following the Parent Talk by Isaac Li, there will be an opportunity to chat with Po-Shen Loh, a math professor at Carnegie Mellon University who has served a decade-long term as the national coach of the USA International Mathematical Olympiad team (2013–2023) alongside several other accolades and accomplishments 
+
 #### Campus Tour (11 AM) _[Dwinelle 155]_
 
-Join us on a tour of the beautiful
-  UC Berkeley campus! Signups will be announced in the parent lounge, after Isaac Li's talk.
-
+Join us on a tour of the beautiful UC Berkeley campus! Announcements and sign-ups will be in the parent lounge, after Isaac Li's talk.
 
 ## Awards Ceremony
 
 The Awards Ceremony will take place simultaneously in multiple auditoriums. Organizations will be assigned a room at check-in. Teams attending
 Awards Ceremony **must attend in the auditorium they are assigned**, or else
-they may not receive their award on time.
+they may not receive their award on time. You can find your assigned auditorium both on [ContestDojo](https://contestdojo.com) and at the Information Desk. 
 
 ## Disqualification Information
 
 Contestants will be immediately disqualified for any of the following reasons:
-- Cheating (looking at another student’s paper, phone use, etc.)
-- Using slurs 
-- Causing harm to others
+- Cheating 
+  - Includes: looking at another student’s paper for individual rounds, phone usage
+- Using slurs, profanity, vulgarity, offensive slang, or derogatory gestures
+- Causing physical harm to others
 
-Contestants will be disqualified after being given two warnings for any of the following reasons:
-- Rowdy or disruptive behavior across teams or that disrupts entire room from testing 
-  - Includes: students that are talking to each other loudly/disturbing others around them while not aiming to
-- Eating paper or throwing paper 
-- Entering other teams’ space (ex. crawling on the floor)
+Contestants will be disqualified after being given a warning for any of the following reasons:
+- Rowdy or disruptive behavior across teams or that interrupts entire room from testing 
+  - Includes: students talking to each other loudly and disturbing others around them while not aiming to
+- Eating or throwing paper 
+- Entering other teams’ space 
+  - Includes: crawling on the floor
 
 ---
 
