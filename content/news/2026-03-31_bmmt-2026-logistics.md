@@ -33,7 +33,7 @@ An annotated campus map is provided at the bottom of this page.
 
 ### Information Desk
 
-For students who get lost, are arriving late, or have additional questions, there will be an information table in Dwinelle Plaza after the Puzzle Round begins at 8:00 AM.
+For students who get lost, are arriving late, or have additional questions, there will be an information table in Dwinelle Plaza starting at 8 AM.
 
 ## Arrival and Check-in
 
