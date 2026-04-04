@@ -256,7 +256,7 @@ Isaac Li is a math curriculum developer at Art of Problem Solving. He has served
 
 #### Po-Shen Loh's Advice Table
 
-Following the Parent Talk by Isaac Li, there will be an opportunity to chat with Po-Shen Loh, a math professor at Carnegie Mellon University who has served a decade-long term as the national coach of the USA International Mathematical Olympiad team (2013–2023) alongside several other accolades and accomplishments 
+Following the Parent Talk by Isaac Li, there will be an opportunity to chat with Po-Shen Loh, a math professor at Carnegie Mellon University who has served a decade-long term as the national coach of the USA International Mathematical Olympiad team (2013–2023) alongside several other accolades and accomplishments.
 
 #### Campus Tour (11 AM) _[Dwinelle 155]_
 
