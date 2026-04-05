@@ -4,7 +4,7 @@
 
     {% set current_term = page.extra.about.terms | first %}
 
-    <div class="grid grid-flow-col gap-4 not-prose">
+    <div class="grid grid-cols-1 md:grid-flow-col md:auto-cols-fr gap-8 md:gap-4 not-prose">
         {% for column in current_term.columns %}
         <div class="flex flex-col gap-4 items-start">
             {% for role in column %}
