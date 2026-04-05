@@ -176,7 +176,12 @@ Yes. You don't need to inform your coach — you can go to the correct room from
 
 {% details(title="Disqualification Pipeline") %}
 
-### Who Handles DQs
+<details class="group/inner border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-50 hover:bg-gray-100 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open/inner:rotate-90"></i>
+Who Handles DQs
+</summary>
+<div class="px-4 py-3 prose">
 
 In priority order of who should be physically sent out first if available:
 
@@ -185,7 +190,15 @@ In priority order of who should be physically sent out first if available:
 3. Satellite Managers
 4. Dispatcher
 
-### Immediate DQs
+</div>
+</details>
+
+<details class="group/inner border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-50 hover:bg-gray-100 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open/inner:rotate-90"></i>
+Immediate DQs
+</summary>
+<div class="px-4 py-3 prose">
 
 The following behaviors result in **immediate disqualification**:
 
@@ -195,7 +208,15 @@ The following behaviors result in **immediate disqualification**:
 
 If a contestant's behavior falls under Immediate DQs, proctors should inform Proctor Managers in their building Discord channel immediately.
 
-### Warning-Based DQs (1 Warning, Then DQ)
+</div>
+</details>
+
+<details class="group/inner border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-50 hover:bg-gray-100 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open/inner:rotate-90"></i>
+Warning-Based DQs (1 Warning, Then DQ)
+</summary>
+<div class="px-4 py-3 prose">
 
 For the following behaviors, proctors should give **1 warning** (2nd offense is a DQ):
 
@@ -207,7 +228,15 @@ For the following behaviors, proctors should give **1 warning** (2nd offense is 
 
 *First warning script:* "Please stop with [insert behavior], you are disrupting the testing environment for other teams. This is your first warning. If you need to be warned again, you/your team will be disqualified from the tournament and your/your team's test scores will be invalidated for the whole tournament."
 
-### DQ Escalation Process
+</div>
+</details>
+
+<details class="group/inner border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-50 hover:bg-gray-100 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open/inner:rotate-90"></i>
+DQ Escalation Process
+</summary>
+<div class="px-4 py-3 prose">
 
 1. If behavior continues after the first warning, proctors should inform **Proctor Managers** via the Discord channel for their building.
 2. Proctor Managers should immediately alert **Satellite Managers**, who should then escalate to the **Dispatcher**.
@@ -221,7 +250,15 @@ For the following behaviors, proctors should give **1 warning** (2nd offense is 
 
 **Important:** If the original "chain of command" is cut short, the important thing is that the DQ Info Text is sent in the Discord thread so all parties learn about the DQ.
 
-### DQ Score Consequences
+</div>
+</details>
+
+<details class="group/inner border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-50 hover:bg-gray-100 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open/inner:rotate-90"></i>
+DQ Score Consequences
+</summary>
+<div class="px-4 py-3 prose">
 
 | DQ Reason | Includes | Score Consequence |
 | --- | --- | --- |
@@ -229,9 +266,17 @@ For the following behaviors, proctors should give **1 warning** (2nd offense is 
 | **Physical Harm** | Punching, biting, etc. | Student will be deleted from team |
 | **Disruption** | Rowdy/disruptive behavior, eating paper, throwing paper, entering other teams' space | Student(s) will be deleted from team |
 
-### DQ Reporting Templates
+</div>
+</details>
 
-**For Warnings** — Post in the Discord thread:
+<details class="group/inner border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-50 hover:bg-gray-100 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open/inner:rotate-90"></i>
+DQ Reporting Templates
+</summary>
+<div class="px-4 py-3">
+
+<p><strong>For Warnings</strong> — Post in the Discord thread:</p>
 
 <div class="not-prose my-3">
   <div class="flex items-center justify-between bg-gray-100 border border-gray-200 rounded-t-lg px-4 py-2">
@@ -244,7 +289,7 @@ Team ID(s):
 Reason for Warning:</pre>
 </div>
 
-**For DQs** — Only people listed in the "Who Handles DQs" section above (Crisis Managers, Proctor Managers, Satellite Managers, Dispatcher) may send these in. Post in the Discord thread:
+<p><strong>For DQs</strong> — Only people listed in the "Who Handles DQs" dropdown above (Crisis Managers, Proctor Managers, Satellite Managers, Dispatcher) may send these in. Post in the Discord thread:</p>
 
 <div class="not-prose my-3">
   <div class="flex items-center justify-between bg-gray-100 border border-gray-200 rounded-t-lg px-4 py-2">
@@ -258,13 +303,22 @@ Coach Contact Info:
 Reason for DQ:
 Person DQing:</pre>
 </div>
+
+</div>
+</details>
+
 {% end %}
 
 ## Emergency Procedures
 
 {% details(title="Emergency Procedures") %}
 
-### Fire
+<details class="group/inner border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-50 hover:bg-gray-100 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open/inner:rotate-90"></i>
+Fire
+</summary>
+<div class="px-4 py-3 prose">
 
 - Pull the fire alarm.
 - Proctors are responsible for students, and need to guide students to a designated meeting point.
@@ -273,7 +327,15 @@ Person DQing:</pre>
 - As soon as you reach a safe point, do a head count to ensure all your students are present. Once verified, let the nearest Proctor Manager know alongside your room number. If you are missing a student, please let a Proctor Manager know **immediately**.
 - Runners and graders, please evacuate to your respective locations. Stay in contact with your respective building's Satellite Manager.
 
-### Earthquake
+</div>
+</details>
+
+<details class="group/inner border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-50 hover:bg-gray-100 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open/inner:rotate-90"></i>
+Earthquake
+</summary>
+<div class="px-4 py-3 prose">
 
 - Instruct your students to **take cover under desks**.
 - If the building alarm goes off, or the Satellite Manager or Dispatcher tells proctors to evacuate, guide students to a designated meeting point.
@@ -282,7 +344,15 @@ Person DQing:</pre>
 - As soon as you are safe, do a head count. Once verified, let the nearest Proctor Manager know alongside your room number. If you are missing a student, please let a Proctor Manager know **immediately**.
 - Runners and graders, please take cover under a desk. Stay in contact with your respective building's Satellite Manager.
 
-### Active Shooter
+</div>
+</details>
+
+<details class="group/inner border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-50 hover:bg-gray-100 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open/inner:rotate-90"></i>
+Active Shooter
+</summary>
+<div class="px-4 py-3 prose">
 
 - **Lock the doors** and close the blinds/windows. Turn the lights off. Barricade the doors.
 - Ensure your students' phones are **OFF and SILENT**, and that yours is **SILENT**.
@@ -290,15 +360,43 @@ Person DQing:</pre>
 - If safe, call **UCPD/911**.
 - If a student is missing, notify a Proctor Manager **IMMEDIATELY**.
 
-### Discord / Power / Internet Outage
+</div>
+</details>
+
+<details class="group/inner border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-50 hover:bg-gray-100 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open/inner:rotate-90"></i>
+Discord / Power / Internet Outage
+</summary>
+<div class="px-4 py-3 prose">
 
 - Continue testing and wait for in-person contact from BMT staff.
 
-### Medical Emergency
+</div>
+</details>
+
+<details class="group/inner border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-50 hover:bg-gray-100 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open/inner:rotate-90"></i>
+Medical Emergency
+</summary>
+<div class="px-4 py-3 prose">
 
 - Call **911** and inform a Proctor Manager with your location and severity of the emergency.
 
-### Missing Participant
+</div>
+</details>
+
+<details class="group/inner border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-50 hover:bg-gray-100 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open/inner:rotate-90"></i>
+Missing Participant
+</summary>
+<div class="px-4 py-3 prose">
 
 - Notify the **Dispatcher** immediately.
+
+</div>
+</details>
+
 {% end %}
