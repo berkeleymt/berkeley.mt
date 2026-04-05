@@ -1,0 +1,64 @@
+{% import "macros.html" as macros %}
+
+<!DOCTYPE html>
+
+<html lang="en" class="bg-gray-50">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% set title = page.title | default(value="Berkeley Math Tournament") %}
+
+  <title>{{ title }}</title>
+  <meta name="og:title" content="{{ title }}" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Berkeley Math Tournament" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="/style.css?{{ get_random(end=1000000) }}">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <div class="max-w-4xl min-h-screen p-4 md:p-8 mx-auto flex flex-col gap-8">
+    <div class="flex flex-col gap-3">
+      <h1 class="text-3xl font-semibold">
+        {{ macros::newline_break(str=page.title) }}
+      </h1>
+    </div>
+
+    {% if page.content %}
+    <main id="content" class="prose">
+      {{ page.content | safe }}
+    </main>
+    {% endif %}
+
+    {% if page.toc %}
+    <div class="hidden xl:block absolute -right-8 translate-x-full h-full max-w-48">
+      <nav id="toc" class="sticky top-8">
+        {{ macros::toc(toc=page.toc) }}
+      </nav>
+    </div>
+    {{ macros::toc_js() }}
+    {% endif %}
+  </div>
+
+  <script type="module">
+    import twemoji from 'https://cdn.jsdelivr.net/npm/twemoji@14.0.2/+esm'
+    twemoji.parse(document.body, {
+      className: "inline w-[1.25em] h-[1.25em] not-prose",
+      base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/',
+    })
+  </script>
+</body>
+
+</html>

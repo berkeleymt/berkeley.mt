@@ -1,7 +1,8 @@
 +++
-title = "BmMT 2026\nVolunteer Guide"
+title = "BmMT 2026 Volunteer Guide"
 date = 2026-04-12
 aliases = ["/bmmt-2026-volunteer-guide"]
+template = "standalone.html"
 +++
 
 Welcome, and thanks for volunteering for BmMT 2026! We'll have over 2000
@@ -228,23 +229,19 @@ For the following behaviors, proctors should give **1 warning** (2nd offense is 
 {% details(title="DQ Reporting Templates") %}
 **For Warnings** — Post in the Discord thread:
 
-```
-Building + Room #:
+{% copyable(title="Warning Template") %}Building + Room #:
 Student ID(s):
 Team ID(s):
-Reason for Warning:
-```
+Reason for Warning:{% end %}
 
-**For DQs** — Post in the Discord thread:
+**For DQs** — Only people listed in the "DQ Overview & Who Handles DQs" dropdown above (Crisis Managers, Proctor Managers, Satellite Managers, Dispatcher) may send these in. Post in the Discord thread:
 
-```
-Building + Room #:
+{% copyable(title="DQ Template") %}Building + Room #:
 Student ID(s):
 Team ID:
 Coach Contact Info:
 Reason for DQ:
-Person DQing:
-```
+Person DQing:{% end %}
 {% end %}
 
 ## Emergency Procedures
