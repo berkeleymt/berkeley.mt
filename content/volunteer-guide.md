@@ -174,16 +174,19 @@ Yes. You don't need to inform your coach — you can go to the correct room from
 
 ## Disqualification Pipeline
 
-{% details(title="DQ Overview & Who Handles DQs") %}
+{% details(title="Disqualification Pipeline") %}
+
+### Who Handles DQs
+
 In priority order of who should be physically sent out first if available:
 
 1. Crisis Managers
 2. Proctor Managers
 3. Satellite Managers
 4. Dispatcher
-{% end %}
 
-{% details(title="Immediate DQs") %}
+### Immediate DQs
+
 The following behaviors result in **immediate disqualification**:
 
 - **Cheating** — Looking at another student's paper, phone use, etc.
@@ -191,9 +194,9 @@ The following behaviors result in **immediate disqualification**:
 - **Causing physical harm** to others
 
 If a contestant's behavior falls under Immediate DQs, proctors should inform Proctor Managers in their building Discord channel immediately.
-{% end %}
 
-{% details(title="Warning-Based DQs (1 Warning, Then DQ)") %}
+### Warning-Based DQs (1 Warning, Then DQ)
+
 For the following behaviors, proctors should give **1 warning** (2nd offense is a DQ):
 
 - Rowdy or disruptive behavior across teams or that disrupts entire room from testing (includes students talking loudly/disturbing others)
@@ -203,9 +206,9 @@ For the following behaviors, proctors should give **1 warning** (2nd offense is 
 **How to give a warning:** Go to the person and/or team directly — **do not announce this from the front desk** as it might disturb other students' testing.
 
 *First warning script:* "Please stop with [insert behavior], you are disrupting the testing environment for other teams. This is your first warning. If you need to be warned again, you/your team will be disqualified from the tournament and your/your team's test scores will be invalidated for the whole tournament."
-{% end %}
 
-{% details(title="DQ Escalation Process") %}
+### DQ Escalation Process
+
 1. If behavior continues after the first warning, proctors should inform **Proctor Managers** via the Discord channel for their building.
 2. Proctor Managers should immediately alert **Satellite Managers**, who should then escalate to the **Dispatcher**.
 3. The Dispatcher will dispatch a **Crisis Manager**.
@@ -217,17 +220,17 @@ For the following behaviors, proctors should give **1 warning** (2nd offense is 
 9. After all testing concludes, an email will be sent out to the coaches of all DQed teams.
 
 **Important:** If the original "chain of command" is cut short, the important thing is that the DQ Info Text is sent in the Discord thread so all parties learn about the DQ.
-{% end %}
 
-{% details(title="DQ Score Consequences") %}
+### DQ Score Consequences
+
 | DQ Reason | Includes | Score Consequence |
 | --- | --- | --- |
 | **Cheating** | Using a phone, collaborating on individual rounds, looking at another student's paper | Student will receive 0 |
 | **Physical Harm** | Punching, biting, etc. | Student will be deleted from team |
 | **Disruption** | Rowdy/disruptive behavior, eating paper, throwing paper, entering other teams' space | Student(s) will be deleted from team |
-{% end %}
 
-{% details(title="DQ Reporting Templates") %}
+### DQ Reporting Templates
+
 **For Warnings** — Post in the Discord thread:
 
 <div class="not-prose my-3">
@@ -241,7 +244,7 @@ Team ID(s):
 Reason for Warning:</pre>
 </div>
 
-**For DQs** — Only people listed in the "DQ Overview & Who Handles DQs" dropdown above (Crisis Managers, Proctor Managers, Satellite Managers, Dispatcher) may send these in. Post in the Discord thread:
+**For DQs** — Only people listed in the "Who Handles DQs" section above (Crisis Managers, Proctor Managers, Satellite Managers, Dispatcher) may send these in. Post in the Discord thread:
 
 <div class="not-prose my-3">
   <div class="flex items-center justify-between bg-gray-100 border border-gray-200 rounded-t-lg px-4 py-2">
@@ -259,40 +262,43 @@ Person DQing:</pre>
 
 ## Emergency Procedures
 
-{% details(title="Fire") %}
+{% details(title="Emergency Procedures") %}
+
+### Fire
+
 - Pull the fire alarm.
 - Proctors are responsible for students, and need to guide students to a designated meeting point.
   - **VLSB and Wheeler** meet at **Memorial Glade**. If access is denied, go to Lower Sproul.
   - **Dwinelle and Pauley** meet at **Lower Sproul**. If access is denied, go to Memorial Glade.
 - As soon as you reach a safe point, do a head count to ensure all your students are present. Once verified, let the nearest Proctor Manager know alongside your room number. If you are missing a student, please let a Proctor Manager know **immediately**.
 - Runners and graders, please evacuate to your respective locations. Stay in contact with your respective building's Satellite Manager.
-{% end %}
 
-{% details(title="Earthquake") %}
+### Earthquake
+
 - Instruct your students to **take cover under desks**.
 - If the building alarm goes off, or the Satellite Manager or Dispatcher tells proctors to evacuate, guide students to a designated meeting point.
   - **VLSB and Wheeler** meet at **Memorial Glade**. If access is denied, go to Lower Sproul.
   - **Dwinelle and Pauley** meet at **Lower Sproul**. If access is denied, go to Memorial Glade.
 - As soon as you are safe, do a head count. Once verified, let the nearest Proctor Manager know alongside your room number. If you are missing a student, please let a Proctor Manager know **immediately**.
 - Runners and graders, please take cover under a desk. Stay in contact with your respective building's Satellite Manager.
-{% end %}
 
-{% details(title="Active Shooter") %}
+### Active Shooter
+
 - **Lock the doors** and close the blinds/windows. Turn the lights off. Barricade the doors.
 - Ensure your students' phones are **OFF and SILENT**, and that yours is **SILENT**.
 - Ensure everyone is out of possible line of sight from the shooter. Use your best judgement.
 - If safe, call **UCPD/911**.
 - If a student is missing, notify a Proctor Manager **IMMEDIATELY**.
-{% end %}
 
-{% details(title="Discord / Power / Internet Outage") %}
+### Discord / Power / Internet Outage
+
 - Continue testing and wait for in-person contact from BMT staff.
-{% end %}
 
-{% details(title="Medical Emergency") %}
+### Medical Emergency
+
 - Call **911** and inform a Proctor Manager with your location and severity of the emergency.
-{% end %}
 
-{% details(title="Missing Participant") %}
+### Missing Participant
+
 - Notify the **Dispatcher** immediately.
 {% end %}
