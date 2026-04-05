@@ -229,19 +229,31 @@ For the following behaviors, proctors should give **1 warning** (2nd offense is 
 {% details(title="DQ Reporting Templates") %}
 **For Warnings** — Post in the Discord thread:
 
-{% copyable(title="Warning Template") %}Building + Room #:
+<div class="not-prose my-3">
+  <div class="flex items-center justify-between bg-gray-100 border border-gray-200 rounded-t-lg px-4 py-2">
+    <span class="font-medium text-sm">Warning Template</span>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('copyable-warning').innerText).then(() => { this.innerHTML = '<i class=\'bi bi-check-lg text-green-600\'></i> Copied!'; setTimeout(() => { this.innerHTML = '<i class=\'bi bi-clipboard\'></i> Copy'; }, 2000); });" class="inline-flex items-center gap-1.5 text-sm px-3 py-1 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer"><i class="bi bi-clipboard"></i> Copy</button>
+  </div>
+  <pre id="copyable-warning" class="bg-white border border-t-0 border-gray-200 rounded-b-lg px-4 py-3 text-sm whitespace-pre-wrap font-mono">Building + Room #:
 Student ID(s):
 Team ID(s):
-Reason for Warning:{% end %}
+Reason for Warning:</pre>
+</div>
 
 **For DQs** — Only people listed in the "DQ Overview & Who Handles DQs" dropdown above (Crisis Managers, Proctor Managers, Satellite Managers, Dispatcher) may send these in. Post in the Discord thread:
 
-{% copyable(title="DQ Template") %}Building + Room #:
+<div class="not-prose my-3">
+  <div class="flex items-center justify-between bg-gray-100 border border-gray-200 rounded-t-lg px-4 py-2">
+    <span class="font-medium text-sm">DQ Template</span>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('copyable-dq').innerText).then(() => { this.innerHTML = '<i class=\'bi bi-check-lg text-green-600\'></i> Copied!'; setTimeout(() => { this.innerHTML = '<i class=\'bi bi-clipboard\'></i> Copy'; }, 2000); });" class="inline-flex items-center gap-1.5 text-sm px-3 py-1 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer"><i class="bi bi-clipboard"></i> Copy</button>
+  </div>
+  <pre id="copyable-dq" class="bg-white border border-t-0 border-gray-200 rounded-b-lg px-4 py-3 text-sm whitespace-pre-wrap font-mono">Building + Room #:
 Student ID(s):
 Team ID:
 Coach Contact Info:
 Reason for DQ:
-Person DQing:{% end %}
+Person DQing:</pre>
+</div>
 {% end %}
 
 ## Emergency Procedures
