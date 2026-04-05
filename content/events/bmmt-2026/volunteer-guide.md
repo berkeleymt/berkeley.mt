@@ -1,8 +1,7 @@
 +++
 title = "BmMT 2026 Volunteer Guide"
 date = 2026-04-12
-path = "events/bmmt-2026/volunteer-guide"
-aliases = ["/bmmt-2026-volunteer-guide", "/volunteer-guide"]
+aliases = ["/volunteer-guide"]
 template = "standalone.html"
 +++
 

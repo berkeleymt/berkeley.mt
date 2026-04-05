@@ -1,0 +1,34 @@
+{% import "macros.html" as macros %}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="flex flex-col gap-3">
+  <h1 class="text-3xl font-semibold">
+    {{ macros::newline_break(str=section.title) }}
+  </h1>
+
+  {% if section.extra.date %}
+  <h2 class="text-xl">
+    {{ section.extra.date | date(format="%A, %B %-d, %Y") }}
+  </h2>
+  {% endif %}
+</div>
+
+{% if section.content %}
+<main id="content" class="prose">
+  {{ section.content | safe }}
+</main>
+{% endif %}
+
+{% if section.toc %}
+<div class="hidden xl:block absolute -right-8 translate-x-full h-full max-w-48">
+  <nav id="toc" class="sticky top-8">
+    {{ macros::toc(toc=section.toc) }}
+  </nav>
+</div>
+{{ macros::toc_js() }}
+{% endif %}
+
+{% endblock %}

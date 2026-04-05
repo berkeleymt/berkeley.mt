@@ -1,7 +1,11 @@
 +++
 title = "Berkeley mini Math Tournament 2026"
-date = 2026-04-12
+template = "event-section.html"
+transparent = true
 aliases = ["/bmmt-2026"]
+
+[extra]
+date = 2026-04-12
 +++
 
 We're excited to welcome students back to the UC Berkeley campus on **April 12,
