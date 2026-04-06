@@ -22,12 +22,9 @@ The puzzles will be divided into variants which all build on the rules of the ba
 
 ### Understanding the Rules
 
-Every puzzle will have exactly one solution, and reaching that solution will not require any guesswork or assumptions. Here are some important things to remember:
+Every puzzle will have exactly one solution, and reaching that solution will not require any guesswork or assumptions. We have prepared **walkthrough videos** demonstrating the process of using logical deductions to solve puzzles with no guessing, and they will be posted to our [YouTube channel](https://www.youtube.com/@Berkeley-Math-Tournament) soon.
 
-- We have prepared **walkthrough videos** demonstrating the process of using logical deductions to solve puzzles with no guessing, and they will be posted to our [YouTube channel](https://www.youtube.com/@Berkeley-Math-Tournament) soon.
-- If you reach a contradiction, make sure you are **properly applying every rule** to different parts of the puzzle.
-- **No partial credit** will be given, so even a minor mistake in your understanding of the rules could be extremely problematic.
-- We recommend **double-checking all of your solutions** to make sure they follow all the rules.
+If you reach a contradiction, make sure you are properly applying every rule to different parts of the puzzle. **No partial credit** will be given, so even a minor mistake in your understanding of the rules could be extremely problematic. We recommend **double-checking all of your solutions** to make sure they follow all the rules.
 
 ### Preparation
 
