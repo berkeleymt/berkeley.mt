@@ -6,7 +6,7 @@
 <a class="{{ class }} hover:-translate-y-1 transition-all border p-4 rounded-xl flex items-center gap-2"
   href="{{ href }}">
   <div class="flex-1 flex flex-col gap-2">
-    <p class="[font-variant:small-caps] text-xs text-gray-500 flex gap-2 items-center">
+    <p class="uppercase text-xs text-gray-500 flex gap-2 items-center">
       <i class="bi {{ icon_class }}"></i>
       <span>{{ label }}</span>
     </p>
@@ -26,7 +26,7 @@
   <a href="{{ href }}" class="p-6 flex flex-col gap-4 group-hover:backdrop-brightness-75 transition-all h-full">
     <div class="flex flex-col gap-1">
       <h3 class="font-bold text-lg md:text-2xl flex items-center gap-2">
-        <span>{{ name }}</span>
+        <span>{{ name | safe }}</span>
         <i class="bi bi-chevron-right text-base transition-transform"></i>
       </h3>
       <p class="text-sm font-medium opacity-50">{{ date }}</p>
@@ -117,7 +117,7 @@
 <div class="flex flex-col md:grid grid-cols-6 gap-4 max-w-4xl">
   {{ self::event(
   class="col-span-6 bg-gradient-to-br shadow-lg from-fuchsia-700 to-fuchsia-900 text-white",
-  name="Berkeley mini Math Tournament 2026",
+  name='Berkeley mini Math Tournament 2026',
   date="April 12, 2026",
   href="/events/bmmt-2026/",
   description="Our annual “mini” in-person tournament for middle school and advanced elementary school students showcases the beauty and fun of mathematics through exciting formats like the Puzzle Round and Relay Round, preparing them for future mathematical endeavors."
@@ -125,7 +125,7 @@
 
   {{ self::event(
   class="col-span-4 bg-gradient-to-br shadow-lg from-orange-700 to-orange-900 text-white",
-  name="BmMT 2026 Online",
+  name='<span class="[font-variant:small-caps]">BmMT</span> 2026 Online',
   date="June 6, 2026",
   href="/events/bmmt-2026-online/",
   description="The online, synchronous version of our “mini“ math tournament for middle school and advanced elementary school students unable to travel to California!"
