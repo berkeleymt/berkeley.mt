@@ -10,10 +10,7 @@ We're looking forward to seeing you this weekend! This post is intended to help 
 
 ### Round Format
 
-The Puzzle Round is a 75-minute team-based test with puzzles designed to promote lateral thinking and deductive reasoning.
-
-- **15-minute reading period** to learn the puzzle rules and try out small examples. Understanding the rules well is extremely important for solving puzzles, so we strongly recommend reading the rules carefully and doing all examples.
-- **60 minutes** to solve the puzzles after the reading period.
+The Puzzle Round is a 75-minute team-based test with puzzles designed to promote lateral thinking and deductive reasoning. There is a **15-minute reading period** for you to learn the puzzle rules and try out some small examples. Understanding the rules well is extremely important for solving puzzles, so we strongly recommend reading the rules carefully and doing all examples. After the reading period, you will have **60 minutes** to solve the puzzles.
 
 ### Strategy Tips
 
