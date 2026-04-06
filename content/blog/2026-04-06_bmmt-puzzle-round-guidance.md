@@ -10,10 +10,7 @@ We're looking forward to seeing you this weekend! This post is intended to help 
 
 ### Round Format
 
-The Puzzle Round is a 75-minute team-based test with puzzles designed to promote lateral thinking and deductive reasoning.
-
-- **15-minute reading period** to learn the puzzle rules and try out small examples. Understanding the rules well is extremely important for solving puzzles, so we strongly recommend reading the rules carefully and doing all examples.
-- **60 minutes** to solve the puzzles after the reading period.
+The Puzzle Round is a 75-minute team-based test with puzzles designed to promote lateral thinking and deductive reasoning. There is a **15-minute reading period** for you to learn the puzzle rules and try out some small examples. Understanding the rules well is extremely important for solving puzzles, so we strongly recommend reading the rules carefully and doing all examples. After the reading period, you will have **60 minutes** to solve the puzzles.
 
 ### Strategy Tips
 
@@ -25,19 +22,16 @@ The puzzles will be divided into variants which all build on the rules of the ba
 
 ### Understanding the Rules
 
-Every puzzle will have exactly one solution, and reaching that solution will not require any guesswork or assumptions. Here are some important things to remember:
+Every puzzle will have exactly one solution, and reaching that solution will not require any guesswork or assumptions. We have prepared **walkthrough videos** demonstrating the process of using logical deductions to solve puzzles with no guessing, and they will be posted to our [YouTube channel](https://www.youtube.com/@Berkeley-Math-Tournament) soon.
 
-- We have prepared **walkthrough videos** demonstrating the process of using logical deductions to solve puzzles with no guessing, and they will be posted to our YouTube channel soon.
-- If you reach a contradiction, make sure you are **properly applying every rule** to different parts of the puzzle.
-- **No partial credit** will be given, so even a minor mistake in your understanding of the rules could be extremely problematic.
-- We recommend **double-checking all of your solutions** to make sure they follow all the rules.
+If you reach a contradiction, make sure you are properly applying every rule to different parts of the puzzle. **No partial credit** will be given, so even a minor mistake in your understanding of the rules could be extremely problematic. We recommend **double-checking all of your solutions** to make sure they follow all the rules.
 
 ### Preparation
 
 Learning to solve a new kind of puzzle can be challenging. We think the best way to prepare for the Puzzle Round is to practice!
 
 - Our website has an [archive of previous Puzzle Rounds](https://berkeley.mt/resources/archives/) that are great for practice.
-- We also have a website where you can **solve last year's Puzzle Round online**!
+- We also have a website where you can [**solve last year's Puzzle Round online**](https://curtain-pigeon-pit.uc.ax/)!
 - Recent Puzzle Rounds most accurately reflect the style and difficulty of this year's puzzle round, but any practice is good practice!
 - Another important thing to prepare ahead of time is a **strategy for dividing the puzzles** with your team. There are many different ways to do this, and we generally recommend some amount of divide-and-conquer and checking each others' work.
 
