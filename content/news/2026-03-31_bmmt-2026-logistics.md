@@ -248,15 +248,15 @@ Looking for a place to chill out? Come to the Games Lounge! We’ll have a varie
 
 Between 9:00 AM and 3:00 PM, we will have a parent lounge in Dwinelle 155. Additionally, we will have the following activites for parents.
 
-#### ⭐ A Closer Look at Problem Solving in Math Contests - Isaac Li (9AM – 10AM) _[Dwinelle 155]_
+#### ⭐ A Closer Look at Problem Solving in Math Contests - Isaac Li (9AM – 11AM) _[Dwinelle 155]_
 
 What makes a math contest problem good? And how can math contests offer students a gateway to deep and compelling mathematical investigations? In this talk, curriculum developer Isaac Li will draw on his experiences as a mathlete and contest writer to explore how contests, at their best, can encourage students to persist through difficulty, approach problems more strategically, and develop agency over their own learning.
 
 Isaac Li is a math curriculum developer at Art of Problem Solving. He has served as a test organizer for the Berkeley Math Tournament and contributed problems to the USA Mathematical Talent Search (USAMTS), among other competitions.
 
-#### Po-Shen Loh's Advice Table
+#### Po-Shen Loh's Advice Table (11AM)
 
-Following the Parent Talk by Isaac Li, there will be an opportunity to chat with Po-Shen Loh, a math professor at Carnegie Mellon University who has served a decade-long term as the national coach of the USA International Mathematical Olympiad team (2013–2023) alongside several other accolades and accomplishments.
+Following the Parent Talk by Isaac Li, there will be an opportunity to chat with Po-Shen Loh, a math professor at Carnegie Mellon University who has served a decade-long term as the national coach of the USA International Mathematical Olympiad team (2013–2023) alongside several other accolades and accomplishments. 
 
 #### Campus Tour (11 AM) _[Dwinelle 155]_
 
