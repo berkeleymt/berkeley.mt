@@ -6,8 +6,6 @@ authors = ["BmMT Team"]
 tags = ["advice", "bmmt", "puzzle-round"]
 +++
 
-Dear BmMT competitors,
-
 We're looking forward to seeing you this weekend! This post is intended to help you approach the Puzzle Round and give some tips on effective puzzle-solving strategies.
 
 ### Round Format
@@ -20,7 +18,7 @@ The puzzles will be divided into variants which all build on the rules of the ba
 
 ### Understanding the Rules
 
-Again, we emphasize the importance of understanding all the rules of the puzzles. Every puzzle will have exactly one solution, and reaching that solution will not require any guesswork or assumptions. We have prepared walkthrough videos demonstrating the process of using logical deductions to solve puzzles with no guessing, and they will be posted to our YouTube channel soon. If you reach a contradiction, make sure you are properly applying every rule to different parts of the puzzle. No partial credit will be given, so even a minor mistake in your understanding of the rules could be extremely problematic. We recommend double-checking all of your solutions to make sure they follow all the rules.
+We emphasize the importance of understanding all the rules of the puzzles. Every puzzle will have exactly one solution, and reaching that solution will not require any guesswork or assumptions. We have prepared walkthrough videos demonstrating the process of using logical deductions to solve puzzles with no guessing, and they will be posted to our YouTube channel soon. If you reach a contradiction, make sure you are properly applying every rule to different parts of the puzzle. No partial credit will be given, so even a minor mistake in your understanding of the rules could be extremely problematic. We recommend double-checking all of your solutions to make sure they follow all the rules.
 
 ### Preparation
 
@@ -28,9 +26,6 @@ Learning to solve a new kind of puzzle can be challenging. We think the best way
 
 ### Have Fun!
 
-Finally, don't forget to have fun! Just like the rest of BmMT, our goal with the Puzzle Round is to give you something interesting to think about. If you find yourself getting stuck or frustrated with a puzzle, take a step back! Talk it out with a teammate, or take a look at a different puzzle instead. We hope you enjoy the round and come out of it having explored something new.
+Don't forget to have fun! Just like the rest of BmMT, our goal with the Puzzle Round is to give you something interesting to think about. If you find yourself getting stuck or frustrated with a puzzle, take a step back! Talk it out with a teammate, or take a look at a different puzzle instead. We hope you enjoy the round and come out of it having explored something new.
 
 Feel free to email us at team@berkeley.mt if you have questions about the Puzzle Round or any other aspect of BmMT. See you soon!
-
-Best,<br>
-BmMT Team
