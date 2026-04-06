@@ -212,7 +212,7 @@ campus.
 After the Relay Round, we will be hosting student activities. These are optional
 activities that promote recreational math, and include the following:
 
-#### ⭐ Time Mix-up Puzzle Hunt _by Hudson River Trading [Pauley Ballroom]_
+#### ⭐ Time Mix-up Puzzle Hunt _by Hudson River Trading and Berkeley Math Tournament [Pauley Ballroom]_
 
 Ready to unleash your puzzle-solving skills? Join our puzzle hunt! You and a team of Time Un-mixers will embark on one of the adventures of all time and earn cool prizes along the way. Will you and your team save the clocks, or will you get stuck spinning your gears? No prior experience with puzzles is expected, just bring an open mind and your problem solving brain!
 
