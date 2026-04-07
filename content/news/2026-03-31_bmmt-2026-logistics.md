@@ -17,10 +17,7 @@ Coaches will receive physical copies of the Tournament Guide at check-in. -->
 
 <!-- more -->
 
-{% button_link(href="/events/bmmt-2026") %} Event Details {% end %} 
-
-Tournament guide will be added soon.
-<!-- {% button_link(href="/assets/bmmt-2026/tournament-guide.pdf") %} Tournament Guide PDF {% end %} -->
+{% button_link(href="/events/bmmt-2026") %} Event Details {% end %} {% button_link(href="/assets/bmmt-2026/tournament-guide.pdf") %} Tournament Guide PDF {% end %}
 
 ## Important Information
 
