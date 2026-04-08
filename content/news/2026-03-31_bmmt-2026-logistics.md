@@ -115,7 +115,7 @@ Have a backup parking garage planned, as we have had parking garages fill up in 
 </thead>
 <tbody>
 <tr>
-  <td>7:45 AM – 9:00 AM</td>
+  <td>8:00 AM – 9:00 AM</td>
   <td>Check-in <i>(coaches only)</i></td>
   <td>
     After arrival, coaches should proceed to one of the two auditoriums in Dwinelle Hall, depending on whether they have already checked in online or not.
@@ -129,24 +129,19 @@ Have a backup parking garage planned, as we have had parking garages fill up in 
   <td>
     Pauley Ballroom and classrooms in Valley Life Sciences Building, Dwinelle Hall, and Wheeler Hall.
     <br>Students will be assigned a room at check-in.
-  </td>
-</tr>
-<tr>
-  <td>11:30 AM – 12:15 PM</td>
-  <td>Pre-ordered Lunch Pick-up</td>
-  <td>
-    Inside Kerr Lobby (MLK Jr. Student Union)
+    <br><b>Pre-ordered Lunch Pick-up</b> <i>(11:30 – 12:15, coaches only)</i>
+    <br>&ensp;↳ Inside Kerr Lobby (MLK Jr. Student Union)
   </td>
 </tr>
 <tr>
   <td>12:00 – 1:15 PM</td>
   <td>
     Lunch
-    <br>Extra T-shirt Sales
+    <br>T-shirt &amp; Tote Bag Sales, Free Sponsor Merch
     <br>Disputes (12:00 – 12:30 PM)
   </td>
   <td>
-    <b>T-shirt Sales</b> <i>(while supplies last)</i> — Inside Kerr Lobby (MLK Jr. Student Union)
+    <b>T-shirt &amp; Tote Bag Sales, Free Sponsor Merch</b> <i>(while supplies last)</i> — Inside Kerr Lobby (MLK Jr. Student Union)
     <br><b>Problem Disputes</b> <i>(Puzzle, Individual)</i> — Dwinelle 234
   </td>
 </tr>
