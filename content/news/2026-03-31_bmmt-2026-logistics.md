@@ -43,7 +43,7 @@ Saturday.
 If you check in online, you must still show up in the morning to pick up materials.
 {% end %}
 
-Check-in / materials pick-up will happen in Dwinelle Hall at **8:00 AM**:
+Check-in / materials pick-up will happen in Dwinelle Hall at **7：45 AM**:
 
 - **Dwinelle 145** — Coaches who haven't checked in online should go here.
 - **Dwinelle 155** — Coaches who have checked in online should go here for materials pick-up.
@@ -115,7 +115,7 @@ Have a backup parking garage planned, as we have had parking garages fill up in 
 </thead>
 <tbody>
 <tr>
-  <td>8:00 AM – 9:00 AM</td>
+  <td>7:45 AM – 9:00 AM</td>
   <td>Check-in <i>(coaches only)</i></td>
   <td>
     After arrival, coaches should proceed to one of the two auditoriums in Dwinelle Hall, depending on whether they have already checked in online or not.
