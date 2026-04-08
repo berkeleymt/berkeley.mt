@@ -14,6 +14,7 @@ columns = [ [
     { title = "Activities Lead", members = ["Jeslyn Nguyen"] },
     { title = "Technology Lead", members = ["Oliver Ni"] },
     { title = "Finance Lead", members = ["Dario Huang"] },
+    { title = "Partnerships Lead", members = ["Golden Peng"] },
     { title = "Satellites Lead", members = ["Golden Peng"] },
     { title = "Logistics Members", members = [
         "Adriel Becerra", "Aedan Hui", "Andrew Ku", "Annie Yao", "Anton Luu", "Benji Van Lienden",
@@ -31,7 +32,7 @@ columns = [ [
 ], [
     { title = "Problem Writing", heading = true },
     { title = "Head Problem Writers", members = ["Aarush Chaubey", "Wen Cao"] },
-    { title = "Head of Test-solving", members = ["Ylann Bouis"] },
+    { title = "Head of Test Solving", members = ["Ylann Bouis"] },
     { title = "Puzzle Test Organizers", members = ["Aedan Hui", "Jordan Truong", "Kiran Parthasarathy", "Troy Pham"] },
     { title = "Individual Test Organizers", members = ["Forrest Chou", "Harsh Ambardekar", "Jessica Li"] },
     { title = "Team Test Organizers", members = ["Brian Zhou", "Jessie Tan", "Stephanie Yao"] },
@@ -39,11 +40,13 @@ columns = [ [
     { title = "Problem Writers", members = [
         "Aaron Arellano", "Aaron Cho", "Aarush Chaubey", "Aditya Baireddy", "Aedan Hui",
         "Andrew Huang", "Annie Yao", "Aritra Mukhopadhyay", "Arjun Damerla", "Arthur Chen",
-        "Austin Lei", "Benjamin Chen", "Benji Van Lienden", "Brandon Yea", "Brian Sui", "Evan Kniffen", "Forrest Chou", "Harsh Ambardekar", "Helena Zhang", "Isaac Li", "Jason Guo", "Jessica Li", "Jiazhen Tan",
-        "Jonathan Sy", "Jordan Truong", "Justin Park", "Kiran Parthasarathy", "Lucas Fowler",
-        "Moor Xu", "Nikhil Shanbhag", "Samik Krishnan", "Shrey Chaudhary", "Stanley Li",
-        "Stephanie Yao", "Sushanth Sathish Kumar", "Theo Danial", "Tushar Gona", "Vignesh Nydhruva", "Viraj Aggarwal",
-        "Wen Cao", "William Wu", "William Xu", "Ylann Bouis", "Ittai Nelken-Regev",
+        "Austin Lei", "Benjamin Chen", "Benji Van Lienden", "Brandon Yea", "Brian Sui",
+        "Evan Kniffen", "Forrest Chou", "Harsh Ambardekar", "Helena Zhang", "Isaac Li",
+        "Ittai Nelken-Regev", "Jason Guo", "Jessica Li", "Jiazhen Tan", "Jonathan Sy",
+        "Jordan Truong", "Justin Park", "Kiran Parthasarathy", "Lucas Fowler", "Moor Xu",
+        "Nikhil Shanbhag", "Samik Krishnan", "Shrey Chaudhary", "Stanley Li", "Stephanie Yao",
+        "Sushanth Sathish Kumar", "Theo Danial", "Tushar Gona", "Vignesh Nydhruva",
+        "Viraj Aggarwal", "Wen Cao", "William Wu", "William Xu", "Ylann Bouis",
     ] }
 ] ]
 +++
