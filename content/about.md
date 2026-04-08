@@ -32,7 +32,7 @@ columns = [ [
 ], [
     { title = "Problem Writing", heading = true },
     { title = "Head Problem Writers", members = ["Aarush Chaubey", "Wen Cao"] },
-    { title = "Head of Test Solving", members = ["Ylann Bouis"] },
+    { title = "Head of Testsolving", members = ["Ylann Bouis"] },
     { title = "Puzzle Test Organizers", members = ["Aedan Hui", "Jordan Truong", "Kiran Parthasarathy", "Troy Pham"] },
     { title = "Individual Test Organizers", members = ["Forrest Chou", "Harsh Ambardekar", "Jessica Li"] },
     { title = "Team Test Organizers", members = ["Brian Zhou", "Jessie Tan", "Stephanie Yao"] },
