@@ -26,11 +26,11 @@ including Tiebreaker qualifiers. Please be on the lookout for any announcements.
 For any day-of directions, questions or concerns ask a BMT staff member or
 volunteer wearing a dark green shirt.
 
-An annotated campus map is provided at the bottom of this page.
+An annotated campus map is provided under the ["Travel and Transportation"](#Travel-and-Transportation) section.
 
 ### Information Desk
 
-For students who get lost, are arriving late, or have additional questions, there will be an information desk inside Dwinelle Hall starting at 8 AM.
+For students who get lost, are arriving late, or have additional questions, there will be an information desk inside Dwinelle Hall starting at 8 AM. You can find the location of the information desk on the third page of our [Tournament Guide](/assets/bmmt-2026/tournament-guide.pdf).
 
 ## Arrival and Check-in
 
