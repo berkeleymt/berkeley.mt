@@ -26,7 +26,7 @@ including Tiebreaker qualifiers. Please be on the lookout for any announcements.
 For any day-of directions, questions or concerns ask a BMT staff member or
 volunteer wearing a dark green shirt.
 
-An annotated campus map is provided under the ["Travel and Transportation"](#Travel-and-Transportation) section.
+An annotated campus map is provided under the ["Travel and Transportation"](#travel-and-transportation) section.
 
 ### Information Desk
 
