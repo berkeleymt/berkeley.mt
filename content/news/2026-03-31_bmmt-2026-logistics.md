@@ -30,7 +30,7 @@ An annotated campus map is provided at the bottom of this page.
 
 ### Information Desk
 
-For students who get lost, are arriving late, or have additional questions, there will be an information desk in Dwinelle Plaza starting at 8 AM.
+For students who get lost, are arriving late, or have additional questions, there will be an information desk inside Dwinelle Hall starting at 8 AM.
 
 ## Arrival and Check-in
 
@@ -135,7 +135,7 @@ Have a backup parking garage planned, as we have had parking garages fill up in 
   <td>11:30 AM – 12:15 PM</td>
   <td>Pre-ordered Lunch Pick-up</td>
   <td>
-    Outside Dwinelle Hall
+    Inside Kerr Lobby (MLK Jr. Student Union)
   </td>
 </tr>
 <tr>
@@ -146,7 +146,7 @@ Have a backup parking garage planned, as we have had parking garages fill up in 
     <br>Disputes (12:00 – 12:30 PM)
   </td>
   <td>
-    <b>T-shirt Sales</b> <i>(while supplies last)</i> — Outside Dwinelle Hall
+    <b>T-shirt Sales</b> <i>(while supplies last)</i> — Inside Kerr Lobby (MLK Jr. Student Union)
     <br><b>Problem Disputes</b> <i>(Puzzle, Individual)</i> — Dwinelle 234
   </td>
 </tr>
