@@ -214,7 +214,7 @@ In 250 BC, Archimedes discovered the principle of buoyancy, noticing it in his b
   
 #### Origami _by [Cal Origami](https://calorigami.studentorg.berkeley.edu/) [Dwinelle 246, 247]_ 
 
-Do you want to bring home a cute souvenir from BmMT? Come make your own origami polyhedra! We will be offering multiple paper patterns and instructions, and teaching from the basics of modular origami. No prior craft experience is needed!
+Do you want to bring home a cute souvenir from BMT? Come make your own origami dragon! We will be offering multiple paper patterns and instructions, and teaching from the basics of crease patterns. No prior craft experience is needed! 
 
 #### ⭐ Mathematician Mash _[Dwinelle 145]_
 
