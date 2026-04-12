@@ -163,12 +163,14 @@ For Proctors
 <li>If you're unsure if behavior warrants a warning, send a message in your building's proctor channel, <strong>NOT</strong> warnings-dqs. A proctor manager, satellite manager, or crisis manager will respond and let you know.</li>
 <li>For warnings, please go to the person and/or team directly, <strong>do not announce this from the desk in the front</strong> as it might disturb other students' testing:
 <ul>
-<li><em>First warning:</em> "Please stop with [insert behavior], you are disrupting the testing environment for other teams. This is your first warning. If you need to be warned again, you/your team will be disqualified from the tournament and your/your team's test scores will be invalidated for the whole tournament."</li>
+<li><em>First warning:</em>
+<div class="not-prose my-2 ml-2 border-l-4 border-blue-300 bg-blue-50 rounded-r-lg px-4 py-3 text-sm italic">"Please stop with [insert behavior], you are disrupting the testing environment for other teams. This is your first warning. If you need to be warned again, you/your team will be disqualified from the tournament and your/your team's test scores will be invalidated for the whole tournament."</div>
+</li>
 <li>Send the following into the thread (<strong>CRUCIAL</strong>):</li>
 </ul>
 </li>
 </ol>
-<div class="not-prose my-3">
+<div class="not-prose my-3 ml-8">
   <div class="flex items-center justify-between bg-gray-100 border border-gray-200 rounded-t-lg px-4 py-2">
     <span class="font-medium text-sm">Warning Template</span>
     <button onclick="navigator.clipboard.writeText(document.getElementById('copyable-warning').innerText).then(() => { this.innerHTML = '<i class=\'bi bi-check-lg text-green-600\'></i> Copied!'; setTimeout(() => { this.innerHTML = '<i class=\'bi bi-clipboard\'></i> Copy'; }, 2000); });" class="inline-flex items-center gap-1.5 text-sm px-3 py-1 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer"><i class="bi bi-clipboard"></i> Copy</button>
@@ -211,13 +213,15 @@ For Crisis Managers, Proctor Managers, Satellite Managers, Dispatcher
 </li>
 <li>If the warning/DQ falls under <strong>slurs, physical harm, or disruptive behavior</strong>:
 <ul>
-<li>Go up to the desks of the contestant/team that needs to be DQed: <em>"You/your team are now disqualified from the tournament and your test scores will be invalidated. Please hand over your test(s) and quietly pack up your things and come with me. Your coach will be contacted."</em></li>
+<li>Go up to the desks of the contestant/team that needs to be DQed:
+<div class="not-prose my-2 ml-2 border-l-4 border-blue-300 bg-blue-50 rounded-r-lg px-4 py-3 text-sm italic">"You/your team are now disqualified from the tournament and your test scores will be invalidated. Please hand over your test(s) and quietly pack up your things and come with me. Your coach will be contacted."</div>
+</li>
 <li>Collect their tests and hand them to the proctor. You will be bringing them to the Info Desk. Their coach will be contacted by the Satellite Managers to pick up their students here.</li>
 </ul>
 </li>
 <li>Send the following into the thread (<strong>CRUCIAL</strong>):</li>
 </ol>
-<div class="not-prose my-3">
+<div class="not-prose my-3 ml-8">
   <div class="flex items-center justify-between bg-gray-100 border border-gray-200 rounded-t-lg px-4 py-2">
     <span class="font-medium text-sm">DQ Template</span>
     <button onclick="navigator.clipboard.writeText(document.getElementById('copyable-dq').innerText).then(() => { this.innerHTML = '<i class=\'bi bi-check-lg text-green-600\'></i> Copied!'; setTimeout(() => { this.innerHTML = '<i class=\'bi bi-clipboard\'></i> Copy'; }, 2000); });" class="inline-flex items-center gap-1.5 text-sm px-3 py-1 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer"><i class="bi bi-clipboard"></i> Copy</button>
