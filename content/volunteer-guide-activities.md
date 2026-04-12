@@ -7,6 +7,8 @@ template = "standalone.html"
 
 <a href="/events/bmmt-2026/volunteer-guide/" class="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-black no-underline mb-4">&larr; Back to Volunteer Guide</a>
 
+If you are interested in helping with activities, please **@jeslyn** in the Discord!
+
 We will run the following activities starting at **3:30 PM** and will need volunteers to help with them. Look out for a Discord announcement.
 
 <h3>Student Activities</h3>
