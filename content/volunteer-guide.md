@@ -123,99 +123,53 @@ We will run the following activities starting at **3:30 PM** and will need volun
 </div>
 <div id="tab-disqualifications" class="tab-panel hidden">
 
-<details class="group border border-gray-200 rounded-xl overflow-hidden my-2" open>
-<summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
-<i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
-Who Handles DQs
-</summary>
-<div class="px-4 py-3 prose">
-<p>In priority order of who should be physically sent out first if available:</p>
-<ol>
+<h2 class="text-2xl font-bold mb-4">Disqualifications and Warnings</h2>
+
+<div class="prose mb-6">
+<p><strong>People with DQ Power</strong> (in priority order of who should be physically sent out first if available):</p>
+<ul>
 <li>Crisis Managers</li>
 <li>Proctor Managers</li>
 <li>Satellite Managers</li>
 <li>Dispatcher</li>
-</ol>
-</div>
-</details>
-
-<details class="group border border-gray-200 rounded-xl overflow-hidden my-2">
-<summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
-<i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
-Immediate DQs
-</summary>
-<div class="px-4 py-3 prose">
-<p>The following behaviors result in <strong>immediate disqualification</strong>:</p>
-<ul>
-<li><strong>Cheating</strong> — Looking at another student's paper, phone use, etc.</li>
-<li><strong>Using slurs</strong></li>
-<li><strong>Causing physical harm</strong> to others</li>
 </ul>
-<p>If a contestant's behavior falls under Immediate DQs, proctors should inform Proctor Managers in their building Discord channel immediately.</p>
 </div>
-</details>
 
-<details class="group border border-gray-200 rounded-xl overflow-hidden my-2">
+<details class="group border border-gray-200 rounded-xl overflow-hidden my-2" open>
 <summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
 <i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
-Warning-Based DQs (1 Warning, Then DQ)
-</summary>
-<div class="px-4 py-3 prose">
-<p>For the following behaviors, proctors should give <strong>1 warning</strong> (2nd offense is a DQ):</p>
-<ul>
-<li>Rowdy or disruptive behavior across teams or that disrupts entire room from testing (includes students talking loudly/disturbing others)</li>
-<li>Eating paper or throwing paper</li>
-<li>Entering other teams' space (e.g., crawling on the floor)</li>
-</ul>
-<p><strong>How to give a warning:</strong> Go to the person and/or team directly — <strong>do not announce this from the front desk</strong> as it might disturb other students' testing.</p>
-<p><em>First warning script:</em> "Please stop with [insert behavior], you are disrupting the testing environment for other teams. This is your first warning. If you need to be warned again, you/your team will be disqualified from the tournament and your/your team's test scores will be invalidated for the whole tournament."</p>
-</div>
-</details>
-
-<details class="group border border-gray-200 rounded-xl overflow-hidden my-2">
-<summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
-<i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
-DQ Escalation Process
+General Pipeline (For Proctors)
 </summary>
 <div class="px-4 py-3 prose">
 <ol>
-<li>If behavior continues after the first warning, proctors should inform <strong>Proctor Managers</strong> via the Discord channel for their building.</li>
-<li>Proctor Managers should immediately alert <strong>Satellite Managers</strong>, who should then escalate to the <strong>Dispatcher</strong>.</li>
-<li>The Dispatcher will dispatch a <strong>Crisis Manager</strong>.</li>
-<li>Before going to the room, the Crisis Manager should get the student's coach's contact information.</li>
-<li>At the student's desk, say: <em>"You/your team are now disqualified from the tournament and your test scores will be invalidated. Please hand over your test(s). For now, please sit quietly. Your coach will be contacted."</em></li>
-<li>If cheating: collect their phone and/or item.</li>
-<li>Collect their tests and hand them over to the proctor.</li>
-<li>The coach will be contacted by Proctor Managers to pick up their students at the Wayfinding table.</li>
-<li>After all testing concludes, an email will be sent out to the coaches of all DQed teams.</li>
+<li>If a contestant's behavior falls under <strong>Immediate DQs</strong>, proctors should inform Proctor Managers in their building Discord channel. See the Pipeline for Crisis Managers, Proctor Managers, Satellite Managers, Dispatchers dropdown for more details.
+<ul>
+<li>Immediate DQs for the following:
+<ul>
+<li>Cheating (looking at another student's paper, phone use, etc.)</li>
+<li>Using slurs</li>
+<li>Causing physical harm to others</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If the contestant's behavior is <strong>not</strong> under Immediate DQs, proctors in rooms should give <strong>1 warning</strong> (2nd warning is a DQ) for the following:
+<ul>
+<li>Rowdy or disruptive behavior across teams or that disrupts entire room from testing
+<ul><li>Includes: students that are talking to each other loudly/disturbing others around them while not aiming to</li></ul>
+</li>
+<li>Eating paper or throwing paper</li>
+<li>Entering other teams' space (e.g., crawling on the floor)</li>
+</ul>
+</li>
+<li>If you're unsure if behavior warrants a warning, send a message in your building's proctor channel, <strong>NOT</strong> warnings-dqs. A proctor manager, satellite manager, or crisis manager will respond and let you know.</li>
+<li>For warnings, please go to the person and/or team directly, <strong>do not announce this from the desk in the front</strong> as it might disturb other students' testing:
+<ul>
+<li><em>First warning:</em> "Please stop with [insert behavior], you are disrupting the testing environment for other teams. This is your first warning. If you need to be warned again, you/your team will be disqualified from the tournament and your/your team's test scores will be invalidated for the whole tournament."</li>
+<li>Send the following into the thread (<strong>CRUCIAL</strong>):</li>
+</ul>
+</li>
 </ol>
-<p><strong>Important:</strong> If the original "chain of command" is cut short, the important thing is that the DQ Info Text is sent in the Discord thread so all parties learn about the DQ.</p>
-</div>
-</details>
-
-<details class="group border border-gray-200 rounded-xl overflow-hidden my-2">
-<summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
-<i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
-DQ Score Consequences
-</summary>
-<div class="px-4 py-3 prose">
-<table>
-<thead><tr><th>DQ Reason</th><th>Includes</th><th>Score Consequence</th></tr></thead>
-<tbody>
-<tr><td><strong>Cheating</strong></td><td>Using a phone, collaborating on individual rounds, looking at another student's paper</td><td>Student will receive 0</td></tr>
-<tr><td><strong>Physical Harm</strong></td><td>Punching, biting, etc.</td><td>Student will be deleted from team</td></tr>
-<tr><td><strong>Disruption</strong></td><td>Rowdy/disruptive behavior, eating paper, throwing paper, entering other teams' space</td><td>Student(s) will be deleted from team</td></tr>
-</tbody>
-</table>
-</div>
-</details>
-<details class="group border border-gray-200 rounded-xl overflow-hidden my-2">
-<summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
-<i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
-DQ Reporting Templates
-</summary>
-<div class="px-4 py-3">
-<p><strong>For Warnings</strong> — Post in the Discord thread:</p>
 <div class="not-prose my-3">
   <div class="flex items-center justify-between bg-gray-100 border border-gray-200 rounded-t-lg px-4 py-2">
     <span class="font-medium text-sm">Warning Template</span>
@@ -226,7 +180,45 @@ Student ID(s):
 Team ID(s):
 Reason for Warning:</pre>
 </div>
-<p><strong>For DQs</strong> — Only people listed in the "Who Handles DQs" dropdown above (Crisis Managers, Proctor Managers, Satellite Managers, Dispatcher) may send these in. Post in the Discord thread:</p>
+<ol start="5">
+<li>If the behavior continues after the first warning and is still ruining the test environment for other students, proctors should inform Proctor Managers via the Discord channel for their building.</li>
+</ol>
+</div>
+</details>
+
+<details class="group border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
+Pipeline for Crisis Managers, Proctor Managers, Satellite Managers, Dispatchers
+</summary>
+<div class="px-4 py-3 prose">
+<ol start="6">
+<li>All behavior will be reported by proctors in their building channels.</li>
+<li>Proctor Managers should immediately alert Satellite Managers, who should then escalate this issue to a Dispatcher. The Dispatcher will then dispatch a Crisis Manager.
+<ul>
+<li>There might be a Crisis Manager in the Satellite Operations room, be listening on-call, or so they may dispatch themselves.</li>
+<li>If the original "chain of command" is cut short, the important thing is that the DQ Info Text is sent in the Discord thread so all parties learn about the DQ.</li>
+</ul>
+</li>
+<li>Crisis Managers will be sent to the room (either from reading the Discord channel or being deployed by the Dispatcher).
+<ul>
+<li>Prior to going to the room, the Crisis Managers or Satellite Managers should get the student's coach's contact information.</li>
+</ul>
+</li>
+<li>If the warning/DQ is for <strong>cheating</strong>:
+<ul>
+<li>Go to the room, speak with the proctor about what happened.</li>
+<li><strong>Do NOT</strong> talk to the student(s), inform them of their disqualification, or bring them to Info Desk.</li>
+</ul>
+</li>
+<li>If the warning/DQ falls under <strong>slurs, physical harm, or disruptive behavior</strong>:
+<ul>
+<li>Go up to the desks of the contestant/team that needs to be DQed: <em>"You/your team are now disqualified from the tournament and your test scores will be invalidated. Please hand over your test(s) and quietly pack up your things and come with me. Your coach will be contacted."</em></li>
+<li>Collect their tests and hand them to the proctor. You will be bringing them to the Info Desk. Their coach will be contacted by the Satellite Managers to pick up their students here.</li>
+</ul>
+</li>
+<li>Send the following into the thread (<strong>CRUCIAL</strong>):</li>
+</ol>
 <div class="not-prose my-3">
   <div class="flex items-center justify-between bg-gray-100 border border-gray-200 rounded-t-lg px-4 py-2">
     <span class="font-medium text-sm">DQ Template</span>
@@ -239,6 +231,26 @@ Coach Contact Info:
 Reason for DQ:
 Person DQing:</pre>
 </div>
+<ol start="12">
+<li>After all testing concludes, an email will be sent out to the coaches of all DQed teams.</li>
+</ol>
+</div>
+</details>
+
+<details class="group border border-gray-200 rounded-xl overflow-hidden my-2">
+<summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+<i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
+Scores for DQ Reasons (For the Scanning Room)
+</summary>
+<div class="px-4 py-3 prose">
+<table>
+<thead><tr><th>DQ Reason</th><th>Includes</th><th>Score Consequence</th></tr></thead>
+<tbody>
+<tr><td><strong>Cheating</strong></td><td>Using a phone, collaborating on individual rounds, looking at another student's paper</td><td>Student will receive 0</td></tr>
+<tr><td><strong>Physical Harm</strong></td><td>Punching, biting, etc.</td><td>Student will be deleted from team</td></tr>
+<tr><td><strong>Disruption</strong></td><td>Rowdy, disruptive behavior, eating paper, throwing paper, entering or crawling into other teams' space</td><td>Student(s) will be deleted from team</td></tr>
+</tbody>
+</table>
 </div>
 </details>
 
