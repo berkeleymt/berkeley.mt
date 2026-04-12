@@ -42,8 +42,7 @@ Please navigate to the check-in room specified in your email.
 
 **This is not on Berkeley Time, please arrive as early as you can! Please bring fully charged computers — outlet access is not guaranteed.**
 
-### Where to Go After Role Assignment
-
+{% details(title="Where to Go After Role Assignment") %}
 | Role | Location |
 | --- | --- |
 | **Dwinelle Proctors** | Go to Dwinelle 219 for volunteer training. Then, go to the room on your script assigned by your Proctor Manager. |
@@ -53,6 +52,22 @@ Please navigate to the check-in room specified in your email.
 | **Runners** | Go to Dwinelle 211. |
 | **Puzzle Graders** | Go to Dwinelle 211 for now; Puzzle grading will only start at around 11:00 AM. |
 | **Activities** | We'll send a ping in the #vol-announcements channel on Discord before Relay ends around 3:30 PM with location details. |
+{% end %}
+
+### Schedule
+
+The internal schedule is the one we follow, and the external schedule is advertised to students. We may run ahead or behind schedule — please monitor Discord for announcements.
+
+| Event | Internal | External |
+| --- | --- | --- |
+| Check-in | 7:30 – 9:00 AM | 7:45 – 9:00 AM |
+| Puzzle Round | 9:15 – 10:30 AM | 9:00 AM – 12:00 PM |
+| Individual Round | 10:45 – 11:45 AM | |
+| Lunch | 12:00 – 1:15 PM | 12:00 – 1:15 PM |
+| Team Round | 1:30 – 2:30 PM | 1:15 – 3:30 PM |
+| Relay Round | 2:40 – 3:20 PM | |
+| Activities | 3:30 – 4:45 PM | 3:30 – 5:00 PM |
+| Awards | 5:00 – 6:30 PM | 5:00 – 6:00 PM |
 
 ### Key Contacts & Discord Handles
 
@@ -70,21 +85,6 @@ If you're unsure about what category your question falls into, please contact **
 | | Proctor Manager | Tej (tejnadkarni) |
 | Pauley Ballroom | Satellite Manager | Andrew K. (naomilojo) |
 | | Proctor Manager | Crystal (\_crsytal\_) |
-
-### Schedule
-
-The internal schedule is the one we follow, and the external schedule is advertised to students. We may run ahead or behind schedule — please monitor Discord for announcements.
-
-| Event | Internal | External |
-| --- | --- | --- |
-| Check-in | 7:30 – 9:00 AM | 7:45 – 9:00 AM |
-| Puzzle Round | 9:15 – 10:30 AM | 9:00 AM – 12:00 PM |
-| Individual Round | 10:45 – 11:45 AM | |
-| Lunch | 12:00 – 1:15 PM | 12:00 – 1:15 PM |
-| Team Round | 1:30 – 2:30 PM | 1:15 – 3:30 PM |
-| Relay Round | 2:40 – 3:20 PM | |
-| Activities | 3:30 – 4:45 PM | 3:30 – 5:00 PM |
-| Awards | 5:00 – 6:30 PM | 5:00 – 6:00 PM |
 
 <div class="not-prose grid grid-cols-3 gap-4 my-6">
   <button onclick="toggleRoleCard('proctors')" class="group rounded-xl overflow-hidden bg-gradient-to-br from-fuchsia-700 to-fuchsia-900 text-white shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left">
