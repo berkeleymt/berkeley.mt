@@ -32,11 +32,13 @@ descriptions, role responsibilities, and emergency procedures.
 
 ### Check-In
 
-- **Shift 1:** Check-in at Dwinelle 215 or 283 at **7:30 AM**
-- **Shift 2:** Check-in at Dwinelle 215 or 283 at **12:00 PM**
-- Please navigate to the check-in room specified in your email.
-  - Last names A–L will go to **DWIN 215**
-  - Last names M–Z will go to **DWIN 283**
+**Shift 1:** Check-in at Dwinelle 215 or 283 at **7:30 AM**
+
+**Shift 2:** Check-in at Dwinelle 215 or 283 at **12:00 PM**
+
+Please navigate to the check-in room specified in your email.
+- Last names A–L will go to **DWIN 215**
+- Last names M–Z will go to **DWIN 283**
 
 **This is not on Berkeley Time, please arrive as early as you can! Please bring fully charged computers — outlet access is not guaranteed.**
 
