@@ -138,7 +138,7 @@ For Proctors
 </summary>
 <div class="px-4 py-3 prose">
 <ol>
-<li>If a contestant's behavior falls under <strong>Immediate DQs</strong>, proctors should inform Proctor Managers in their building Discord channel. See the "For Crisis Managers, Proctor Managers, Satellite Managers, Dispatcher" dropdown for more details.
+<li>If a contestant's behavior falls under <strong>Immediate DQs</strong>, proctors should inform Proctor Managers in their building Discord channel.
 <ul>
 <li>Immediate DQs for the following:
 <ul>
@@ -158,10 +158,10 @@ For Proctors
 <li>Entering other teams' space (e.g., crawling on the floor)</li>
 </ul>
 </li>
-<li>If you're unsure if behavior warrants a warning, send a message in your building's proctor channel, <strong>NOT</strong> warnings-dqs. A proctor manager, satellite manager, or crisis manager will respond and let you know.</li>
+<li>If you're unsure if behavior warrants a warning, <strong>send a message in your building's proctor channel, NOT #warnings-dqs</strong>. A proctor manager, satellite manager, or crisis manager will respond and let you know.</li>
 <li>For warnings, please go to the person and/or team directly, <strong>do not announce this from the desk in the front</strong> as it might disturb other students' testing:
 <ul>
-<li><em>First warning:</em>
+<li>First warning:
 <div class="not-prose my-2 ml-2 border-l-4 border-blue-300 bg-blue-50 rounded-r-lg px-4 py-3 text-sm italic">"Please stop with [insert behavior], you are disrupting the testing environment for other teams. This is your first warning. If you need to be warned again, you/your team will be disqualified from the tournament and your/your team's test scores will be invalidated for the whole tournament."</div>
 </li>
 <li>Send the following into the thread (<strong>CRUCIAL</strong>):</li>
