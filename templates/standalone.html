@@ -17,13 +17,4 @@
 </main>
 {% endif %}
 
-{% if page.toc %}
-<div class="hidden xl:block absolute -right-8 translate-x-full h-full max-w-48">
-  <nav id="toc" class="sticky top-8">
-    {{ macros::toc(toc=page.toc) }}
-  </nav>
-</div>
-{{ macros::toc_js() }}
-{% endif %}
-
 {% endblock %}
