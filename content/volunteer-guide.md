@@ -23,8 +23,6 @@ descriptions, role responsibilities, and emergency procedures.
   <span class="text-gray-300">⁄</span>
   <button onclick="switchTab('emergency')" id="tab-btn-emergency" class="tab-btn text-gray-500">Emergency Procedures</button>
   <span class="text-gray-300">⁄</span>
-  <button onclick="switchTab('proctors')" id="tab-btn-proctors" class="tab-btn text-gray-500">Proctors</button>
-  <span class="text-gray-300">⁄</span>
   <button onclick="switchTab('directory')" id="tab-btn-directory" class="tab-btn text-gray-500">Directory</button>
 </nav>
 
@@ -348,39 +346,6 @@ Missing Participant
 <ul>
 <li>Notify the <strong>Dispatcher</strong> immediately.</li>
 </ul>
-</div>
-</details>
-
-</div>
-<div id="tab-proctors" class="tab-panel hidden">
-
-<details class="group border border-gray-200 rounded-xl overflow-hidden my-2" open>
-<summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
-<i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
-Proctor Responsibilities
-</summary>
-<div class="px-4 py-3 prose">
-<p>You are responsible for monitoring contestants, reading out exam instructions, responding to requests for problems, and answering any other student questions in the same room of 20–40 contestants across multiple rounds.</p>
-<p>You will be given a box containing all testing papers and materials needed for your first round, along with a proctor script. In the proctor script, you will find instructions for running each round.</p>
-<p>In case of a campus-wide / building emergency, you will be responsible for your students! We'll give instructions on Discord if something like this happens (see the Emergency Procedures tab).</p>
-</div>
-</details>
-
-<details class="group border border-gray-200 rounded-xl overflow-hidden my-2">
-<summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
-<i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
-Frequently Asked Questions
-</summary>
-<div class="px-4 py-3 prose">
-<p>Here are some questions students and coaches/parents might ask you:</p>
-<p><strong>1. (Student) What is our Student ID/Team ID?</strong></p>
-<p>All students should have a sticker with their name and a unique alpha-numerical ID on it. Their Student ID is the full thing, a team's Team ID is the Student ID with the leading letter removed (i.e., just a team number).</p>
-<p><strong>2. (Student) What room do I go to?</strong></p>
-<p>All students have the room they are assigned to printed on the Student ID sticker they were given during check-in. If they do not have a sticker, direct the student to the Info Desk at Sather Road between Dwinelle and Wheeler.</p>
-<p><strong>3. (Parent/Coach) Where can I go to wait for/pick up my child?</strong></p>
-<p>Morning rounds end at 12:00 PM. Afternoon rounds end at 3:30 PM, activities run from 3:30 – 5:00 PM, and awards are from 5:00 – 6:00 PM, after which the tournament concludes.</p>
-<p>They can head to the Info Desk at Sather Road between Dwinelle and Wheeler for more information about the Parent/Coach Lounge and Parent Activities. Coaches can pick up lunch for teams between 11:30 AM – 12:15 PM at Dwinelle Plaza.</p>
-<p><em>For proctoring-related questions, see the Proctor Script.</em></p>
 </div>
 </details>
 
