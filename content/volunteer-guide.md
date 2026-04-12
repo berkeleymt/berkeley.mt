@@ -17,7 +17,7 @@ descriptions, role responsibilities, and emergency procedures.
 <!-- more -->
 
 <nav class="not-prose flex flex-wrap justify-center gap-x-4 gap-y-2 my-2 mb-4">
-  <button onclick="switchTab('general')" id="tab-btn-general" class="tab-btn font-semibold text-black">General</button>
+  <button onclick="switchTab('general')" id="tab-btn-general" class="tab-btn font-semibold text-black">Home</button>
   <span class="text-gray-300">⁄</span>
   <button onclick="switchTab('disqualifications')" id="tab-btn-disqualifications" class="tab-btn text-gray-500">Disqualifications</button>
   <span class="text-gray-300">⁄</span>
@@ -30,19 +30,18 @@ descriptions, role responsibilities, and emergency procedures.
 
 <div id="tab-general" class="tab-panel">
 
-{% details(title="Check-in Times & Locations") %}
+### Check-In
+
 - **Shift 1:** Check-in at Dwinelle 215 or 283 at **7:30 AM**
 - **Shift 2:** Check-in at Dwinelle 215 or 283 at **12:00 PM**
 - Please navigate to the check-in room specified in your email.
   - Last names A–L will go to **DWIN 215**
   - Last names M–Z will go to **DWIN 283**
 
-**This is not on Berkeley Time, please arrive as early as you can!**
+**This is not on Berkeley Time, please arrive as early as you can! Please bring fully charged computers — outlet access is not guaranteed.**
 
-Please bring fully charged computers! Outlet access is not guaranteed.
-{% end %}
+### Where to Go After Role Assignment
 
-{% details(title="Where to Go After Role Assignment") %}
 | Role | Location |
 | --- | --- |
 | **Dwinelle Proctors** | Go to Dwinelle 219 for volunteer training. Then, go to the room on your script assigned by your Proctor Manager. |
@@ -52,9 +51,9 @@ Please bring fully charged computers! Outlet access is not guaranteed.
 | **Runners** | Go to Dwinelle 211. |
 | **Puzzle Graders** | Go to Dwinelle 211 for now; Puzzle grading will only start at around 11:00 AM. |
 | **Activities** | We'll send a ping in the #vol-announcements channel on Discord before Relay ends around 3:30 PM with location details. |
-{% end %}
 
-{% details(title="Key Contacts & Discord Handles") %}
+### Key Contacts & Discord Handles
+
 If you're unsure about what category your question falls into, please contact **Ty (ly49nkallo)**!
 
 | Building (Room) | Role | Person (Discord) |
@@ -69,9 +68,9 @@ If you're unsure about what category your question falls into, please contact **
 | | Proctor Manager | Tej (tejnadkarni) |
 | Pauley Ballroom | Satellite Manager | Andrew K. (naomilojo) |
 | | Proctor Manager | Crystal (\_crsytal\_) |
-{% end %}
 
-{% details(title="Internal & External Schedule") %}
+### Schedule
+
 The internal schedule is the one we follow, and the external schedule is advertised to students. We may run ahead or behind schedule — please monitor Discord for announcements.
 
 | Event | Internal | External |
@@ -84,7 +83,6 @@ The internal schedule is the one we follow, and the external schedule is adverti
 | Relay Round | 2:40 – 3:20 PM | |
 | Activities | 3:30 – 4:45 PM | 3:30 – 5:00 PM |
 | Awards | 5:00 – 6:30 PM | 5:00 – 6:00 PM |
-{% end %}
 
 {% details(title="Runner Info") %}
 Runners work alongside Proctor Managers, Satellite Managers, and the Dispatcher, assisting in transportation of test materials and other items between rooms or substitution for proctors.
