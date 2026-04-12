@@ -79,98 +79,44 @@ If you're unsure about what category your question falls into, please contact **
 <div id="tab-roles" class="tab-panel">
 
 <div class="not-prose grid grid-cols-3 gap-4 my-6">
-  <button onclick="toggleRoleCard('proctors')" class="group rounded-xl overflow-hidden text-black shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left" style="background-color: #c5e0d8;">
+  <a href="/events/bmmt-2026/volunteer-guide/proctors/" class="group rounded-xl overflow-hidden text-black shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left no-underline" style="background-color: #c5e0d8;">
     <h3 class="font-bold text-lg flex items-center gap-2">
       <span>Proctors</span>
-      <i class="bi bi-chevron-right text-sm transition-transform" id="icon-proctors"></i>
+      <i class="bi bi-chevron-right text-sm"></i>
     </h3>
     <p class="text-sm opacity-75">Monitoring, scripts & responsibilities</p>
-  </button>
-  <button onclick="toggleRoleCard('graders')" class="group rounded-xl overflow-hidden text-black shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left" style="background-color: #8ec6d6;">
+  </a>
+  <a href="/events/bmmt-2026/volunteer-guide/graders/" class="group rounded-xl overflow-hidden text-black shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left no-underline" style="background-color: #8ec6d6;">
     <h3 class="font-bold text-lg flex items-center gap-2">
       <span>Graders</span>
-      <i class="bi bi-chevron-right text-sm transition-transform" id="icon-graders"></i>
+      <i class="bi bi-chevron-right text-sm"></i>
     </h3>
     <p class="text-sm opacity-75">Puzzle & Atomic Grader info</p>
-  </button>
-  <button onclick="toggleRoleCard('runners')" class="group rounded-xl overflow-hidden text-white shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left" style="background-color: #2d5a73;">
+  </a>
+  <a href="/events/bmmt-2026/volunteer-guide/runners/" class="group rounded-xl overflow-hidden text-white shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left no-underline" style="background-color: #2d5a73;">
     <h3 class="font-bold text-lg flex items-center gap-2">
       <span>Runners</span>
-      <i class="bi bi-chevron-right text-sm transition-transform" id="icon-runners"></i>
+      <i class="bi bi-chevron-right text-sm"></i>
     </h3>
     <p class="text-sm opacity-90">Material transport & substitution</p>
-  </button>
+  </a>
 </div>
 
 <div class="not-prose grid grid-cols-2 gap-4 mb-6">
-  <button onclick="toggleRoleCard('activities')" class="group rounded-xl overflow-hidden text-black shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left" style="background-color: #d6e0f0;">
+  <a href="/events/bmmt-2026/volunteer-guide/activities/" class="group rounded-xl overflow-hidden text-black shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left no-underline" style="background-color: #d6e0f0;">
     <h3 class="font-bold text-lg flex items-center gap-2">
       <span>Activities</span>
-      <i class="bi bi-chevron-right text-sm transition-transform" id="icon-activities"></i>
+      <i class="bi bi-chevron-right text-sm"></i>
     </h3>
     <p class="text-sm opacity-75">Post-competition events & games</p>
-  </button>
-  <button onclick="toggleRoleCard('teardown')" class="group rounded-xl overflow-hidden text-black shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left" style="background-color: #7badc4;">
+  </a>
+  <a href="/events/bmmt-2026/volunteer-guide/teardown/" class="group rounded-xl overflow-hidden text-black shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left no-underline" style="background-color: #7badc4;">
     <h3 class="font-bold text-lg flex items-center gap-2">
       <span>Teardown</span>
-      <i class="bi bi-chevron-right text-sm transition-transform" id="icon-teardown"></i>
+      <i class="bi bi-chevron-right text-sm"></i>
     </h3>
     <p class="text-sm opacity-75">End-of-day cleanup & wrap-up</p>
-  </button>
-</div>
-
-<div id="role-proctors" class="hidden prose my-4 border border-gray-200 rounded-xl p-6">
-<h3 class="mt-0">Proctors</h3>
-<p>You are responsible for monitoring contestants, reading out exam instructions, responding to requests for problems, and answering any other student questions in the same room of 20–40 contestants across multiple rounds.</p>
-<p>You will be given a box containing all testing papers and materials needed for your first round, along with a proctor script. In the proctor script, you will find instructions for running each round.</p>
-<p>In case of a campus-wide / building emergency, you will be responsible for your students! We'll give instructions on Discord if something like this happens (see the Emergency Procedures tab).</p>
-<h4>Frequently Asked Questions</h4>
-<p>Here are some questions students and coaches/parents might ask you:</p>
-<p><strong>1. (Student) What is our Student ID/Team ID?</strong></p>
-<p>All students should have a sticker with their name and a unique alpha-numerical ID on it. Their Student ID is the full thing, a team's Team ID is the Student ID with the leading letter removed (i.e., just a team number).</p>
-<p><strong>2. (Student) What room do I go to?</strong></p>
-<p>All students have the room they are assigned to printed on the Student ID sticker they were given during check-in. If they do not have a sticker, direct the student to the Info Desk at Sather Road between Dwinelle and Wheeler.</p>
-<p><strong>3. (Parent/Coach) Where can I go to wait for/pick up my child?</strong></p>
-<p>Morning rounds end at 12:00 PM. Afternoon rounds end at 3:30 PM, activities run from 3:30 – 5:00 PM, and awards are from 5:00 – 6:00 PM, after which the tournament concludes.</p>
-<p>They can head to the Info Desk at Sather Road between Dwinelle and Wheeler for more information about the Parent/Coach Lounge and Parent Activities. Coaches can pick up lunch for teams between 11:30 AM – 12:15 PM at Dwinelle Plaza.</p>
-<p><em>For proctoring-related questions, see the Proctor Script.</em></p>
-</div>
-
-<div id="role-graders" class="hidden prose my-4 border border-gray-200 rounded-xl p-6">
-<h3 class="mt-0">Graders</h3>
-<p>The Puzzle Round will be graded on paper in <strong>Dwinelle 205/209</strong>.</p>
-<p>The other tests will be graded using a platform called <strong>Atomic Grader</strong>. The links to grade these tests will be posted on Discord. Since these tests have objective answers, there is no such training to check them, but you should read the instructions on Discord.</p>
-<p>You can be a grader for other tests regardless of your role.</p>
-</div>
-
-<div id="role-runners" class="hidden prose my-4 border border-gray-200 rounded-xl p-6">
-<h3 class="mt-0">Runners</h3>
-<p>Runners work alongside Proctor Managers, Satellite Managers, and the Dispatcher, assisting in transportation of test materials and other items between rooms or substitution for proctors.</p>
-<p>When coming for your shift, either in the morning or afternoon, report to <strong>Dwinelle 215</strong> where you will be assigned a room to report to for the rest of your shift. You will help the Proctor Managers, Satellite Manager, or Dispatcher in the room.</p>
-</div>
-
-<div id="role-activities" class="hidden prose my-4 border border-gray-200 rounded-xl p-6">
-<h3 class="mt-0">Activities</h3>
-<p>We will run the following activities starting at <strong>3:30 PM</strong> and will need volunteers to help with them. Look out for a Discord announcement.</p>
-<p><strong>Estimathon (DWIN 155)</strong> — Got wit and strategy? Come to our Estimathon®, a contest combining trivia, strategic planning, and sharp mathematical thinking. Teams of up to 3 will race against the clock to tackle a challenging set of 13 Fermi-style problems, testing their ability to think fast and outsmart the competition.</p>
-<p><strong>Mathematician Mash (DWIN 145)</strong> — Test your math intuition in this fast-paced game inspired by the classic game show Family Feud! Teams will try to guess the most popular answers to math-themed questions.</p>
-<p><strong>Plank Countdown (DWIN 182, 183, 187, 189)</strong> — Miss the excitement of the MATHCOUNTS® Countdown Round? Want to show off mental math in a countdown match… while planking? Come join us for our Plank Countdown tournament!</p>
-<p><strong>Float Your Boat: The Archimedes Challenge (DWIN 105, 106, 109)</strong> — Can you use the principle of buoyancy to keep heavy boats afloat? Come learn from the Society of Physical Sciences and experiment with the physics that keeps everything from toy rafts to cargo ships above water.</p>
-<p><strong>Time Mix-up Puzzle Hunt</strong> — A puzzle hunt activity for students.</p>
-<p><strong>Origami Dragon</strong> — Learn to fold an origami dragon with Cal Origami.</p>
-<p><strong>Games Lounge</strong> — A chill space for board games and relaxation.</p>
-</div>
-
-<div id="role-teardown" class="hidden prose my-4 border border-gray-200 rounded-xl p-6">
-<h3 class="mt-0">Teardown</h3>
-<p>After Awards (~6:30 PM), we need help tearing down the event. This includes:</p>
-<ul>
-<li>Clearing all testing rooms of leftover materials, scratch paper, and signage</li>
-<li>Returning supplies (boxes, markers, tape, etc.) to Dwinelle 211</li>
-<li>Taking down directional signs around campus</li>
-<li>Helping break down the Info Desk and any activity stations</li>
-</ul>
-<p>Please check <strong>#vol-announcements</strong> on Discord for specific teardown assignments and meeting points.</p>
+  </a>
 </div>
 
 </div>
@@ -438,23 +384,5 @@ function switchTab(tabId) {
   var btn = document.getElementById('tab-btn-' + tabId);
   btn.classList.add('font-semibold', 'text-black');
   btn.classList.remove('text-gray-500');
-}
-function toggleRoleCard(role) {
-  var panel = document.getElementById('role-' + role);
-  var icon = document.getElementById('icon-' + role);
-  var allPanels = ['proctors', 'graders', 'runners', 'activities', 'teardown'];
-  allPanels.forEach(function(r) {
-    if (r !== role) {
-      document.getElementById('role-' + r).classList.add('hidden');
-      document.getElementById('icon-' + r).style.transform = '';
-    }
-  });
-  if (panel.classList.contains('hidden')) {
-    panel.classList.remove('hidden');
-    icon.style.transform = 'rotate(90deg)';
-  } else {
-    panel.classList.add('hidden');
-    icon.style.transform = '';
-  }
 }
 </script>
