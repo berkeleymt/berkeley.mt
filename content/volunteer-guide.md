@@ -123,8 +123,6 @@ We will run the following activities starting at **3:30 PM** and will need volun
 </div>
 <div id="tab-disqualifications" class="tab-panel hidden">
 
-<h2 class="text-2xl font-bold mb-4">Disqualifications and Warnings</h2>
-
 <div class="prose mb-6">
 <p><strong>People with DQ Power</strong> (in priority order of who should be physically sent out first if available):</p>
 <ul>
@@ -138,11 +136,11 @@ We will run the following activities starting at **3:30 PM** and will need volun
 <details class="group border border-gray-200 rounded-xl overflow-hidden my-2" open>
 <summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
 <i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
-General Pipeline (For Proctors)
+For Proctors
 </summary>
 <div class="px-4 py-3 prose">
 <ol>
-<li>If a contestant's behavior falls under <strong>Immediate DQs</strong>, proctors should inform Proctor Managers in their building Discord channel. See the Pipeline for Crisis Managers, Proctor Managers, Satellite Managers, Dispatchers dropdown for more details.
+<li>If a contestant's behavior falls under <strong>Immediate DQs</strong>, proctors should inform Proctor Managers in their building Discord channel. See the "For Crisis Managers, Proctor Managers, Satellite Managers, Dispatcher" dropdown for more details.
 <ul>
 <li>Immediate DQs for the following:
 <ul>
@@ -189,7 +187,7 @@ Reason for Warning:</pre>
 <details class="group border border-gray-200 rounded-xl overflow-hidden my-2">
 <summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
 <i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
-Pipeline for Crisis Managers, Proctor Managers, Satellite Managers, Dispatchers
+For Crisis Managers, Proctor Managers, Satellite Managers, Dispatcher
 </summary>
 <div class="px-4 py-3 prose">
 <ol start="6">
@@ -240,7 +238,7 @@ Person DQing:</pre>
 <details class="group border border-gray-200 rounded-xl overflow-hidden my-2">
 <summary class="cursor-pointer select-none px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-medium flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
 <i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
-Scores for DQ Reasons (For the Scanning Room)
+For Scanning Room
 </summary>
 <div class="px-4 py-3 prose">
 <table>
