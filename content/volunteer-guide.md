@@ -385,4 +385,11 @@ function switchTab(tabId) {
   btn.classList.add('font-semibold', 'text-black');
   btn.classList.remove('text-gray-500');
 }
+(function() {
+  var saved = localStorage.getItem('activeTab');
+  if (saved) {
+    localStorage.removeItem('activeTab');
+    switchTab(saved);
+  }
+})();
 </script>

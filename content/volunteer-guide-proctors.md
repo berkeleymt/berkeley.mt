@@ -99,6 +99,9 @@ template = "standalone.html"
 </li>
 </ul>
 
+<p><strong>What if I notice suspicious behavior (e.g. cheating)?</strong></p>
+<p>Report it immediately in your building's Discord proctor channel (#dwinelle-proctors, #wheeler-proctors, or #vlsb-proctors). Do <strong>not</strong> confront the student yourself. See the <a href="/events/bmmt-2026/volunteer-guide/" onclick="localStorage.setItem('activeTab','disqualifications')">Disqualifications tab</a> on the Volunteer Guide for the full pipeline and instructions.</p>
+
 <p><strong>What if a parent/coach asks me where they can go during testing?</strong></p>
 <p>Tell them morning rounds end at 12:00 PM, and they can head to the info desk inside Dwinelle Hall for more information about the Parent/Coach Lounge and Parent Activities. Coaches can pick up lunch for teams between 11:30 AM – 12:15 PM in Kerr Lobby.</p>
 
@@ -106,7 +109,7 @@ template = "standalone.html"
 <p>These are questions students might ask you. For questions other than these, please ask on Discord before answering students!</p>
 
 <p><strong>Can we move desks together?</strong> — Only during team-based rounds.</p>
-<p><strong>Can I go to the restroom?</strong> — Yes, if there’s not someone already going to the restroom. Please enter the student’s ID number into the restroom break field on Swire, and then click Start. Once the student has come back from the restroom, click on End. As a proctor, please be aware of where the nearest toilet is.</p>
+<p><strong>Can I go to the restroom?</strong> — Yes, if there's not someone already going to the restroom. Please enter the student's ID number into the restroom break field on Swire, and then click Start. Once the student has come back from the restroom, click on End. As a proctor, please be aware of where the nearest toilet is.</p></p>
 <p><strong>Can we leave the room (during breaks)?</strong> — Yes, but only to go to the restroom.</p>
 <p><strong>Can we eat during the test?</strong> — No, unless you have accommodations.</p>
 <p><strong>Can we use a protractor/ruler?</strong> — Yes, but we won’t provide one.</p>
@@ -308,6 +311,9 @@ template = "standalone.html"
 </li>
 </ul>
 
+<p><strong>What if I notice suspicious behavior (e.g. cheating)?</strong></p>
+<p>Report it immediately in your building's Discord proctor channel (#dwinelle-proctors, #wheeler-proctors, or #vlsb-proctors). Do <strong>not</strong> confront the student yourself. See the <a href="/events/bmmt-2026/volunteer-guide/" onclick="localStorage.setItem('activeTab','disqualifications')">Disqualifications tab</a> on the Volunteer Guide for the full pipeline and instructions.</p>
+
 <p><strong>What if a parent/coach asks me where they can go during testing?</strong></p>
 <p>Tell them afternoon rounds end at 3:30 PM, activities run from 3:30 – 5:00 PM, and awards are from 5:00 – 6:00 PM. They can head to the info desk inside Dwinelle Hall for more information about the Parent/Coach Lounge and Parent Activities.</p>
 
@@ -484,6 +490,9 @@ template = "standalone.html"
 <p>Please do not answer the student’s question. Tell them:</p>
 <div class="not-prose my-2 border-l-4 border-blue-300 bg-blue-50 rounded-r-lg px-4 py-3 text-base italic">“I will ask the test organizers. If I get a response, I will let you know.”</div>
 <p>Report the question to the Head Proctor or in the #pauley-proctors Discord channel. If related to exam content, post in the appropriate clarifications thread under #problem-clarifications.</p>
+
+<p><strong>What if I notice suspicious behavior (e.g. cheating)?</strong></p>
+<p>Report it immediately in the #pauley-proctors Discord channel or to the Head Proctor. Do <strong>not</strong> confront the student yourself. See the <a href="/events/bmmt-2026/volunteer-guide/" onclick="localStorage.setItem('activeTab','disqualifications')">Disqualifications tab</a> on the Volunteer Guide for the full pipeline and instructions.</p>
 
 <p><strong>What if a parent/coach asks me where they can go during testing?</strong></p>
 <p>Tell them morning rounds end at 12:00 PM. Afternoon rounds end at 3:30 PM, activities run from 3:30 – 5:00 PM, and awards are from 5:00 – 6:00 PM. They can head to the info desk inside Dwinelle Hall for more information about the Parent/Coach Lounge and Parent Activities.</p>
