@@ -86,37 +86,59 @@ The internal schedule is the one we follow, and the external schedule is adverti
 | Activities | 3:30 – 4:45 PM | 3:30 – 5:00 PM |
 | Awards | 5:00 – 6:30 PM | 5:00 – 6:00 PM |
 
-{% details(title="Runner Info") %}
-Runners work alongside Proctor Managers, Satellite Managers, and the Dispatcher, assisting in transportation of test materials and other items between rooms or substitution for proctors.
+<div class="not-prose grid grid-cols-3 gap-4 my-6">
+  <button onclick="toggleRoleCard('proctors')" class="group rounded-xl overflow-hidden bg-gradient-to-br from-fuchsia-700 to-fuchsia-900 text-white shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left">
+    <h3 class="font-bold text-lg flex items-center gap-2">
+      <span>Proctors</span>
+      <i class="bi bi-chevron-right text-sm transition-transform" id="icon-proctors"></i>
+    </h3>
+    <p class="text-sm opacity-90">Monitoring, scripts & responsibilities</p>
+  </button>
+  <button onclick="toggleRoleCard('graders')" class="group rounded-xl overflow-hidden bg-gradient-to-br from-orange-700 to-orange-900 text-white shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left">
+    <h3 class="font-bold text-lg flex items-center gap-2">
+      <span>Graders</span>
+      <i class="bi bi-chevron-right text-sm transition-transform" id="icon-graders"></i>
+    </h3>
+    <p class="text-sm opacity-90">Puzzle & Atomic Grader info</p>
+  </button>
+  <button onclick="toggleRoleCard('runners')" class="group rounded-xl overflow-hidden bg-gradient-to-br from-slate-600 to-slate-800 text-white shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left">
+    <h3 class="font-bold text-lg flex items-center gap-2">
+      <span>Runners</span>
+      <i class="bi bi-chevron-right text-sm transition-transform" id="icon-runners"></i>
+    </h3>
+    <p class="text-sm opacity-90">Material transport & substitution</p>
+  </button>
+</div>
 
-When coming for your shift, either in the morning or afternoon, report to **Dwinelle 215** where you will be assigned a room to report to for the rest of your shift. You will help the Proctor Managers, Satellite Manager, or Dispatcher in the room.
-{% end %}
+<div id="role-proctors" class="hidden prose my-4 border border-gray-200 rounded-xl p-6">
+<h3 class="mt-0">Proctors</h3>
+<p>You are responsible for monitoring contestants, reading out exam instructions, responding to requests for problems, and answering any other student questions in the same room of 20–40 contestants across multiple rounds.</p>
+<p>You will be given a box containing all testing papers and materials needed for your first round, along with a proctor script. In the proctor script, you will find instructions for running each round.</p>
+<p>In case of a campus-wide / building emergency, you will be responsible for your students! We'll give instructions on Discord if something like this happens (see the Emergency Procedures tab).</p>
+<h4>Frequently Asked Questions</h4>
+<p>Here are some questions students and coaches/parents might ask you:</p>
+<p><strong>1. (Student) What is our Student ID/Team ID?</strong></p>
+<p>All students should have a sticker with their name and a unique alpha-numerical ID on it. Their Student ID is the full thing, a team's Team ID is the Student ID with the leading letter removed (i.e., just a team number).</p>
+<p><strong>2. (Student) What room do I go to?</strong></p>
+<p>All students have the room they are assigned to printed on the Student ID sticker they were given during check-in. If they do not have a sticker, direct the student to the Info Desk at Sather Road between Dwinelle and Wheeler.</p>
+<p><strong>3. (Parent/Coach) Where can I go to wait for/pick up my child?</strong></p>
+<p>Morning rounds end at 12:00 PM. Afternoon rounds end at 3:30 PM, activities run from 3:30 – 5:00 PM, and awards are from 5:00 – 6:00 PM, after which the tournament concludes.</p>
+<p>They can head to the Info Desk at Sather Road between Dwinelle and Wheeler for more information about the Parent/Coach Lounge and Parent Activities. Coaches can pick up lunch for teams between 11:30 AM – 12:15 PM at Dwinelle Plaza.</p>
+<p><em>For proctoring-related questions, see the Proctor Script.</em></p>
+</div>
 
-{% details(title="Grader Info") %}
-The Puzzle Round will be graded on paper in **Dwinelle 205/209**.
+<div id="role-graders" class="hidden prose my-4 border border-gray-200 rounded-xl p-6">
+<h3 class="mt-0">Graders</h3>
+<p>The Puzzle Round will be graded on paper in <strong>Dwinelle 205/209</strong>.</p>
+<p>The other tests will be graded using a platform called <strong>Atomic Grader</strong>. The links to grade these tests will be posted on Discord. Since these tests have objective answers, there is no such training to check them, but you should read the instructions on Discord.</p>
+<p>You can be a grader for other tests regardless of your role.</p>
+</div>
 
-The other tests will be graded using a platform called **Atomic Grader**. The links to grade these tests will be posted on Discord. Since these tests have objective answers, there is no such training to check them, but you should read the instructions on Discord.
-
-You can be a grader for other tests regardless of your role.
-{% end %}
-
-{% details(title="Activities Info") %}
-We will run the following activities starting at **3:30 PM** and will need volunteers to help with them. Look out for a Discord announcement.
-
-**Estimathon (DWIN 155)** — Got wit and strategy? Come to our Estimathon®, a contest combining trivia, strategic planning, and sharp mathematical thinking. Teams of up to 3 will race against the clock to tackle a challenging set of 13 Fermi-style problems, testing their ability to think fast and outsmart the competition.
-
-**Mathematician Mash (DWIN 145)** — Test your math intuition in this fast-paced game inspired by the classic game show Family Feud! Teams will try to guess the most popular answers to math-themed questions. The goal isn't just to be correct — it's to think like everyone else and guess the most common answers. Work with your teammates, buzz in quickly, and see if your mathematical instincts can lead your team to the top!
-
-**Plank Countdown (DWIN 182, 183, 187, 189)** — Miss the excitement of the MATHCOUNTS® Countdown Round? Want to show off mental math in a countdown match... while planking? If you'd enjoy that exciting and silly experience, come join us for our Plank Countdown tournament!
-
-**Float Your Boat: The Archimedes Challenge (DWIN 105, 106, 109)** — In 250 BC, Archimedes discovered the principle of buoyancy, noticing it in his bathtub and using it to prove the kings' crowns were made of gold! Can you use it to keep heavy boats afloat? Come learn from the Society of Physical Sciences and experiment with the physics that keeps everything from toy rafts to cargo ships above water.
-
-**Time Mix-up Puzzle Hunt (Pauley Ballroom)** — Ready to unleash your puzzle-solving skills? Join our puzzle hunt! You and a team of Time Un-mixers will embark on one of the adventures of all time and earn cool prizes along the way. Will you and your team save the clocks, or will you get stuck spinning your gears? No prior experience with puzzles is expected, just bring an open mind and your problem solving brain!
-
-**Cal Origami (DWIN 246, 247)** — Do you want to bring home a cute souvenir from BmMT? Come make your own origami dragon! We will be offering multiple paper patterns and instructions, and teaching from the basics of crease patterns. No prior craft experience is needed!
-
-**Games Lounge (DWIN 258)** — Looking for a place to chill out? Come to the Games Lounge! We'll have a variety of games (and seats) for students, parents, and coaches to unwind after a day of testing.
-{% end %}
+<div id="role-runners" class="hidden prose my-4 border border-gray-200 rounded-xl p-6">
+<h3 class="mt-0">Runners</h3>
+<p>Runners work alongside Proctor Managers, Satellite Managers, and the Dispatcher, assisting in transportation of test materials and other items between rooms or substitution for proctors.</p>
+<p>When coming for your shift, either in the morning or afternoon, report to <strong>Dwinelle 215</strong> where you will be assigned a room to report to for the rest of your shift. You will help the Proctor Managers, Satellite Manager, or Dispatcher in the room.</p>
+</div>
 
 </div>
 <div id="tab-disqualifications" class="tab-panel hidden">
@@ -365,5 +387,23 @@ function switchTab(tabId) {
   var btn = document.getElementById('tab-btn-' + tabId);
   btn.classList.add('font-semibold', 'text-black');
   btn.classList.remove('text-gray-500');
+}
+function toggleRoleCard(role) {
+  var panel = document.getElementById('role-' + role);
+  var icon = document.getElementById('icon-' + role);
+  var allPanels = ['proctors', 'graders', 'runners'];
+  allPanels.forEach(function(r) {
+    if (r !== role) {
+      document.getElementById('role-' + r).classList.add('hidden');
+      document.getElementById('icon-' + r).style.transform = '';
+    }
+  });
+  if (panel.classList.contains('hidden')) {
+    panel.classList.remove('hidden');
+    icon.style.transform = 'rotate(90deg)';
+  } else {
+    panel.classList.add('hidden');
+    icon.style.transform = '';
+  }
 }
 </script>
