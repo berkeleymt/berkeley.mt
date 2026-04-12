@@ -17,7 +17,11 @@ descriptions, role responsibilities, and emergency procedures.
 <!-- more -->
 
 <nav class="not-prose flex flex-wrap justify-center gap-x-4 gap-y-2 my-2 mb-4">
-  <button onclick="switchTab('general')" id="tab-btn-general" class="tab-btn font-semibold text-black">Home</button>
+  <button onclick="switchTab('general')" id="tab-btn-general" class="tab-btn font-semibold text-black">Check-In</button>
+  <span class="text-gray-300">⁄</span>
+  <button onclick="switchTab('roles')" id="tab-btn-roles" class="tab-btn text-gray-500">Roles</button>
+  <span class="text-gray-300">⁄</span>
+  <button onclick="switchTab('schedule')" id="tab-btn-schedule" class="tab-btn text-gray-500">Schedule</button>
   <span class="text-gray-300">⁄</span>
   <button onclick="switchTab('disqualifications')" id="tab-btn-disqualifications" class="tab-btn text-gray-500">Disqualifications</button>
   <span class="text-gray-300">⁄</span>
@@ -54,21 +58,6 @@ Please navigate to the check-in room specified in your email.
 | **Activities** | We'll send a ping in the #vol-announcements channel on Discord before Relay ends around 3:30 PM with location details. |
 {% end %}
 
-### Schedule
-
-The internal schedule is the one we follow, and the external schedule is advertised to students. We may run ahead or behind schedule — please monitor Discord for announcements.
-
-| Event | Internal | External |
-| --- | --- | --- |
-| Check-in | 7:30 – 9:00 AM | 7:45 – 9:00 AM |
-| Puzzle Round | 9:15 – 10:30 AM | 9:00 AM – 12:00 PM |
-| Individual Round | 10:45 – 11:45 AM | |
-| Lunch | 12:00 – 1:15 PM | 12:00 – 1:15 PM |
-| Team Round | 1:30 – 2:30 PM | 1:15 – 3:30 PM |
-| Relay Round | 2:40 – 3:20 PM | |
-| Activities | 3:30 – 4:45 PM | 3:30 – 5:00 PM |
-| Awards | 5:00 – 6:30 PM | 5:00 – 6:00 PM |
-
 ### Key Contacts & Discord Handles
 
 If you're unsure about what category your question falls into, please contact **Ty (ly49nkallo)**!
@@ -85,6 +74,9 @@ If you're unsure about what category your question falls into, please contact **
 | | Proctor Manager | Tej (tejnadkarni) |
 | Pauley Ballroom | Satellite Manager | Andrew K. (naomilojo) |
 | | Proctor Manager | Crystal (\_crsytal\_) |
+
+</div>
+<div id="tab-roles" class="tab-panel hidden">
 
 <div class="not-prose grid grid-cols-3 gap-4 my-6">
   <button onclick="toggleRoleCard('proctors')" class="group rounded-xl overflow-hidden bg-gradient-to-br from-fuchsia-700 to-fuchsia-900 text-white shadow-lg transition-all hover:-translate-y-1 cursor-pointer p-6 flex flex-col gap-2 text-left">
@@ -139,6 +131,24 @@ If you're unsure about what category your question falls into, please contact **
 <p>Runners work alongside Proctor Managers, Satellite Managers, and the Dispatcher, assisting in transportation of test materials and other items between rooms or substitution for proctors.</p>
 <p>When coming for your shift, either in the morning or afternoon, report to <strong>Dwinelle 215</strong> where you will be assigned a room to report to for the rest of your shift. You will help the Proctor Managers, Satellite Manager, or Dispatcher in the room.</p>
 </div>
+
+</div>
+<div id="tab-schedule" class="tab-panel hidden">
+
+<div class="prose">
+<p>The internal schedule is the one we follow, and the external schedule is advertised to students. Please monitor Discord or <a href="https://live.berkeley.mt">live.berkeley.mt</a> for announcements.</p>
+</div>
+
+| Event | Internal | External |
+| --- | --- | --- |
+| Check-in | 7:30 – 9:00 AM | 7:45 – 9:00 AM |
+| Puzzle Round | 9:15 – 10:30 AM | 9:00 AM – 12:00 PM |
+| Individual Round | 10:45 – 11:45 AM | |
+| Lunch | 12:00 – 1:15 PM | 12:00 – 1:15 PM |
+| Team Round | 1:30 – 2:30 PM | 1:15 – 3:30 PM |
+| Relay Round | 2:40 – 3:20 PM | |
+| Activities | 3:30 – 4:45 PM | 3:30 – 5:00 PM |
+| Awards | 5:00 – 6:30 PM | 5:00 – 6:00 PM |
 
 </div>
 <div id="tab-disqualifications" class="tab-panel hidden">
