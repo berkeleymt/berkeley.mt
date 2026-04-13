@@ -1,0 +1,7 @@
+<div class="not-prose columns-2 sm:columns-3 md:columns-4 gap-x-8 text-sm leading-relaxed">
+{% for name in body | split(pat="\n") %}
+{% set name = name | trim %}
+{% if name %}<span class="block">{{ name }}</span>
+{% endif %}
+{% endfor %}
+</div>
