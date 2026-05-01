@@ -94,4 +94,4 @@ due to our scoring guidelines.
 
 ### Will there be awards?
 
-Although we are restructuring the online tournament, we will still provide certificates for top-scoring teams. However, there will not be physical awards.
+We will be providing certificates for top-percentiled scoring students and teams. However, there will not be physical awards.
