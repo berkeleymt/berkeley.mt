@@ -73,7 +73,7 @@ BmMT 2026 Online Teammate Finder
 
 ## Schedule
 
-More details to be released soon!
+We expect the tournament to run roughly from 8:00 AM PT to 4:00 PM PT, with intermediate breaks for students.
 
 ## Contest Format & Scoring
 
