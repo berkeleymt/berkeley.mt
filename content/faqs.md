@@ -187,7 +187,9 @@ or the U.S. to participate. Teams may have up to **6 students**.
 BMT consists of three rounds:
 
 1. **Power Round** (90 min) — a proof-based team round centered around a single
-   topic. No prior background in the topic is expected.
+   topic. No prior background in the topic is expected. For BMT Online, the
+   Power Round is asynchronous and scored separately from the overall team
+   score.
 2. **Individual Round** — students choose either two Focus Tests (60 min each,
    subject-specific) or the General Test (90 min, all subjects).
 3. **Guts Round** (75 min) — a team round where problems are given in sets of 3
@@ -217,10 +219,12 @@ consider a focus pair.
 <details>
 <summary>How is the team score calculated?</summary>
 
-Team scores are based on a weighted combination of Power Round (30%), Individual
-Round (40%), and Guts Round (30%) scores. If a team has fewer than 4 members,
-scores of 0 are added for the missing spots. Taking the General Test counts for
-half as many individual points as the Focus Tests.
+For the in-person tournament, team scores are based on a weighted combination of
+Power Round (30%), Individual Round (40%), and Guts Round (30%) scores. For BMT
+Online, the Power Round is scored separately and is not included in the overall
+team score. If a team has fewer than 4 members, scores of 0 are added for the
+missing spots. Taking the General Test counts for half as many individual points
+as the Focus Tests.
 
 </details>
 
