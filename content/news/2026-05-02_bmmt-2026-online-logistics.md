@@ -70,7 +70,7 @@ provided on Zoom prior to the start of the test.
 
 ## Tiebreakers
 
-Reminder that we have a new Automatic Tiebreaking Policy! If you are not called
+Reminder that we have an Automatic Tiebreaking Policy! If you are not called
 for a tiebreaker round, this does _not_ mean you did not place in the top five.
 
 If necessary, additional tiebreaker rounds will be held as needed for top
@@ -98,8 +98,8 @@ activities that promote recreational math, and include the following:
   to solve a series of puzzles, unlocking new puzzles as you progress to reach the
   final mystery.  
 
-- **Countdown** — Miss the excitement of the MATHCOUNTS® Countdown Round? Come show
-  off your mental math skills to the test in a countdown match to see who can solve
+- **Countdown** — Miss the excitement of the MATHCOUNTS® Countdown Round? Come put
+  your mental math skills to the test in a countdown match to see who can solve
   problems the fastest!
 
 ## Awards
