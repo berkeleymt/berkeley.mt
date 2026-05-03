@@ -1,6 +1,6 @@
 +++
 title = "Frequently Asked Questions"
-aliases = ["/faqs", "/faq"]
+aliases = ["/faq"]
 +++
 
 Have a question? Find answers to the most common questions below. If you can't
