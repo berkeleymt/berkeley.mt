@@ -292,10 +292,18 @@ competing.
 <details>
 <summary>Can I compete in both the in-person and online tournaments?</summary>
 
-No. Students may only compete in one version of each tournament (either
-in-person or online, not both). If you competed in the in-person BMT, you are
-not eligible to compete in BMT Online, and vice versa. The same applies to
-BmMT.
+No. The online tournament uses the same problem set as the in-person
+tournament, so students who competed in person are not eligible to compete
+online (and vice versa). The same applies to both BMT and BmMT.
+
+</details>
+
+<details>
+<summary>Do I need a coach to register for the online tournament?</summary>
+
+For BmMT Online, yes — an adult coach is still required to register teams on
+ContestDojo, the same as the in-person event. For BMT Online, students may also
+register and form teams with other students without a coach.
 
 </details>
 
