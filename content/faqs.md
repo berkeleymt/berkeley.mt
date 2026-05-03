@@ -298,10 +298,10 @@ BmMT.
 <details>
 <summary>Are there awards for the online tournament?</summary>
 
-We provide official rankings for top-scoring students and teams, but there are
-no physical awards for online tournaments. Award tier cutoffs (Honorable
-Mention, Distinguished Honorable Mention) follow the same structure as the
-in-person events.
+For online tournaments, the top 50% receive Honorable Mention, the top 25%
+receive Distinguished Honorable Mention, and the top 10% are additionally
+recognized. All participants receive a participation certificate. There are no
+physical awards for online tournaments.
 
 </details>
 
@@ -324,10 +324,9 @@ Distinguished Honorable Mention to the top 20%, and the top 10 scorers are
 recognized. For team rounds and overall team scores, the top 10 teams are
 recognized.
 
-We do not offer participation certificates.
-
 For in-person tournaments, awards are physically presented at the closing
-ceremony. For online tournaments, we provide official rankings for top-scoring
-teams, but there are no physical awards.
+ceremony. For online tournaments, all participants receive a participation
+certificate, but there are no physical awards. See the online competitions
+section above for online-specific award tiers.
 
 </details>
