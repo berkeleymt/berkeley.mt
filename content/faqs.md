@@ -104,7 +104,8 @@ can help you cancel and switch.
 Students should bring pencils, erasers, and any permitted tools (protractors,
 rulers, compasses). Blank scratch paper will be provided. Do not bring
 calculators, graph paper, or other reference materials. We also recommend
-bringing a water bottle and any personal items you may need for the day.
+bringing a water bottle, lunch or lunch money, and any personal items you may
+need for the day.
 
 </details>
 
