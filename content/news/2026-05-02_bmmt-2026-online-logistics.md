@@ -4,13 +4,13 @@ title = "BmMT 2026 Online Logistics"
 
 To all coaches and students,
 
-BmMT 2025 Online is coming up on June 7. This email details the tournament
+BmMT 2026 Online is coming up on June 6. This email details the tournament
 logistics for the online tournament. Please read this email in its entirety so
 you understand the logistics of the event!
 
 <!-- more -->
 
-{% button_link(href="/events/bmmt-2025-online") %} Event Details {% end %}
+{% button_link(href="/events/bmmt-2026-online") %} Event Details {% end %}
 
 ## Important Information
 
@@ -19,9 +19,9 @@ by emailing <team@berkeley.mt>.
 
 ## Registration and Check-in
 
-Registration for BmMT 2025 Online will close Friday, June 6 at 11:59 PM PT.
+Registration for BmMT 2026 Online will close Friday, June 5 at 11:59 PM PT.
 There is no check-in required for this event; however, no more
-roster changes can be made after Saturday, June 7 8:00 AM US Pacific Time.
+roster changes can be made after Saturday, June 6 7:00 AM US Pacific Time.
 
 Coaches, please ensure that all students are assigned to teams (you have dragged
 them **out** of the "Unassigned Students" section on ContestDojo). If there are
@@ -30,19 +30,19 @@ any outstanding concerns with your team's roster, **please email
 
 ## Schedule
 
-BmMT 2025 Online will take place on Saturday, June 7, 2025. A schedule is
+BmMT 2026 Online will take place on Saturday, June 6, 2026. A schedule is
 provided below:
 
 | Time (US Pacific Time) | Event                    |
 | ---------------------- | ------------------------ |
-| 9:00 – 9:30 AM         | Opening Ceremony         |
-| 9:30 – 11:00 AM        | Puzzle Round             |
-| 11:00 AM – 12:00 PM    | Individual Round         |
-| 12:00 – 1:00 PM        | Lunch                    |
-| 1:00 – 2:15 PM         | Team Round               |
-| 2:15 – 3:00 PM         | Relay Round              |
-| 3:00 – 4:30 PM         | Activities / Tiebreakers |
-| 4:30 – 5:00 PM         | Award Ceremony           |
+| 8:00 – 8:30 AM         | Opening Ceremony         |
+| 8:30 – 10:00 AM        | Puzzle Round             |
+| 10:00 AM – 11:00 AM    | Individual Round         |
+| 11:00 – 11:45 AM       | Lunch                    |
+| 11:45 – 1:00 PM        | Team Round               |
+| 1:00 – 2:00 PM         | Relay Round              |
+| 2:00 – 3:30 PM         | Activities / Tiebreakers |
+| 3:30 – 4:00 PM         | Award Ceremony           |
 
 The entirety of the event, including the Opening and Awards ceremonies, as well
 as the testing rounds, will take place on [Zoom], video conferencing software.
@@ -56,7 +56,7 @@ teams.
 All students should ensure that they can login to ContestDojo prior to the
 event. If students were registered by a coach, they have received an email
 containing their sign-in details. If students are having trouble logging in or
-locating the BmMT 2025 Online event, please try the Forgot Password function, or
+locating the BmMT 2026 Online event, please try the Forgot Password function, or
 email <team@berkeley.mt> for assistance.
 
 A sample test has been opened on ContestDojo for students to familiarize
@@ -92,19 +92,20 @@ activities that promote recreational math, and include the following:
   Fermi-style problems, testing their ability to think fast and outsmart the
   competition.
 
-- **Turtle Art** — Unleash your creativity while learning to code! Explore the
-  basics of Python programming using Turtle, a graphics library that turns code
-  into cool drawings. No experience needed—just bring your curiosity!
+- **Puzzle Hunt** — Are you a fan of logical reasoning? Puzzle Hunt is an
+  experience with competition that includes lateral thinking, teamwork, patterns,
+  and many other elements. Teams will be racing against a time limit of 60 minutes
+  to solve a series of puzzles, unlocking new puzzles as you progress to reach the
+  final mystery.  
 
-- **Infini-bee** — Get to know infinity in our Infinity Bee, more affectionately
-  known as the Infini-bee! What happens when you add infinite numbers? Draw
-  unlimited shapes? Perform boundless jumps? Learn all of this and more at our
-  Infini-bee!
+- **Countdown** — Miss the excitement of the MATHCOUNTS® Countdown Round? Come show
+  off your mental math skills to the test in a countdown match to see who can solve
+  problems the fastest!
 
 ## Awards
 
 Top-scoring individuals and teams will be announced at the Awards Ceremony from
-4:30 – 5:00 PM. For BmMT Online, we will provide an official ranking as well as
+3:30 – 4:00 PM. For BmMT Online, we will provide an official ranking as well as
 certificates for top-scoring teams. However, there will not be physical awards
 for the online tournament.
 
