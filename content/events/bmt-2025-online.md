@@ -255,25 +255,7 @@ incorrect, even if equivalent.
 
 ## Frequently Asked Questions
 
-### Are calculators or other reference material allowed?
-
-Graph paper and calculators are prohibited, but protractors, rulers, and
-compasses are permitted. Blank white scratch paper will be provided for all
-participants. All answers must be exact, reduced, and simplified. Illegible
-answers will not be graded. Cheating in any form will not be tolerated, and
-failure to comply with all rules may result in immediate and irreversible
-disqualification.
-
-### Can middle school students compete? What if I don't have a team?
-
-Yes! BMT is open to any student in 12th grade or below, including those who
-haven't entered high school. While students are allowed to compete as
-individuals, we highly recommend that students compete on a team of at least 4
-due to our scoring guidelines.
-
-### Will there be awards?
-
-Although we will provide an official ranking as well as certificates for
-top-scoring teams, there will not be physical awards for the online tournament.
+See our [FAQ page](/faqs/) for answers to common questions about registration,
+eligibility, and more.
 
 [Teammate Finder]: https://docs.google.com/spreadsheets/d/1mVThXiYKtAaZONvmTuCQld2_IKUIiH3jjiZwqaF3eF0/edit
