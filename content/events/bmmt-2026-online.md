@@ -29,6 +29,7 @@ schedule and other day-of-tournament details will be released closer to the
 event date.
 
 {% button_link(href="https://contestdojo.com/") %} Registration Portal {% end %}
+{% button_link(href="/news/bmmt-2026-online-logistics/") %} Logistics Page {% end %}
 
 ## Registration Timeline
 
@@ -77,11 +78,11 @@ We expect the tournament to run roughly from 8:00 AM PT to 4:00 PM PT, with inte
 
 ## Contest Format & Scoring
 
-More details to be released soon!
+For details on the contest format and scoring, see our [logistics page](/news/bmmt-2026-online-logistics/).
 
 ## Activities
 
-More details to be released soon!
+For information about activities, see our [logistics page](/news/bmmt-2026-online-logistics/).
 
 ## Frequently Asked Questions
 
