@@ -29,6 +29,7 @@ schedule and other day-of-tournament details will be released closer to the
 event date.
 
 {% button_link(href="https://contestdojo.com/") %} Registration Portal {% end %}
+{% button_link(href="/news/bmmt-2026-online-logistics/") %} Logistics Page {% end %}
 
 ## Registration Timeline
 
