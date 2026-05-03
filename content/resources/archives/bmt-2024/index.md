@@ -52,3 +52,5 @@ problems = "power-problems.pdf"
 #answers = "power-answers.pdf"
 solutions = "power-solutions.pdf"
 +++
+
+{% button_link(href="results.pdf") %} Contest Results {% end %}
