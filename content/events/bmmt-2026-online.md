@@ -78,11 +78,11 @@ We expect the tournament to run roughly from 8:00 AM PT to 4:00 PM PT, with inte
 
 ## Contest Format & Scoring
 
-More details to be released soon!
+For details on the contest format and scoring, see our [logistics page](/news/bmmt-2026-online-logistics/).
 
 ## Activities
 
-More details to be released soon!
+For information about activities, see our [logistics page](/news/bmmt-2026-online-logistics/).
 
 ## Frequently Asked Questions
 
