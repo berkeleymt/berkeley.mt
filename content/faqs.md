@@ -266,9 +266,42 @@ scores of 0 are added for the missing spots.
 <details>
 <summary>I can't compete in person. What are my options?</summary>
 
-Both BMT and BmMT offer online versions for remote participation. For BMT,
-there may also be Satellite competitions held through our partners across the
-globe. Check the event pages for the latest dates and details.
+Both BMT and BmMT offer online versions for remote participation. Online
+tournaments use the same registration system (ContestDojo) and have the same
+eligibility requirements as the in-person events. For BMT, there may also be
+Satellite competitions held through our partners across the globe. Check the
+event pages for the latest dates and registration details.
+
+</details>
+
+<details>
+<summary>How does the online tournament work?</summary>
+
+Online tournaments take place synchronously on ContestDojo. Students compete
+from their own locations at the same scheduled time. The contest format may
+differ slightly from the in-person version; see the event page for the specific
+online format each year. Waivers must still be signed through ContestDojo before
+competing.
+
+</details>
+
+<details>
+<summary>Can I compete in both the in-person and online tournaments?</summary>
+
+No. Students may only compete in one version of each tournament (either
+in-person or online, not both). If you competed in the in-person BMT, you are
+not eligible to compete in BMT Online, and vice versa. The same applies to
+BmMT.
+
+</details>
+
+<details>
+<summary>Are there awards for the online tournament?</summary>
+
+We provide official rankings for top-scoring students and teams, but there are
+no physical awards for online tournaments. Award tier cutoffs (Honorable
+Mention, Distinguished Honorable Mention) follow the same structure as the
+in-person events.
 
 </details>
 
