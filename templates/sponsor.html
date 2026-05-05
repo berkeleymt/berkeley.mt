@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+<style>
+  .sankey-flow {
+    opacity: 0.7;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+  }
+  .sankey-flow:hover {
+    opacity: 1;
+    filter: brightness(1.1);
+  }
+  .cost-node {
+    transition: transform 0.3s ease;
+  }
+  .cost-node:hover {
+    transform: translateX(4px);
+  }
+  .sankey-container svg {
+    overflow: visible;
+  }
+  @keyframes flowIn {
+    from { stroke-dashoffset: 400; }
+    to { stroke-dashoffset: 0; }
+  }
+  .sankey-flow.animated {
+    stroke-dasharray: 400;
+    animation: flowIn 1.5s ease-out forwards;
+  }
+  .cost-detail {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .cost-node:hover .cost-detail {
+    max-height: 3rem;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+
+{# ── Section header ── #}
+<div class="flex flex-col gap-2">
+  <p class="text-teal-600 font-semibold tracking-[0.2em] uppercase text-sm flex items-center gap-3">
+    <span class="w-8 h-0.5 bg-teal-500"></span>
+    How You Can Help
+  </p>
+  <h1 class="text-3xl md:text-4xl font-bold">Where Your Contribution Goes</h1>
+</div>
+
+{# ── Main two-column layout ── #}
+<div class="flex flex-col lg:flex-row gap-12 items-start">
+
+  {# ── Left column: description ── #}
+  <div class="flex-1 flex flex-col gap-6">
+    <p class="text-lg leading-relaxed text-gray-700">
+      Every dollar goes directly toward keeping BMT running and accessible for all:
+    </p>
+
+    <ul class="flex flex-col gap-3 text-gray-600">
+      {% set bullets = [
+        "Cover the supplies, food, and awards that make contest day happen",
+        "Keep ticket prices low for all participants",
+        "Fund fee waivers for students facing financial hardship",
+        "Create an inclusive environment for organizers and volunteers",
+        "Invest in tournament infrastructure and technology"
+      ] %}
+      {% for bullet in bullets %}
+      <li class="flex items-start gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-teal-400 mt-1.5 flex-shrink-0"></span>
+        <span>{{ bullet }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class="border-2 border-teal-200 bg-teal-50/50 rounded-xl p-5 mt-2">
+      <p class="text-gray-700">
+        <span class="font-bold text-gray-900">BMT is a registered 501(c)(3) nonprofit.</span>
+        All donations may be tax-deductible to the extent permitted by law.
+      </p>
+    </div>
+  </div>
+
+  {# ── Right column: Sankey diagram ── #}
+  <div class="flex-1 w-full min-w-0">
+    <div class="sankey-container">
+
+      {# ── Total cost header ── #}
+      <div class="text-center mb-6">
+        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Annual Operating Cost</p>
+        <p class="text-4xl md:text-5xl font-bold text-gray-900 mt-1">{{ page.extra.total_amount }}</p>
+        <p class="text-gray-500 mt-1">{{ page.extra.total_note }}</p>
+      </div>
+
+      {# ── SVG Sankey diagram ── #}
+      {# Heights use visual weighting: proportional but with min sizes for readability #}
+      {# Venue 50k→170px, Supplies 10k→70px, Materials 5k→50px, Infra 3k→40px = 330px + gaps #}
+      <svg viewBox="0 0 520 400" class="w-full" aria-label="Cost breakdown Sankey diagram">
+        <defs>
+          <linearGradient id="grad-teal" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0d9488" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#14b8a6" stop-opacity="0.75"/>
+          </linearGradient>
+          <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#059669" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#10b981" stop-opacity="0.75"/>
+          </linearGradient>
+          <linearGradient id="grad-amber" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#d97706" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.75"/>
+          </linearGradient>
+          <linearGradient id="grad-slate" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#1e293b" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#334155" stop-opacity="0.75"/>
+          </linearGradient>
+        </defs>
+
+        {# Source node (left bar): y=10, height=370 #}
+        <rect x="0" y="10" width="28" height="370" rx="6" fill="#0d9488" />
+        <text x="14" y="200" text-anchor="middle" fill="white" font-size="11"
+              font-weight="bold" letter-spacing="2"
+              transform="rotate(-90, 14, 200)">TOTAL BUDGET</text>
+
+        {# ── Venue: $50,000+/yr ── y=10, h=170 #}
+        <path class="sankey-flow"
+              d="M 28,10 C 170,10 170,10 300,10 L 300,180 C 170,180 170,180 28,180 Z"
+              fill="url(#grad-teal)" />
+        <rect x="300" y="10" width="220" height="170" rx="8" fill="#0d9488" />
+        <text x="318" y="42" fill="white" font-size="14" font-weight="600">Venue &amp; classroom</text>
+        <text x="318" y="62" fill="white" font-size="14" font-weight="600">reservations</text>
+        <text x="318" y="100" fill="white" font-size="28" font-weight="bold">$50,000<tspan font-size="14">+</tspan></text>
+        <text x="318" y="122" fill="white" font-size="13" opacity="0.9">per year</text>
+        <text x="318" y="150" fill="white" font-size="11" opacity="0.7">50+ lecture halls &amp; classrooms</text>
+        <text x="318" y="166" fill="white" font-size="11" opacity="0.7">on UC Berkeley's campus</text>
+
+        {# ── Supplies: $10,000+/event ── y=190, h=70 #}
+        <path class="sankey-flow"
+              d="M 28,180 C 170,180 170,190 300,190 L 300,260 C 170,260 170,250 28,250 Z"
+              fill="url(#grad-emerald)" />
+        <rect x="300" y="190" width="220" height="70" rx="8" fill="#059669" />
+        <text x="318" y="218" fill="white" font-size="13" font-weight="600">Day-of supplies, awards &amp; food</text>
+        <text x="318" y="248" fill="white" font-size="22" font-weight="bold">$10,000<tspan font-size="12">+</tspan><tspan font-size="13" font-weight="500"> /event</tspan></text>
+
+        {# ── Materials: $5,000+/yr ── y=270, h=50 #}
+        <path class="sankey-flow"
+              d="M 28,250 C 170,250 170,270 300,270 L 300,320 C 170,320 170,300 28,300 Z"
+              fill="url(#grad-amber)" />
+        <rect x="300" y="270" width="220" height="50" rx="8" fill="#d97706" />
+        <text x="318" y="291" fill="white" font-size="12" font-weight="600">Contest materials &amp; printing</text>
+        <text x="318" y="311" fill="white" font-size="16" font-weight="bold">$5,000<tspan font-size="10">+/yr</tspan></text>
+
+        {# ── Infrastructure: $3,000+/yr ── y=330, h=50 #}
+        <path class="sankey-flow"
+              d="M 28,300 C 170,300 170,330 300,330 L 300,380 C 170,380 170,380 28,380 Z"
+              fill="url(#grad-slate)" />
+        <rect x="300" y="330" width="220" height="50" rx="8" fill="#1e293b" />
+        <text x="318" y="351" fill="white" font-size="12" font-weight="600">Digital infrastructure &amp; platform</text>
+        <text x="318" y="371" fill="white" font-size="16" font-weight="bold">$3,000<tspan font-size="10">+/yr</tspan></text>
+      </svg>
+
+      {# ── Legend / additional context ── #}
+      <div class="mt-6 grid grid-cols-2 gap-3 text-sm text-gray-500">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-sm bg-teal-600"></span>
+          <span>Venue (73%)</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-sm bg-emerald-600"></span>
+          <span>Supplies (15%)</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-sm bg-amber-600"></span>
+          <span>Materials (7%)</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-sm bg-slate-700"></span>
+          <span>Technology (5%)</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{# ── CTA ── #}
+<div class="text-center bg-gray-100 rounded-2xl p-8 md:p-12 flex flex-col items-center gap-4">
+  <h2 class="text-2xl md:text-3xl font-bold">Help Us Keep BMT Running</h2>
+  <p class="text-gray-600 text-lg max-w-lg">
+    Your sponsorship directly funds the largest student-run math competition in the world,
+    reaching 4,000+ students annually.
+  </p>
+  <div class="flex flex-col sm:flex-row gap-3 mt-2">
+    <a href="mailto:finance@berkeley.mt"
+       class="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 text-white font-semibold rounded-xl hover:bg-teal-700 transition-colors">
+      <i class="bi bi-envelope"></i>
+      Become a Sponsor
+    </a>
+    <a href="/give"
+       class="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-700 font-semibold rounded-xl border hover:bg-gray-50 transition-colors">
+      <i class="bi bi-heart"></i>
+      Make a Donation
+    </a>
+  </div>
+</div>
+
+{% endblock %}
