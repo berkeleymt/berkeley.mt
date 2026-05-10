@@ -23,6 +23,7 @@ sponsors = [
 title = "Gold Sponsors"
 img_class = "max-w-64 max-h-12"
 sponsors = [
+  { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
   { alt = "Atomic Grader", src = "assets/sponsors/ag.svg", href = "https://atomicgrader.com/" },
   { alt = "ContestDojo", src = "assets/sponsors/contestdojo.png", href = "https://contestdojo.com/" },
 ]
@@ -31,9 +32,12 @@ sponsors = [
 title = "Blue Sponsors & Friends of BMT"
 img_class = "max-w-24 max-h-12"
 sponsors = [
-  { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
-  { alt = "Stanford Math Tournament", src = "assets/sponsors/smt.png", href = "https://www.stanfordmathtournament.com/" },
   { alt = "Mustang Math", src = "assets/sponsors/mmt.png", href = "https://mustangmath.com/" },
+  { alt = "HMMT", src = "assets/sponsors/hmmt.webp", href = "https://hmmt.org/" },
+  { alt = "Stanford Math Tournament", src = "assets/sponsors/smt.png", href = "https://www.stanfordmathtournament.com/" },
+  { alt = "Carnegie Mellon Informatics and Mathematics Competition", src = "assets/sponsors/cmimc.webp", href = "https://cmimc.math.cmu.edu/" },
+  { alt = "Los Angeles Math Tournament", src = "assets/sponsors/lamt.webp", href = "https://lamt.net/" },
+  { alt = "Caltech Math Meet", src = "assets/sponsors/cmm.png", href = "https://caltechmathmeet.org/" },
 ]
 +++
 
