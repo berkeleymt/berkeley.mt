@@ -41,7 +41,7 @@ provided below:
 | 11:00 – 11:45 AM       | Lunch                    |
 | 11:45 – 1:00 PM        | Team Round               |
 | 1:00 – 2:00 PM         | Relay Round              |
-| 2:00 – 3:30 PM         | Activities / Tiebreakers |
+| 2:00 – 3:30 PM         | Activities               |
 | 3:30 – 4:00 PM         | Award Ceremony           |
 
 The entirety of the event, including the Opening and Awards ceremonies, as well
@@ -70,16 +70,25 @@ provided on Zoom prior to the start of the test.
 
 ## Tiebreakers
 
-Reminder that we have an Automatic Tiebreaking Policy! If you are not called
-for a tiebreaker round, this does _not_ mean you did not place in the top five.
+We will not need additional tiebreaker rounds to resolve ties following the Automatic Tiebreaking Policy.
 
-If necessary, additional tiebreaker rounds will be held as needed for top
-scorers in the Individual Round. Tiebreaker qualifiers will be announced at the
-end of lunch, and will take a 15-minute test during the activities session. The
-test will consist of three questions, and be scored primarily on correctness and
-secondarily on submission time; that is, an earlier submission will be worth more
-than a later one with the same number of correct answers, but less than a later
-one with more correct answers.
+The Automatic Tiebreaking Policy works as follows:
+
+1. First, problems are ordered from **hardest** to **easiest**, based on the
+   number of correct submissions.
+1. The _n_-th hardest problem is assigned a **tiebreaking value** of
+   2<sup>−*n*</sup>. For example, the hardest problem will have a tiebreaking
+   value of ½, the second hardest problem will have a tiebreaking value of ¼, et
+   cetera.
+1. Each student's **tiebreaking index** is calculated as the sum of their
+   original score and the tiebreaker values of the problems that they correctly
+   answered.
+1. Students are ordered by their tiebreaking index, determining their tiebroken
+   rank.
+
+In simpler terms, among those tied for the same score, whoever solved the
+hardest problem is placed the highest, followed by the one who solved the next
+hardest, and so on.
 
 ### Activities
 
