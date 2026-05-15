@@ -4,6 +4,7 @@ description = "A UC Berkeley student-led organization that aims to spread mathem
 
 [[extra.sponsor_tiers]]
 title = "Platinum Sponsor"
+div_class = "flex gap-x-16 gap-y-4 flex-wrap justify-center items-center"
 img_class = "max-h-12"
 sponsors = [
   { alt = "Hudson River Trading", src = "assets/sponsors/hrt.png", href = "https://www.hudsonrivertrading.com/" },
@@ -11,6 +12,7 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Diamond Sponsors"
+div_class = "flex gap-x-16 gap-y-4 flex-wrap justify-center items-center"
 img_class = "max-w-36 max-h-18"
 sponsors = [
   { alt = "Citadel | Citadel Securities", src = "assets/sponsors/citadel.png", href = "https://www.citadel.com/" },
@@ -21,7 +23,8 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Gold Sponsors"
-img_class = "max-w-64 max-h-12"
+div_class = "flex gap-x-16 gap-y-4 flex-wrap justify-center items-center"
+img_class = "max-w-48 max-h-12"
 sponsors = [
   { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
   { alt = "Atomic Grader", src = "assets/sponsors/ag.svg", href = "https://atomicgrader.com/" },
@@ -30,11 +33,11 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Blue Sponsors & Friends of BMT"
-class = "flex gap-x-4 gap-y-4 flex-wrap justify-center items-center"
+div_class = "flex gap-x-8 gap-y-4 flex-wrap justify-center items-center"
 img_class = "max-w-24 max-h-12"
 sponsors = [
   { alt = "Mustang Math", src = "assets/sponsors/mmt.png", href = "https://mustangmath.com/" },
-  { alt = "HMMT", src = "assets/sponsors/hmmt.webp", href = "https://hmmt.org/" },
+  { alt = "HMMT", src = "assets/sponsors/hmmt.png", href = "https://hmmt.org/" },
   { alt = "Stanford Math Tournament", src = "assets/sponsors/smt.png", href = "https://www.stanfordmathtournament.com/" },
   { alt = "Carnegie Mellon Informatics and Mathematics Competition", src = "assets/sponsors/cmimc.png", href = "https://cmimc.math.cmu.edu/" },
   { alt = "Los Angeles Math Tournament", src = "assets/sponsors/lamt.png", href = "https://lamt.net/" },

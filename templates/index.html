@@ -160,7 +160,7 @@
 {% endif %}
 
 <p class="text-gray-500 text-center text-base">{{ tier.title }}</p>
-<div class="flex gap-x-16 gap-y-4 flex-wrap justify-center items-center">
+<div class="{{ tier.div_class }}">
   {% for sponsor in tier.sponsors %}
   <a href="{{ sponsor.href }}">
     <img src="{{ sponsor.src }}" alt="{{ sponsor.alt }}" class="{{ sponsor.img_class | default(value=tier.img_class) }}">
