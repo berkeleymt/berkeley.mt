@@ -30,6 +30,7 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Blue Sponsors & Friends of BMT"
+class = "flex gap-x-4 gap-y-4 flex-wrap justify-center items-center"
 img_class = "max-w-24 max-h-12"
 sponsors = [
   { alt = "Mustang Math", src = "assets/sponsors/mmt.png", href = "https://mustangmath.com/" },
