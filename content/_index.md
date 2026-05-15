@@ -24,7 +24,7 @@ sponsors = [
 [[extra.sponsor_tiers]]
 title = "Gold Sponsors"
 div_class = "flex gap-x-16 gap-y-4 flex-wrap justify-center items-center"
-img_class = "max-w-36 max-h-12"
+img_class = "max-w-48 max-h-12"
 sponsors = [
   { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
   { alt = "Atomic Grader", src = "assets/sponsors/ag.svg", href = "https://atomicgrader.com/" },
@@ -34,7 +34,7 @@ sponsors = [
 [[extra.sponsor_tiers]]
 title = "Blue Sponsors & Friends of BMT"
 div_class = "flex gap-x-8 gap-y-4 flex-wrap justify-center items-center"
-img_class = "max-w-20 max-h-10"
+img_class = "max-w-24 max-h-12"
 sponsors = [
   { alt = "Mustang Math", src = "assets/sponsors/mmt.png", href = "https://mustangmath.com/" },
   { alt = "HMMT", src = "assets/sponsors/hmmt.webp", href = "https://hmmt.org/" },
