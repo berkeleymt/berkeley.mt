@@ -37,7 +37,7 @@ div_class = "flex gap-x-8 gap-y-4 flex-wrap justify-center items-center"
 img_class = "max-w-24 max-h-12"
 sponsors = [
   { alt = "Mustang Math", src = "assets/sponsors/mmt.png", href = "https://mustangmath.com/" },
-  { alt = "HMMT", src = "assets/sponsors/hmmt.webp", href = "https://hmmt.org/" },
+  { alt = "HMMT", src = "assets/sponsors/hmmt.png", href = "https://hmmt.org/" },
   { alt = "Stanford Math Tournament", src = "assets/sponsors/smt.png", href = "https://www.stanfordmathtournament.com/" },
   { alt = "Carnegie Mellon Informatics and Mathematics Competition", src = "assets/sponsors/cmimc.png", href = "https://cmimc.math.cmu.edu/" },
   { alt = "Los Angeles Math Tournament", src = "assets/sponsors/lamt.png", href = "https://lamt.net/" },
