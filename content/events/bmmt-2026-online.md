@@ -5,7 +5,7 @@ aliases = ["/bmmt-2026-online"]
 +++
 
 {% alert(title="BmMT Updates", status="info") %}
-This year, we plan on restructuring the online tournament! More details on the new contest format will be released on this page soon, but registration will still open **Monday, February 9 at 9:00 AM PT**.
+We released our final logistics update for BmMT 2026 Online on 5/24. See our updated logistics on the [Logistics Page](/news/bmmt-2026-online-logistics/). Registration will close on **June 5, 11:59 PM Pacific Time**.
 {% end %}
 
 The online, synchronous version of our middle school tournament! For those who
