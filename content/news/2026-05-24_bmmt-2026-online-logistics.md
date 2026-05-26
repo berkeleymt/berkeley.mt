@@ -2,6 +2,10 @@
 title = "BmMT 2026 Online Logistics Update 5/24"
 +++
 
+{% alert(title="Awards Update", status="info") %}
+We've updated the Awards section of this message to align with our previous 5/2 release.
+{% end %}
+
 _This email was sent to participants on 5/24._
 
 ---
@@ -139,9 +143,9 @@ activities that promote recreational math. We are offering:
 ### Awards
 
 Top-performing individuals and teams will be recognized at the Awards Ceremony
-from 3:30 – 4:00 PM. For each student, we will provide an official ranking as
-well as certificates. However, we are not awarding physical awards for the
-online tournament.
+from 3:30 – 4:00 PM. For each student, we will provide the official scoring
+bins for each round as well as certificates. However, we are not awarding
+physical awards for the online tournament.
 
 ## Tiebreakers
 
