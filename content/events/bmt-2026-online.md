@@ -201,7 +201,7 @@ last submission will be considered.
     <tr>
       <th>Location</td>
       <td colspan="4" class="text-center">
-        Assigned Classrooms — See Tournament Guide
+        Online — See Tournament Guide
       </td>
     </tr>
     <tr>
