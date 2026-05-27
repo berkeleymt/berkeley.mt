@@ -65,7 +65,7 @@
 {# News post notification, if there is one #}
 <div class="flex flex-col gap-4">
   {% set news_section = get_section(path="news/_index.md") %}
-  {% set news_posts = news_section.pages | slice(end=1) %}
+  {% set news_posts = news_section.pages | slice(end=2) %}
   {% for news_post in news_posts %}
   {{ self::post_notification(
     title=news_post.title,
@@ -87,14 +87,6 @@
     label="Blog",
   ) }}
   {% endfor %}
-
-  {{ self::post_notification(
-    title="BMT 2026 will be held on November 14, 2026!",
-    href="/news/bmt-2026-date-set/",
-    class="bg-amber-50 hover:bg-amber-100 border-amber-200",
-    icon_class="bi-calendar-event-fill",
-    label="Announcement",
-  ) }}
 </div>
 
 
