@@ -107,7 +107,7 @@ Opening Ceremony and testing periods of the event. Students must show their
 hands and their phone on the camera screen. Those without cameras during the
 competition will be **ineligible** for awards, including honorable mentions.
 
-The [Zoom] meeting link will be released 48 hours before the competition in the
+The [Zoom] meeting link will be released 36 hours before the competition in the
 emails of coaches and participants. Please send us an email at
 <team@berkeley.mt> if you have not received it by that point.
 
