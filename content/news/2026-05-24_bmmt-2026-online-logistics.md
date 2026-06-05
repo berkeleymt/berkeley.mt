@@ -3,7 +3,7 @@ title = "BmMT 2026 Online Logistics Update 5/24"
 +++
 
 {% alert(title="Communication Update", status="info") %}
-We've clarified our standards about communicating between team members.
+We've clarified our standards about communication methods between team members.
 {% end %}
 
 {% alert(title="Awards Update", status="info") %}
