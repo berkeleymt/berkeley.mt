@@ -2,6 +2,10 @@
 title = "BmMT 2026 Online Logistics Update 5/24"
 +++
 
+{% alert(title="Communication Update", status="info") %}
+We've clarified our standards about communicating between team members.
+{% end %}
+
 {% alert(title="Awards Update", status="info") %}
 We've updated the Awards section of this message to align with our previous 5/2 release.
 {% end %}
@@ -115,7 +119,9 @@ emails of coaches and participants. Please send us an email at
 
 You are responsible for setting up your own communication with your team — the
 BMT team will not be coordinating communication, and the main [Zoom] room will
-not be able to be used to communicate with your teammates. Coaches are allowed
+not be able to be used to communicate with your teammates. The use of a
+secondary app with voice communication features with teammates is permitted.
+Coaches are allowed
 to help facilitate the communication prior to the testing phase, but are not
 allowed to communicate during any testing phase with students.
 
