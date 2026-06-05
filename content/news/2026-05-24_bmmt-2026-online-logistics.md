@@ -117,7 +117,8 @@ emails of coaches and participants. Please send us an email at
 
 ### Communication
 
-You are responsible for setting up your own communication with your team — the
+Students are not allowed to communicate during the Individual Round. On other
+rounds, you are responsible for setting up your own communication with your team — the
 BMT team will not be coordinating communication, and the main [Zoom] room will
 not be able to be used to communicate with your teammates. The use of a
 secondary app with voice communication features with teammates is permitted.
