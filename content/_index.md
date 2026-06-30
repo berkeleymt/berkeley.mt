@@ -23,8 +23,8 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Gold Sponsors"
-div_class = "grid grid-cols-2 justify-items-center items-center gap-x-6 gap-y-4 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-16"
-img_class = "max-w-48 max-h-12"
+div_class = "grid grid-cols-2 justify-items-center items-center gap-x-2 gap-y-2 [&>a:last-child]:col-span-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-16 sm:gap-y-4"
+img_class = "max-w-32 max-h-10 sm:max-w-48 sm:max-h-12"
 sponsors = [
   { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
   { alt = "Atomic Grader", src = "assets/sponsors/ag.svg", href = "https://atomicgrader.com/" },
@@ -33,8 +33,8 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Blue Sponsors & Friends of BMT"
-div_class = "grid grid-cols-3 justify-items-center items-center gap-x-4 gap-y-4 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-12"
-img_class = "max-w-24 max-h-12"
+div_class = "grid grid-cols-3 justify-items-center items-center gap-x-2 gap-y-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-12 sm:gap-y-4"
+img_class = "max-w-20 max-h-10 sm:max-w-24 sm:max-h-12"
 sponsors = [
   { alt = "Mustang Math", src = "assets/sponsors/mmt.png", href = "https://mustangmath.com/" },
   { alt = "HMMT", src = "assets/sponsors/hmmt.png", href = "https://hmmt.org/" },
