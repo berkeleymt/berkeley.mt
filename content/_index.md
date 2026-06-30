@@ -23,7 +23,7 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Gold Sponsors"
-div_class = "grid grid-cols-2 justify-items-center items-center gap-x-6 gap-y-4 [&>a:first-child]:col-span-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-16"
+div_class = "grid grid-cols-2 justify-items-center items-center gap-x-6 gap-y-4 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-16"
 img_class = "max-w-48 max-h-12"
 sponsors = [
   { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
