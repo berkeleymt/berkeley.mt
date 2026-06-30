@@ -12,7 +12,7 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Diamond Sponsors"
-div_class = "flex gap-x-16 gap-y-4 flex-wrap justify-center items-center"
+div_class = "grid grid-cols-2 justify-items-center items-center gap-x-6 gap-y-4 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-16"
 img_class = "max-w-36 max-h-18"
 sponsors = [
   { alt = "Citadel | Citadel Securities", src = "assets/sponsors/citadel.png", href = "https://www.citadel.com/" },
@@ -23,7 +23,7 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Gold Sponsors"
-div_class = "flex gap-x-16 gap-y-4 flex-wrap justify-center items-center"
+div_class = "grid grid-cols-2 justify-items-center items-center gap-x-6 gap-y-4 [&>a:first-child]:col-span-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-16"
 img_class = "max-w-48 max-h-12"
 sponsors = [
   { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
@@ -33,7 +33,7 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Blue Sponsors & Friends of BMT"
-div_class = "flex gap-x-12 gap-y-4 flex-wrap justify-center items-center"
+div_class = "grid grid-cols-3 justify-items-center items-center gap-x-4 gap-y-4 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-12"
 img_class = "max-w-24 max-h-12"
 sponsors = [
   { alt = "Mustang Math", src = "assets/sponsors/mmt.png", href = "https://mustangmath.com/" },
