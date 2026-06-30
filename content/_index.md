@@ -56,10 +56,12 @@ activities, and other math competition opportunities!
     <form action="https://berkeley.us7.list-manage.com/subscribe/post?u=24d4cef68c36baccb820775ad&amp;id=385ee9d1d1&amp;f_id=001dd0e4f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate !m-0" target="_self" novalidate="">
         <div id="mc_embed_signup_scroll">
             <div class="mc-field-group !w-full">
-                <div class="flex flex-col sm:flex-row sm:items-stretch gap-3">
-                    <label for="mce-EMAIL" class="!m-0 whitespace-nowrap sm:self-center">Email Address <span class="asterisk">*</span></label>
-                    <input type="email" name="EMAIL" class="required email !w-full sm:!w-64 !border !border-gray-400 !rounded" id="mce-EMAIL" required="" value="">
-                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="!inline-block !w-auto self-center sm:self-stretch !h-auto !bg-teal-500 hover:!bg-teal-500 !text-white !text-base !font-normal !py-2 !px-4 !rounded !shadow hover:!-translate-y-0.5 hover:!shadow-lg !transition-all cursor-pointer" value="Subscribe" autocomplete="email">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+                    <div class="flex flex-row items-center gap-3 sm:contents">
+                        <label for="mce-EMAIL" class="!m-0 whitespace-nowrap">Email Address <span class="asterisk">*</span></label>
+                        <input type="email" name="EMAIL" class="required email !flex-1 sm:!flex-none !w-full sm:!w-64 !h-10 !px-2 !border !border-gray-400 !rounded" id="mce-EMAIL" required="" value="">
+                    </div>
+                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="!inline-block !w-auto self-center sm:self-auto !h-10 !bg-teal-500 hover:!bg-teal-500 !text-white !text-base !font-normal !py-2 !px-4 !rounded !shadow hover:!-translate-y-0.5 hover:!shadow-lg !transition-all cursor-pointer" value="Subscribe" autocomplete="email">
                 </div>
             </div>
 <div hidden=""><input type="hidden" name="tags" value="1405459"></div>
