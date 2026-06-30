@@ -12,19 +12,19 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Diamond Sponsors"
-div_class = "grid grid-cols-2 justify-items-center items-center gap-x-6 gap-y-4 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-16"
-img_class = "max-w-36 max-h-18"
+div_class = "grid grid-cols-[repeat(2,auto)] justify-center items-center gap-x-6 gap-y-5 sm:flex sm:flex-wrap sm:gap-x-16"
+img_class = "w-32 h-16 object-contain sm:w-auto sm:h-auto sm:max-w-36 sm:max-h-16"
 sponsors = [
   { alt = "Citadel | Citadel Securities", src = "assets/sponsors/citadel.png", href = "https://www.citadel.com/" },
-  { alt = "Susquehanna", src = "assets/sponsors/susquehanna.png", href = "https://sig.com/", img_class = "max-w-48 max-h-18" },
+  { alt = "Susquehanna", src = "assets/sponsors/susquehanna.png", href = "https://sig.com/", img_class = "w-36 h-16 object-contain sm:w-auto sm:h-auto sm:max-w-48 sm:max-h-16" },
   { alt = "Jane Street", src = "assets/sponsors/jane-street.svg", href = "https://www.janestreet.com/" },
   { alt = "blackpenredpen", src = "assets/sponsors/bprp.png", href = "https://www.youtube.com/c/blackpenredpen/" },
 ]
 
 [[extra.sponsor_tiers]]
 title = "Gold Sponsors"
-div_class = "grid grid-cols-2 justify-items-center items-center gap-x-2 gap-y-2 [&>a:last-child]:col-span-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-16 sm:gap-y-4"
-img_class = "max-w-32 max-h-10 sm:max-w-48 sm:max-h-12"
+div_class = "grid grid-cols-[repeat(2,auto)] justify-center items-center gap-x-4 gap-y-3 [&>a:last-child]:col-span-2 [&>a:last-child]:justify-self-center sm:flex sm:flex-wrap sm:gap-x-16 sm:gap-y-4"
+img_class = "w-28 h-10 object-contain sm:w-auto sm:h-auto sm:max-w-48 sm:max-h-12"
 sponsors = [
   { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
   { alt = "Atomic Grader", src = "assets/sponsors/ag.svg", href = "https://atomicgrader.com/" },
@@ -33,8 +33,8 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Blue Sponsors & Friends of BMT"
-div_class = "grid grid-cols-3 justify-items-center items-center gap-x-2 gap-y-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-12 sm:gap-y-4"
-img_class = "max-w-20 max-h-10 sm:max-w-24 sm:max-h-12"
+div_class = "grid grid-cols-[repeat(3,auto)] justify-center items-center gap-x-3 gap-y-3 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-12 sm:gap-y-4"
+img_class = "w-20 h-10 object-contain sm:w-auto sm:h-auto sm:max-w-24 sm:max-h-12"
 sponsors = [
   { alt = "Mustang Math", src = "assets/sponsors/mmt.png", href = "https://mustangmath.com/" },
   { alt = "HMMT", src = "assets/sponsors/hmmt.png", href = "https://hmmt.org/" },
