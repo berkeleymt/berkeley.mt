@@ -12,7 +12,7 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Diamond Sponsors"
-div_class = "flex gap-x-16 gap-y-4 flex-wrap justify-center items-center"
+div_class = "grid grid-cols-2 justify-items-center items-center gap-x-6 gap-y-4 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-16"
 img_class = "max-w-36 max-h-18"
 sponsors = [
   { alt = "Citadel | Citadel Securities", src = "assets/sponsors/citadel.png", href = "https://www.citadel.com/" },
@@ -23,8 +23,8 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Gold Sponsors"
-div_class = "flex gap-x-16 gap-y-4 flex-wrap justify-center items-center"
-img_class = "max-w-48 max-h-12"
+div_class = "grid grid-cols-2 justify-items-center items-center gap-x-2 gap-y-2 [&>a:last-child]:col-span-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-16 sm:gap-y-4"
+img_class = "max-w-32 max-h-10 sm:max-w-48 sm:max-h-12"
 sponsors = [
   { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
   { alt = "Atomic Grader", src = "assets/sponsors/ag.svg", href = "https://atomicgrader.com/" },
@@ -33,8 +33,8 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Blue Sponsors & Friends of BMT"
-div_class = "flex gap-x-12 gap-y-4 flex-wrap justify-center items-center"
-img_class = "max-w-24 max-h-12"
+div_class = "grid grid-cols-3 justify-items-center items-center gap-x-2 gap-y-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-12 sm:gap-y-4"
+img_class = "max-w-20 max-h-10 sm:max-w-24 sm:max-h-12"
 sponsors = [
   { alt = "Mustang Math", src = "assets/sponsors/mmt.png", href = "https://mustangmath.com/" },
   { alt = "HMMT", src = "assets/sponsors/hmmt.png", href = "https://hmmt.org/" },
@@ -55,12 +55,18 @@ activities, and other math competition opportunities!
 <div id="mc_embed_signup">
     <form action="https://berkeley.us7.list-manage.com/subscribe/post?u=24d4cef68c36baccb820775ad&amp;id=385ee9d1d1&amp;f_id=001dd0e4f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate !m-0" target="_self" novalidate="">
         <div id="mc_embed_signup_scroll">
-            <div class="mc-field-group !w-full"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+            <div class="mc-field-group !w-full">
+                <div class="grid grid-cols-[auto_1fr] items-center gap-3 sm:flex sm:flex-row sm:items-center">
+                    <label for="mce-EMAIL" class="!m-0 whitespace-nowrap">Email Address <span class="asterisk">*</span></label>
+                    <input type="email" name="EMAIL" class="required email !w-full sm:!w-64 !h-10 !px-2 !border !border-gray-400 !rounded" id="mce-EMAIL" required="" value="">
+                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="!inline-block !w-auto !col-start-2 justify-self-start sm:!col-auto !h-10 !bg-teal-500 hover:!bg-teal-500 !text-white !text-base !font-normal !py-2 !px-4 !rounded !shadow hover:!-translate-y-0.5 hover:!shadow-lg !transition-all cursor-pointer" value="Subscribe" autocomplete="email">
+                </div>
+            </div>
 <div hidden=""><input type="hidden" name="tags" value="1405459"></div>
         <div id="mce-responses" class="clear">
             <div class="response" id="mce-error-response" style="display: none;"></div>
             <div class="response" id="mce-success-response" style="display: none;"></div>
-        </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_24d4cef68c36baccb820775ad_385ee9d1d1" tabindex="-1" value=""></div><div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe" autocomplete="email"></div>
+        </div><div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_24d4cef68c36baccb820775ad_385ee9d1d1" tabindex="-1" value=""></div>
     </div>
 </form>
 </div>
