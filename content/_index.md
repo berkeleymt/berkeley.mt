@@ -59,7 +59,7 @@ activities, and other math competition opportunities!
                 <div class="flex flex-col sm:flex-row sm:items-stretch gap-3">
                     <label for="mce-EMAIL" class="!m-0 whitespace-nowrap sm:self-center">Email Address <span class="asterisk">*</span></label>
                     <input type="email" name="EMAIL" class="required email !w-full sm:!w-64 !border !border-gray-400 !rounded" id="mce-EMAIL" required="" value="">
-                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="!inline-block !w-full sm:!w-auto !h-auto !bg-teal-500 hover:!bg-teal-500 !text-white !text-base !font-normal !py-2 !px-4 !rounded !shadow hover:!-translate-y-0.5 hover:!shadow-lg !transition-all cursor-pointer" value="Subscribe" autocomplete="email">
+                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="!inline-block !w-auto self-center sm:self-stretch !h-auto !bg-teal-500 hover:!bg-teal-500 !text-white !text-base !font-normal !py-2 !px-4 !rounded !shadow hover:!-translate-y-0.5 hover:!shadow-lg !transition-all cursor-pointer" value="Subscribe" autocomplete="email">
                 </div>
             </div>
 <div hidden=""><input type="hidden" name="tags" value="1405459"></div>
