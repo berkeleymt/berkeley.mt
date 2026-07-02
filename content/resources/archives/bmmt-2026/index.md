@@ -16,29 +16,34 @@ key = "solutions"
 
 [[extra.archive.tests]]
 title = "Puzzle"
-#rules = "puzzle-rules.pdf"
-#problems = "puzzle-problems.pdf"
+rules = "puzzle-rules.pdf"
+problems = "puzzle-problems.pdf"
 #solutions = "puzzle-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Individual"
-#problems = "individual-problems.pdf"
+problems = "individual-problems.pdf"
 #solutions = "individual-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Individual Tiebreaker"
-#problems = "individual-tiebreaker-problems.pdf"
+problems = "individual-tiebreaker-problems.pdf"
 #solutions = "individual-tiebreaker-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Team"
-#problems = "team-problems.pdf"
+problems = "team-problems.pdf"
 #solutions = "team-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Relay"
-#problems = "relay-problems.pdf"
+problems = "relay-problems.pdf"
 #solutions = "relay-solutions.pdf"
 +++
 
 Solutions coming soon!
+
+Try the BmMT 2026 Online Puzzle Round on our custom [interactive site](https://curtain-pigeon-pit.uc.ax/)!
+
+{% button_link(href="results.pdf") %} Contest Results {% end %}
+{% button_link(href="results-online.pdf") %} Contest Results (Online) {% end %}
