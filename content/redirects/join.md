@@ -7,5 +7,5 @@ template = "redirect.html"
 aliases = ["/join"]
 
 # The page to redirect to
-extra.url = "https://docs.google.com/forms/d/e/1FAIpQLScy_fIrfi47dkdawChV5tOEycmWNCn2BZ4N6vvx62RemOaBMg/viewform"
+extra.url = "https://docs.google.com/forms/d/e/1FAIpQLSf3mOB8peCLMAohtbIOsWZ_TmUKIJgg4JWwS1TydWRfqlm5-Q/viewform?usp=dialog"
 +++
