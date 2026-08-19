@@ -4,11 +4,22 @@
 
 {% block after_page_content %}
 
+{# Spring (Jan–Jun): BmMT worksheets first for BmMT season; rest of the year: blog first for BMT season #}
+{% set month = now() | date(format="%m") | int %}
+
+{% if month <= 6 %}
 {% set sections = [
   get_section(path="resources/bmmt-worksheets/_index.md"),
   get_section(path="resources/bmt-to-aime/_index.md"),
-  get_section(path="resources/archives/_index.md"),
+  get_section(path="resources/blog/_index.md"),
 ] %}
+{% else %}
+{% set sections = [
+  get_section(path="resources/blog/_index.md"),
+  get_section(path="resources/bmt-to-aime/_index.md"),
+  get_section(path="resources/bmmt-worksheets/_index.md"),
+] %}
+{% endif %}
 
 {% for section in sections %}
 

@@ -20,6 +20,6 @@ This mock AIME exam contains carefully selected problems from the 2023 Berkeley
 Math Tournament tests. Detailed solutions can be found in the corresponding
 archive.
 
-{% button_link(href="/resources/archives/bmt-2023/") %}
+{% button_link(href="/archives/bmt-2023/") %}
 Visit BMT 2023 Archive
 {% end %}
