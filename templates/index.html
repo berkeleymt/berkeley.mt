@@ -76,7 +76,7 @@
   ) }}
   {% endfor %}
 
-  {% set blog_section = get_section(path="blog/_index.md") %}
+  {% set blog_section = get_section(path="resources/blog/_index.md") %}
   {% set blog_posts = blog_section.pages | slice(end=1) %}
   {% for blog_post in blog_posts %}
   {{ self::post_notification(

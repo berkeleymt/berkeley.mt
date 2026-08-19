@@ -20,6 +20,6 @@ This mock AIME exam contains carefully selected problems from the 2021 Berkeley
 Math Tournament tests. Detailed solutions can be found in the corresponding
 archive.
 
-{% button_link(href="/resources/archives/bmt-2021/") %}
+{% button_link(href="/archives/bmt-2021/") %}
 Visit BMT 2021 Archive
 {% end %}

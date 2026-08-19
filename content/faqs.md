@@ -209,7 +209,7 @@ solving techniques not commonly taught in high school classes. They do count
 for more toward your team's score.
 
 We recommend most students take the General Test unless they have tried past
-Focus Tests from our [archive](/resources/) and feel comfortable with the
+Focus Tests from our [archive](/archives/) and feel comfortable with the
 difficulty. If the Focus Tests feel prohibitively difficult, take the General
 Test; if the General Test doesn't provide the challenge you're looking for,
 consider a focus pair.
