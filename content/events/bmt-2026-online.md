@@ -50,7 +50,9 @@ late registration.
 
 ## Student Eligibility
 
-- Students must be in **grade 12 or below** to be eligible for BMT.
+- Students must be in **grade 12 or below** to be eligible for BMT. If you
+  attend school outside of the U.S. and want to know about grade equivalency,
+  please email us at <team@berkeley.mt>.
 - Students do not have to be from the same school.
 - Students **must not have competed in a prior iteration of BMT 2026**,
   including the California version or any of our satellites.
@@ -65,7 +67,7 @@ here when registration opens.
 
 ## Online Tournament Logistics
 
-BMT 2026 Online will take place in two parts:
+BMT 2026 Online has two components:
 
 - **Asynchronous Power Round**: dates TBA
 - **Live Event**: December 5, 2026
@@ -109,6 +111,11 @@ can participate in two Focus Tests.
 The Guts Round consists of **9 sets of 3 problems** across various subjects in
 math. The key feature of this round is that each set must be turned in before
 the next set is given. All teams can see a live scoreboard with their standings.
+
+### Past Exams
+
+For those curious about the problem style, past contests can be found in our
+[archive](/archive/).
 
 ## Scoring
 
@@ -156,7 +163,7 @@ hardest, and so on.
 If a tie remains on the Individual Round after the preceding automatic
 tiebreaking procedure -- i.e., if two students correctly answered precisely the
 same set of problems, then those students will participate in an additional
-Tiebreaker Round. Ties that remain on the Guts Round or Power Round will not be
+Tiebreaker Round. Ties that remain on the Power Round or Guts Round will not be
 tiebroken.
 
 This 15-minute test will consist of either three (for the Focus Tests) or five
