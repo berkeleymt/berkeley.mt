@@ -1,4 +1,4 @@
 <a href="{{ href }}"
-  class="not-prose inline-block text-base bg-teal-500 text-white py-2 px-4 rounded shadow hover:-translate-y-0.5 hover:shadow-lg transition-all {% if class %}{{ class }}{% endif %}">
-  {{ body }}
+  class="not-prose inline-block text-base {% if muted %}bg-slate-500{% else %}bg-teal-500{% endif %} text-white py-2 px-4 rounded shadow hover:-translate-y-0.5 hover:shadow-lg transition-all {% if class %}{{ class }}{% endif %}">
+  {{ body }}{% if note %}<span class="block text-xs opacity-90">{{ note }}</span>{% endif %}
 </a>
