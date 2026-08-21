@@ -62,11 +62,12 @@
 
 {% block content %}
 
-{# News post notification, if there is one #}
+{# The three most recent news posts, excluding those with extra.announcement = false #}
 <div class="flex flex-col gap-4">
   {% set news_section = get_section(path="news/_index.md") %}
-  {% set news_posts = news_section.pages | slice(end=1) %}
-  {% for news_post in news_posts %}
+  {% set_global announcements_shown = 0 %}
+  {% for news_post in news_section.pages %}
+  {% if announcements_shown < 3 and news_post.extra.announcement | default(value=true) %}
   {{ self::post_notification(
     title=news_post.title,
     href=news_post.permalink,
@@ -74,6 +75,8 @@
     icon_class="bi-megaphone-fill",
     label="News",
   ) }}
+  {% set_global announcements_shown = announcements_shown + 1 %}
+  {% endif %}
   {% endfor %}
 </div>
 
