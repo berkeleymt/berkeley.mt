@@ -1,5 +1,8 @@
 +++
 title = "BMT 2023 Online Logistics Update"
+
+[extra]
+announcement = false
 +++
 
 To all coaches and students,

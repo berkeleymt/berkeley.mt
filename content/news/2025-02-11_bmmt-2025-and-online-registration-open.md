@@ -1,5 +1,8 @@
 +++
 title = "Registration is open for BmMT 2025 and BmMT 2025 Online!"
+
+[extra]
+announcement = false
 +++
 
 We're excited to announce that registration for the 2025 Berkeley mini Math

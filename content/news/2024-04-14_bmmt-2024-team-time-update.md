@@ -1,6 +1,9 @@
 +++
 title = "BmMT 2024 Schedule Update"
 date = 2024-04-14T11:20:00
+
+[extra]
+announcement = false
 +++
 
 To all Coaches and Parents,

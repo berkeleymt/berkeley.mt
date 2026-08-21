@@ -1,5 +1,8 @@
 +++
 title = "Registration is open for BmMT 2024!"
+
+[extra]
+announcement = false
 +++
 
 We're excited to announce that registration for the 2024 Berkeley mini Math

@@ -1,5 +1,8 @@
 +++
 title = "BMT 2024 x blackpenredpen Student Mentor Appreciation Scholarship Application Now Open!"
+
+[extra]
+announcement = false
 +++
 
 In collaboration with blackpenredpen, the team at BMT wants to support and celebrate the people we couldn’t run the tournament without: the adults!

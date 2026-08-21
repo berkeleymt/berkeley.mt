@@ -1,5 +1,8 @@
 +++
 title = "Registration for BMT 2024 will open on September 16, 2024"
+
+[extra]
+announcement = false
 +++
 
 How are you doing, fellow math enthusiasts?

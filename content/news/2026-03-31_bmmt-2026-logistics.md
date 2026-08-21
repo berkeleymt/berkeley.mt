@@ -1,5 +1,8 @@
 +++
 title = "BmMT 2026 April 12 Tournament Day Logistics"
+
+[extra]
+announcement = false
 +++
 
 _Shown below is a transcription of an email sent out to all coaches and students registered for BmMT 2026._

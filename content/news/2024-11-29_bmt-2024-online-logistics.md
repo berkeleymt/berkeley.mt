@@ -1,5 +1,8 @@
 +++
 title = "BMT 2024 Online Logistics"
+
+[extra]
+announcement = false
 +++
 
 To all coaches and students,

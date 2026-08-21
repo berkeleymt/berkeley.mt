@@ -1,5 +1,8 @@
 +++
 title = "BMT 2025 Phase 2 Registration Extended"
+
+[extra]
+announcement = false
 +++
 
 We're excited to announce that we're adding additional seats for BMT 2025! To accommodate the increased capacity, we're extending the Phase 2 registration deadline until the end of Monday, October 20, 2025 (11:59 PM PT).

@@ -1,5 +1,8 @@
 +++
 title = "Lost and Found"
+
+[extra]
+announcement = false
 +++
 
 Dear BMT coaches and students. If you have lost or are missing any items, such as a water bottle or a phone, please come to Dwinelle 211 to check the lost and found.

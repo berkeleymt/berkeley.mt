@@ -1,6 +1,9 @@
 +++
 title = "BMT 2023 Tiebreakers will be announced at 2:40"
 date = 2023-11-04T12:32:00
+
+[extra]
+announcement = false
 +++
 
 To all coaches and students,

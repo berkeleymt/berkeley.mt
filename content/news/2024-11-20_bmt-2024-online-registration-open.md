@@ -1,5 +1,8 @@
 +++
 title = "Registration is open for BMT 2024 Online!"
+
+[extra]
+announcement = false
 +++
 
 Weren't able to travel long-distance to California? Weren't able to register for

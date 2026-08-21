@@ -1,5 +1,8 @@
 +++
 title = "Reminder: BMT 2024 will be on November 2, 2024!"
+
+[extra]
+announcement = false
 +++
 
 As we [announced last year](@/news/2023-11-16_bmmt-2024-date-set.md),

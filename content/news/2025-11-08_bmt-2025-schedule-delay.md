@@ -1,6 +1,9 @@
 +++
 title = "BMT 2025 Schedule Update"
 date = 2025-11-08T12:02:00
+
+[extra]
+announcement = false
 +++
 
 To all coaches and students,

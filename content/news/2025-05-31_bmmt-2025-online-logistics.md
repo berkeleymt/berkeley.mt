@@ -1,5 +1,8 @@
 +++
 title = "BmMT 2025 Online Logistics"
+
+[extra]
+announcement = false
 +++
 
 To all coaches and students,
