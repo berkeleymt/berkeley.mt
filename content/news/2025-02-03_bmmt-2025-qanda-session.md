@@ -1,5 +1,8 @@
 +++
 title = "BmMT 2025 Q&A Session on February 6, 2025 from 7–8 PM"
+
+[extra]
+announcement = false
 +++
 
 If you have questions about our BmMT or what to expect from math competitions in

@@ -1,6 +1,9 @@
 +++
 title = "BmMT 2025 Relay Solutions Released!"
 aliases = ["/relaysolutions"]
+
+[extra]
+announcement = false
 +++
 
 ## Happy April Fools Day!

@@ -1,5 +1,8 @@
 +++
 title = "BmMT 2026 Online Logistics Update 5/24"
+
+[extra]
+announcement = false
 +++
 
 {% alert(title="Communication Update", status="info") %}

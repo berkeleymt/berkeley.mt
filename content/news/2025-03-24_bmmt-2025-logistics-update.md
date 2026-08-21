@@ -1,5 +1,8 @@
 +++
 title = "BmMT 2025 Logistics Update"
+
+[extra]
+announcement = false
 +++
 
 _Shown below is a transcription of an email sent out to all coaches and students registered for BmMT 2025._

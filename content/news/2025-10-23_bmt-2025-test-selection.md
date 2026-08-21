@@ -1,5 +1,8 @@
 +++
 title = "Test Selection Guidance for BMT 2025"
+
+[extra]
+announcement = false
 +++
 
 Dear BMT competitors, coaches, and parents,

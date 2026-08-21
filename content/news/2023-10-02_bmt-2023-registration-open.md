@@ -1,5 +1,8 @@
 +++
 title = "Registration is open for BMT 2023!"
+
+[extra]
+announcement = false
 +++
 
 We're excited to announce that registration for the 2023 Berkeley Math

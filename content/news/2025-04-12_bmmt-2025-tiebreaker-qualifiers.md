@@ -1,6 +1,9 @@
 +++
 title = "BmMT 2025 Tiebreaker Participants"
 date = 2025-04-12T15:55:00
+
+[extra]
+announcement = false
 +++
 
 We are requesting the following students to participate in a tiebreaker round.

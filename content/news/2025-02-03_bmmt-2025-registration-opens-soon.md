@@ -1,5 +1,8 @@
 +++
 title = "Registration for BmMT 2025 and BmMT 2025 Online opens on February 10"
+
+[extra]
+announcement = false
 +++
 
 {% alert(title="BmMT 2025 Q&A session", status="info") %}

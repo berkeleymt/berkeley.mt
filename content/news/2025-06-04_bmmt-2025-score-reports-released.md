@@ -1,5 +1,8 @@
 +++
 title = "BmMT 2025 Score Reports Released"
+
+[extra]
+announcement = false
 +++
 
 Score reports for BmMT 2025 have been released on [ContestDojo]. We thank

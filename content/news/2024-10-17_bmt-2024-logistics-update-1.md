@@ -1,5 +1,8 @@
 +++
 title = "BMT 2024 Logistics Update 1"
+
+[extra]
+announcement = false
 +++
 
 Dear coaches,

@@ -1,6 +1,9 @@
 +++
 title = "BMT 2023 Tiebreaker Qualifiers & Logistics"
 date = 2023-11-04T14:48:00
+
+[extra]
+announcement = false
 +++
 
 We are excited to announce that the following students have qualified for the

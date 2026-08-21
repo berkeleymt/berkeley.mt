@@ -1,5 +1,8 @@
 +++
 title = "Registration is closed for BMT 2023 US"
+
+[extra]
+announcement = false
 +++
 
 We've hit our cap of 700 student registrations for the 2023 Berkeley Math
