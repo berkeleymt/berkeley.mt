@@ -1,9 +1,9 @@
 {% extends "page.html" %}
 
 {% macro archive_table(label, tests, columns) %}
-<table class="prose">
+<table class="prose table-fixed w-full">
     <thead>
-        <th>{{ label }}</th>
+        <th class="w-1/2">{{ label }}</th>
         {% for column in columns %}
         <th>{{ column.label }}</th>
         {% endfor %}
