@@ -11,63 +11,69 @@ key = "problems"
 label = "Solutions"
 key = "solutions"
 
-[[extra.archive.tests]]
-title = "General"
-problems = "general-problems.pdf"
-#solutions = "general-solutions.pdf"
+[[extra.archive.groups]]
+label = "Round/Test"
 
-[[extra.archive.tests]]
-title = "Algebra"
-problems = "algebra-problems.pdf"
-#solutions = "algebra-solutions.pdf"
-
-[[extra.archive.tests]]
-title = "Calculus"
-problems = "calculus-problems.pdf"
-#solutions = "calculus-solutions.pdf"
-
-[[extra.archive.tests]]
-title = "Discrete"
-problems = "discrete-problems.pdf"
-#solutions = "discrete-solutions.pdf"
-
-[[extra.archive.tests]]
-title = "Geometry"
-problems = "geometry-problems.pdf"
-#solutions = "geometry-solutions.pdf"
-
-[[extra.archive.tests]]
-title = "Guts"
-problems = "guts-problems.pdf"
-#solutions = "guts-solutions.pdf"
-
-[[extra.archive.tests]]
+[[extra.archive.groups.tests]]
 title = "Power"
 problems = "power-problems.pdf"
 #solutions = "power-solutions.pdf"
 
-[[extra.archive.tests]]
-title = "General Tiebreaker"
+[[extra.archive.groups.tests]]
+title = "General"
+problems = "general-problems.pdf"
+#solutions = "general-solutions.pdf"
+
+[[extra.archive.groups.tests]]
+title = "Algebra"
+problems = "algebra-problems.pdf"
+#solutions = "algebra-solutions.pdf"
+
+[[extra.archive.groups.tests]]
+title = "Calculus"
+problems = "calculus-problems.pdf"
+#solutions = "calculus-solutions.pdf"
+
+[[extra.archive.groups.tests]]
+title = "Discrete"
+problems = "discrete-problems.pdf"
+#solutions = "discrete-solutions.pdf"
+
+[[extra.archive.groups.tests]]
+title = "Geometry"
+problems = "geometry-problems.pdf"
+#solutions = "geometry-solutions.pdf"
+
+[[extra.archive.groups.tests]]
+title = "Guts"
+problems = "guts-problems.pdf"
+#solutions = "guts-solutions.pdf"
+
+[[extra.archive.groups]]
+label = "Tiebreaker"
+
+[[extra.archive.groups.tests]]
+title = "General"
 problems = "general-tiebreaker-problems.pdf"
 #solutions = "general-tiebreaker-solutions.pdf"
 
-[[extra.archive.tests]]
-title = "Algebra Tiebreaker"
+[[extra.archive.groups.tests]]
+title = "Algebra"
 problems = "algebra-tiebreaker-problems.pdf"
 #solutions = "algebra-tiebreaker-solutions.pdf"
 
-[[extra.archive.tests]]
-title = "Calculus Tiebreaker"
+[[extra.archive.groups.tests]]
+title = "Calculus"
 problems = "calculus-tiebreaker-problems.pdf"
 #solutions = "calculus-tiebreaker-solutions.pdf"
 
-[[extra.archive.tests]]
-title = "Discrete Tiebreaker"
+[[extra.archive.groups.tests]]
+title = "Discrete"
 problems = "discrete-tiebreaker-problems.pdf"
 #solutions = "discrete-tiebreaker-solutions.pdf"
 
-[[extra.archive.tests]]
-title = "Geometry Tiebreaker"
+[[extra.archive.groups.tests]]
+title = "Geometry"
 problems = "geometry-tiebreaker-problems.pdf"
 #solutions = "geometry-tiebreaker-solutions.pdf"
 +++
