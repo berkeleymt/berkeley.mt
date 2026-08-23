@@ -53,27 +53,27 @@ problems = "guts-problems.pdf"
 label = "Tiebreaker"
 
 [[extra.archive.groups.tests]]
-title = "General"
+title = "General Tiebreaker"
 problems = "general-tiebreaker-problems.pdf"
 #solutions = "general-tiebreaker-solutions.pdf"
 
 [[extra.archive.groups.tests]]
-title = "Algebra"
+title = "Algebra Tiebreaker"
 problems = "algebra-tiebreaker-problems.pdf"
 #solutions = "algebra-tiebreaker-solutions.pdf"
 
 [[extra.archive.groups.tests]]
-title = "Calculus"
+title = "Calculus Tiebreaker"
 problems = "calculus-tiebreaker-problems.pdf"
 #solutions = "calculus-tiebreaker-solutions.pdf"
 
 [[extra.archive.groups.tests]]
-title = "Discrete"
+title = "Discrete Tiebreaker"
 problems = "discrete-tiebreaker-problems.pdf"
 #solutions = "discrete-tiebreaker-solutions.pdf"
 
 [[extra.archive.groups.tests]]
-title = "Geometry"
+title = "Geometry Tiebreaker"
 problems = "geometry-tiebreaker-problems.pdf"
 #solutions = "geometry-tiebreaker-solutions.pdf"
 +++
