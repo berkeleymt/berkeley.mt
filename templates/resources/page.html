@@ -1,18 +1,18 @@
 {% extends "page.html" %}
 
-{% block before_page_content %}
+{% macro archive_table(label, tests, columns) %}
 <table class="prose">
     <thead>
-        <th>Round</th>
-        {% for column in page.extra.archive.columns %}
+        <th>{{ label }}</th>
+        {% for column in columns %}
         <th>{{ column.label }}</th>
         {% endfor %}
     </thead>
     <tbody>
-        {% for test in page.extra.archive.tests %}
+        {% for test in tests %}
         <tr>
             <td>{{ test.title }}</td>
-            {% for column in page.extra.archive.columns %}
+            {% for column in columns %}
             <td>
                 {% set href = test | get(key=column.key, default="") %}
                 {% if href %}
@@ -24,4 +24,22 @@
         {% endfor %}
     </tbody>
 </table>
+{% endmacro %}
+
+{% block before_page_content %}
+{% if page.extra.archive.groups is defined %}
+{% for group in page.extra.archive.groups %}
+{{ self::archive_table(
+  label=group.label | default(value="Round/Test"),
+  tests=group.tests,
+  columns=page.extra.archive.columns,
+) }}
+{% endfor %}
+{% else %}
+{{ self::archive_table(
+  label="Round/Test",
+  tests=page.extra.archive.tests,
+  columns=page.extra.archive.columns,
+) }}
+{% endif %}
 {% endblock %}
