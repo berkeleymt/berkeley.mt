@@ -26,11 +26,8 @@ can participate.
 
 ## Registration, Waivers, and Pricing
 
-{% alert(title="Registration Schedule Coming Soon", status="info") %}
-The registration schedule and pricing will be announced in the coming weeks.
-Subscribe to our [newsletter](/#don-t-miss-out-on-contest-news) and follow us on
-social media to be notified as soon as registration details are posted.
-{% end %}
+You may register for BMT 2026 Online on ContestDojo starting Monday, September
+14 at 9:00 AM and until November 27, 2026 at 11:59 PM US Pacific Time.
 
 Registration is performed on ContestDojo. Coaches may register up to 6 people
 per team, and ContestDojo will allow them to assign and modify teams up until
