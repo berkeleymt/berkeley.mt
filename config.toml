@@ -21,13 +21,10 @@ highlight_code = false
 # whole [extra.advisory] table to remove the banner.
 # `status` is one of "info", "warning", or "error"; `body` is markdown.
 # `timestamp` is free text shown in the top right; include the timezone.
-# `expires` is an RFC 3339 datetime (with offset); the banner is dropped at
-# build time once past, and hidden client-side for already-deployed pages.
 [extra.advisory]
 status = "warning"
 title = "ContestDojo registration issues"
 timestamp = "Updated September 14, 2026, 3:15 PM PT"
-expires = "2026-09-15T19:00:00-07:00"
 body = """
 Some participants have been experiencing problems with registering for our
 BMT 2026 and BMT 2026 Online events on the ContestDojo site. We have

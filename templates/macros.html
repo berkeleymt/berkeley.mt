@@ -67,9 +67,6 @@
 {% endmacro index_math%}
 
 {% macro advisory(advisory) %}
-{% if advisory.expires and advisory.expires | date(format="%s") | int <= now(timestamp=true) %}
-{# Advisory has expired as of build time; render nothing. #}
-{% else %}
 {% if advisory.status == "info" %}
 {% set class = "bg-blue-50 border-blue-200" %}
 {% set icon_class = "bi bi-info-circle-fill" %}
@@ -81,8 +78,7 @@
 {% set icon_class = "bi bi-exclamation-triangle-fill" %}
 {% endif %}
 
-<div class="{{ class }} border p-4 rounded-xl flex flex-col gap-2"
-  {% if advisory.expires %}data-expires="{{ advisory.expires }}"{% endif %}>
+<div class="{{ class }} border p-4 rounded-xl flex flex-col gap-2">
   <div class="not-prose uppercase text-xs text-gray-500 flex gap-2 items-center">
     <i class="{{ icon_class }}"></i>
     <span>{{ advisory.title }}</span>
@@ -94,15 +90,6 @@
     {{ advisory.body | markdown | safe }}
   </div>
 </div>
-
-{% if advisory.expires %}
-<script>
-  document.querySelectorAll("[data-expires]").forEach((el) => {
-    if (new Date(el.dataset.expires) <= new Date()) el.remove();
-  });
-</script>
-{% endif %}
-{% endif %}
 {% endmacro advisory %}
 
 {% macro newline_break(str) %}
