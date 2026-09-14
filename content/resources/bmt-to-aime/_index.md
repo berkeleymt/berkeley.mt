@@ -1,7 +1,10 @@
 +++
 title = "BMT to AIME"
 page_template = "resources/page.html"
-sort_by = "date"
+sort_by = "none"
+
+[extra]
+sort_by_year = true
 +++
 
 Prepare for the AIME with curated mock exams featuring challenging problems from past Berkeley Math Tournaments! Each BMT to AIME mock test consists of 15 AIME-format questions carefully selected from our archives to match the difficulty and style of the actual AIME.
