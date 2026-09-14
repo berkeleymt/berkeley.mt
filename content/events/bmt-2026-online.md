@@ -62,7 +62,7 @@ team of at least 4 due to our scoring guidelines. For students who do not have a
 full team, we have organized a Teammate Finder spreadsheet. Follow all
 outlined steps in the spreadsheet.
 
-{% button_link(href="https://docs.google.com/spreadsheets/d/1rpyJOrt8MdMkwfnbtzEu10dr_zongtOaKSDS8POQfnQ/") %}
+{% button_link(href="https://docs.google.com/spreadsheets/d/1-fJnLVGsJFmQS2oQmKKSiBh-JWlWGhk4LHVkZa0710Y/edit?usp=sharing") %}
 BMT 2026 Teammate Finder
 {% end %}
 
