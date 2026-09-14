@@ -59,8 +59,12 @@ late registration.
 
 Students may register as a team of 1. However, it is beneficial to compete on a
 team of at least 4 due to our scoring guidelines. For students who do not have a
-full team, we will organize a Teammate Finder spreadsheet, which will be linked
-here when registration opens.
+full team, we have organized a Teammate Finder spreadsheet. Follow all
+outlined steps in the spreadsheet.
+
+{% button_link(href="https://docs.google.com/spreadsheets/d/1rpyJOrt8MdMkwfnbtzEu10dr_zongtOaKSDS8POQfnQ/") %}
+BMT 2026 Teammate Finder
+{% end %}
 
 ## Online Tournament Logistics
 
