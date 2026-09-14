@@ -79,10 +79,13 @@
 {% endif %}
 
 <div class="{{ class }} border p-4 rounded-xl flex flex-col gap-2">
-  <p class="not-prose uppercase text-xs text-gray-500 flex gap-2 items-center">
+  <div class="not-prose uppercase text-xs text-gray-500 flex gap-2 items-center">
     <i class="{{ icon_class }}"></i>
     <span>{{ advisory.title }}</span>
-  </p>
+    {% if advisory.timestamp %}
+    <span class="ml-auto text-right normal-case">{{ advisory.timestamp }}</span>
+    {% endif %}
+  </div>
   <div class="prose text-base font-medium">
     {{ advisory.body | markdown | safe }}
   </div>
