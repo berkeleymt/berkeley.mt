@@ -2,6 +2,14 @@
 title = "Registration is open for BMT 2026 and BMT 2026 Online!"
 +++
 
+{% alert(title="ContestDojo registration issues", status="warning") %}
+Some participants have been experiencing problems with registering for our
+event on the ContestDojo site. We are aware of the issue, and are currently
+trying to solve it.
+
+Next expected update: September 14, 2026 at 7:00 PM PT.
+{% end %}
+
 We're excited to announce that registration for the 2026 Berkeley Math
 Tournament is now open! The next iteration of our high school tournament will
 be held on UC Berkeley campus on November 14, 2026.

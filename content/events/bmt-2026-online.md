@@ -4,6 +4,14 @@ date = 2026-12-05
 aliases = ["/bmt-2026-online"]
 +++
 
+{% alert(title="ContestDojo registration issues", status="warning") %}
+Some participants have been experiencing problems with registering for our
+event on the ContestDojo site. We are aware of the issue, and are currently
+trying to solve it.
+
+Next expected update: September 14, 2026 at 7:00 PM PT.
+{% end %}
+
 The online, synchronous version of our flagship high school tournament! For
 those who are unable to travel long-distance to California, or aren't able to
 register for BMT 2026 due to capacity limitations, we're offering an online
