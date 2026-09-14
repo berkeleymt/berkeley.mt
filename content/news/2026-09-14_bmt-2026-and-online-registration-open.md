@@ -49,3 +49,8 @@ Students without a full team may use the
 To get familiar with the style and difficulty of the tournament, check out past
 problems in [our archive](/archives/). Questions may be directed to
 <team@berkeley.mt>.
+
+## Frequently Asked Questions
+
+See our [FAQ page](/faqs/) for answers to common questions about registration,
+eligibility, and more.
