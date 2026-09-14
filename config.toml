@@ -16,3 +16,19 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
+
+# Site-wide advisory banner, shown on every page. Comment out or delete the
+# whole [extra.advisory] table to remove the banner.
+# `status` is one of "info", "warning", or "error"; `body` is markdown.
+# `timestamp` is free text shown in the top right; include the timezone.
+[extra.advisory]
+status = "warning"
+title = "ContestDojo registration issues"
+timestamp = "Updated September 14, 2026, 3:15 PM PT"
+body = """
+Some participants have been experiencing problems with registering for our
+BMT 2026 and BMT 2026 Online events on the ContestDojo site. We are trying to
+identify the issue.
+
+Next expected update: September 14, 2026 at 7:00 PM PT.
+"""
