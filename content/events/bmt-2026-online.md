@@ -34,6 +34,8 @@ per team, and ContestDojo will allow them to assign and modify teams up until
 tournament day. In addition, for BMT Online, students may also register and form
 teams with other students without a coach.
 
+The fee for the online tournament is **$8 per student**.
+
 **All contestants are required to have their parent/guardian sign UC Berkeley’s
 consent waivers through this portal. Contestants will NOT be allowed to take the
 contest without having a signed liability waiver.**
