@@ -46,11 +46,12 @@ below for event details and the registration portal.
 Students without a full team may use the
 [BMT 2026 Online Teammate Finder](https://docs.google.com/spreadsheets/d/1-fJnLVGsJFmQS2oQmKKSiBh-JWlWGhk4LHVkZa0710Y/edit?rm-minimal).
 
-To get familiar with the style and difficulty of the tournament, check out past
-problems in [our archive](/archives/). Questions may be directed to
-<team@berkeley.mt>.
 
 ## Frequently Asked Questions
 
 See our [FAQ page](/faqs/) for answers to common questions about registration,
 eligibility, and more.
+
+To get familiar with the style and difficulty of the tournament, check out past
+problems in [our archive](/archives/). Questions may be directed to
+<team@berkeley.mt>.
