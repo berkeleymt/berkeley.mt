@@ -30,6 +30,10 @@
 {# = PAGE LISTING = #}
 {# ================ #}
 
+{% if section.extra.sort_by_year %}
+{{ macros::section_listing_by_year(section=section) }}
+{% else %}
 {{ macros::section_listing(section=section) }}
+{% endif %}
 
 {% endblock %}
