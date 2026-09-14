@@ -39,6 +39,25 @@
 {% endmacro section_listing %}
 
 
+{% macro section_listing_by_year(section) %}
+{% if section.pages %}
+<div class="grid grid-cols-[max-content_1fr] gap-x-8 gap-y-4">
+  {% for page in section.pages | sort(attribute="extra.year") | reverse %}
+  <p class="leading-7">
+    <span class="text-gray-500 text-base">{{ page.extra.year }}</span>
+  </p>
+
+  <a href="{{ page.permalink | safe }}" class="transition-all rounded origin-left hover:bg-gray-200 -m-1 p-1 hover:scale-[101%]">
+    <p class="text-xl">
+      {{ macros::newline_break(str=page.title) }}
+    </p>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
+{% endmacro section_listing_by_year %}
+
+
 {% macro nav_link(path, label) %}
 {% set href = get_url(path=path) %}
 {% set active = current_url | default(value='') == href %}
