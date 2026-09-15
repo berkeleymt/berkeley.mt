@@ -24,10 +24,11 @@ highlight_code = false
 [extra.advisory]
 status = "info"
 title = "ContestDojo registration issue resolved"
-timestamp = "Updated September 14, 2026, 10:10 PM PT"
+timestamp = "Updated September 15, 2026, 3:00 PM PT"
 body = """
 The issue has been resolved on ContestDojo. Please retry on ContestDojo and
 send us a message at <team@berkeley.mt> if you are still running into issues.
+Thank you for being patient with us throughout this process.
 
-Next expected update: September 15, 2026 at 12:00 PM PT.
+No further updates expected.
 """
