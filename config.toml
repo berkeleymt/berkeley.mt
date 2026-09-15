@@ -22,12 +22,12 @@ highlight_code = false
 # `status` is one of "info", "warning", or "error"; `body` is markdown.
 # `timestamp` is free text shown in the top right; include the timezone.
 [extra.advisory]
-status = "warning"
-title = "ContestDojo registration issues"
-timestamp = "Updated September 14, 2026, 10:00 PM PT"
+status = "info"
+title = "ContestDojo registration issue resolved"
+timestamp = "Updated September 14, 2026, 10:10 PM PT"
 body = """
-We are actively troubleshooting the issue on ContestDojo. We will notify you
-when the issue is resolved. All students who want to register will be able to.
+The issue has been resolved on ContestDojo. Please retry on ContestDojo and
+send us a message at <team@berkeley.mt> if you are still running into issues.
 
-Next expected update: September 15, 2026 at 9:00 AM PT.
+Next expected update: September 15, 2026 at 12:00 PM PT.
 """
