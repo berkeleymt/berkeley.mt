@@ -24,11 +24,11 @@ highlight_code = false
 [extra.advisory]
 status = "warning"
 title = "ContestDojo registration issues"
-timestamp = "Updated September 14, 2026, 7:00 PM PT"
+timestamp = "Updated September 14, 2026, 10:00 PM PT"
 body = """
-Some participants have been experiencing problems with registering for our
-BMT 2026 and BMT 2026 Online events on the ContestDojo site. We have identified
-the issue, and are working urgently to resolve it.
+We are actively troubleshooting the issue on ContestDojo. We will be releasing
+an update later tomorrow regarding adjustments to our Phase 1/Phase 2
+registration. All students who want to register will be able to.
 
-Next expected update: September 14, 2026 at 10:00 PM PT.
+Next expected update: September 15, 2026 at 9:00 AM PT.
 """
