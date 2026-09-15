@@ -26,9 +26,8 @@ status = "warning"
 title = "ContestDojo registration issues"
 timestamp = "Updated September 14, 2026, 10:00 PM PT"
 body = """
-We are actively troubleshooting the issue on ContestDojo. We will be releasing
-an update later tomorrow regarding adjustments to our Phase 1/Phase 2
-registration. All students who want to register will be able to.
+We are actively troubleshooting the issue on ContestDojo. We will notify you
+when the issue is resolved. All students who want to register will be able to.
 
 Next expected update: September 15, 2026 at 9:00 AM PT.
 """
