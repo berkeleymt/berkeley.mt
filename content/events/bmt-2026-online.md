@@ -44,7 +44,7 @@ Any questions about the ContestDojo portal should be directed to us at
 <team@berkeley.mt>.
 
 \*For students facing financial hardship, please contact
-<finance@berkeley.mt> for a fee waiver. We will not honor refunds during
+<team@berkeley.mt> for a fee waiver. We will not honor refunds during
 late registration.
 
 ## Student Eligibility
@@ -65,7 +65,7 @@ full team, we have organized a Teammate Finder spreadsheet. Follow all
 outlined steps in the spreadsheet.
 
 {% button_link(href="https://docs.google.com/spreadsheets/d/1-fJnLVGsJFmQS2oQmKKSiBh-JWlWGhk4LHVkZa0710Y/edit?rm-minimal") %}
-BMT 2026 Teammate Finder
+BMT 2026 Online Teammate Finder
 {% end %}
 
 ## Online Tournament Logistics
