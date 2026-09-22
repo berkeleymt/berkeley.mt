@@ -1,6 +1,6 @@
 +++
 title = "Approaching and Preparing for Math Competitions"
-aliases = ["/blog/preparing-for-math-competitions"]
+aliases = ["/resources/blog/preparing-for-math-competitions"]
 authors = ["Danielle Murphy"]
 
 [taxonomies]

@@ -1,6 +1,6 @@
 +++
 title = "BmMT Puzzle Round Guidance"
-aliases = ["/blog/bmmt-puzzle-round-guidance"]
+aliases = ["/resources/blog/bmmt-puzzle-round-guidance"]
 authors = ["BmMT Team"]
 
 [taxonomies]

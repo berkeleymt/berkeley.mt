@@ -1,6 +1,6 @@
 +++
 title = "How to get the most out of BmMT"
-aliases = ["/blog/bmmt-tournament-day-tips"]
+aliases = ["/resources/blog/bmmt-tournament-day-tips"]
 authors = ["BMT Team"]
 
 [taxonomies]
