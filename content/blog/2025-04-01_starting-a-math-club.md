@@ -1,6 +1,6 @@
 +++
 title = "Starting a Math Club"
-aliases = ["/blog/starting-a-math-club"]
+aliases = ["/resources/blog/starting-a-math-club"]
 authors = ["Nathan Alejandria, Claire Foster, Carlyana Kwong"]
 
 [taxonomies] 

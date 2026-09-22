@@ -43,10 +43,8 @@ jobs:
           name: result
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 44d0498f26e72b3e24b3ba9d152ca879
-          projectName: berkeley-mt
-          branch: pr-${{ github.event.number }}
-          directory: .
+          command: pages deploy . --project-name=berkeley-mt --branch=pr-${{ github.event.number }}

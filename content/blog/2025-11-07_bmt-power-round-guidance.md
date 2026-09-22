@@ -1,6 +1,6 @@
 +++
 title = "BMT Power Round Guidance"
-aliases = ["/blog/bmt-power-round-guidance"]
+aliases = ["/resources/blog/bmt-power-round-guidance"]
 authors = ["Kiran Parthasarathy, Theodore Danial, Andrew Huang"]
 
 [taxonomies]
