@@ -23,12 +23,12 @@ highlight_code = false
 # `timestamp` is free text shown in the top right; include the timezone.
 [extra.advisory]
 status = "info"
-title = "ContestDojo registration issue resolved"
-timestamp = "Updated September 15, 2026, 3:00 PM PT"
+title = "Hotel block released"
+timestamp = "September 22, 2026"
 body = """
-The issue has been resolved on ContestDojo. Please retry on ContestDojo and
-send us a message at <team@berkeley.mt> if you are still running into issues.
-Thank you for being patient with us throughout this process.
+We have just released a hotel room block with discounted rates at the 
+Hotel Shattuck Plaza around contest weekend for teams looking for accomodations.
+**The cutoff date for booking is Tuesday, October 27, 2026.**
 
-No further updates expected.
+Please [see here](https://berkeley.mt/events/bmt-2026/#hotels) for details.
 """
