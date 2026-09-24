@@ -60,7 +60,7 @@ late registration.
 ## Teammate Finder
 
 Students may register as a team of 1. However, it is beneficial to compete on a
-team of at least 4 due to our [scoring guidelines](../#round-scoring-summary). For students who do not have a
+team of at least 4 due to our [scoring guidelines](./#round-scoring-summary). For students who do not have a
 full team, we have organized a Teammate Finder spreadsheet. Follow all
 outlined steps in the spreadsheet.
 
