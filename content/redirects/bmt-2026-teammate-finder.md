@@ -7,5 +7,5 @@ template = "redirect.html"
 aliases = ["/bmt-2026-teammate-finder"]
 
 # The page to redirect to
-extra.url = "https://docs.google.com/spreadsheets/d/1rpyJOrt8MdMkwfnbtzEu10dr_zongtOaKSDS8POQfnQ/"
+extra.url = "https://docs.google.com/spreadsheets/d/1HtisvYZ83Ksi8fm4rwvUncw2_3puw_jblvJYBfRDgsQ/edit?rm-minimal"
 +++
