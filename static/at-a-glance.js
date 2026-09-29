@@ -58,7 +58,6 @@
     else st = stat(esc(ev.event_title), "Has ended. Thanks for competing!") +
       (ev.results ? `<a class="btn reg" href="${esc(ev.results)}">Results Available</a>` : stat("Results", "Results Not Available"));
 
-    const todayTxt = nowTxt ? `Today · ${nowTxt}` : "Today";
     const up = group(deadlines.filter(k => now < endOf(k.on)));
     const pageUrl = new URL(mode === "page" ? location.pathname : el.dataset.href, location.origin).href;
     const state = now < opens ? `Registration opens ${pacTime(opens)}.`
@@ -71,8 +70,8 @@
     el.dataset.shareUrl = pageUrl;
     const key = `${slot}|${st}|${el.clientWidth}`;
     if (!force && el.dataset.key === key) {
-      const nw = el.querySelector(".now");
-      if (nw) { nw.textContent = todayTxt; fit(el); }
+      const nw = el.querySelector(".now:not(.tag)");
+      if (nw) { nw.textContent = nowTxt; fit(el); }
       return;
     }
     el.dataset.key = key;
@@ -89,7 +88,7 @@
     h += `<div class="band closed" style="left:${lastEnd}%;width:${tl - lastEnd}%"></div><div class="div" style="left:${lastEnd}%"></div>`;
     for (let d = a; d < b - 1; d++) if (new Date(d * MS_DAY).getUTCDay() === 6)
       h += `<div class="wk" style="left:${x(d)}%;width:${2 / span * 100}%"></div>`;
-    h += `<div class="nowrow">${inRange ? `<span class="now" data-l1="${x(slot + 1)}%" data-l2="${x(slot)}%">${todayTxt}</span>` : ""}</div><div class="labs">`;
+    h += `<div class="nowrow">${inRange ? `${nowTxt ? `<span class="now" data-l1="${x(slot + 1)}%" data-l2="${x(slot)}%">${nowTxt}</span>` : ""}<span class="now tag" data-l1="${x(slot + 1)}%" data-l2="${x(slot)}%">Today</span>` : ""}</div><div class="labs">`;
     phases.forEach(p => {
       const l = x(dayNum(p.start)), r = x(dayNum(p.end) + 1);
       h += `<span class="lab${p === cur ? " cur" : ""}" style="left:${(l + r) / 2}%" data-short="${esc(p.short || "")}">${esc(p.short || p.name)}</span>`;
@@ -154,18 +153,33 @@
       const pv = labs.slice(0, i).filter(q => q.style.display !== "none").pop();
       if ((pv && clash(pv, s)) || box(s).right > t.right + 1 || box(s).left < t.left - 1) s.style.display = "none";
     });
-    const nw = el.querySelector(".now");
-    if (nw) {
-      const full = nw.textContent, variants = [full, full.replace(/ in .*$/, ""), full.replace(/ · .*$/, "")];
-      const fits = () => { const r = box(nw); return r.left >= t.left - 1 && r.right <= t.right + 1; };
-      outer: for (const v of variants) {
-        nw.textContent = v;
-        for (const f of [false, true]) {
-          nw.classList.toggle("flip", f);
-          nw.style.left = f ? nw.dataset.l2 : nw.dataset.l1;
-          if (fits()) break outer;
+    // "Today" sits on the opposite side of the band from the countdown.
+    const nw = el.querySelector(".now:not(.tag)"), tg = el.querySelector(".now.tag");
+    if (tg) {
+      const place = (s, right) => { s.classList.toggle("flip", !right); s.style.left = right ? s.dataset.l1 : s.dataset.l2; };
+      const fits = s => { const r = box(s); return r.left >= t.left - 1 && r.right <= t.right + 1; };
+      let ok = false;
+      if (nw) {
+        nw.style.display = "";
+        const full = nw.textContent.replace(/^Today · /, "");
+        tg.style.display = "";
+        outer: for (const v of [full, full.replace(/ in .*$/, "")]) {
+          nw.textContent = v;
+          for (const right of [true, false]) {
+            place(nw, right); place(tg, !right);
+            if (fits(nw) && fits(tg)) { ok = true; break outer; }
+          }
         }
+        if (!ok) outer2: for (const v of [full, full.replace(/ in .*$/, "")]) {
+          nw.textContent = `Today · ${v}`;
+          for (const right of [true, false]) {
+            place(nw, right);
+            if (fits(nw)) { ok = true; tg.style.display = "none"; break outer2; }
+          }
+        }
+        if (!ok) { nw.textContent = full; nw.style.display = "none"; }
       }
+      if (!ok) for (const right of [false, true]) { place(tg, right); if (fits(tg)) break; }
     }
     const tdy = el.querySelector(".today");
     if (tdy) {
@@ -190,7 +204,7 @@
   const tipFor = dia => dia.closest(".tl").querySelector(".tip");
   const showTip = (dia, pin) => {
     const tip = tipFor(dia), tl = dia.closest(".tl");
-    tip.innerHTML = `<b>${esc(dia.dataset.day)}</b><ul>${JSON.parse(dia.dataset.items).map(i => `<li>${esc(i)}</li>`).join("")}</ul>`;
+    tip.innerHTML = `<button type="button" class="x" aria-label="Close">×</button><b>${esc(dia.dataset.day)}</b><ul>${JSON.parse(dia.dataset.items).map(i => `<li>${esc(i)}</li>`).join("")}</ul>`;
     tip.hidden = false;
     tip.dataset.pin = pin ? "1" : "";
     const c = dia.offsetLeft, w = tip.offsetWidth;
@@ -205,6 +219,7 @@
     tip.closest(".tl").querySelectorAll(".dia.on").forEach(d => d.classList.remove("on"));
   });
   document.addEventListener("click", e => {
+    if (e.target.closest(".glance .tip")) { if (e.target.closest(".x")) hideTips(true); return; }
     const dia = e.target.closest(".glance .dia");
     if (dia && !(dia.classList.contains("on") && tipFor(dia).dataset.pin)) { hideTips(true); showTip(dia, true); }
     else hideTips(true);
@@ -219,9 +234,9 @@
   document.addEventListener("mouseover", e => {
     const dia = e.target.closest(".glance .dia");
     if (dia) { if (!tipFor(dia).dataset.pin) showTip(dia, false); }
-    else if (e.target.closest(".glance .tl")) hideTips(false);
+    else if (e.target.closest(".glance .tl") && !e.target.closest(".tip")) hideTips(false);
   });
-  document.addEventListener("mouseout", e => { if (e.target.closest(".glance .dia") && !e.relatedTarget?.closest?.(".glance .dia")) hideTips(false); });
+  document.addEventListener("mouseout", e => { if (e.target.closest(".glance .dia") && !e.relatedTarget?.closest?.(".glance .dia, .glance .tip")) hideTips(false); });
   window.addEventListener("resize", () => draw(false));
   if (!fixed) setInterval(() => draw(false), 60000);
 })();
