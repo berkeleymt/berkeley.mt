@@ -10,9 +10,9 @@
 <div class="flex flex-col gap-4">
   <div>
     <p class="text-lg">{{ glance.date_text }}</p>
-    <p class="text-gray-600">
+    <p class="prose text-gray-600">
       This page is a quick summary of key dates and updates for {{ glance.event_title }}.
-      For full details, see the <a href="{{ glance.event_page }}" class="text-blue-500 font-medium">{{ glance.event_title }} event page</a>.
+      For full details, see the <a href="{{ glance.event_page }}">{{ glance.event_title }} event page</a>.
     </p>
   </div>
   <div class="glance" data-mode="page"><script type="application/json">{{ glance | json_encode | safe }}</script></div>

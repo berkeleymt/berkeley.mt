@@ -123,6 +123,11 @@
   // timeline, and cut the Today band where it passes a phase label.
   function fit(el) {
     const tlEl = el.querySelector(".tl"), t = tlEl.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    el.querySelectorAll(".div, .tline").forEach(d => {
+      d.dataset.p ||= d.style.left;
+      d.style.left = Math.round(parseFloat(d.dataset.p) / 100 * tlEl.clientWidth * dpr) / dpr + "px";
+    });
     const box = s => s.getBoundingClientRect();
     const labs = [...el.querySelectorAll(".labs .lab")];
     const clash = (p, q) => box(p).right > box(q).left - 4;

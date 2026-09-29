@@ -18,7 +18,7 @@
 .glance .band{position:absolute;top:42px;bottom:22px;background:#fff}
 .glance .band.alt{background:#f8fbff}
 .glance .band.closed{background:repeating-linear-gradient(135deg,#e2e8f0 0 3px,#f8fafc 3px 7px)}
-.glance .div{position:absolute;top:22px;bottom:22px;width:1px;background:#4b5563;transform:translateX(-.5px);z-index:3}
+.glance .div{position:absolute;top:22px;bottom:22px;width:1px;background:#4b5563;z-index:3}
 .glance .wk{position:absolute;top:42px;bottom:22px;background:rgba(15,23,42,.05)}
 .glance .nowrow{position:relative;height:20px}
 .glance .now{position:absolute;bottom:3px;font-size:12px;color:var(--red);font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums;padding:0 5px}
