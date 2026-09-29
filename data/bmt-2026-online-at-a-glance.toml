@@ -13,6 +13,8 @@ event_starts = ""
 event_label = "Live Event"
 # Set to the archive page once results are posted, e.g. "/archives/bmt-2026/".
 results = ""
+# Calendar feed built from this file (templates/bmt-2026-online.ics).
+calendar = "/bmt-2026-online.ics"
 
 [[phases]]
 name = "Registration"

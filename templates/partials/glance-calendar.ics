@@ -1,0 +1,23 @@
+{%- set site = "https://berkeley.mt" -%}
+{%- macro txt(s) -%}{{ s | replace(from="\\", to="\\\\") | replace(from=";", to="\;") | replace(from=",", to="\,") }}{%- endmacro -%}
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Berkeley Math Tournament//At a Glance//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:{{ glance.event_title }}
+X-WR-TIMEZONE:America/Los_Angeles
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+{%- for on, items in glance.deadlines | group_by(attribute="on") %}
+BEGIN:VEVENT
+UID:{{ glance.calendar | trim_start_matches(pat="/") | replace(from=".ics", to="") }}-{{ on }}@berkeley.mt
+DTSTAMP:{{ now(utc=true) | date(format="%Y%m%dT%H%M%SZ") }}
+DTSTART;VALUE=DATE:{{ on | replace(from="-", to="") }}
+SUMMARY:{{ glance.event_title }}: {% for d in items %}{{ self::txt(s=d.label) }}{% if not loop.last %}\; {% endif %}{% endfor %}
+DESCRIPTION:{% for d in items %}{{ self::txt(s=d.label) }}{% if on != glance.event_day %} (11:59 PM Pacific){% endif %}\n{% endfor %}\nDetails: {{ site }}{{ glance.event_page }}
+URL:{{ site }}{{ glance.event_page }}
+TRANSP:TRANSPARENT
+END:VEVENT
+{%- endfor %}
+END:VCALENDAR

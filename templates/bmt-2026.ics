@@ -1,0 +1,2 @@
+{%- set glance = load_data(path="data/bmt-2026-at-a-glance.toml") -%}
+{%- include "partials/glance-calendar.ics" -%}

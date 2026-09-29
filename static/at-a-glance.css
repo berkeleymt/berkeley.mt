@@ -30,7 +30,18 @@
 .glance .bar{position:relative;height:6px;background:#dbeafe;margin-top:8px}
 .glance .fill{position:absolute;top:0;bottom:0;left:0;background:var(--accent)}
 .glance .ticks{position:relative;height:8px}
-.glance .dia{position:absolute;top:-7px;width:9px;height:9px;background:#fff;border:2px solid var(--ink);transform:translateX(-50%) rotate(45deg);z-index:3;cursor:default}
+.glance .dia{position:absolute;top:-7px;width:9px;height:9px;padding:0;margin:0;appearance:none;background:#fff;border:2px solid var(--ink);border-radius:0;transform:translateX(-50%) rotate(45deg);z-index:5;cursor:pointer}
+.glance .dia:before{content:"";position:absolute;inset:-8px}
+.glance .dia.on{background:var(--ink)}
+.glance .dia.past.on{background:#b8b8b8}
+.glance .tip{position:absolute;top:calc(100% - 14px);z-index:6;background:#fff;border:1px solid var(--bd);box-shadow:0 4px 12px rgba(0,0,0,.1);padding:6px 10px;font-size:12.5px;max-width:260px;white-space:normal;line-height:1.35}
+.glance .tip b{color:var(--accent-ink)}
+.glance .tip ul{margin:2px 0 0;padding-left:16px;list-style:disc}
+.glance .share{margin-left:auto;align-self:center;font-size:13px;font-weight:600;color:var(--accent-ink);border:1px solid var(--bd);background:#fff;padding:4px 12px;cursor:pointer}
+.glance .share:hover{border-color:var(--accent);transform:translateY(-1px)}
+.glance .cal{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-top:12px;font-size:13px;color:var(--soft)}
+.glance .cal a{color:var(--accent-ink);font-weight:600;border:1px solid var(--bd);background:#fff;padding:3px 10px}
+.glance .cal a:hover{border-color:var(--accent);transform:translateY(-1px)}
 .glance .dia.past{border-color:#b8b8b8}
 .glance .tline{position:absolute;top:0;bottom:22px;width:2px;background:var(--accent);transform:translateX(-1px);z-index:3}
 .glance .today{--tc:rgba(220,38,38,.22);position:absolute;top:2px;bottom:22px;min-width:2px;background:var(--tc);z-index:2}
