@@ -9,7 +9,10 @@
 
   {% if page.date %}
   <h2 class="text-xl">
-    {% if page.authors %}
+    {% set author_count = page.authors | default(value=[]) | length %}
+    {% if author_count > 3 %}
+    <a href="#contributors" class="hover:underline">{{ page.authors | slice(end=2) | join(sep=", ") }} + {{ author_count - 2 }} more</a> •
+    {% elif page.authors %}
     {{ page.authors | join(sep=", ") }} •
     {% endif %}
     {{ page.date | date(format="%A, %B %-d, %Y, %-I:%M %p") | trim_end_matches(pat=", 12:00 AM") }}
@@ -25,6 +28,15 @@
   {% endif %}
 </div>
 
+{% if page.extra.cover_image %}
+<figure class="not-prose flex flex-col gap-2">
+  <img src="{{ page.extra.cover_image }}" alt="{{ page.extra.cover_alt | default(value='') }}" class="w-full aspect-[2/1] object-cover rounded-xl">
+  {% if page.extra.cover_caption %}
+  <figcaption class="text-sm text-gray-500">{{ page.extra.cover_caption }}</figcaption>
+  {% endif %}
+</figure>
+{% endif %}
+
 {% block before_page_content %}{% endblock %}
 
 {% if page.content %}
@@ -34,6 +46,25 @@
 {% endif %}
 
 {% block after_page_content %}{% endblock %}
+
+{% if page.authors | default(value=[]) | length > 1 %}
+{% set avatar_colors = ["bg-blue-100 text-blue-800", "bg-amber-100 text-amber-800", "bg-emerald-100 text-emerald-800", "bg-rose-100 text-rose-800", "bg-violet-100 text-violet-800", "bg-cyan-100 text-cyan-800"] %}
+<section id="contributors" class="mt-12 border-t border-gray-200 pt-6 flex flex-col gap-4">
+  <p class="uppercase text-xs text-gray-500 tracking-wide">Contributors</p>
+  <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+    {% for name in page.authors %}
+    {% set parts = name | split(pat=" ") %}
+    {% set color_index = loop.index0 % 6 %}
+    <li class="flex items-center gap-3">
+      <span class="{{ avatar_colors[color_index] }} w-10 h-10 shrink-0 rounded-full flex items-center justify-center text-sm font-semibold">
+        {{ parts | first | truncate(length=1, end="") }}{% if parts | length > 1 %}{{ parts | last | truncate(length=1, end="") }}{% endif %}
+      </span>
+      <span class="font-medium">{{ name }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
 
 {% if page.toc %}
 <div class="hidden xl:block absolute -right-8 translate-x-full h-full max-w-48">

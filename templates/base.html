@@ -39,6 +39,10 @@
   <meta name="og:description" content="{{ description }}" />
   {% endif %}
 
+  {% if page.extra.cover_image %}
+  <meta property="og:image" content="{{ get_url(path=page.extra.cover_image) }}" />
+  {% endif %}
+
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Berkeley Math Tournament" />
 
