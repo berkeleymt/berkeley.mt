@@ -7,11 +7,6 @@ compile_sass = false
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-# Feeds are used only for the At a Glance calendar files; each name is
-# rendered from templates/<name>.
-generate_feeds = true
-feed_filenames = ["bmt-2026.ics", "bmt-2026-online.ics"]
-
 taxonomies = [{ name = "tags", render = false }]
 
 [markdown]

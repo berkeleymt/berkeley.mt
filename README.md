@@ -85,8 +85,11 @@ The countdown, current phase, price, and the upcoming/past deadline lists are
 computed in the visitor's browser, so they stay current without rebuilding the
 site. The deadlines are also published as subscribable calendar feeds
 (`/bmt-2026.ics`, `/bmt-2026-online.ics`), rendered at build time from the same
-data files by `templates/<name>.ics` (listed in `feed_filenames` in
-`config.toml`); subscribers pick up edits after the next deploy.
+data files by `templates/glance-calendar.html` (pages in
+`content/events/*-calendar.md`; `default.nix` moves each
+`<name>.ics/index.html` to `<name>.ics`); subscribers pick up edits after
+the next deploy. A plain local `zola build` leaves them as `<name>.ics/index.html`;
+run the loop in `default.nix` (or `nix build`) to get the real files.
 Anything else is a manual edit to the data file (or through `/admin`):
 
 - **New announcement:** add a `[[news]]` entry. It appears on its `show_from`
