@@ -4,7 +4,7 @@ authors = [
   "Nathan Alejandria",
   "Carlyana Kwong",
   "Kiran Parthasarathy",
-  "Ben Chen",
+  "Benjamin Chen",
   "Ylann Bouis",
   "Forrest Chou",
   "Moor Xu",
@@ -45,7 +45,7 @@ A common suggestion in team-based rounds is that you should split up work betwee
 
 ### Other Power Round tips
 
-- While working through [previous Power Rounds](@/resources/power-round-archive.md) is the best way to prepare, another way to prepare for the Power Round is to **read more proofs**.
+- While working through [previous Power Rounds](@/resources/archive-power-round.md) is the best way to prepare, another way to prepare for the Power Round is to **read more proofs**.
 - You can do this by reading and internalizing formal math proofs in subjects you already know, as well as reviewing solutions from previous Power Rounds.
 - Following similar logic in your work can help with clarity in your answers and graders can potentially award more points.
 - We encourage you to research interesting topics by finding textbooks online or at your local library.

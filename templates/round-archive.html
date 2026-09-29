@@ -2,6 +2,33 @@
 
 {% block after_page_content %}
 {% set archives = get_section(path="archives/_index.md") %}
+{% set tournaments = page.extra.tournaments | default(value=["BMT", "BmMT"]) %}
+{% if page.extra.sections | length > 1 %}
+<p class="not-prose mt-4 text-sm flex flex-wrap gap-x-3 gap-y-1">
+  {% for section in page.extra.sections %}<a class="text-teal-600 hover:underline" href="#{{ section.label | slugify }}">{{ section.label }}</a>{% endfor %}
+</p>
+{% endif %}
+{% for section in page.extra.sections %}
+{% set_global first = -1 %}
+{% set_global last = -1 %}
+{% for archive in archives.pages %}
+{% set i = loop.index0 %}
+{% if archive.title | split(pat=" ") | first in tournaments %}
+{% set_global tests = archive.extra.archive.tests | default(value=[]) %}
+{% for group in archive.extra.archive.groups | default(value=[]) %}
+{% set_global tests = tests | concat(with=group.tests) %}
+{% endfor %}
+{% for test in tests %}
+{% if test.title in section.titles %}
+{% if first < 0 %}{% set_global first = i %}{% endif %}
+{% set_global last = i %}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% if page.extra.sections | length > 1 %}
+<h2 id="{{ section.label | slugify }}" class="text-xl font-semibold mt-10">{{ section.label }}</h2>
+{% endif %}
 <table class="prose table-fixed w-full mt-6">
   <thead>
     <th class="w-1/2">Tournament</th>
@@ -10,24 +37,40 @@
   </thead>
   <tbody>
     {% for archive in archives.pages %}
+    {% if loop.index0 >= first and loop.index0 <= last and archive.title | split(pat=" ") | first in tournaments %}
+    {% set name = archive.title | trim_end_matches(pat=" Archive") %}
     {% set_global tests = archive.extra.archive.tests | default(value=[]) %}
     {% for group in archive.extra.archive.groups | default(value=[]) %}
     {% set_global tests = tests | concat(with=group.tests) %}
     {% endfor %}
-    {% for test in tests | filter(attribute="title", value=page.extra.round) %}
+    {% set_global found = false %}
+    {% for test in tests %}
+    {% if test.title in section.titles %}
+    {% set_global found = true %}
     <tr>
-      <td><a href="{{ archive.permalink | safe }}">{{ archive.title | trim_end_matches(pat=" Archive") }}</a></td>
+      <td>
+        <a href="{{ archive.permalink | safe }}">{{ name }}</a>
+        {% if test.title != section.titles | first %}<span class="text-gray-500">· {{ test.title }}</span>{% endif %}
+      </td>
       {% for key in ["problems", "solutions"] %}
       <td>
         {% set href = test | get(key=key, default="") %}
-        {% if href %}
-        <a href="{{ archive.permalink | safe }}{{ href }}">{{ href | split(pat=".") | last | upper }}</a>
-        {% endif %}
+        {% if href %}<a href="{{ archive.permalink | safe }}{{ href }}">{{ href | split(pat=".") | last | upper }}</a>{% else %}-{% endif %}
       </td>
       {% endfor %}
     </tr>
+    {% endif %}
     {% endfor %}
+    {% if not found %}
+    <tr>
+      <td><a href="{{ archive.permalink | safe }}">{{ name }}</a></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    {% endif %}
+    {% endif %}
     {% endfor %}
   </tbody>
 </table>
+{% endfor %}
 {% endblock %}
