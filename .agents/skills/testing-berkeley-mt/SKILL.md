@@ -20,11 +20,7 @@ The site is a Zola static site (Tera templates) styled with the standalone Tailw
 ## Useful facts for testing
 
 - Redirects are Zola front-matter `aliases` — they render a small HTML page with a JS `window.location.replace`, so `curl` shows HTTP 200 with a redirect stub, not a 30x. Test redirects in a real browser or grep the stub's `target =` URL.
-- Nav bar (desktop + mobile hamburger) lives in `templates/base.html`; the mobile menu appears below the `md` breakpoint (768 CSS pixels). Use Chrome's responsive device toolbar for exact widths while keeping the browser maximized. At the boundary, check actual `innerWidth` and document `scrollWidth`/`clientWidth`; wrapped event labels are not necessarily overflow.
-- Blog is a standalone section at `/blog/` (`content/blog/`). The Resources page only lists BMT to AIME and BmMT worksheets, with seasonal ordering computed at build time via `now()` in `templates/resources/index.html` (Jan–Jun: worksheets first; Jul–Dec: BMT to AIME first).
-- Home page banner/notifications are in `templates/index.html` (recent news posts).
+- Nav bar (desktop + mobile hamburger) lives in `templates/base.html`; the mobile menu appears below the `md` breakpoint (resize window under ~768px wide, e.g. `wmctrl -r :ACTIVE: -e 0,100,50,500,700`).
+- The Resources page section ordering is seasonal, computed at build time via `now()` in `templates/resources/index.html` (Jan–Jun: BmMT worksheets first; Jul–Dec: Blog first).
+- Home page banner/notifications are in `templates/index.html` (latest news posts + latest blog post from `resources/blog/_index.md`).
 - Deploy previews for PRs exist at `pr-{N}.berkeley-mt.pages.dev` (per blueprint notes) if local serving is not desired.
-
-## Devin Secrets Needed
-
-None for public-site browser testing or local builds.
