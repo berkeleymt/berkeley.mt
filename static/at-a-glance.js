@@ -201,6 +201,7 @@
   const hideTips = all => document.querySelectorAll(".glance .tip:not([hidden])").forEach(tip => {
     if (!all && tip.dataset.pin) return;
     tip.hidden = true;
+    tip.dataset.pin = "";
     tip.closest(".tl").querySelectorAll(".dia.on").forEach(d => d.classList.remove("on"));
   });
   document.addEventListener("click", e => {
