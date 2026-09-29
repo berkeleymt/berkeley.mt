@@ -21,5 +21,82 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+  - name: "at-a-glance"
+    label: "At a Glance"
+    files:
+      - name: "bmt-2026"
+        label: "BMT 2026"
+        file: "data/bmt-2026-at-a-glance.toml"
+        format: "toml"
+        fields:
+          - { label: "Event title", name: "event_title", widget: "string" }
+          - { label: "Event page link", name: "event_page", widget: "string" }
+          - { label: "Date text", name: "date_text", widget: "string" }
+          - { label: "Registration opens (YYYY-MM-DDTHH:MM, Pacific)", name: "opens", widget: "string" }
+          - { label: "Event day (YYYY-MM-DD)", name: "event_day", widget: "string" }
+          - { label: "Event start time (HH:MM, Pacific; optional)", name: "event_starts", widget: "string", required: false }
+          - { label: "Event day label", name: "event_label", widget: "string" }
+          - { label: "Results link (leave empty until posted)", name: "results", widget: "string", required: false }
+          - label: "Phases"
+            name: "phases"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Short name", name: "short", widget: "string" }
+              - { label: "Start (YYYY-MM-DD)", name: "start", widget: "string" }
+              - { label: "End (YYYY-MM-DD)", name: "end", widget: "string" }
+              - { label: "Price", name: "price", widget: "string" }
+          - label: "Deadlines"
+            name: "deadlines"
+            widget: "list"
+            fields:
+              - { label: "Date (YYYY-MM-DD)", name: "on", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "What's new"
+            name: "news"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Blurb", name: "blurb", widget: "string" }
+              - { label: "Link", name: "href", widget: "string" }
+              - { label: "Show from (YYYY-MM-DD)", name: "show_from", widget: "string" }
+              - { label: "Hide after (YYYY-MM-DD; optional)", name: "hide_after", widget: "string", required: false }
+      - name: "bmt-2026-online"
+        label: "BMT 2026 Online"
+        file: "data/bmt-2026-online-at-a-glance.toml"
+        format: "toml"
+        fields:
+          - { label: "Event title", name: "event_title", widget: "string" }
+          - { label: "Event page link", name: "event_page", widget: "string" }
+          - { label: "Date text", name: "date_text", widget: "string" }
+          - { label: "Registration opens (YYYY-MM-DDTHH:MM, Pacific)", name: "opens", widget: "string" }
+          - { label: "Event day (YYYY-MM-DD)", name: "event_day", widget: "string" }
+          - { label: "Event start time (HH:MM, Pacific; optional)", name: "event_starts", widget: "string", required: false }
+          - { label: "Event day label", name: "event_label", widget: "string" }
+          - { label: "Results link (leave empty until posted)", name: "results", widget: "string", required: false }
+          - label: "Phases"
+            name: "phases"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Short name", name: "short", widget: "string" }
+              - { label: "Start (YYYY-MM-DD)", name: "start", widget: "string" }
+              - { label: "End (YYYY-MM-DD)", name: "end", widget: "string" }
+              - { label: "Price", name: "price", widget: "string" }
+          - label: "Deadlines"
+            name: "deadlines"
+            widget: "list"
+            fields:
+              - { label: "Date (YYYY-MM-DD)", name: "on", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "What's new"
+            name: "news"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Blurb", name: "blurb", widget: "string" }
+              - { label: "Link", name: "href", widget: "string" }
+              - { label: "Show from (YYYY-MM-DD)", name: "show_from", widget: "string" }
+              - { label: "Hide after (YYYY-MM-DD; optional)", name: "hide_after", widget: "string", required: false }
 
 media_folder: "static/assets/"

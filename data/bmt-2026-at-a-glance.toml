@@ -1,0 +1,100 @@
+# At a Glance data for bmt-2026: drives the preview on the event page and the full
+# At a Glance page. Dates are Pacific calendar dates (YYYY-MM-DD); a deadline
+# ends at 11:59 PM Pacific on its date. The countdown, current phase, and
+# deadline lists update on their own in the browser; edit this file to change
+# dates or add news, then merge to main to deploy.
+
+event_title = "BMT 2026"
+event_page = "/events/bmt-2026/"
+date_text = "Saturday, November 14, 2026 at UC Berkeley"
+opens = "2026-09-14T09:00"
+event_day = "2026-11-14"
+event_starts = "08:00"
+event_label = "Tournament Day"
+# Set to the archive page once results are posted, e.g. "/archives/bmt-2026/".
+results = ""
+
+[[phases]]
+name = "Phase 1"
+short = "Phase 1"
+start = "2026-09-14"
+end = "2026-09-27"
+price = "$15"
+
+[[phases]]
+name = "Phase 2"
+short = "Phase 2"
+start = "2026-09-28"
+end = "2026-10-18"
+price = "$15"
+
+[[phases]]
+name = "Late Registration"
+short = "Late Reg."
+start = "2026-10-19"
+end = "2026-11-01"
+price = "$25"
+
+[[deadlines]]
+on = "2026-10-18"
+label = "Phase 2 ends ($15 → $25)"
+
+[[deadlines]]
+on = "2026-10-18"
+label = "Shirt pre-order closes"
+
+[[deadlines]]
+on = "2026-10-27"
+label = "Hotel block cutoff"
+
+[[deadlines]]
+on = "2026-11-01"
+label = "Registration closes"
+
+[[deadlines]]
+on = "2026-11-01"
+label = "Lunch pre-order closes"
+
+[[deadlines]]
+on = "2026-11-01"
+label = "Team Link sign-up closes"
+
+[[deadlines]]
+on = "2026-11-14"
+label = "Tournament Day"
+
+# News rows show from `show_from` until the end of `hide_after` (optional).
+[[news]]
+title = "BMT Team Link"
+blurb = "Teams with fewer than 4 students can be combined on Tournament Day. Coaches sign up on ContestDojo."
+href = "/news/bmt-2026-team-link/"
+show_from = "2026-09-28"
+hide_after = "2026-11-01"
+
+[[news]]
+title = "Phase 2 is open"
+blurb = "No limit on seats per organization. $15 per student until Oct 18."
+href = "/events/bmt-2026/#registration-timeline"
+show_from = "2026-09-28"
+hide_after = "2026-10-18"
+
+[[news]]
+title = "Late registration is open"
+blurb = "$25 per student. Shirts not guaranteed."
+href = "/events/bmt-2026/#registration-timeline"
+show_from = "2026-10-19"
+hide_after = "2026-11-01"
+
+[[news]]
+title = "Discounted hotel block"
+blurb = "Rooms at Hotel Shattuck Plaza around contest weekend."
+href = "/events/bmt-2026/#hotels"
+show_from = "2026-09-22"
+hide_after = "2026-10-27"
+
+[[news]]
+title = "Teammate Finder"
+blurb = "Plan your team ahead of time with the Teammate Finder spreadsheet."
+href = "/events/bmt-2026/#teammate-finder"
+show_from = "2026-09-14"
+hide_after = "2026-11-01"

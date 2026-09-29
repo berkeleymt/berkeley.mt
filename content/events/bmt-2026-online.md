@@ -22,6 +22,8 @@ and below**, including advanced students at younger grade levels. You may regist
 **up to 6 students per team**. There are no restrictions on how many teams/students
 can participate.
 
+{{ at_a_glance(data="data/bmt-2026-online-at-a-glance.toml", href="/bmt-2026-online/at-a-glance/") }}
+
 {% button_link(href="https://contestdojo.com/") %} Registration Portal {% end %}
 
 ## Registration, Waivers, and Pricing

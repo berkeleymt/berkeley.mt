@@ -69,6 +69,32 @@ If you're adding a new page and not sure what to put for front matter, try
 looking at a page similar to the one you're adding and basing it on that. Feel
 free to ask the Tech team any questions.
 
+## Updating At a Glance
+
+The BMT 2026 and BMT 2026 Online event pages show a small At a Glance preview
+(registration status, a timeline, and a countdown), which links to a full page
+at `/bmt-2026/at-a-glance` or `/bmt-2026-online/at-a-glance`. Each event's
+dates, deadlines, and What's new items live in one data file:
+
+| File                                   | Event           |
+| -------------------------------------- | --------------- |
+| `data/bmt-2026-at-a-glance.toml`        | BMT 2026        |
+| `data/bmt-2026-online-at-a-glance.toml` | BMT 2026 Online |
+
+The countdown, current phase, price, and the upcoming/past deadline lists are
+computed in the visitor's browser, so they stay current without rebuilding the
+site. Anything else is a manual edit to the data file (or through `/admin`):
+
+- **New announcement:** add a `[[news]]` entry. It appears on its `show_from`
+  date and disappears after its `hide_after` date, so it can be added early.
+- **Date change:** update the data file *and* the event page text; they are not
+  linked.
+- **After the event:** set `results` to the archive page to show "Results
+  Available".
+
+To preview a different day, add `?glance-date=2026-10-25` (optionally
+`&glance-time=13:00`, Pacific) to the page URL.
+
 ## Editing templates
 
 Changing how content is rendered or adding special elements (like the banner on
