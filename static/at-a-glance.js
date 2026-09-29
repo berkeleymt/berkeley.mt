@@ -231,12 +231,18 @@
     else navigator.clipboard.writeText(`${text} ${url}`).then(() => done("Copied!"), () => done("Couldn't copy"));
   });
   document.addEventListener("keydown", e => { if (e.key === "Escape") hideTips(true); });
+  // Hover popups close after a short delay so the pointer can cross the gap into them.
+  let hideTimer;
   document.addEventListener("mouseover", e => {
     const dia = e.target.closest(".glance .dia");
-    if (dia) { if (!tipFor(dia).dataset.pin) showTip(dia, false); }
-    else if (e.target.closest(".glance .tl") && !e.target.closest(".tip")) hideTips(false);
+    if (dia || e.target.closest(".glance .tip")) clearTimeout(hideTimer);
+    if (dia && !tipFor(dia).dataset.pin) showTip(dia, false);
   });
-  document.addEventListener("mouseout", e => { if (e.target.closest(".glance .dia") && !e.relatedTarget?.closest?.(".glance .dia, .glance .tip")) hideTips(false); });
+  document.addEventListener("mouseout", e => {
+    if (!e.target.closest(".glance .dia, .glance .tip") || e.relatedTarget?.closest?.(".glance .dia, .glance .tip")) return;
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(() => hideTips(false), 300);
+  });
   window.addEventListener("resize", () => draw(false));
   if (!fixed) setInterval(() => draw(false), 60000);
 })();
