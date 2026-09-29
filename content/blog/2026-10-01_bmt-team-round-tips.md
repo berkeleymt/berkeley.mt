@@ -48,7 +48,7 @@ A common suggestion in team-based rounds is that you should split up work betwee
 - We encourage you to research interesting topics by finding textbooks online or at your local library.
 
 <figure class="not-prose my-8 border-l-4 border-teal-500 pl-5 py-1">
-<blockquote class="text-lg leading-relaxed text-gray-800">
+<blockquote class="leading-relaxed text-gray-700">
 
 Remember that questions on the Power Round are **ordered by content and not difficulty**! If a problem is stumping your team and you’re unsure how to proceed with it, feel free to skip it and move on to the next question or part. We always make sure that you will have all the information you need to solve a question just in the previous reading and problem statements, never in the answers. Generally, a problem’s difficulty can be evaluated by the number of points it is worth, though conceptually important results can also be high scoring.
 
