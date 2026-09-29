@@ -1,0 +1,49 @@
+# At a Glance data for bmt-2026-online: drives the preview on the event page and the full
+# At a Glance page. Dates are Pacific calendar dates (YYYY-MM-DD); a deadline
+# ends at 11:59 PM Pacific on its date. The countdown, current phase, and
+# deadline lists update on their own in the browser; edit this file to change
+# dates or add news, then merge to main to deploy.
+
+event_title = "BMT 2026 Online"
+event_page = "/events/bmt-2026-online/"
+date_text = "Saturday, December 5, 2026, online"
+opens = "2026-09-14T09:00"
+event_day = "2026-12-05"
+event_starts = ""
+event_label = "Live Event"
+# Set to the archive page once results are posted, e.g. "/archives/bmt-2026/".
+results = ""
+
+[[phases]]
+name = "Registration"
+short = "Registration"
+start = "2026-09-14"
+end = "2026-11-27"
+price = "$8"
+
+[[deadlines]]
+on = "2026-11-14"
+label = "In-person BMT 2026"
+
+[[deadlines]]
+on = "2026-11-27"
+label = "Registration closes"
+
+[[deadlines]]
+on = "2026-12-05"
+label = "Live Event"
+
+# News rows show from `show_from` until the end of `hide_after` (optional).
+[[news]]
+title = "Registration is open"
+blurb = "$8 per student. Every contestant needs a signed waiver."
+href = "/events/bmt-2026-online/#registration-waivers-and-pricing"
+show_from = "2026-09-14"
+hide_after = "2026-11-27"
+
+[[news]]
+title = "Online Teammate Finder"
+blurb = "Find teammates for BMT Online. Students can also form teams without a coach."
+href = "/events/bmt-2026-online/#teammate-finder"
+show_from = "2026-09-14"
+hide_after = "2026-11-27"

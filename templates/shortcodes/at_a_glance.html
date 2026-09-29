@@ -1,0 +1,5 @@
+{#- Event-page preview of an At a Glance page. `data` is the data file; `href` is the full page. -#}
+{%- set glance = load_data(path=data) -%}
+<link rel="stylesheet" href="{{ get_url(path='at-a-glance.css') }}">
+<div class="glance not-prose" data-mode="preview" data-href="{{ href }}"><script type="application/json">{{ glance | json_encode | safe }}</script></div>
+<script src="{{ get_url(path='at-a-glance.js') }}" defer></script>
