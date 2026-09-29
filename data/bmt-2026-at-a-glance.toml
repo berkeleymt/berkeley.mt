@@ -37,7 +37,7 @@ price = "$25"
 
 [[deadlines]]
 on = "2026-10-18"
-label = "Phase 2 ends ($15 → $25)"
+label = "Last day to purchase seats for $15"
 
 [[deadlines]]
 on = "2026-10-18"
@@ -49,7 +49,7 @@ label = "Hotel block cutoff"
 
 [[deadlines]]
 on = "2026-11-01"
-label = "Registration closes"
+label = "Last day to purchase seats for $25 (registration closes)"
 
 [[deadlines]]
 on = "2026-11-01"

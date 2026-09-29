@@ -32,7 +32,7 @@
     list.forEach(k => { const g = out.find(g => g.on === k.on); g ? g.items.push(k.label) : out.push({ on: k.on, items: [k.label] }); });
     return out.sort((p, q) => p.on.localeCompare(q.on));
   };
-  const dlList = gs => gs.map(g => `<div><div class="d">${longDay(g.on)}</div><ul>${g.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("");
+  const dlList = (gs, evDay) => gs.map(g => `<div><div class="d"><i class="${g.on === evDay ? "ev" : ""}"></i>${longDay(g.on)}</div><ul>${g.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("");
 
   function render(el, ev, now, force) {
     const mode = el.dataset.mode;
@@ -105,7 +105,7 @@
       return;
     }
     const upcoming = group(deadlines.filter(k => now < endOf(k.on)));
-    if (upcoming.length) h += `<div class="sub">Upcoming deadlines</div><div class="dl">${dlList(upcoming)}</div>`;
+    if (upcoming.length) h += `<div class="sub">Upcoming deadlines</div><div class="dl">${dlList(upcoming, ev.event_day)}</div>`;
     const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
       .sort((p, q) => q.show_from.localeCompare(p.show_from));
     if (items.length) {
@@ -114,7 +114,7 @@
       h += `</div></div>`;
     }
     const past = group(deadlines.filter(k => now >= endOf(k.on))).reverse();
-    if (past.length) h += `<div class="news pastdl"><div class="sub">Past deadlines</div><div class="dl">${dlList(past)}</div></div>`;
+    if (past.length) h += `<div class="news pastdl"><div class="sub">Past deadlines</div><div class="dl">${dlList(past, ev.event_day)}</div></div>`;
     el.innerHTML = h + `</div>`;
     fit(el);
   }
