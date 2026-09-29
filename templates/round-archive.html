@@ -1,0 +1,33 @@
+{% extends "page.html" %}
+
+{% block after_page_content %}
+{% set archives = get_section(path="archives/_index.md") %}
+<table class="prose table-fixed w-full mt-6">
+  <thead>
+    <th class="w-1/2">Tournament</th>
+    <th>Problems</th>
+    <th>Solutions</th>
+  </thead>
+  <tbody>
+    {% for archive in archives.pages %}
+    {% set_global tests = archive.extra.archive.tests | default(value=[]) %}
+    {% for group in archive.extra.archive.groups | default(value=[]) %}
+    {% set_global tests = tests | concat(with=group.tests) %}
+    {% endfor %}
+    {% for test in tests | filter(attribute="title", value=page.extra.round) %}
+    <tr>
+      <td><a href="{{ archive.permalink | safe }}">{{ archive.title | trim_end_matches(pat=" Archive") }}</a></td>
+      {% for key in ["problems", "solutions"] %}
+      <td>
+        {% set href = test | get(key=key, default="") %}
+        {% if href %}
+        <a href="{{ archive.permalink | safe }}{{ href }}">{{ href | split(pat=".") | last | upper }}</a>
+        {% endif %}
+      </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
