@@ -2,12 +2,12 @@
 {% import "round-nav.html" as round_nav %}
 {% import "macros.html" as macros %}
 
-{% block before_page_content %}
-{{ round_nav::nav(current=page.path) }}
-{% endblock %}
-
 {% block after_page_content %}
 {% set archives = get_section(path="archives/_index.md") %}
+<div class="prose">
+  {{ archives.content | safe }}
+</div>
+{{ round_nav::nav(current=page.path) }}
 {% set_global events = [] %}
 {% for archive in archives.pages %}
 {% if archive.title | split(pat=" ") | first == page.extra.tournament %}
