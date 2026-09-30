@@ -4,6 +4,7 @@ path = "archives/guts-round"
 template = "round-archive.html"
 
 [extra]
+short_title = "Guts Round"
 tournaments = ["BMT"]
 
 [[extra.sections]]

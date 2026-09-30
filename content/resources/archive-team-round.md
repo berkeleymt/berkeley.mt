@@ -3,6 +3,9 @@ title = "Team Round Archive"
 path = "archives/team-round"
 template = "round-archive.html"
 
+[extra]
+short_title = "Team Round"
+
 [[extra.sections]]
 label = "Team Round"
 titles = ["Team", "Team (US / Iran)", "Team (China / Toronto)"]

@@ -4,6 +4,7 @@ path = "archives/focus-tests"
 template = "round-archive.html"
 
 [extra]
+short_title = "Focus Tests"
 tournaments = ["BMT"]
 
 [[extra.sections]]
@@ -25,14 +26,17 @@ titles = ["Geometry"]
 [[extra.sections]]
 label = "Analysis"
 titles = ["Analysis"]
+retired = true
 
 [[extra.sections]]
 label = "Combinatorics"
 titles = ["Combinatorics"]
+retired = true
 
 [[extra.sections]]
 label = "Number Theory"
 titles = ["Number Theory"]
+retired = true
 +++
 
 Every past BMT Focus Test, grouped by subject. See the [full archives](@/archives/_index.md) for all other tests.

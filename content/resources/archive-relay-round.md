@@ -4,6 +4,7 @@ path = "archives/relay-round"
 template = "round-archive.html"
 
 [extra]
+short_title = "Relay Round"
 tournaments = ["BmMT"]
 
 [[extra.sections]]

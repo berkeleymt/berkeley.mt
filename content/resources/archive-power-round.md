@@ -4,6 +4,7 @@ path = "archives/power-round"
 template = "round-archive.html"
 
 [extra]
+short_title = "Power Round"
 tournaments = ["BMT"]
 
 [[extra.sections]]

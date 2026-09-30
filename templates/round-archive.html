@@ -1,14 +1,22 @@
 {% extends "page.html" %}
+{% import "round-nav.html" as round_nav %}
+
+{% block before_page_content %}
+{{ round_nav::nav(current=page.path) }}
+{% endblock %}
 
 {% block after_page_content %}
 {% set archives = get_section(path="archives/_index.md") %}
 {% set tournaments = page.extra.tournaments | default(value=["BMT", "BmMT"]) %}
-{% if page.extra.sections | length > 1 %}
-<p class="not-prose mt-4 text-sm flex flex-wrap gap-x-3 gap-y-1">
-  {% for section in page.extra.sections %}<a class="text-teal-600 hover:underline" href="#{{ section.label | slugify }}">{{ section.label }}</a>{% endfor %}
-</p>
-{% endif %}
+{% set_global past_shown = false %}
 {% for section in page.extra.sections %}
+{% if section.retired and not past_shown %}
+{% set_global past_shown = true %}
+<div id="past" class="round-past mt-14 border-t border-gray-200 pt-6">
+  <h2 class="text-2xl font-semibold">Past {{ page.extra.short_title }}</h2>
+  <p class="text-sm text-gray-500 mt-1">No longer offered at BMT.</p>
+</div>
+{% endif %}
 {% set_global first = -1 %}
 {% set_global last = -1 %}
 {% for archive in archives.pages %}
@@ -27,7 +35,7 @@
 {% endif %}
 {% endfor %}
 {% if page.extra.sections | length > 1 %}
-<h2 id="{{ section.label | slugify }}" class="text-xl font-semibold mt-10">{{ section.label }}</h2>
+<h2 id="{{ section.label | slugify }}" class="round-section text-xl font-semibold mt-10 scroll-mt-8">{{ section.label }}</h2>
 {% endif %}
 <table class="prose table-fixed w-full mt-6">
   <thead>
@@ -73,4 +81,37 @@
   </tbody>
 </table>
 {% endfor %}
+{% if page.extra.sections | length > 1 %}
+<div class="hidden xl:block absolute -right-8 translate-x-full h-full max-w-48">
+  <nav id="toc" class="sticky top-8">
+    <ul>
+      {% set_global past_listed = false %}
+      {% for section in page.extra.sections %}
+      {% if section.retired and not past_listed %}
+      {% set_global past_listed = true %}
+      <li class="mt-3 mb-1 text-xs font-semibold uppercase tracking-wide text-gray-400">Past</li>
+      {% endif %}
+      <li class="group overflow-hidden whitespace-nowrap text-ellipsis">
+        <a class="text-gray-500 text-sm hover:text-gray-800 hover:font-medium group-[.active]:text-black group-[.active]:font-semibold" href="#{{ section.label | slugify }}">{{ section.label }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
+<script>
+const wrapper = document.querySelector("#content-wrapper");
+const headings = document.querySelectorAll("h2.round-section");
+const links = document.querySelectorAll("#toc li.group");
+window.addEventListener("scroll", () => {
+  const scrollTop = -wrapper.getBoundingClientRect().top;
+  for (const link of links) link.classList.remove("active");
+  for (let i = headings.length - 1; i >= 0; i--) {
+    if (scrollTop > headings[i].offsetTop - 100) {
+      links[i].classList.add("active");
+      break;
+    }
+  }
+});
+</script>
+{% endif %}
 {% endblock %}
