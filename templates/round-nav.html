@@ -1,58 +1,31 @@
-{% macro links(paths, current) %}
-  <ul class="flex flex-col gap-1">
+{% macro link(href, label, active) %}
+<a href="{{ href | safe }}" class="{% if active %}font-semibold text-black{% else %}font-medium text-blue-500 transition-shadow duration-150 ease-in-out shadow-[inset_0_-0.4em_theme(colors.blue.100)] hover:shadow-[inset_0_-0.6em_theme(colors.blue.200)]{% endif %}">{{ label }}</a>
+{% endmacro link %}
+
+{% macro row(label, paths, current) %}
+<div class="flex flex-col sm:flex-row gap-1 sm:gap-4">
+  <dt class="sm:w-20 shrink-0 font-semibold text-black">{{ label }}</dt>
+  <dd class="flex flex-wrap gap-x-2 gap-y-1">
     {% for path in paths %}
     {% set round = get_page(path=path) %}
-    <li>
-      <a href="{{ round.permalink | safe }}" class="{% if round.path == current %}font-semibold text-black{% else %}font-medium text-blue-500 transition-shadow duration-150 ease-in-out shadow-[inset_0_-0.4em_theme(colors.blue.100)] hover:shadow-[inset_0_-0.6em_theme(colors.blue.200)]{% endif %}">{{ round.extra.short_title | default(value=round.title) }}</a>
-    </li>
+    {% if not loop.first %}<span class="text-gray-300" aria-hidden="true">·</span>{% endif %}
+    {{ self::link(href=round.permalink, label=round.extra.short_title | default(value=round.title) | replace(from=" (" ~ label ~ ")", to=""), active=round.path == current) }}
     {% endfor %}
-  </ul>
-{% endmacro links %}
-
-{% macro group(label, paths, historic, current) %}
-<div class="flex flex-col gap-2">
-  <h3 class="text-base font-semibold text-black">{{ label }}</h3>
-  {{ self::links(paths=paths, current=current) }}
-  {% if historic | length > 0 %}
-  <h4 class="mt-3 text-xs font-semibold uppercase tracking-wide text-gray-400">Historic</h4>
-  {{ self::links(paths=historic, current=current) }}
-  {% endif %}
+  </dd>
 </div>
-{% endmacro group %}
+{% endmacro row %}
 
 {% macro nav(current="") %}
 {% set all = get_section(path="archives/_index.md", metadata_only=true) %}
-{% if current == "" %}
-<div class="not-prose flex flex-col gap-3">
-<h2 class="text-lg font-semibold">Browse by round</h2>
-<nav class="flex flex-col gap-4 rounded-xl border border-gray-200 p-5 text-sm">
-{% else %}
-<details class="not-prose group border border-gray-200 rounded-xl overflow-hidden">
-<summary class="cursor-pointer select-none px-5 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-semibold flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
-  <i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
-  Browse by round
-</summary>
-<nav class="flex flex-col gap-4 p-5 text-sm">
-{% endif %}
-  <a href="{{ all.permalink | safe }}" class="self-start {% if current == "" %}font-semibold text-black{% else %}font-medium text-blue-500 transition-shadow duration-150 ease-in-out shadow-[inset_0_-0.4em_theme(colors.blue.100)] hover:shadow-[inset_0_-0.6em_theme(colors.blue.200)]{% endif %}">All tests</a>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 border-t border-gray-200 pt-4">
-  <div class="flex flex-col gap-2">
-    <h3 class="text-base font-semibold text-black">BMT</h3>
-    {{ self::links(paths=["resources/archive-power-round.md", "resources/archive-bmt-individual-round.md"], current=current) }}
-    {% set individual = get_page(path="resources/archive-bmt-individual-round.md") %}
-    <ul class="-mt-1 flex flex-col gap-1 pl-3 border-l border-gray-200">
-      {% for group in ["General Test", "Focus Tests", "Individual Test (2012–2020)"] %}
-      <li><a href="{{ individual.permalink | safe }}#{{ group | slugify }}" class="font-medium text-blue-500 transition-shadow duration-150 ease-in-out shadow-[inset_0_-0.4em_theme(colors.blue.100)] hover:shadow-[inset_0_-0.6em_theme(colors.blue.200)]">{{ group }}</a></li>
-      {% endfor %}
-    </ul>
-    <div class="-mt-1">{{ self::links(paths=["resources/archive-guts-round.md"], current=current) }}</div>
+<nav class="not-prose flex flex-col gap-3 text-sm">
+  <div class="flex items-baseline gap-3">
+    <h2 class="text-lg font-semibold">Browse by round</h2>
+    {{ self::link(href=all.permalink, label="All tests", active=current == "") }}
   </div>
-  {{ self::group(label="BmMT", paths=["resources/archive-puzzle-round.md", "resources/archive-bmmt-individual-round.md", "resources/archive-bmmt-team-round.md", "resources/archive-relay-round.md"], historic=[], current=current) }}
-  </div>
-  <div class="flex flex-col gap-2 border-t border-gray-200 pt-4">
-    <h3 class="text-base font-semibold text-black">Historic</h3>
-    {{ self::links(paths=["resources/archive-bmt-team-round.md"], current=current) }}
-  </div>
+  <dl class="flex flex-col gap-3 sm:gap-2">
+    {{ self::row(label="BMT", paths=["resources/archive-power-round.md", "resources/archive-bmt-individual-round.md", "resources/archive-guts-round.md"], current=current) }}
+    {{ self::row(label="BmMT", paths=["resources/archive-puzzle-round.md", "resources/archive-bmmt-individual-round.md", "resources/archive-bmmt-team-round.md", "resources/archive-relay-round.md"], current=current) }}
+    {{ self::row(label="Historic", paths=["resources/archive-bmt-team-round.md"], current=current) }}
+  </dl>
 </nav>
-{% if current == "" %}</div>{% else %}</details>{% endif %}
 {% endmacro nav %}
