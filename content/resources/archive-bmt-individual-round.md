@@ -1,7 +1,7 @@
 +++
 title = "Individual Round (BMT) Archive"
-path = "archives/bmt-individual-round"
-aliases = ["/archives/individual-round", "/archives/general-test", "/archives/focus-tests"]
+path = "archives/bmt/individual-round"
+aliases = ["/archives/bmt-individual-round", "/archives/individual-round", "/archives/general-test", "/archives/focus-tests"]
 template = "round-archive.html"
 
 [extra]

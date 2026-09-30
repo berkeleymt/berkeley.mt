@@ -1,6 +1,7 @@
 +++
 title = "Team Round (BmMT) Archive"
-path = "archives/bmmt-team-round"
+path = "archives/bmmt/team-round"
+aliases = ["/archives/bmmt-team-round"]
 template = "round-archive.html"
 
 [extra]

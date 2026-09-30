@@ -2,9 +2,9 @@
 <a href="{{ href | safe }}" class="{% if active %}font-semibold text-black{% else %}font-medium text-blue-500 transition-shadow duration-150 ease-in-out shadow-[inset_0_-0.4em_theme(colors.blue.100)] hover:shadow-[inset_0_-0.6em_theme(colors.blue.200)]{% endif %}">{{ label }}</a>
 {% endmacro link %}
 
-{% macro row(label, paths, current) %}
+{% macro row(label, paths, current, tournament="") %}
 <div class="flex flex-col sm:flex-row gap-1 sm:gap-4">
-  <dt class="sm:w-20 shrink-0 font-semibold text-black">{{ label }}</dt>
+  <dt class="sm:w-20 shrink-0 font-semibold text-black">{% if tournament %}{% set t = get_page(path=tournament) %}{{ self::link(href=t.permalink, label=label, active=t.path == current) }}{% else %}{{ label }}{% endif %}</dt>
   <dd class="flex flex-wrap gap-x-2 gap-y-1">
     {% for path in paths %}
     {% set round = get_page(path=path) %}
@@ -21,8 +21,8 @@
   <h2 class="text-lg font-semibold">Browse by round</h2>
   <div>{{ self::link(href=all.permalink, label="All tests", active=current == "") }}</div>
   <dl class="flex flex-col gap-3 sm:gap-2">
-    {{ self::row(label="BMT", paths=["resources/archive-power-round.md", "resources/archive-bmt-individual-round.md", "resources/archive-guts-round.md"], current=current) }}
-    {{ self::row(label="BmMT", paths=["resources/archive-puzzle-round.md", "resources/archive-bmmt-individual-round.md", "resources/archive-bmmt-team-round.md", "resources/archive-relay-round.md"], current=current) }}
+    {{ self::row(label="BMT", tournament="resources/archive-bmt.md", paths=["resources/archive-power-round.md", "resources/archive-bmt-individual-round.md", "resources/archive-guts-round.md"], current=current) }}
+    {{ self::row(label="BmMT", tournament="resources/archive-bmmt.md", paths=["resources/archive-puzzle-round.md", "resources/archive-bmmt-individual-round.md", "resources/archive-bmmt-team-round.md", "resources/archive-relay-round.md"], current=current) }}
     {{ self::row(label="Historic", paths=["resources/archive-bmt-team-round.md"], current=current) }}
   </dl>
 </nav>
