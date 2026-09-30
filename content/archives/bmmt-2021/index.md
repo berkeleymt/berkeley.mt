@@ -1,7 +1,6 @@
 +++
 title = "BmMT 2021 Archive"
-path = "archives/bmmt/2021"
-aliases = ["/resources/archives/bmmt-2021", "/archives/bmmt-2021"]
+aliases = ["/resources/archives/bmmt-2021"]
 date = 2021-02-27
 
 [[extra.archive.columns]]
