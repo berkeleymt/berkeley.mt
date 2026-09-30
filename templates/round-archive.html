@@ -74,10 +74,10 @@
 {% endif %}
 {% set_global keys = [] %}
 {% for key in ["rules", "problems", "solutions"] %}{% if key in present %}{% set_global keys = keys | concat(with=key) %}{% endif %}{% endfor %}
-<table class="prose table-fixed w-full [&_th]:text-left{% if keys | length > 2 %} [&_th]:text-sm sm:[&_th]:text-base{% endif %}">
+<table class="prose table-auto sm:table-fixed w-full [&_th]:text-left{% if keys | length > 2 %} [&_th]:text-sm sm:[&_th]:text-base{% endif %}">
   <thead>
-    <th class="{% if keys | length > 2 %}w-1/3 sm:w-2/5{% else %}w-2/5 sm:w-1/2{% endif %}">Tournament</th>
-    {% for key in keys %}<th>{{ key | capitalize }}</th>{% endfor %}
+    <th class="{% if keys | length > 2 %}sm:w-2/5{% else %}sm:w-1/2{% endif %}">Tournament</th>
+    {% for key in keys %}<th class="w-px whitespace-nowrap sm:w-auto">{{ key | capitalize }}</th>{% endfor %}
   </thead>
   <tbody>
     {% for archive in archives.pages %}
