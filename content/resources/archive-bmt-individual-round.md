@@ -13,4 +13,6 @@ label = "Individual Round"
 titles = ["Individual"]
 +++
 
-BMT no longer holds an Individual Round. See the [full archives](@/archives/_index.md) for all other tests.
+*We no longer administer an Individual Round at BMT. For the BmMT Individual Round, see [Individual Round (BmMT)](@/resources/archive-bmmt-individual-round.md).*
+
+See the [full archives](@/archives/_index.md) for all other tests.
