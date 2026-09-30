@@ -13,4 +13,4 @@ label = "Team Round"
 titles = ["Team"]
 +++
 
-Every past BMT Team Round in one place. BMT has not held a Team Round since 2020. See the [full archives](@/archives/_index.md) for all other tests.
+Every past BMT Team Round in one place. BMT no longer holds a Team Round; the last one was at BMT 2020. See the [full archives](@/archives/_index.md) for all other tests.
