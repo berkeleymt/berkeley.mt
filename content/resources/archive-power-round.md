@@ -4,7 +4,6 @@ path = "archives/power-round"
 template = "round-archive.html"
 
 [extra]
-blog_tag = "power-round"
 short_title = "Power Round"
 tournaments = ["BMT"]
 

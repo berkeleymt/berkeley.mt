@@ -4,7 +4,6 @@ path = "archives/puzzle-round"
 template = "round-archive.html"
 
 [extra]
-blog_tag = "puzzle-round"
 short_title = "Puzzle Round"
 tournaments = ["BmMT"]
 

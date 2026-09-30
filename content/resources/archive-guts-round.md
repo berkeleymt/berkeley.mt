@@ -4,7 +4,6 @@ path = "archives/guts-round"
 template = "round-archive.html"
 
 [extra]
-blog_tag = "guts-round"
 short_title = "Guts Round"
 tournaments = ["BMT"]
 
