@@ -3,8 +3,7 @@
 
 {% block before_page_content %}
 {% if page.extra.hatnote %}
-{% set see = get_page(path=page.extra.hatnote_link) %}
-<p class="prose italic text-gray-600">{{ page.extra.hatnote }} <a href="{{ see.permalink | safe }}">{{ see.extra.short_title }}</a>.</p>
+<p class="prose italic text-gray-600">{{ page.extra.hatnote }}{% if page.extra.hatnote_link %}{% set see = get_page(path=page.extra.hatnote_link) %} <a href="{{ see.permalink | safe }}">{{ see.extra.short_title }}</a>.{% endif %}</p>
 {% endif %}
 {{ round_nav::nav(current=page.path) }}
 {% endblock %}
