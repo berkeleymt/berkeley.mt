@@ -40,14 +40,15 @@
   {% endif %}
 
   {% if page.extra.cover_image %}
-  {% set image = config.extra.site_url ~ get_url(path=page.extra.cover_image) %}
+  {% set image = get_url(path=page.extra.cover_image) %}
+  {% if image is starting_with("/") %}{% set image = config.extra.site_url ~ image %}{% endif %}
   <meta property="og:image" content="{{ image | safe }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="{{ image | safe }}" />
   {% endif %}
 
   {% if page.path %}
-  <meta property="og:url" content="{{ config.extra.site_url ~ page.path | safe }}" />
+  <meta property="og:url" content="{% if page.permalink is starting_with("/") %}{{ config.extra.site_url ~ page.permalink | safe }}{% else %}{{ page.permalink | safe }}{% endif %}" />
   {% endif %}
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Berkeley Math Tournament" />
