@@ -34,6 +34,7 @@
 {% endif %}
 {% set_global first = -1 %}
 {% set_global last = -1 %}
+{% set_global present = ["problems", "solutions"] %}
 {% for archive in archives.pages %}
 {% set i = loop.index0 %}
 {% if archive.title | split(pat=" ") | first in tournaments %}
@@ -42,7 +43,10 @@
 {% set_global tests = tests | concat(with=group.tests) %}
 {% endfor %}
 {% for test in tests %}
-{% if test.title in section.titles %}
+{% if test.title in section.titles or test.title | replace(from=" Tiebreaker", to="") in section.titles %}
+{% for key in ["answers", "rules"] %}
+{% if test[key] is defined and key not in present %}{% set_global present = present | concat(with=key) %}{% endif %}
+{% endfor %}
 {% if first < 0 %}{% set_global first = i %}{% endif %}
 {% set_global last = i %}
 {% endif %}
@@ -71,8 +75,9 @@
 <table class="prose table-fixed w-full">
   <thead>
     <th class="w-1/2">Tournament</th>
-    <th>Problems</th>
-    <th>Solutions</th>
+    {% set_global keys = [] %}
+    {% for key in ["rules", "problems", "answers", "solutions"] %}{% if key in present %}{% set_global keys = keys | concat(with=key) %}{% endif %}{% endfor %}
+    {% for key in keys %}<th>{{ key | capitalize }}</th>{% endfor %}
   </thead>
   <tbody>
     {% for archive in archives.pages %}
@@ -84,14 +89,15 @@
     {% endfor %}
     {% set_global found = false %}
     {% for test in tests %}
-    {% if test.title in section.titles %}
+    {% set tiebreaker = test.title is containing(" Tiebreaker") %}
+    {% if test.title in section.titles or tiebreaker and test.title | replace(from=" Tiebreaker", to="") in section.titles %}
     {% set_global found = true %}
     <tr>
       <td>
         <a href="{{ archive.permalink | safe }}">{{ name }}</a>
-        {% if test.title != section.titles | first %}<span class="text-gray-500">· {{ test.title }}</span>{% endif %}
+        {% set prefix = section.titles | first %}{% set prefix = prefix ~ " " %}{% if tiebreaker %}<span>{{ test.title | trim_start_matches(pat=prefix) }}</span>{% elif test.title != section.titles | first %}<span class="text-gray-500">· {{ test.title }}</span>{% endif %}
       </td>
-      {% for key in ["problems", "solutions"] %}
+      {% for key in keys %}
       <td>
         {% set href = test | get(key=key, default="") %}
         {% if href %}<a href="{{ archive.permalink | safe }}{{ href }}">{{ href | split(pat=".") | last | upper }}</a>{% else %}-{% endif %}
@@ -103,8 +109,7 @@
     {% if not found %}
     <tr>
       <td><a href="{{ archive.permalink | safe }}">{{ name }}</a></td>
-      <td>-</td>
-      <td>-</td>
+      {% for key in keys %}<td>-</td>{% endfor %}
     </tr>
     {% endif %}
     {% endif %}
