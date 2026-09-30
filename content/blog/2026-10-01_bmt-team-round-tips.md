@@ -1,5 +1,5 @@
 +++
-title = "Team Round Tips for BMT 2026"
+title = "A Guide to Team-based Rounds for BMT 2026"
 authors = [
   "Nathan Alejandria",
   "Carlyana Kwong",
