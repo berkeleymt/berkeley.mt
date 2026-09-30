@@ -95,7 +95,7 @@
     <tr>
       <td>
         <a href="{{ archive.permalink | safe }}">{{ name }}</a>
-        {% set prefix = section.titles | first %}{% set prefix = prefix ~ " " %}{% if tiebreaker %}<span class="text-gray-500">· {{ test.title | trim_start_matches(pat=prefix) }}</span>{% elif test.title != section.titles | first %}<span class="text-gray-500">· {{ test.title }}</span>{% endif %}
+        {% set prefix = section.titles | first %}{% set prefix = prefix ~ " " %}{% if tiebreaker %}<span>{{ test.title | trim_start_matches(pat=prefix) }}</span>{% elif test.title != section.titles | first %}<span class="text-gray-500">· {{ test.title }}</span>{% endif %}
       </td>
       {% for key in keys %}
       <td>
