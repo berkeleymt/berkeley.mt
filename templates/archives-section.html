@@ -2,9 +2,6 @@
 {% import "round-nav.html" as round_nav %}
 
 {% block after_section_content %}
-<div class="flex flex-col gap-3">
-  <h2 class="text-lg font-semibold">Browse by round</h2>
-  {{ round_nav::nav() }}
-</div>
+{{ round_nav::nav() }}
 <h2 class="text-lg font-semibold">Browse by event</h2>
 {% endblock %}
