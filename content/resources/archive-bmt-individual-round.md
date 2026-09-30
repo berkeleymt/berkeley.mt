@@ -54,9 +54,9 @@ retired = true
 
 [[extra.sections]]
 group = "Individual Test (2012–2020)"
-group_note = "Before 2021, the BMT Individual Round was a single test."
+group_note = "We no longer administer the Individual Test at BMT."
 label = "Individual Test (2012–2020)"
 titles = ["Individual"]
 +++
 
-Students choose either the General Test or two Focus Tests. For the BmMT Individual Round, see [Individual Round (BmMT)](@/resources/archive-bmmt-individual-round.md). See the [full archives](@/archives/_index.md) for all other tests.
+At current BMTs, students can take either the General Test or two of the Focus Tests. For the BmMT Individual Round, see [Individual Round (BmMT)](@/resources/archive-bmmt-individual-round.md). See the [full archives](@/archives/_index.md) for all other tests.

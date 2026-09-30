@@ -9,6 +9,9 @@
 {% set archives = get_section(path="archives/_index.md") %}
 {% set tournaments = page.extra.tournaments | default(value=["BMT", "BmMT"]) %}
 {% set multi = page.extra.sections | length > 1 %}
+{% if multi %}
+<h2 class="text-lg font-semibold">Browse by test</h2>
+{% endif %}
 <div class="flex flex-col gap-8">
 {% set_global prev_group = "" %}
 {% set_global past_shown = false %}
@@ -48,7 +51,7 @@
 {% endif %}
 {% if new_group %}
 <div class="flex flex-col gap-2 {% if section.label != group %}mb-3{% endif %}">
-  <h2 id="{{ group | slugify }}" class="round-anchor text-2xl font-semibold scroll-mt-8">{{ group }}</h2>
+  <h3 id="{{ group | slugify }}" class="round-anchor text-lg font-semibold scroll-mt-8">{{ group }}</h3>
   {% if section.group_note %}<p class="text-gray-600">{{ section.group_note }}</p>{% endif %}
 </div>
 {% endif %}
@@ -59,7 +62,7 @@
 </div>
 {% endif %}
 {% if multi and section.label != group %}
-<h3 id="{{ section.label | slugify }}" class="round-anchor text-lg font-semibold scroll-mt-8">{{ section.label }}</h3>
+<h4 id="{{ section.label | slugify }}" class="round-anchor text-base font-semibold scroll-mt-8">{{ section.label }}</h4>
 {% endif %}
 <table class="prose table-fixed w-full">
   <thead>
