@@ -39,4 +39,4 @@ titles = ["Number Theory"]
 retired = true
 +++
 
-See the [full archives](@/archives/_index.md) for all other tests.
+In current BMTs, students can choose to take any two of the four Focus Tests. See the [full archives](@/archives/_index.md) for all other tests.
