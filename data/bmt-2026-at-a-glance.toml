@@ -11,7 +11,7 @@ opens = "2026-09-14T09:00"
 event_day = "2026-11-14"
 event_starts = "08:00"
 event_label = "Tournament Day"
-# Set to the archive page once results are posted, e.g. "/archives/bmt-2026/".
+# Set to the archive page once results are posted, e.g. "/archives/bmt/2026/".
 results = ""
 
 [[phases]]

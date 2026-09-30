@@ -22,6 +22,6 @@ This mock AIME exam contains carefully selected problems from the 2022 Berkeley
 Math Tournament tests. Detailed solutions can be found in the corresponding
 archive.
 
-{% button_link(href="/archives/bmt-2022/") %}
+{% button_link(href="/archives/bmt/2022/") %}
 Visit BMT 2022 Archive
 {% end %}

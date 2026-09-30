@@ -22,6 +22,6 @@ This mock AIME exam contains carefully selected problems from the 2025 Berkeley
 Math Tournament tests. Detailed solutions can be found in the corresponding
 archive.
 
-{% button_link(href="/archives/bmt-2025/") %}
+{% button_link(href="/archives/bmt/2025/") %}
 Visit BMT 2025 Archive
 {% end %}

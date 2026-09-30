@@ -11,7 +11,7 @@ opens = "2026-09-14T09:00"
 event_day = "2026-12-05"
 event_starts = ""
 event_label = "Live Event"
-# Set to the archive page once results are posted, e.g. "/archives/bmt-2026/".
+# Set to the archive page once results are posted, e.g. "/archives/bmt/2026/".
 results = ""
 
 [[phases]]
