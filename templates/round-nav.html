@@ -21,8 +21,12 @@
 {% endmacro group %}
 
 {% macro nav(current="") %}
-<nav class="not-prose grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 rounded-xl border border-gray-200 p-5 text-sm">
+{% set all = get_section(path="archives/_index.md", metadata_only=true) %}
+<nav class="not-prose flex flex-col gap-4 rounded-xl border border-gray-200 p-5 text-sm">
+  <a href="{{ all.permalink | safe }}" class="{% if current == "" %}font-semibold text-black{% else %}text-gray-700 hover:text-black{% endif %}">All tests</a>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 border-t border-gray-200 pt-4">
   {{ self::group(label="BMT", paths=["resources/archive-power-round.md", "resources/archive-guts-round.md", "resources/archive-general-test.md", "resources/archive-focus-tests.md"], historic=["resources/archive-bmt-individual-round.md", "resources/archive-bmt-team-round.md"], current=current) }}
   {{ self::group(label="BmMT", paths=["resources/archive-bmmt-individual-round.md", "resources/archive-bmmt-team-round.md", "resources/archive-puzzle-round.md", "resources/archive-relay-round.md"], historic=[], current=current) }}
+  </div>
 </nav>
 {% endmacro nav %}
