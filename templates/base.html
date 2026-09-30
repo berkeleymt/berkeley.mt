@@ -23,7 +23,7 @@
   | default(value="Berkeley Math Tournament")) %}
 
   <title>{{ title }}</title>
-  <meta name="og:title" content="{{ title }}" />
+  <meta property="og:title" content="{{ title }}" />
 
   {% set description = section.description
   | default(value=section.summary
@@ -36,15 +36,19 @@
 
   {% if description %}
   <meta name="description" content="{{ description }}" />
-  <meta name="og:description" content="{{ description }}" />
+  <meta property="og:description" content="{{ description }}" />
   {% endif %}
 
   {% if page.extra.cover_image %}
-  <meta property="og:image" content="{{ get_url(path=page.extra.cover_image) }}" />
+  {% set image = config.extra.site_url ~ get_url(path=page.extra.cover_image) %}
+  <meta property="og:image" content="{{ image | safe }}" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="{{ get_url(path=page.extra.cover_image) }}" />
+  <meta name="twitter:image" content="{{ image | safe }}" />
   {% endif %}
 
+  {% if page.path %}
+  <meta property="og:url" content="{{ config.extra.site_url ~ page.path | safe }}" />
+  {% endif %}
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Berkeley Math Tournament" />
 
