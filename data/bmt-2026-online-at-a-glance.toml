@@ -37,6 +37,13 @@ label = "Live Event"
 
 # News rows show from `show_from` until the end of `hide_after` (optional).
 [[news]]
+title = "A Guide to Team-based Rounds"
+blurb = "Tips from our organizers for the Power Round and Guts Round."
+href = "/blog/team-based-rounds-guide/"
+show_from = "2026-09-29"
+hide_after = "2026-12-05"
+
+[[news]]
 title = "Registration is open"
 blurb = "$8 per student. Every contestant needs a signed waiver."
 href = "/events/bmt-2026-online/#registration-waivers-and-pricing"
