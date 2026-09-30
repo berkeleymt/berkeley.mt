@@ -18,10 +18,8 @@
 {% macro nav(current="") %}
 {% set all = get_section(path="archives/_index.md", metadata_only=true) %}
 <nav class="not-prose flex flex-col gap-3 text-sm">
-  <div class="flex items-baseline gap-3">
-    <h2 class="text-lg font-semibold">Browse by round</h2>
-    {{ self::link(href=all.permalink, label="All tests", active=current == "") }}
-  </div>
+  <h2 class="text-lg font-semibold">Browse by round</h2>
+  <div>{{ self::link(href=all.permalink, label="All tests", active=current == "") }}</div>
   <dl class="flex flex-col gap-3 sm:gap-2">
     {{ self::row(label="BMT", paths=["resources/archive-power-round.md", "resources/archive-bmt-individual-round.md", "resources/archive-guts-round.md"], current=current) }}
     {{ self::row(label="BmMT", paths=["resources/archive-puzzle-round.md", "resources/archive-bmmt-individual-round.md", "resources/archive-bmmt-team-round.md", "resources/archive-relay-round.md"], current=current) }}
