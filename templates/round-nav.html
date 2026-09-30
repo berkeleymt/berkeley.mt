@@ -22,9 +22,18 @@
 
 {% macro nav(current="") %}
 {% set all = get_section(path="archives/_index.md", metadata_only=true) %}
+{% if current == "" %}
 <div class="not-prose flex flex-col gap-3">
-<h2 class="text-lg font-semibold">Filter by round</h2>
+<h2 class="text-lg font-semibold">Browse by round</h2>
 <nav class="flex flex-col gap-4 rounded-xl border border-gray-200 p-5 text-sm">
+{% else %}
+<details class="not-prose group border border-gray-200 rounded-xl overflow-hidden">
+<summary class="cursor-pointer select-none px-5 py-3 bg-gray-100 hover:bg-gray-200 transition-colors font-semibold flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden">
+  <i class="bi bi-chevron-right text-sm transition-transform group-open:rotate-90"></i>
+  Browse by round
+</summary>
+<nav class="flex flex-col gap-4 p-5 text-sm">
+{% endif %}
   <a href="{{ all.permalink | safe }}" class="self-start {% if current == "" %}font-semibold text-black{% else %}font-medium text-blue-500 transition-shadow duration-150 ease-in-out shadow-[inset_0_-0.4em_theme(colors.blue.100)] hover:shadow-[inset_0_-0.6em_theme(colors.blue.200)]{% endif %}">All tests</a>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 border-t border-gray-200 pt-4">
   <div class="flex flex-col gap-2">
@@ -45,5 +54,5 @@
     {{ self::links(paths=["resources/archive-bmt-team-round.md"], current=current) }}
   </div>
 </nav>
-</div>
+{% if current == "" %}</div>{% else %}</details>{% endif %}
 {% endmacro nav %}
