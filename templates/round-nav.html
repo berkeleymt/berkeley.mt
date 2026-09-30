@@ -25,7 +25,17 @@
 <nav class="not-prose flex flex-col gap-4 rounded-xl border border-gray-200 p-5 text-sm">
   <a href="{{ all.permalink | safe }}" class="self-start {% if current == "" %}font-semibold text-black{% else %}font-medium text-blue-500 transition-shadow duration-150 ease-in-out shadow-[inset_0_-0.4em_theme(colors.blue.100)] hover:shadow-[inset_0_-0.6em_theme(colors.blue.200)]{% endif %}">All tests</a>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 border-t border-gray-200 pt-4">
-  {{ self::group(label="BMT", paths=["resources/archive-power-round.md", "resources/archive-general-test.md", "resources/archive-focus-tests.md", "resources/archive-guts-round.md"], historic=["resources/archive-bmt-team-round.md", "resources/archive-bmt-individual-round.md"], current=current) }}
+  <div class="flex flex-col gap-2">
+    <h3 class="text-xs font-semibold uppercase tracking-wide text-gray-500">BMT</h3>
+    {{ self::links(paths=["resources/archive-power-round.md"], current=current) }}
+    <h4 class="mt-1 text-gray-500">Individual Round</h4>
+    <div class="pl-3 border-l border-gray-200">
+      {{ self::links(paths=["resources/archive-general-test.md", "resources/archive-focus-tests.md", "resources/archive-bmt-individual-round.md"], current=current) }}
+    </div>
+    {{ self::links(paths=["resources/archive-guts-round.md"], current=current) }}
+    <h4 class="mt-3 text-xs font-semibold uppercase tracking-wide text-gray-400">Historic</h4>
+    {{ self::links(paths=["resources/archive-bmt-team-round.md"], current=current) }}
+  </div>
   {{ self::group(label="BmMT", paths=["resources/archive-puzzle-round.md", "resources/archive-bmmt-individual-round.md", "resources/archive-bmmt-team-round.md", "resources/archive-relay-round.md"], historic=[], current=current) }}
   </div>
 </nav>
