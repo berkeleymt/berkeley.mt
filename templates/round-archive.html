@@ -34,7 +34,7 @@
 {% endif %}
 {% set_global first = -1 %}
 {% set_global last = -1 %}
-{% set_global keys = ["problems", "solutions"] %}
+{% set_global present = ["problems", "solutions"] %}
 {% for archive in archives.pages %}
 {% set i = loop.index0 %}
 {% if archive.title | split(pat=" ") | first in tournaments %}
@@ -45,7 +45,7 @@
 {% for test in tests %}
 {% if test.title in section.titles or test.title | replace(from=" Tiebreaker", to="") in section.titles %}
 {% for key in ["answers", "rules"] %}
-{% if test[key] is defined and key not in keys %}{% set_global keys = keys | concat(with=key) %}{% endif %}
+{% if test[key] is defined and key not in present %}{% set_global present = present | concat(with=key) %}{% endif %}
 {% endfor %}
 {% if first < 0 %}{% set_global first = i %}{% endif %}
 {% set_global last = i %}
@@ -75,6 +75,8 @@
 <table class="prose table-fixed w-full">
   <thead>
     <th class="w-1/2">Tournament</th>
+    {% set_global keys = [] %}
+    {% for key in ["rules", "problems", "answers", "solutions"] %}{% if key in present %}{% set_global keys = keys | concat(with=key) %}{% endif %}{% endfor %}
     {% for key in keys %}<th>{{ key | capitalize }}</th>{% endfor %}
   </thead>
   <tbody>
