@@ -4,7 +4,7 @@ path = "archives/bmmt-team-round"
 template = "round-archive.html"
 
 [extra]
-short_title = "Team Round"
+short_title = "Team Round (BmMT)"
 tournaments = ["BmMT"]
 
 [[extra.sections]]

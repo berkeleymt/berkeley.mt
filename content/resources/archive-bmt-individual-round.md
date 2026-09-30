@@ -5,7 +5,7 @@ aliases = ["/archives/individual-round"]
 template = "round-archive.html"
 
 [extra]
-short_title = "Individual Round"
+short_title = "Individual Round (BMT)"
 tournaments = ["BMT"]
 
 [[extra.sections]]
