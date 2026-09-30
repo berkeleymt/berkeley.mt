@@ -68,7 +68,7 @@ label = "Tournament Day"
 # News rows show from `show_from` until the end of `hide_after` (optional).
 [[news]]
 title = "A Guide to Team-based Rounds"
-blurb = "Tips from our organizers for the Power Round and Guts Round."
+blurb = "Tips about team-based rounds like the Power and Guts Rounds."
 href = "/blog/team-based-rounds-guide/"
 show_from = "2026-09-29"
 hide_after = "2026-11-14"
