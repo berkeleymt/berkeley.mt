@@ -28,10 +28,13 @@
   <div class="flex flex-col gap-2">
     <h3 class="text-base font-semibold text-black">BMT</h3>
     {{ self::links(paths=["resources/archive-power-round.md"], current=current) }}
-    <h4 class="mt-1 text-gray-500">Individual Round</h4>
-    <div class="pl-3 border-l border-gray-200">
-      {{ self::links(paths=["resources/archive-general-test.md", "resources/archive-focus-tests.md", "resources/archive-bmt-individual-round.md"], current=current) }}
-    </div>
+    {% set individual = get_page(path="resources/archive-bmt-individual-round.md") %}
+    {{ self::links(paths=["resources/archive-bmt-individual-round.md"], current=current) }}
+    <ul class="flex flex-col gap-1 pl-3 border-l border-gray-200">
+      {% for group in ["General Test", "Focus Tests", "Individual Test (2012–2020)"] %}
+      <li><a href="{{ individual.permalink | safe }}#{{ group | slugify }}" class="font-medium text-blue-500 transition-shadow duration-150 ease-in-out shadow-[inset_0_-0.4em_theme(colors.blue.100)] hover:shadow-[inset_0_-0.6em_theme(colors.blue.200)]">{{ group }}</a></li>
+      {% endfor %}
+    </ul>
     {{ self::links(paths=["resources/archive-guts-round.md"], current=current) }}
   </div>
   {{ self::group(label="BmMT", paths=["resources/archive-puzzle-round.md", "resources/archive-bmmt-individual-round.md", "resources/archive-bmmt-team-round.md", "resources/archive-relay-round.md"], historic=[], current=current) }}
