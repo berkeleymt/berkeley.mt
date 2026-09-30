@@ -1,22 +1,28 @@
-{% macro group(label, paths, current) %}
-<div class="flex flex-col gap-2">
-  <h3 class="text-xs font-semibold uppercase tracking-wide text-gray-500">{{ label }}</h3>
+{% macro links(paths, current) %}
   <ul class="flex flex-col gap-1">
     {% for path in paths %}
     {% set round = get_page(path=path) %}
     <li>
-      <a href="{{ round.permalink | safe }}" class="{% if round.path == current %}font-semibold text-black{% else %}text-gray-700 hover:text-black{% endif %}">
-        <span>{{ round.extra.short_title | default(value=round.title) }}</span>
-      </a>
+      <a href="{{ round.permalink | safe }}" class="{% if round.path == current %}font-semibold text-black{% else %}text-gray-700 hover:text-black{% endif %}">{{ round.extra.short_title | default(value=round.title) }}</a>
     </li>
     {% endfor %}
   </ul>
+{% endmacro links %}
+
+{% macro group(label, paths, historic, current) %}
+<div class="flex flex-col gap-2">
+  <h3 class="text-xs font-semibold uppercase tracking-wide text-gray-500">{{ label }}</h3>
+  {{ self::links(paths=paths, current=current) }}
+  {% if historic | length > 0 %}
+  <h4 class="mt-3 text-xs font-semibold uppercase tracking-wide text-gray-400">Historic</h4>
+  {{ self::links(paths=historic, current=current) }}
+  {% endif %}
 </div>
 {% endmacro group %}
 
 {% macro nav(current="") %}
 <nav class="not-prose grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 rounded-xl border border-gray-200 p-5 text-sm">
-  {{ self::group(label="BMT", paths=["resources/archive-power-round.md", "resources/archive-guts-round.md", "resources/archive-general-test.md", "resources/archive-focus-tests.md", "resources/archive-bmt-individual-round.md", "resources/archive-bmt-team-round.md"], current=current) }}
-  {{ self::group(label="BmMT", paths=["resources/archive-bmmt-individual-round.md", "resources/archive-bmmt-team-round.md", "resources/archive-puzzle-round.md", "resources/archive-relay-round.md"], current=current) }}
+  {{ self::group(label="BMT", paths=["resources/archive-power-round.md", "resources/archive-guts-round.md", "resources/archive-general-test.md", "resources/archive-focus-tests.md"], historic=["resources/archive-bmt-individual-round.md", "resources/archive-bmt-team-round.md"], current=current) }}
+  {{ self::group(label="BmMT", paths=["resources/archive-bmmt-individual-round.md", "resources/archive-bmmt-team-round.md", "resources/archive-puzzle-round.md", "resources/archive-relay-round.md"], historic=[], current=current) }}
 </nav>
 {% endmacro nav %}
