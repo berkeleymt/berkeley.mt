@@ -19,7 +19,12 @@
   {% if page.taxonomies["tags"] %}
   <p class="text-sm text-gray-500 flex gap-2">
     {% for tag in page.taxonomies["tags"] %}
+    {% set tag_page = config.extra.tag_pages | get(key=tag, default="") %}
+    {% if tag_page %}
+    <a href="{{ get_url(path="@/" ~ tag_page) | safe }}" class="text-blue-500 hover:underline">#{{ tag }}</a>
+    {% else %}
     <span>#{{ tag }}</span>
+    {% endif %}
     {% endfor %}
   </p>
   {% endif %}

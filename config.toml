@@ -21,3 +21,9 @@ highlight_code = false
 # whole [extra.advisory] table to remove the banner.
 # `status` is one of "info", "warning", or "error"; `body` is markdown.
 # `timestamp` is free text shown in the top right; include the timezone.
+
+# Tags that link to a round page (which lists tagged blog posts and past tests).
+[extra.tag_pages]
+power-round = "resources/archive-power-round.md"
+guts-round = "resources/archive-guts-round.md"
+puzzle-round = "resources/archive-puzzle-round.md"
