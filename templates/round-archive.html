@@ -72,11 +72,11 @@
 {% if multi and section.label != group %}
 <h4 id="{{ section.label | slugify }}" class="round-anchor text-base font-semibold scroll-mt-8">{{ section.label }}</h4>
 {% endif %}
-<table class="prose table-fixed w-full">
+{% set_global keys = [] %}
+{% for key in ["rules", "problems", "answers", "solutions"] %}{% if key in present %}{% set_global keys = keys | concat(with=key) %}{% endif %}{% endfor %}
+<table class="prose table-fixed w-full{% if keys | length > 2 %} [&_th]:text-sm sm:[&_th]:text-base{% endif %}">
   <thead>
-    <th class="w-1/2">Tournament</th>
-    {% set_global keys = [] %}
-    {% for key in ["rules", "problems", "answers", "solutions"] %}{% if key in present %}{% set_global keys = keys | concat(with=key) %}{% endif %}{% endfor %}
+    <th class="{% if keys | length > 2 %}w-1/3 sm:w-2/5{% else %}w-1/2{% endif %}">Tournament</th>
     {% for key in keys %}<th>{{ key | capitalize }}</th>{% endfor %}
   </thead>
   <tbody>
