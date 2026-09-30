@@ -14,6 +14,6 @@
 {% set_global events = events | concat(with=archive) %}
 {% endif %}
 {% endfor %}
-<h2 class="text-lg font-semibold">Browse by event</h2>
+<h2 class="text-lg font-semibold">Browse by tournament</h2>
 {{ macros::page_listing(pages=events) }}
 {% endblock %}
