@@ -1,0 +1,163 @@
+{% extends "page.html" %}
+{% import "round-nav.html" as round_nav %}
+
+{% block before_page_content %}
+{% if page.extra.hatnote %}
+{% set see = get_page(path=page.extra.hatnote_link) %}
+<p class="prose italic text-gray-600">{{ page.extra.hatnote }} <a href="{{ see.permalink | safe }}">{{ see.extra.short_title }}</a>.</p>
+{% endif %}
+{{ round_nav::nav(current=page.path) }}
+{% endblock %}
+
+{% block after_page_content %}
+{% set archives = get_section(path="archives/_index.md") %}
+{% set tournaments = page.extra.tournaments | default(value=["BMT", "BmMT"]) %}
+{% set multi = page.extra.sections | length > 1 %}
+{% if multi %}
+<h2 class="text-lg font-semibold">Browse by test</h2>
+{% endif %}
+<div class="flex flex-col gap-8">
+{% set_global prev_group = "" %}
+{% set_global past_shown = false %}
+{% for section in page.extra.sections %}
+{% set group = section.group | default(value=page.extra.short_title) %}
+{% set_global new_group = false %}
+{% set_global new_past = false %}
+{% if multi and group != prev_group %}
+{% set_global prev_group = group %}
+{% set_global past_shown = false %}
+{% set_global new_group = section.group | default(value="") != "" %}
+{% endif %}
+{% if multi and section.retired and not past_shown %}
+{% set_global past_shown = true %}
+{% set_global new_past = true %}
+{% endif %}
+{% set_global first = -1 %}
+{% set_global last = -1 %}
+{% for archive in archives.pages %}
+{% set i = loop.index0 %}
+{% if archive.title | split(pat=" ") | first in tournaments %}
+{% set_global tests = archive.extra.archive.tests | default(value=[]) %}
+{% for group in archive.extra.archive.groups | default(value=[]) %}
+{% set_global tests = tests | concat(with=group.tests) %}
+{% endfor %}
+{% for test in tests %}
+{% if test.title in section.titles %}
+{% if first < 0 %}{% set_global first = i %}{% endif %}
+{% set_global last = i %}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+<section class="flex flex-col gap-3 {% if new_group and not loop.first %}mt-8 border-t border-gray-200 pt-8{% endif %}">
+{% if not multi %}
+<h2 class="text-lg font-semibold">Browse by event</h2>
+{% endif %}
+{% if new_group %}
+<div class="flex flex-col gap-2 {% if section.label != group %}mb-3{% endif %}">
+  <h3 id="{{ group | slugify }}" class="round-anchor text-lg font-semibold scroll-mt-8">{{ group }}</h3>
+  {% if section.group_note %}<p class="text-gray-600">{{ section.group_note }}</p>{% endif %}
+</div>
+{% endif %}
+{% if new_past %}
+<div class="flex flex-col gap-1 mb-3">
+  <p class="text-sm font-semibold uppercase tracking-wide text-gray-500">Past {{ group }}</p>
+  <p class="text-sm text-gray-500">No longer offered at BMT.</p>
+</div>
+{% endif %}
+{% if multi and section.label != group %}
+<h4 id="{{ section.label | slugify }}" class="round-anchor text-base font-semibold scroll-mt-8">{{ section.label }}</h4>
+{% endif %}
+<table class="prose table-fixed w-full">
+  <thead>
+    <th class="w-1/2">Tournament</th>
+    <th>Problems</th>
+    <th>Solutions</th>
+  </thead>
+  <tbody>
+    {% for archive in archives.pages %}
+    {% if loop.index0 >= first and loop.index0 <= last and archive.title | split(pat=" ") | first in tournaments %}
+    {% set name = archive.title | trim_end_matches(pat=" Archive") %}
+    {% set_global tests = archive.extra.archive.tests | default(value=[]) %}
+    {% for group in archive.extra.archive.groups | default(value=[]) %}
+    {% set_global tests = tests | concat(with=group.tests) %}
+    {% endfor %}
+    {% set_global found = false %}
+    {% for test in tests %}
+    {% if test.title in section.titles %}
+    {% set_global found = true %}
+    <tr>
+      <td>
+        <a href="{{ archive.permalink | safe }}">{{ name }}</a>
+        {% if test.title != section.titles | first %}<span class="text-gray-500">· {{ test.title }}</span>{% endif %}
+      </td>
+      {% for key in ["problems", "solutions"] %}
+      <td>
+        {% set href = test | get(key=key, default="") %}
+        {% if href %}<a href="{{ archive.permalink | safe }}{{ href }}">{{ href | split(pat=".") | last | upper }}</a>{% else %}-{% endif %}
+      </td>
+      {% endfor %}
+    </tr>
+    {% endif %}
+    {% endfor %}
+    {% if not found %}
+    <tr>
+      <td><a href="{{ archive.permalink | safe }}">{{ name }}</a></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+</section>
+{% endfor %}
+</div>
+{% if multi %}
+<div class="hidden xl:block absolute -right-8 translate-x-full h-full max-w-48">
+  <nav id="toc" class="sticky top-8">
+    <ul>
+      {% set_global prev_group = "" %}
+      {% set_global past_listed = false %}
+      {% for section in page.extra.sections %}
+      {% set group = section.group | default(value=page.extra.short_title) %}
+      {% if group != prev_group %}
+      {% set_global prev_group = group %}
+      {% set_global past_listed = false %}
+      {% if section.group %}
+      <li class="group mt-2 first:mt-0 overflow-hidden whitespace-nowrap text-ellipsis">
+        <a class="text-gray-500 text-sm hover:text-gray-800 hover:font-medium group-[.active]:text-black group-[.active]:font-semibold" href="#{{ group | slugify }}">{{ group }}</a>
+      </li>
+      {% endif %}
+      {% endif %}
+      {% if section.retired and not past_listed %}
+      {% set_global past_listed = true %}
+      <li class="mt-2 {% if section.group %}pl-3{% endif %} text-xs font-semibold uppercase tracking-wide text-gray-400">Past</li>
+      {% endif %}
+      {% if section.label != group %}
+      <li class="group {% if section.group %}pl-3{% endif %} overflow-hidden whitespace-nowrap text-ellipsis">
+        <a class="text-gray-500 text-sm hover:text-gray-800 hover:font-medium group-[.active]:text-black group-[.active]:font-semibold" href="#{{ section.label | slugify }}">{{ section.label }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
+<script>
+const wrapper = document.querySelector("#content-wrapper");
+const headings = document.querySelectorAll(".round-anchor");
+const links = document.querySelectorAll("#toc li.group");
+window.addEventListener("scroll", () => {
+  const scrollTop = -wrapper.getBoundingClientRect().top;
+  for (const link of links) link.classList.remove("active");
+  for (let i = headings.length - 1; i >= 0; i--) {
+    if (scrollTop > headings[i].offsetTop - 100) {
+      links[i].classList.add("active");
+      break;
+    }
+  }
+});
+</script>
+{% endif %}
+{% endblock %}
