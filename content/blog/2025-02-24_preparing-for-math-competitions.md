@@ -45,7 +45,7 @@ This goes beyond practicing for the problems you’ll see.
 First, we recommend being comfortable with the format of the competition. For
 us, this means going through our archive. Study what each different part of the
 competition entails, how it’s structured, etc. Even though the BmMT puzzle topic
-changes year to year, it is nice to take the puzzle round from a previous year
+changes year to year, it is nice to take the [puzzle round from a previous year](@/resources/archive-puzzle-round.md)
 so then you learn how to read the instructions! For the BmMT puzzle round,
 competitors will have 15 minutes to read the instructions, which explain the
 rules of the puzzle, before the 60 minutes to actually solve the problems.

@@ -31,7 +31,7 @@ If you reach a contradiction, make sure you are properly applying every rule to 
 
 Learning to solve a new kind of puzzle can be challenging. We think the best way to prepare for the Puzzle Round is to practice!
 
-- Our website has an [archive of previous Puzzle Rounds](https://berkeley.mt/archives/) that are great for practice.
+- Our website has an [archive of previous Puzzle Rounds](@/resources/archive-puzzle-round.md) that are great for practice.
 - We also have a website where you can [**solve last year's Puzzle Round online**](https://curtain-pigeon-pit.uc.ax/)!
 - Recent Puzzle Rounds most accurately reflect the style and difficulty of this year's puzzle round, but any practice is good practice!
 - Another important thing to prepare ahead of time is a **strategy for dividing the puzzles** with your team. There are many different ways to do this, and we generally recommend some amount of divide-and-conquer and checking each others' work.
