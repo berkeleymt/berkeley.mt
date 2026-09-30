@@ -12,4 +12,4 @@ label = "Team Round"
 titles = ["Team", "Team (US / Iran)", "Team (China / Toronto)"]
 +++
 
-Every past BmMT Team Round in one place. See the [full archives](@/archives/_index.md) for all other tests.
+See the [full archives](@/archives/_index.md) for all other tests.

@@ -39,4 +39,4 @@ titles = ["Number Theory"]
 retired = true
 +++
 
-Every past BMT Focus Test, grouped by subject. See the [full archives](@/archives/_index.md) for all other tests.
+See the [full archives](@/archives/_index.md) for all other tests.

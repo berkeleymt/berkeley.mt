@@ -12,4 +12,4 @@ label = "General Test"
 titles = ["General"]
 +++
 
-Every past BMT General Test in one place. See the [full archives](@/archives/_index.md) for all other tests.
+See the [full archives](@/archives/_index.md) for all other tests.

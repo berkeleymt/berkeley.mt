@@ -13,4 +13,4 @@ label = "Team Round"
 titles = ["Team"]
 +++
 
-Every past BMT Team Round in one place. BMT no longer holds a Team Round. See the [full archives](@/archives/_index.md) for all other tests.
+BMT no longer holds a Team Round. See the [full archives](@/archives/_index.md) for all other tests.

@@ -12,4 +12,4 @@ label = "Puzzle Round"
 titles = ["Puzzle", "Puzzle (US / Iran)", "Puzzle (China / Toronto)"]
 +++
 
-Every past BmMT Puzzle Round in one place. See the [full archives](@/archives/_index.md) for all other tests.
+See the [full archives](@/archives/_index.md) for all other tests.

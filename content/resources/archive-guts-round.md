@@ -12,4 +12,4 @@ label = "Guts Round"
 titles = ["Guts"]
 +++
 
-Every past BMT Guts Round in one place. See the [full archives](@/archives/_index.md) for all other tests.
+See the [full archives](@/archives/_index.md) for all other tests.

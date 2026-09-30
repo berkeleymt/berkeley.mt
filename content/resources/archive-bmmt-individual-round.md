@@ -12,4 +12,4 @@ label = "Individual Round"
 titles = ["Individual", "Individual (US / Iran)", "Individual (China / Toronto)"]
 +++
 
-Every past BmMT Individual Round in one place. See the [full archives](@/archives/_index.md) for all other tests.
+See the [full archives](@/archives/_index.md) for all other tests.
