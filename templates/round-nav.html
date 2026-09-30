@@ -19,7 +19,7 @@
 {% set all = get_section(path="archives/_index.md", metadata_only=true) %}
 <nav class="not-prose flex flex-col gap-3 text-sm">
   <h2 class="text-lg font-semibold">Browse by round</h2>
-  <div>{{ self::link(href=all.permalink, label="All tests", active=current == "") }}</div>
+  <div>{{ self::link(href=all.permalink, label="All archives", active=current == "") }}</div>
   <dl class="flex flex-col gap-4 sm:gap-3">
     {{ self::row(label="BMT", tournament="resources/archive-bmt.md", paths=["resources/archive-power-round.md", "resources/archive-bmt-individual-round.md", "resources/archive-guts-round.md"], current=current) }}
     {{ self::row(label="BmMT", tournament="resources/archive-bmmt.md", paths=["resources/archive-puzzle-round.md", "resources/archive-bmmt-individual-round.md", "resources/archive-bmmt-team-round.md", "resources/archive-relay-round.md"], current=current) }}
