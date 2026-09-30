@@ -44,7 +44,7 @@
 {% endfor %}
 {% for test in tests %}
 {% if test.title in section.titles or test.title | replace(from=" Tiebreaker", to="") in section.titles %}
-{% for key in ["answers", "rules"] %}
+{% for key in ["rules"] %}
 {% if test[key] is defined and key not in present %}{% set_global present = present | concat(with=key) %}{% endif %}
 {% endfor %}
 {% if first < 0 %}{% set_global first = i %}{% endif %}
@@ -55,7 +55,7 @@
 {% endfor %}
 <section class="flex flex-col gap-3 {% if new_group and not loop.first %}mt-8 border-t border-gray-200 pt-8{% endif %}">
 {% if not multi %}
-<h2 class="text-lg font-semibold">Browse by event</h2>
+<h2 class="text-lg font-semibold">Browse by tournament</h2>
 {% endif %}
 {% if new_group %}
 <div class="flex flex-col gap-2 {% if section.label != group %}mb-3{% endif %}">
@@ -72,12 +72,12 @@
 {% if multi and section.label != group %}
 <h4 id="{{ section.label | slugify }}" class="round-anchor text-base font-semibold scroll-mt-8">{{ section.label }}</h4>
 {% endif %}
-<table class="prose table-fixed w-full">
+{% set_global keys = [] %}
+{% for key in ["rules", "problems", "solutions"] %}{% if key in present %}{% set_global keys = keys | concat(with=key) %}{% endif %}{% endfor %}
+<table class="prose table-auto sm:table-fixed w-full [&_th]:text-left{% if keys | length > 2 %} [&_th]:text-sm sm:[&_th]:text-base{% endif %}">
   <thead>
-    <th class="w-1/2">Tournament</th>
-    {% set_global keys = [] %}
-    {% for key in ["rules", "problems", "answers", "solutions"] %}{% if key in present %}{% set_global keys = keys | concat(with=key) %}{% endif %}{% endfor %}
-    {% for key in keys %}<th>{{ key | capitalize }}</th>{% endfor %}
+    <th class="{% if keys | length > 2 %}sm:w-2/5{% else %}sm:w-1/2{% endif %}">Tournament</th>
+    {% for key in keys %}<th class="w-px whitespace-nowrap sm:w-auto">{{ key | capitalize }}</th>{% endfor %}
   </thead>
   <tbody>
     {% for archive in archives.pages %}
@@ -95,7 +95,7 @@
     <tr>
       <td>
         <a href="{{ archive.permalink | safe }}">{{ name }}</a>
-        {% set prefix = section.titles | first %}{% set prefix = prefix ~ " " %}{% if tiebreaker %}<span>{{ test.title | trim_start_matches(pat=prefix) }}</span>{% elif test.title != section.titles | first %}<span class="text-gray-500">· {{ test.title }}</span>{% endif %}
+        {% set prefix = section.titles | first %}{% set prefix = prefix ~ " " %}{% if test.title != section.titles | first %}<span>{{ test.title | trim_start_matches(pat=prefix) }}</span>{% endif %}
       </td>
       {% for key in keys %}
       <td>
