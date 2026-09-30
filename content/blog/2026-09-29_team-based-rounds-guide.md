@@ -9,6 +9,7 @@ authors = [
   "Ylann Bouis",
   "Forrest Chou",
   "Moor Xu",
+  "Golden Peng",
 ]
 
 [extra]
@@ -28,7 +29,7 @@ A common suggestion in team-based rounds is that you should split up work betwee
 #### Power Round
 
 - Past the introduction, sections are usually standalone, which allows team members to divide and conquer the different concepts.
-- This may seem detrimental in cases where questions depend on results from other sections, but you can overcome this downside by letting team members explain concepts to other team members. This can be very effective because beginners in a subject have a good idea of the friction and confusion when learning that subject for the first time.
+- This may seem detrimental in cases where questions depend on results from other sections, but you can overcome this downside by letting team members explain concepts to other team members. Working through and explaining to each other can help the whole team understand the concepts, especially to identify more confusing areas of the topic.
 - In a similar vein, it’s extremely important to have team members **review each other’s proofs** both for correctness and clarity, because we need to understand your proof for you to get points on it!
 
 #### Guts Round
@@ -63,3 +64,6 @@ Remember that questions on the Power Round are **ordered by content and not diff
 ---
 
 Be sure to keep these things in mind when you’re preparing with your team. With that being said, we’ll see you in November!
+
+Best,<br>
+Your friends at BMT

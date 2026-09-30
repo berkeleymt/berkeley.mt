@@ -5,6 +5,8 @@ aliases = ["/archives/bmmt-individual-round"]
 template = "round-archive.html"
 
 [extra]
+hatnote = "For the BMT Individual Round, see"
+hatnote_link = "resources/archive-bmt-individual-round.md"
 short_title = "Individual Round (BmMT)"
 tournaments = ["BmMT"]
 

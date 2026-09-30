@@ -45,7 +45,7 @@
 {% block after_page_content %}{% endblock %}
 
 {% if page.authors | default(value=[]) | length > 3 %}
-<section id="contributors" class="mt-12 border-t border-gray-200 pt-6 flex flex-col gap-3">
+<section id="contributors" class="border-t border-gray-200 pt-6 flex flex-col gap-3">
   <h2 class="text-lg font-semibold">Contributors</h2>
   <div class="columns-2 sm:columns-3 gap-x-8 text-sm leading-relaxed">
     {% for name in page.authors %}<span class="block">{{ name }}</span>

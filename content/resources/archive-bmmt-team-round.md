@@ -5,6 +5,8 @@ aliases = ["/archives/bmmt-team-round"]
 template = "round-archive.html"
 
 [extra]
+hatnote = "For the historic BMT Team Round, see"
+hatnote_link = "resources/archive-bmt-team-round.md"
 short_title = "Team Round (BmMT)"
 tournaments = ["BmMT"]
 

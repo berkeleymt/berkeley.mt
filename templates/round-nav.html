@@ -8,7 +8,7 @@
   <dd class="flex flex-wrap gap-x-2 gap-y-1">
     {% for path in paths %}
     {% set round = get_page(path=path) %}
-    {% if not loop.first %}<span class="text-gray-300" aria-hidden="true">·</span>{% endif %}
+    {% if not loop.first %}<span class="text-gray-400" aria-hidden="true">⁄</span>{% endif %}
     {{ self::link(href=round.permalink, label=round.extra.short_title | default(value=round.title) | replace(from=" (" ~ label ~ ")", to=""), active=round.path == current) }}
     {% endfor %}
   </dd>

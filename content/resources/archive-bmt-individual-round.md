@@ -5,6 +5,8 @@ aliases = ["/archives/bmt-individual-round", "/archives/individual-round", "/arc
 template = "round-archive.html"
 
 [extra]
+hatnote = "For the BmMT Individual Round, see"
+hatnote_link = "resources/archive-bmmt-individual-round.md"
 short_title = "Individual Round (BMT)"
 tournaments = ["BMT"]
 
@@ -59,4 +61,4 @@ label = "Individual Test (2012–2020)"
 titles = ["Individual"]
 +++
 
-At current BMTs, students can take either the General Test or two of the Focus Tests. For the BmMT Individual Round, see [Individual Round (BmMT)](@/resources/archive-bmmt-individual-round.md). See the [full archives](@/archives/_index.md) for all other tests.
+At current BMTs, students can take either the General Test or two of the Focus Tests. See the [full archives](@/archives/_index.md) for all other tests.
