@@ -1,5 +1,6 @@
 +++
 title = "A Guide to Team-based Rounds for BMT 2026"
+aliases = ["/blog/bmt-team-round-tips/"]
 authors = [
   "Nathan Alejandria",
   "Carlyana Kwong",
@@ -11,8 +12,8 @@ authors = [
 ]
 
 [extra]
-cover_image = "/assets/banner.jpg"
-cover_alt = "Students competing at BMT"
+cover_image = "/assets/blog/team-based-rounds-guide.jpg"
+cover_alt = "Students in a lecture hall at BMT"
 
 [taxonomies]
 tags = ["advice", "bmt", "power-round", "guts-round"]
