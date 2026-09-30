@@ -32,7 +32,7 @@
     list.forEach(k => { const g = out.find(g => g.on === k.on); g ? g.items.push(k.label) : out.push({ on: k.on, items: [k.label] }); });
     return out.sort((p, q) => p.on.localeCompare(q.on));
   };
-  const dlList = gs => gs.map(g => `<div><div class="d">${longDay(g.on)}</div><ul>${g.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("");
+  const dlList = (gs, evDay) => gs.map(g => `<div><div class="d"><i class="${g.on === evDay ? "ev" : ""}"></i>${longDay(g.on)}</div><ul>${g.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("");
 
   function render(el, ev, now, force) {
     const mode = el.dataset.mode;
@@ -58,9 +58,19 @@
     else st = stat(esc(ev.event_title), "Has ended. Thanks for competing!") +
       (ev.results ? `<a class="btn reg" href="${esc(ev.results)}">Results Available</a>` : stat("Results", "Results Not Available"));
 
+    const up = group(deadlines.filter(k => now < endOf(k.on)));
+    const pageUrl = new URL(mode === "page" ? location.pathname : el.dataset.href, location.origin).href;
+    const state = now < opens ? `Registration opens ${pacTime(opens)}.`
+      : cur ? `${cur.name} is open, ${cur.price} per student, ${nowTxt}.`
+      : now < startAt ? `Registration is closed. ${ev.event_label}: ${longDay(ev.event_day)}.`
+      : now < endOf(ev.event_day) ? `${ev.event_label} is today!` : "The event has ended.";
+    const next = up[0] && up[0].on !== ev.event_day ? ` Next deadline, ${longDay(up[0].on)}: ${up[0].items.join("; ")}.` : "";
+    el.dataset.shareTitle = `${ev.event_title} at a Glance`;
+    el.dataset.shareText = `${ev.event_title}: ${state}${next}`;
+    el.dataset.shareUrl = pageUrl;
     const key = `${slot}|${st}|${el.clientWidth}`;
     if (!force && el.dataset.key === key) {
-      const nw = el.querySelector(".now");
+      const nw = el.querySelector(".now:not(.tag)");
       if (nw) { nw.textContent = nowTxt; fit(el); }
       return;
     }
@@ -68,7 +78,7 @@
 
     let h = `<div class="w${mode === "page" ? " page" : ""}">`;
     if (mode !== "page") h += `<div class="eyebrow">At a Glance</div><div class="w-title">${esc(ev.event_title)}</div><div class="w-date">${esc(ev.date_text)}</div>`;
-    h += `<div class="st">${st}</div><div class="tl">`;
+    h += `<div class="st">${st}<button type="button" class="btn share">Share</button></div><div class="tl">`;
     const lastEnd = x(dayNum(last.end) + 1), tl = x(dayNum(ev.event_day));
     phases.forEach((p, i) => {
       const l = x(dayNum(p.start)), w = x(dayNum(p.end) + 1) - l;
@@ -78,7 +88,7 @@
     h += `<div class="band closed" style="left:${lastEnd}%;width:${tl - lastEnd}%"></div><div class="div" style="left:${lastEnd}%"></div>`;
     for (let d = a; d < b - 1; d++) if (new Date(d * MS_DAY).getUTCDay() === 6)
       h += `<div class="wk" style="left:${x(d)}%;width:${2 / span * 100}%"></div>`;
-    h += `<div class="nowrow">${inRange && nowTxt ? `<span class="now" data-l1="${x(slot + 1)}%" data-l2="${x(slot)}%">${nowTxt}</span>` : ""}</div><div class="labs">`;
+    h += `<div class="nowrow">${inRange ? `${nowTxt ? `<span class="now" data-l1="${x(slot + 1)}%" data-l2="${x(slot)}%">${nowTxt}</span>` : ""}<span class="now tag" data-l1="${x(slot + 1)}%" data-l2="${x(slot)}%">Today</span>` : ""}</div><div class="labs">`;
     phases.forEach(p => {
       const l = x(dayNum(p.start)), r = x(dayNum(p.end) + 1);
       h += `<span class="lab${p === cur ? " cur" : ""}" style="left:${(l + r) / 2}%" data-short="${esc(p.short || "")}">${esc(p.short || p.name)}</span>`;
@@ -87,8 +97,8 @@
     if (slot > a) h += `<div class="fill" style="width:${Math.min(slot >= b ? 100 : x(slot), lastEnd)}%"></div>`;
     h += `</div><div class="ticks">`;
     group(deadlines.filter(k => k.on !== ev.event_day)).forEach(g =>
-      h += `<span class="dia${now >= endOf(g.on) ? " past" : ""}" style="left:${x(dayNum(g.on) + .5)}%" title="${esc(longDay(g.on) + ": " + g.items.join(", "))}"></span>`);
-    h += `</div><div class="tline" style="left:${tl}%"></div>`;
+      h += `<button type="button" class="dia${now >= endOf(g.on) ? " past" : ""}" style="left:${x(dayNum(g.on) + .5)}%" aria-label="${esc(longDay(g.on) + ": " + g.items.join(", "))}" data-day="${esc(longDay(g.on))}" data-items="${esc(JSON.stringify(g.items))}"></button>`);
+    h += `</div><div class="tip" hidden></div><div class="tline" style="left:${tl}%"></div>`;
     if (inRange) h += `<div class="today" style="left:${x(slot)}%;width:${100 / span}%"></div>`;
     h += `<div class="axis">`;
     let n = 0;
@@ -104,8 +114,11 @@
       fit(el);
       return;
     }
-    const upcoming = group(deadlines.filter(k => now < endOf(k.on)));
-    if (upcoming.length) h += `<div class="sub">Upcoming deadlines</div><div class="dl">${dlList(upcoming)}</div>`;
+    if (up.length) h += `<div class="sub">Upcoming deadlines</div><div class="dl">${dlList(up, ev.event_day)}</div>`;
+    if (ev.calendar) {
+      const ics = new URL(ev.calendar, location.origin).href, webcal = ics.replace(/^https?:/, "webcal:");
+      h += `<div class="cal"><span>Add these dates to your calendar:</span><a class="btn" href="${esc(webcal)}">Apple / Outlook</a><a class="btn" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}" target="_blank" rel="noopener">Google Calendar</a><a class="btn" href="${esc(ics)}" download>Download .ics</a></div>`;
+    }
     const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
       .sort((p, q) => q.show_from.localeCompare(p.show_from));
     if (items.length) {
@@ -114,7 +127,7 @@
       h += `</div></div>`;
     }
     const past = group(deadlines.filter(k => now >= endOf(k.on))).reverse();
-    if (past.length) h += `<div class="news pastdl"><div class="sub">Past deadlines</div><div class="dl">${dlList(past)}</div></div>`;
+    if (past.length) h += `<div class="news pastdl"><div class="sub">Past deadlines</div><div class="dl">${dlList(past, ev.event_day)}</div></div>`;
     el.innerHTML = h + `</div>`;
     fit(el);
   }
@@ -140,18 +153,33 @@
       const pv = labs.slice(0, i).filter(q => q.style.display !== "none").pop();
       if ((pv && clash(pv, s)) || box(s).right > t.right + 1 || box(s).left < t.left - 1) s.style.display = "none";
     });
-    const nw = el.querySelector(".now");
-    if (nw) {
-      const full = nw.textContent, variants = [full, full.replace(/ in .*$/, "")];
-      const fits = () => { const r = box(nw); return r.left >= t.left - 1 && r.right <= t.right + 1; };
-      outer: for (const v of variants) {
-        nw.textContent = v;
-        for (const f of [false, true]) {
-          nw.classList.toggle("flip", f);
-          nw.style.left = f ? nw.dataset.l2 : nw.dataset.l1;
-          if (fits()) break outer;
+    // "Today" sits on the opposite side of the band from the countdown.
+    const nw = el.querySelector(".now:not(.tag)"), tg = el.querySelector(".now.tag");
+    if (tg) {
+      const place = (s, right) => { s.classList.toggle("flip", !right); s.style.left = right ? s.dataset.l1 : s.dataset.l2; };
+      const fits = s => { const r = box(s); return r.left >= t.left - 1 && r.right <= t.right + 1; };
+      let ok = false;
+      if (nw) {
+        nw.style.display = "";
+        const full = nw.textContent.replace(/^Today · /, "");
+        tg.style.display = "";
+        outer: for (const v of [full, full.replace(/ in .*$/, "")]) {
+          nw.textContent = v;
+          for (const right of [true, false]) {
+            place(nw, right); place(tg, !right);
+            if (fits(nw) && fits(tg)) { ok = true; break outer; }
+          }
         }
+        if (!ok) outer2: for (const v of [full, full.replace(/ in .*$/, "")]) {
+          nw.textContent = `Today · ${v}`;
+          for (const right of [true, false]) {
+            place(nw, right);
+            if (fits(nw)) { ok = true; tg.style.display = "none"; break outer2; }
+          }
+        }
+        if (!ok) { nw.textContent = full; nw.style.display = "none"; }
       }
+      if (!ok) for (const right of [false, true]) { place(tg, right); if (fits(tg)) break; }
     }
     const tdy = el.querySelector(".today");
     if (tdy) {
@@ -172,6 +200,49 @@
   const widgets = [...document.querySelectorAll(".glance[data-mode]")].map(el => ({ el, ev: JSON.parse(el.querySelector("script").textContent) }));
   const draw = force => { const now = fixed || new Date(); widgets.forEach(w => render(w.el, w.ev, now, force)); };
   draw(true);
+
+  const tipFor = dia => dia.closest(".tl").querySelector(".tip");
+  const showTip = (dia, pin) => {
+    const tip = tipFor(dia), tl = dia.closest(".tl");
+    tip.innerHTML = `<button type="button" class="x" aria-label="Close">×</button><b>${esc(dia.dataset.day)}</b><ul>${JSON.parse(dia.dataset.items).map(i => `<li>${esc(i)}</li>`).join("")}</ul>`;
+    tip.hidden = false;
+    tip.dataset.pin = pin ? "1" : "";
+    const c = dia.offsetLeft, w = tip.offsetWidth;
+    tip.style.left = Math.max(0, Math.min(tl.clientWidth - w, c - w / 2)) + "px";
+    tl.querySelectorAll(".dia.on").forEach(d => d.classList.remove("on"));
+    dia.classList.add("on");
+  };
+  const hideTips = all => document.querySelectorAll(".glance .tip:not([hidden])").forEach(tip => {
+    if (!all && tip.dataset.pin) return;
+    tip.hidden = true;
+    tip.dataset.pin = "";
+    tip.closest(".tl").querySelectorAll(".dia.on").forEach(d => d.classList.remove("on"));
+  });
+  document.addEventListener("click", e => {
+    if (e.target.closest(".glance .tip")) { if (e.target.closest(".x")) hideTips(true); return; }
+    const dia = e.target.closest(".glance .dia");
+    if (dia && !(dia.classList.contains("on") && tipFor(dia).dataset.pin)) { hideTips(true); showTip(dia, true); }
+    else hideTips(true);
+    const sh = e.target.closest(".glance .share");
+    if (!sh) return;
+    const g = sh.closest(".glance"), { shareTitle: title, shareText: text, shareUrl: url } = g.dataset;
+    const done = msg => { sh.textContent = msg; setTimeout(() => { sh.textContent = "Share"; }, 2000); };
+    if (navigator.share) navigator.share({ title, text, url }).catch(() => {});
+    else navigator.clipboard.writeText(`${text} ${url}`).then(() => done("Copied!"), () => done("Couldn't copy"));
+  });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") hideTips(true); });
+  // Hover popups close after a short delay so the pointer can cross the gap into them.
+  let hideTimer;
+  document.addEventListener("mouseover", e => {
+    const dia = e.target.closest(".glance .dia");
+    if (dia || e.target.closest(".glance .tip")) clearTimeout(hideTimer);
+    if (dia && !tipFor(dia).dataset.pin) showTip(dia, false);
+  });
+  document.addEventListener("mouseout", e => {
+    if (!e.target.closest(".glance .dia, .glance .tip") || e.relatedTarget?.closest?.(".glance .dia, .glance .tip")) return;
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(() => hideTips(false), 300);
+  });
   window.addEventListener("resize", () => draw(false));
   if (!fixed) setInterval(() => draw(false), 60000);
 })();

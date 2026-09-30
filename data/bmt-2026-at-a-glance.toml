@@ -13,6 +13,8 @@ event_starts = "08:00"
 event_label = "Tournament Day"
 # Set to the archive page once results are posted, e.g. "/archives/bmt-2026/".
 results = ""
+# Calendar feed built from this file (templates/bmt-2026.ics).
+calendar = "/bmt-2026.ics"
 
 [[phases]]
 name = "Phase 1"
@@ -37,7 +39,7 @@ price = "$25"
 
 [[deadlines]]
 on = "2026-10-18"
-label = "Phase 2 ends ($15 → $25)"
+label = "Last day to purchase seats for $15"
 
 [[deadlines]]
 on = "2026-10-18"
@@ -49,7 +51,7 @@ label = "Hotel block cutoff"
 
 [[deadlines]]
 on = "2026-11-01"
-label = "Registration closes"
+label = "Last day to purchase seats for $25 (registration closes)"
 
 [[deadlines]]
 on = "2026-11-01"

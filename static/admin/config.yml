@@ -37,6 +37,7 @@ collections:
           - { label: "Event start time (HH:MM, Pacific; optional)", name: "event_starts", widget: "string", required: false }
           - { label: "Event day label", name: "event_label", widget: "string" }
           - { label: "Results link (leave empty until posted)", name: "results", widget: "string", required: false }
+          - { label: "Calendar feed path (built from this file)", name: "calendar", widget: "string", required: false }
           - label: "Phases"
             name: "phases"
             widget: "list"
@@ -74,6 +75,7 @@ collections:
           - { label: "Event start time (HH:MM, Pacific; optional)", name: "event_starts", widget: "string", required: false }
           - { label: "Event day label", name: "event_label", widget: "string" }
           - { label: "Results link (leave empty until posted)", name: "results", widget: "string", required: false }
+          - { label: "Calendar feed path (built from this file)", name: "calendar", widget: "string", required: false }
           - label: "Phases"
             name: "phases"
             widget: "list"
