@@ -12,7 +12,7 @@
 {% for section in page.extra.sections %}
 {% if section.retired and not past_shown %}
 {% set_global past_shown = true %}
-<div id="past" class="round-past mt-14 border-t border-gray-200 pt-6">
+<div id="past" class="round-past mt-4 border-t border-gray-200 pt-6">
   <h2 class="text-2xl font-semibold">Past {{ page.extra.short_title }}</h2>
   <p class="text-sm text-gray-500 mt-1">No longer offered at BMT.</p>
 </div>
@@ -34,10 +34,11 @@
 {% endfor %}
 {% endif %}
 {% endfor %}
+<section class="flex flex-col gap-3">
 {% if page.extra.sections | length > 1 %}
-<h2 id="{{ section.label | slugify }}" class="round-section text-xl font-semibold mt-10 scroll-mt-8">{{ section.label }}</h2>
+<h2 id="{{ section.label | slugify }}" class="round-section text-xl font-semibold scroll-mt-8">{{ section.label }}</h2>
 {% endif %}
-<table class="prose table-fixed w-full mt-6">
+<table class="prose table-fixed w-full">
   <thead>
     <th class="w-1/2">Tournament</th>
     <th>Problems</th>
@@ -80,6 +81,7 @@
     {% endfor %}
   </tbody>
 </table>
+</section>
 {% endfor %}
 {% if page.extra.sections | length > 1 %}
 <div class="hidden xl:block absolute -right-8 translate-x-full h-full max-w-48">
