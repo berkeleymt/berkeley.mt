@@ -4,7 +4,7 @@
 
 {% macro row(label, paths, current, tournament="") %}
 <div class="flex flex-col sm:flex-row gap-1 sm:gap-4 sm:items-baseline border-l-2 border-gray-200 pl-3">
-  <dt class="sm:w-20 shrink-0 text-base font-semibold text-black">{% if tournament %}{% set t = get_page(path=tournament) %}{{ self::link(href=t.permalink, label=label, active=t.path == current) }}{% else %}{{ label }}{% endif %}</dt>
+  <dt class="sm:w-20 shrink-0 text-base {% if tournament %}font-semibold text-black{% else %}text-gray-500{% endif %}">{% if tournament %}{% set t = get_page(path=tournament) %}{{ self::link(href=t.permalink, label=label, active=t.path == current) }}{% else %}{{ label }}{% endif %}</dt>
   <dd class="flex flex-wrap gap-x-2 gap-y-1">
     {% for path in paths %}
     {% set round = get_page(path=path) %}
