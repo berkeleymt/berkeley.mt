@@ -4,7 +4,7 @@ aliases = ["/about-bmt"]
 template = "about.html"
 
 [[extra.about.terms]]
-label = "Spring 2025"
+label = "Fall 2026"
 columns = [ [
     { title = "Logistics", heading = true },
     { title = "Heads of Logistics", members = ["Jeslyn Nguyen", "Viraj Aggarwal"] },
@@ -26,7 +26,7 @@ columns = [ [
         "Adriel Becerra", "Aedan Hui", "Andrew Ku", "Annie Yao", "Anton Luu",
         "Benji Van Lienden", "Brice Schilling", "Brody Scott", "Carlyana Kwong",
         "Clara Castellar", "Crystal Chen", "Danielle Murphy", "Dario Huang", "Ethan Zhou",
-        "Eyun Kim", "Golden Peng", "Hannah Yi", "Haoran Xi", "Hrishikesh Lakshman", "Ian Kim",
+        "Eyun Kim", "Golden Peng", "Hannah Yi", "Haoran Xi", "Hrishikesh Lakshman", "Ian Cheung", "Ian Kim",
         "Ishwar Suriyaprakash", "Jeslyn Nguyen", "Jiazhen Tan", "Junehee Lee", "Kaden Huang",
         "Liv Do", "Mary Laska", "Meghan Ke", "Micah Tantiratpisan", "Naomi Lojo", "Oliver Ni",
         "Priya Bhakta", "Sabine Shashaty", "Sarah Kocian", "Sophia Xuan", "Theo Danial",
