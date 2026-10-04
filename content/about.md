@@ -18,7 +18,7 @@ columns = [ [
     { title = "Participant Outreach Lead", members = ["Carlyana Kwong"] },
     { title = "Partnerships Lead", members = ["Golden Peng"] },
     { title = "Sponsorships Lead", members = ["Jeslyn Nguyen"] },
-    { title = "TS PMO ICL Lead", members = ["Brice Schilling"] },
+    { title = "Production Inventory Lead", members = ["Brice Schilling"] },
     { title = "Tournament Guide Lead", members = ["Micah Tantiratpisan"] },
     { title = "Volunteers Lead", members = ["Junehee Lee"] },
     { title = "Wayfinding Lead", members = ["Micah Tantiratpisan"] },
@@ -49,7 +49,7 @@ columns = [ [
     { title = "Problem Writers", members = [
         "Aaron Arellano", "Aaron Cho", "Aarush Chaubey", "Aditya Baireddy", "Aedan Hui",
         "Andrew Huang", "Annie Yao", "Aritra Mukhopadhyay", "Arjun Damerla", "Arthur Chen",
-        "Austin Lei", "Benjamin Chen", "Benji Van Lienden", "Brandon Yea", "Brian Sui",
+        "Austin Lei", "Benjamin Chen", "Brandon Yea", "Brian Sui",
         "Evan Kniffen", "Forrest Chou", "Harsh Ambardekar", "Helena Zhang", "Isaac Li",
         "Ittai Nelken-Regev", "Jason Guo", "Jessica Li", "Jiazhen Tan", "Jonathan Sy",
         "Jordan Truong", "Justin Park", "Kiran Parthasarathy", "Lucas Fowler", "Moor Xu",
