@@ -39,7 +39,7 @@ columns = [ [
 ], [
     { title = "Problem Writing", heading = true },
     { title = "Head Problem Writers", members = ["Aarush Chaubey", "Ylann Bouis"] },
-    { title = "Head of Testsolving", members = ["Ylann Bouis"] },
+    { title = "Head of Testsolving", members = ["Forrest Chou"] },
     { title = "Discrete Test Organizers", members = ["Harsh Ambardekar", "Michelle Jara"] },
     { title = "Calculus Test Organizers", members = ["Evan Kniffen", "Silvia Carrillo Calmo"] },
     { title = "Geometry Test Organizer", members = ["Stephanie Yao"] },
