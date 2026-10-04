@@ -47,7 +47,7 @@ solutions = "geometry-solutions.pdf"
 [[extra.archive.groups.tests]]
 title = "Guts"
 problems = "guts-problems.pdf"
-#solutions = "guts-solutions.pdf"
+solutions = "guts-solutions.pdf"
 
 [[extra.archive.groups]]
 label = "Tiebreaker"
