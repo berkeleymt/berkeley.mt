@@ -1,7 +1,8 @@
 // At a Glance widget. Reads each .glance element's JSON config (page front
 // matter `extra`) and draws the status, timeline, deadlines, and news.
 // All dates in the config are BMT (Pacific) calendar dates; deadlines are
-// 11:59 PM Pacific on that date. Times are displayed in Pacific.
+// 11:59 PM Pacific on that date. Blocks are multi-day parts of the event
+// (start to end, inclusive), drawn as shaded bands. Times are displayed in Pacific.
 (() => {
   const TZ = "America/Los_Angeles";
   const MS_DAY = 864e5;
@@ -29,14 +30,21 @@
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   const group = list => {
     const out = [];
-    list.forEach(k => { const g = out.find(g => g.on === k.on); g ? g.items.push(k.label) : out.push({ on: k.on, items: [k.label] }); });
+    list.forEach(k => { const g = out.find(g => g.on === k.on && g.to === k.to); g ? g.items.push(k.label) : out.push({ on: k.on, to: k.to, items: [k.label] }); });
     return out.sort((p, q) => p.on.localeCompare(q.on));
   };
-  const dlList = (gs, evDay) => gs.map(g => `<div><div class="d"><i class="${g.on === evDay ? "ev" : ""}"></i>${longDay(g.on)}</div><ul>${g.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("");
+  const part = (s, o) => utcDate(s).toLocaleDateString("en-US", { timeZone: "UTC", ...o });
+  const range = (s, e) => part(s, { month: "short" }) === part(e, { month: "short" })
+    ? `${part(s, { weekday: "short" })}–${part(e, { weekday: "short" })}, ${part(s, { month: "short" })} ${+s.slice(8)}–${+e.slice(8)}`
+    : `${longDay(s)} – ${longDay(e)}`;
+  const when = g => g.to ? range(g.on, g.to) : longDay(g.on);
+  const dlList = (gs, evDay) => gs.map(g => `<div><div class="d"><i class="${g.to ? "blk" : g.on === evDay ? "ev" : ""}"></i>${when(g)}</div><ul>${g.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("");
 
   function render(el, ev, now, force) {
     const mode = el.dataset.mode;
-    const phases = ev.phases || [], deadlines = ev.deadlines || [];
+    const phases = ev.phases || [], deadlines = ev.deadlines || [], blocks = ev.blocks || [];
+    const dated = deadlines.concat(blocks.map(k => ({ on: k.start, to: k.end, label: k.name })));
+    const over = k => now >= endOf(k.to || k.on);
     const first = phases[0], last = phases[phases.length - 1];
     const a = dayNum(first.start), b = dayNum(ev.event_day) + 1, span = b - a;
     const x = d => (d - a) / span * 100;
@@ -53,18 +61,20 @@
         stat("Price", `${esc(cur.price)} per student`) +
         stat(multi ? `${esc(cur.short || cur.name)} ends` : "Closes", pacTime(new Date(endOf(cur.end) - 60e3)));
       nowTxt = `${dur(endOf(cur.end) - now)} left${multi ? ` in ${cur.short || cur.name}` : ""}`;
-    } else if (now < startAt) { st = stat("Registration", "Closed") + stat(esc(ev.event_label), longDay(ev.event_day)); nowTxt = `${dur(startAt - now)} to go`; }
+    } else if (now < startAt) {
+      st = stat("Registration", "Closed") + blocks.filter(k => now < endOf(k.end)).map(k => stat(esc(k.name), range(k.start, k.end))).join("") +
+        stat(esc(ev.event_label), longDay(ev.event_day)); nowTxt = `${dur(startAt - now)} to go`; }
     else if (now < endOf(ev.event_day)) st = stat(esc(ev.event_label), "Today!");
     else st = stat(esc(ev.event_title), "Has ended. Thanks for competing!") +
       (ev.results ? `<a class="btn reg" href="${esc(ev.results)}">Results Available</a>` : stat("Results", "Results Not Available"));
 
-    const up = group(deadlines.filter(k => now < endOf(k.on)));
+    const up = group(dated.filter(k => !over(k)));
     const pageUrl = new URL(mode === "page" ? location.pathname : el.dataset.href, location.origin).href;
     const state = now < opens ? `Registration opens ${pacTime(opens)}.`
       : cur ? `${cur.name} is open, ${cur.price} per student, ${nowTxt}.`
       : now < startAt ? `Registration is closed. ${ev.event_label}: ${longDay(ev.event_day)}.`
       : now < endOf(ev.event_day) ? `${ev.event_label} is today!` : "The event has ended.";
-    const next = up[0] && up[0].on !== ev.event_day ? ` Next deadline, ${longDay(up[0].on)}: ${up[0].items.join("; ")}.` : "";
+    const next = up[0] && up[0].on !== ev.event_day ? ` ${up[0].to ? "Next up" : "Next deadline"}, ${when(up[0])}: ${up[0].items.join("; ")}.` : "";
     el.dataset.shareTitle = `${ev.event_title} at a Glance`;
     el.dataset.shareText = `${ev.event_title}: ${state}${next}`;
     el.dataset.shareUrl = pageUrl;
@@ -85,15 +95,24 @@
       h += `<div class="band${i % 2 ? " alt" : ""}" style="left:${l}%;width:${w}%"></div>`;
       if (i) h += `<div class="div" style="left:${l}%"></div>`;
     });
-    h += `<div class="band closed" style="left:${lastEnd}%;width:${tl - lastEnd}%"></div><div class="div" style="left:${lastEnd}%"></div>`;
+    h += `<div class="band closed" style="left:${lastEnd}%;width:${tl - lastEnd}%"></div><div class="div${blocks.some(k => x(dayNum(k.start)) === lastEnd) ? " low" : ""}" style="left:${lastEnd}%"></div>`;
     for (let d = a; d < b - 1; d++) if (new Date(d * MS_DAY).getUTCDay() === 6)
       h += `<div class="wk" style="left:${x(d)}%;width:${2 / span * 100}%"></div>`;
-    h += `<div class="nowrow">${inRange ? `${nowTxt ? `<span class="now" data-l1="${x(slot + 1)}%" data-l2="${x(slot)}%">${nowTxt}</span>` : ""}<span class="now tag" data-l1="${x(slot + 1)}%" data-l2="${x(slot)}%">Today</span>` : ""}</div><div class="labs">`;
-    phases.forEach(p => {
-      const l = x(dayNum(p.start)), r = x(dayNum(p.end) + 1);
-      h += `<span class="lab${p === cur ? " cur" : ""}" style="left:${(l + r) / 2}%" data-short="${esc(p.short || "")}">${esc(p.short || p.name)}</span>`;
+    blocks.forEach(k => {
+      const l = x(dayNum(k.start)), w = x(dayNum(k.end) + 1) - l;
+      h += `<div class="band blk${over({ on: k.end }) ? " past" : ""}" style="left:${l}%;width:${w}%"></div>`;
     });
-    h += `<span class="lab muted" style="left:${(lastEnd + tl) / 2}%">Closed</span></div><div class="bar">`;
+    h += `<div class="nowrow">${inRange ? `${nowTxt ? `<span class="now" data-l1="${x(slot + 1)}%" data-l2="${x(slot)}%">${nowTxt}</span>` : ""}<span class="now tag" data-l1="${x(slot + 1)}%" data-l2="${x(slot)}%">Today</span>` : ""}</div><div class="labs">`;
+    const labs = phases.map(p => {
+      const l = x(dayNum(p.start)), r = x(dayNum(p.end) + 1);
+      return [(l + r) / 2, `<span class="lab${p === cur ? " cur" : ""}" style="left:${(l + r) / 2}%" data-short="${esc(p.short || "")}">${esc(p.short || p.name)}</span>`];
+    });
+    labs.push([(lastEnd + tl) / 2, `<span class="lab muted" style="left:${(lastEnd + tl) / 2}%">Closed</span>`]);
+    blocks.forEach(k => {
+      const l = x(dayNum(k.start)), r = x(dayNum(k.end) + 1), on = now >= pacInstant(k.start) && now < endOf(k.end);
+      labs.push([(l + r) / 2 - .001, `<span class="lab blk${on ? " cur" : ""}" style="left:${(l + r) / 2}%">${esc(k.name)}</span>`]);
+    });
+    h += labs.sort((p, q) => p[0] - q[0]).map(p => p[1]).join("") + `</div><div class="bar">`;
     if (slot > a) h += `<div class="fill" style="width:${Math.min(slot >= b ? 100 : x(slot), lastEnd)}%"></div>`;
     h += `</div><div class="ticks">`;
     group(deadlines.filter(k => k.on !== ev.event_day)).forEach(g =>
@@ -126,7 +145,7 @@
       items.forEach(c => h += `<a class="btn row" href="${esc(c.href)}"><span class="txt"><b>${esc(c.title)}</b> <span>— ${esc(c.blurb)}</span></span>${c.hide_after ? `<span class="when">Until ${short(c.hide_after)}</span>` : ""}<span class="go">→</span></a>`);
       h += `</div></div>`;
     }
-    const past = group(deadlines.filter(k => now >= endOf(k.on))).reverse();
+    const past = group(dated.filter(over)).reverse();
     if (past.length) h += `<div class="news pastdl"><div class="sub">Past deadlines</div><div class="dl">${dlList(past, ev.event_day)}</div></div>`;
     el.innerHTML = h + `</div>`;
     fit(el);
@@ -144,7 +163,12 @@
     const box = s => s.getBoundingClientRect();
     const labs = [...el.querySelectorAll(".labs .lab")];
     const clash = (p, q) => box(p).right > box(q).left - 4;
-    labs.forEach(s => { s.style.display = ""; });
+    labs.forEach(s => { s.style.display = ""; s.style.marginLeft = ""; });
+    // A block's label may be wider than its band; slide it inside the timeline instead of hiding it.
+    labs.filter(s => s.classList.contains("blk")).forEach(s => {
+      const o = Math.max(box(s).right - t.right, 0) || Math.min(box(s).left - t.left, 0);
+      if (o) s.style.marginLeft = -o + "px";
+    });
     labs.forEach((s, i) => {
       const nx = labs[i + 1], pv = labs[i - 1];
       if (((nx && clash(s, nx)) || (pv && clash(pv, s)) || box(s).left < t.left || box(s).right > t.right) && s.dataset.short) s.textContent = s.dataset.short;

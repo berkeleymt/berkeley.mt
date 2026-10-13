@@ -11,9 +11,9 @@ experience as well.
 
 <!-- more -->
 
-The online tournament will consist of an asynchronous Power Round on a weekend
-before the live event (dates TBA), as well as the live event, including the Guts
-and Focus/General rounds, on **December 5, 2026**. If you're looking for our
+The online tournament will consist of an asynchronous Power Round on **November
+28–29, 2026**, as well as the live event, including the Guts and Focus/General
+rounds, on **December 5, 2026**. If you're looking for our
 in-person tournament on November 14, 2026, details can be found on the
 [BMT 2026 Event Page](/events/bmt-2026/).
 
@@ -74,7 +74,7 @@ BMT 2026 Online Teammate Finder
 
 BMT 2026 Online has two components:
 
-- **Asynchronous Power Round**: dates TBA
+- **Asynchronous Power Round**: November 28–29, 2026
 - **Live Event**: December 5, 2026
 
 More details will be released closer to the event date.
