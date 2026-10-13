@@ -95,7 +95,8 @@
       h += `<div class="band${i % 2 ? " alt" : ""}" style="left:${l}%;width:${w}%"></div>`;
       if (i) h += `<div class="div" style="left:${l}%"></div>`;
     });
-    h += `<div class="band closed" style="left:${lastEnd}%;width:${tl - lastEnd}%"></div><div class="div" style="left:${lastEnd}%"></div>`;
+    h += `<div class="band closed" style="left:${lastEnd}%;width:${tl - lastEnd}%"></div>`;
+    if (!blocks.some(k => x(dayNum(k.start)) === lastEnd)) h += `<div class="div" style="left:${lastEnd}%"></div>`;
     for (let d = a; d < b - 1; d++) if (new Date(d * MS_DAY).getUTCDay() === 6)
       h += `<div class="wk" style="left:${x(d)}%;width:${2 / span * 100}%"></div>`;
     blocks.forEach(k => {
