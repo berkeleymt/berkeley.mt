@@ -34,18 +34,14 @@ on = "2026-11-27"
 label = "Registration closes"
 
 [[deadlines]]
-on = "2026-11-28"
-label = "Power Round released"
-time = ""
-
-[[deadlines]]
-on = "2026-11-29"
-label = "Power Round submissions due"
-time = ""
-
-[[deadlines]]
 on = "2026-12-05"
 label = "Live Event"
+
+# Multi-day parts of the event, shown as shaded blocks (start to end, inclusive).
+[[blocks]]
+name = "Power Round"
+start = "2026-11-28"
+end = "2026-11-29"
 
 # News rows show from `show_from` until the end of `hide_after` (optional).
 [[news]]

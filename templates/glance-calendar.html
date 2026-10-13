@@ -21,4 +21,19 @@ URL:{{ site | safe }}{{ glance.event_page | safe }}
 TRANSP:TRANSPARENT
 END:VEVENT
 {%- endfor %}
+{%- for k in glance.blocks | default(value=[]) %}
+{%- set t0 = k.start | date(format="%s") | int %}
+{%- set t1 = k.end | date(format="%s") | int %}
+{%- set days = (t1 - t0) / 86400 + 1 %}
+BEGIN:VEVENT
+UID:{{ glance.calendar | trim_start_matches(pat="/") | replace(from=".ics", to="") }}-{{ k.start }}-{{ k.name | slugify }}@berkeley.mt
+DTSTAMP:{{ now(utc=true) | date(format="%Y%m%dT%H%M%SZ") }}
+DTSTART;VALUE=DATE:{{ k.start | replace(from="-", to="") }}
+DURATION:P{{ days | round }}D
+SUMMARY:{{ glance.event_title | safe }}: {{ self::txt(s=k.name) }}
+DESCRIPTION:{{ self::txt(s=k.name) }}\n\nDetails: {{ site | safe }}{{ glance.event_page | safe }}
+URL:{{ site | safe }}{{ glance.event_page | safe }}
+TRANSP:TRANSPARENT
+END:VEVENT
+{%- endfor %}
 END:VCALENDAR

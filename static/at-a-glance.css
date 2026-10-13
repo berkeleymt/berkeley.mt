@@ -20,6 +20,8 @@
 .glance .band.closed{background:repeating-linear-gradient(135deg,#e2e8f0 0 3px,#f8fafc 3px 7px)}
 .glance .div{position:absolute;top:22px;bottom:22px;width:1px;background:#4b5563;z-index:3}
 .glance .wk{position:absolute;top:42px;bottom:22px;background:rgba(15,23,42,.05)}
+.glance .tl .band.blk{background:rgba(0,150,207,.3);z-index:1}
+.glance .tl .band.blk.past{background:rgba(15,23,42,.12)}
 .glance .nowrow{position:relative;height:20px}
 .glance .now{position:absolute;bottom:3px;font-size:12px;color:var(--red);font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums;padding:0 5px}
 .glance .now.flip{transform:translateX(-100%)}
@@ -60,6 +62,8 @@
 .glance .dl .d{font-size:13px;font-weight:600;color:var(--accent-ink);display:flex;align-items:center;gap:8px}
 .glance .dl .d i{flex:none;width:7px;height:7px;margin-left:3px;background:#fff;border:2px solid var(--ink);transform:rotate(45deg)}
 .glance .dl .d i.ev{background:var(--accent);border-color:var(--accent)}
+.glance .dl .d i.blk{width:12px;height:8px;margin-left:1px;border:0;background:rgba(0,150,207,.3);transform:none}
+.glance .pastdl .d i.blk{background:rgba(15,23,42,.12)}
 .glance .pastdl .d i,.glance .pastdl .d i.ev{border-color:#b8b8b8;background:#fff}
 .glance .dl ul{margin:2px 0 0;padding-left:31px;font-size:13px;list-style:disc}
 .glance .dl li{margin:1px 0}
