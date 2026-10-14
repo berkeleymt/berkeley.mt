@@ -38,6 +38,7 @@
     ? `${part(s, { weekday: "short" })}–${part(e, { weekday: "short" })}, ${part(s, { month: "short" })} ${+s.slice(8)}–${+e.slice(8)}`
     : `${longDay(s)} – ${longDay(e)}`;
   const when = g => g.to ? range(g.on, g.to) : longDay(g.on);
+  const cdHtml = (lines, done) => lines.map((l, i) => `<span class="cd${done || i ? " k" : ""}">${esc(l)}</span>`).join("");
   const dlList = (gs, evDay) => gs.map(g => `<div><div class="d"><i class="${g.to ? "blk" : g.on === evDay ? "ev" : ""}"></i>${when(g)}</div><ul>${g.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("");
 
   function render(el, ev, now, force) {
@@ -54,6 +55,8 @@
     const cur = phases.find(p => now >= (p === first ? opens : pacInstant(p.start)) && now < endOf(p.end));
     const multi = phases.length > 1;
     const stat = (k, v) => `<div><span class="k">${k}</span><span class="v">${v}</span></div>`;
+    const evDays = dayNum(ev.event_day) - slot;
+    const evSoon = evDays === 1 ? `${ev.event_label} is tomorrow!` : evDays === 0 ? `${ev.event_label} is today!` : "";
     let st, nowTxt = "";
     if (now < opens) { st = stat("Registration", "Opens " + pacTime(opens)); nowTxt = `Opens in ${dur(opens - now)}`; }
     else if (cur) {
@@ -63,7 +66,7 @@
       nowTxt = `${dur(endOf(cur.end) - now)} left${multi ? ` in ${cur.short || cur.name}` : ""}`;
     } else if (now < startAt) {
       st = stat("Registration", "Closed") + blocks.filter(k => now < endOf(k.end)).map(k => stat(esc(k.name), range(k.start, k.end))).join("") +
-        stat(esc(ev.event_label), longDay(ev.event_day)); nowTxt = `${dur(startAt - now)} to go`; }
+        stat(esc(ev.event_label), longDay(ev.event_day)); nowTxt = evSoon || `${dur(startAt - now)} to go`; }
     else if (now < endOf(ev.event_day)) st = stat(esc(ev.event_label), "Today!");
     else st = stat(esc(ev.event_title), "Has ended. Thanks for competing!") +
       (ev.results ? `<a class="btn reg" href="${esc(ev.results)}">Results Available</a>` : stat("Results", "Results Not Available"));
@@ -75,20 +78,41 @@
       : now < startAt ? `Registration is closed. ${ev.event_label}: ${longDay(ev.event_day)}.`
       : now < endOf(ev.event_day) ? `${ev.event_label} is today!` : "The event has ended.";
     const next = up[0] && up[0].on !== ev.event_day ? ` ${up[0].to ? "Next up" : "Next deadline"}, ${when(up[0])}: ${up[0].items.join("; ")}.` : "";
-    el.dataset.shareTitle = `${ev.event_title} at a Glance`;
+    el.dataset.shareTitle = `${ev.event_title} At a Glance`;
     el.dataset.shareText = `${ev.event_title}: ${state}${next}`;
     el.dataset.shareUrl = pageUrl;
+    // Lines under "Today · date" in the Today popup; events with blocks count down to the block, then the event.
+    const blk = blocks.find(k => now < endOf(k.end));
+    const blkIn = k => { const n = dayNum(k.start) - slot; return n <= 1 ? `${k.name} is tomorrow!` : `${k.name} in ${n} days`; };
+    let todayLines = [nowTxt || `${ev.event_label} is today!`];
+    if (blocks.length && cur && !multi)
+      todayLines = [`${dur(endOf(cur.end) - now)} til registration close`].concat(blk && now < pacInstant(blk.start) ? [blkIn(blk)] : []);
+    else if (blocks.length && !cur && now >= opens && now < startAt)
+      todayLines = [blk ? (now >= pacInstant(blk.start) ? `${blk.name}!` : blkIn(blk)) : evSoon || `${ev.event_label} in ${dur(startAt - now)}`];
+    const regDone = now >= endOf(last.end);
+    const todayDate = longDay(new Date(slot * MS_DAY).toISOString().slice(0, 10));
     const key = `${slot}|${st}|${el.clientWidth}`;
     if (!force && el.dataset.key === key) {
-      const nw = el.querySelector(".now:not(.tag)");
-      if (nw) { nw.textContent = nowTxt; fit(el); }
+      const td = el.querySelector(".today");
+      if (td) {
+        td.dataset.lines = JSON.stringify(todayLines);
+        const tip = el.querySelector(".tip");
+        if (td.classList.contains("on")) {
+          tip.querySelectorAll(".cd").forEach(s => s.remove());
+          tip.insertAdjacentHTML("beforeend", cdHtml(todayLines, regDone));
+        }
+      }
       return;
     }
     el.dataset.key = key;
 
     let h = `<div class="w${mode === "page" ? " page" : ""}">`;
     if (mode !== "page") h += `<div class="eyebrow">At a Glance</div><div class="w-title">${esc(ev.event_title)}</div><div class="w-date">${esc(ev.date_text)}</div>`;
-    h += `<div class="st">${st}<button type="button" class="btn share">Share</button></div><div class="tl">`;
+    const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
+      .sort((p, q) => q.show_from.localeCompare(p.show_from));
+    h += `<div class="st">${st}<button type="button" class="btn share">Share</button></div>`;
+    if (mode !== "page" && items.length) h += `<div class="chips"><span>What's new:</span>${items.slice(0, 2).map(c => `<a class="btn" href="${esc(c.href)}">${esc(c.title)}</a>`).join("")}</div>`;
+    h += `<div class="tl">`;
     const lastEnd = x(dayNum(last.end) + 1), tl = x(dayNum(ev.event_day));
     phases.forEach((p, i) => {
       const l = x(dayNum(p.start)), w = x(dayNum(p.end) + 1) - l;
@@ -102,7 +126,7 @@
       const l = x(dayNum(k.start)), w = x(dayNum(k.end) + 1) - l;
       h += `<div class="band blk${over({ on: k.end }) ? " past" : ""}" style="left:${l}%;width:${w}%"></div>`;
     });
-    h += `<div class="nowrow">${inRange ? `${nowTxt ? `<span class="now" data-l1="${x(slot + 1)}%" data-l2="${x(slot)}%">${nowTxt}</span>` : ""}<span class="now tag" data-l1="${x(slot + 1)}%" data-l2="${x(slot)}%">Today</span>` : ""}</div><div class="labs">`;
+    h += `<div class="nowrow"><span class="tlab">${esc(ev.event_label)}</span></div><div class="labs">`;
     const labs = phases.map(p => {
       const l = x(dayNum(p.start)), r = x(dayNum(p.end) + 1);
       return [(l + r) / 2, `<span class="lab${p === cur ? " cur" : ""}" style="left:${(l + r) / 2}%" data-short="${esc(p.short || "")}">${esc(p.short || p.name)}</span>`];
@@ -110,15 +134,15 @@
     labs.push([(lastEnd + tl) / 2, `<span class="lab muted" style="left:${(lastEnd + tl) / 2}%">Closed</span>`]);
     blocks.forEach(k => {
       const l = x(dayNum(k.start)), r = x(dayNum(k.end) + 1), on = now >= pacInstant(k.start) && now < endOf(k.end);
-      labs.push([(l + r) / 2 - .001, `<span class="lab blk${on ? " cur" : ""}" style="left:${(l + r) / 2}%">${esc(k.name)}</span>`]);
+      labs.push([(l + r) / 2 - .001, `<span class="lab blk${on ? " cur" : over({ on: k.end }) ? " past" : ""}" style="left:${(l + r) / 2}%">${esc(k.name)}</span>`]);
     });
     h += labs.sort((p, q) => p[0] - q[0]).map(p => p[1]).join("") + `</div><div class="bar">`;
-    if (slot > a) h += `<div class="fill" style="width:${Math.min(slot >= b ? 100 : x(slot), lastEnd)}%"></div>`;
+    if (slot > a) h += `<div class="fill" style="width:${slot >= b ? 100 : evDays === 0 ? tl : x(slot + .5)}%"></div>`;
     h += `</div><div class="ticks">`;
-    group(deadlines.filter(k => k.on !== ev.event_day)).forEach(g =>
-      h += `<button type="button" class="dia${now >= endOf(g.on) ? " past" : ""}" style="left:${x(dayNum(g.on) + .5)}%" aria-label="${esc(longDay(g.on) + ": " + g.items.join(", "))}" data-day="${esc(longDay(g.on))}" data-items="${esc(JSON.stringify(g.items))}"></button>`);
+    group(deadlines).forEach(g =>
+      h += `<button type="button" class="dia${g.on === ev.event_day ? " ev" : ""}${now >= endOf(g.on) ? " past" : ""}" style="left:${g.on === ev.event_day ? tl : x(dayNum(g.on) + (deadlines.some(k => k.on === g.on && k.time !== "") ? 1 : .5))}%" aria-label="${esc(longDay(g.on) + ": " + g.items.join(", "))}" data-day="${esc(longDay(g.on))}" data-items="${esc(JSON.stringify(g.items))}"></button>`);
     h += `</div><div class="tip" hidden></div><div class="tline" style="left:${tl}%"></div>`;
-    if (inRange) h += `<div class="today" style="left:${x(slot)}%;width:${100 / span}%"></div>`;
+    if (inRange) h += `<button type="button" class="today" style="left:${evDays === 0 ? tl : x(slot + .5)}%" aria-label="Today, ${esc(todayDate)}: ${esc(todayLines.join(", "))}" data-day="Today" data-date="${esc(todayDate)}" data-lines="${esc(JSON.stringify(todayLines))}"${regDone ? ' data-done="1"' : ""}></button>`;
     h += `<div class="axis">`;
     let n = 0;
     for (let d = a; d < b; d++) {
@@ -128,10 +152,7 @@
     }
     h += `</div></div>`;
 
-    const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
-      .sort((p, q) => q.show_from.localeCompare(p.show_from));
     if (mode !== "page") {
-      if (items.length) h += `<div class="chips"><span>What's new:</span>${items.slice(0, 2).map(c => `<a class="btn" href="${esc(c.href)}">${esc(c.title)}</a>`).join("")}</div>`;
       el.innerHTML = h + `<a class="btn more" href="${esc(el.dataset.href)}">See all dates and updates →</a></div>`;
       fit(el);
       return;
@@ -152,14 +173,15 @@
     fit(el);
   }
 
-  // Shorten or hide labels that collide, keep the countdown inside the
-  // timeline, and cut the Today band where it passes a phase label.
+  // Snap lines to pixels, place the event label, and shorten or hide labels that collide.
   function fit(el) {
     const tlEl = el.querySelector(".tl"), t = tlEl.getBoundingClientRect();
     const dpr = window.devicePixelRatio || 1;
-    el.querySelectorAll(".div, .tline").forEach(d => {
+    // Snap lines to device pixels; a deadline diamond sits on the centre of its 1px divider.
+    el.querySelectorAll(".div, .tline, .today, .dia").forEach(d => {
       d.dataset.p ||= d.style.left;
-      d.style.left = Math.round(parseFloat(d.dataset.p) / 100 * tlEl.clientWidth * dpr) / dpr + "px";
+      const px = Math.round(parseFloat(d.dataset.p) / 100 * tlEl.clientWidth * dpr) / dpr;
+      d.style.left = px + (d.matches(".dia:not(.ev, .today)") ? .5 : 0) + "px";
     });
     const box = s => s.getBoundingClientRect();
     const labs = [...el.querySelectorAll(".labs .lab")];
@@ -178,40 +200,6 @@
       const pv = labs.slice(0, i).filter(q => q.style.display !== "none").pop();
       if ((pv && clash(pv, s)) || box(s).right > t.right + 1 || box(s).left < t.left - 1) s.style.display = "none";
     });
-    // "Today" sits on the opposite side of the band from the countdown.
-    const nw = el.querySelector(".now:not(.tag)"), tg = el.querySelector(".now.tag");
-    if (tg) {
-      const place = (s, right) => { s.classList.toggle("flip", !right); s.style.left = right ? s.dataset.l1 : s.dataset.l2; };
-      const fits = s => { const r = box(s); return r.left >= t.left - 1 && r.right <= t.right + 1; };
-      let ok = false;
-      if (nw) {
-        nw.style.display = "";
-        const full = nw.textContent.replace(/^Today · /, "");
-        tg.style.display = "";
-        outer: for (const v of [full, full.replace(/ in .*$/, "")]) {
-          nw.textContent = v;
-          for (const right of [true, false]) {
-            place(nw, right); place(tg, !right);
-            if (fits(nw) && fits(tg)) { ok = true; break outer; }
-          }
-        }
-        if (!ok) outer2: for (const v of [full, full.replace(/ in .*$/, "")]) {
-          nw.textContent = `Today · ${v}`;
-          for (const right of [true, false]) {
-            place(nw, right);
-            if (fits(nw)) { ok = true; tg.style.display = "none"; break outer2; }
-          }
-        }
-        if (!ok) { nw.textContent = full; nw.style.display = "none"; }
-      }
-      if (!ok) for (const right of [false, true]) { place(tg, right); if (fits(tg)) break; }
-    }
-    const tdy = el.querySelector(".today");
-    if (tdy) {
-      const r = box(tdy);
-      const hit = labs.filter(s => s.style.display !== "none").map(box).find(b => b.left - 3 < r.right && b.right + 3 > r.left);
-      tdy.style.background = hit ? `linear-gradient(var(--tc) 0 ${hit.top - r.top - 1}px, transparent 0 ${hit.bottom - r.top + 1}px, var(--tc) 0)` : "";
-    }
     // News buttons stay on one line: drop later ones that don't fit; the first shortens with an ellipsis.
     const ch = el.querySelector(".chips");
     if (ch) {
@@ -219,10 +207,20 @@
       rest.forEach(a => { a.style.display = ""; });
       rest.reverse().forEach(a => { if (a0.scrollWidth > a0.clientWidth + 1 || box(a).right > box(ch).right + 1) a.style.display = "none"; });
     }
-    const td = el.querySelector(".axis .tday");
+    // The event label sits above its line, right-aligned with the event date on the axis.
+    const tlab = el.querySelector(".tlab"), td = el.querySelector(".axis .tday");
+    if (tlab && td) tlab.style.left = box(td).right - t.left - tlab.offsetWidth + "px";
     if (td) {
       const l = box(td).left;
       el.querySelectorAll(".axis span:not(.tday)").forEach(s => { if (box(s).right > l - 6) s.style.visibility = "hidden"; });
+    }
+    // Cut the Today line where it passes a label's text (labels have 4px side padding).
+    const tdy = el.querySelector(".today");
+    if (tdy) {
+      const r = box(tdy);
+      const hits = [...labs, tlab].filter(s => s && s.style.display !== "none").map(box)
+        .filter(b => b.left + 4 < r.right && b.right - 4 > r.left).sort((p, q) => p.top - q.top);
+      tdy.style.background = hits.length ? `linear-gradient(${hits.map(b => `var(--tc) 0 ${b.top - r.top - 1}px, transparent 0 ${b.bottom - r.top + 1}px`).join(", ")}, var(--tc) 0)` : "";
     }
   }
 
@@ -230,29 +228,42 @@
   const q = new URLSearchParams(location.search);
   const fixed = q.get("glance-date") ? pacInstant(q.get("glance-date"), q.get("glance-time") || "12:00") : null;
   const widgets = [...document.querySelectorAll(".glance[data-mode]")].map(el => ({ el, ev: JSON.parse(el.querySelector("script").textContent) }));
-  const draw = force => { const now = fixed || new Date(); widgets.forEach(w => render(w.el, w.ev, now, force)); };
-  draw(true);
+  const draw = force => {
+    const now = fixed || new Date();
+    widgets.forEach(w => {
+      render(w.el, w.ev, now, force);
+      const td = w.el.querySelector(".today");
+      if (td && w.el.dataset.auto && !td.classList.contains("on")) showTip(td, false, true);
+    });
+  };
 
   const tipFor = dia => dia.closest(".tl").querySelector(".tip");
-  const showTip = (dia, pin) => {
+  // The Today popup opens on load (`auto`) and stays until another date is hovered.
+  const showTip = (dia, pin, auto) => {
     const tip = tipFor(dia), tl = dia.closest(".tl");
-    tip.innerHTML = `<button type="button" class="x" aria-label="Close">×</button><b>${esc(dia.dataset.day)}</b><ul>${JSON.parse(dia.dataset.items).map(i => `<li>${esc(i)}</li>`).join("")}</ul>`;
+    tip.innerHTML = `<button type="button" class="x" aria-label="Close">×</button>` + ("lines" in dia.dataset
+      ? `<b class="td"><span class="tw">${esc(dia.dataset.day)}</span> · <span class="dt">${esc(dia.dataset.date)}</span></b>${cdHtml(JSON.parse(dia.dataset.lines), dia.dataset.done)}`
+      : `<b>${esc(dia.dataset.day)}</b><ul>${JSON.parse(dia.dataset.items).map(i => `<li>${esc(i)}</li>`).join("")}</ul>`);
     tip.hidden = false;
     tip.dataset.pin = pin ? "1" : "";
-    const c = dia.offsetLeft, w = tip.offsetWidth;
+    tip.dataset.auto = auto ? "1" : "";
+    if (!auto && !dia.classList.contains("today")) dia.closest(".glance").dataset.auto = "";
+    tip.style.left = "0";
+    const c = dia.offsetLeft, w = Math.ceil(tip.getBoundingClientRect().width);
     tip.style.left = Math.max(0, Math.min(tl.clientWidth - w, c - w / 2)) + "px";
-    tl.querySelectorAll(".dia.on").forEach(d => d.classList.remove("on"));
+    tl.querySelectorAll(".dia.on, .today.on").forEach(d => d.classList.remove("on"));
     dia.classList.add("on");
   };
   const hideTips = all => document.querySelectorAll(".glance .tip:not([hidden])").forEach(tip => {
-    if (!all && tip.dataset.pin) return;
+    if (!all && (tip.dataset.pin || tip.dataset.auto)) return;
     tip.hidden = true;
-    tip.dataset.pin = "";
-    tip.closest(".tl").querySelectorAll(".dia.on").forEach(d => d.classList.remove("on"));
+    tip.dataset.pin = tip.dataset.auto = "";
+    if (all) tip.closest(".glance").dataset.auto = "";
+    tip.closest(".tl").querySelectorAll(".dia.on, .today.on").forEach(d => d.classList.remove("on"));
   });
   document.addEventListener("click", e => {
     if (e.target.closest(".glance .tip")) { if (e.target.closest(".x")) hideTips(true); return; }
-    const dia = e.target.closest(".glance .dia");
+    const dia = e.target.closest(".glance .dia, .glance .today");
     if (dia && !(dia.classList.contains("on") && tipFor(dia).dataset.pin)) { hideTips(true); showTip(dia, true); }
     else hideTips(true);
     const sh = e.target.closest(".glance .share");
@@ -266,15 +277,23 @@
   // Hover popups close after a short delay so the pointer can cross the gap into them.
   let hideTimer;
   document.addEventListener("mouseover", e => {
-    const dia = e.target.closest(".glance .dia");
+    const dia = e.target.closest(".glance .dia, .glance .today");
     if (dia || e.target.closest(".glance .tip")) clearTimeout(hideTimer);
-    if (dia && !tipFor(dia).dataset.pin) showTip(dia, false);
+    const tip = dia && tipFor(dia);
+    if (dia && !tip.dataset.pin && !(tip.dataset.auto && dia.classList.contains("on"))) showTip(dia, false);
   });
   document.addEventListener("mouseout", e => {
-    if (!e.target.closest(".glance .dia, .glance .tip") || e.relatedTarget?.closest?.(".glance .dia, .glance .tip")) return;
+    if (!e.target.closest(".glance .dia, .glance .today, .glance .tip") || e.relatedTarget?.closest?.(".glance .dia, .glance .today, .glance .tip")) return;
     clearTimeout(hideTimer);
     hideTimer = setTimeout(() => hideTips(false), 300);
   });
+  widgets.forEach(w => { w.el.dataset.auto = "1"; });
+  draw(true);
+  // Web fonts can widen an open popup after it was placed; place it again once they load.
+  document.fonts?.ready.then(() => document.querySelectorAll(".glance .dia.on, .glance .today.on").forEach(d => {
+    const tip = tipFor(d);
+    showTip(d, tip.dataset.pin, tip.dataset.auto);
+  }));
   window.addEventListener("resize", () => draw(false));
   if (!fixed) setInterval(() => draw(false), 60000);
 })();
