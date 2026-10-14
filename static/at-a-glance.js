@@ -47,6 +47,7 @@
     const dated = deadlines.concat(blocks.map(k => ({ on: k.start, to: k.end, label: k.name })));
     const over = k => now >= endOf(k.to || k.on);
     const first = phases[0], last = phases[phases.length - 1];
+    if (emailPreview && mode === "preview") now = new Date(pacInstant(first.start).getTime() - MS_DAY);
     const a = dayNum(first.start), b = dayNum(ev.event_day) + 1, span = b - a;
     const x = d => (d - a) / span * 100;
     const slot = pacDay(now), inRange = slot >= a && slot < b;
@@ -110,7 +111,8 @@
     if (mode !== "page") h += `<div class="eyebrow">At a Glance</div><div class="w-title">${esc(ev.event_title)}</div><div class="w-date">${esc(ev.date_text)}</div>`;
     const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
       .sort((p, q) => q.show_from.localeCompare(p.show_from));
-    h += `<div class="st">${st}<button type="button" class="btn share">Share</button></div>`;
+    if (!(emailPreview && mode === "preview"))
+      h += `<div class="st">${st}<button type="button" class="btn share">Share</button></div>`;
     if (mode !== "page" && items.length) h += `<div class="chips"><span>What's new:</span>${items.slice(0, 2).map(c => `<a class="btn" href="${esc(c.href)}">${esc(c.title)}</a>`).join("")}</div>`;
     h += `<div class="tl">`;
     const lastEnd = x(dayNum(last.end) + 1), tl = x(dayNum(ev.event_day));
@@ -226,6 +228,7 @@
 
   // `?glance-date=YYYY-MM-DD&glance-time=HH:MM` (Pacific) previews another day.
   const q = new URLSearchParams(location.search);
+  const emailPreview = q.has("glance-email");
   const fixed = q.get("glance-date") ? pacInstant(q.get("glance-date"), q.get("glance-time") || "12:00") : null;
   const widgets = [...document.querySelectorAll(".glance[data-mode]")].map(el => ({ el, ev: JSON.parse(el.querySelector("script").textContent) }));
   const draw = force => {
@@ -287,7 +290,9 @@
     clearTimeout(hideTimer);
     hideTimer = setTimeout(() => hideTips(false), 300);
   });
-  widgets.forEach(w => { w.el.dataset.auto = "1"; });
+  widgets.forEach(w => {
+    if (!(emailPreview && w.el.dataset.mode === "preview")) w.el.dataset.auto = "1";
+  });
   draw(true);
   // Web fonts can widen an open popup after it was placed; place it again once they load.
   document.fonts?.ready.then(() => document.querySelectorAll(".glance .dia.on, .glance .today.on").forEach(d => {
