@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  schedule:
-    - cron: "10 8 * * *"
-  workflow_dispatch:
 
 jobs:
   build:
@@ -24,25 +21,11 @@ jobs:
       - name: Build website for production
         run: nix build .#for-production
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Prepare site files
-        run: cp -rL result site && chmod -R u+w site
-
-      - name: Install Playwright Core
-        run: npm install --no-save --no-package-lock playwright-core@1.48.2
-
-      - name: Generate At a Glance email images
-        run: node scripts/glance-images.mjs site
-
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: result
-          path: site/
+          path: result/
 
   deploy-ocf:
     runs-on: ubuntu-latest

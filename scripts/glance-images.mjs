@@ -1,3 +1,9 @@
+// Regenerate manually:
+//   tailwindcss -i ./static/input.css -o ./static/style.css
+//   zola build -o /tmp/site --force
+//   npm install --no-save --no-package-lock playwright-core@1.48.2
+//   CHROME=<path> node scripts/glance-images.mjs /tmp/site
+// Use plain zola build so assets stay local; nix production output points at berkeley.mt.
 import { once } from "node:events";
 import { createReadStream } from "node:fs";
 import { mkdir, readFile, readdir, stat } from "node:fs/promises";
@@ -7,9 +13,10 @@ import { extname, isAbsolute, join, relative, resolve } from "node:path";
 import { chromium } from "playwright-core";
 
 const siteDirArg = process.argv[2];
-if (!siteDirArg) throw new Error("Usage: node scripts/glance-images.mjs <siteDir>");
+if (!siteDirArg) throw new Error("Usage: node scripts/glance-images.mjs <siteDir> [outDir]");
 
 const siteDir = resolve(siteDirArg);
+const outputDir = resolve(process.argv[3] || fileURLToPath(new URL("../static/email/", import.meta.url)));
 const siteInfo = await stat(siteDir);
 if (!siteInfo.isDirectory()) throw new Error(`${siteDir} is not a directory`);
 
@@ -72,7 +79,6 @@ try {
     viewport: { width: 600, height: 1000 },
     deviceScaleFactor: 2,
   });
-  const outputDir = join(siteDir, "email");
   await mkdir(outputDir, { recursive: true });
 
   for (const name of configs) {
