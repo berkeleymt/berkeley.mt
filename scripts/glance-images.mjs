@@ -48,7 +48,7 @@ const server = createServer((request, response) => {
   };
 
   serve().catch(error => {
-    console.error(`Unable to serve ${request.url}:`, error);
+    console.error("Unable to serve %s:", request.url, error);
     if (!response.headersSent) response.writeHead(500);
     response.end("Internal server error");
   });
