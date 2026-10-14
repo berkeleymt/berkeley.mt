@@ -131,7 +131,7 @@
     const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
       .sort((p, q) => q.show_from.localeCompare(p.show_from));
     if (mode !== "page") {
-      if (items.length) h += `<div class="sub">What's new</div><div class="chips">${items.map(c => `<a class="btn chip" href="${esc(c.href)}">${esc(c.title)}</a>`).join("")}</div>`;
+      if (items.length) h += `<div class="chips"><span>What's new:</span>${items.slice(0, 2).map(c => `<a class="btn" href="${esc(c.href)}">${esc(c.title)}</a>`).join("")}</div>`;
       el.innerHTML = h + `<a class="btn more" href="${esc(el.dataset.href)}">See all dates and updates →</a></div>`;
       fit(el);
       return;
