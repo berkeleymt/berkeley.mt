@@ -78,7 +78,7 @@
       : now < startAt ? `Registration is closed. ${ev.event_label}: ${longDay(ev.event_day)}.`
       : now < endOf(ev.event_day) ? `${ev.event_label} is today!` : "The event has ended.";
     const next = up[0] && up[0].on !== ev.event_day ? ` ${up[0].to ? "Next up" : "Next deadline"}, ${when(up[0])}: ${up[0].items.join("; ")}.` : "";
-    el.dataset.shareTitle = `${ev.event_title} at a Glance`;
+    el.dataset.shareTitle = `${ev.event_title} At a Glance`;
     el.dataset.shareText = `${ev.event_title}: ${state}${next}`;
     el.dataset.shareUrl = pageUrl;
     // Lines under "Today · date" in the Today popup; events with blocks count down to the block, then the event.
@@ -108,7 +108,11 @@
 
     let h = `<div class="w${mode === "page" ? " page" : ""}">`;
     if (mode !== "page") h += `<div class="eyebrow">At a Glance</div><div class="w-title">${esc(ev.event_title)}</div><div class="w-date">${esc(ev.date_text)}</div>`;
-    h += `<div class="st">${st}<button type="button" class="btn share">Share</button></div><div class="tl">`;
+    const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
+      .sort((p, q) => q.show_from.localeCompare(p.show_from));
+    h += `<div class="st">${st}<button type="button" class="btn share">Share</button></div>`;
+    if (mode !== "page" && items.length) h += `<div class="chips"><span>What's new:</span>${items.slice(0, 2).map(c => `<a class="btn" href="${esc(c.href)}">${esc(c.title)}</a>`).join("")}</div>`;
+    h += `<div class="tl">`;
     const lastEnd = x(dayNum(last.end) + 1), tl = x(dayNum(ev.event_day));
     phases.forEach((p, i) => {
       const l = x(dayNum(p.start)), w = x(dayNum(p.end) + 1) - l;
@@ -158,8 +162,6 @@
       const ics = new URL(ev.calendar, location.origin).href, webcal = ics.replace(/^https?:/, "webcal:");
       h += `<div class="cal"><span>Add these dates to your calendar:</span><a class="btn" href="${esc(webcal)}">Apple / Outlook</a><a class="btn" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}" target="_blank" rel="noopener">Google Calendar</a><a class="btn" href="${esc(ics)}" download>Download .ics</a></div>`;
     }
-    const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
-      .sort((p, q) => q.show_from.localeCompare(p.show_from));
     if (items.length) {
       h += `<div class="news"><div class="sub">What's new<a class="btn" href="/news/">All news →</a></div><div class="rows">`;
       items.forEach(c => h += `<a class="btn row" href="${esc(c.href)}"><span class="txt"><b>${esc(c.title)}</b> <span>— ${esc(c.blurb)}</span></span>${c.hide_after ? `<span class="when">Until ${short(c.hide_after)}</span>` : ""}<span class="go">→</span></a>`);
@@ -198,6 +200,13 @@
       const pv = labs.slice(0, i).filter(q => q.style.display !== "none").pop();
       if ((pv && clash(pv, s)) || box(s).right > t.right + 1 || box(s).left < t.left - 1) s.style.display = "none";
     });
+    // News buttons stay on one line: drop later ones that don't fit; the first shortens with an ellipsis.
+    const ch = el.querySelector(".chips");
+    if (ch) {
+      const [a0, ...rest] = ch.querySelectorAll("a");
+      rest.forEach(a => { a.style.display = ""; });
+      rest.reverse().forEach(a => { if (a0.scrollWidth > a0.clientWidth + 1 || box(a).right > box(ch).right + 1) a.style.display = "none"; });
+    }
     // The event label sits above its line, right-aligned with the event date on the axis.
     const tlab = el.querySelector(".tlab"), td = el.querySelector(".axis .tday");
     if (tlab && td) tlab.style.left = box(td).right - t.left - tlab.offsetWidth + "px";
