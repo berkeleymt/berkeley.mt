@@ -15,6 +15,8 @@ event_label = "Tournament Day"
 results = ""
 # Calendar feed built from this file (templates/bmt-2026.ics).
 calendar = "/bmt-2026.ics"
+# Order "What's new" by the "Until" date, closest first (default: newest `show_from` first).
+news_sort = "until"
 
 [[phases]]
 name = "Phase 1"
@@ -65,13 +67,14 @@ label = "Team Link sign-up closes"
 on = "2026-11-14"
 label = "Tournament Day"
 
-# News rows show from `show_from` until the end of `hide_after` (optional).
+# News rows show from `show_from` until the end of `hide_after` (optional). Set `show_until = false` to hide the "Until" date on a row.
 [[news]]
 title = "A Guide to Team-based Rounds"
 blurb = "Tips about team-based rounds like the Power and Guts Rounds."
 href = "/blog/team-based-rounds-guide/"
 show_from = "2026-09-29"
 hide_after = "2026-11-14"
+show_until = false
 
 [[news]]
 title = "BMT Team Link"
