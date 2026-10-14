@@ -128,7 +128,10 @@
     }
     h += `</div></div>`;
 
+    const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
+      .sort((p, q) => q.show_from.localeCompare(p.show_from));
     if (mode !== "page") {
+      if (items.length) h += `<div class="sub">What's new</div><div class="chips">${items.map(c => `<a class="btn chip" href="${esc(c.href)}">${esc(c.title)}</a>`).join("")}</div>`;
       el.innerHTML = h + `<a class="btn more" href="${esc(el.dataset.href)}">See all dates and updates →</a></div>`;
       fit(el);
       return;
@@ -138,8 +141,6 @@
       const ics = new URL(ev.calendar, location.origin).href, webcal = ics.replace(/^https?:/, "webcal:");
       h += `<div class="cal"><span>Add these dates to your calendar:</span><a class="btn" href="${esc(webcal)}">Apple / Outlook</a><a class="btn" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}" target="_blank" rel="noopener">Google Calendar</a><a class="btn" href="${esc(ics)}" download>Download .ics</a></div>`;
     }
-    const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
-      .sort((p, q) => q.show_from.localeCompare(p.show_from));
     if (items.length) {
       h += `<div class="news"><div class="sub">What's new<a class="btn" href="/news/">All news →</a></div><div class="rows">`;
       items.forEach(c => h += `<a class="btn row" href="${esc(c.href)}"><span class="txt"><b>${esc(c.title)}</b> <span>— ${esc(c.blurb)}</span></span>${c.hide_after ? `<span class="when">Until ${short(c.hide_after)}</span>` : ""}<span class="go">→</span></a>`);
