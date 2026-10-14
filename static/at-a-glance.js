@@ -212,6 +212,13 @@
       const hit = labs.filter(s => s.style.display !== "none").map(box).find(b => b.left - 3 < r.right && b.right + 3 > r.left);
       tdy.style.background = hit ? `linear-gradient(var(--tc) 0 ${hit.top - r.top - 1}px, transparent 0 ${hit.bottom - r.top + 1}px, var(--tc) 0)` : "";
     }
+    // News buttons stay on one line: drop later ones that don't fit; the first shortens with an ellipsis.
+    const ch = el.querySelector(".chips");
+    if (ch) {
+      const [a0, ...rest] = ch.querySelectorAll("a");
+      rest.forEach(a => { a.style.display = ""; });
+      rest.reverse().forEach(a => { if (a0.scrollWidth > a0.clientWidth + 1 || box(a).right > box(ch).right + 1) a.style.display = "none"; });
+    }
     const td = el.querySelector(".axis .tday");
     if (td) {
       const l = box(td).left;
