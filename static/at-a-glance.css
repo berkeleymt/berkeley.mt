@@ -21,12 +21,11 @@
 .glance .div{position:absolute;top:22px;bottom:22px;width:1px;background:#4b5563;z-index:3}
 .glance .div.low{top:38px}
 .glance .wk{position:absolute;top:42px;bottom:22px;background:rgba(15,23,42,.05)}
-.glance .tl .band.blk{top:38px;bottom:auto;height:10px;margin-left:2px;background:#c4b5fd;border-radius:2px;z-index:1}
+.glance .tl .band.blk{margin-left:2px;background:#c4b5fd;z-index:1}
 .glance .lab.blk{color:#6d28d9}
+.glance .lab.blk.past{color:var(--muted)}
 .glance .tl .band.blk.past{background:rgba(15,23,42,.12)}
 .glance .nowrow{position:relative;height:20px}
-.glance .now{position:absolute;bottom:3px;font-size:12px;color:var(--red);font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums;padding:0 5px}
-.glance .now.flip{transform:translateX(-100%)}
 .glance .labs{position:relative;height:22px;z-index:4}
 .glance .lab{position:absolute;bottom:3px;font-size:12px;color:var(--accent-ink);white-space:nowrap;transform:translateX(-50%);padding:0 4px;line-height:16px}
 .glance .lab.cur{font-weight:700}
@@ -43,7 +42,6 @@
 .glance .tip{padding-right:28px}
 .glance .tip .x{position:absolute;top:3px;right:3px;width:20px;height:20px;padding:0;border:0;border-radius:4px;background:none;color:var(--soft);font-size:16px;line-height:20px;cursor:pointer}
 .glance .tip .x:hover{background:#eff6ff;color:var(--ink)}
-.glance .now.tag{font-weight:700}
 .glance .tip ul{margin:2px 0 0;padding-left:16px;list-style:disc}
 .glance .share{margin-left:auto;align-self:center;font-size:13px;font-weight:600;color:var(--accent-ink);border:1px solid var(--bd);background:#fff;padding:4px 12px;cursor:pointer}
 .glance .share:hover{border-color:var(--accent);transform:translateY(-1px)}
@@ -51,8 +49,16 @@
 .glance .cal a{color:var(--accent-ink);font-weight:600;border:1px solid var(--bd);background:#fff;padding:3px 10px}
 .glance .cal a:hover{border-color:var(--accent);transform:translateY(-1px)}
 .glance .dia.past{border-color:#b8b8b8}
-.glance .tline{position:absolute;top:0;bottom:22px;width:2px;background:var(--accent);transform:translateX(-1px);z-index:3}
-.glance .today{--tc:rgba(220,38,38,.22);position:absolute;top:2px;bottom:22px;min-width:2px;background:var(--tc);z-index:2}
+.glance .dia.ev{background:var(--accent);border-color:var(--accent)}
+.glance .dia.ev.on{background:var(--accent-ink);border-color:var(--accent-ink)}
+.glance .dia.ev.past{background:#fff;border-color:#b8b8b8}
+.glance .tline{position:absolute;top:22px;bottom:22px;width:2px;background:var(--accent);transform:translateX(-1px);z-index:3}
+.glance .today{--tc:var(--red);position:absolute;top:22px;bottom:22px;width:4px;padding:0;margin:0;border:0;border-radius:0;appearance:none;background:var(--tc);transform:translateX(-2px);z-index:2;cursor:pointer}
+.glance .today::before{content:"";position:absolute;inset:0 -4px}
+.glance .tip .td{color:var(--ink)}
+.glance .tip .cd{display:block;color:var(--red);font-variant-numeric:tabular-nums}
+.glance .tip .cd.k{color:var(--ink)}
+.glance .tlab{position:absolute;bottom:3px;font-size:12px;font-weight:700;color:var(--accent-ink);white-space:nowrap}
 .glance .axis{position:relative;height:18px;margin-top:4px;font-size:11px;color:var(--muted)}
 .glance .axis span{position:absolute;transform:translateX(-50%);white-space:nowrap}
 .glance .axis .tday{color:var(--accent-ink);font-weight:700;transform:translateX(-85%)}
