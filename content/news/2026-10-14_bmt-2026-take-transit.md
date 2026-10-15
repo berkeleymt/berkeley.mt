@@ -8,6 +8,9 @@ preview_image = "/news/take-transit-preview.png"
 Our team is excited to welcome you to BMT 2026 at UC Berkeley on **Saturday, November 14**! In this news post, we're sharing TakeTransit to BMT, our new way to help you get to and from campus with ease, starting this year! Plus, we're releasing a brand new BMT Trip Planner to help out!
 
 <!-- more -->
+
+This year, we're sharing this way earlier than usual! That way, you have time to think about your options, play around with the planner, and plan your trip with your team before tournament day!
+
 We know how daunting it can be to attend a math tournament, and even more scary to attend an event at UC Berkeley! If you've been to BMT before, you know about the heavy traffic into Berkeley and the garages that fill up. On top of that, all participants arrive within the same hour! Check-in is at Dwinelle Hall from 7:30 to 8:30 AM.
 
 So, we encourage everyone to consider taking public transit or carpooling! The UC Berkeley campus is only a short walk from the Downtown Berkeley BART station. Carpooling with your friends, teammates, and community members is also a great way to save cost, time, and stress on tournament day.
