@@ -164,9 +164,16 @@
       const ics = new URL(ev.calendar, location.origin).href, webcal = ics.replace(/^https?:/, "webcal:");
       h += `<div class="cal"><span>Add these dates to your calendar:</span><a class="btn" href="${esc(webcal)}">Apple / Outlook</a><a class="btn" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}" target="_blank" rel="noopener">Google Calendar</a><a class="btn" href="${esc(ics)}" download>Download .ics</a></div>`;
     }
-    if (items.length) {
+    // The full page can order rows by "Until" (`news_sort`), with the newest row pinned on top; `items` stays newest-first for the preview.
+    let rows = items;
+    if (ev.news_sort === "until" && items.length) {
+      rows = [...items].sort((p, q) => (p.hide_after || "9999").localeCompare(q.hide_after || "9999") || q.show_from.localeCompare(p.show_from));
+      const top = rows.reduce((m, c) => c.show_from > m.show_from ? c : m);
+      rows = [top, ...rows.filter(c => c !== top)];
+    }
+    if (rows.length) {
       h += `<div class="news"><div class="sub">What's new<a class="btn" href="/news/">All news →</a></div><div class="rows">`;
-      items.forEach(c => h += `<a class="btn row" href="${esc(c.href)}"><span class="txt"><b>${esc(c.title)}</b> <span>— ${esc(c.blurb)}</span></span>${c.hide_after ? `<span class="when">Until ${short(c.hide_after)}</span>` : ""}<span class="go">→</span></a>`);
+      rows.forEach(c => h += `<a class="btn row" href="${esc(c.href)}"><span class="txt"><b>${esc(c.title)}</b> <span>— ${esc(c.blurb)}</span></span>${c.hide_after && c.show_until !== false ? `<span class="when">Until ${short(c.hide_after)}</span>` : ""}<span class="go">→</span></a>`);
       h += `</div></div>`;
     }
     const past = group(dated.filter(over)).reverse();
