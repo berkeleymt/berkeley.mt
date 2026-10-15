@@ -1,4 +1,4 @@
 <a href="{{ href }}"{% if external %} target="_blank" rel="noopener"{% endif %}
-  class="not-prose inline-block text-base {% if external %}bg-white text-teal-700 border-2 border-teal-500{% else %}bg-teal-500 text-white{% endif %} py-2 px-4 rounded shadow hover:-translate-y-0.5 hover:shadow-lg transition-all {% if class %}{{ class }}{% endif %}">
+  class="not-prose {% if center %}block w-fit mx-auto{% else %}inline-block{% endif %} text-base {% if external %}bg-white text-teal-700 border-2 border-teal-500{% else %}bg-teal-500 text-white{% endif %} py-2 px-4 rounded shadow hover:-translate-y-0.5 hover:shadow-lg transition-all {% if class %}{{ class }}{% endif %}">
   {{ body }}
 </a>

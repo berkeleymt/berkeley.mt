@@ -11,7 +11,7 @@ So, we encourage everyone to consider taking public transit or carpooling! The U
 
 Our BMT Trip Planner tool helps you plan these trips! Just enter your location to see your options for getting to campus by public transit or by carpooling with people you know. The site has the most up-to-date, comprehensive parking and transit data we've ever used! When you play around with it, the times, fares, and the walk to campus are all included. Plus, once you pick a trip, you can share it with your team or add it to your calendar!
 
-{% button_link(href="https://taketransit.berkeley.mt", external=true) %} Open in BMT Trip Planner {% end %}
+{% button_link(href="https://taketransit.berkeley.mt", external=true, center=true) %} Open in BMT Trip Planner {% end %}
 
 Below is a sample trip from SFO. Tap **Try it here** to explore it, or type in your own starting point.
 
@@ -73,4 +73,4 @@ Per [BMT event policy](/faqs/), every team must have an adult chaperone present 
 
 The planner is a tool for building your own trip from public schedules, maps and fares. BMT does not recommend any route and does not run, schedule or supervise travel to or from the event. Times and fares are estimates, so check signs and the agency apps on the day.
 
-{% button_link(href="https://taketransit.berkeley.mt", external=true) %} Open in BMT Trip Planner {% end %}
+{% button_link(href="https://taketransit.berkeley.mt", external=true, center=true) %} Open in BMT Trip Planner {% end %}
