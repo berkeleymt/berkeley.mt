@@ -31,7 +31,7 @@ The UC Berkeley campus is only a short walk from the Downtown Berkeley BART stat
 
 #### Getting to BART
 
-Your trip will usually involve parking at a BART station (it's free on weekends!) or getting dropped off at one.
+Your trip will usually involve parking at a BART parking lot (it's free on weekends, and you can see the parking lot in the map of your journey!) or getting dropped off at a BART station.
 
 #### Arriving in Berkeley
 
