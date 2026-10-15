@@ -13,7 +13,7 @@ Our BMT Trip Planner tool helps you plan these trips! Just enter your location t
 
 Below is a sample trip from SFO. Tap **Try it here** to explore it, or type in your own starting point.
 
-{{ planner_embed(path="#trip?f=37.6161,-122.3844&n=SFO%20Terminal%202&m=transit&o=wSFIA&o2=wSFIA", poster="/news/take-transit-planner-sample.webp", alt="BMT Trip Planner showing a trip from SFO Terminal 2 to Dwinelle Hall") }}
+{{ planner_embed(path="#trip?f=37.6161,-122.3844&n=SFO%20Terminal%202&m=transit&o=wSFIA&o2=wSFIA", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from SFO Terminal 2 to Dwinelle Hall") }}
 
 {% button_link(href="https://taketransit.berkeley.mt") %} Open the BMT Trip Planner {% end %}
 
@@ -33,7 +33,7 @@ After you arrive at Downtown Berkeley, it's just a short walk to Dwinelle Hall, 
 
 #### How much does transit cost?
 
-Well, we have details about Clipper [here](https://taketransit.berkeley.mt/#pay)! BART, local bus agencies, and Caltrain all accept Clipper. Capitol Corridor (Amtrak) does not accept Clipper, so you'll need to buy that ticket in the Amtrak app or at the station.
+All Bay Area transit agencies, including BART, AC Transit, Muni, Caltrain, and VTA, accept Clipper. They also accept tap to pay with a contactless credit or debit card, or with Apple Pay or Google Pay. Tap to pay charges the full adult fare, and each rider needs their own card or phone. Capitol Corridor (Amtrak) does not accept Clipper or tap to pay, so you'll need to buy that ticket in the Amtrak app or at the station. You can find more details about fares [here](https://taketransit.berkeley.mt/#pay).
 
 There are also ways to reduce the cost of taking transit with a **Youth Clipper card**! Students ages 5 to 18 pay half price. The card comes by mail, so make sure to apply a few weeks early.
 
