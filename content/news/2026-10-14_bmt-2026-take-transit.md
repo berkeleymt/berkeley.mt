@@ -49,7 +49,7 @@ Students ages 5 to 18 pay half price with a **Youth Clipper card**. It comes by 
 
 ### Carpool to campus
 
-We understand that transit won't work for everybody. If driving makes more sense for you, we recommend carpooling with your friends, teammates, and classmates. On a Saturday, the garages near campus are shared with the rest of Berkeley, so they can fill up. Some don't open until 7 or 8 AM. Finding a space and walking over takes time too. The **Bancroft Parking Structure** is BMT's preferred garage.
+We understand that transit won't work for everybody. If driving makes more sense for you, we recommend carpooling with your friends, teammates, and classmates. On a Saturday, the garages near campus are shared with the rest of Berkeley, so they can fill up. Some don't open until 7 or 8 AM. Finding a space and walking over takes time too. The **Bancroft Parking Structure** is BMT's preferred garage. It's much bigger, so it's less likely to fill up. Plus, it's right on main campus, so you won't need to cross a public street to walk to Dwinelle.
 
 ![Map of the parking garages near Dwinelle Hall](/news/take-transit-garage-map.webp)
 
