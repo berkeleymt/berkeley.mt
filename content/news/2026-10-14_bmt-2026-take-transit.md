@@ -11,7 +11,7 @@ Our team is excited to welcome you to BMT 2026 at UC Berkeley on **Saturday, Nov
 
 This year, we're sharing this way earlier than usual! That way, you have time to think about your options, play around with the planner, and plan your trip with your team before tournament day.
 
-We know how daunting it can be to attend a math tournament, and even more scary to attend an event at UC Berkeley! If you've been to BMT before, you know about the heavy traffic into Berkeley and the garages that fill up. On top of that, all participants arrive within the same hour. Check-in is at Dwinelle Hall from 7:30 to 8:30 AM.
+We know getting to a big event at UC Berkeley can feel daunting, especially if it's your first time! If you've been to BMT before, you know about the heavy traffic into Berkeley and the garages that fill up. On top of that, all participants arrive within the same hour. Check-in is at Dwinelle Hall from 7:30 to 8:30 AM.
 
 So, we encourage everyone to consider taking public transit or carpooling! The UC Berkeley campus is only a short walk from the Downtown Berkeley BART station. Carpooling with your friends, teammates, and community members is also a great way to save cost, time, and stress on tournament day.
 
@@ -32,6 +32,10 @@ The UC Berkeley campus is only a short walk from the Downtown Berkeley BART stat
 #### Getting to BART
 
 Your trip will usually involve parking at a BART parking lot (it's free on weekends, and you can see the parking lot in the map of your journey) or getting dropped off at a BART station. Just a heads up, the Milpitas and Berryessa lots aren't BART-run lots. They're run by VTA, so parking there costs $3 a day.
+
+#### Buses, Caltrain, and Capitol Corridor
+
+Not close to BART? The planner also finds trips that start on a local bus, Caltrain, or Capitol Corridor and then connect to BART. Caltrain riders change to BART at Millbrae. Capitol Corridor riders change at Richmond or Oakland Coliseum. Some AC Transit buses also go straight to campus from other BART stations, like the 51B from Rockridge.
 
 #### Arriving in Berkeley
 
