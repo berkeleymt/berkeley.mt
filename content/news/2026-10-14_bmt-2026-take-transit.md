@@ -31,7 +31,7 @@ The UC Berkeley campus is only a short walk from the Downtown Berkeley BART stat
 
 #### Getting to BART
 
-Your trip will usually involve parking at a BART parking lot (it's free on weekends, and you can see the parking lot in the map of your journey!) or getting dropped off at a BART station.
+Your trip will usually involve parking at a BART parking lot (it's free on weekends, and you can see the parking lot in the map of your journey!) or getting dropped off at a BART station. Just a heads up, the Milpitas and Berryessa lots aren't BART-run lots! They're run by VTA, so parking there costs $3 a day.
 
 #### Arriving in Berkeley
 
