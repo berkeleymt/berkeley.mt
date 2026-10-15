@@ -29,7 +29,7 @@ Here's an example of a trip that's already planned, from SFO. Tap **See this tri
 
 Public transit is a great way to get to BMT! You won't have to sit in traffic into Berkeley or look for parking on campus. The Downtown Berkeley BART station is only a short walk away, so a lot of transit options use BART.
 
-#### Getting to BART
+#### Driving to BART
 
 You can park at a BART parking lot (it's free on weekends!) or get dropped off at a BART station. If an option parks at BART, the planner's map shows you the lot. Just a heads up, the Milpitas and Berryessa lots aren't BART-run lots. They're run by VTA, so parking there costs $3 a day.
 
@@ -39,7 +39,7 @@ Not close to BART? The planner also shows options that start on a local bus, Cal
 
 #### Arriving in Berkeley
 
-After you arrive at Downtown Berkeley, it's just a short walk to Dwinelle Hall, which is also shown in the planner. The planner includes a map so you can see your whole trip. On tournament day, it will use live data once you tap **Start this trip** for step-by-step directions.
+If you take BART to Downtown Berkeley, it's just a short walk to Dwinelle Hall, which is also shown in the planner. The planner includes a map so you can see your whole trip. On tournament day, it will use live data once you tap **Start this trip** for step-by-step directions.
 
 Plus, you can explore even more features on the [BMT Trip Planner](https://taketransit.berkeley.mt/), like which BART exit to take, the best train car to ride so you're closest to the escalators or elevators, how to walk or take a bus to BART, and the 5 minutes of spare time and backup trains for every trip.
 
