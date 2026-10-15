@@ -15,7 +15,7 @@ Below is a sample trip from SFO. Tap **Try it here** to explore it, or type in y
 
 {{ planner_embed(path="#trip?f=37.6161,-122.3844&n=SFO%20Terminal%202&m=transit&o=wSFIA&o2=wSFIA", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from SFO Terminal 2 to Dwinelle Hall") }}
 
-{% button_link(href="https://taketransit.berkeley.mt") %} Open the BMT Trip Planner {% end %}
+{% button_link(href="https://taketransit.berkeley.mt") %} Open in BMT Trip Planner {% end %}
 
 ## Ways to get here
 
