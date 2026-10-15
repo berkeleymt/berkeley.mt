@@ -1,5 +1,5 @@
 <div class="not-prose my-6 flex flex-col items-center gap-2">
-    <div class="relative w-full max-w-[400px] aspect-[5/9] {% if wide %}sm:max-w-none sm:aspect-[3/2] {% endif %}rounded-xl border border-gray-300 bg-white overflow-hidden">
+    <div class="relative w-full max-w-[400px] aspect-[5/9] {% if wide %}sm:max-w-none sm:aspect-[3/2] {% endif %}rounded-xl border-2 border-gray-400 bg-white overflow-hidden">
         <picture>
             {% if wide %}<source media="(min-width: 640px)" srcset="{{ wide }}">{% endif %}
             <img src="{{ poster }}" alt="{{ alt }}" loading="lazy" class="w-full h-full object-cover object-top">
