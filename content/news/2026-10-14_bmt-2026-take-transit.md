@@ -11,6 +11,8 @@ So, we encourage everyone to consider taking public transit or carpooling! The U
 
 Our BMT Trip Planner tool helps you plan these trips! Just enter your location to see your options for getting to campus by public transit or by carpooling with people you know. The site has the most up-to-date, comprehensive parking and transit data we've ever used! When you play around with it, the times, fares, and the walk to campus are all included. Plus, once you pick a trip, you can share it with your team or add it to your calendar!
 
+{% button_link(href="https://taketransit.berkeley.mt", external=true) %} Open in BMT Trip Planner {% end %}
+
 Below is a sample trip from SFO. Tap **Try it here** to explore it, or type in your own starting point.
 
 {{ planner_embed(path="#trip?f=37.6161,-122.3844&n=SFO%20Terminal%202&m=transit&o=wSFIA&o2=wSFIA", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from SFO Terminal 2 to Dwinelle Hall") }}
@@ -51,8 +53,6 @@ To compare garages by price, opening time, and walk to Dwinelle, check out the *
 
 Once your trip is planned, tap **Save** to keep it in Your trips for next time. You can also add it to Google Calendar or Apple Calendar, or save it as a PDF to print or keep on your phone. Tap **Share** to copy a link that opens the same trip, or to email it. If your team is meeting at school, one link gets everyone on the same plan!
 
-{% button_link(href="https://taketransit.berkeley.mt", external=true) %} Open in BMT Trip Planner {% end %}
-
 ## Traveling from farther away
 
 Coming from out of town? BART serves both SFO and Oakland airports, so you can get from your gate to campus without a car!
@@ -72,3 +72,5 @@ For those who would like to get to campus before the chaotic morning, we have a 
 Per [BMT event policy](/faqs/), every team must have an adult chaperone present on tournament day. For travel to and from BMT, we strongly encourage every group to include responsible adults whenever possible, especially for first-time or new riders.
 
 The planner is a tool for building your own trip from public schedules, maps and fares. BMT does not recommend any route and does not run, schedule or supervise travel to or from the event. Times and fares are estimates, so check signs and the agency apps on the day.
+
+{% button_link(href="https://taketransit.berkeley.mt", external=true) %} Open in BMT Trip Planner {% end %}
