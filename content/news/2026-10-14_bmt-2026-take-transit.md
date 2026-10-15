@@ -5,17 +5,13 @@ title = "TakeTransit to BMT 2026"
 preview_image = "/news/take-transit-preview.png"
 +++
 
-Our team is excited to welcome you to BMT 2026 at UC Berkeley on **Saturday, November 14**! In this news post, we're sharing TakeTransit to BMT, our new way to help you get to and from campus with ease, starting this year. Plus, we're releasing a brand new BMT Trip Planner to help out!
+Our team is excited to welcome you to BMT 2026 at UC Berkeley on **Saturday, November 14**! Starting this year, we're launching TakeTransit to BMT to help you get to and from campus with ease. Plus, we're releasing a brand new BMT Trip Planner to help out!
 
 <!-- more -->
 
-This year, we're sharing this way earlier than usual! That way, you have time to think about your options, play around with the planner, and plan your trip with your team before tournament day.
+We know getting to a big event at UC Berkeley can feel daunting, especially if it's your first time! If you've been to BMT before, you know about the traffic and the garages that fill up. Plus, everyone arrives for check-in at Dwinelle Hall between 7:30 and 8:30 AM.
 
-We know getting to a big event at UC Berkeley can feel daunting, especially if it's your first time! If you've been to BMT before, you know about the heavy traffic into Berkeley and the garages that fill up. On top of that, all participants arrive within the same hour. Check-in is at Dwinelle Hall from 7:30 to 8:30 AM.
-
-So, we encourage everyone to consider taking public transit or carpooling! The UC Berkeley campus is only a short walk from the Downtown Berkeley BART station. Carpooling with your friends, teammates, and community members is also a great way to save cost, time, and stress on tournament day.
-
-Our BMT Trip Planner tool helps you plan these trips. Just enter your location to see your options for getting to campus by public transit or by carpooling with people you know. The site has the most up-to-date, comprehensive parking and transit data we've ever used. When you play around with it, the times, fares, and the walk to campus are all included. Plus, once you pick a trip, you can share it with your team or add it to your calendar.
+So, we encourage everyone to consider taking public transit or carpooling! Just enter your location in the BMT Trip Planner to see your options, with times, fares, and the walk to campus. It has the most up-to-date parking and transit data we've ever used. You can also share a trip with your team or add it to your calendar.
 
 {% button_link(href="https://taketransit.berkeley.mt", external=true, center=true) %} Open in BMT Trip Planner {% end %}
 
