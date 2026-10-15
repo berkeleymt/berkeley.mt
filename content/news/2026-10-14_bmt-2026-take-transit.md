@@ -29,7 +29,7 @@ Here's an example of a trip that's already planned, from SFO. Tap **See this tri
 
 Public transit is a great way to get to BMT! You won't have to sit in traffic into Berkeley or look for parking on campus. The Downtown Berkeley BART station is only a short walk away, so a lot of transit options use BART.
 
-#### Driving to BART
+#### BART
 
 You can park at a BART parking lot (it's free on weekends!) or get dropped off at a BART station. If an option parks at BART, the planner's map shows you the lot. Just a heads up, the Milpitas and Berryessa lots aren't BART-run lots. They're run by VTA, so parking there costs $3 a day.
 
