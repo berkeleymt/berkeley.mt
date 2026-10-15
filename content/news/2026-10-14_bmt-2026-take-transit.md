@@ -27,15 +27,15 @@ Here's an example of a trip that's already planned, from SFO. Tap **See this tri
 
 ### Take transit
 
-The UC Berkeley campus is only a short walk from the Downtown Berkeley BART station, so most transit trips will start and end at BART.
+Public transit is a great way to get to BMT! You won't have to sit in traffic into Berkeley or look for parking on campus. The Downtown Berkeley BART station is only a short walk away, so a lot of transit options use BART.
 
 #### Getting to BART
 
-Your trip will usually involve parking at a BART parking lot (it's free on weekends, and you can see the parking lot in the map of your journey) or getting dropped off at a BART station. Just a heads up, the Milpitas and Berryessa lots aren't BART-run lots. They're run by VTA, so parking there costs $3 a day.
+You can park at a BART parking lot (it's free on weekends!) or get dropped off at a BART station. If an option parks at BART, the planner's map shows you the lot. Just a heads up, the Milpitas and Berryessa lots aren't BART-run lots. They're run by VTA, so parking there costs $3 a day.
 
 #### Buses, Caltrain, and Capitol Corridor
 
-Not close to BART? The planner also finds trips that start on a local bus, Caltrain, or Capitol Corridor and then connect to BART. Caltrain riders change to BART at Millbrae. Capitol Corridor riders change at Richmond or Oakland Coliseum. Some AC Transit buses also go straight to campus from other BART stations, like the 51B from Rockridge.
+Not close to BART? The planner also shows options that start on a local bus, Caltrain, or Capitol Corridor and then connect to BART. On Caltrain, you'd change to BART at Millbrae. On Capitol Corridor, you'd change at Richmond or Oakland Coliseum. Some AC Transit buses also go straight to campus from other BART stations, like the 51B from Rockridge.
 
 #### Arriving in Berkeley
 
