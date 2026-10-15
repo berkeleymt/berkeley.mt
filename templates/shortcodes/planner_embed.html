@@ -1,4 +1,4 @@
-<div class="not-prose my-6 flex flex-col items-center">
+<div class="not-prose my-6 flex justify-center">
     <div class="relative w-full max-w-[400px] aspect-[5/9] {% if wide %}sm:max-w-none sm:aspect-[3/2] {% endif %}rounded-xl border-2 border-gray-400 bg-white overflow-hidden">
         <picture>
             {% if wide %}<source media="(min-width: 640px)" srcset="{{ wide }}">{% endif %}
@@ -6,7 +6,7 @@
         </picture>
         <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none"></div>
         <a href="https://taketransit.berkeley.mt/{{ path | safe }}"
-            onclick="if (matchMedia('(max-width: 639px)').matches) return; event.preventDefault(); var box = this.parentElement, poster = Array.from(box.children); var f = document.createElement('iframe'); f.src = this.href; f.title = 'BMT Trip Planner'; f.className = 'w-full h-full'; var c = document.createElement('button'); c.type = 'button'; c.textContent = 'Close'; c.className = 'mt-3 text-sm bg-white text-gray-700 border border-gray-400 py-1 px-3 rounded shadow hover:shadow-lg transition-all'; c.onclick = function () { c.remove(); box.replaceChildren(...poster); }; box.replaceChildren(f); box.after(c);"
+            onclick="if (matchMedia('(max-width: 639px)').matches) return; event.preventDefault(); var box = this.parentElement, poster = Array.from(box.children); var btn = 'text-sm bg-white text-gray-700 border border-gray-400 py-0.5 px-3 rounded hover:shadow transition-all'; var bar = document.createElement('div'); bar.className = 'flex justify-end gap-2 px-2 py-1.5 bg-gray-100 border-b border-gray-300'; var o = document.createElement('a'); o.href = this.href; o.target = '_blank'; o.rel = 'noopener'; o.textContent = 'Open in new tab'; o.className = btn; var c = document.createElement('button'); c.type = 'button'; c.textContent = 'Close'; c.className = btn; c.onclick = function () { box.classList.remove('flex', 'flex-col'); box.replaceChildren(...poster); }; bar.append(o, c); var f = document.createElement('iframe'); f.src = this.href; f.title = 'BMT Trip Planner'; f.className = 'w-full flex-1 min-h-0'; box.classList.add('flex', 'flex-col'); box.replaceChildren(bar, f);"
             class="absolute bottom-6 left-1/2 -translate-x-1/2 text-base bg-teal-500 text-white py-2 px-4 rounded shadow hover:shadow-lg transition-all">
             See this trip
         </a>
