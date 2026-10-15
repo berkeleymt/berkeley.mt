@@ -1,5 +1,8 @@
 +++
 title = "TakeTransit to BMT 2026"
+
+[extra]
+preview_image = "/news/take-transit-preview.png"
 +++
 
 Our team is excited to welcome you to BMT 2026 at UC Berkeley on **Saturday, November 14**! In this news post, we're sharing TakeTransit to BMT, our new way to help you get to and from campus with ease, starting this year! Plus, we're releasing a brand new BMT Trip Planner to help out!
