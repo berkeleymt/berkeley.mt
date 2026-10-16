@@ -1,0 +1,82 @@
++++
+title = "TakeTransit to BMT 2026"
+
+[extra]
+preview_image = "/news/take-transit-preview.png"
++++
+
+Our team is excited to welcome you to BMT 2026 at UC Berkeley on **Saturday, November 14**! Starting this year, our new TakeTransit to BMT initiative will help you get to and from campus with ease. Plus, we're releasing a brand new BMT Trip Planner tool!
+
+<!-- more -->
+
+We know getting to a big event at UC Berkeley can feel daunting, especially if it's your first time! If you've been to BMT before, you know about the traffic and the garages that fill up. Plus, everyone arrives for check-in at Dwinelle Hall between 7:30 and 8:30 AM.
+
+So, we encourage everyone to consider taking public transit or carpooling! Just enter your location in the BMT Trip Planner to see your options, with times, fares, and the walk to campus. It has the most up-to-date parking and transit data we've ever used. You can also share a trip with your team or add it to your calendar.
+
+{% button_link(href="https://taketransit.berkeley.mt", external=true, center=true) %} Open in BMT Trip Planner {% end %}
+
+Here's an example of a trip that's already planned, from SFO. Tap **See this trip** to look around, or tap **Change** to plan from your own location.
+
+{{ planner_embed(path="#trip?f=37.6161,-122.3844&n=SFO%20Terminal%202&m=transit&o=wSFIA&o2=wSFIA", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from SFO Terminal 2 to Dwinelle Hall") }}
+
+## Ways to get to and from BMT
+
+### Take transit
+
+Public transit is a great way to get to BMT! You won't have to sit in traffic into Berkeley or look for parking on campus. The Downtown Berkeley BART station is only a short walk away, so a lot of transit options use BART.
+
+#### BART
+
+You can park at a BART parking lot (it's free on weekends!) or get dropped off at a BART station. If an option parks at BART, the planner's map shows you the lot. Just a heads up, the Milpitas and Berryessa lots aren't BART-run lots. They're run by VTA, so parking there costs $3 a day.
+
+#### Buses, Caltrain, and Capitol Corridor
+
+Not close to BART? The planner also shows options that start on a local bus, Caltrain, or Capitol Corridor and then connect to BART. On Caltrain, you'd change to BART at Millbrae. On Capitol Corridor, you'd change at Richmond or Oakland Coliseum. Some AC Transit buses also go straight to campus from other BART stations, like the 51B from Rockridge.
+
+#### Arriving in Berkeley
+
+If you take BART to Downtown Berkeley, it's just a short walk to Dwinelle Hall, which is also shown in the planner. The planner includes a map so you can see your whole trip. On tournament day, it will use live data once you tap **Start this trip** for step-by-step directions.
+
+Plus, you can explore even more features on the [BMT Trip Planner](https://taketransit.berkeley.mt/), like which BART exit to take, the best train car to ride so you're closest to the escalators or elevators, how to walk or take a bus to BART, and the 5 minutes of spare time and backup trains for every trip.
+
+#### How to pay for transit
+
+All Bay Area transit agencies accept Clipper and tap to pay with a contactless card, Apple Pay, or Google Pay. Tap to pay charges the full adult fare, and each rider needs their own card or phone. Capitol Corridor (Amtrak) doesn't accept either, so buy that ticket in the Amtrak app or at the station. More details about fares are [here](https://taketransit.berkeley.mt/#pay).
+
+Students ages 5 to 18 pay half price with a **Youth Clipper card**. It comes by mail, so apply a few weeks early.
+
+{% button_link(href="https://taketransit.berkeley.mt/#card") %} Get a Youth Clipper card {% end %}
+
+### Carpool to campus
+
+We understand that transit won't work for everybody. If driving makes more sense for you, we recommend carpooling with your friends, teammates, and classmates. On a Saturday, the garages near campus are shared with the rest of Berkeley, so they can fill up. Some don't open until 7 or 8 AM. Finding a space and walking over takes time too. The **Bancroft Parking Structure** is BMT's preferred garage. It's much bigger, so it's less likely to fill up. Plus, it's right on main campus, so you won't need to cross a public street to walk to Dwinelle.
+
+![Map of the parking garages near Dwinelle Hall](/news/take-transit-garage-map.webp)
+
+To compare garages by price, opening time, and walk to Dwinelle, check out the **Carpool** tab in the [BMT Trip Planner](https://taketransit.berkeley.mt/#car). Drive times assume light traffic, so leave extra time and check live traffic before you go.
+
+## Saving and sharing your trip
+
+Once your trip is planned, tap **Save** to keep it in Your trips for next time. You can also add it to Google Calendar or Apple Calendar, or save it as a PDF to print or keep on your phone. Tap **Share** to copy a link that opens the same trip, or to email it. If your team is meeting at school, one link gets everyone on the same plan!
+
+## Traveling from farther away
+
+Coming from out of town? BART serves both SFO and Oakland airports, so you can get from your gate to campus without a car.
+
+- **San Francisco (SFO):** Take AirTrain to the SFO BART station, ride the Yellow Line, and change at 19th St. / Oakland to a Richmond-bound Orange Line train to Downtown Berkeley. Gate to Dwinelle takes about 1.5 hours.
+- **Oakland (OAK):** Walk from the terminal to the Oakland International Airport BART station, ride to Coliseum, and change to an Orange Line train toward Richmond. Gate to Dwinelle takes about 1 hour.
+- **San José (SJC):** Take rideshare or the VTA 60 bus to Milpitas BART, then the Orange Line toward Richmond to Downtown Berkeley. Gate to Dwinelle takes about 2 hours.
+
+Type the airport code (SFO, OAK, SJC) into the planner to start from your terminal or the rental car center.
+
+For those who would like to get to campus before the chaotic morning, we have a hotel room block with discounted rates at the **Hotel Shattuck Plaza** in Downtown Berkeley, steps from Downtown Berkeley BART. **The cutoff date for booking is Tuesday, October 27, 2026.**
+
+{% button_link(href="https://reservations.hotelshattuckplaza.com/book/dates-of-stay?groupID=5469929") %} Book Hotel Room {% end %}
+
+## Travel safely
+
+Per [BMT event policy](/faqs/), every team must have an adult chaperone present on tournament day. For travel to and from BMT, we strongly encourage every group to include responsible adults whenever possible, especially for first-time or new riders.
+
+The planner is a tool for building your own trip from public schedules, maps and fares. BMT does not recommend any route and does not run, schedule or supervise travel to or from the event. Times and fares are estimates, so check signs and the agency apps on the day.
+
+{% button_link(href="https://taketransit.berkeley.mt", external=true, center=true) %} Open in BMT Trip Planner {% end %}
