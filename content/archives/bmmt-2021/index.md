@@ -4,6 +4,10 @@ aliases = ["/resources/archives/bmmt-2021"]
 date = 2021-02-27
 
 [[extra.archive.columns]]
+label = "Rules"
+key = "rules"
+
+[[extra.archive.columns]]
 label = "Problems"
 key = "problems"
 
@@ -33,6 +37,7 @@ solutions = "pacer-solutions.pdf"
 
 [[extra.archive.tests]]
 title = "Puzzle"
+rules = "puzzle-rules.pdf"
 problems = "puzzle-problems.xlsx"
 solutions = "puzzle-solutions.pdf"
 +++
