@@ -13,5 +13,5 @@ key = "solutions"
 [[extra.archive.tests]]
 title = "BmMT Number Theory Worksheet 1"
 problems = "nt1-problems.pdf"
-# solutions = "nt1-solutions.pdf"
+solutions = "nt1-solutions.pdf"
 +++
