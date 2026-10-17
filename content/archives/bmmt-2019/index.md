@@ -4,6 +4,10 @@ aliases = ["/resources/archives/bmmt-2019"]
 date = 2019-11-17
 
 [[extra.archive.columns]]
+label = "Rules"
+key = "rules"
+
+[[extra.archive.columns]]
 label = "Problems"
 key = "problems"
 
@@ -55,6 +59,7 @@ problems = "PuFa2019Tb.pdf"
 
 [[extra.archive.tests]]
 title = "Puzzle (China / Toronto)"
+rules = "PuFa2019RTo.pdf"
 problems = "PuFa2019To.pdf"
 solutions = "PuFa2019STo.pdf"
 +++

@@ -4,6 +4,10 @@ aliases = ["/resources/archives/bmmt-2024"]
 date = 2024-04-14
 
 [[extra.archive.columns]]
+label = "Rules"
+key = "rules"
+
+[[extra.archive.columns]]
 label = "Problems"
 key = "problems"
 
@@ -13,6 +17,7 @@ key = "solutions"
 
 [[extra.archive.tests]]
 title = "Puzzle"
+rules = "puzzle-rules.pdf"
 problems = "puzzle-problems.pdf"
 solutions = "puzzle-solutions.pdf"
 
