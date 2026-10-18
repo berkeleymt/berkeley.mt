@@ -78,7 +78,7 @@
       : cur ? `${cur.name} is open, ${cur.price} per student, ${nowTxt}.`
       : now < startAt ? `Registration is closed. ${ev.event_label}: ${longDay(ev.event_day)}.`
       : now < endOf(ev.event_day) ? `${ev.event_label} is today!` : "The event has ended.";
-    const next = up[0] && up[0].on !== ev.event_day ? ` ${up[0].to ? "Next up" : "Next deadline"}, ${when(up[0])}: ${up[0].items.join("; ")}.` : "";
+    const next = up[0] && up[0].on !== ev.event_day ? ` ${up[0].to ? "Next up" : "Next key date"}, ${when(up[0])}: ${up[0].items.join("; ")}.` : "";
     el.dataset.shareTitle = `${ev.event_title} At a Glance`;
     el.dataset.shareText = `${ev.event_title}: ${state}${next}`;
     el.dataset.shareUrl = pageUrl;
@@ -144,7 +144,7 @@
     group(deadlines).forEach(g =>
       h += `<button type="button" class="dia${g.on === ev.event_day ? " ev" : ""}${now >= endOf(g.on) ? " past" : ""}" style="left:${g.on === ev.event_day ? tl : x(dayNum(g.on) + (deadlines.some(k => k.on === g.on && k.time !== "") ? 1 : .5))}%" aria-label="${esc(longDay(g.on) + ": " + g.items.join(", "))}" data-day="${esc(longDay(g.on))}" data-items="${esc(JSON.stringify(g.items))}"></button>`);
     h += `</div><div class="tip" hidden></div><div class="tline" style="left:${tl}%"></div>`;
-    if (inRange) h += `<button type="button" class="today" style="left:${evDays === 0 ? tl : x(slot + .5)}%" aria-label="Today, ${esc(todayDate)}: ${esc(todayLines.join(", "))}" data-day="Today" data-date="${esc(todayDate)}" data-lines="${esc(JSON.stringify(todayLines))}"${regDone ? ' data-done="1"' : ""}></button>`;
+    if (inRange) h += `<button type="button" class="today${evDays === 0 ? " ev" : ""}" style="left:${evDays === 0 ? tl : x(slot + .5)}%" aria-label="Today, ${esc(todayDate)}: ${esc(todayLines.join(", "))}" data-day="Today" data-date="${esc(todayDate)}" data-lines="${esc(JSON.stringify(todayLines))}"${regDone ? ' data-done="1"' : ""}></button>`;
     h += `<div class="axis">`;
     let n = 0;
     for (let d = a; d < b; d++) {
@@ -159,7 +159,7 @@
       fit(el);
       return;
     }
-    if (up.length) h += `<div class="sub">Upcoming deadlines</div><div class="dl">${dlList(up, ev.event_day)}</div>`;
+    if (up.length) h += `<div class="sub">Upcoming key dates</div><div class="dl">${dlList(up, ev.event_day)}</div>`;
     if (ev.calendar) {
       const ics = new URL(ev.calendar, location.origin).href, webcal = ics.replace(/^https?:/, "webcal:");
       h += `<div class="cal"><span>Add these dates to your calendar:</span><a class="btn" href="${esc(webcal)}">Apple / Outlook</a><a class="btn" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}" target="_blank" rel="noopener">Google Calendar</a><a class="btn" href="${esc(ics)}" download>Download .ics</a></div>`;
@@ -177,7 +177,7 @@
       h += `</div></div>`;
     }
     const past = group(dated.filter(over)).reverse();
-    if (past.length) h += `<div class="news pastdl"><div class="sub">Past deadlines</div><div class="dl">${dlList(past, ev.event_day)}</div></div>`;
+    if (past.length) h += `<div class="news pastdl"><div class="sub">Past key dates</div><div class="dl">${dlList(past, ev.event_day)}</div></div>`;
     el.innerHTML = h + `</div>`;
     fit(el);
   }
@@ -187,10 +187,16 @@
     const tlEl = el.querySelector(".tl"), t = tlEl.getBoundingClientRect();
     const dpr = window.devicePixelRatio || 1;
     // Snap lines to device pixels; a deadline diamond sits on the centre of its 1px divider.
+    const snap = p => Math.round(p / 100 * tlEl.clientWidth * dpr) / dpr;
     el.querySelectorAll(".div, .tline, .today, .dia").forEach(d => {
       d.dataset.p ||= d.style.left;
-      const px = Math.round(parseFloat(d.dataset.p) / 100 * tlEl.clientWidth * dpr) / dpr;
-      d.style.left = px + (d.matches(".dia:not(.ev, .today)") ? .5 : 0) + "px";
+      d.style.left = snap(parseFloat(d.dataset.p)) + (d.matches(".dia:not(.ev, .today)") ? .5 : 0) + "px";
+    });
+    // Bands, weekends and blocks snap both edges to the same pixels, so they start exactly on the divider at midnight.
+    el.querySelectorAll(".band, .wk").forEach(d => {
+      d.dataset.p ||= d.style.left; d.dataset.w ||= d.style.width;
+      const l = snap(parseFloat(d.dataset.p)), r = snap(parseFloat(d.dataset.p) + parseFloat(d.dataset.w));
+      d.style.left = l + "px"; d.style.width = r - l + "px";
     });
     const box = s => s.getBoundingClientRect();
     const labs = [...el.querySelectorAll(".labs .lab")];
