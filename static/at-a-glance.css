@@ -21,7 +21,7 @@
 .glance .div{position:absolute;top:22px;bottom:22px;width:1px;background:#4b5563;z-index:3}
 .glance .div.low{top:38px}
 .glance .wk{position:absolute;top:42px;bottom:22px;background:rgba(15,23,42,.05)}
-.glance .tl .band.blk{margin-left:2px;background:#c4b5fd;z-index:1}
+.glance .tl .band.blk{background:#c4b5fd;z-index:1}
 .glance .lab.blk{color:#6d28d9}
 .glance .lab.blk.past{color:var(--muted)}
 .glance .tl .band.blk.past{background:rgba(15,23,42,.12)}
@@ -53,8 +53,9 @@
 .glance .dia.ev.on{background:var(--accent-ink);border-color:var(--accent-ink)}
 .glance .dia.ev.past{background:#fff;border-color:#b8b8b8}
 .glance .tline{position:absolute;top:22px;bottom:22px;width:2px;background:var(--accent);transform:translateX(-1px);z-index:3}
-.glance .today{--tc:var(--red);position:absolute;top:22px;bottom:22px;width:4px;padding:0;margin:0;border:0;border-radius:0;appearance:none;background:var(--tc);transform:translateX(-2px);z-index:2;cursor:pointer}
+.glance .today{--tc:var(--red);position:absolute;top:42px;bottom:22px;width:4px;padding:0;margin:0;border:0;border-radius:0;appearance:none;background:var(--tc);transform:translateX(-2px);z-index:2;cursor:pointer}
 .glance .today::before{content:"";position:absolute;inset:0 -4px}
+.glance .today.ev{top:22px}
 .glance .tip .td{color:var(--ink)}
 .glance .tip .cd{display:block;color:var(--red);font-variant-numeric:tabular-nums}
 .glance .tip .cd.k{color:var(--ink)}
