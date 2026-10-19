@@ -108,12 +108,13 @@
     el.dataset.key = key;
 
     let h = `<div class="w${mode === "page" ? " page" : ""}">`;
-    if (mode !== "page") h += `<div class="eyebrow">At a Glance</div><div class="w-title">${esc(ev.event_title)}</div><div class="w-date">${esc(ev.date_text)}</div>`;
+    if (mode === "slim") h += `<div class="slimhd"><div><div class="eyebrow">At a Glance</div><div class="w-title">${esc(ev.event_title)}</div></div><a class="btn more" href="${esc(el.dataset.href)}">See all dates →</a></div>`;
+    else if (mode !== "page") h += `<div class="eyebrow">At a Glance</div><div class="w-title">${esc(ev.event_title)}</div><div class="w-date">${esc(ev.date_text)}</div>`;
     const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
       .sort((p, q) => q.show_from.localeCompare(p.show_from));
-    if (!(emailPreview && mode === "preview"))
+    if (mode !== "slim" && !(emailPreview && mode === "preview"))
       h += `<div class="st">${st}<button type="button" class="btn share">Share</button></div>`;
-    if (mode !== "page" && items.length) h += `<div class="chips"><span>What's new:</span>${items.slice(0, 2).map(c => `<a class="btn" href="${esc(c.href)}">${esc(c.title)}</a>`).join("")}</div>`;
+    if (mode === "preview" && items.length) h += `<div class="chips"><span>What's new:</span>${items.slice(0, 2).map(c => `<a class="btn" href="${esc(c.href)}">${esc(c.title)}</a>`).join("")}</div>`;
     h += `<div class="tl">`;
     const lastEnd = x(dayNum(last.end) + 1), tl = x(dayNum(ev.event_day));
     phases.forEach((p, i) => {
@@ -154,6 +155,11 @@
     }
     h += `</div></div>`;
 
+    if (mode === "slim") {
+      el.innerHTML = h + `</div>`;
+      fit(el);
+      return;
+    }
     if (mode !== "page") {
       el.innerHTML = h + `<a class="btn more" href="${esc(el.dataset.href)}">See all dates and updates →</a></div>`;
       fit(el);
@@ -304,7 +310,7 @@
     hideTimer = setTimeout(() => hideTips(false), 300);
   });
   widgets.forEach(w => {
-    if (!(emailPreview && w.el.dataset.mode === "preview")) w.el.dataset.auto = "1";
+    if (w.el.dataset.mode !== "slim" && !(emailPreview && w.el.dataset.mode === "preview")) w.el.dataset.auto = "1";
   });
   draw(true);
   // Web fonts can widen an open popup after it was placed; place it again once they load.
