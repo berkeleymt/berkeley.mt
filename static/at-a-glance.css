@@ -93,7 +93,7 @@
 .glance .chips a:first-of-type{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .glance .more{display:inline-block;margin-top:10px;font-size:13.5px;font-weight:600;color:var(--accent-ink);border:1px solid var(--bd);background:#fff;padding:6px 12px}
 .glance .more:hover{border-color:var(--accent);transform:translateY(-1px)}
-.glance .slimhd{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.glance .slimhd{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 12px}
 .glance .slimhd .more{margin-top:0;white-space:nowrap}
 @container (max-width:560px){
   .glance .w{padding:12px}
