@@ -62,6 +62,12 @@
 
 {% block content %}
 
+{# At a Glance preview for the next event #}
+{% set glance = load_data(path="data/bmt-2026-at-a-glance.toml") %}
+<link rel="stylesheet" href="{{ get_url(path='at-a-glance.css') }}">
+<div class="glance not-prose" data-mode="preview" data-href="/bmt-2026/at-a-glance/"><script type="application/json">{{ glance | json_encode | safe }}</script></div>
+<script src="{{ get_url(path='at-a-glance.js') }}" defer></script>
+
 {# The three most recent news posts, excluding those with extra.announcement = false #}
 <div class="flex flex-col gap-4">
   {% set news_section = get_section(path="news/_index.md") %}
