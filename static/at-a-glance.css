@@ -93,8 +93,14 @@
 .glance .chips a:first-of-type{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .glance .more{display:inline-block;margin-top:10px;font-size:13.5px;font-weight:600;color:var(--accent-ink);border:1px solid var(--bd);background:#fff;padding:6px 12px}
 .glance .more:hover{border-color:var(--accent);transform:translateY(-1px)}
-.glance .slimhd{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 12px}
-.glance .slimhd .more{margin-top:0;white-space:nowrap}
+.glance .w.slim{border-radius:.75rem;padding:16px}
+.glance .slimhd{display:flex;align-items:center;justify-content:space-between;gap:8px;color:inherit}
+.glance .slimhd>span{display:flex;flex-direction:column;gap:8px}
+.glance .slimhd .eyebrow{display:flex;align-items:center;gap:8px;font-size:12px;line-height:16px;font-weight:400;letter-spacing:normal;color:#6b7280}
+.glance .slimhd .w-title{font-size:16px;line-height:24px;font-weight:500;margin:0}
+.glance .slimhd:hover .bi-chevron-right{transform:translateX(2px)}
+.glance .slimhd .bi-chevron-right{transition:transform .15s}
+.glance .w.slim .tl{margin-top:4px}
 @container (max-width:560px){
   .glance .w{padding:12px}
   .glance .w.page{padding:0}

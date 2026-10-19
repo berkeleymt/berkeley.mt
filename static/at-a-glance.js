@@ -107,8 +107,8 @@
     }
     el.dataset.key = key;
 
-    let h = `<div class="w${mode === "page" ? " page" : ""}">`;
-    if (mode === "slim") h += `<div class="slimhd"><div><div class="eyebrow">At a Glance</div><div class="w-title">${esc(ev.event_title)}</div></div><a class="btn more" href="${esc(el.dataset.href)}">See all dates →</a></div>`;
+    let h = `<div class="w${mode === "page" || mode === "slim" ? " " + mode : ""}">`;
+    if (mode === "slim") h += `<a class="slimhd" href="${esc(el.dataset.href)}"><span><span class="eyebrow"><i class="bi bi-calendar-event"></i>At a Glance</span><span class="w-title">${esc(ev.event_title)}</span></span><i class="bi bi-chevron-right"></i></a>`;
     else if (mode !== "page") h += `<div class="eyebrow">At a Glance</div><div class="w-title">${esc(ev.event_title)}</div><div class="w-date">${esc(ev.date_text)}</div>`;
     const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
       .sort((p, q) => q.show_from.localeCompare(p.show_from));
