@@ -23,3 +23,12 @@ site_url = "https://berkeley.mt"
 # whole [extra.advisory] table to remove the banner.
 # `status` is one of "info", "warning", or "error"; `body` is markdown.
 # `timestamp` is free text shown in the top right; include the timezone.
+[extra.advisory]
+status = "info"
+title = "ContestDojo bulk seat purchases"
+timestamp = "Posted October 18, 2026, 11:50 PM PT"
+body = """
+Some coaches registering on ContestDojo might have trouble buying a large
+number of seats at once. If this happens to you, please try again at another
+time!
+"""
