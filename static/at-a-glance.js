@@ -130,11 +130,12 @@
       h += `<div class="band blk${over({ on: k.end }) ? " past" : ""}" style="left:${l}%;width:${w}%"></div>`;
     });
     h += `<div class="nowrow"><span class="tlab">${esc(ev.event_label)}</span></div><div class="labs">`;
-    const labs = phases.map(p => {
+    // The home page (slim) labels only the current period.
+    const labs = phases.filter(p => mode !== "slim" || p === cur).map(p => {
       const l = x(dayNum(p.start)), r = x(dayNum(p.end) + 1);
       return [(l + r) / 2, `<span class="lab${p === cur ? " cur" : ""}" style="left:${(l + r) / 2}%" data-short="${esc(p.short || "")}">${esc(p.short || p.name)}</span>`];
     });
-    labs.push([(lastEnd + tl) / 2, `<span class="lab muted" style="left:${(lastEnd + tl) / 2}%">Closed</span>`]);
+    if (mode !== "slim" || (regDone && now < startAt)) labs.push([(lastEnd + tl) / 2, `<span class="lab muted" style="left:${(lastEnd + tl) / 2}%">Closed</span>`]);
     blocks.forEach(k => {
       const l = x(dayNum(k.start)), r = x(dayNum(k.end) + 1), on = now >= pacInstant(k.start) && now < endOf(k.end);
       labs.push([(l + r) / 2 - .001, `<span class="lab blk${on ? " cur" : over({ on: k.end }) ? " past" : ""}" style="left:${(l + r) / 2}%">${esc(k.name)}</span>`]);

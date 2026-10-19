@@ -101,6 +101,7 @@
 .glance .slimhd:hover .bi-chevron-right{transform:translateX(2px)}
 .glance .slimhd .bi-chevron-right{transition:transform .15s}
 .glance .w.slim .tl{margin-top:4px}
+.glance .w.slim .div{top:38px}
 @container (max-width:560px){
   .glance .w{padding:12px}
   .glance .w.page{padding:0}
