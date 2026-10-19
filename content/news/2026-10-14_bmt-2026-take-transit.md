@@ -15,9 +15,9 @@ So, we encourage everyone to consider taking public transit or carpooling! Just 
 
 {% button_link(href="https://taketransit.berkeley.mt", external=true, center=true) %} Open in BMT Trip Planner {% end %}
 
-Here's an example of a trip that's already planned, from SFO. Tap **See this trip** to look around, or tap **Change** to plan from your own location.
+Here's an example of a trip that's already planned, from OAK. Tap **See this trip** to look around, or tap **Change** to plan from your own location.
 
-{{ planner_embed(path="#trip?f=37.6161,-122.3844&n=SFO%20Terminal%202&m=transit&o=wSFIA&o2=wSFIA", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from SFO Terminal 2 to Dwinelle Hall") }}
+{{ planner_embed(path="#trip?f=37.71209,-122.21451&n=OAK%20Terminal%201&m=transit&o=wOAKL&o2=wOAKL", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from OAK Terminal 1 to Dwinelle Hall") }}
 
 ## Ways to get to and from BMT
 
