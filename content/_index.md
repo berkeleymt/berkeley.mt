@@ -29,11 +29,19 @@ sponsors = [
   { alt = "Susquehanna", src = "assets/sponsors/susquehanna.png", href = "https://sig.com/" },
   { alt = "Atomic Grader", src = "assets/sponsors/ag.svg", href = "https://atomicgrader.com/" },
   { alt = "SFBA ARML", src = "assets/sponsors/sfba-arml.svg", href = "https://sfbanorcalarml.org/" },
+]
+
+[[extra.sponsor_tiers]]
+title = "Blue Sponsors"
+div_class = "grid grid-cols-[repeat(2,auto)] justify-center items-center gap-x-8 gap-y-3 lg:flex lg:flex-wrap lg:justify-center lg:gap-x-16 lg:gap-y-4"
+img_class = "w-28 h-10 object-contain lg:w-auto lg:h-auto lg:max-w-40 lg:max-h-10"
+sponsors = [
+  { alt = "Texas Instruments", src = "assets/sponsors/ti.png", href = "https://www.ti.com/" },
   { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
 ]
 
 [[extra.sponsor_tiers]]
-title = "Blue Sponsors & Friends of BMT"
+title = "Friends of BMT"
 div_class = "grid grid-cols-[repeat(3,auto)] justify-center items-center gap-x-6 gap-y-3 lg:flex lg:flex-wrap lg:justify-center lg:gap-x-8 lg:gap-y-4"
 img_class = "w-20 h-10 object-contain lg:w-auto lg:h-auto lg:max-w-24 lg:max-h-12"
 sponsors = [
