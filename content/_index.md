@@ -39,6 +39,7 @@ sponsors = [
   { alt = "Texas Instruments", src = "assets/sponsors/ti.png", href = "https://www.ti.com/" },
   { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
   { alt = "blackpenredpen", src = "assets/sponsors/bprp.png", href = "https://www.youtube.com/c/blackpenredpen/" },
+  { alt = "LIVE by Po-Shen Loh", src = "assets/sponsors/live-psl.png", href = "https://live.poshenloh.com/", img_class = "w-28 h-14 object-contain lg:w-auto lg:h-auto lg:max-w-40 lg:max-h-16" },
 ]
 
 [[extra.sponsor_tiers]]
