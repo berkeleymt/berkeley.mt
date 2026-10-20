@@ -21,9 +21,8 @@ tags = ["advice", "bmt", "power-round", "guts-round"]
 +++
 
 {% alert(title="BMT 2025 solutions are out", status="info") %}
-BMT 2025 Power and Guts solutions are now in the [BMT 2025 archive](/archives/bmt-2025/).
-Use the Power Round solutions to see what complete, well-written proofs look like, and the
-Guts solutions to pick up quicker approaches to problems your team got stuck on.
+BMT 2025 Power and Guts solutions are now posted in the [BMT 2025 archive](/archives/bmt-2025/).
+Check out Power Round solutions to see what complete, well-written proofs look like!
 {% end %}
 
 Welcome back to the BMT blog! With BMT 2026 coming up in just over a month, we wanted to provide some team-oriented tips to help you prepare for the team-based rounds: **Power Round** and **Guts Round**. These rounds can be overwhelming since they deviate from typical formats for math competitions and they have a significant amount of collaboration, so we hope that these tips can help you orient yourself with your team and know what to expect.
