@@ -3,11 +3,12 @@ title = "Berkeley Math Tournament"
 description = "A UC Berkeley student-led organization that aims to spread mathematics and the spirit of mathematical competition throughout the Bay Area by presenting students with interesting, original, hand-crafted problems."
 
 [[extra.sponsor_tiers]]
-title = "Platinum Sponsor"
+title = "Platinum Sponsors"
 div_class = "flex gap-x-16 gap-y-4 flex-wrap justify-center items-center"
 img_class = "max-h-12"
 sponsors = [
-  { alt = "Hudson River Trading", src = "assets/sponsors/hrt.png", href = "https://www.hudsonrivertrading.com/" },
+  { alt = "Hudson River Trading", src = "assets/sponsors/hrt-alt.png", href = "https://www.hudsonrivertrading.com/", img_class = "max-h-20" },
+  { alt = "Cognition", src = "assets/sponsors/cognition.png", href = "https://cognition.ai/" },
 ]
 
 [[extra.sponsor_tiers]]
