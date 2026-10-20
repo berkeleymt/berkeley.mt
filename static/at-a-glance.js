@@ -311,7 +311,7 @@
     hideTimer = setTimeout(() => hideTips(false), 300);
   });
   widgets.forEach(w => {
-    if (w.el.dataset.mode !== "slim" && !(emailPreview && w.el.dataset.mode === "preview")) w.el.dataset.auto = "1";
+    if (!(emailPreview && w.el.dataset.mode === "preview")) w.el.dataset.auto = "1";
   });
   draw(true);
   // Web fonts can widen an open popup after it was placed; place it again once they load.

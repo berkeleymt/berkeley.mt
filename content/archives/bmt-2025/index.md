@@ -17,7 +17,7 @@ label = "Round/Test"
 [[extra.archive.groups.tests]]
 title = "Power"
 problems = "power-problems.pdf"
-#solutions = "power-solutions.pdf"
+solutions = "power-solutions.pdf"
 
 [[extra.archive.groups.tests]]
 title = "General"
@@ -77,8 +77,6 @@ title = "Geometry Tiebreaker"
 problems = "geometry-tiebreaker-problems.pdf"
 solutions = "geometry-tiebreaker-solutions.pdf"
 +++
-
-Power and Guts solutions coming soon!
 
 {% button_link(href="results.pdf") %} Contest Results {% end %}
 {% button_link(href="results-china.pdf") %} Contest Results (China) {% end %}
