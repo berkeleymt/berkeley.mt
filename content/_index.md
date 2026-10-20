@@ -13,7 +13,7 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Diamond Sponsors"
-div_class = "grid grid-cols-2 justify-items-center items-center gap-x-6 gap-y-6 lg:flex lg:flex-wrap lg:justify-center lg:gap-x-16"
+div_class = "flex flex-wrap justify-center items-center gap-x-6 gap-y-6 lg:gap-x-16"
 img_class = "w-36 h-16 object-contain lg:w-auto lg:h-auto lg:max-w-36 lg:max-h-16"
 sponsors = [
   { alt = "Jane Street", src = "assets/sponsors/jane-street.svg", href = "https://www.janestreet.com/" },
@@ -23,12 +23,12 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Gold Sponsors"
-div_class = "grid grid-cols-[repeat(2,auto)] justify-center items-center gap-x-8 gap-y-3 lg:flex lg:flex-wrap lg:justify-center lg:gap-x-16 lg:gap-y-4"
+div_class = "flex flex-wrap justify-center items-center gap-x-8 gap-y-3 lg:gap-x-16 lg:gap-y-4"
 img_class = "w-32 h-12 object-contain lg:w-auto lg:h-auto lg:max-w-48 lg:max-h-12"
 sponsors = [
-  { alt = "Susquehanna", src = "assets/sponsors/susquehanna.png", href = "https://sig.com/" },
   { alt = "Atomic Grader", src = "assets/sponsors/ag.svg", href = "https://atomicgrader.com/" },
-  { alt = "SFBA ARML", src = "assets/sponsors/sfba-arml.svg", href = "https://sfbanorcalarml.org/" },
+  { alt = "Susquehanna", src = "assets/sponsors/susquehanna.png", href = "https://sig.com/" },
+  { alt = "SFBA ARML", src = "assets/sponsors/sfba-arml.svg", href = "https://sfbanorcalarml.org/", img_class = "w-32 h-16 object-contain lg:w-auto lg:h-auto lg:max-w-48 lg:max-h-16" },
 ]
 
 [[extra.sponsor_tiers]]
