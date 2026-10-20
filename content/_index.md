@@ -43,7 +43,7 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Friends of BMT"
-div_class = "grid grid-cols-[repeat(3,auto)] justify-center items-center gap-x-6 gap-y-3 lg:flex lg:flex-wrap lg:justify-center lg:gap-x-8 lg:gap-y-4"
+div_class = "grid grid-cols-[repeat(3,auto)] justify-center items-center gap-x-6 gap-y-3 lg:flex lg:flex-wrap lg:justify-center lg:gap-x-12 lg:gap-y-4"
 img_class = "w-20 h-10 object-contain lg:w-auto lg:h-auto lg:max-w-24 lg:max-h-12"
 sponsors = [
   { alt = "Mustang Math", src = "assets/sponsors/mmt.png", href = "https://mustangmath.com/" },
