@@ -38,6 +38,7 @@ img_class = "w-28 h-10 object-contain lg:w-auto lg:h-auto lg:max-w-40 lg:max-h-1
 sponsors = [
   { alt = "Texas Instruments", src = "assets/sponsors/ti.png", href = "https://www.ti.com/" },
   { alt = "Simons Institute", src = "assets/sponsors/simons.png", href = "https://simons.berkeley.edu/" },
+  { alt = "blackpenredpen", src = "assets/sponsors/bprp.png", href = "https://www.youtube.com/c/blackpenredpen/" },
 ]
 
 [[extra.sponsor_tiers]]
@@ -51,7 +52,6 @@ sponsors = [
   { alt = "Carnegie Mellon Informatics and Mathematics Competition", src = "assets/sponsors/cmimc.png", href = "https://cmimc.math.cmu.edu/" },
   { alt = "Los Angeles Math Tournament", src = "assets/sponsors/lamt.png", href = "https://lamt.net/" },
   { alt = "Caltech Math Meet", src = "assets/sponsors/cmm.png", href = "https://caltechmathmeet.org/" },
-  { alt = "blackpenredpen", src = "assets/sponsors/bprp.png", href = "https://www.youtube.com/c/blackpenredpen/", img_class = "w-20 h-10 object-contain lg:w-auto lg:h-auto lg:max-w-32 lg:max-h-12" },
 ]
 +++
 
