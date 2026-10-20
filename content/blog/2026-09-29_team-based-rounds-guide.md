@@ -68,8 +68,7 @@ Be sure to keep these things in mind when you’re preparing with your team. Wit
 Best,<br>
 Your friends at BMT
 
-{% alert(title="Last fall's solutions are out", status="info") %}
-Solutions to the BMT 2025 Power Round and Guts Round are now posted! Find them
-alongside the problems in the [BMT 2025 archive](/archives/bmt-2025/), and use
-them to see what complete, well-written Power Round proofs look like.
+{% alert(status="info") %}
+BMT 2025 Power and Guts solutions are now in the [BMT 2025 archive](/archives/bmt-2025/).
+Use them to see what complete, well-written solutions look like.
 {% end %}
