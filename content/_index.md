@@ -13,7 +13,7 @@ sponsors = [
 
 [[extra.sponsor_tiers]]
 title = "Diamond Sponsors"
-div_class = "grid grid-cols-2 justify-items-center items-center gap-x-6 gap-y-6 lg:flex lg:flex-wrap lg:justify-center lg:gap-x-16"
+div_class = "flex flex-wrap justify-center items-center gap-x-6 gap-y-6 lg:gap-x-16"
 img_class = "w-36 h-16 object-contain lg:w-auto lg:h-auto lg:max-w-36 lg:max-h-16"
 sponsors = [
   { alt = "Jane Street", src = "assets/sponsors/jane-street.svg", href = "https://www.janestreet.com/" },
