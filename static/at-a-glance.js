@@ -23,9 +23,11 @@
   const short = s => utcDate(s).toLocaleDateString("en-US", { timeZone: "UTC", month: "short", day: "numeric" });
   const longDay = s => utcDate(s).toLocaleDateString("en-US", { timeZone: "UTC", weekday: "short", month: "short", day: "numeric" });
   const pacTime = t => t.toLocaleString("en-US", { timeZone: TZ, weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
-  const dur = ms => {
+  // Minutes count to the 11:59 PM deadline; days and hours count to the midnight right after it.
+  const dur = (ms, eod) => {
+    if (eod && ms < 36e5) ms = Math.max(0, ms - 6e4);
     const d = Math.floor(ms / MS_DAY), h = Math.floor(ms % MS_DAY / 36e5), m = Math.floor(ms % 36e5 / 6e4);
-    return d >= 2 ? `${d} days, ${h} hr` : d === 1 ? `1 day, ${h} hr` : `${h} hr, ${m} min`;
+    return d >= 2 ? `${d} days, ${h} hr` : d === 1 ? `1 day, ${h} hr` : h ? `${h} hr` : `${m} min`;
   };
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   const group = list => {
@@ -64,7 +66,7 @@
       st = (multi ? stat("Now open", esc(cur.short || cur.name)) : stat("Registration", "Open")) +
         stat("Price", `${esc(cur.price)} per student`) +
         stat(multi ? `${esc(cur.short || cur.name)} ends` : "Closes", pacTime(new Date(endOf(cur.end) - 60e3)));
-      nowTxt = `${dur(endOf(cur.end) - now)} left${multi ? ` in ${cur.short || cur.name}` : ""}`;
+      nowTxt = `${dur(endOf(cur.end) - now, 1)} left${multi ? ` in ${cur.short || cur.name}` : ""}`;
     } else if (now < startAt) {
       st = stat("Registration", "Closed") + blocks.filter(k => now < endOf(k.end)).map(k => stat(esc(k.name), range(k.start, k.end))).join("") +
         stat(esc(ev.event_label), longDay(ev.event_day)); nowTxt = evSoon || `${dur(startAt - now)} to go`; }
@@ -87,7 +89,7 @@
     const blkIn = k => { const n = dayNum(k.start) - slot; return n <= 1 ? `${k.name} is tomorrow!` : `${k.name} in ${n} days`; };
     let todayLines = [nowTxt || `${ev.event_label} is today!`];
     if (blocks.length && cur && !multi)
-      todayLines = [`${dur(endOf(cur.end) - now)} til registration close`].concat(blk && now < pacInstant(blk.start) ? [blkIn(blk)] : []);
+      todayLines = [`${dur(endOf(cur.end) - now, 1)} til registration close`].concat(blk && now < pacInstant(blk.start) ? [blkIn(blk)] : []);
     else if (blocks.length && !cur && now >= opens && now < startAt)
       todayLines = [blk ? (now >= pacInstant(blk.start) ? `${blk.name}!` : blkIn(blk)) : evSoon || `${ev.event_label} in ${dur(startAt - now)}`];
     const regDone = now >= endOf(last.end);
