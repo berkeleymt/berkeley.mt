@@ -48,7 +48,7 @@
   <div class="grid {{ grid_cols }} gap-8">
     {% for sponsor in sponsors %}
     <a href="{{ sponsor.href }}" class="hover:opacity-80 transition-opacity">
-      <img src="{{ sponsor.src }}" alt="{{ sponsor.alt }}" class="w-full">
+      <img src="{{ sponsor.src }}" alt="{{ sponsor.alt }}" loading="lazy" class="w-full">
     </a>
     {% endfor %}
   </div>
@@ -160,7 +160,7 @@
 <div class="{{ tier.div_class }}">
   {% for sponsor in tier.sponsors %}
   <a href="{{ sponsor.href }}">
-    <img src="{{ sponsor.src }}" alt="{{ sponsor.alt }}" class="{{ sponsor.img_class | default(value=tier.img_class) }}">
+    <img src="{{ sponsor.src }}" alt="{{ sponsor.alt }}" loading="lazy" class="{{ sponsor.img_class | default(value=tier.img_class) }}">
   </a>
   {% endfor %}
 </div>
