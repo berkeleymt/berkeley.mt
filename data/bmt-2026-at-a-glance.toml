@@ -60,10 +60,6 @@ on = "2026-11-01"
 label = "Lunch pre-order closes"
 
 [[deadlines]]
-on = "2026-11-01"
-label = "Team Link sign-up closes"
-
-[[deadlines]]
 on = "2026-11-14"
 label = "Tournament Day"
 
@@ -89,7 +85,8 @@ title = "BMT Team Link"
 blurb = "Teams with fewer than 4 students can be combined on Tournament Day. Coaches sign up on ContestDojo."
 href = "/news/bmt-2026-team-link/"
 show_from = "2026-09-28"
-hide_after = "2026-11-01"
+hide_after = "2026-11-08"
+show_until = false
 
 [[news]]
 title = "Phase 2 is open"
