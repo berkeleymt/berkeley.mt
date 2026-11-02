@@ -184,21 +184,21 @@ or the U.S. to participate. Teams may have up to **6 students**.
 <details id="bmt-grade-equivalents">
 <summary>I go to school outside the U.S. Am I eligible for BMT?</summary>
 
-Yes, as long as you're in your last year of secondary school or below. That's
-our equivalent of U.S. grade 12. Some common ones:
+Yes! BMT is open to anyone who hasn't finished secondary school (high school)
+yet. U.S. grade 12 is the last year of secondary school, so if you're in your
+last year or below, you're eligible, wherever you go to school.
 
-| School system | Equivalent of U.S. grade 12 |
+| School system | Last eligible year |
 | --- | --- |
+| Grades 1 to 12 (U.S., Canada, Australia, India, and many more) | Grade 12 |
 | UK | Year 13 |
-| China, Japan, Korea, Taiwan | 3rd year of senior high school |
 | Hong Kong | Form 6 |
 | Singapore | JC 2 |
-| Ecuador and most of Latin America | 3rd year of bachillerato |
+| China, Japan, Korea, Taiwan | 3rd year of senior high school |
+| Most of Latin America | Last year of bachillerato |
 | International Baccalaureate (IB) | Diploma Programme year 2 |
 
-Countries that number grades 1 to 12 (like Canada, Australia, or India) line up
-with the U.S. If your school isn't listed or you're not sure, email us at
-<team@berkeley.mt>.
+Not sure where you fit? Email us at <team@berkeley.mt>.
 
 </details>
 
@@ -263,22 +263,22 @@ California, or the U.S. to participate. Teams may have up to **5 students**.
 <details id="bmmt-grade-equivalents">
 <summary>I go to school outside the U.S. Am I eligible for BmMT?</summary>
 
-Yes, as long as you're in the equivalent of U.S. grade 8 or below. Some common
-ones:
+Yes! BmMT is open to anyone with at least 4 more years of secondary school
+(high school) after this one. That's U.S. grade 8 or below, wherever you go to
+school.
 
-| School system | Equivalent of U.S. grade 8 |
+| School system | Last eligible year |
 | --- | --- |
+| Grades 1 to 12 (U.S., Canada, Australia, India, and many more) | Grade 8 |
 | UK | Year 9 |
-| China, Japan, Korea, Taiwan | 2nd year of junior high school |
 | Hong Kong | Form 2 |
 | Singapore | Secondary 2 |
+| China, Japan, Korea, Taiwan | 2nd year of junior high school |
 | Ecuador | 9th year of EGB |
 | Mexico | 2nd year of secundaria |
 | International Baccalaureate (IB) | Middle Years Programme year 3 |
 
-Countries that number grades 1 to 12 (like Canada, Australia, or India) line up
-with the U.S. If your school isn't listed or you're not sure, email us at
-<team@berkeley.mt>.
+Not sure where you fit? Email us at <team@berkeley.mt>.
 
 </details>
 
