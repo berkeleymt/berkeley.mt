@@ -1,5 +1,6 @@
 +++
 title = "TakeTransit to BMT 2026"
+updated = 2026-11-01
 description = "Our team is excited to welcome you to BMT 2026 at UC Berkeley on Saturday, November 14! Starting this year, our new TakeTransit to BMT initiative will help you get to and from campus with ease. Plus, we're releasing a brand new BMT Trip Planner tool!"
 
 [extra]
@@ -7,7 +8,7 @@ preview_image = "/news/take-transit-preview.png"
 +++
 
 {% alert(title="BART construction on November 14 and 15", status="warning") %}
-There won't be any BART trains between 24th St. Mission and Daly City on the BMT weekend. Free buses will run instead: SamTrans express buses between 24th St. Mission and Daly City, and Muni buses that also stop at Glen Park and Balboa Park. The Green Line won't run, and the Red Line will only run between Richmond and 24th St. Mission. If you're coming from south of 24th St. Mission, expect delays of up to 30 minutes. The BMT Trip Planner already accounts for this. [Read BART's notice](https://www.bart.gov/news/articles/2026/news20261015)
+There won't be any BART trains between 24th St. Mission and Daly City on the BMT weekend. Free buses will run instead: SamTrans express buses between 24th St. Mission and Daly City, and Muni buses that also stop at Glen Park and Balboa Park. The Green Line won't run, and the Red Line will only run between Richmond and 24th St. Mission. BART says trips through this stretch, including from SFO, Millbrae, and Caltrain at Millbrae, can take up to 30 minutes longer. The BMT Trip Planner already accounts for this. [Read BART's notice](https://www.bart.gov/news/articles/2026/news20261015)
 {% end %}
 
 Our team is excited to welcome you to BMT 2026 at UC Berkeley on **Saturday, November 14**! Starting this year, our new TakeTransit to BMT initiative will help you get to and from campus with ease. Plus, we're releasing a brand new BMT Trip Planner tool!
