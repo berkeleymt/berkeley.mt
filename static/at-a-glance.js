@@ -57,6 +57,7 @@
     const startAt = pacInstant(ev.event_day, ev.event_starts || "00:00");
     const cur = phases.find(p => now >= (p === first ? opens : pacInstant(p.start)) && now < endOf(p.end));
     const multi = phases.length > 1;
+    const wl = cur && cur.waitlist_from && now >= pacInstant(cur.waitlist_from);
     const stat = (k, v) => `<div><span class="k">${k}</span><span class="v">${v}</span></div>`;
     const evDays = dayNum(ev.event_day) - slot;
     const evSoon = evDays === 1 ? `${ev.event_label} is tomorrow!` : evDays === 0 ? `${ev.event_label} is today!` : "";
@@ -64,7 +65,7 @@
     if (now < opens) { st = stat("Registration", "Opens " + pacTime(opens)); nowTxt = `Opens in ${dur(opens - now)}`; }
     else if (cur) {
       st = (multi ? stat("Now open", esc(cur.short || cur.name)) : stat("Registration", "Open")) +
-        (cur.waitlist_from && now >= pacInstant(cur.waitlist_from) ? stat("Seats", `<a href="${esc(ev.event_page)}#waitlist">Waitlist only</a>`) : stat("Price", `${esc(cur.price)} per student`)) +
+        (wl ? stat("Seats", `<a href="${esc(ev.event_page)}#waitlist">Waitlist only</a>`) : stat("Price", `${esc(cur.price)} per student`)) +
         stat(multi ? `${esc(cur.short || cur.name)} ends` : "Closes", pacTime(new Date(endOf(cur.end) - 60e3)));
       nowTxt = `${dur(endOf(cur.end) - now, 1)} left${multi ? ` in ${cur.short || cur.name}` : ""}`;
     } else if (now < startAt) {
@@ -77,7 +78,7 @@
     const up = group(dated.filter(k => !over(k)));
     const pageUrl = new URL(mode === "page" ? location.pathname : el.dataset.href, location.origin).href;
     const state = now < opens ? `Registration opens ${pacTime(opens)}.`
-      : cur ? `${cur.name} is open, ${cur.price} per student, ${nowTxt}.`
+      : cur ? `${cur.name} is open, ${wl ? "waitlist only" : `${cur.price} per student`}, ${nowTxt}.`
       : now < startAt ? `Registration is closed. ${ev.event_label}: ${longDay(ev.event_day)}.`
       : now < endOf(ev.event_day) ? `${ev.event_label} is today!` : "The event has ended.";
     const next = up[0] && up[0].on !== ev.event_day ? ` ${up[0].to ? "Next up" : "Next key date"}, ${when(up[0])}: ${up[0].items.join("; ")}.` : "";
