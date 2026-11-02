@@ -76,7 +76,7 @@
 <table class="prose table-auto sm:table-fixed w-full [&_th]:text-left{% if keys | length > 2 %} [&_th]:text-sm sm:[&_th]:text-base{% endif %}">
   <thead>
     <th class="{% if keys | length > 2 %}sm:w-2/5{% else %}sm:w-1/2{% endif %}">Tournament</th>
-    {% for key in keys %}<th class="w-px whitespace-nowrap sm:w-auto">{{ key | capitalize }}</th>{% endfor %}
+    {% for key in keys %}<th class="w-px whitespace-nowrap sm:w-auto !text-center">{{ key | capitalize }}</th>{% endfor %}
   </thead>
   <tbody>
     {% for archive in archives.pages %}
@@ -97,7 +97,7 @@
         {% set prefix = section.titles | first %}{% set prefix = prefix ~ " " %}{% if test.title != section.titles | first %}<span>{{ test.title | trim_start_matches(pat=prefix) }}</span>{% endif %}
       </td>
       {% for key in keys %}
-      <td>
+      <td class="text-center">
         {% set href = test | get(key=key, default="") %}
         {% if href %}<a href="{{ archive.permalink | safe }}{{ href }}">{{ href | split(pat=".") | last | upper }}</a>{% else %}-{% endif %}
       </td>
@@ -108,7 +108,7 @@
     {% if not found %}
     <tr>
       <td><a href="{{ archive.permalink | safe }}">{{ name }}</a></td>
-      {% for key in keys %}<td>-</td>{% endfor %}
+      {% for key in keys %}<td class="text-center">-</td>{% endfor %}
     </tr>
     {% endif %}
     {% endif %}

@@ -1,6 +1,10 @@
 +++
-title = "BmMT Combinatorics Worksheet 1"
+title = "BmMT Combinatorics Worksheets"
 date = 2025-10-07
+aliases = ["/resources/bmmt-worksheets/combo1/"]
+
+[extra.archive]
+centered = true
 
 [[extra.archive.columns]]
 label = "Problems"
@@ -10,8 +14,11 @@ key = "problems"
 label = "Solutions"
 key = "solutions"
 
-[[extra.archive.tests]]
-title = "BmMT Combinatorics Worksheet 1"
+[[extra.archive.groups]]
+label = "Topic"
+
+[[extra.archive.groups.tests]]
+title = "Counting Principle"
 problems = "combo1-problems.pdf"
 solutions = "combo1-solutions.pdf"
 +++

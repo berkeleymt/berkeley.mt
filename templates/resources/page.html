@@ -1,6 +1,6 @@
 {% extends "page.html" %}
 
-{% macro archive_table(label, tests, columns) %}
+{% macro archive_table(label, tests, columns, centered=false) %}
 <table class="prose table-fixed w-full">
     <thead>
         <th class="w-1/2">{{ label }}</th>
@@ -11,9 +11,9 @@
     <tbody>
         {% for test in tests %}
         <tr>
-            <td>{{ test.title }}</td>
+            <td{% if centered %} class="text-center"{% endif %}>{{ test.title }}</td>
             {% for column in columns %}
-            <td>
+            <td class="text-center">
                 {% set href = test | get(key=column.key, default="") %}
                 {% if href %}
                 <a href="{{ href }}">{{ href | split(pat=".") | last | upper }}</a>
@@ -33,6 +33,7 @@
   label=group.label | default(value="Round/Test"),
   tests=group.tests,
   columns=page.extra.archive.columns,
+  centered=page.extra.archive.centered | default(value=false),
 ) }}
 {% endfor %}
 {% else %}
@@ -40,6 +41,7 @@
   label="Round/Test",
   tests=page.extra.archive.tests,
   columns=page.extra.archive.columns,
+  centered=page.extra.archive.centered | default(value=false),
 ) }}
 {% endif %}
 {% endblock %}
