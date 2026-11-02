@@ -181,6 +181,27 @@ or the U.S. to participate. Teams may have up to **6 students**.
 
 </details>
 
+<details id="bmt-grade-equivalents">
+<summary>I go to school outside the U.S. Am I eligible for BMT?</summary>
+
+Yes, as long as you're in your last year of secondary school or below. That's
+our equivalent of U.S. grade 12. Some common ones:
+
+| School system | Equivalent of U.S. grade 12 |
+| --- | --- |
+| UK | Year 13 |
+| China, Japan, Korea, Taiwan | 3rd year of senior high school |
+| Hong Kong | Form 6 |
+| Singapore | JC 2 |
+| Ecuador and most of Latin America | 3rd year of bachillerato |
+| International Baccalaureate (IB) | Diploma Programme year 2 |
+
+Countries that number grades 1 to 12 (like Canada, Australia, or India) line up
+with the U.S. If your school isn't listed or you're not sure, email us at
+<team@berkeley.mt>.
+
+</details>
+
 <details>
 <summary>What are the contest rounds?</summary>
 
@@ -236,6 +257,28 @@ as the Focus Tests.
 BmMT is open to any student in **grade 8 or below**, including advanced
 elementary school students. Students do not have to be local to the Bay Area,
 California, or the U.S. to participate. Teams may have up to **5 students**.
+
+</details>
+
+<details id="bmmt-grade-equivalents">
+<summary>I go to school outside the U.S. Am I eligible for BmMT?</summary>
+
+Yes, as long as you're in the equivalent of U.S. grade 8 or below. Some common
+ones:
+
+| School system | Equivalent of U.S. grade 8 |
+| --- | --- |
+| UK | Year 9 |
+| China, Japan, Korea, Taiwan | 2nd year of junior high school |
+| Hong Kong | Form 2 |
+| Singapore | Secondary 2 |
+| Ecuador | 9th year of EGB |
+| Mexico | 2nd year of secundaria |
+| International Baccalaureate (IB) | Middle Years Programme year 3 |
+
+Countries that number grades 1 to 12 (like Canada, Australia, or India) line up
+with the U.S. If your school isn't listed or you're not sure, email us at
+<team@berkeley.mt>.
 
 </details>
 

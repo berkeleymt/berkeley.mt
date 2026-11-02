@@ -52,8 +52,8 @@ late registration.
 ## Student Eligibility
 
 - Students must be in **grade 12 or below** to be eligible for BMT. If you
-  attend school outside of the U.S. and want to know about grade equivalency,
-  please email us at <team@berkeley.mt>.
+  attend school outside of the U.S., see our
+  [grade equivalents](/faqs/#bmt-grade-equivalents).
 - Students do not have to be from the same school.
 - Students **must not have competed in a prior iteration of BMT 2026**,
   including the California version or any of our satellites.
