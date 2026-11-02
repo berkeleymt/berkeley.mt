@@ -1,9 +1,17 @@
 +++
 title = "TakeTransit to BMT 2026"
+updated = 2026-11-01
+description = "Our team is excited to welcome you to BMT 2026 at UC Berkeley on Saturday, November 14! Starting this year, our new TakeTransit to BMT initiative will help you get to and from campus with ease. Plus, we're releasing a brand new BMT Trip Planner tool!"
 
 [extra]
 preview_image = "/news/take-transit-preview.png"
 +++
+
+**_Update (11/1/2026): This post has been updated for BART construction on Nov 14–15._**
+
+{% alert(title="BART construction on November 14 and 15", status="warning") %}
+There won't be any BART trains between 24th St. Mission and Daly City on the BMT weekend. Free buses will run instead: SamTrans express buses between 24th St. Mission and Daly City, and Muni buses that also stop at Glen Park and Balboa Park. The Green Line won't run, and the Red Line will only run between Richmond and 24th St. Mission. BART says going through this stretch can add up to 30 minutes, so we suggest avoiding it. Instead, get dropped off at 24th St. Mission, or drive and park at an East Bay BART station. The BMT Trip Planner already accounts for the closure. [Read BART's notice](https://www.bart.gov/news/articles/2026/news20261015)
+{% end %}
 
 Our team is excited to welcome you to BMT 2026 at UC Berkeley on **Saturday, November 14**! Starting this year, our new TakeTransit to BMT initiative will help you get to and from campus with ease. Plus, we're releasing a brand new BMT Trip Planner tool!
 
@@ -15,9 +23,9 @@ So, we encourage everyone to consider taking public transit or carpooling! Just 
 
 {% button_link(href="https://taketransit.berkeley.mt", external=true, center=true) %} Open in BMT Trip Planner {% end %}
 
-Here's an example of a trip that's already planned, from SFO. Tap **See this trip** to look around, or tap **Change** to plan from your own location.
+Here's an example of a trip that's already planned, from Powell St. BART in San Francisco. Tap **See this trip** to look around, or tap **Change** to plan from your own location.
 
-{{ planner_embed(path="#trip?f=37.6161,-122.3844&n=SFO%20Terminal%202&m=transit&o=wSFIA&o2=wSFIA", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from SFO Terminal 2 to Dwinelle Hall") }}
+{{ planner_embed(path="#trip?f=37.7845,-122.408&n=Powell%20St.%20BART&m=transit&o=wPOWL&o2=wPOWL", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from Powell St. BART to Dwinelle Hall") }}
 
 ## Ways to get to and from BMT
 
@@ -63,7 +71,7 @@ Once your trip is planned, tap **Save** to keep it in Your trips for next time. 
 
 Coming from out of town? BART serves both SFO and Oakland airports, so you can get from your gate to campus without a car.
 
-- **San Francisco (SFO):** Take AirTrain to the SFO BART station, ride the Yellow Line, and change at 19th St. / Oakland to a Richmond-bound Orange Line train to Downtown Berkeley. Gate to Dwinelle takes about 1.5 hours.
+- **San Francisco (SFO):** Take AirTrain to the SFO BART station, ride the Yellow Line, and change at 19th St. / Oakland to a Richmond-bound Orange Line train to Downtown Berkeley. Gate to Dwinelle takes about 1.5 hours. _On Saturday, Nov 14, there won't be BART trains between Daly City and 24th St. Mission. Ride BART from SFO to Daly City, take the free bus to 24th St. Mission, then get back on BART. Allow up to 30 extra minutes. Flying in Friday? It works as usual._
 - **Oakland (OAK):** Walk from the terminal to the Oakland International Airport BART station, ride to Coliseum, and change to an Orange Line train toward Richmond. Gate to Dwinelle takes about 1 hour.
 - **San José (SJC):** Take rideshare or the VTA 60 bus to Milpitas BART, then the Orange Line toward Richmond to Downtown Berkeley. Gate to Dwinelle takes about 2 hours.
 
