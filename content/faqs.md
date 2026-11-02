@@ -182,7 +182,7 @@ or the U.S. to participate. Teams may have up to **6 students**.
 </details>
 
 <details id="bmt-grade-equivalents">
-<summary>I go to school outside the U.S. Am I eligible for BMT?</summary>
+<summary>Am I eligible for BMT if I go to school outside the U.S.?</summary>
 
 Yes! BMT is open to anyone who hasn't finished secondary school (high school)
 yet. U.S. grade 12 is the last year of secondary school, so if you're in your
@@ -264,7 +264,7 @@ California, or the U.S. to participate. Teams may have up to **5 students**.
 </details>
 
 <details id="bmmt-grade-equivalents">
-<summary>I go to school outside the U.S. Am I eligible for BmMT?</summary>
+<summary>Am I eligible for BmMT if I go to school outside the U.S.?</summary>
 
 Yes! BmMT is open to anyone with at least 4 more years of secondary school
 (high school) after this one. That's U.S. grade 8 or below, wherever you go to
