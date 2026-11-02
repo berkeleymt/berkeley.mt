@@ -90,6 +90,16 @@
 {% endmacro index_math%}
 
 {% macro advisory(advisory) %}
+{% if advisory.after %}
+<div>{{ self::advisory_box(advisory=advisory) }}</div>
+<div data-from="{{ advisory.after.from }}" hidden>{{ self::advisory_box(advisory=advisory.after) }}</div>
+<script>(() => { const a = document.currentScript.previousElementSibling; if (Date.now() >= Date.parse(a.dataset.from)) { a.hidden = false; a.previousElementSibling.hidden = true; } })();</script>
+{% else %}
+{{ self::advisory_box(advisory=advisory) }}
+{% endif %}
+{% endmacro advisory %}
+
+{% macro advisory_box(advisory) %}
 {% if advisory.status == "info" %}
 {% set class = "bg-blue-50 border-blue-200" %}
 {% set icon_class = "bi bi-info-circle-fill" %}
@@ -113,7 +123,7 @@
     {{ advisory.body | markdown | safe }}
   </div>
 </div>
-{% endmacro advisory %}
+{% endmacro advisory_box %}
 
 {% macro newline_break(str) %}
 {% for line in str | split(pat="\n") %}
