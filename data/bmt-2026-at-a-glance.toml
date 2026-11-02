@@ -54,7 +54,7 @@ label = "Hotel block cutoff"
 
 [[deadlines]]
 on = "2026-11-01"
-label = "Last day to join the waitlist (registration closes)"
+label = "Last day to join the waitlist (seat purchases close)"
 
 [[deadlines]]
 on = "2026-11-01"
