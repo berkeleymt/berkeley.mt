@@ -18,7 +18,7 @@ key = "solutions"
 label = "Topic"
 
 [[extra.archive.groups.tests]]
-title = "Modular Arithmetic"
+title = "Arithmetic with Remainder"
 problems = "nt1-problems.pdf"
 solutions = "nt1-solutions.pdf"
 +++
