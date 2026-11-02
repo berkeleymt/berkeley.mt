@@ -23,9 +23,9 @@ So, we encourage everyone to consider taking public transit or carpooling! Just 
 
 {% button_link(href="https://taketransit.berkeley.mt", external=true, center=true) %} Open in BMT Trip Planner {% end %}
 
-Here's an example of a trip that's already planned, from Fremont BART. Tap **See this trip** to look around, or tap **Change** to plan from your own location.
+Here's an example of a trip that's already planned, from Powell St. BART in San Francisco. Tap **See this trip** to look around, or tap **Change** to plan from your own location.
 
-{{ planner_embed(path="#trip?f=37.5575,-121.9766&n=Fremont%20BART&m=transit&o=wFRMT&o2=wFRMT", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from Fremont BART to Dwinelle Hall") }}
+{{ planner_embed(path="#trip?f=37.7845,-122.408&n=Powell%20St.%20BART&m=transit&o=wPOWL&o2=wPOWL", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from Powell St. BART to Dwinelle Hall") }}
 
 ## Ways to get to and from BMT
 
