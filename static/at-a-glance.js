@@ -100,7 +100,7 @@
     const todayDate = longDay(new Date(slot * MS_DAY).toISOString().slice(0, 10));
     const key = `${slot}|${st}|${el.clientWidth}`;
     if (!force && el.dataset.key === key) {
-      el.querySelectorAll(".kick").forEach(k => { k.innerHTML = kickTxt(k.dataset.at - now); });
+      el.querySelectorAll(".kick").forEach(k => { if (k.dataset.at - now <= 0) k.remove(); else k.innerHTML = kickTxt(k.dataset.at - now); });
       const td = el.querySelector(".today");
       if (td) {
         td.dataset.lines = JSON.stringify(todayLines);
@@ -328,5 +328,5 @@
   }));
   window.addEventListener("resize", () => draw(false));
   if (!fixed) setInterval(() => draw(false), 60000);
-  if (!fixed) setInterval(() => document.querySelectorAll(".glance .kick").forEach(k => { k.innerHTML = kickTxt(k.dataset.at - Date.now()); }), 1000);
+  if (!fixed) setInterval(() => document.querySelectorAll(".glance .kick").forEach(k => { const ms = k.dataset.at - Date.now(); if (ms <= 0) k.remove(); else k.innerHTML = kickTxt(ms); }), 1000);
 })();
