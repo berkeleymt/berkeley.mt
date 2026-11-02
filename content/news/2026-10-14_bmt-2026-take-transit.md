@@ -7,6 +7,8 @@ description = "Our team is excited to welcome you to BMT 2026 at UC Berkeley on 
 preview_image = "/news/take-transit-preview.png"
 +++
 
+**_Update (11/1/2026): This post has been updated for BART construction on Nov 14–15._**
+
 {% alert(title="BART construction on November 14 and 15", status="warning") %}
 There won't be any BART trains between 24th St. Mission and Daly City on the BMT weekend. Free buses will run instead: SamTrans express buses between 24th St. Mission and Daly City, and Muni buses that also stop at Glen Park and Balboa Park. The Green Line won't run, and the Red Line will only run between Richmond and 24th St. Mission. BART says going through this stretch can add up to 30 minutes, so we suggest avoiding it. Instead, get dropped off at 24th St. Mission, or drive and park at an East Bay BART station. The BMT Trip Planner already accounts for the closure. [Read BART's notice](https://www.bart.gov/news/articles/2026/news20261015)
 {% end %}
@@ -21,9 +23,9 @@ So, we encourage everyone to consider taking public transit or carpooling! Just 
 
 {% button_link(href="https://taketransit.berkeley.mt", external=true, center=true) %} Open in BMT Trip Planner {% end %}
 
-Here's an example of a trip that's already planned, from SFO. Tap **See this trip** to look around, or tap **Change** to plan from your own location.
+Here's an example of a trip that's already planned, from Mission San Jose High School in Fremont. Tap **See this trip** to look around, or tap **Change** to plan from your own location.
 
-{{ planner_embed(path="#trip?f=37.6161,-122.3844&n=SFO%20Terminal%202&m=transit&o=wSFIA&o2=wSFIA", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from SFO Terminal 2 to Dwinelle Hall") }}
+{{ planner_embed(path="#trip?f=37.5447,-121.9357&n=Mission%20San%20Jose%20High%20School&m=drive&o=dFRMT&o2=dFRMT&p=FRMT", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from Mission San Jose High School to Dwinelle Hall, driving to Fremont BART") }}
 
 ## Ways to get to and from BMT
 
