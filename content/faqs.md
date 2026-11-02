@@ -198,9 +198,8 @@ last year or below, you're eligible, wherever you go to school.
 | Singapore | JC 2 |
 | International Baccalaureate (IB) | Diploma Programme year 2 |
 
-When ContestDojo asks for your grade, enter the U.S. grade. Count back from 12:
-your last year of secondary school is grade 12, the year before is grade 11,
-and so on. For example, UK Year 11 is grade 10.
+To register, enter the U.S. grade equivalent. Count back from 12: your last
+year of secondary school is grade 12, the year before is grade 11, and so on. For example, UK Year 11 is grade 10.
 
 Not sure where you fit? Email us at <team@berkeley.mt>.
 
@@ -282,9 +281,8 @@ school.
 | Singapore | Secondary 2 |
 | International Baccalaureate (IB) | Middle Years Programme year 3 |
 
-When ContestDojo asks for your grade, enter the U.S. grade. Count back from 12:
-your last year of secondary school is grade 12, the year before is grade 11,
-and so on. For example, Hong Kong Form 1 is grade 7.
+To register, enter the U.S. grade equivalent. Count back from 12: your last
+year of secondary school is grade 12, the year before is grade 11, and so on. For example, Hong Kong Form 1 is grade 7.
 
 Not sure where you fit? Email us at <team@berkeley.mt>.
 
