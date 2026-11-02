@@ -279,7 +279,6 @@ school.
 | China, Japan, Korea, Taiwan | 2nd year of junior high school |
 | Hong Kong | Form 2 |
 | Singapore | Secondary 2 |
-| International Baccalaureate (IB) | Middle Years Programme year 3 |
 
 To register, enter the U.S. grade equivalent. Count back from 12: your last
 year of secondary school is grade 12, the year before is grade 11, and so on. For example, Hong Kong Form 1 is grade 7.
