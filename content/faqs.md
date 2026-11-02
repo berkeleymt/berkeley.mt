@@ -181,6 +181,29 @@ or the U.S. to participate. Teams may have up to **6 students**.
 
 </details>
 
+<details id="bmt-grade-equivalents">
+<summary>Am I eligible for BMT if I go to school outside the U.S.?</summary>
+
+Yes! BMT is open to anyone who hasn't finished secondary school (high school)
+yet. U.S. grade 12 is the last year of secondary school, so if you're in your
+last year or below, you're eligible, wherever you go to school.
+
+| School system | Last eligible year |
+| --- | --- |
+| Grades 1 to 12 (U.S., Canada, Australia, India, and many more) | Grade 12 |
+| Most of Latin America | Last year of bachillerato |
+| UK | Year 13 |
+| China, Japan, Korea, Taiwan | 3rd year of senior high school |
+| Hong Kong | Form 6 |
+| Singapore | JC 2 |
+
+To register, enter the U.S. grade equivalent. Count back from 12: your last
+year of secondary school is grade 12, the year before is grade 11, and so on. For example, UK Year 11 is grade 10.
+
+Not sure where you fit? Email us at <team@berkeley.mt>.
+
+</details>
+
 <details>
 <summary>What are the contest rounds?</summary>
 
@@ -236,6 +259,30 @@ as the Focus Tests.
 BmMT is open to any student in **grade 8 or below**, including advanced
 elementary school students. Students do not have to be local to the Bay Area,
 California, or the U.S. to participate. Teams may have up to **5 students**.
+
+</details>
+
+<details id="bmmt-grade-equivalents">
+<summary>Am I eligible for BmMT if I go to school outside the U.S.?</summary>
+
+Yes! BmMT is open to anyone with at least 4 more years of secondary school
+(high school) after this one. That's U.S. grade 8 or below, wherever you go to
+school.
+
+| School system | Last eligible year |
+| --- | --- |
+| Grades 1 to 12 (U.S., Canada, Australia, India, and many more) | Grade 8 |
+| Ecuador | 9th year of EGB |
+| Mexico | 2nd year of secundaria |
+| UK | Year 9 |
+| China, Japan, Korea, Taiwan | 2nd year of junior high school |
+| Hong Kong | Form 2 |
+| Singapore | Secondary 2 |
+
+To register, enter the U.S. grade equivalent. Count back from 12: your last
+year of secondary school is grade 12, the year before is grade 11, and so on. For example, Hong Kong Form 1 is grade 7.
+
+Not sure where you fit? Email us at <team@berkeley.mt>.
 
 </details>
 
