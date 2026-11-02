@@ -10,6 +10,8 @@ date_text = "Saturday, November 14, 2026 at UC Berkeley"
 opens = "2026-09-14T09:00"
 event_day = "2026-11-14"
 event_starts = "08:00"
+# Countdown target shown in the header and status row (Pacific, on event_day).
+kickoff = "07:30"
 event_label = "Tournament Day"
 # Set to the archive page once results are posted, e.g. "/archives/bmt-2026/".
 results = ""

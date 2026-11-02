@@ -29,6 +29,7 @@
     const d = Math.floor(ms / MS_DAY), h = Math.floor(ms % MS_DAY / 36e5), m = Math.floor(ms % 36e5 / 6e4);
     return d >= 2 ? `${d} days, ${h} hr` : d === 1 ? `1 day, ${h} hr` : h ? `${h} hr` : `${m} min`;
   };
+  const kickTxt = ms => { const t = Math.max(0, Math.floor(ms / 1e3)); return [[Math.floor(t / 86400), "day"], [Math.floor(t % 86400 / 3600), "hr"], [String(Math.floor(t % 3600 / 60)).padStart(2, "0"), "min"], [String(t % 60).padStart(2, "0"), "sec"]].map(([n, u]) => `<span class="u"><b>${n}</b><i>${u}</i></span>`).join(""); };
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   const group = list => {
     const out = [];
@@ -57,6 +58,8 @@
     const startAt = pacInstant(ev.event_day, ev.event_starts || "00:00");
     const cur = phases.find(p => now >= (p === first ? opens : pacInstant(p.start)) && now < endOf(p.end));
     const multi = phases.length > 1;
+    const kickAt = ev.kickoff && pacInstant(ev.event_day, ev.kickoff);
+    const kick = kickAt && now < kickAt ? `<span class="kick" data-at="${kickAt.getTime()}">${kickTxt(kickAt - now)}</span>` : "";
     const wl = cur && cur.waitlist_from && now >= pacInstant(cur.waitlist_from);
     const stat = (k, v) => `<div><span class="k">${k}</span><span class="v">${v}</span></div>`;
     const evDays = dayNum(ev.event_day) - slot;
@@ -97,6 +100,7 @@
     const todayDate = longDay(new Date(slot * MS_DAY).toISOString().slice(0, 10));
     const key = `${slot}|${st}|${el.clientWidth}`;
     if (!force && el.dataset.key === key) {
+      el.querySelectorAll(".kick").forEach(k => { k.innerHTML = kickTxt(k.dataset.at - now); });
       const td = el.querySelector(".today");
       if (td) {
         td.dataset.lines = JSON.stringify(todayLines);
@@ -111,8 +115,8 @@
     el.dataset.key = key;
 
     let h = `<div class="w${mode === "page" || mode === "slim" ? " " + mode : ""}">`;
-    if (mode === "slim") h += `<a class="slimhd" href="${esc(el.dataset.href)}"><span><span class="eyebrow"><i class="bi bi-calendar-event"></i>At a Glance</span><span class="w-title">${esc(ev.event_title)}</span></span><i class="bi bi-chevron-right"></i></a>`;
-    else if (mode !== "page") h += `<div class="eyebrow">At a Glance</div><div class="w-title">${esc(ev.event_title)}</div><div class="w-date">${esc(ev.date_text)}</div>`;
+    if (mode === "slim") h += `<a class="slimhd" href="${esc(el.dataset.href)}"><span class="hd"><span class="eyebrow"><i class="bi bi-calendar-event"></i>At a Glance</span><span class="w-title">${esc(ev.event_title)}</span>${kick}<i class="bi bi-chevron-right"></i></span></a>`;
+    else if (mode !== "page") h += `<div class="hd"><div class="eyebrow">At a Glance</div><div class="w-title">${esc(ev.event_title)}</div>${kick}<div class="w-date">${esc(ev.date_text)}</div></div>`;
     const items = (ev.news || []).filter(c => now >= pacInstant(c.show_from) && (!c.hide_after || now < endOf(c.hide_after)))
       .sort((p, q) => q.show_from.localeCompare(p.show_from));
     if (mode !== "slim" && !(emailPreview && mode === "preview"))
@@ -314,7 +318,7 @@
     hideTimer = setTimeout(() => hideTips(false), 300);
   });
   widgets.forEach(w => {
-    if (!(emailPreview && w.el.dataset.mode === "preview")) w.el.dataset.auto = "1";
+    if (!(emailPreview && w.el.dataset.mode === "preview") && w.el.dataset.mode !== "slim") w.el.dataset.auto = "1";
   });
   draw(true);
   // Web fonts can widen an open popup after it was placed; place it again once they load.
@@ -324,4 +328,5 @@
   }));
   window.addEventListener("resize", () => draw(false));
   if (!fixed) setInterval(() => draw(false), 60000);
+  if (!fixed) setInterval(() => document.querySelectorAll(".glance .kick").forEach(k => { k.innerHTML = kickTxt(k.dataset.at - Date.now()); }), 1000);
 })();
