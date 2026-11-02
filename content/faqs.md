@@ -78,8 +78,8 @@ will attend.
 <details>
 <summary>What is the refund or cancellation policy?</summary>
 
-We provide refunds under some circumstances. If you need to cancel a
-registration, please email <team@berkeley.mt>. Since the seats you purchased on
+If you have seats you no longer need, email us at <team@berkeley.mt> and we'll
+be happy to refund them! Since the seats you purchased on
 ContestDojo belong to your organization, you can swap students in and out of
 your teams without contacting us. However, if you have already checked in
 online for an in-person event, you cannot change your team rosters after

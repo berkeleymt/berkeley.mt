@@ -64,7 +64,7 @@
     if (now < opens) { st = stat("Registration", "Opens " + pacTime(opens)); nowTxt = `Opens in ${dur(opens - now)}`; }
     else if (cur) {
       st = (multi ? stat("Now open", esc(cur.short || cur.name)) : stat("Registration", "Open")) +
-        stat("Price", `${esc(cur.price)} per student`) +
+        (cur.waitlist_from && now >= pacInstant(cur.waitlist_from) ? stat("Seats", `<a href="${esc(ev.event_page)}#waitlist">Waitlist only</a>`) : stat("Price", `${esc(cur.price)} per student`)) +
         stat(multi ? `${esc(cur.short || cur.name)} ends` : "Closes", pacTime(new Date(endOf(cur.end) - 60e3)));
       nowTxt = `${dur(endOf(cur.end) - now, 1)} left${multi ? ` in ${cur.short || cur.name}` : ""}`;
     } else if (now < startAt) {

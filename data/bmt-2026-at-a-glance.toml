@@ -38,6 +38,7 @@ short = "Late Reg."
 start = "2026-10-19"
 end = "2026-11-01"
 price = "$25"
+waitlist_from = "2026-11-01"
 
 [[deadlines]]
 on = "2026-10-18"
@@ -53,7 +54,7 @@ label = "Hotel block cutoff"
 
 [[deadlines]]
 on = "2026-11-01"
-label = "Last day to purchase seats for $25 (registration closes)"
+label = "Last day to join the waitlist (registration closes)"
 
 [[deadlines]]
 on = "2026-11-01"
@@ -103,6 +104,13 @@ title = "Late registration is open"
 blurb = "$25 per student. Shirts not guaranteed."
 href = "/events/bmt-2026/#registration-timeline"
 show_from = "2026-10-19"
+hide_after = "2026-10-31"
+
+[[news]]
+title = "BMT 2026 is full"
+blurb = "Join the waitlist on ContestDojo. We'll email you if seats open up!"
+href = "/events/bmt-2026/#waitlist"
+show_from = "2026-11-01"
 hide_after = "2026-11-01"
 
 [[news]]

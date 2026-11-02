@@ -12,6 +12,8 @@
 .glance .st div{display:flex;flex-direction:column;gap:1px}
 .glance .st .k{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
 .glance .st .v{font-size:14px;font-weight:600}
+.glance .st .v a{color:var(--accent-ink)}
+.glance .st .v a:hover{text-decoration:underline}
 .glance .st .reg{background:#14b8a6;color:#fff;font-size:13.5px;padding:6px 14px;box-shadow:0 1px 2px rgba(0,0,0,.15);white-space:nowrap;align-self:center}
 .glance .st .reg:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(0,0,0,.15)}
 .glance .tl{position:relative;margin:0 2px}
