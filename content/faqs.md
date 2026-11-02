@@ -196,7 +196,6 @@ last year or below, you're eligible, wherever you go to school.
 | China, Japan, Korea, Taiwan | 3rd year of senior high school |
 | Hong Kong | Form 6 |
 | Singapore | JC 2 |
-| International Baccalaureate (IB) | Diploma Programme year 2 |
 
 To register, enter the U.S. grade equivalent. Count back from 12: your last
 year of secondary school is grade 12, the year before is grade 11, and so on. For example, UK Year 11 is grade 10.
