@@ -23,9 +23,9 @@ So, we encourage everyone to consider taking public transit or carpooling! Just 
 
 {% button_link(href="https://taketransit.berkeley.mt", external=true, center=true) %} Open in BMT Trip Planner {% end %}
 
-Here's an example of a trip that's already planned, from Mission San Jose High School in Fremont. Tap **See this trip** to look around, or tap **Change** to plan from your own location.
+Here's an example of a trip that's already planned, from Fremont BART. Tap **See this trip** to look around, or tap **Change** to plan from your own location.
 
-{{ planner_embed(path="#trip?f=37.5447,-121.9357&n=Mission%20San%20Jose%20High%20School&m=drive&o=dFRMT&o2=dFRMT&p=FRMT", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from Mission San Jose High School to Dwinelle Hall, driving to Fremont BART") }}
+{{ planner_embed(path="#trip?f=37.5575,-121.9766&n=Fremont%20BART&m=transit&o=wFRMT&o2=wFRMT", poster="/news/take-transit-planner-sample.webp", wide="/news/take-transit-planner-sample-wide.webp", alt="BMT Trip Planner showing a trip from Fremont BART to Dwinelle Hall") }}
 
 ## Ways to get to and from BMT
 
