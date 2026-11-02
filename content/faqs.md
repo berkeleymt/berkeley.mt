@@ -191,11 +191,11 @@ last year or below, you're eligible, wherever you go to school.
 | School system | Last eligible year |
 | --- | --- |
 | Grades 1 to 12 (U.S., Canada, Australia, India, and many more) | Grade 12 |
+| Most of Latin America | Last year of bachillerato |
 | UK | Year 13 |
+| China, Japan, Korea, Taiwan | 3rd year of senior high school |
 | Hong Kong | Form 6 |
 | Singapore | JC 2 |
-| China, Japan, Korea, Taiwan | 3rd year of senior high school |
-| Most of Latin America | Last year of bachillerato |
 | International Baccalaureate (IB) | Diploma Programme year 2 |
 
 Not sure where you fit? Email us at <team@berkeley.mt>.
@@ -270,12 +270,12 @@ school.
 | School system | Last eligible year |
 | --- | --- |
 | Grades 1 to 12 (U.S., Canada, Australia, India, and many more) | Grade 8 |
-| UK | Year 9 |
-| Hong Kong | Form 2 |
-| Singapore | Secondary 2 |
-| China, Japan, Korea, Taiwan | 2nd year of junior high school |
 | Ecuador | 9th year of EGB |
 | Mexico | 2nd year of secundaria |
+| UK | Year 9 |
+| China, Japan, Korea, Taiwan | 2nd year of junior high school |
+| Hong Kong | Form 2 |
+| Singapore | Secondary 2 |
 | International Baccalaureate (IB) | Middle Years Programme year 3 |
 
 Not sure where you fit? Email us at <team@berkeley.mt>.
