@@ -71,7 +71,7 @@ Once your trip is planned, tap **Save** to keep it in Your trips for next time. 
 
 Coming from out of town? BART serves both SFO and Oakland airports, so you can get from your gate to campus without a car.
 
-- **San Francisco (SFO):** Take AirTrain to the SFO BART station, ride the Yellow Line, and change at 19th St. / Oakland to a Richmond-bound Orange Line train to Downtown Berkeley. Gate to Dwinelle takes about 1.5 hours. _On Saturday, Nov 14, there won't be BART trains between Daly City and 24th St. Mission. Ride BART from SFO to Daly City, take the free bus to 24th St. Mission, then get back on BART. Allow up to 30 extra minutes. Flying in Friday? It works as usual._
+- **San Francisco (SFO):** Take AirTrain to the SFO BART station, ride the Yellow Line, and change at 19th St. / Oakland to a Richmond-bound Orange Line train to Downtown Berkeley. Gate to Dwinelle takes about 1.5 hours. _On Saturday, Nov 14, and Sunday, Nov 15, there won't be BART trains between Daly City and 24th St. Mission. Ride BART from SFO to Daly City, take the free bus to 24th St. Mission, then get back on BART. Allow up to 30 extra minutes. Flying in Friday? It works as usual._
 - **Oakland (OAK):** Walk from the terminal to the Oakland International Airport BART station, ride to Coliseum, and change to an Orange Line train toward Richmond. Gate to Dwinelle takes about 1 hour.
 - **San José (SJC):** Take rideshare or the VTA 60 bus to Milpitas BART, then the Orange Line toward Richmond to Downtown Berkeley. Gate to Dwinelle takes about 2 hours.
 
