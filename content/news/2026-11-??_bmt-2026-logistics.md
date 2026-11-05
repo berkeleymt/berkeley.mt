@@ -145,8 +145,7 @@ garages by price, opening time, and walk to Dwinelle, check out the **Carpool** 
 
 Have a backup parking garage planned, as we have had parking garages fill up in previous years.
 
-<!--    add new parking map to assets and add here
-![Annotated Parking Map](/assets/bmmt-2026/parking.svg)-->
+![Annotated Parking Map](/assets/bmt-2026/parking.png)
 
 ## Schedule of Events
 
