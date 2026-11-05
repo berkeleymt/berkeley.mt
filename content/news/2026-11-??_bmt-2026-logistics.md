@@ -150,8 +150,8 @@ Have a backup parking garage planned, as we have had parking garages fill up in 
 
 ## Schedule of Events
 
-<!-- Raw HTML cringe but we gotta do what we gotta do -->
-<!-- Copied from prev year btw -->
+<!-- Raw HTML cringe but we gotta do what we gotta do --> <!-- so valid-->
+<!-- Copied from prev year btw (again) -->
 <div class="overflow-x-scroll">
 <table class="my-0 min-w-[42rem] [&_td]:align-middle">
 <thead>
@@ -163,7 +163,7 @@ Have a backup parking garage planned, as we have had parking garages fill up in 
 </thead>
 <tbody>
 <tr>
-  <td>7:45 AM – 9:00 AM</td>
+  <td>7:30 AM – 8:30 AM</td>
   <td>Check-in <i>(coaches only)</i></td>
   <td>
     After arrival, coaches should proceed to one of the two auditoriums in Dwinelle Hall, depending on whether they have already checked in online or not.
@@ -172,13 +172,13 @@ Have a backup parking garage planned, as we have had parking garages fill up in 
   </td>
 </tr>
 <tr>
-  <td>9:00 AM – 12:00 PM</td>
-  <td>Puzzle and Individual Rounds</td>
+  <td>8:45 AM – 1:25 PM</td>
+  <td>Power (8:45-10:45) and Individual (11:00-1:25) Rounds</td>
   <td>
     Pauley Ballroom and classrooms in Valley Life Sciences Building, Dwinelle Hall, and Wheeler Hall.
     <br>Students will be assigned a room at check-in.
     <br><b>Pre-ordered Lunch Pick-up</b> <i>(11:30 – 12:15, coaches only)</i>
-    <br>&ensp;↳ Inside Kerr Lobby (MLK Jr. Student Union)
+    <br>&ensp;↳ Outside Dwinelle Hall
   </td>
 </tr>
 <tr>
