@@ -5,7 +5,7 @@ title = "BMT 2026 April 14 Tournament Day Logistics"
 announcement = false
 +++
 
-_Shown below is a transcription of an email sent out to all coaches and students registered for BMT 2026._
+_Shown below is adapted from an email sent out to all coaches and students registered for BMT 2026._
 
 ---
 
@@ -84,7 +84,7 @@ For Teams that sign up for TeamLink, **please arrive between 7:30 AM and 8:15 AM
 **Once at Dwinelle 187, our staff will:**
 1. Seat the students into rows.
 2. Group students into larger teams.
-3. Collect Coach Information for each combined team & Make new teams.
+3. Collect Coach Information for each combined team & make new teams.
 4. Produce and give materials, such as sticker sheets, tournament guides, and coach wristbands (see above for details).
 
 Please make sure you bring and know:
@@ -128,7 +128,7 @@ garages by price, opening time, and walk to Dwinelle, check out the **Carpool** 
 [BMT Trip Planner](https://taketransit.berkeley.mt/#car?m=drive&a=465&l=1140&b=10).
 
 - Bancroft Parking Structure (Recommended)
-- Telegraph-Channing Garage
+- Telegraph Channing Garage
 - RSF Garage
 - Ellsworth Structure
 - Underhill Parking
@@ -175,47 +175,46 @@ Have a backup parking garage planned, as we have had parking garages fill up in 
   <td>8:45 AM – 1:25 PM</td>
   <td>Power (8:45-10:45) and Individual (11:00-1:25) Rounds</td>
   <td>
-    Pauley Ballroom and classrooms in Valley Life Sciences Building, Dwinelle Hall, and Wheeler Hall.
+    Alumni House, Pauley Ballroom and classrooms in Dwinelle Hall, Valley Life Sciences Building, and Wheeler Hall.
     <br>Students will be assigned a room at check-in.
-    <br><b>Pre-ordered Lunch Pick-up</b> <i>(11:30 – 12:15, coaches only)</i>
+    <br><b>Pre-ordered Lunch Pick-up</b> <i>(12:45 – 1:30, coaches only)</i>
     <br>&ensp;↳ Outside Dwinelle Hall
   </td>
 </tr>
 <tr>
-  <td>12:00 – 1:15 PM</td>
+  <td>1:30 – 2:30 PM</td>
   <td>
     Lunch
-    <br>T-shirt &amp; Tote Bag Sales, Free Sponsor Merch
-    <br>Disputes (12:00 – 12:30 PM)
+    <br>T-shirt &amp; Merch Sales
+    <br>Disputes (1:30 – 2:00 PM)
   </td>
   <td>
-    <b>T-shirt &amp; Tote Bag Sales, Free Sponsor Merch</b> <i>(while supplies last)</i> — Inside Kerr Lobby (MLK Jr. Student Union)
-    <br><b>Problem Disputes</b> <i>(Puzzle, Individual)</i> — Dwinelle 234
+    <b>Merch Sales</b> <i>(while supplies last)</i> — Outside Dwinelle Hall
+    <br><b>Problem Disputes</b> <i>(Individual)</i> — Dwinelle 234
   </td>
 </tr>
 <tr>
-  <td>1:15 – 3:30 PM</td>
-  <td>Team and Relay Rounds</td>
+  <td>2:30 – 4:35 PM</td>
+  <td>Guts Round</td>
   <td>
-    Pauley Ballroom and classrooms in Valley Life Sciences Building, Dwinelle Hall, and Wheeler Hall.
-    <br>Students will be assigned a room at check-in.
+    Alumni House, Pauley Ballroom, and auditoriums in Dwinelle Hall, Genetics and Plant Biology Building, Hearst Field Annex, and Wheeler Hall.
+    <br>Students will be assigned a room at check-in. 
+    <br>Parents are welcome to the Guts Viewing Room in Stephens Lounge.
   </td>
 </tr>
 <tr>
-  <td>3:30 – 5:00 PM</td>
+  <td>4:40 – 6:00 PM</td>
   <td>
     Activities
-    <br>Tiebreaker
-    <br>Disputes (3:30 – 4:00 PM)
+    <br>Tiebreakers
   </td>
   <td>
     <b>Activities</b> — See activities descriptions below
-    <br><b>Tiebreaker</b> <i>(by invite only*)</i> — Dwinelle 229
-    <br><b>Problem Disputes</b> <i>(Team, Relay)</i> — Dwinelle 234
+    <br><b>Tiebreaker</b> <i>(by invite only*)</i> — Dwinelle 219
   </td>
 </tr>
 <tr>
-  <td>5:00 – 6:00 PM</td>
+  <td>6:00 – 7:00 PM</td>
   <td>Awards Ceremony</td>
   <td>
     The Awards Ceremony will take place simultaneously in multiple auditoriums.
@@ -231,82 +230,86 @@ Have a backup parking garage planned, as we have had parking garages fill up in 
 
 ## Room Assignments
 
-Each team will be assigned a Testing Room and an Awards Room during check-in.
-Room assignments will be provided on the sticker sheet as well as emailed to all
-coaches, along with Team and Student IDs.
+Each team will be assigned a Testing Room for Power and Guts Rounds, and an 
+Awards Room during check-in. Students will also be individually assigned rooms 
+for their Individual Round configuration. Room assignments will be provided on 
+the sticker sheet as well as emailed to all coaches, along with Team and Student IDs.
 
-Students are responsible for finding the rooms that their tests are taking place
-in. A map is attached in the information packet provided at check-in.
+Students are responsible for finding the rooms that their tests are taking place in. A 
+map is attached in the information packet provided at check-in.
 
 ## Lunch
 
-There will be a 1 hour lunch period in the middle of the day for students to
-get food. Pre-purchased lunches will be available for pick up in front of
-Dwinelle Hall. Many other options are available on the southern side of Berkeley
-campus.
+There will be a one hour lunch period in the middle of the day for students to 
+get food. Prepurchased lunches will be available for pick up in front of Dwinelle 
+Hall. Many other options are available on the southern side of Berkeley campus or 
+downtown.
+
 
 ## Activities
 
 ### Student Activities
 
-After the Relay Round, we will be hosting student activities. These are optional
+After the Guts Round, we will be hosting student activities. These are optional
 activities that promote recreational math, and include the following:
 
-#### ⭐ Time Mix-up Puzzle Hunt _by Hudson River Trading and Berkeley Math Tournament [Pauley Ballroom]_
+#### ⭐ HRT Hamster Rescue Team by Hudson River Trading [Pauley Ballroom]
 
-Ready to unleash your puzzle-solving skills? Join our puzzle hunt! You and a team of Time Un-mixers will embark on one of the adventures of all time and earn cool prizes along the way. Will you and your team save the clocks, or will you get stuck spinning your gears? No prior experience with puzzles is expected, just bring an open mind and your problem solving brain!
+Ready to unleash your puzzle-solving skills and embark on a whisker-twitching adventure? Join HRT's Hamster Rescue Team 2 – a puzzle hunt where you and your fellow Hamster Rescuers will work together to save adorable hamsters in need, and earn cool prizes along the way! Can your team puzzle its way to hamster-saving glory, or will you get stuck spinning your (hamster) wheels? Come find out at HRT – your furry friends are counting on you!
 
-#### Float Your Boat: The Archimedes Challenge _by [Berkeley Society of Physics Students](https://sps.studentorg.berkeley.edu/) [Dwinelle 106, 109]_ 
+#### Lasers and the Index of Refaction _by [Berkeley Society of Physics Students](https://sps.studentorg.berkeley.edu/) [Dwinelle 106, 109]_ 
 
-In 250 BC, Archimedes discovered the principle of buoyancy, noticing it in his bathtub and using it to prove the kings’ crowns were made of gold! Can you use it to keep heavy boats afloat? Come experiment with the physics that keeps everything from toy rafts to cargo ships above water.
+In 1666, Isaac Newton passed sunlight through a glass prism and split it into a rainbow, proving that white light is secretly made of every color! Can you bend a laser beam to your will? Come join the Society of Physics Students as we explore refraction and dispersion, then design your own experiments to uncover how light really travels.
   
-#### Origami _by [Cal Origami](https://calorigami.studentorg.berkeley.edu/) [Dwinelle 246, 247]_ 
+#### Origami _by [Cal Origami](https://calorigami.studentorg.berkeley.edu/) [Dwinelle 145]_ 
 
-Do you want to bring home a cute souvenir from BmMT? Come make your own origami dragon! We will be offering multiple paper patterns and instructions, and teaching from the basics of crease patterns. No prior craft experience is needed! 
+Do you want to bring home a cute souvenir from BMT? Come make your own origami dragon! We will be offering multiple paper patterns and instructions, and teaching from the basics of crease patterns. No prior craft experience is needed!
 
-#### ⭐ Mathematician Mash _[Dwinelle 145]_
+#### Integration Bee _[Dwinelle 155]_
 
-Test your math intuition in this fast-paced game inspired by the classic game show Family Feud! Teams will try to guess the most popular answers to math-themed questions. The goal isn’t just to be correct — it’s to think like everyone else and guess the most common answers. Work with your teammates, buzz in quickly, and see if your mathematical instincts can lead your team to the top!
+Compete head to head against the best integrators around! Students will face off in a tournament style bracket, solving difficult integrals involving some clever tricks, to determine who will be the champion of all integrators.
 
-#### Estimathon _[Dwinelle 155]_
+#### Fraudulent Math _[Dwinelle 88]_
 
-Got wit and strategy? Come to our
-  Estimathon®, a contest combining trivia, strategic planning, and sharp
-  mathematical thinking. Teams of up to 3 will race against the clock to
-  tackle a challenging set of 13 Fermi-style problems, testing their ability
-  to think fast and outsmart the competition.
+Attention all students, mathematics is under attack by people who claim that we need “rigor” and “logic” to justify our answers. Join us for an event of Fraudulent Math, where we will compete to see who can come up with the most outlandish, mind bending proofs of false statements and who can create impossible constructions.
 
-#### Plank Countdown _[Dwinelle 182, 187]_
+#### Estimathon _[Wheeler 150]_
+
+Got wit and strategy? Come to our Estimathon®, a contest combining trivia, strategic planning, and sharp mathematical thinking. Teams of up to 3 will race against the clock to tackle a challenging set of 13 Fermi-style problems, testing their ability to think fast and outsmart the competition.
+
+#### Plank Countdown _[Wheeler 202, 204]_
 
 Miss the excitement of the MATHCOUNTS® Countdown Round? Want to show off mental math in a countdown match... while planking? If you'd enjoy that exciting and silly experience, come join us for our Plank Countdown tournament!
   
-#### Games Lounge _[Dwinelle 258]_
+#### Games Lounge _[Alumni House]_
 
 Looking for a place to chill out? Come to the Games Lounge! We’ll have a variety of games (and seats) for students, parents, and coaches to unwind after a day of testing.
 
 ### Parent / Coach Activities
 
-Between 9:00 AM and 3:00 PM, we will have a parent lounge in Dwinelle 155. Additionally, we will have the following activites for parents.
+Between 9:00 AM and 1:00 PM, we will have a parent lounge in Dwinelle 145. Additionally, we will have the following activities for parents.
 
-#### ⭐ A Closer Look at Problem Solving in Math Contests - Isaac Li (9AM – 11AM) _[Dwinelle 155]_
+#### ⭐ AI in Math: A new beginning or will we crash and burn?
+ - Professor Kenneth Ribet (9:30 AM – 11 AM) _[Dwinelle 155]_
 
-What makes a math contest problem good? And how can math contests offer students a gateway to deep and compelling mathematical investigations? In this talk, curriculum developer Isaac Li will draw on his experiences as a mathlete and contest writer to explore how contests, at their best, can encourage students to persist through difficulty, approach problems more strategically, and develop agency over their own learning.
+Professor Ken Ribet will describe his history as a math contestant and a Berkeley professor.  He will introduce a concrete math problem that was solved recently by OpenAI while narrating some of the recent history of mathematical discoveries made with the aid of artificial intelligence.  If time permits, he will attempt to respond to the question posed as the title of his talk.
 
-Isaac Li is a math curriculum developer at Art of Problem Solving. He has served as a test organizer for the Berkeley Math Tournament and contributed problems to the USA Mathematical Talent Search (USAMTS), among other competitions.
+#### Campus Tour (11 AM) _[Dwinelle 145]_
 
-#### Po-Shen Loh's Advice Table (11AM)
+Join us on a tour of the beautiful UC Berkeley campus! Announcements and sign-ups will be in the parent lounge, after Professor Ribet's talk.
 
-Following the Parent Talk by Isaac Li, there will be an opportunity to chat with Po-Shen Loh, a math professor at Carnegie Mellon University who has served a decade-long term as the national coach of the USA International Mathematical Olympiad team (2013–2023) alongside several other accolades and accomplishments. 
+#### Guts Viewing _[Stephens Lounge]_
 
-#### Campus Tour (11 AM) _[Dwinelle 155]_
+After lunch, come to Stephens Lounge and watch our exciting Guts Round progress!
 
-Join us on a tour of the beautiful UC Berkeley campus! Announcements and sign-ups will be in the parent lounge, after Isaac Li's talk.
 
 ## Awards Ceremony
 
 The Awards Ceremony will take place simultaneously in multiple auditoriums. Organizations will be assigned a room at check-in. Teams attending
 Awards Ceremony **must attend in the auditorium they are assigned**, or else
-they may not receive their award on time. You can find your assigned auditorium both on [ContestDojo](https://contestdojo.com) and at the Information Desk. 
+they may not receive their award on time. 
+
+<!--You can find your assigned auditorium both on [ContestDojo](https://contestdojo.com) and at the Information Desk. -->
 
 ## Disqualification Information
 
@@ -329,7 +332,7 @@ Our team is hard at work finalizing the remaining details of the event. If you
 have any other questions or concerns before the tournament, you can reach us at
 <team@berkeley.mt>.
 
-We couldn't be more excited to see you at BmMT this year. We hope you are too!
+We couldn't be more excited to see you at BMT this year. We hope you are too!
 
 ~ BMT Coordinators
 
