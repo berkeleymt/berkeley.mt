@@ -1,17 +1,17 @@
 +++
-title = "BmMT 2026 April 12 Tournament Day Logistics"
+title = "BMT 2026 April 14 Tournament Day Logistics"
 
 [extra]
 announcement = false
 +++
 
-_Shown below is a transcription of an email sent out to all coaches and students registered for BmMT 2026._
+_Shown below is a transcription of an email sent out to all coaches and students registered for BMT 2026._
 
 ---
 
 To all coaches and students,
 
-BmMT is rapidly approaching! Please read this email **in its entirety** as it
+BMT is rapidly approaching! Please read this email **in its entirety** as it
 contains the tournament day logistics. 
 
 <!--Also attached is the Tournament Guide,
@@ -20,25 +20,25 @@ Coaches will receive physical copies of the Tournament Guide at check-in. -->
 
 <!-- more -->
 
-{% button_link(href="/events/bmmt-2026") %} Event Details {% end %} {% button_link(href="/assets/bmmt-2026/tournament-guide.pdf") %} Tournament Guide PDF {% end %}
+<!--{% button_link(href="/events/bmmt-2026") %} Event Details {% end %} {% button_link(href="/assets/bmmt-2026/tournament-guide.pdf") %} Tournament Guide PDF {% end %}-->
 
 ## Important Information
 
-During BmMT, we will be posting updates to the website (<https://berkeley.mt>),
+During BMT, we will be posting updates to the website (<https://berkeley.mt>),
 including Tiebreaker qualifiers. Please be on the lookout for any announcements.
 For any day-of directions, questions or concerns ask a BMT staff member or
-volunteer wearing a dark green shirt.
+volunteer wearing a dark pink shirt.
 
-An annotated campus map is provided under the ["Travel and Transportation"](#travel-and-transportation) section.
+<!--An annotated campus map is provided under the ["Travel and Transportation"](#travel-and-transportation) section.-->
 
 ### Information Desk
 
-For students who get lost, are arriving late, or have additional questions, there will be an information desk inside Dwinelle Hall starting at 8 AM. You can find the location of the information desk on the third page of our [Tournament Guide](/assets/bmmt-2026/tournament-guide.pdf).
+For students who get lost, are arriving late, or have additional questions, there will be an information desk in Dwinelle Hall starting at 8 AM. You can find the location of the information desk on the third page of our [Tournament Guide](/assets/bmmt-2026/tournament-guide.pdf).
 
 ## Arrival and Check-in
 
-{% alert(title="Online check-in available", status="info") %}
-Starting April 5, coaches can optionally begin the check-in process online on
+<!--{% alert(title="Online check-in available", status="info") %}-->
+Starting November 7, coaches can optionally begin the check-in process online on
 [ContestDojo](https://contestdojo.com) to save time on tournament day. We
 recommend all organizations that are ready to check in to do so online before
 Saturday.
@@ -46,7 +46,7 @@ Saturday.
 If you check in online, you must still show up in the morning to pick up materials.
 {% end %}
 
-Check-in / materials pick-up will happen in Dwinelle Hall at **7:45 AM**:
+Check-in / materials pick-up will happen in Dwinelle Hall at **7:30 AM**:
 
 - **Dwinelle 145** — Coaches who haven't checked in online should go here.
 - **Dwinelle 155** — Coaches who have checked in online should go here for materials pick-up.
@@ -61,14 +61,46 @@ At check-in, coaches will receive:
 - An information packet about the tournament, containing a schedule, maps, and
   other relevant information.
 
-- A voucher for pre-ordered lunches, which can be redeemed in front of Dwinelle Hall during the lunch
-  break.
+- A voucher for pre-ordered t-shirts. This voucher can be redeemed at a table near the check-in area.
 
-- T-shirts if pre-ordered
+- A voucher for pre-ordered lunches, which can be redeemed during the lunch break in front of Dwinelle Hall.
 
-**Check-in closes promptly at 9:00 AM**, so please be on time. If you arrive
-after this time, your team will be late to the Puzzle Round, which puts them at
-a great disadvantage.
+
+**Check-in closes promptly at 8:30 AM**, with a late check-in from 8:30 to 8:45, so please be on 
+time. If you arrive after this time, your team will be late to the Power Round, which puts them at 
+a great disadvantage. If teams are checking in after the late check-in window, please go to the 
+information desk.
+
+### TeamLink
+
+***This section is applicable for Teams that signed up for TeamLink. You can still sign up for Team Link up until your team checks in or Wed 11/11, whichever comes first. To sign up for Team Link, [read the instructions here](https://berkeley.mt/news/bmt-2026-team-link/).***
+
+<br>
+For Teams that sign up for TeamLink, **please arrive between 7:30 AM and 8:15 AM in <ins>Dwinelle 187</ins>**. You can use the north door to enter the building. 
+
+*We do not discourage teams from checking in online, but we will complete the TeamLink teams check-in process again in Dwinelle 187.*
+
+<br>
+**Once at Dwinelle 187, our staff will:**
+1. Seat the students into rows.
+2. Group students into larger teams.
+3. Collect Coach Information for each combined team & Make new teams.
+4. Produce and give materials, such as sticker sheets, tournament guides, and coach wristbands (see above for details).
+
+Please make sure you bring and know:
+- All the students in your team.
+- Your organization and team names.
+
+
+## Prepare for BMT
+
+### Selecting Tests and Setting Teams
+
+To ensure that your students are all set for Tournament Day, please make sure that you complete the following before Check-in:
+- Students are assigned to a team within the organization.
+- Students should choose and update their Individual Round Test Preferences.
+- For each team: select the Team Link option if you want to be in a Team Link.
+
 
 ### What to pack
 
@@ -80,28 +112,41 @@ We suggest students bring the following items to BmMT:
 - A water bottle to stay hydrated throughout the day
 - Comfortable walking shoes (you'll be moving between buildings)
 - Layers of clothing (temperatures can vary)
+- An umbrella (in case of rain)
 
 Scratch paper will be provided for all participants, so please do not bring your
 own.
 
 ### Travel and Transportation
 
-Parking can be found near campus at many
-locations. We recommend the following options, which are also highlighted on the
-map attached below:
+The Downtown Berkeley BART station is only a short walk away from campus. If you 
+are taking public transit to BMT, you can use the [BMT Trip Planner](https://taketransit.berkeley.mt/#car?m=drive&a=465&l=1140&b=10) 
+to compare fare and see walking directions to Dwinelle Hall. 
 
+If you are driving, parking can be found near campus at many locations. To compare 
+garages by price, opening time, and walk to Dwinelle, check out the **Carpool** tab in the 
+[BMT Trip Planner](https://taketransit.berkeley.mt/#car?m=drive&a=465&l=1140&b=10).
+
+- Bancroft Parking Structure (Recommended)
 - Telegraph-Channing Garage
 - RSF Garage
+- Ellsworth Structure
 - Underhill Parking
-- Stadium Parking Garage
-- Allston Way Garage
-- Center Street Garage
 - Lower Hearst Structure
+- Upper Hearst Structure
+- Ridge Lot
+- Bowles Lot
 - UNEX Lot
+- Stadium Parking Garage
+- Center Street Garage
+- Oxford Garage
+- Kittredge Street Garage
+
 
 Have a backup parking garage planned, as we have had parking garages fill up in previous years.
 
-![Annotated Parking Map](/assets/bmmt-2026/parking.svg)
+<!--    add new parking map to assets and add here
+![Annotated Parking Map](/assets/bmmt-2026/parking.svg)-->
 
 ## Schedule of Events
 
