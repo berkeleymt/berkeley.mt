@@ -67,6 +67,11 @@ on = "2026-11-01"
 label = "Team Link sign-up closes"
 
 [[deadlines]]
+on = "2026-11-07"
+label = "Online check-in opens"
+time = ""
+
+[[deadlines]]
 on = "2026-11-14"
 label = "Tournament Day"
 
