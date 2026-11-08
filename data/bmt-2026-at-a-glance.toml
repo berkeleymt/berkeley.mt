@@ -63,13 +63,13 @@ on = "2026-11-01"
 label = "Lunch pre-order closes"
 
 [[deadlines]]
-on = "2026-11-01"
-label = "Team Link sign-up closes"
-
-[[deadlines]]
 on = "2026-11-07"
 label = "Online check-in opens"
 time = ""
+
+[[deadlines]]
+on = "2026-11-11"
+label = "Team Link sign-up closes (or when your org completes online check-in)"
 
 [[deadlines]]
 on = "2026-11-14"
