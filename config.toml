@@ -31,8 +31,8 @@ status = "info"
 title = "BMT 2026 checklist"
 timestamp = "November 7, 2026"
 body = """
-Please make sure that all participating students are assigned to a team, selected 
+Please make sure that all participating students are assigned to a team, have selected 
 their Individual Round Tests (General or a Focus pair), and have their liability 
 waivers signed before the tournament. 
-See [registration checklist](/news/2026-11-07_bmt-2026-logistics.md/#prepare-for-bmt).
+See [registration checklist](/news/bmt-2026-logistics/#required-before-check-in-teams-tests-waivers).
 """
