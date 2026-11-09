@@ -77,6 +77,22 @@ label = "Tournament Day"
 
 # News rows show from `show_from` until the end of `hide_after` (optional). Set `show_until = false` to hide the "Until" date on a row.
 [[news]]
+title = "Tournament Day Logistics"
+blurb = "Check-in, Team Link, what to pack, parking, the schedule, rooms, lunch and awards."
+href = "/news/bmt-2026-logistics/"
+show_from = "2026-11-09"
+hide_after = "2026-11-14"
+show_until = false
+
+[[news]]
+title = "Tournament Guide"
+blurb = "The schedule of events and activities (PDF)."
+href = "/assets/bmt-2026/tournament-guide.pdf"
+show_from = "2026-11-09"
+hide_after = "2026-11-14"
+show_until = false
+
+[[news]]
 title = "A Guide to Team-based Rounds"
 blurb = "Tips about team-based rounds like the Power and Guts Rounds."
 href = "/blog/team-based-rounds-guide/"
