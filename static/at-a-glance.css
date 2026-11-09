@@ -34,6 +34,7 @@
 .glance .lab.muted{color:var(--muted);font-style:italic}
 .glance .bar{position:relative;height:6px;background:#dbeafe;margin-top:8px}
 .glance .fill{position:absolute;top:0;bottom:0;left:0;background:var(--accent)}
+.glance .fill.done{background:linear-gradient(to right,var(--accent),#1e3a8a)}
 .glance .ticks{position:relative;height:8px}
 .glance .dia{position:absolute;top:-7px;width:9px;height:9px;padding:0;margin:0;appearance:none;background:#fff;border:2px solid var(--ink);border-radius:0;transform:translateX(-50%) rotate(45deg);z-index:5;cursor:pointer}
 .glance .dia:before{content:"";position:absolute;inset:-8px}

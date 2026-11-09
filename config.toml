@@ -25,22 +25,14 @@ site_url = "https://berkeley.mt"
 # `timestamp` is free text shown in the top right; include the timezone.
 # Optional [extra.advisory.after] (same fields plus `from`, an ISO timestamp with
 # offset) replaces the banner in the browser once `from` has passed.
+
 [extra.advisory]
 status = "info"
-title = "BMT 2026 waitlist"
-timestamp = "November 1, 2026"
+title = "BMT 2026 checklist"
+timestamp = "November 7, 2026"
 body = """
-BMT 2026 registration is at capacity! You can still join the waitlist on ContestDojo until
-**11:59 PM PT on Sunday, November 1**. Please [see here](/events/bmt-2026/#waitlist) for details.
-"""
-
-[extra.advisory.after]
-from = "2026-11-02T00:00:00-08:00"
-status = "info"
-title = "BMT 2026 waitlist"
-timestamp = "November 2, 2026"
-body = """
-BMT 2026 registration is closed! If you're on the waitlist, we'll email you if seats open up.
-You can still move students around and change test selections on ContestDojo until check-in.
-Please [see here](/events/bmt-2026/#waitlist) for details.
+Please make sure that all participating students are assigned to a team, have selected 
+their Individual Round Tests (General or a Focus pair), and have their 
+waivers signed before the tournament. 
+See [registration checklist](/news/bmt-2026-logistics/#required-before-check-in-teams-tests-waivers).
 """

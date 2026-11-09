@@ -148,7 +148,11 @@
       labs.push([(l + r) / 2 - .001, `<span class="lab blk${on ? " cur" : over({ on: k.end }) ? " past" : ""}" style="left:${(l + r) / 2}%">${esc(k.name)}</span>`]);
     });
     h += labs.sort((p, q) => p[0] - q[0]).map(p => p[1]).join("") + `</div><div class="bar">`;
-    if (slot > a) h += `<div class="fill" style="width:${slot >= b ? 100 : evDays === 0 ? tl : x(slot + .5)}%"></div>`;
+    if (slot > a) {
+      const fw = slot >= b ? 100 : evDays === 0 ? tl : x(slot + .5);
+      h += `<div class="fill" style="width:${fw}%"></div>`;
+      if (regDone && fw > lastEnd) h += `<div class="fill done" style="left:${lastEnd}%;width:${fw - lastEnd}%"></div>`;
+    }
     h += `</div><div class="ticks">`;
     group(deadlines).forEach(g =>
       h += `<button type="button" class="dia${g.on === ev.event_day ? " ev" : ""}${now >= endOf(g.on) ? " past" : ""}" style="left:${g.on === ev.event_day ? tl : x(dayNum(g.on) + (deadlines.some(k => k.on === g.on && k.time !== "") ? 1 : .5))}%" aria-label="${esc(longDay(g.on) + ": " + g.items.join(", "))}" data-day="${esc(longDay(g.on))}" data-items="${esc(JSON.stringify(g.items))}"></button>`);
