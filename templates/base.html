@@ -144,7 +144,9 @@
     <hr>
 
     {% if config.extra.advisory %}
+    <div data-nosnippet>
     {{ macros::advisory(advisory=config.extra.advisory) }}
+    </div>
     {% endif %}
 
     <div id="content-wrapper" class="flex-1 flex flex-col gap-8 relative">

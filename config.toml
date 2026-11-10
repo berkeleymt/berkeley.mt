@@ -2,7 +2,7 @@
 base_url = "/"
 
 title = "Berkeley Math Tournament"
-description = "The Berkeley Math Tournament (BMT) is the largest in-person math tournament in the world, run by UC Berkeley students for middle and high school students."
+description = "The Berkeley Math Tournament (BMT) is the largest in-person math tournament in the world, with over 2,100 students on one campus at UC Berkeley. Run by UC Berkeley students for middle and high school students."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false

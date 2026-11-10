@@ -25,9 +25,9 @@ writers.
 <details>
 <summary>How big is BMT?</summary>
 
-BMT is the largest in-person math tournament in the world. Nearly 1,400 students
-competed on the UC Berkeley campus at BMT 2025, and over 4,000 students from
-around the world take part in our tournaments each year.
+BMT is the largest in-person math tournament in the world, with over 2,100
+students on one campus at BMT 2026 at UC Berkeley. About 4,000 students a year
+from around the world take part across BMT, BmMT and BMT Online.
 
 </details>
 
