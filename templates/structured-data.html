@@ -63,7 +63,7 @@
   "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
   "location": {
     "@type": "VirtualLocation",
-    "url": {{ event_url | json_encode | safe }}
+    "url": {{ event.join_url | default(value=event_url) | json_encode | safe }}
   },
   {%- else %}
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",

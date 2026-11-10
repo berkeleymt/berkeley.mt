@@ -7,6 +7,7 @@ description = "BMT 2026 Online is the synchronous online version of the Berkeley
 [extra.event]
 start = "2026-12-05"
 online = true
+join_url = "https://contestdojo.com/"
 +++
 
 The online, synchronous version of our flagship high school tournament! For
