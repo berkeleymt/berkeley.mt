@@ -166,7 +166,7 @@ hardest, and so on.
 ### Additional Tiebreaker Procedure
 
 If a tie remains on the Individual Round after the preceding automatic
-tiebreaking procedure -- i.e., if two students correctly answered precisely the
+tiebreaking procedure --- i.e., if two students correctly answered precisely the
 same set of problems, then those students will participate in an additional
 Tiebreaker Round. Ties that remain on the Power Round or Guts Round will not be
 tiebroken.
