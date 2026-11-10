@@ -61,6 +61,10 @@ columns = [ [
 ] ]
 +++
 
+The Berkeley Math Tournament (BMT) is the largest in-person math tournament in
+the world. Nearly 1,400 students competed on the UC Berkeley campus at BMT 2025,
+and over 4,000 students take part in our tournaments each year.
+
 The Berkeley Math Tournament Group hosts and organizes mathematical contests for
 middle and high school students. We strive to encourage mathematical exploration
 and understanding by introducing concepts not covered in the typical pre-college

@@ -22,7 +22,14 @@
   | default(value=page.title
   | default(value="Berkeley Math Tournament")) %}
 
-  <title>{{ title }}</title>
+  {% set html_title = section.extra.html_title
+  | default(value=page.extra.html_title
+  | default(value="")) %}
+  {% if not html_title %}
+  {% if title == config.title %}{% set html_title = title %}{% else %}{% set html_title = title ~ " | " ~ config.title %}{% endif %}
+  {% endif %}
+
+  <title>{{ html_title }}</title>
   <meta property="og:title" content="{{ title }}" />
 
   {% set description = section.description
@@ -39,7 +46,7 @@
   <meta property="og:description" content="{{ description }}" />
   {% endif %}
 
-  {% set preview_image = page.extra.preview_image | default(value=page.extra.cover_image | default(value="")) %}
+  {% set preview_image = page.extra.preview_image | default(value=page.extra.cover_image | default(value=config.extra.default_preview_image | default(value=""))) %}
   {% if preview_image %}
   {% set image = get_url(path=preview_image) %}
   {% if image is starting_with("/") %}{% set image = config.extra.site_url ~ image %}{% endif %}
@@ -80,6 +87,8 @@
     }
   </script>
 
+  {% include "structured-data.html" %}
+
   {% block extra_head %}{% endblock %}
 </head>
 
@@ -112,7 +121,11 @@
 
     <header class="flex flex-col gap-4 text-center">
       <a class="mx-auto" href="/"><img src="/assets/logo.svg" alt="BMT Logo" width="80"></a>
+      {% if current_path | default(value="") == "/" %}
+      <h1 class="text-2xl font-bold">Berkeley Math Tournament</h1>
+      {% else %}
       <p class="text-2xl font-bold">Berkeley Math Tournament</p>
+      {% endif %}
 
       <nav class="hidden md:flex md:flex-row md:mx-auto gap-4 items-stretch">
         {{ macros::nav_link(path="@/_index.md", label="Home") }}

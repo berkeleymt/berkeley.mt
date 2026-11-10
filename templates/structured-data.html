@@ -1,0 +1,90 @@
+{#- schema.org JSON-LD for search engines and AI answer engines. -#}
+{%- set org_id = config.extra.site_url ~ "/#organization" -%}
+{%- if current_path | default(value="") == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["EducationalOrganization", "Organization"],
+      "@id": {{ org_id | json_encode | safe }},
+      "name": {{ config.title | json_encode | safe }},
+      "alternateName": ["BMT", "BmMT", "Berkeley mini Math Tournament"],
+      "url": {{ config.extra.site_url ~ "/" | json_encode | safe }},
+      "logo": {{ config.extra.site_url ~ "/android-chrome-512x512.png" | json_encode | safe }},
+      "image": {{ config.extra.site_url ~ config.extra.default_preview_image | json_encode | safe }},
+      "description": {{ config.description | json_encode | safe }},
+      "slogan": "The largest in-person math tournament in the world",
+      "email": "team@berkeley.mt",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Berkeley",
+        "addressRegion": "CA",
+        "postalCode": "94720",
+        "addressCountry": "US"
+      },
+      "knowsAbout": ["Math competitions", "Competition mathematics", "Math tournaments", "Mathematics education"],
+      "sameAs": [
+        "https://www.instagram.com/berkeley_mt/",
+        "https://www.tiktok.com/@berkeley_mt"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ config.extra.site_url ~ "/#website" | json_encode | safe }},
+      "name": {{ config.title | json_encode | safe }},
+      "alternateName": "BMT",
+      "url": {{ config.extra.site_url ~ "/" | json_encode | safe }},
+      "publisher": { "@id": {{ org_id | json_encode | safe }} }
+    }
+  ]
+}
+</script>
+{%- elif page and page.extra.event %}
+{%- set event = page.extra.event -%}
+{%- set event_url = page.permalink -%}
+{%- if event_url is starting_with("/") %}{% set event_url = config.extra.site_url ~ event_url %}{% endif -%}
+{%- set event_image = page.extra.preview_image | default(value=config.extra.default_preview_image) -%}
+{%- if event_image is starting_with("/") %}{% set event_image = config.extra.site_url ~ event_image %}{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": {{ page.title | json_encode | safe }},
+  "description": {{ page.description | default(value=config.description) | json_encode | safe }},
+  "url": {{ event_url | json_encode | safe }},
+  "image": [{{ event_image | json_encode | safe }}],
+  "startDate": {{ event.start | json_encode | safe }},
+  {%- if event.end %}
+  "endDate": {{ event.end | json_encode | safe }},
+  {%- endif %}
+  "eventStatus": "https://schema.org/EventScheduled",
+  {%- if event.online %}
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "location": {
+    "@type": "VirtualLocation",
+    "url": {{ event_url | json_encode | safe }}
+  },
+  {%- else %}
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": {{ event.location | default(value="University of California, Berkeley") | json_encode | safe }},
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berkeley",
+      "addressRegion": "CA",
+      "postalCode": "94720",
+      "addressCountry": "US"
+    }
+  },
+  {%- endif %}
+  "organizer": {
+    "@type": "Organization",
+    "@id": {{ org_id | json_encode | safe }},
+    "name": {{ config.title | json_encode | safe }},
+    "url": {{ config.extra.site_url ~ "/" | json_encode | safe }}
+  }
+}
+</script>
+{%- endif %}

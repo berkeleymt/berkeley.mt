@@ -1,0 +1,27 @@
+# Berkeley Math Tournament (BMT)
+
+> The Berkeley Math Tournament (BMT) is the largest in-person math tournament in the world. It is run by UC Berkeley students for middle and high school students, with original, hand-crafted problems. Nearly 1,400 students competed on the UC Berkeley campus at BMT 2025, and over 4,000 students from around the world take part in BMT tournaments each year.
+
+Key facts:
+
+- BMT is the largest in-person math tournament in the world.
+- Organizer: the Berkeley Math Tournament, a student group at the University of California, Berkeley (Berkeley, CA, USA). Contact: team@berkeley.mt.
+- Tournaments each year: BMT (in person at UC Berkeley, every fall, for high school and advanced middle school students), BMT Online (winter), and BmMT, the Berkeley mini Math Tournament (spring, for middle school students), plus an online BmMT.
+- BMT rounds: the Power Round (a proof-based team round), the Individual Round (a General test or a pair of Focus tests in Algebra, Calculus, Discrete, and Geometry), and the Guts Round (a fast-paced, live-scored team round).
+- Teams have up to 6 students. Students in grade 12 or below may compete, and there is no lower age limit. Students do not need to be from the Bay Area or California.
+- Registration is through ContestDojo (https://contestdojo.com/).
+
+## Main pages
+
+- [Home](https://berkeley.mt/): overview, upcoming events, and sponsors
+- [About](https://berkeley.mt/about/): who we are and our team
+- [FAQ](https://berkeley.mt/faqs/): registration, fees, rounds, scoring, and awards
+- [BMT 2026](https://berkeley.mt/events/bmt-2026/): Saturday, November 14, 2026 at UC Berkeley
+- [BMT 2026 Online](https://berkeley.mt/events/bmt-2026-online/): Saturday, December 5, 2026, online
+- [News](https://berkeley.mt/news/): announcements and tournament logistics
+
+## Resources
+
+- [Archives](https://berkeley.mt/archives/): past BMT and BmMT tests and solutions since 2012
+- [Resources](https://berkeley.mt/resources/): practice material and guides
+- [Blog](https://berkeley.mt/blog/): advice on preparing for math competitions

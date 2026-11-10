@@ -8,6 +8,29 @@ find what you're looking for, feel free to email us at <team@berkeley.mt>.
 
 <!-- more -->
 
+### About BMT
+
+<details>
+<summary>What is the Berkeley Math Tournament?</summary>
+
+The Berkeley Math Tournament (BMT) is a math competition for middle and high
+school students, run by UC Berkeley students. We host three tournaments each
+year: BMT, our flagship in-person tournament at UC Berkeley in the fall; BMT
+Online in the winter; and BmMT (Berkeley mini Math Tournament), our middle
+school tournament, in the spring. Every test is written by our own problem
+writers.
+
+</details>
+
+<details>
+<summary>How big is BMT?</summary>
+
+BMT is the largest in-person math tournament in the world. Nearly 1,400 students
+competed on the UC Berkeley campus at BMT 2025, and over 4,000 students from
+around the world take part in our tournaments each year.
+
+</details>
+
 ### Registration & fees
 
 <details>
