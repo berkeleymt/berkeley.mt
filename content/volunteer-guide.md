@@ -173,6 +173,7 @@ For Proctors
 <li>Rowdy or disruptive behavior across teams or that disrupts entire room from testing
 <ul><li>Includes: students that are talking to each other loudly/disturbing others around them while not aiming to</li></ul>
 </li>
+<li>Excessive profanity or vulgarity</li>
 <li>Eating paper or throwing paper</li>
 <li>Entering other teams' space (e.g., crawling on the floor)</li>
 </ul>
