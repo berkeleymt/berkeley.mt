@@ -1,6 +1,9 @@
 # The URL the site will be built for
 base_url = "/"
 
+title = "Berkeley Math Tournament"
+description = "The Berkeley Math Tournament (BMT) is the largest in-person math tournament in the world, with over 2,100 students on one campus at UC Berkeley. Run by UC Berkeley students for middle and high school students."
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
@@ -18,6 +21,8 @@ highlight_code = false
 [extra]
 # Absolute origin for link-preview URLs (og:image, og:url)
 site_url = "https://berkeley.mt"
+# Link-preview image for pages without their own preview_image or cover_image
+default_preview_image = "/assets/banner.jpg"
 # Put all your custom variables here
 
 # Site-wide advisory banner, shown on every page. Comment out or delete the

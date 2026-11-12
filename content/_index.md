@@ -1,6 +1,9 @@
 +++
 title = "Berkeley Math Tournament"
-description = "A UC Berkeley student-led organization that aims to spread mathematics and the spirit of mathematical competition throughout the Bay Area by presenting students with interesting, original, hand-crafted problems."
+description = "The Berkeley Math Tournament (BMT) is the largest in-person math tournament in the world, with over 2,100 students on one campus at UC Berkeley. Over 7,000 students a year compete in BMT and BmMT, at UC Berkeley, online and in China."
+
+[extra]
+html_title = "Berkeley Math Tournament (BMT): The Largest In-Person Math Tournament in the World"
 
 [[extra.sponsor_tiers]]
 title = "Platinum Sponsors"
