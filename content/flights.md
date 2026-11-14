@@ -1,12 +1,14 @@
 +++
 title = "Flying In to BMT 2026? Flight Delay Update"
 date = 2026-11-13
-description = "High winds at SFO have caused an FAA ground stop and long flight delays. We expect BMT 2026 to start on time tomorrow. If your flight won't get you here in time, email us and we'll switch you to BMT 2026 Online and refund the difference."
+description = "Today's nationwide FAA ground stop has been lifted, but a lot of flights are still delayed or cancelled. We expect BMT 2026 to start on time tomorrow. If your flight won't get you here in time, email us and we'll switch you to BMT 2026 Online and refund the difference."
 +++
 
-If you're flying in for BMT tomorrow, high winds at SFO have caused an FAA ground
-stop and long delays, and some flights into the Bay Area are being cancelled.
-We're so sorry for the inconvenience!
+If you're flying in for BMT tomorrow, today's nationwide FAA ground stop may
+have delayed or cancelled your flight. The FAA stopped all flights this
+afternoon after a communications outage at air traffic control centers. It's
+been lifted now, but cancellations are expected to carry into the weekend, and
+SFO also has long wind delays tonight. We're so sorry for the inconvenience!
 
 **We expect BMT 2026 to start on time tomorrow, Saturday, November 14.**
 Check-in still opens at **7:30 AM** in Dwinelle Hall, and the schedule in the
