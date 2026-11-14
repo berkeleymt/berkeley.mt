@@ -31,6 +31,9 @@ organization, team name(s), and which students won't make it. We can:
 - Save seats for them at **BMT 2027** and/or **BmMT 2027**.
 - Work with you on any registration changes and fees.
 
+We will process these changes from **November 15 to 18**, after the tournament,
+when our team has more time to give each request proper attention.
+
 On tournament day:
 
 - For day-of updates, please use [Live](https://live.berkeley.mt/?lp). Add it to
