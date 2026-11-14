@@ -29,11 +29,11 @@ site_url = "https://berkeley.mt"
 
 [extra.advisory]
 status = "error"
-title = "BMT 2026 flight delays"
+title = "BMT 2026 ground stop update"
 timestamp = "November 13, 2026"
 body = """
-BMT 2026 is starting on schedule tomorrow! If today's ground stop means you can't
-make it, email us at <team@berkeley.mt> and we'll switch your registration to
-BMT 2026 Online on December 5 and refund the difference. We're so sorry for the
-inconvenience! See [what you can do](/news/bmt-2026-flight-delays/).
+We're aware of today's ground stop, and we anticipate BMT 2026 starting on time
+tomorrow! If you can't make it, email us at <team@berkeley.mt> and we'll switch
+your registration to BMT 2026 Online on December 5 and refund the difference.
+We're so sorry for the inconvenience! See [your options](/news/bmt-2026-flight-delays/).
 """
