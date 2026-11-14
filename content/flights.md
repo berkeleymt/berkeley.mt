@@ -31,6 +31,9 @@ organization, team name(s), and which students won't make it. We can:
 - Save seats for them at **BMT 2027** and/or **BmMT 2027**.
 - Work with you on any registration changes and fees.
 
+Our team is busy running BMT 2026, so if you choose any of these, we will
+confirm your changes between **November 15 and 18**.
+
 On tournament day:
 
 - For day-of updates, please use [Live](https://live.berkeley.mt/?lp). Add it to
