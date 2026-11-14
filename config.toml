@@ -21,20 +21,13 @@ site_url = "https://berkeley.mt"
 # Put all your custom variables here
 
 # Site-wide advisory banner, shown on every page. Comment out or delete the
-# whole [extra.advisory] table to remove the banner.
-# `status` is one of "info", "warning", or "error"; `body` is markdown.
-# `timestamp` is free text shown in the top right; include the timezone.
-# Optional [extra.advisory.after] (same fields plus `from`, an ISO timestamp with
-# offset) replaces the banner in the browser once `from` has passed.
-
-[extra.advisory]
+# whole [extra.advisory]
 status = "error"
-title = "Flying in to BMT 2026?"
+title = "Travel Alert: FAA Nationwide Ground Stop"
 timestamp = "November 13, 2026"
 body = """
-Today's nationwide FAA ground stop has been lifted, but a lot of flights are still
-delayed or cancelled. We expect BMT 2026 to start on time tomorrow! If your flight won't get you here in time,
-email us at <team@berkeley.mt> and we'll switch your registration to BMT 2026
-Online on December 5 and refund the difference. We're so sorry for the
-inconvenience! See [your options](/flights/).
+We are aware of the FAA nationwide ground stop that affected flights into SFO on
+November 13. Our event start time will not change. If affected, we are happy to
+change your registration to BMT 2026 Online on December 5.
+[Read more](/flights/).
 """
