@@ -1,6 +1,8 @@
-<div {% if class %}class="{{class}}"{% endif %}>
+<div class="{% if class %}{{class}}{% else %}aspect-video w-full not-prose{% endif %}">
     <iframe
+        class="w-full h-full rounded-xl"
         src="https://www.youtube.com/embed/{{id}}{% if playlist %}&list={playlist}{% endif %}"
+        {% if title %}title="{{title}}"{% endif %}
         webkitallowfullscreen
         mozallowfullscreen
         allowfullscreen>
