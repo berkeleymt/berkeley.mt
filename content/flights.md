@@ -28,6 +28,9 @@ If your flight was cancelled or delayed:
   Email us at <team@berkeley.mt> with your organization, team name(s), and which
   students are affected. We'll take care of the switch and work with you on any
   registration changes and fees.
+- We will also save seats for affected students at **BMT 2027** and/or
+  **BmMT 2027**, so you're guaranteed a spot at a future tournament. Mention this
+  when you email us.
 
 On tournament day:
 
