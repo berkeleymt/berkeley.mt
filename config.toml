@@ -29,7 +29,7 @@ site_url = "https://berkeley.mt"
 
 [extra.advisory]
 status = "error"
-title = "BMT 2026 ground stop update"
+title = "Flying in to BMT 2026?"
 timestamp = "November 13, 2026"
 body = """
 We're aware of today's ground stop, and we anticipate BMT 2026 starting on time

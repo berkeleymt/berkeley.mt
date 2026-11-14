@@ -1,5 +1,5 @@
 +++
-title = "BMT 2026 Ground Stop Update"
+title = "Flying In to BMT 2026? Flight Delay Update"
 description = "We're aware of today's ground stop. We anticipate BMT 2026 starting on time tomorrow. If you can't make it, email us and we'll switch you to BMT 2026 Online and refund the difference."
 +++
 
