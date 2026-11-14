@@ -12,13 +12,6 @@ cancelled or delayed, and cancellations are expected to continue into the
 weekend. SFO is also running long delays tonight due to high winds. This is
 unfortunate, and we're sorry to everyone whose travel plans were affected.
 
-{% alert(title="Teams not coming? Email us", status="warning") %}
-If any of your teams or students won't be coming to BMT 2026, please email us at
-<team@berkeley.mt> as soon as possible, **whether or not you've already checked
-in online**. Include your organization, team name(s), and which students won't
-make it.
-{% end %}
-
 BMT 2026 is still going ahead as scheduled on **Saturday, November 14**.
 
 - Check-in opens at **7:30 AM** in Dwinelle Hall and closes at **8:30 AM**, with
@@ -26,16 +19,17 @@ BMT 2026 is still going ahead as scheduled on **Saturday, November 14**.
 - The full schedule is in the
   [Tournament Day Logistics](/news/bmt-2026-logistics/#schedule-of-events) post.
 
-If your flight was cancelled or delayed:
+If your flight was cancelled or delayed, contact your airline or travel company
+directly for rebooking and other alternatives.
 
-- Contact your airline or travel company directly for rebooking and other
-  alternatives.
-- If you can no longer make it to Berkeley in time, email us at
-  <team@berkeley.mt> with your organization, team name(s), and which students are
-  affected. We are happy to change your registration to
-  [BMT 2026 Online](/events/bmt-2026-online/) on **December 5**, and we will also
-  save seats for affected students at **BMT 2027** and/or **BmMT 2027**. We'll
-  work with you on any registration changes and fees.
+**If any of your teams or students won't be coming, please email us at
+<team@berkeley.mt>, whether or not you've already checked in.** Include your
+organization, team name(s), and which students won't make it. We can:
+
+- Change their registration to [BMT 2026 Online](/events/bmt-2026-online/) on
+  **December 5**.
+- Save seats for them at **BMT 2027** and/or **BmMT 2027**.
+- Work with you on any registration changes and fees.
 
 On tournament day:
 
