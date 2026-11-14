@@ -28,12 +28,13 @@ site_url = "https://berkeley.mt"
 # offset) replaces the banner in the browser once `from` has passed.
 
 [extra.advisory]
-status = "info"
-title = "BMT 2026 checklist"
-timestamp = "November 7, 2026"
+status = "error"
+title = "BMT 2026 flight delays"
+timestamp = "November 13, 2026"
 body = """
-Please make sure that all participating students are assigned to a team, have selected 
-their Individual Round Tests (General or a Focus pair), and have their 
-waivers signed before the tournament. 
-See [registration checklist](/news/bmt-2026-logistics/#required-before-check-in-teams-tests-waivers).
+BMT 2026 is starting on schedule tomorrow! If today's ground stop means you can't
+make it, email us at <team@berkeley.mt> and we can switch your registration to
+BMT 2026 Online on December 5 and refund the difference. We're so sorry for the
+inconvenience!
+See [flight delays and ground stop](/news/bmt-2026-flight-delays/).
 """
