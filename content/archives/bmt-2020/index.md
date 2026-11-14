@@ -74,3 +74,6 @@ solutions = "team-solutions.pdf"
 
 BMT 2020’s Individual and Team Rounds are equivalent to the General and Guts
 rounds in recent BMTs, respectively.
+
+{% button_link(href="results.pdf") %} Contest Results {% end %}
+{% button_link(href="results-china.pdf") %} Contest Results (China) {% end %}

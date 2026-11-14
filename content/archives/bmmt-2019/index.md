@@ -63,3 +63,6 @@ rules = "PuFa2019RTo.pdf"
 problems = "PuFa2019To.pdf"
 solutions = "PuFa2019STo.pdf"
 +++
+
+{% button_link(href="results.pdf") %} Contest Results {% end %}
+{% button_link(href="results-iran.pdf") %} Contest Results (Iran) {% end %}

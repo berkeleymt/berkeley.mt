@@ -36,3 +36,6 @@ title = "Puzzle"
 problems = "PuF2018.pdf"
 solutions = "PuF2018S.pdf"
 +++
+
+{% button_link(href="results.pdf") %} Contest Results {% end %}
+{% button_link(href="results-china.pdf") %} Contest Results (China) {% end %}

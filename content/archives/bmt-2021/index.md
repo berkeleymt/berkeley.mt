@@ -71,3 +71,6 @@ title = "Geometry Tiebreaker"
 problems = "geometry-tiebreaker-problems.pdf"
 solutions = "geometry-tiebreaker-solutions.pdf"
 +++
+
+{% button_link(href="results.pdf") %} Contest Results {% end %}
+{% button_link(href="results-china.pdf") %} Contest Results (China) {% end %}

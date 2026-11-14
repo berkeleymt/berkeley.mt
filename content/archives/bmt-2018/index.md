@@ -71,3 +71,5 @@ title = "Team"
 problems = "TESP18.pdf"
 solutions = "TESP18A.pdf"
 +++
+
+{% button_link(href="results.pdf") %} Contest Results {% end %}

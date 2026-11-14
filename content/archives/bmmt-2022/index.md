@@ -31,3 +31,6 @@ title = "Pacer"
 problems = "pacer-problems.pdf"
 solutions = "pacer-solutions.pdf"
 +++
+
+{% button_link(href="results.pdf") %} Contest Results {% end %}
+{% button_link(href="results-china.pdf") %} Contest Results (China) {% end %}
