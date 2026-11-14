@@ -7,5 +7,5 @@ template = "redirect.html"
 aliases = ["/feedback"]
 
 # The page to redirect to
-extra.url = "https://docs.google.com/forms/d/e/1FAIpQLSc5XR_TgtivnsUvMqqy3tFz09Puxpf6z8_RHOsvW-9_LpM6yA/viewform"
+extra.url = "https://docs.google.com/forms/d/e/1FAIpQLScNmoWo_kKHYp3UPO0wWmzmRHZBGx_FhocxVLlXYj0QyV84Rg/viewform"
 +++
