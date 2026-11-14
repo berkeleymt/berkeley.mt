@@ -1,7 +1,18 @@
 +++
 title = "Travel Alert: FAA Nationwide Ground Stop"
 date = 2026-11-13
-description = "We are aware of the FAA nationwide ground stop that affected domestic and some international flights, including flights into SFO, OAK, and SJC, on November 13. BMT 2026 is still going ahead as scheduled on **Saturday, November 14**.
+description = "We are aware of the FAA nationwide ground stop that affected domestic and some international flights, including flights into SFO, OAK, and SJC, on November 13. BMT 2026 is still going ahead as scheduled on Saturday, November 14."
++++
+
+We are aware of the FAA nationwide ground stop that affected domestic and some international flights, including
+flights into SFO, OAK, and SJC, on November 13. On Friday afternoon, the FAA stopped flights across
+the country after a communications outage at air traffic control
+centers. The ground stop has since been lifted, but many flights have been
+cancelled or delayed, and cancellations are expected to continue into the
+weekend. SFO is also running long delays tonight due to high winds. This is
+unfortunate, and we're sorry to everyone whose travel plans were affected.
+
+BMT 2026 is still going ahead as scheduled on **Saturday, November 14**.
 
 - Check-in opens at **7:30 AM** in Dwinelle Hall and closes at **8:30 AM**, with
   late check-in from 8:30 to 8:45 AM.
