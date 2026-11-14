@@ -12,6 +12,13 @@ cancelled or delayed, and cancellations are expected to continue into the
 weekend. SFO is also running long delays tonight due to high winds. This is
 unfortunate, and we're sorry to everyone whose travel plans were affected.
 
+{% alert(title="Teams not coming? Email us", status="warning") %}
+If any of your teams or students won't be coming to BMT 2026, please email us at
+<team@berkeley.mt> as soon as possible, **whether or not you've already checked
+in online**. Include your organization, team name(s), and which students won't
+make it.
+{% end %}
+
 BMT 2026 is still going ahead as scheduled on **Saturday, November 14**.
 
 - Check-in opens at **7:30 AM** in Dwinelle Hall and closes at **8:30 AM**, with
