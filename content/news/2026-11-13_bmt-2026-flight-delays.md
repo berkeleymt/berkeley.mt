@@ -1,18 +1,16 @@
 +++
 title = "Flying In to BMT 2026? Flight Delay Update"
-description = "We're aware of today's ground stop. We anticipate BMT 2026 starting on time tomorrow. If you can't make it, email us and we'll switch you to BMT 2026 Online and refund the difference."
-+++
+description = "If you're flying in for BMT tomorrow, high winds at SFO have caused an FAA ground
+stop and long delays, and some flights into the Bay Area are being cancelled.
+We're so sorry for the inconvenience!
 
-We're aware of today's ground stop, which is delaying and cancelling flights
-for a lot of you flying in for BMT. We're so sorry for the inconvenience!
-
-**We anticipate BMT 2026 starting on time tomorrow, Saturday, November 14.**
+**We expect BMT 2026 to start on time tomorrow, Saturday, November 14.**
 Check-in still opens at **7:30 AM** in Dwinelle Hall, and the schedule in the
 [Tournament Day Logistics](/news/bmt-2026-logistics/) is the same.
 
-If you can't make it, we've got alternatives for you below!
+If your flight won't get you here in time, we've got options for you below!
 
-## If you can't make it
+## If your flight won't get you here in time
 
 Email us at <team@berkeley.mt> with your organization, team name(s), and which
 students can't make it. We'll switch them to
