@@ -1,6 +1,9 @@
 +++
 title = "Flying In to BMT 2026? Flight Delay Update"
-description = "If you're flying in for BMT tomorrow, high winds at SFO have caused an FAA ground
+description = "High winds at SFO have caused an FAA ground stop and long flight delays. We expect BMT 2026 to start on time tomorrow. If your flight won't get you here in time, email us and we'll switch you to BMT 2026 Online and refund the difference."
++++
+
+If you're flying in for BMT tomorrow, high winds at SFO have caused an FAA ground
 stop and long delays, and some flights into the Bay Area are being cancelled.
 We're so sorry for the inconvenience!
 
