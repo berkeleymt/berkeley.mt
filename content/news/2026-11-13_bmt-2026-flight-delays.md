@@ -1,40 +1,43 @@
 +++
-title = "BMT 2026 Flight Delays and Ground Stop"
-description = "Flying in for BMT tomorrow? With today's ground stop, here's what we can do if you can't make it. BMT is still starting on schedule!"
+title = "BMT 2026 Flight Delays: We're Starting on Schedule"
+description = "BMT 2026 is starting on schedule tomorrow. If today's ground stop means you can't make it, email us and we'll switch you to BMT 2026 Online and refund the difference."
 +++
 
-To all coaches and students,
+**BMT 2026 is starting on schedule tomorrow, Saturday, November 14.** If
+today's ground stop means you can't make it, email us at <team@berkeley.mt>
+and we'll switch your registration to BMT 2026 Online on December 5 and refund
+the difference. We're so sorry for the inconvenience!
 
-We know a lot of you are flying in for BMT tomorrow, and today's ground stop
-is delaying and cancelling a lot of flights. We're so sorry for the
-inconvenience this has caused! We're here to help.
+## What's happening
 
-## BMT is starting on schedule
+Today's ground stop is delaying and cancelling a lot of flights. If your team
+is flying in for BMT, your flight might be affected.
 
-BMT 2026 is still happening tomorrow, **Saturday, November 14**, and we're
-**starting on schedule**. Check-in opens at 7:30 AM in Dwinelle Hall, same as
-always. See the [Tournament Day Logistics](/news/bmt-2026-logistics/) for the
-full schedule.
+BMT itself isn't changing. Check-in still opens at **7:30 AM** in Dwinelle
+Hall, and the schedule in the
+[Tournament Day Logistics](/news/bmt-2026-logistics/) is the same.
 
-## Can't make it? Email us!
+## What you can do
 
-If your flight got cancelled or delayed and you can't make it to Berkeley in
-time, please email us at <team@berkeley.mt>! We can switch your registration to
-[BMT 2026 Online](/events/bmt-2026-online/) on **December 5** and refund the
+**If you can't make it,** email us at <team@berkeley.mt> with your
+organization, team name(s), and which students can't make it. We'll switch them
+to [BMT 2026 Online](/events/bmt-2026-online/) on **December 5** and refund the
 difference.
 
-In your email, please include your organization, team name(s), and which
-students can't make it.
-
-## Still traveling?
+**If you're still coming:**
 
 - Check your flight status with your airline before you head to the airport.
-- If you're landing late tonight or tomorrow morning, plan your trip to campus
-  ahead of time with the [BMT Trip Planner](/news/bmt-2026-take-transit/).
+- Plan your trip to campus ahead of time with the
+  [BMT Trip Planner](/news/bmt-2026-take-transit/), especially if you're
+  landing late tonight or tomorrow morning.
 - Running late tomorrow? Go to the information desk in the Dwinelle Hall lobby
   (open from 8 AM) for late check-in.
-- Turn on notifications at [https://live.berkeley.mt](https://live.berkeley.mt/?lp)
-  to get any schedule updates.
+
+## Updates
+
+We'll post any changes on [https://live.berkeley.mt](https://live.berkeley.mt/?lp).
+Add it to your phone's home screen and turn on notifications to get them right
+away.
 
 Again, we're sorry for the inconvenience. Safe travels, and we hope to see you
 tomorrow!

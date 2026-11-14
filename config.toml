@@ -33,8 +33,7 @@ title = "BMT 2026 flight delays"
 timestamp = "November 13, 2026"
 body = """
 BMT 2026 is starting on schedule tomorrow! If today's ground stop means you can't
-make it, email us at <team@berkeley.mt> and we can switch your registration to
+make it, email us at <team@berkeley.mt> and we'll switch your registration to
 BMT 2026 Online on December 5 and refund the difference. We're so sorry for the
-inconvenience!
-See [flight delays and ground stop](/news/bmt-2026-flight-delays/).
+inconvenience! See [what you can do](/news/bmt-2026-flight-delays/).
 """
