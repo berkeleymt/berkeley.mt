@@ -23,14 +23,12 @@ If your flight was cancelled or delayed:
 
 - Contact your airline or travel company directly for rebooking and other
   alternatives.
-- If you can no longer make it to Berkeley in time, we are happy to change your
-  registration to [BMT 2026 Online](/events/bmt-2026-online/) on **December 5**.
-  Email us at <team@berkeley.mt> with your organization, team name(s), and which
-  students are affected. We'll take care of the switch and work with you on any
-  registration changes and fees.
-- We will also save seats for affected students at **BMT 2027** and/or
-  **BmMT 2027**, so you're guaranteed a spot at a future tournament. Mention this
-  when you email us.
+- If you can no longer make it to Berkeley in time, email us at
+  <team@berkeley.mt> with your organization, team name(s), and which students are
+  affected. We are happy to change your registration to
+  [BMT 2026 Online](/events/bmt-2026-online/) on **December 5**, and we will also
+  save seats for affected students at **BMT 2027** and/or **BmMT 2027**. We'll
+  work with you on any registration changes and fees.
 
 On tournament day:
 
