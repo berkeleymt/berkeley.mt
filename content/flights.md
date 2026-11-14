@@ -1,10 +1,10 @@
 +++
 title = "Travel Alert: FAA Nationwide Ground Stop"
 date = 2026-11-13
-description = "We are aware of the FAA nationwide ground stop that affected flights into SFO on November 13. Our event start time will not change."
+description = "We are aware of the FAA nationwide ground stop that affected flights into SFO, OAK, and SJC on November 13. Our event start time will not change."
 +++
 
-We are aware of the FAA nationwide ground stop that affected flights into SFO on
+We are aware of the FAA nationwide ground stop that affected flights into SFO, OAK, and SJC on
 November 13. Many flights have been cancelled. This is unfortunate.
 
 Our event start time will not change from the

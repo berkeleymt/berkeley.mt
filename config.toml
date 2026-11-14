@@ -32,7 +32,7 @@ status = "error"
 title = "Travel Alert: FAA Nationwide Ground Stop"
 timestamp = "November 13, 2026"
 body = """
-We are aware of the FAA nationwide ground stop that affected flights into SFO on
+We are aware of the FAA nationwide ground stop that affected flights into SFO, OAK, and SJC on
 November 13. Our event start time will not change. If affected, we are happy to
 change your registration to BMT 2026 Online on December 5.
 [Read more](/flights/).
