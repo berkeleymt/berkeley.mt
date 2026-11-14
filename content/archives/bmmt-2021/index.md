@@ -41,3 +41,6 @@ rules = "puzzle-rules.pdf"
 problems = "puzzle-problems.xlsx"
 solutions = "puzzle-solutions.pdf"
 +++
+
+{% button_link(href="results.pdf") %} Contest Results {% end %}
+{% button_link(href="results-china.pdf") %} Contest Results (China) {% end %}

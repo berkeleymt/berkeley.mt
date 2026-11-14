@@ -55,3 +55,4 @@ solutions = "power-solutions.pdf"
 +++
 
 {% button_link(href="results.pdf") %} Contest Results {% end %}
+{% button_link(href="results-online.pdf") %} Contest Results (Online) {% end %}

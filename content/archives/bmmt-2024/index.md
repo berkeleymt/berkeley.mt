@@ -41,6 +41,7 @@ solutions = "relay-solutions.pdf"
 +++
 
 {% button_link(href="results.pdf") %} Contest Results {% end %}
+{% button_link(href="results-china.pdf") %} Contest Results (China) {% end %}
 
 We have [walkthrough videos](https://www.youtube.com/playlist?list=PLaoLAdRXfERVxzquznE7C5Mimqw7I2tEJ) now! 
 {{ youtube_list(id="PLaoLAdRXfERVxzquznE7C5Mimqw7I2tEJ") }}
