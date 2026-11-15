@@ -15,3 +15,5 @@ We found the following items after BMT 2026. If one of them is yours, please ema
 ![Pencil cases, pencils, erasers, and a blue tote bag](/assets/bmt-2026/lost-and-found/pencil-cases-pencils.jpg)
 ![Box of water bottles](/assets/bmt-2026/lost-and-found/water-bottles-box.jpg)
 ![Jackets, a blue cap, a plush keychain, and a grey backpack](/assets/bmt-2026/lost-and-found/jackets-hat-backpack.jpg)
+![White and black binders and a black Tomtoc laptop sleeve](/assets/bmt-2026/lost-and-found/binders-laptop-sleeve.jpg)
+![Umbrellas: blue plaid, grey, and black](/assets/bmt-2026/lost-and-found/umbrellas.jpg)
