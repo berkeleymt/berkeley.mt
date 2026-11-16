@@ -10,7 +10,22 @@
 </div>
 
 <div class="flex flex-col lg:flex-row gap-8 items-start">
-  <section id="products" class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full"></section>
+  <div class="flex-1 flex flex-col gap-4 w-full">
+    <div class="flex flex-wrap justify-between items-center gap-3 text-sm">
+    <div id="event-filter" class="flex gap-1.5">
+      <button data-event="all" class="px-3 py-1 rounded-lg border">All</button>
+      <button data-event="BMT" class="px-3 py-1 rounded-lg border">BMT</button>
+      <button data-event="BmMT" class="px-3 py-1 rounded-lg border">BmMT</button>
+    </div>
+    <label class="flex items-center gap-2">Sort by
+      <select id="sort" class="border border-gray-300 rounded-lg bg-white px-2 py-1">
+        <option value="new">Newest first</option>
+        <option value="old">Oldest first</option>
+      </select>
+    </label>
+    </div>
+    <section id="products" class="grid grid-cols-1 sm:grid-cols-2 gap-6"></section>
+  </div>
 
   <aside class="w-full lg:w-80 lg:sticky lg:top-8 border border-gray-200 bg-white rounded-xl p-5 flex flex-col gap-4">
     <h2 class="text-xl font-semibold"><i class="bi bi-bag"></i> Cart</h2>
@@ -39,18 +54,19 @@
 <script>
 const SIZES = ["XS", "S", "M", "L", "XL", "2XL"];
 const products = [
-  { id: "bmt-2025", name: "BMT 2025 Shirt", price: 9, color: "#2563eb", stock: { XS: 4, S: 12, M: 20, L: 18, XL: 7, "2XL": 0 } },
-  { id: "bmmt-2025", name: "BmMT 2025 Shirt", price: 9, color: "#059669", stock: { XS: 9, S: 15, M: 11, L: 3, XL: 0, "2XL": 2 } },
-  { id: "bmt-2024", name: "BMT 2024 Shirt", price: 9, color: "#7c3aed", stock: { XS: 0, S: 6, M: 14, L: 10, XL: 5, "2XL": 1 } },
-  { id: "bmmt-2024", name: "BmMT 2024 Shirt", price: 9, color: "#ea580c", stock: { XS: 2, S: 8, M: 0, L: 4, XL: 6, "2XL": 0 } },
-  { id: "bmt-2023", name: "BMT 2023 Shirt", price: 9, color: "#dc2626", stock: { XS: 0, S: 3, M: 5, L: 2, XL: 0, "2XL": 0 } },
+  { id: "bmt-2025", name: "BMT 2025 Shirt", event: "BMT", date: "2025-11", price: 9, color: "#2563eb", stock: { XS: 4, S: 12, M: 20, L: 18, XL: 7, "2XL": 0 } },
+  { id: "bmmt-2025", name: "BmMT 2025 Shirt", event: "BmMT", date: "2025-04", price: 9, color: "#059669", stock: { XS: 9, S: 15, M: 11, L: 3, XL: 0, "2XL": 2 } },
+  { id: "bmt-2024", name: "BMT 2024 Shirt", event: "BMT", date: "2024-11", price: 9, color: "#7c3aed", stock: { XS: 0, S: 6, M: 14, L: 10, XL: 5, "2XL": 1 } },
+  { id: "bmmt-2024", name: "BmMT 2024 Shirt", event: "BmMT", date: "2024-04", price: 9, color: "#ea580c", stock: { XS: 2, S: 8, M: 0, L: 4, XL: 6, "2XL": 0 } },
+  { id: "bmt-2023", name: "BMT 2023 Shirt", event: "BMT", date: "2023-11", price: 9, color: "#dc2626", stock: { XS: 0, S: 3, M: 5, L: 2, XL: 0, "2XL": 0 } },
 ];
 const mystery = { id: "mystery", name: "Mystery Shirt", price: 8, color: "#374151",
   blurb: "Pick a size, we pick the design. Could be any past BMT or BmMT shirt!" };
 mystery.stock = Object.fromEntries(SIZES.map(s => [s, products.reduce((n, p) => n + p.stock[s], 0)]));
-const tote = { id: "tote-2025", name: "BMT Tote Bag", price: 12, color: "#d6c7a1", stock: { "One size": 25 } };
+const tote = { id: "tote-2025", name: "BMT 2025 Tote Bag", event: "BMT", date: "2025-11", price: 12, color: "#d6c7a1", stock: { "One size": 25 } };
 
 const cart = {};
+let eventFilter = "all";
 const money = n => "$" + n.toFixed(2);
 const inCart = (id, size) => cart[id + "|" + size]?.qty || 0;
 const all = [...products, mystery, tote];
@@ -93,7 +109,11 @@ function card(p) {
 }
 
 function render() {
-  document.getElementById("products").innerHTML = [mystery, ...products, tote].map(card).join("");
+  document.querySelectorAll("[data-event]").forEach(b => b.className = "px-3 py-1 rounded-lg border " +
+    (b.dataset.event === eventFilter ? "border-emerald-600 bg-emerald-50 font-semibold" : "border-gray-300 bg-white"));
+  const dir = document.getElementById("sort").value === "old" ? 1 : -1;
+  const sorted = [...products, tote].filter(p => eventFilter === "all" || p.event === eventFilter).sort((a, b) => dir * a.date.localeCompare(b.date));
+  document.getElementById("products").innerHTML = [mystery, ...sorted].map(card).join("");
   const items = Object.values(cart).filter(i => i.qty > 0);
   document.getElementById("cart-items").innerHTML = items.length
     ? items.map(i => `<li class="flex justify-between items-center gap-2">
@@ -120,7 +140,8 @@ function add(id, size, d) {
 document.addEventListener("click", e => {
   const t = e.target.closest("button");
   if (!t || t.disabled) return;
-  if (t.dataset.size) { const [id, s] = t.dataset.size.split("|"); const p = find(id); p.sel = p.sel === s ? null : s; }
+  if (t.dataset.event) eventFilter = t.dataset.event;
+  else if (t.dataset.size) { const [id, s] = t.dataset.size.split("|"); const p = find(id); p.sel = p.sel === s ? null : s; }
   else if (t.dataset.add) { const p = find(t.dataset.add); add(p.id, Object.keys(p.stock).length === 1 ? Object.keys(p.stock)[0] : p.sel, 1); }
   else if (t.dataset.inc) { const [id, s] = t.dataset.inc.split("|"); add(id, s, 1); }
   else if (t.dataset.dec) { const [id, s] = t.dataset.dec.split("|"); add(id, s, -1); }
@@ -128,7 +149,7 @@ document.addEventListener("click", e => {
   else return;
   render();
 });
-document.querySelectorAll("input[name=delivery]").forEach(r => r.addEventListener("change", render));
+document.querySelectorAll("input[name=delivery], #sort").forEach(r => r.addEventListener("change", render));
 render();
 </script>
 {% endblock %}
