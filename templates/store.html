@@ -4,9 +4,13 @@
 <div class="flex flex-col gap-3">
   <h1 class="text-3xl font-semibold">{{ page.title }}</h1>
   <div class="prose">{{ page.content | safe }}</div>
+  <div id="paid" class="hidden bg-teal-50 border border-teal-200 p-4 rounded-xl flex flex-col gap-1">
+    <p class="uppercase text-xs text-gray-500 flex gap-2 items-center"><i class="bi bi-check-circle-fill"></i> Order placed</p>
+    <p class="font-medium">Thanks! You'll get a receipt by email.</p>
+  </div>
   <div class="bg-orange-50 border border-orange-200 p-4 rounded-xl flex flex-col gap-1">
     <p class="uppercase text-xs text-gray-500 flex gap-2 items-center"><i class="bi bi-exclamation-circle-fill"></i> Test mockup</p>
-    <p class="font-medium">Inventory is fake and checkout is disabled.</p>
+    <p class="font-medium">Inventory is fake, but checkout is live: real cards are charged. Refund test orders in Stripe.</p>
   </div>
 </div>
 
@@ -58,6 +62,7 @@
 </div>
 
 <script>
+const CHECKOUT_URL = "https://bmt-store-checkout.andrew-js-ku.workers.dev/checkout";
 const SIZES = ["XS", "S", "M", "L", "XL", "2XL"];
 const products = [
   { id: "bmmt-2026", name: "BmMT 2026 Shirt", event: "BmMT", date: "2026-04", price: 9, color: "#0891b2", stock: { XS: 10, S: 22, M: 16, L: 9, XL: 4, "2XL": 1 } },
@@ -170,10 +175,31 @@ document.addEventListener("click", e => {
   else if (t.dataset.inc) { const [id, s] = t.dataset.inc.split("|"); add(id, s, 1); }
   else if (t.dataset.del) delete cart[t.dataset.del];
   else if (t.dataset.dec) { const [id, s] = t.dataset.dec.split("|"); add(id, s, -1); }
-  else if (t.id === "checkout") { alert("Test mockup: this would open Stripe Checkout (address and card)."); return; }
+  else if (t.id === "checkout") { checkout(t); return; }
   else return;
   render();
 });
+async function checkout(btn) {
+  btn.disabled = true; btn.textContent = "Opening checkout…";
+  try {
+    const r = await fetch(CHECKOUT_URL, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        delivery: document.querySelector("input[name=delivery]:checked").value,
+        items: Object.values(cart).filter(i => i.qty > 0).map(i => ({ id: i.p.id, size: i.size, qty: i.qty })),
+      }),
+    });
+    const d = await r.json();
+    if (!r.ok || !d.url) throw new Error(d.error || "Checkout failed");
+    location.href = d.url;
+  } catch (e) {
+    alert(e.message);
+    btn.disabled = false; btn.textContent = "Checkout";
+  }
+}
+if (new URLSearchParams(location.search).has("paid"))
+  document.getElementById("paid").classList.remove("hidden");
 document.querySelectorAll("input[name=delivery], #sort").forEach(r => r.addEventListener("change", render));
 render();
 </script>
