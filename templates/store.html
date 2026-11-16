@@ -63,6 +63,7 @@
 
 <script>
 const CHECKOUT_URL = "https://bmt-store-checkout.andrew-js-ku.workers.dev/checkout";
+const MAX_QTY = 20; // per line; matches the checkout worker
 const SIZES = ["XS", "S", "M", "L", "XL", "2XL"];
 const products = [
   { id: "bmmt-2026", name: "BmMT 2026 Shirt", event: "BmMT", date: "2026-04", price: 9, color: "#0891b2", stock: { XS: 10, S: 22, M: 16, L: 9, XL: 4, "2XL": 1 } },
@@ -115,7 +116,7 @@ function card(p) {
       class="px-2.5 py-1 rounded-lg border text-sm ${s === sel ? "border-teal-500 bg-teal-50 text-teal-700 font-medium" : "border-gray-300 bg-white"} disabled:text-gray-300 disabled:line-through disabled:border-gray-200">${s}</button>`;
   }).join("");
   const n = sel ? left(p, sel) : null;
-  const size = chosenSize(p), max = size ? left(p, size) : 0;
+  const size = chosenSize(p), max = size ? Math.min(left(p, size), MAX_QTY - inCart(p.id, size)) : 0;
   p.qty = Math.max(1, Math.min(p.qty || 1, max));
   return `<div class="border border-gray-200 bg-white rounded-xl p-4 flex flex-col gap-3">
     ${shirtImg(p)}
@@ -147,7 +148,7 @@ function render() {
         <span>${i.p.name}${i.size !== "One size" ? ` <span class="text-gray-500">(${i.size})</span>` : ""}</span>
         <span class="flex items-center gap-2 shrink-0">
           <button data-dec="${i.p.id}|${i.size}" class="w-6 h-6 rounded border border-gray-300">−</button>${i.qty}
-          <button data-inc="${i.p.id}|${i.size}" ${left(i.p, i.size) <= 0 ? "disabled" : ""} class="w-6 h-6 rounded border border-gray-300 disabled:text-gray-300">+</button>
+          <button data-inc="${i.p.id}|${i.size}" ${left(i.p, i.size) <= 0 || i.qty >= MAX_QTY ? "disabled" : ""} class="w-6 h-6 rounded border border-gray-300 disabled:text-gray-300">+</button>
           <span class="w-14 text-right">${money(i.qty * i.p.price)}</span>
           <button data-del="${i.p.id}|${i.size}" aria-label="Remove" class="text-gray-400 hover:text-rose-600"><i class="bi bi-trash3"></i></button></span></li>`).join("")
     : `<li class="text-gray-500">Your cart is empty.</li>`;
@@ -157,6 +158,10 @@ function render() {
   document.getElementById("shipping").textContent = money(ship);
   document.getElementById("total").textContent = money(sub + ship);
   document.getElementById("checkout").disabled = !items.length;
+  localStorage.setItem("bmt-cart", JSON.stringify({
+    delivery: document.querySelector("input[name=delivery]:checked").value,
+    items: items.map(i => [i.p.id, i.size, i.qty]),
+  }));
 }
 
 function add(id, size, d) {
@@ -198,8 +203,17 @@ async function checkout(btn) {
     btn.disabled = false; btn.textContent = "Checkout";
   }
 }
-if (new URLSearchParams(location.search).has("paid"))
+if (new URLSearchParams(location.search).has("paid")) {
   document.getElementById("paid").classList.remove("hidden");
+  localStorage.removeItem("bmt-cart");
+}
+try {
+  const saved = JSON.parse(localStorage.getItem("bmt-cart") || "{}");
+  for (const [id, size, qty] of saved.items || []) if (find(id)) add(id, size, Math.min(qty, left(find(id), size)));
+  const r = document.querySelector(`input[name=delivery][value="${saved.delivery}"]`);
+  if (r) r.checked = true;
+} catch {}
+addEventListener("pageshow", () => { const b = document.getElementById("checkout"); b.textContent = "Checkout"; render(); });
 document.querySelectorAll("input[name=delivery], #sort").forEach(r => r.addEventListener("change", render));
 render();
 </script>
