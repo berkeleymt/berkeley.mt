@@ -68,7 +68,7 @@ const products = [
 const mystery = { id: "mystery", name: "Mystery Shirt", price: 8, color: "#374151",
   blurb: "Pick a size, we pick the design. Could be any past BMT or BmMT shirt!" };
 mystery.stock = Object.fromEntries(SIZES.map(s => [s, products.reduce((n, p) => n + p.stock[s], 0)]));
-const tote = { id: "tote-2025", name: "BMT 2025 Tote Bag", event: "BMT", date: "2025-11", price: 12, color: "#d6c7a1", stock: { "One size": 25 } };
+const tote = { id: "tote-bmmt-2026", name: "BmMT 2026 Tote Bag", event: "BmMT", date: "2026-04", price: 12, color: "#d6c7a1", stock: { "One size": 25 } };
 
 const cart = {};
 let eventFilter = "all";
