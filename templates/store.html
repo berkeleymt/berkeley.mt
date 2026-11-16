@@ -116,11 +116,11 @@ function card(p) {
     ${sizes.length > 1 ? `<div class="flex flex-wrap gap-1.5">${btns}</div>` : ""}
     <p class="text-xs text-gray-500 h-4">${sizes.length === 1 ? left(p, sizes[0]) + " left" : sel ? (n <= 5 ? `Only ${n} left in ${sel}` : `${n} left in ${sel}`) : "Select a size"}</p>
     <div class="flex gap-2">
-      <div class="flex items-center rounded-lg border border-gray-300 text-sm ${max > 0 ? "" : "text-gray-300 border-gray-200"}">
-        <button data-qty="${p.id}|-1" ${max > 0 && p.qty > 1 ? "" : "disabled"} class="w-8 h-full disabled:text-gray-300">−</button>
+      ${max > 0 ? `<div class="flex items-center rounded-lg border border-gray-300 text-sm">
+        <button data-qty="${p.id}|-1" ${p.qty > 1 ? "" : "disabled"} class="w-8 h-full disabled:text-gray-300">−</button>
         <span class="w-6 text-center">${p.qty}</span>
         <button data-qty="${p.id}|1" ${p.qty < max ? "" : "disabled"} class="w-8 h-full disabled:text-gray-300">+</button>
-      </div>
+      </div>` : ""}
       <button data-add="${p.id}" ${max > 0 ? "" : "disabled"}
         class="flex-1 rounded-lg bg-gray-900 hover:bg-gray-700 disabled:bg-gray-200 disabled:text-gray-400 text-white text-sm font-semibold py-2 transition-colors">Add to cart</button>
     </div>
