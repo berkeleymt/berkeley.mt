@@ -82,6 +82,11 @@ function left(p, size) {
   return products.includes(p) ? Math.min(base, mystery.stock[size] - inCart("mystery", size) - products.reduce((n, q) => n + inCart(q.id, size), 0)) : base;
 }
 
+function chosenSize(p) {
+  const sizes = Object.keys(p.stock);
+  return sizes.length === 1 ? sizes[0] : p.sel;
+}
+
 function shirtImg(p, label) {
   const shirt = p.id.startsWith("tote")
     ? `<svg viewBox="0 0 200 200" class="w-40 h-40"><path d="M70 60 C70 20 130 20 130 60" fill="none" stroke="#a8977a" stroke-width="8"/><rect x="40" y="60" width="120" height="125" rx="4" fill="${p.color}" stroke="rgba(0,0,0,.2)" stroke-width="2"/></svg>`
@@ -102,14 +107,23 @@ function card(p) {
       class="px-2.5 py-1 rounded-lg border text-sm ${s === sel ? "border-emerald-600 bg-emerald-50 font-semibold" : "border-gray-300"} disabled:text-gray-300 disabled:line-through disabled:border-gray-200">${s}</button>`;
   }).join("");
   const n = sel ? left(p, sel) : null;
+  const size = chosenSize(p), max = size ? left(p, size) : 0;
+  p.qty = Math.max(1, Math.min(p.qty || 1, max));
   return `<div class="border border-gray-200 bg-white rounded-xl p-4 flex flex-col gap-3">
     ${shirtImg(p)}
     <div class="flex justify-between items-baseline"><h3 class="font-semibold">${p.name}</h3><span class="font-semibold">${money(p.price)}</span></div>
     ${p.blurb ? `<p class="text-sm text-gray-600">${p.blurb}</p>` : ""}
     ${sizes.length > 1 ? `<div class="flex flex-wrap gap-1.5">${btns}</div>` : ""}
     <p class="text-xs text-gray-500 h-4">${sizes.length === 1 ? left(p, sizes[0]) + " left" : sel ? (n <= 5 ? `Only ${n} left in ${sel}` : `${n} left in ${sel}`) : "Select a size"}</p>
-    <button data-add="${p.id}" ${(sizes.length > 1 && !sel) || (sizes.length === 1 && left(p, sizes[0]) <= 0) ? "disabled" : ""}
-      class="rounded-lg bg-gray-900 hover:bg-gray-700 disabled:bg-gray-200 disabled:text-gray-400 text-white text-sm font-semibold py-2 transition-colors">Add to cart</button>
+    <div class="flex gap-2">
+      <div class="flex items-center rounded-lg border border-gray-300 text-sm ${max > 0 ? "" : "text-gray-300 border-gray-200"}">
+        <button data-qty="${p.id}|-1" ${max > 0 && p.qty > 1 ? "" : "disabled"} class="w-8 h-full disabled:text-gray-300">−</button>
+        <span class="w-6 text-center">${p.qty}</span>
+        <button data-qty="${p.id}|1" ${p.qty < max ? "" : "disabled"} class="w-8 h-full disabled:text-gray-300">+</button>
+      </div>
+      <button data-add="${p.id}" ${max > 0 ? "" : "disabled"}
+        class="flex-1 rounded-lg bg-gray-900 hover:bg-gray-700 disabled:bg-gray-200 disabled:text-gray-400 text-white text-sm font-semibold py-2 transition-colors">Add to cart</button>
+    </div>
   </div>`;
 }
 
@@ -146,8 +160,9 @@ document.addEventListener("click", e => {
   const t = e.target.closest("button");
   if (!t || t.disabled) return;
   if (t.dataset.event) eventFilter = t.dataset.event;
-  else if (t.dataset.size) { const [id, s] = t.dataset.size.split("|"); const p = find(id); p.sel = p.sel === s ? null : s; }
-  else if (t.dataset.add) { const p = find(t.dataset.add); add(p.id, Object.keys(p.stock).length === 1 ? Object.keys(p.stock)[0] : p.sel, 1); }
+  else if (t.dataset.size) { const [id, s] = t.dataset.size.split("|"); const p = find(id); p.sel = p.sel === s ? null : s; p.qty = 1; }
+  else if (t.dataset.qty) { const [id, d] = t.dataset.qty.split("|"); find(id).qty += +d; }
+  else if (t.dataset.add) { const p = find(t.dataset.add); add(p.id, chosenSize(p), p.qty); p.qty = 1; }
   else if (t.dataset.inc) { const [id, s] = t.dataset.inc.split("|"); add(id, s, 1); }
   else if (t.dataset.dec) { const [id, s] = t.dataset.dec.split("|"); add(id, s, -1); }
   else if (t.id === "checkout") { alert("Test mockup: this would open Stripe Checkout (address and card)."); return; }
