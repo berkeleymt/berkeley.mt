@@ -18,10 +18,13 @@
       <button data-event="BmMT" class="px-3 py-1 rounded-lg border">BmMT</button>
     </div>
     <label class="flex items-center gap-2">Sort by
-      <select id="sort" class="border border-gray-300 rounded-lg bg-white px-2 py-1">
-        <option value="new">Newest first</option>
-        <option value="old">Oldest first</option>
-      </select>
+      <span class="relative">
+        <select id="sort" class="appearance-none border border-gray-300 rounded-lg bg-white pl-3 pr-9 py-1 cursor-pointer">
+          <option value="new">Newest first</option>
+          <option value="old">Oldest first</option>
+        </select>
+        <i class="bi bi-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-xs pointer-events-none"></i>
+      </span>
     </label>
     </div>
     <section id="products" class="grid grid-cols-1 sm:grid-cols-2 gap-6"></section>
