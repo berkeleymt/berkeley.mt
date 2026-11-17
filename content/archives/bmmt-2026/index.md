@@ -47,4 +47,5 @@ Solutions coming soon!
 Try the BmMT 2026 Online Puzzle Round on our custom [interactive site](https://curtain-pigeon-pit.uc.ax/)!
 
 {% button_link(href="results.pdf") %} Contest Results {% end %}
+{% button_link(href="results-china.pdf") %} Contest Results (China) {% end %}
 {% button_link(href="results-online.pdf") %} Contest Results (Online) {% end %}
