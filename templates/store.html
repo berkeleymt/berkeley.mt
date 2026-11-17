@@ -66,12 +66,12 @@ const CHECKOUT_URL = "https://bmt-store-checkout.andrew-js-ku.workers.dev/checko
 const MAX_QTY = 100; // per line; matches the checkout worker
 const SIZES = ["XS", "S", "M", "L", "XL", "2XL"];
 const products = [
-  { id: "bmmt-2026", name: "BmMT 2026 Shirt", event: "BmMT", date: "2026-04", price: 9, color: "#0891b2", stock: { XS: 10, S: 22, M: 16, L: 9, XL: 4, "2XL": 1 } },
-  { id: "bmt-2025", name: "BMT 2025 Shirt", event: "BMT", date: "2025-11", price: 9, color: "#2563eb", stock: { XS: 4, S: 12, M: 20, L: 18, XL: 7, "2XL": 0 } },
-  { id: "bmmt-2025", name: "BmMT 2025 Shirt", event: "BmMT", date: "2025-04", price: 9, color: "#059669", stock: { XS: 9, S: 15, M: 11, L: 3, XL: 0, "2XL": 2 } },
-  { id: "bmt-2024", name: "BMT 2024 Shirt", event: "BMT", date: "2024-11", price: 9, color: "#7c3aed", stock: { XS: 0, S: 6, M: 14, L: 10, XL: 5, "2XL": 1 } },
-  { id: "bmmt-2024", name: "BmMT 2024 Shirt", event: "BmMT", date: "2024-04", price: 9, color: "#ea580c", stock: { XS: 2, S: 8, M: 0, L: 4, XL: 6, "2XL": 0 } },
-  { id: "bmt-2023", name: "BMT 2023 Shirt", event: "BMT", date: "2023-11", price: 9, color: "#dc2626", stock: { XS: 0, S: 3, M: 5, L: 2, XL: 0, "2XL": 0 } },
+  { id: "bmmt-2026", views: ["Front", "Back", "Sleeve"], name: "BmMT 2026 Shirt", event: "BmMT", date: "2026-04", price: 9, color: "#0891b2", stock: { XS: 10, S: 22, M: 16, L: 9, XL: 4, "2XL": 1 } },
+  { id: "bmt-2025", views: ["Back", "Sleeve"], name: "BMT 2025 Shirt", event: "BMT", date: "2025-11", price: 9, color: "#2563eb", stock: { XS: 4, S: 12, M: 20, L: 18, XL: 7, "2XL": 0 } },
+  { id: "bmmt-2025", views: ["Front"], name: "BmMT 2025 Shirt", event: "BmMT", date: "2025-04", price: 9, color: "#059669", stock: { XS: 9, S: 15, M: 11, L: 3, XL: 0, "2XL": 2 } },
+  { id: "bmt-2024", views: ["Front", "Back", "Sleeve"], name: "BMT 2024 Shirt", event: "BMT", date: "2024-11", price: 9, color: "#7c3aed", stock: { XS: 0, S: 6, M: 14, L: 10, XL: 5, "2XL": 1 } },
+  { id: "bmmt-2024", views: ["Front"], name: "BmMT 2024 Shirt", event: "BmMT", date: "2024-04", price: 9, color: "#ea580c", stock: { XS: 2, S: 8, M: 0, L: 4, XL: 6, "2XL": 0 } },
+  { id: "bmt-2023", views: ["Back"], name: "BMT 2023 Shirt", event: "BMT", date: "2023-11", price: 9, color: "#dc2626", stock: { XS: 0, S: 3, M: 5, L: 2, XL: 0, "2XL": 0 } },
 ];
 const mystery = { id: "mystery", name: "Mystery Shirt", price: 8, color: "#374151",
   blurb: "Pick a size, we pick the tournament. It could be from any past BMT or BmMT." };
@@ -96,7 +96,14 @@ function chosenSize(p) {
   return sizes.length === 1 ? sizes[0] : p.sel;
 }
 
-function shirtImg(p, label) {
+function shirtImg(p) {
+  if (p.views) {
+    const v = p.view || p.views[0];
+    const tabs = p.views.length > 1 ? `<div class="absolute bottom-2 inset-x-0 flex justify-center gap-1">${p.views.map(x =>
+      `<button data-view="${p.id}|${x}" class="px-2 py-0.5 rounded text-xs ${x === v ? "bg-teal-500 text-white" : "bg-white/90 border border-gray-300 text-gray-600"}">${x}</button>`).join("")}</div>` : "";
+    return `<div class="relative bg-white border border-gray-100 rounded-lg flex items-center justify-center h-52 ${tabs ? "pb-6" : ""}">
+      <img src="/store/${p.id}-${v.toLowerCase()}.webp" alt="${p.name} ${v.toLowerCase()} design" class="w-40 h-40 object-contain">${tabs}</div>`;
+  }
   const shirt = p.id.startsWith("tote")
     ? `<svg viewBox="0 0 200 200" class="w-40 h-40"><path d="M70 60 C70 20 130 20 130 60" fill="none" stroke="#a8977a" stroke-width="8"/><rect x="40" y="60" width="120" height="125" rx="4" fill="${p.color}" stroke="rgba(0,0,0,.2)" stroke-width="2"/></svg>`
     : `<svg viewBox="0 0 200 200" class="w-40 h-40" style="color:${p.color}"><path d="M70 22 L40 34 L12 64 L36 88 L50 76 L50 182 L150 182 L150 76 L164 88 L188 64 L160 34 L130 22 C126 36 114 44 100 44 C86 44 74 36 70 22 Z" fill="currentColor" stroke="rgba(0,0,0,.25)" stroke-width="2" stroke-linejoin="round"/></svg>`;
@@ -104,7 +111,7 @@ function shirtImg(p, label) {
     ? `<span class="absolute inset-0 flex items-center justify-center text-6xl font-black text-white pt-6">?</span>
        <span class="absolute top-3 left-3 rounded bg-teal-500 text-white text-xs font-medium uppercase px-2 py-0.5">Deal</span>`
     : `<img src="/assets/logo.svg" alt="" class="absolute w-12 left-1/2 -translate-x-1/2 ${p.id.startsWith("tote") ? "top-[55%]" : "top-[38%]"} brightness-0 invert">`;
-  return `<div class="relative bg-gray-50 rounded-lg flex items-center justify-center py-4">${shirt}${overlay}</div>`;
+  return `<div class="relative bg-gray-50 rounded-lg flex items-center justify-center h-52">${shirt}${overlay}</div>`;
 }
 
 function card(p) {
@@ -175,6 +182,7 @@ document.addEventListener("click", e => {
   if (!t || t.disabled) return;
   if (t.dataset.event) eventFilter = t.dataset.event;
   else if (t.dataset.size) { const [id, s] = t.dataset.size.split("|"); const p = find(id); p.sel = p.sel === s ? null : s; p.qty = 1; }
+  else if (t.dataset.view) { const [id, v] = t.dataset.view.split("|"); find(id).view = v; }
   else if (t.dataset.qty) { const [id, d] = t.dataset.qty.split("|"); find(id).qty += +d; }
   else if (t.dataset.add) { const p = find(t.dataset.add); add(p.id, chosenSize(p), p.qty); p.qty = 1; }
   else if (t.dataset.inc) { const [id, s] = t.dataset.inc.split("|"); add(id, s, 1); }
