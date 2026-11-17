@@ -1,9 +1,6 @@
 +++
 title = "BMT 2026 Lost and Found"
 date = 2026-11-14
-
-[extra]
-announcement = false
 +++
 
 We hope that you had a wonderful experience during the tournament this Saturday! Please note that following the tournament's end, we have found several lost items including:
