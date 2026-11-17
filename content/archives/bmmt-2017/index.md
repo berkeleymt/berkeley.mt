@@ -32,4 +32,5 @@ problems = "PuF2017.pdf"
 solutions = "PuF2017S.pdf"
 +++
 
+{% button_link(href="results.pdf") %} Contest Results {% end %}
 {% button_link(href="results-china.pdf") %} Contest Results (China) {% end %}
