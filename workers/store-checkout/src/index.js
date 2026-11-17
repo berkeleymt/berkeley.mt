@@ -13,7 +13,7 @@ const CATALOG = {
   "tote-bmmt-2026": { name: "BmMT 2026 Tote Bag", price: 1200, sizes: ["One size"] },
 };
 const SHIPPING = 500;
-const MAX_QTY = 20;
+const MAX_QTY = 100;
 
 const allowedOrigin = o =>
   o === "https://berkeley.mt" ||
