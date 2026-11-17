@@ -13,7 +13,7 @@ We hope that you had a wonderful experience during the tournament this Saturday!
 - Backpacks, tote bags
 - Jackets, sweatshirts, scarves and other items of clothing
 - Umbrellas
-- Other miscellaneous items.
+- Other miscellaneous items
 
 If one of them is yours, please email us at <team@berkeley.mt> with a description of the item and your mailing address so that we can ship it back to you. 
 
