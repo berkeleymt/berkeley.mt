@@ -55,7 +55,7 @@ Teams may spend as little or as much time as they would like on the test, as
 long as the test is submitted by 11:59 PM US Pacific Time on Sunday,
 November 29, 2026. Submission will be done via the [Gradescope] platform.
 Students and coaches will receive an email detailing how to access Gradescope
-shortly.
+before the event.
 
 {% alert(title="Submission Template Required", status="info") %}
 Teams must use the submission template provided in the Google Drive folder to
