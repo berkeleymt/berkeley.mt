@@ -77,9 +77,8 @@ BMT 2026 Online has two components:
 - **Asynchronous Power Round**: November 28–29, 2026
 - **Live Event**: December 5, 2026
 
-More details on the Power Round will be released closer to the event date.
-
-### Live Event Schedule
+The live event will take place on December 5, 2026. A **preliminary** schedule
+is provided below:
 
 | Time (US Pacific Time) | Event                      |
 | ---------------------- | -------------------------- |
@@ -90,41 +89,7 @@ More details on the Power Round will be released closer to the event date.
 | 2:00 – 3:00 PM         | Activities and Tiebreakers |
 | 3:00 – 4:00 PM         | Awards Ceremony            |
 
-### Zoom and Proctoring
-
-The entirety of the live event, including the Opening and Awards ceremonies, as
-well as the testing rounds, will take place on Zoom. Students should download
-the Zoom software to their computer prior to the event.
-
-{% alert(title="Camera Requirement for Awards Eligibility", status="info") %}
-Cameras are required for each student. Students must show their hands and their
-phone on the camera screen. Those without cameras during the competition will
-not be eligible for awards, including honorable mentions.
-{% end %}
-
-### Activities
-
-After the Guts Round, we will be hosting student activities. These are optional
-activities that promote recreational math, and include the following:
-
-- **Integration Bee** — Compete head to head against the best integrators around!
-  Students will face off in a tournament style bracket, solving difficult
-  integrals involving some clever tricks, to determine who will be the champion
-  of all integrators.
-
-- **Estimathon** — A contest combining trivia, strategic planning, and sharp
-  mathematical thinking. Teams will race against the clock to tackle a
-  challenging set of Fermi-style problems, testing their ability to think fast
-  and outsmart the competition.
-
-- **Countdown** — Miss the excitement of the MATHCOUNTS® Countdown Round? Come
-  show off your mental math skills in a countdown match to see who can solve
-  problems the fastest!
-
-### Awards
-
-Top-scoring individuals and teams will be announced at the Awards Ceremony from
-3:00 – 4:00 PM. There will not be physical awards for the online tournament.
+More details will be released closer to the event date.
 
 ## Contest Format
 
