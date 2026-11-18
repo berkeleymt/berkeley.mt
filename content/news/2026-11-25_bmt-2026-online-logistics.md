@@ -25,7 +25,7 @@ by emailing <team@berkeley.mt>.
 
 Registration for BMT 2026 Online will close on November 27, 2026 at 11:59 PM US
 Pacific Time. There is no check-in required for this event; however, no more
-roster changes can be made after November 28 at 7:00 AM US Pacific Time. Your
+roster changes can be made after November 27 at 11:59 PM US Pacific Time. Your
 team's roster and all waivers must be finalized before your team participates
 in any test.
 
@@ -36,18 +36,18 @@ any outstanding concerns with your team's roster, **please email
 
 ## 11/28–11/29 Power Round Logistics
 
-The asynchronous Power Round will take place over the span of 40 hours.
-The problems will be released on November 28, 2026 at 8:00 AM US
+The asynchronous Power Round will take place over the span of 41 hours.
+The problems will be released on November 28, 2026 at 7:00 AM US
 Pacific Time, and submissions will be due on November 29, 2026 at 11:59 PM US
 Pacific Time. The Power Round will be a proof-based team round and
 will be graded by our staff.
 
 | Time (US Pacific Time) | Event                 |
 | ---------------------- | --------------------- |
-| November 28, 8:00 AM   | Power Round Released  |
+| November 28, 7:00 AM   | Power Round Released  |
 | November 29, 11:59 PM  | Power Submissions Due |
 
-The test will be released in a Google Drive folder at 8:00 AM
+The test will be released in a Google Drive folder at 7:00 AM
 US Pacific Time on Saturday, November 28, 2026. The folder will be linked here
 when the Power Round opens.
 
