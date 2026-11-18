@@ -4,6 +4,7 @@
 # deadline lists update on their own in the browser; edit this file to change
 # dates or add news, then merge to main to deploy. Set `time = ""` on a
 # deadline that isn't due at 11:59 PM (the calendar feed shows that time).
+# Set `icon` to a Bootstrap icon name to mark a date that isn't a deadline.
 
 event_title = "BMT 2026 Online"
 event_page = "/events/bmt-2026-online/"
@@ -28,10 +29,19 @@ price = "$8"
 on = "2026-11-14"
 label = "In-person BMT 2026"
 time = ""
+icon = "people-fill"
 
 [[deadlines]]
 on = "2026-11-27"
 label = "Registration closes"
+
+[[deadlines]]
+on = "2026-11-27"
+label = "Students: all waivers signed on ContestDojo"
+
+[[deadlines]]
+on = "2026-11-27"
+label = "Students and coaches: team rosters finalized on ContestDojo"
 
 [[deadlines]]
 on = "2026-12-05"

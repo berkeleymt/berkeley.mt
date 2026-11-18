@@ -33,7 +33,7 @@
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   const group = list => {
     const out = [];
-    list.forEach(k => { const g = out.find(g => g.on === k.on && g.to === k.to); g ? g.items.push(k.label) : out.push({ on: k.on, to: k.to, items: [k.label] }); });
+    list.forEach(k => { const g = out.find(g => g.on === k.on && g.to === k.to); g ? (g.items.push(k.label), g.icon = g.icon || k.icon) : out.push({ on: k.on, to: k.to, icon: k.icon, items: [k.label] }); });
     return out.sort((p, q) => p.on.localeCompare(q.on));
   };
   const part = (s, o) => utcDate(s).toLocaleDateString("en-US", { timeZone: "UTC", ...o });
@@ -42,7 +42,7 @@
     : `${longDay(s)} – ${longDay(e)}`;
   const when = g => g.to ? range(g.on, g.to) : longDay(g.on);
   const cdHtml = (lines, done) => lines.map((l, i) => `<span class="cd${done || i ? " k" : ""}">${esc(l)}</span>`).join("");
-  const dlList = (gs, evDay) => gs.map(g => `<div><div class="d"><i class="${g.to ? "blk" : g.on === evDay ? "ev" : ""}"></i>${when(g)}</div><ul>${g.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("");
+  const dlList = (gs, evDay) => gs.map(g => `<div><div class="d"><i class="${g.icon ? `bi bi-${esc(g.icon)}` : g.to ? "blk" : g.on === evDay ? "ev" : ""}"></i>${when(g)}</div><ul>${g.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("");
 
   function render(el, ev, now, force) {
     const mode = el.dataset.mode;
@@ -155,7 +155,7 @@
     }
     h += `</div><div class="ticks">`;
     group(deadlines).forEach(g =>
-      h += `<button type="button" class="dia${g.on === ev.event_day ? " ev" : ""}${now >= endOf(g.on) ? " past" : ""}" style="left:${g.on === ev.event_day ? tl : x(dayNum(g.on) + (deadlines.some(k => k.on === g.on && k.time !== "") ? 1 : .5))}%" aria-label="${esc(longDay(g.on) + ": " + g.items.join(", "))}" data-day="${esc(longDay(g.on))}" data-items="${esc(JSON.stringify(g.items))}"></button>`);
+      h += `<button type="button" class="dia${g.icon ? " ico" : ""}${g.on === ev.event_day ? " ev" : ""}${now >= endOf(g.on) ? " past" : ""}" style="left:${g.on === ev.event_day ? tl : x(dayNum(g.on) + (deadlines.some(k => k.on === g.on && k.time !== "") ? 1 : .5))}%" aria-label="${esc(longDay(g.on) + ": " + g.items.join(", "))}" data-day="${esc(longDay(g.on))}" data-items="${esc(JSON.stringify(g.items))}">${g.icon ? `<i class="bi bi-${esc(g.icon)}"></i>` : ""}</button>`);
     h += `</div><div class="tip" hidden></div><div class="tline" style="left:${tl}%"></div>`;
     if (inRange) h += `<button type="button" class="today${evDays === 0 ? " ev" : ""}" style="left:${evDays === 0 ? tl : x(slot + .5)}%" aria-label="Today, ${esc(todayDate)}: ${esc(todayLines.join(", "))}" data-day="Today" data-date="${esc(todayDate)}" data-lines="${esc(JSON.stringify(todayLines))}"${regDone ? ' data-done="1"' : ""}></button>`;
     h += `<div class="axis">`;
