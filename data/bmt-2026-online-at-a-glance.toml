@@ -10,7 +10,7 @@ event_page = "/events/bmt-2026-online/"
 date_text = "Saturday, December 5, 2026, online"
 opens = "2026-09-14T09:00"
 event_day = "2026-12-05"
-event_starts = ""
+event_starts = "08:30"
 event_label = "Live Event"
 # Set to the archive page once results are posted, e.g. "/archives/bmt-2026/".
 results = ""
