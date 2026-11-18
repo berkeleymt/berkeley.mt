@@ -46,10 +46,9 @@ will be graded by our staff.
 | November 28, **[TBD]**      | Power Round Released  |
 | November 29, **[TBD]**      | Power Submissions Due |
 
-The test will be released at this Google Drive link at **[TBD: release time]**
-US Pacific Time on Saturday, November 28, 2026:
-
-**[TBD: Power Round Google Drive folder link]**
+The test will be released in a Google Drive folder at **[TBD: release time]**
+US Pacific Time on Saturday, November 28, 2026. The folder will be linked here
+when the Power Round opens.
 
 Teams may spend as little or as much time as they would like on the test, as
 long as the test is submitted by **[TBD: due time]** US Pacific Time on Sunday,
@@ -152,7 +151,7 @@ activities that promote recreational math, and include the following:
   of all integrators.
 
 - **Estimathon** — A contest combining trivia, strategic planning, and sharp
-  mathematical thinking. Teams of **[TBD: team size]** will race against the
+  mathematical thinking. Teams of 3 will race against the
   clock to tackle a challenging set of **[TBD: number]** Fermi-style problems,
   testing their ability to think fast and outsmart the competition.
 
