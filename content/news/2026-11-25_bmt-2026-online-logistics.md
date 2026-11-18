@@ -24,9 +24,9 @@ by emailing <team@berkeley.mt>.
 ## Registration and Check-in
 
 Registration for BMT 2026 Online will close on November 27, 2026 at 11:59 PM US
-Pacific Time. There is no check-in required for this event; however, no more
-roster changes can be made after November 28 at **[TBD: roster lock time]** US
-Pacific Time.
+Pacific Time. There is no check-in required for this event; however, your
+team's roster and all waivers must be finalized before your team participates
+in any test.
 
 Coaches, please ensure that all students are assigned to teams (you have dragged
 them **out** of the "Unassigned Students" section on ContestDojo). If there are
@@ -161,8 +161,8 @@ activities that promote recreational math, and include the following:
 
 ## Waivers
 
-If your waiver is not yet signed, please have it signed before the opening
-ceremony. You will not be allowed to participate in any of the events without
+Your team's roster and all waivers must be finalized before your team
+participates in any test. You will not be allowed to participate in any of the events without
 having your waiver signed, and no extra time will be given if you are unable to
 start due to not having a signed waiver.
 
