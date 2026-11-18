@@ -25,6 +25,7 @@ can participate.
 {{ at_a_glance(data="data/bmt-2026-online-at-a-glance.toml", href="/bmt-2026-online/at-a-glance/") }}
 
 {% button_link(href="https://contestdojo.com/") %} Registration Portal {% end %}
+{% button_link(href="/news/bmt-2026-online-logistics/") %} Logistics Page {% end %}
 
 ## Registration, Waivers, and Pricing
 
@@ -89,7 +90,7 @@ is provided below:
 | 2:00 – 3:00 PM         | Activities and Tiebreakers |
 | 3:00 – 4:00 PM         | Awards Ceremony            |
 
-More details will be released closer to the event date.
+For more details, see our [logistics page](/news/bmt-2026-online-logistics/).
 
 ## Contest Format
 
