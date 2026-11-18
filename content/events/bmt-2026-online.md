@@ -77,6 +77,18 @@ BMT 2026 Online has two components:
 - **Asynchronous Power Round**: November 28–29, 2026
 - **Live Event**: December 5, 2026
 
+The live event will take place on December 5, 2026. A **preliminary** schedule
+is provided below:
+
+| Time (US Pacific Time) | Event                      |
+| ---------------------- | -------------------------- |
+| 8:30 – 9:00 AM         | Opening Ceremony           |
+| 9:00 – 11:15 AM        | General / Focus            |
+| 11:15 AM – 12:15 PM    | Break                      |
+| 12:15 – 2:00 PM        | Guts                       |
+| 2:00 – 3:00 PM         | Activities and Tiebreakers |
+| 3:00 – 4:00 PM         | Awards Ceremony            |
+
 More details will be released closer to the event date.
 
 ## Contest Format
