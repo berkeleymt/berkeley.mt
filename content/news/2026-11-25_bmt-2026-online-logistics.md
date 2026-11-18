@@ -111,8 +111,8 @@ containing their sign-in details. If students are having trouble logging in or
 locating the BMT 2026 Online event, please try the Forgot Password function, or
 email <team@berkeley.mt> for assistance.
 
-A sample test will be opened on ContestDojo **[TBD: date]** for students to
-familiarize themselves with the platform. A brief guide on how to use the site
+A sample test will be opened on ContestDojo for students to familiarize
+themselves with the platform. A brief guide on how to use the site
 will also be shown during the opening ceremony, though we highly encourage
 students to try the sample test beforehand to ensure a smooth process.
 
