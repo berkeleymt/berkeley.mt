@@ -129,9 +129,8 @@ you were not called for the tiebreaker round, this does _not_ mean you did not
 place in the top five.
 
 If necessary, additional tiebreaker rounds will be held as needed for top
-scorers in the Individual Round. Tiebreaker qualifiers will be announced after
-the Guts Round and will take a 15-minute test during
-the activities session. The test will consist of either three (for the Focus
+scorers in the Individual Round. Tiebreaker qualifiers will be announced at the
+end of lunch and will take a 15-minute test during the activities session. The test will consist of either three (for the Focus
 Tests) or five (for the General Test) questions and be scored primarily on
 correctness and secondarily on submission time; that is, an earlier submission
 will be worth more than a later one with the same number of correct answers, but
