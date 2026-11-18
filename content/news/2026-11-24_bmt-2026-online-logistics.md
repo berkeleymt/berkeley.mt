@@ -169,8 +169,7 @@ start due to not having a signed waiver.
 
 Top-scoring individuals and teams will be announced at the Awards Ceremony from
 3:00 – 4:00 PM. For BMT Online, we will provide an official ranking as well as
-certificates for top-scoring teams. However, there will not be physical awards
-for the online tournament.
+certificates for top-scoring teams.
 
 ## Frequently Asked Questions
 
