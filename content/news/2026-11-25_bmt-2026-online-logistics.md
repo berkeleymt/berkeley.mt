@@ -24,7 +24,8 @@ by emailing <team@berkeley.mt>.
 ## Registration and Check-in
 
 Registration for BMT 2026 Online will close on November 27, 2026 at 11:59 PM US
-Pacific Time. There is no check-in required for this event; however, your
+Pacific Time. There is no check-in required for this event; however, no more
+roster changes can be made after November 28 at 7:00 AM US Pacific Time. Your
 team's roster and all waivers must be finalized before your team participates
 in any test.
 
@@ -35,23 +36,23 @@ any outstanding concerns with your team's roster, **please email
 
 ## 11/28–11/29 Power Round Logistics
 
-The asynchronous Power Round will take place over the span of **[TBD]** hours.
-The problems will be released on November 28, 2026 at **[TBD: release time]** US
-Pacific Time, and submissions will be due on November 29, 2026 at **[TBD: due
-time]** US Pacific Time. The Power Round will be a proof-based team round and
+The asynchronous Power Round will take place over the span of 40 hours.
+The problems will be released on November 28, 2026 at 8:00 AM US
+Pacific Time, and submissions will be due on November 29, 2026 at 11:59 PM US
+Pacific Time. The Power Round will be a proof-based team round and
 will be graded by our staff.
 
-| Time (US Pacific Time)      | Event                 |
-| --------------------------- | --------------------- |
-| November 28, **[TBD]**      | Power Round Released  |
-| November 29, **[TBD]**      | Power Submissions Due |
+| Time (US Pacific Time) | Event                 |
+| ---------------------- | --------------------- |
+| November 28, 8:00 AM   | Power Round Released  |
+| November 29, 11:59 PM  | Power Submissions Due |
 
-The test will be released in a Google Drive folder at **[TBD: release time]**
+The test will be released in a Google Drive folder at 8:00 AM
 US Pacific Time on Saturday, November 28, 2026. The folder will be linked here
 when the Power Round opens.
 
 Teams may spend as little or as much time as they would like on the test, as
-long as the test is submitted by **[TBD: due time]** US Pacific Time on Sunday,
+long as the test is submitted by 11:59 PM US Pacific Time on Sunday,
 November 29, 2026. Submission will be done via the [Gradescope] platform.
 Students and coaches will receive an email detailing how to access Gradescope
 shortly.
@@ -92,8 +93,7 @@ below:
 The entirety of the event, including the Opening and Awards ceremonies, as well
 as the testing rounds, will take place on [Zoom], video conferencing software.
 Students should download the Zoom software to their computer prior to the event.
-The Zoom meeting link will be sent to students **[TBD: when, e.g. the day before
-the event]**.
+The Zoom meeting link will be sent to students before the live event.
 
 {% alert(title="Camera Requirement for Awards Eligibility", status="info") %}
 Cameras are required for each student. Students must show their hands and their
