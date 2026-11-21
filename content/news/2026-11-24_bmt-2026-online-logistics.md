@@ -18,8 +18,9 @@ logistics of the event!
 
 ## Important Information
 
-For any questions or concerns before or during the event, ask a BMT staff member
-by emailing <team@berkeley.mt>.
+For any immediate questions before and during the competition, please check our
+[FAQ Page](/faqs/). If you have any additional questions, send us an email at
+<team@berkeley.mt>.
 
 ## Registration and Check-in
 
