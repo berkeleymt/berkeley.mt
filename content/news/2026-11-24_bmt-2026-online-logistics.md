@@ -152,7 +152,7 @@ activities that promote recreational math, and include the following:
 
 - **Estimathon** — A contest combining trivia, strategic planning, and sharp
   mathematical thinking. Teams of 3 will race against the
-  clock to tackle a challenging set of **[TBD: number]** Fermi-style problems,
+  clock to tackle a challenging set of 13 Fermi-style problems,
   testing their ability to think fast and outsmart the competition.
 
 - **Countdown** — Miss the excitement of the MATHCOUNTS® Countdown Round? Come
