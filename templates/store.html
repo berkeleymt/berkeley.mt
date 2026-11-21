@@ -102,7 +102,7 @@ function shirtImg(p) {
     const tabs = p.views.length > 1 ? `<div class="absolute bottom-2 inset-x-0 flex justify-center gap-1">${p.views.map(x =>
       `<button data-view="${p.id}|${x}" class="px-2 py-0.5 rounded text-xs ${x === v ? "bg-teal-500 text-white" : "bg-white/90 border border-gray-300 text-gray-600"}">${x}</button>`).join("")}</div>` : "";
     return `<div class="relative bg-white border border-gray-100 rounded-lg flex items-center justify-center h-52 ${tabs ? "pb-6" : ""}">
-      <img src="/store/${v === "Front" ? p.event.toLowerCase() : p.id}-${v.toLowerCase()}.webp" alt="${p.name} ${v.toLowerCase()} design" class="w-40 h-40 object-contain">${tabs}</div>`;
+      <img src="/store/${v === "Front" ? p.event.toLowerCase() + "-front.svg" : p.id + "-" + v.toLowerCase() + ".webp"}" alt="${p.name} ${v.toLowerCase()} design" class="w-40 h-40 object-contain">${tabs}</div>`;
   }
   const shirt = p.id.startsWith("tote")
     ? `<svg viewBox="0 0 200 200" class="w-40 h-40"><path d="M70 60 C70 20 130 20 130 60" fill="none" stroke="#a8977a" stroke-width="8"/><rect x="40" y="60" width="120" height="125" rx="4" fill="${p.color}" stroke="rgba(0,0,0,.2)" stroke-width="2"/></svg>`
