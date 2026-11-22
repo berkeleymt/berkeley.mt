@@ -159,6 +159,9 @@ activities that promote recreational math, and include the following:
   show off your mental math skills in a countdown match to see who can solve
   problems the fastest!
 
+We may also be handing out shirts and merch during the activities, so come join
+us!
+
 ## Waivers
 
 Your team's roster and all waivers must be finalized before your team
