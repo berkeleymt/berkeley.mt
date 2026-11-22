@@ -1,5 +1,8 @@
 +++
 title = "Registration is open for BMT 2026 and BMT 2026 Online!"
+
+[extra]
+announcement = false
 +++
 
 We're excited to announce that registration for the 2026 Berkeley Math

@@ -70,13 +70,6 @@
 
 {# The three most recent news posts, excluding those with extra.announcement = false #}
 <div class="flex flex-col gap-4">
-  {{ self::post_notification(
-    title="Thank you for coming to BMT 2026!",
-    href="https://live.berkeley.mt/updates/#1648-thank-you-for-coming-to-bmt-2026",
-    class="bg-fuchsia-50 hover:bg-fuchsia-100 border-fuchsia-200",
-    icon_class="bi-heart-fill",
-    label="BMT 2026",
-  ) }}
   {% set news_section = get_section(path="news/_index.md") %}
   {% set_global announcements_shown = 0 %}
   {% for news_post in news_section.pages %}
