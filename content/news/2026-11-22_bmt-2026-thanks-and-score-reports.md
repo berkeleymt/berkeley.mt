@@ -1,5 +1,5 @@
 +++
-title = "Thanks for coming to BMT 2026! Score reports are out"
+title = "Thanks for coming to BMT 2026 — Score Reports Released"
 date = 2026-11-22
 +++
 
