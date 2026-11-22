@@ -62,6 +62,8 @@ more memories together next year!
 Sincerely,\
 Your friends @ the Berkeley Math Tournament
 
+![BMT 2026 Group Photo](/assets/bmt-2026/group-photo.jpg)
+
 {% name_wall() %}
 Aadharsh Rajeshwaran
 Aahan Mahakud
