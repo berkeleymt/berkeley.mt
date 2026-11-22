@@ -50,7 +50,7 @@ on Saturday, November 29, 2025:
 <https://drive.google.com/drive/folders/1FUnNBNL8E64M-3U8DEvxUVQh3tCdGLQh?usp=sharing>
 
 Teams may spend as little or as much time as they would like on the test, as
-long as the test is submitted by 8:59 PM US Pacific Time on Sunday, November
+long as the test is submitted by 11:59 PM US Pacific Time on Sunday, November
 30, 2025. Submission will be done via the [Gradescope] platform. Students and
 coaches will receive an email detailing how to access Gradescope shortly.
 
