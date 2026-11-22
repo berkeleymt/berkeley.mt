@@ -355,6 +355,48 @@ register and form teams with other students without a coach.
 </details>
 
 <details>
+<summary>What should coaches/parents do during the online tournament?</summary>
+
+Coaches/parents should help their students log into Zoom and their ContestDojo
+student accounts; no further action is required from coaches on the day of the
+event. As long as all of your students are successfully registered (placed on a
+team and their waivers are signed), then you are all set! Coaches are welcome to
+join the Opening and Award Ceremonies. Due to Zoom capacity restrictions, we ask
+that parents watch the Opening and Award Ceremonies with their children on the
+same device.
+
+</details>
+
+<details>
+<summary>Will students be penalized for not attending the Opening Ceremony?</summary>
+
+We will go over the schedule and how to navigate ContestDojo during the opening
+ceremony, so we strongly encourage students to attend. While there is no score
+penalty for missing the opening ceremony, students who encounter difficulties
+navigating ContestDojo will not receive extra time. Please be sure to attend the
+opening ceremony to familiarize yourself with the platform.
+
+</details>
+
+<details>
+<summary>Can students be in the same room while taking the individual test?</summary>
+
+Yes. During the Individual round, students may be in the same room, but they
+must work independently. Each student should submit answers on their own device
+and refrain from communicating. We will be monitoring submissions for suspicious
+patterns and activity.
+
+</details>
+
+<details>
+<summary>Can students on the same team work together in person on team rounds?</summary>
+
+Yes! We encourage students on the same team to collaborate in person or online
+during team-based rounds.
+
+</details>
+
+<details>
 <summary>Are there awards for the online tournament?</summary>
 
 For online tournaments, the top 50% receive Honorable Mention, the top 25%
