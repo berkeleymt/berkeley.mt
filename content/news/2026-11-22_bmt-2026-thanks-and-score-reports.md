@@ -1,9 +1,6 @@
 +++
 title = "Thanks for coming to BMT 2026! Score reports are out"
 date = 2026-11-22
-
-[extra]
-announcement = false
 +++
 
 To all coaches, students, and parents,
