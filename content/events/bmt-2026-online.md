@@ -74,8 +74,10 @@ BMT 2026 Online Teammate Finder
 
 BMT 2026 Online has two components:
 
-- **Asynchronous Power Round**: November 28, 2026 at 7:00 AM – November 29, 2026
-  at 11:59 PM US Pacific Time
+- **Asynchronous Power Round**: November 28-29, 2026
+
+The problems will be released on November 28, 2026 at 7:00 AM US Pacific Time, and submissions will be due on November 29, 2026 at 11:59 PM US Pacific Time. 
+  
 - **Live Event**: December 5, 2026
 
 The live event will take place on December 5, 2026. A **preliminary** schedule
