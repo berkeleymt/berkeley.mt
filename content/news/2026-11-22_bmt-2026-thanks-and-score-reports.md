@@ -62,10 +62,6 @@ more memories together next year!
 Sincerely,\
 Your friends @ the Berkeley Math Tournament
 
-## Our volunteers
-
-BMT 2026 was run by 328 volunteers. Thank you to every one of them:
-
 {% name_wall() %}
 Aadharsh Rajeshwaran
 Aahan Mahakud
