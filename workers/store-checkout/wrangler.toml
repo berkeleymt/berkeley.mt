@@ -1,0 +1,14 @@
+name = "bmt-store-checkout"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+preview_urls = false
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bmt-store"
+database_id = "0bc7acf3-096e-4a89-b11e-e390c5e236f5"
+
+# Finalize paid checkouts and return stock from expired ones.
+[triggers]
+crons = ["*/2 * * * *"]

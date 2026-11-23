@@ -1,0 +1,237 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex flex-col gap-3">
+  <h1 class="text-3xl font-semibold">{{ page.title }}</h1>
+  <div class="prose">{{ page.content | safe }}</div>
+  <div id="paid" class="hidden bg-teal-50 border border-teal-200 p-4 rounded-xl flex flex-col gap-1">
+    <p class="uppercase text-xs text-gray-500 flex gap-2 items-center"><i class="bi bi-check-circle-fill"></i> Order placed</p>
+    <p class="font-medium">Thanks! You'll get a receipt by email.</p>
+  </div>
+  <div class="bg-orange-50 border border-orange-200 p-4 rounded-xl flex flex-col gap-1">
+    <p class="uppercase text-xs text-gray-500 flex gap-2 items-center"><i class="bi bi-exclamation-circle-fill"></i> Test mockup</p>
+    <p class="font-medium">Inventory is fake, but checkout is live: real cards are charged. Refund test orders in Stripe.</p>
+  </div>
+</div>
+
+<div class="flex flex-col lg:flex-row gap-8 items-start">
+  <div class="flex-1 flex flex-col gap-4 w-full">
+    <div class="flex flex-wrap justify-between items-center gap-3 text-sm">
+    <div id="event-filter" class="flex gap-1.5">
+      <button data-event="all" class="px-3 py-1 rounded-lg border">All</button>
+      <button data-event="BMT" class="px-3 py-1 rounded-lg border">BMT</button>
+      <button data-event="BmMT" class="px-3 py-1 rounded-lg border">BmMT</button>
+    </div>
+    <label class="flex items-center gap-2">Sort by
+      <span class="relative">
+        <select id="sort" class="appearance-none border border-gray-300 rounded-lg bg-white pl-3 pr-9 py-1 cursor-pointer">
+          <option value="new">Newest first</option>
+          <option value="old">Oldest first</option>
+        </select>
+        <i class="bi bi-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-xs pointer-events-none"></i>
+      </span>
+    </label>
+    </div>
+    <section id="products" class="grid grid-cols-1 sm:grid-cols-2 gap-6"></section>
+  </div>
+
+  <aside class="w-full lg:w-80 lg:sticky lg:top-8 border border-gray-200 bg-white rounded-xl p-5 flex flex-col gap-4">
+    <h2 class="text-xl font-bold">Cart</h2>
+    <ul id="cart-items" class="flex flex-col gap-3 text-sm"></ul>
+    <div class="flex flex-col gap-2 text-sm">
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 flex flex-col gap-1">
+        <p class="uppercase text-xs text-gray-500 flex gap-2 items-center"><i class="bi bi-info-circle-fill"></i> Outside the US?</p>
+        <p>Don't check out here. Email <a class="text-blue-500 font-medium" href="mailto:team@berkeley.mt">team@berkeley.mt</a> with what you want and we'll send a shipping quote and payment link.</p>
+      </div>
+      <label class="flex items-start gap-2 cursor-pointer">
+        <input type="radio" name="delivery" value="ship" checked class="mt-1">
+        <span class="flex-1"><span class="flex justify-between font-medium"><span>Ship to me</span><span>$5</span></span><span class="text-gray-500">Flat rate, US addresses only.</span></span>
+      </label>
+      <label class="flex items-start gap-2 cursor-pointer">
+        <input type="radio" name="delivery" value="pickup" class="mt-1">
+        <span class="flex-1"><span class="flex justify-between font-medium"><span>Pick up in Berkeley</span><span>Free</span></span><span class="text-gray-500">On select days. We'll email you to set a time.</span></span>
+      </label>
+    </div>
+    <dl class="text-sm grid grid-cols-2 gap-y-1 border-t border-gray-200 pt-3">
+      <dt>Subtotal</dt><dd id="subtotal" class="text-right">$0.00</dd>
+      <dt>Shipping</dt><dd id="shipping" class="text-right">$0.00</dd>
+      <dt class="font-semibold">Total</dt><dd id="total" class="text-right font-semibold">$0.00</dd>
+    </dl>
+    <button id="checkout" class="rounded bg-teal-500 text-white font-medium py-2 shadow hover:-translate-y-0.5 hover:shadow-lg transition-all disabled:bg-gray-300 disabled:shadow-none disabled:translate-y-0">Checkout</button>
+  </aside>
+</div>
+
+<script>
+const STORE_API = "https://bmt-store-checkout.andrew-js-ku.workers.dev";
+const MAX_QTY = 100; // per line; matches the checkout worker
+const SIZES = ["XS", "S", "M", "L", "XL", "2XL"];
+const products = [
+  { id: "bmmt-2026", views: ["Front", "Back"], name: "BmMT 2026 Shirt", event: "BmMT", date: "2026-04", price: 9, color: "#0891b2", stock: { XS: 10, S: 22, M: 16, L: 9, XL: 4, "2XL": 1 } },
+  { id: "bmt-2025", views: ["Front", "Back"], name: "BMT 2025 Shirt", event: "BMT", date: "2025-11", price: 9, color: "#2563eb", stock: { XS: 4, S: 12, M: 20, L: 18, XL: 7, "2XL": 0 } },
+  { id: "bmmt-2025", views: ["Front", "Back"], name: "BmMT 2025 Shirt", event: "BmMT", date: "2025-04", price: 9, color: "#059669", stock: { XS: 9, S: 15, M: 11, L: 3, XL: 0, "2XL": 2 } },
+  { id: "bmt-2024", views: ["Front", "Back"], name: "BMT 2024 Shirt", event: "BMT", date: "2024-11", price: 9, color: "#7c3aed", stock: { XS: 0, S: 6, M: 14, L: 10, XL: 5, "2XL": 1 } },
+  { id: "bmmt-2024", views: ["Front", "Back"], name: "BmMT 2024 Shirt", event: "BmMT", date: "2024-04", price: 9, color: "#ea580c", stock: { XS: 2, S: 8, M: 0, L: 4, XL: 6, "2XL": 0 } },
+  { id: "bmt-2023", views: ["Front", "Back"], name: "BMT 2023 Shirt", event: "BMT", date: "2023-11", price: 9, color: "#dc2626", stock: { XS: 0, S: 3, M: 5, L: 2, XL: 0, "2XL": 0 } },
+];
+const mystery = { id: "mystery", name: "Mystery Shirt", price: 8, color: "#374151",
+  blurb: "Pick a size, we pick the tournament. It could be from any past BMT or BmMT." };
+mystery.stock = Object.fromEntries(SIZES.map(s => [s, products.reduce((n, p) => n + p.stock[s], 0)]));
+const tote = { id: "tote-bmmt-2026", name: "BmMT 2026 Tote Bag", event: "BmMT", date: "2026-04", price: 12, color: "#d6c7a1", stock: { "One size": 25 } };
+
+const cart = {};
+let eventFilter = "all";
+const money = n => "$" + n.toFixed(2);
+const inCart = (id, size) => cart[id + "|" + size]?.qty || 0;
+const all = [...products, mystery, tote];
+const find = id => all.find(p => p.id === id);
+// Mystery shirts draw from the same physical stock as named designs.
+function left(p, size) {
+  if (p.id === "mystery") return mystery.stock[size] - inCart("mystery", size) - products.reduce((n, q) => n + inCart(q.id, size), 0);
+  const base = p.stock[size] - inCart(p.id, size);
+  return products.includes(p) ? Math.min(base, mystery.stock[size] - inCart("mystery", size) - products.reduce((n, q) => n + inCart(q.id, size), 0)) : base;
+}
+
+// Live counts from the checkout server; the numbers above are only a fallback.
+function applyStock(d) {
+  for (const p of [...products, tote]) if (d.stock[p.id]) p.stock = { ...p.stock, ...d.stock[p.id] };
+  if (d.pool) mystery.stock = { ...mystery.stock, ...d.pool };
+  for (const i of Object.values(cart)) while (i.qty > 0 && left(i.p, i.size) < 0) i.qty--;
+}
+
+function chosenSize(p) {
+  const sizes = Object.keys(p.stock);
+  return sizes.length === 1 ? sizes[0] : p.sel;
+}
+
+function shirtImg(p) {
+  if (p.views) {
+    const v = p.view || "Back";
+    const tabs = p.views.length > 1 ? `<div class="absolute bottom-2 inset-x-0 flex justify-center gap-1">${p.views.map(x =>
+      `<button data-view="${p.id}|${x}" class="px-2 py-0.5 rounded text-xs ${x === v ? "bg-teal-500 text-white" : "bg-white/90 border border-gray-300 text-gray-600"}">${x}</button>`).join("")}</div>` : "";
+    return `<div class="relative bg-white border border-gray-100 rounded-lg flex items-center justify-center h-52 ${tabs ? "pb-6" : ""}">
+      <img src="/store/${v === "Front" ? p.event.toLowerCase() + "-front.svg" : p.id + "-" + v.toLowerCase() + ".webp"}" alt="${p.name} ${v.toLowerCase()} design" class="w-40 h-40 object-contain">${tabs}</div>`;
+  }
+  const shirt = p.id.startsWith("tote")
+    ? `<svg viewBox="0 0 200 200" class="w-40 h-40"><path d="M70 60 C70 20 130 20 130 60" fill="none" stroke="#a8977a" stroke-width="8"/><rect x="40" y="60" width="120" height="125" rx="4" fill="${p.color}" stroke="rgba(0,0,0,.2)" stroke-width="2"/></svg>`
+    : `<svg viewBox="0 0 200 200" class="w-40 h-40" style="color:${p.color}"><path d="M70 22 L40 34 L12 64 L36 88 L50 76 L50 182 L150 182 L150 76 L164 88 L188 64 L160 34 L130 22 C126 36 114 44 100 44 C86 44 74 36 70 22 Z" fill="currentColor" stroke="rgba(0,0,0,.25)" stroke-width="2" stroke-linejoin="round"/></svg>`;
+  const overlay = p.id === "mystery"
+    ? `<span class="absolute inset-0 flex items-center justify-center text-6xl font-black text-white pt-6">?</span>
+       <span class="absolute top-3 left-3 rounded bg-teal-500 text-white text-xs font-medium uppercase px-2 py-0.5">Deal</span>`
+    : `<img src="/assets/logo.svg" alt="" class="absolute w-12 left-1/2 -translate-x-1/2 ${p.id.startsWith("tote") ? "top-[55%]" : "top-[38%]"} brightness-0 invert">`;
+  return `<div class="relative bg-gray-50 rounded-lg flex items-center justify-center h-52">${shirt}${overlay}</div>`;
+}
+
+function card(p) {
+  const sizes = Object.keys(p.stock);
+  const sel = p.sel && left(p, p.sel) > 0 ? p.sel : null;
+  const btns = sizes.map(s => {
+    const n = left(p, s);
+    return `<button data-size="${p.id}|${s}" ${n <= 0 ? "disabled" : ""}
+      class="px-2.5 py-1 rounded-lg border text-sm ${s === sel ? "border-teal-500 bg-teal-50 text-teal-700 font-medium" : "border-gray-300 bg-white"} disabled:text-gray-300 disabled:line-through disabled:border-gray-200">${s}</button>`;
+  }).join("");
+  const n = sel ? left(p, sel) : null;
+  const size = chosenSize(p), max = size ? Math.min(left(p, size), MAX_QTY - inCart(p.id, size)) : 0;
+  p.qty = Math.max(1, Math.min(p.qty || 1, max));
+  return `<div class="border border-gray-200 bg-white rounded-xl p-4 flex flex-col gap-3">
+    ${shirtImg(p)}
+    <div class="flex justify-between items-baseline"><h3 class="font-bold">${p.name}</h3><span class="font-medium">${money(p.price)}</span></div>
+    ${p.blurb ? `<p class="text-sm text-gray-600">${p.blurb}</p>` : ""}
+    ${sizes.length > 1 ? `<div class="flex flex-wrap gap-1.5">${btns}</div>` : ""}
+    <p class="text-xs text-gray-500 h-4">${sizes.length === 1 ? left(p, sizes[0]) + " left" : sel ? (n <= 5 ? `Only ${n} left in ${sel}` : `${n} left in ${sel}`) : "Select a size"}</p>
+    <div class="flex gap-2">
+      ${max > 0 ? `<div class="flex items-center rounded-lg border border-gray-300 text-sm">
+        <button data-qty="${p.id}|-1" ${p.qty > 1 ? "" : "disabled"} class="w-8 h-full disabled:text-gray-300">−</button>
+        <span class="w-6 text-center">${p.qty}</span>
+        <button data-qty="${p.id}|1" ${p.qty < max ? "" : "disabled"} class="w-8 h-full disabled:text-gray-300">+</button>
+      </div>` : ""}
+      <button data-add="${p.id}" ${max > 0 ? "" : "disabled"}
+        class="flex-1 rounded border-2 border-teal-500 bg-white text-teal-700 text-sm font-medium py-1.5 hover:bg-teal-50 transition-colors disabled:border-gray-200 disabled:text-gray-400 disabled:bg-white">Add to cart</button>
+    </div>
+  </div>`;
+}
+
+function render() {
+  document.querySelectorAll("[data-event]").forEach(b => b.className = "px-3 py-1 rounded-lg border " +
+    (b.dataset.event === eventFilter ? "border-teal-500 bg-teal-50 text-teal-700 font-medium" : "border-gray-300 bg-white"));
+  const dir = document.getElementById("sort").value === "old" ? 1 : -1;
+  const sorted = [...products, tote].filter(p => eventFilter === "all" || p.event === eventFilter).sort((a, b) => dir * a.date.localeCompare(b.date));
+  document.getElementById("products").innerHTML = [mystery, ...sorted].map(card).join("");
+  const items = Object.values(cart).filter(i => i.qty > 0);
+  document.getElementById("cart-items").innerHTML = items.length
+    ? items.map(i => `<li class="flex justify-between items-center gap-2">
+        <span>${i.p.name}${i.size !== "One size" ? ` <span class="text-gray-500">(${i.size})</span>` : ""}</span>
+        <span class="flex items-center gap-2 shrink-0">
+          <button data-dec="${i.p.id}|${i.size}" class="w-6 h-6 rounded border border-gray-300">−</button>${i.qty}
+          <button data-inc="${i.p.id}|${i.size}" ${left(i.p, i.size) <= 0 || i.qty >= MAX_QTY ? "disabled" : ""} class="w-6 h-6 rounded border border-gray-300 disabled:text-gray-300">+</button>
+          <span class="w-14 text-right">${money(i.qty * i.p.price)}</span>
+          <button data-del="${i.p.id}|${i.size}" aria-label="Remove" class="text-gray-400 hover:text-rose-600"><i class="bi bi-trash3"></i></button></span></li>`).join("")
+    : `<li class="text-gray-500">Your cart is empty.</li>`;
+  const sub = items.reduce((n, i) => n + i.qty * i.p.price, 0);
+  const ship = items.length && document.querySelector("input[name=delivery]:checked").value === "ship" ? 5 : 0;
+  document.getElementById("subtotal").textContent = money(sub);
+  document.getElementById("shipping").textContent = money(ship);
+  document.getElementById("total").textContent = money(sub + ship);
+  document.getElementById("checkout").disabled = !items.length;
+  localStorage.setItem("bmt-cart", JSON.stringify({
+    delivery: document.querySelector("input[name=delivery]:checked").value,
+    items: items.map(i => [i.p.id, i.size, i.qty]),
+  }));
+}
+
+function add(id, size, d) {
+  const k = id + "|" + size;
+  cart[k] ??= { p: find(id), size, qty: 0 };
+  cart[k].qty = Math.max(0, cart[k].qty + d);
+}
+
+document.addEventListener("click", e => {
+  const t = e.target.closest("button");
+  if (!t || t.disabled) return;
+  if (t.dataset.event) eventFilter = t.dataset.event;
+  else if (t.dataset.size) { const [id, s] = t.dataset.size.split("|"); const p = find(id); p.sel = p.sel === s ? null : s; p.qty = 1; }
+  else if (t.dataset.view) { const [id, v] = t.dataset.view.split("|"); find(id).view = v; }
+  else if (t.dataset.qty) { const [id, d] = t.dataset.qty.split("|"); find(id).qty += +d; }
+  else if (t.dataset.add) { const p = find(t.dataset.add); add(p.id, chosenSize(p), p.qty); p.qty = 1; }
+  else if (t.dataset.inc) { const [id, s] = t.dataset.inc.split("|"); add(id, s, 1); }
+  else if (t.dataset.del) delete cart[t.dataset.del];
+  else if (t.dataset.dec) { const [id, s] = t.dataset.dec.split("|"); add(id, s, -1); }
+  else if (t.id === "checkout") { checkout(t); return; }
+  else return;
+  render();
+});
+async function checkout(btn) {
+  btn.disabled = true; btn.textContent = "Opening checkout…";
+  try {
+    const r = await fetch(STORE_API + "/checkout", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        delivery: document.querySelector("input[name=delivery]:checked").value,
+        items: Object.values(cart).filter(i => i.qty > 0).map(i => ({ id: i.p.id, size: i.size, qty: i.qty })),
+      }),
+    });
+    const d = await r.json();
+    if (d.stock) { applyStock(d); render(); }
+    if (!r.ok || !d.url) throw new Error(d.error || "Checkout failed");
+    location.href = d.url;
+  } catch (e) {
+    alert(e.message);
+    btn.disabled = false; btn.textContent = "Checkout";
+  }
+}
+if (new URLSearchParams(location.search).has("paid")) {
+  document.getElementById("paid").classList.remove("hidden");
+  localStorage.removeItem("bmt-cart");
+}
+try {
+  const saved = JSON.parse(localStorage.getItem("bmt-cart") || "{}");
+  for (const [id, size, qty] of saved.items || []) if (find(id)) add(id, size, Math.min(qty, left(find(id), size)));
+  const r = document.querySelector(`input[name=delivery][value="${saved.delivery}"]`);
+  if (r) r.checked = true;
+} catch {}
+addEventListener("pageshow", () => { const b = document.getElementById("checkout"); b.textContent = "Checkout"; render(); });
+document.querySelectorAll("input[name=delivery], #sort").forEach(r => r.addEventListener("change", render));
+render();
+fetch(STORE_API + "/stock").then(r => r.json()).then(d => { applyStock(d); render(); }).catch(() => {});
+</script>
+{% endblock %}
