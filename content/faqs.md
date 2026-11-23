@@ -145,7 +145,7 @@ commuting from San Francisco or the East Bay.
 If you prefer to drive, there are a number of parking garages near campus,
 including:
 
-- Telegraph-Channing Garage _(recommended — cheaper than campus garages and
+- Telegraph Channing Garage _(recommended — cheaper than campus garages and
   free up to an hour)_
 - Underhill Garage
 - RSF Garage
