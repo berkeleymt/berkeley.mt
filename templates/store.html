@@ -62,7 +62,7 @@
 </div>
 
 <script>
-const CHECKOUT_URL = "https://bmt-store-checkout.andrew-js-ku.workers.dev/checkout";
+const STORE_API = "https://bmt-store-checkout.andrew-js-ku.workers.dev";
 const MAX_QTY = 100; // per line; matches the checkout worker
 const SIZES = ["XS", "S", "M", "L", "XL", "2XL"];
 const products = [
@@ -89,6 +89,13 @@ function left(p, size) {
   if (p.id === "mystery") return mystery.stock[size] - inCart("mystery", size) - products.reduce((n, q) => n + inCart(q.id, size), 0);
   const base = p.stock[size] - inCart(p.id, size);
   return products.includes(p) ? Math.min(base, mystery.stock[size] - inCart("mystery", size) - products.reduce((n, q) => n + inCart(q.id, size), 0)) : base;
+}
+
+// Live counts from the checkout server; the numbers above are only a fallback.
+function applyStock(d) {
+  for (const p of [...products, tote]) if (d.stock[p.id]) p.stock = { ...p.stock, ...d.stock[p.id] };
+  if (d.pool) mystery.stock = { ...mystery.stock, ...d.pool };
+  for (const i of Object.values(cart)) while (i.qty > 0 && left(i.p, i.size) < 0) i.qty--;
 }
 
 function chosenSize(p) {
@@ -195,7 +202,7 @@ document.addEventListener("click", e => {
 async function checkout(btn) {
   btn.disabled = true; btn.textContent = "Opening checkout…";
   try {
-    const r = await fetch(CHECKOUT_URL, {
+    const r = await fetch(STORE_API + "/checkout", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
@@ -204,6 +211,7 @@ async function checkout(btn) {
       }),
     });
     const d = await r.json();
+    if (d.stock) { applyStock(d); render(); }
     if (!r.ok || !d.url) throw new Error(d.error || "Checkout failed");
     location.href = d.url;
   } catch (e) {
@@ -224,5 +232,6 @@ try {
 addEventListener("pageshow", () => { const b = document.getElementById("checkout"); b.textContent = "Checkout"; render(); });
 document.querySelectorAll("input[name=delivery], #sort").forEach(r => r.addEventListener("change", render));
 render();
+fetch(STORE_API + "/stock").then(r => r.json()).then(d => { applyStock(d); render(); }).catch(() => {});
 </script>
 {% endblock %}
