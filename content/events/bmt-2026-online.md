@@ -2,6 +2,12 @@
 title = "BMT 2026 Online"
 date = 2026-12-05
 aliases = ["/bmt-2026-online"]
+description = "BMT 2026 Online is the synchronous online version of the Berkeley Math Tournament on December 5, 2026, for students who can't travel to UC Berkeley."
+
+[extra.event]
+start = "2026-12-05"
+online = true
+join_url = "https://contestdojo.com/"
 +++
 
 The online, synchronous version of our flagship high school tournament! For
