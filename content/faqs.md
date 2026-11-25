@@ -342,24 +342,14 @@ scores of 0 are added for the missing spots.
 ### Online competitions
 
 <details>
-<summary>I can't compete in person. What are my options?</summary>
+<summary>I can't compete in person. How does the online tournament work?</summary>
 
-Both BMT and BmMT offer online versions for remote participation. Online
-tournaments use the same registration system (ContestDojo) and have the same
-eligibility requirements as the in-person events. For BMT, there may also be
-Satellite competitions held through our partners across the globe. Check the
-event pages for the latest dates and registration details.
-
-</details>
-
-<details>
-<summary>How does the online tournament work?</summary>
-
-Online tournaments take place synchronously on ContestDojo. Students compete
-from their own locations at the same scheduled time. The contest format may
-differ slightly from the in-person version; see the event page for the specific
-online format each year. Waivers must still be signed through ContestDojo before
-competing.
+Both BMT and BmMT have an online version. BMT may also have Satellite
+competitions run by our partners around the world. Online tournaments run live
+on ContestDojo: students compete from their own locations at the same scheduled
+time. Registration, eligibility and waivers work the same as for the in-person
+events. The format may differ slightly from in-person; see that year's event
+page for dates, registration and the online format.
 
 </details>
 
