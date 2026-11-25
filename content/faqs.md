@@ -401,7 +401,7 @@ physical awards for online tournaments.
 <details id="check-registration-complete-student">
 <summary>How do I check that my registration is complete?</summary>
 
-**Coaches:** to check all your students at once, see
+**Coaches:** the checklist is the same for online and in person. See
 [I'm a coach. How do I check that all my students' registration is complete?](#check-registration-complete)
 
 **Students:** log in to [ContestDojo](https://contestdojo.com/) and click the event in the
