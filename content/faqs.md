@@ -372,6 +372,23 @@ register and form teams with other students without a coach.
 </details>
 
 <details>
+<summary>I registered with an organization (or independently). Can I join a team from the other kind of registration?</summary>
+
+BMT Online has two registration modes:
+
+- **With an organization:** the coach's account pays for all of the
+  organization's seats.
+- **Without an organization:** each student pays for their own seat when they
+  register.
+
+If you registered in one mode and want to join a team from the other (for
+example, an independent student joining an organization's team, or a student in
+an organization joining an independent team), email <team@berkeley.mt>. We'll
+move you and any seats you've already paid for.
+
+</details>
+
+<details>
 <summary>Are there awards for the online tournament?</summary>
 
 For online tournaments, the top 50% receive Honorable Mention, the top 25%
