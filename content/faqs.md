@@ -392,9 +392,12 @@ physical awards for online tournaments.
 </details>
 
 <details>
-<summary>I'm a student. How do I check that my registration is complete?</summary>
+<summary>How do I check that my registration is complete?</summary>
 
-Log in to [ContestDojo](https://contestdojo.com/) and click the event in the
+**Coaches:** to check your whole team at once, see
+[I'm a coach. How do I check that my team's registration is complete?](#check-registration-complete)
+
+**Students:** log in to [ContestDojo](https://contestdojo.com/) and click the event in the
 left sidebar.
 
 **Not complete: waiver not signed.** If the page says *Your registration is not
@@ -411,9 +414,6 @@ team, ask your coach to add you to a team.
 **Complete.** The page shows your team and says *Your waiver has been signed.*
 
 <img src="/assets/faq/registration-check/student-3-complete.png" alt="Student view showing the team and the green banner saying the waiver has been signed" style="display:block;margin:1rem auto;width:100%;max-width:18rem;border:1px solid #e5e7eb;border-radius:0.5rem">
-
-Coaches can check their whole team at once; see
-[I'm a coach. How do I check that my team's registration is complete?](#check-registration-complete)
 
 </details>
 
