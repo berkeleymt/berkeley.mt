@@ -136,7 +136,8 @@ place in the top five.
 
 If necessary, additional tiebreaker rounds will be held as needed for top
 scorers in the Individual Round. Tiebreaker qualifiers will be announced at the
-end of lunch and will take a 15-minute test during the activities session. The test will consist of either three (for the Focus
+end of lunch and will take a 15-minute test during the activities session. The 
+test will consist of either three (for the Focus
 Tests) or five (for the General Test) questions and be scored primarily on
 correctness and secondarily on submission time; that is, an earlier submission
 will be worth more than a later one with the same number of correct answers, but
@@ -165,7 +166,8 @@ activities that promote recreational math, and include the following:
   problems the fastest!
 
 We may also be handing out shirts and merch during the activities, so come join
-us! If you e will let you know during the activity and over email, and mail them to you.
+us! If you get any shirt or merch, we will let you know during the activity and 
+over email, and mail them to you.
 
 ## Waivers
 
