@@ -117,7 +117,7 @@ containing their sign-in details. If students are having trouble logging in or
 locating the BMT 2026 Online event, please try the Forgot Password function, or
 email <team@berkeley.mt> for assistance.
 
-A sample test will be opened on ContestDojo on December 3, 2026 at 7:00 AM PT
+A sample test will be opened on ContestDojo on December 2, 2026 at 7:00 AM PT
 for students to familiarize
 themselves with the platform. A brief guide on how to use the site will also be
 shown during the opening ceremony, though we highly encourage students to try
