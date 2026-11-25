@@ -23,10 +23,11 @@ For any immediate questions before and during the competition, please check our
 
 Registration for BMT 2026 Online will close on November 27, 2026 at 11:59 PM US
 Pacific Time. There is no check-in required for this event; however, no more
-roster changes can be made after November 27 at 11:59 PM US Pacific Time. 
+roster changes can be made after November 27 at 11:59 PM US Pacific Time. Your 
+team's roster and all waivers must be finalized before your team participates
+in any test. 
 
-Your team's roster and all waivers must be finalized before your team participates
-in any test. If there are any outstanding concerns with your team's roster, **please email
+If there are any outstanding concerns with your team's roster, **please email
 <team@berkeley.mt>** so we can resolve them before the start of the Power Round.
 
 - **Students:**
