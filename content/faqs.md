@@ -108,18 +108,18 @@ should be on a team. Students in the *Unassigned (Non-participating) Students*
 section are not registered. If a student backed out, it is fine to leave them
 in the unassigned section.
 
-![Coach view with two students in the Unassigned (Non-participating) Students section](/assets/faq/registration-check/coach-1-unassigned.png)
+<img src="/assets/faq/registration-check/coach-1-unassigned.png" alt="Coach view with two students in the Unassigned (Non-participating) Students section" style="display:block;margin:1rem auto;width:100%;max-width:26rem;border:1px solid #e5e7eb;border-radius:0.5rem">
 
 **Not complete: a waiver is missing.** A red exclamation icon next to a student
 means *Waiver Missing*. That student needs to request a waiver from their
 ContestDojo student page so their parent or guardian can sign it.
 
-![Coach view with one student showing the red Waiver Missing icon](/assets/faq/registration-check/coach-2-waiver-missing.png)
+<img src="/assets/faq/registration-check/coach-2-waiver-missing.png" alt="Coach view with one student showing the red Waiver Missing icon" style="display:block;margin:1rem auto;width:100%;max-width:26rem;border:1px solid #e5e7eb;border-radius:0.5rem">
 
 **Complete.** Every participating student is on a team and has a green
 *Waiver Signed* icon.
 
-![Coach view with every student on a team and showing the green Waiver Signed icon](/assets/faq/registration-check/coach-3-complete.png)
+<img src="/assets/faq/registration-check/coach-3-complete.png" alt="Coach view with every student on a team and showing the green Waiver Signed icon" style="display:block;margin:1rem auto;width:100%;max-width:26rem;border:1px solid #e5e7eb;border-radius:0.5rem">
 
 </details>
 
@@ -443,16 +443,16 @@ left sidebar.
 complete until your waiver is signed*, enter your parent or guardian's email in
 the *Waivers* section and click *Request Waiver*.
 
-![Student view with the red banner saying registration is not complete until the waiver is signed](/assets/faq/registration-check/student-1-waiver-not-signed.png)
+<img src="/assets/faq/registration-check/student-1-waiver-not-signed.png" alt="Student view with the red banner saying registration is not complete until the waiver is signed" style="display:block;margin:1rem auto;width:100%;max-width:18rem;border:1px solid #e5e7eb;border-radius:0.5rem">
 
 **Not complete: not on a team.** If the page says you have yet to be assigned a
 team, ask your coach to add you to a team.
 
-![Student view saying the student has yet to be assigned a team](/assets/faq/registration-check/student-2-not-on-team.png)
+<img src="/assets/faq/registration-check/student-2-not-on-team.png" alt="Student view saying the student has yet to be assigned a team" style="display:block;margin:1rem auto;width:100%;max-width:18rem;border:1px solid #e5e7eb;border-radius:0.5rem">
 
 **Complete.** The page shows your team and says *Your waiver has been signed.*
 
-![Student view showing the team and the green banner saying the waiver has been signed](/assets/faq/registration-check/student-3-complete.png)
+<img src="/assets/faq/registration-check/student-3-complete.png" alt="Student view showing the team and the green banner saying the waiver has been signed" style="display:block;margin:1rem auto;width:100%;max-width:18rem;border:1px solid #e5e7eb;border-radius:0.5rem">
 
 Coaches can check their whole team at once; see
 [How do I check that my team's registration is complete?](#check-registration-complete)
