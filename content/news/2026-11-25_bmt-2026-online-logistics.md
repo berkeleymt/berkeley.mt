@@ -54,19 +54,17 @@ will be graded by our staff.
 | November 28, 7:00 AM   | Power Round Released  |
 | November 29, 11:59 PM  | Power Submissions Due |
 
-The test will be released in a Google Drive folder at 7:00 AM
-US Pacific Time on Saturday, November 28, 2026. The folder will be linked here
-when the Power Round opens.
-
+The test will be released at 7:00 AM US Pacific Time on Saturday, November 28, 2026. 
 Teams may spend as little or as much time as they would like on the test, as
 long as the test is submitted by 11:59 PM US Pacific Time on Sunday,
-November 29, 2026. Students and coaches will receive an email detailing how to 
+November 29, 2026. 
+
+Students and coaches will receive an email detailing how to access and
 submit the test before the event.
 
 {% alert(title="Submission Template Required", status="info") %}
-Teams must use the submission template provided in the Google Drive folder to
-submit their Power Round, either printed out or annotated electronically. The
-template is located in the same folder as the test.
+Teams must use the submission template that we will provide to
+submit their Power Round, either printed out or annotated electronically. 
 
 If students do not have access to a printer, they must clearly outline the
 same information that is in the template, in roughly the same locations on the
