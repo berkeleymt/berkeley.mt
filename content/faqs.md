@@ -97,7 +97,7 @@ can help you cancel and switch.
 </details>
 
 <details id="check-registration-complete">
-<summary>I'm a coach. How do I check that my team's registration is complete?</summary>
+<summary>I'm a coach. How do I check that my organization's registration is complete?</summary>
 
 On [ContestDojo](https://contestdojo.com/), open your organization's page for
 the event. Registration is complete when every participating student is on a
@@ -401,8 +401,8 @@ physical awards for online tournaments.
 <details id="check-registration-complete-student">
 <summary>How do I check that my registration is complete?</summary>
 
-**Coaches:** to check your whole team at once, see
-[I'm a coach. How do I check that my team's registration is complete?](#check-registration-complete)
+**Coaches:** to check your whole organization at once, see
+[I'm a coach. How do I check that my organization's registration is complete?](#check-registration-complete)
 
 **Students:** log in to [ContestDojo](https://contestdojo.com/) and click the event in the
 left sidebar.
