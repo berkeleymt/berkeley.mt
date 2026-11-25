@@ -411,16 +411,24 @@ left sidebar.
 complete until your waiver is signed*, enter your parent or guardian's email in
 the *Waivers* section and click *Request Waiver*.
 
-<img src="/assets/faq/registration-check/student-1-waiver-not-signed.png" alt="Student view with the red banner saying registration is not complete until the waiver is signed" style="display:block;margin:1rem auto;width:100%;max-width:18rem;border:1px solid #e5e7eb;border-radius:0.5rem">
+<img src="/assets/faq/registration-check/student-1-waiver-not-signed.png" alt="Waivers section with the red banner saying registration is not complete until the waiver is signed" style="display:block;margin:1rem auto;width:100%;max-width:18rem;border:1px solid #e5e7eb;border-radius:0.5rem">
 
-**Not complete: not on a team.** If the page says you have yet to be assigned a
-team, ask your coach to add you to a team.
+**Not complete: not on a team.** If you registered with an organization and the
+page says you have yet to be assigned a team, ask your coach to add you to a
+team. If you registered without an organization and the page says *Registration
+is not complete!*, click *Create Team* or *Join Team*.
 
-<img src="/assets/faq/registration-check/student-2-not-on-team.png" alt="Student view saying the student has yet to be assigned a team" style="display:block;margin:1rem auto;width:100%;max-width:18rem;border:1px solid #e5e7eb;border-radius:0.5rem">
+<div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:1.5rem;margin:1rem auto">
+<figure style="margin:0;flex:1 1 14rem;max-width:18rem;text-align:center"><figcaption style="font-weight:600;margin-bottom:0.5rem">Registered with an organization</figcaption><img src="/assets/faq/registration-check/student-2-not-on-team.png" alt="Student registered with an organization: the page says the student has yet to be assigned a team by their coach" style="display:block;width:100%;margin:0;border:1px solid #e5e7eb;border-radius:0.5rem"></figure>
+<figure style="margin:0;flex:1 1 14rem;max-width:18rem;text-align:center"><figcaption style="font-weight:600;margin-bottom:0.5rem">Registered without an organization</figcaption><img src="/assets/faq/registration-check/student-2b-not-on-team-independent.png" alt="Student registered without an organization: the page says registration is not complete and offers Create Team and Join Team" style="display:block;width:100%;margin:0;border:1px solid #e5e7eb;border-radius:0.5rem"></figure>
+</div>
 
 **Complete.** The page shows your team and says *Your waiver has been signed.*
 
-<img src="/assets/faq/registration-check/student-3-complete.png" alt="Student view showing the team and the green banner saying the waiver has been signed" style="display:block;margin:1rem auto;width:100%;max-width:18rem;border:1px solid #e5e7eb;border-radius:0.5rem">
+<div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:1.5rem;margin:1rem auto">
+<figure style="margin:0;flex:1 1 14rem;max-width:18rem;text-align:center"><figcaption style="font-weight:600;margin-bottom:0.5rem">Registered with an organization</figcaption><img src="/assets/faq/registration-check/student-3-complete.png" alt="Student registered with an organization: the team assigned by the coach and the green banner saying the waiver has been signed" style="display:block;width:100%;margin:0;border:1px solid #e5e7eb;border-radius:0.5rem"></figure>
+<figure style="margin:0;flex:1 1 14rem;max-width:18rem;text-align:center"><figcaption style="font-weight:600;margin-bottom:0.5rem">Registered without an organization</figcaption><img src="/assets/faq/registration-check/student-3b-complete-independent.png" alt="Student registered without an organization: their own team and the green banner saying the waiver has been signed" style="display:block;width:100%;margin:0;border:1px solid #e5e7eb;border-radius:0.5rem"></figure>
+</div>
 
 </details>
 
