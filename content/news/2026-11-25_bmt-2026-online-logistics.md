@@ -77,8 +77,8 @@ As this process might take some time, we encourage teams to reserve at least 30
 minutes to submit their work to ensure that all work can be submitted before the
 deadline.
 
-**Only one team member should upload their Gradescope submission.** Please
-ensure that the email on your Gradescope account matches the email address
+**Only one team member should upload their submission.** Please
+ensure that the email used for submission matches the team member's email address
 on ContestDojo. Please also clearly indicate the team name and ID on your
 submission PDF.
 
