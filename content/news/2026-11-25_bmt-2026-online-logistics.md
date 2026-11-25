@@ -186,6 +186,36 @@ certificates for top-scoring teams.
 
 See our [FAQ Page](/faqs/) for answers to common questions about registration, eligibility, and more.
 
+### What should coaches/parents do during the event?
+
+Coaches/parents should help their students log into Zoom and their ContestDojo
+student accounts; no further action is required from coaches on the day of the
+event. As long as all of your students are successfully registered (placed on a
+team and their waivers are signed), then you are all set! Coaches are welcome to
+join the Opening and Award Ceremonies. Due to Zoom capacity restrictions, we ask
+that parents watch the Opening and Award Ceremonies with their children on the
+same device.
+
+### Will students be penalized for not attending the Opening Ceremony?
+
+We will go over the schedule and how to navigate ContestDojo during the opening
+ceremony, so we strongly encourage students to attend. While there is no score
+penalty for missing the opening ceremony, students who encounter difficulties
+navigating ContestDojo will not receive extra time. Please be sure to attend the
+opening ceremony to familiarize yourself with the platform.
+
+### Can students be in the same room while taking the individual test?
+
+Yes. During the Individual round, students may be in the same room, but they
+must work independently. Each student should submit answers on their own device
+and refrain from communicating. We will be monitoring submissions for suspicious
+patterns and activity.
+
+### Can students work together on the Guts round in person if they are on the same team?
+
+Yes! We encourage students on the same team to collaborate in person or online
+during the Guts round.
+
 ### How do students submit the Guts round answers?
 
 Students can choose to share a device or use their own devices to submit Guts
