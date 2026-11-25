@@ -1,8 +1,5 @@
 +++
 title = "BMT 2026 Online Logistics"
-
-[extra]
-announcement = false
 +++
 
 To all coaches and students,
@@ -26,14 +23,22 @@ For any immediate questions before and during the competition, please check our
 
 Registration for BMT 2026 Online will close on November 27, 2026 at 11:59 PM US
 Pacific Time. There is no check-in required for this event; however, no more
-roster changes can be made after November 27 at 11:59 PM US Pacific Time. Your
-team's roster and all waivers must be finalized before your team participates
-in any test.
+roster changes can be made after November 27 at 11:59 PM US Pacific Time. 
 
-Coaches, please ensure that all students are assigned to teams (you have dragged
-them **out** of the "Unassigned Students" section on ContestDojo). If there are
-any outstanding concerns with your team's roster, **please email
+Your team's roster and all waivers must be finalized before your team participates
+in any test. If there are any outstanding concerns with your team's roster, **please email
 <team@berkeley.mt>** so we can resolve them before the start of the Power Round.
+
+- **Students:**
+  - Check that you are in a Team.
+  - Choose or update your Individual Round Test Preferences.
+- **Coaches:** Please ensure that all students are assigned to teams 
+  - You have dragged them **out** of the "Unassigned Students" section on ContestDojo). See
+[ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide#h-coaches-assigning-students-to-teams).
+- **Students and their parents/guardians:** Request and sign the waiver from the 
+student's portal on ContestDojo. Students without signed waivers can't compete! 
+See [ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide#h-students-requesting-a-waiver).
+
 
 ## 11/28–11/29 Power Round Logistics
 
@@ -54,9 +59,8 @@ when the Power Round opens.
 
 Teams may spend as little or as much time as they would like on the test, as
 long as the test is submitted by 11:59 PM US Pacific Time on Sunday,
-November 29, 2026. Submission will be done via the [Gradescope] platform.
-Students and coaches will receive an email detailing how to access Gradescope
-before the event.
+November 29, 2026. Students and coaches will receive an email detailing how to 
+submit the test before the event.
 
 {% alert(title="Submission Template Required", status="info") %}
 Teams must use the submission template provided in the Google Drive folder to
@@ -160,7 +164,7 @@ activities that promote recreational math, and include the following:
   problems the fastest!
 
 We may also be handing out shirts and merch during the activities, so come join
-us!
+us! If you e will let you know during the activity and over email, and mail them to you.
 
 ## Waivers
 
@@ -176,6 +180,8 @@ Top-scoring individuals and teams will be announced at the Awards Ceremony from
 certificates for top-scoring teams.
 
 ## Frequently Asked Questions
+
+See our [FAQ Page](/faqs/) for answers to common questions about registration, eligibility, and more.
 
 ### How do students submit the Guts round answers?
 
@@ -198,6 +204,5 @@ comply with all rules may result in immediate and irreversible disqualification.
 Students who have viewed the exam or its solutions should come forward and not
 take the tests.
 
-[Gradescope]: https://www.gradescope.com/
 [Zoom]: https://zoom.us/
 [ContestDojo]: https://contestdojo.com/
