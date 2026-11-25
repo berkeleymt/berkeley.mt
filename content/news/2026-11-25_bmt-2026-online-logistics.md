@@ -30,16 +30,18 @@ in any test.
 If there are any outstanding concerns with your team's roster, **please email
 <team@berkeley.mt>** so we can resolve them before the start of the Power Round.
 
-- **Students:**
-  - Check that you are in a Team.
-  - Choose or update your Individual Round Test Preferences.
-- **Coaches:** Please ensure that all students are assigned to teams 
-  - You have dragged them **out** of the "Unassigned Students" section on ContestDojo). See
-[ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide#h-coaches-assigning-students-to-teams).
-- **Students and their parents/guardians:** Request and sign the waiver from the 
-student's portal on ContestDojo. Students without signed waivers can't compete! 
-See [ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide#h-students-requesting-a-waiver).
+- **Students:** Check that you are on a team, and choose or update your
+  Individual Round Test Preferences.
+- **Coaches:** Make sure every participating student is on a team, not in the
+  "Unassigned Students" section. See the
+  [ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide#h-coaches-assigning-students-to-teams).
+- **Students and their parents/guardians:** Request and sign the waiver from the
+  student's portal on ContestDojo. Students without signed waivers can't compete!
+  See the [ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide#h-students-requesting-a-waiver).
 
+To check that your registration is complete, see our FAQ for
+[coaches](/faqs/#check-registration-complete) and
+[students](/faqs/#check-registration-complete-student).
 
 ## 11/28–11/29 Power Round Logistics
 

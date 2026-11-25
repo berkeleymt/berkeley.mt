@@ -391,7 +391,7 @@ physical awards for online tournaments.
 
 </details>
 
-<details>
+<details id="check-registration-complete-student">
 <summary>How do I check that my registration is complete?</summary>
 
 **Coaches:** to check your whole team at once, see
