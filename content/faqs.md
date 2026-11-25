@@ -97,7 +97,7 @@ can help you cancel and switch.
 </details>
 
 <details id="check-registration-complete">
-<summary>How do I check that my team's registration is complete?</summary>
+<summary>I'm a coach. How do I check that my team's registration is complete?</summary>
 
 On [ContestDojo](https://contestdojo.com/), open your organization's page for
 the event. Registration is complete when every participating student is on a
@@ -434,7 +434,7 @@ physical awards for online tournaments.
 </details>
 
 <details>
-<summary>How do I check that my registration is complete?</summary>
+<summary>I'm a student. How do I check that my registration is complete?</summary>
 
 Log in to [ContestDojo](https://contestdojo.com/) and click the event in the
 left sidebar.
@@ -455,7 +455,7 @@ team, ask your coach to add you to a team.
 <img src="/assets/faq/registration-check/student-3-complete.png" alt="Student view showing the team and the green banner saying the waiver has been signed" style="display:block;margin:1rem auto;width:100%;max-width:18rem;border:1px solid #e5e7eb;border-radius:0.5rem">
 
 Coaches can check their whole team at once; see
-[How do I check that my team's registration is complete?](#check-registration-complete)
+[I'm a coach. How do I check that my team's registration is complete?](#check-registration-complete)
 
 </details>
 
