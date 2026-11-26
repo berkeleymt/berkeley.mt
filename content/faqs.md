@@ -96,6 +96,33 @@ can help you cancel and switch.
 
 </details>
 
+<details id="check-registration-complete">
+<summary>I'm a coach. How do I check that all my students' registration is complete?</summary>
+
+On [ContestDojo](https://contestdojo.com/), open your organization's page for
+the event. Registration is complete when every participating student is on a
+team and has a signed waiver.
+
+**Not complete: students are still unassigned.** All participating students
+should be on a team. Students in the *Unassigned (Non-participating) Students*
+section are not registered. If a student backed out, it is fine to leave them
+in the unassigned section.
+
+<img src="/assets/faq/registration-check/coach-1-unassigned.png" alt="Coach view with two students in the Unassigned (Non-participating) Students section" style="display:block;margin:1rem auto;width:100%;max-width:26rem;border:1px solid #e5e7eb;border-radius:0.5rem">
+
+**Not complete: a waiver is missing.** A red exclamation icon next to a student
+means *Waiver Missing*. That student needs to request a waiver from their
+ContestDojo student page so their parent or guardian can sign it.
+
+<img src="/assets/faq/registration-check/coach-2-waiver-missing.png" alt="Coach view with one student showing the red Waiver Missing icon" style="display:block;margin:1rem auto;width:100%;max-width:26rem;border:1px solid #e5e7eb;border-radius:0.5rem">
+
+**Complete.** Every participating student is on a team and has a green
+*Waiver Signed* icon.
+
+<img src="/assets/faq/registration-check/coach-3-complete.png" alt="Coach view with every student on a team and showing the green Waiver Signed icon" style="display:block;margin:1rem auto;width:100%;max-width:26rem;border:1px solid #e5e7eb;border-radius:0.5rem">
+
+</details>
+
 ### At the competition
 
 <details>
@@ -315,24 +342,14 @@ scores of 0 are added for the missing spots.
 ### Online competitions
 
 <details>
-<summary>I can't compete in person. What are my options?</summary>
+<summary>I can't compete in person. How does the online tournament work?</summary>
 
-Both BMT and BmMT offer online versions for remote participation. Online
-tournaments use the same registration system (ContestDojo) and have the same
-eligibility requirements as the in-person events. For BMT, there may also be
-Satellite competitions held through our partners across the globe. Check the
-event pages for the latest dates and registration details.
-
-</details>
-
-<details>
-<summary>How does the online tournament work?</summary>
-
-Online tournaments take place synchronously on ContestDojo. Students compete
-from their own locations at the same scheduled time. The contest format may
-differ slightly from the in-person version; see the event page for the specific
-online format each year. Waivers must still be signed through ContestDojo before
-competing.
+Both BMT and BmMT have an online version. BMT may also have Satellite
+competitions run by our partners around the world. Online tournaments run live
+on ContestDojo: students compete from their own locations at the same scheduled
+time. Registration, eligibility and waivers work the same as for the in-person
+events. The format may differ slightly from in-person; see that year's event
+page for dates, registration and the online format.
 
 </details>
 
@@ -355,12 +372,63 @@ register and form teams with other students without a coach.
 </details>
 
 <details>
+<summary>I registered with an organization (or independently). Can I join a team from the other kind of registration?</summary>
+
+BMT Online has two registration modes:
+
+- **With an organization:** the coach's account pays for all of the
+  organization's seats.
+- **Without an organization:** each student pays for their own seat when they
+  register.
+
+If you registered in one mode and want to join a team from the other (for
+example, an independent student joining an organization's team, or a student in
+an organization joining an independent team), email <team@berkeley.mt>. We'll
+move you and any seats you've already paid for.
+
+</details>
+
+<details>
 <summary>Are there awards for the online tournament?</summary>
 
 For online tournaments, the top 50% receive Honorable Mention, the top 25%
 receive Distinguished Honorable Mention, and the top 10% are additionally
 recognized. All participants receive a participation certificate. There are no
 physical awards for online tournaments.
+
+</details>
+
+<details id="check-registration-complete-student">
+<summary>How do I check that my registration is complete?</summary>
+
+**Coaches:** the checklist is the same for online and in person. See
+[I'm a coach. How do I check that all my students' registration is complete?](#check-registration-complete)
+
+**Students:** log in to [ContestDojo](https://contestdojo.com/) and click the event in the
+left sidebar.
+
+**Not complete: waiver not signed.** If the page says *Your registration is not
+complete until your waiver is signed*, enter your parent or guardian's email in
+the *Waivers* section and click *Request Waiver*.
+
+<img src="/assets/faq/registration-check/student-1-waiver-not-signed.png" alt="Waivers section with the red banner saying registration is not complete until the waiver is signed" style="display:block;margin:1rem auto;width:100%;max-width:18rem;border:1px solid #e5e7eb;border-radius:0.5rem">
+
+**Not complete: not on a team.** If you registered with an organization and the
+page says you have yet to be assigned a team, ask your coach to add you to a
+team. If you registered without an organization and the page says *Registration
+is not complete!*, click *Create Team* or *Join Team*.
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:1.5rem;margin:1rem auto">
+<figure style="margin:0;flex:1 1 14rem;max-width:18rem;text-align:center"><figcaption style="font-weight:600;margin-bottom:0.5rem">Registered with an organization</figcaption><img src="/assets/faq/registration-check/student-2-not-on-team.png" alt="Student registered with an organization: the page says the student has yet to be assigned a team by their coach" style="display:block;width:100%;margin:0;border:1px solid #e5e7eb;border-radius:0.5rem"></figure>
+<figure style="margin:0;flex:1 1 14rem;max-width:18rem;text-align:center"><figcaption style="font-weight:600;margin-bottom:0.5rem">Registered without an organization</figcaption><img src="/assets/faq/registration-check/student-2b-not-on-team-independent.png" alt="Student registered without an organization: the page says registration is not complete and offers Create Team and Join Team" style="display:block;width:100%;margin:0;border:1px solid #e5e7eb;border-radius:0.5rem"></figure>
+</div>
+
+**Complete.** The page shows your team and says *Your waiver has been signed.*
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:1.5rem;margin:1rem auto">
+<figure style="margin:0;flex:1 1 14rem;max-width:18rem;text-align:center"><figcaption style="font-weight:600;margin-bottom:0.5rem">Registered with an organization</figcaption><img src="/assets/faq/registration-check/student-3-complete.png" alt="Student registered with an organization: the team assigned by the coach and the green banner saying the waiver has been signed" style="display:block;width:100%;margin:0;border:1px solid #e5e7eb;border-radius:0.5rem"></figure>
+<figure style="margin:0;flex:1 1 14rem;max-width:18rem;text-align:center"><figcaption style="font-weight:600;margin-bottom:0.5rem">Registered without an organization</figcaption><img src="/assets/faq/registration-check/student-3b-complete-independent.png" alt="Student registered without an organization: their own team and the green banner saying the waiver has been signed" style="display:block;width:100%;margin:0;border:1px solid #e5e7eb;border-radius:0.5rem"></figure>
+</div>
 
 </details>
 
