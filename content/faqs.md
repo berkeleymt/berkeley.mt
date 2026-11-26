@@ -25,6 +25,11 @@ register:
    using that code.
 4. The coach purchases seats and assigns students to a team.
 
+Once these steps are done and every student's parent or guardian has signed
+the waiver, registration is complete. To see what a complete registration looks
+like, see the FAQ for [coaches](#check-registration-complete) or
+[students](#check-registration-complete-student).
+
 If you are unfamiliar with ContestDojo, please read our
 [ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide).
 

@@ -42,6 +42,10 @@ The fee for the online tournament is **$8 per student**.
 consent waivers through this portal. Contestants will NOT be allowed to take the
 contest without having a signed liability waiver.**
 
+To check that registration is complete, see the FAQ for
+[coaches](/faqs/#check-registration-complete) or
+[students](/faqs/#check-registration-complete-student).
+
 Any questions about the ContestDojo portal should be directed to us at
 <team@berkeley.mt>.
 
