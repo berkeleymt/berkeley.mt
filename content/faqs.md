@@ -356,10 +356,6 @@ time. Registration, eligibility and waivers work the same as for the in-person
 events. The format may differ slightly from in-person; see that year's event
 page for dates, registration and the online format.
 
-For the online tournament, students can register with an organization (a coach
-buys the seats and assigns students to teams) or without one (each student pays
-for their own seat and creates or joins a team with other students).
-
 </details>
 
 <details>
