@@ -25,6 +25,7 @@ can participate.
 {{ at_a_glance(data="data/bmt-2026-online-at-a-glance.toml", href="/bmt-2026-online/at-a-glance/") }}
 
 {% button_link(href="https://contestdojo.com/") %} Registration Portal {% end %}
+{% button_link(href="/news/bmt-2026-online-logistics/") %} Logistics Page {% end %}
 
 ## Registration, Waivers, and Pricing
 
