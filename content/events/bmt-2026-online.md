@@ -77,27 +77,14 @@ BMT 2026 Online Teammate Finder
 
 ## Online Tournament Logistics
 
-BMT 2026 Online has two components:
+BMT 2026 Online will take place in two parts:
 
-- **Asynchronous Power Round**: November 28-29, 2026
-
-The problems will be released on November 28, 2026 at 7:00 AM US Pacific Time, and submissions will be due on November 29, 2026 at 11:59 PM US Pacific Time. 
-  
+- **Asynchronous Power Round**: November 28–29, 2026
+  ([details](/news/bmt-2026-online-logistics/#11-28-11-29-power-round-logistics))
 - **Live Event**: December 5, 2026
+  ([schedule and details](/news/bmt-2026-online-logistics/#12-5-main-event-logistics))
 
-The live event will take place on December 5, 2026. A **preliminary** schedule
-is provided below:
-
-| Time (US Pacific Time) | Event                      |
-| ---------------------- | -------------------------- |
-| 8:30 – 9:00 AM         | Opening Ceremony           |
-| 9:00 – 11:15 AM        | General / Focus            |
-| 11:15 AM – 12:15 PM    | Break                      |
-| 12:15 – 2:00 PM        | Guts                       |
-| 2:00 – 3:00 PM         | Activities and Tiebreakers |
-| 3:00 – 4:00 PM         | Awards Ceremony            |
-
-More details will be released closer to the event date.
+See the [logistics page](/news/bmt-2026-online-logistics/) for full details.
 
 ## Contest Format
 
