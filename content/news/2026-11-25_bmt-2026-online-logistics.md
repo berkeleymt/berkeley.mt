@@ -59,7 +59,7 @@ will be graded by our staff.
 The test and submission template will be released at this Google Drive link 
 at 7:00 AM US Pacific Time on Saturday, November 28, 2026:
 
-https://drive.google.com/drive/folders/1gdN72e7kjaOUtHP9yxnypvjxBe1pHNlu?usp=drive_link
+<https://drive.google.com/drive/folders/1gdN72e7kjaOUtHP9yxnypvjxBe1pHNlu?usp=drive_link>
 
 Teams may spend as little or as much time as they would like on the test, as
 long as the test is submitted by 11:59 PM US Pacific Time on Sunday,
