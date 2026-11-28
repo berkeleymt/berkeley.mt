@@ -32,22 +32,18 @@ can participate.
 You may register for BMT 2026 Online on ContestDojo starting Monday, September
 14 at 9:00 AM and until November 27, 2026 at 11:59 PM US Pacific Time.
 
-Registration is performed on ContestDojo. Coaches may register up to 6 people
-per team, and ContestDojo will allow them to assign and modify teams up until
-tournament day. In addition, for BMT Online, students may also register and form
-teams with other students without a coach. If you are unfamiliar with
-ContestDojo, please read our
-[ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide).
+Registration is performed on ContestDojo, and both student and coach accounts
+can initiate registration. If you are unfamiliar with ContestDojo, please read
+our [ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide). To check
+that registration is complete, see the FAQ for
+[coaches](/faqs/#check-registration-complete) or
+[students](/faqs/#check-registration-complete-student).
 
 The fee for the online tournament is **$8 per student**.
 
 **All contestants are required to have their parent/guardian sign UC Berkeley’s
 consent waivers through this portal. Contestants will NOT be allowed to take the
 contest without having a signed liability waiver.**
-
-To check that registration is complete, see the FAQ for
-[coaches](/faqs/#check-registration-complete) or
-[students](/faqs/#check-registration-complete-student).
 
 Any questions about the ContestDojo portal should be directed to us at
 <team@berkeley.mt>.
