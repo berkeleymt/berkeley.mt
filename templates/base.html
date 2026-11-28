@@ -176,6 +176,18 @@
       base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/',
     })
   </script>
+  <script>
+    function openHashDetails() {
+      const id = decodeURIComponent(location.hash.slice(1));
+      const el = id && document.getElementById(id);
+      if (el && el.tagName === "DETAILS") {
+        el.open = true;
+        el.scrollIntoView();
+      }
+    }
+    openHashDetails();
+    window.addEventListener("hashchange", openHashDetails);
+  </script>
 </body>
 
 </html>
