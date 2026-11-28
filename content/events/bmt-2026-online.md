@@ -35,9 +35,9 @@ You may register for BMT 2026 Online on ContestDojo starting Monday, September
 Registration is performed on ContestDojo, and both student and coach accounts
 can initiate registration. If you are unfamiliar with ContestDojo, please read
 our [ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide). To check
-that registration is complete, see the FAQ for
-[coaches](/faqs/#check-registration-complete) or
-[students](/faqs/#check-registration-complete-student).
+that registration is complete, see the guide for
+[coaches](https://docs.berkeley.mt/s/contestdojo-guide#h-coaches-checking-that-registration-is-complete) or
+[students](https://docs.berkeley.mt/s/contestdojo-guide#h-students-checking-that-registration-is-complete).
 
 The fee for the online tournament is **$8 per student**.
 

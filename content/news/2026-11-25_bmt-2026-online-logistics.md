@@ -39,9 +39,9 @@ If there are any outstanding concerns with your team's roster, **please email
   student's portal on ContestDojo. Students without signed waivers can't compete!
   See the [ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide#h-students-requesting-a-waiver).
 
-To check that your registration is complete, see our FAQ for
-[coaches](/faqs/#check-registration-complete) and
-[students](/faqs/#check-registration-complete-student).
+To check that your registration is complete, see our ContestDojo Guide for
+[coaches](https://docs.berkeley.mt/s/contestdojo-guide#h-coaches-checking-that-registration-is-complete) and
+[students](https://docs.berkeley.mt/s/contestdojo-guide#h-students-checking-that-registration-is-complete).
 
 ## 11/28–11/29 Power Round Logistics
 
