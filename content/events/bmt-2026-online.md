@@ -35,7 +35,9 @@ You may register for BMT 2026 Online on ContestDojo starting Monday, September
 Registration is performed on ContestDojo. Coaches may register up to 6 people
 per team, and ContestDojo will allow them to assign and modify teams up until
 tournament day. In addition, for BMT Online, students may also register and form
-teams with other students without a coach.
+teams with other students without a coach. If you are unfamiliar with
+ContestDojo, please read our
+[ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide).
 
 The fee for the online tournament is **$8 per student**.
 
