@@ -39,9 +39,9 @@ If there are any outstanding concerns with your team's roster, **please email
   student's portal on ContestDojo. Students without signed waivers can't compete!
   See the [ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide#h-students-requesting-a-waiver).
 
-To check that your registration is complete, see our FAQ for
-[coaches](/faqs/#check-registration-complete) and
-[students](/faqs/#check-registration-complete-student).
+To check that your registration is complete, see our ContestDojo Guide for
+[coaches](https://docs.berkeley.mt/s/contestdojo-guide#h-coaches-checking-that-registration-is-complete) and
+[students](https://docs.berkeley.mt/s/contestdojo-guide#h-students-checking-that-registration-is-complete).
 
 ## 11/28–11/29 Power Round Logistics
 
@@ -56,16 +56,15 @@ will be graded by our staff.
 | November 28, 7:00 AM   | Power Round Released  |
 | November 29, 11:59 PM  | Power Submissions Due |
 
+The **test and submission template** will be released at 7:00 AM US Pacific
+Time on Saturday, November 28, 2026, in the submission portal below.
 Teams may spend as little or as much time as they would like on the test, as
 long as the test is submitted by 11:59 PM US Pacific Time on Sunday,
 November 29, 2026. 
 
-Students and coaches will receive an email detailing how to access and
-submit the test before the event.
-
 {% alert(title="Submission Template Required", status="info") %}
-Teams must use the submission template that we will provide to
-submit their Power Round, either printed out or annotated electronically. 
+Teams must use the submission template provided to
+submit their Power Round, either printed out or annotated electronically.
 
 If students do not have access to a printer, they must clearly outline the
 same information that is in the template, in roughly the same locations on the
@@ -73,13 +72,14 @@ page.
 {% end %}
 
 As this process might take some time, we encourage teams to reserve at least 30
-minutes to submit their work to ensure that all work can be submitted before the
+minutes to submit their work, to ensure that all work can be submitted before the
 deadline.
 
-**Only one team member should upload their submission.** Please
-ensure that the email used for submission matches the team member's email address
-on ContestDojo. Please also clearly indicate the team name and ID on your
-submission PDF.
+**Only one team member should upload the team's submission.** Upload one PDF
+for your team's whole submission. Please also clearly indicate the team name,
+team ID, and problem number on each page.
+
+{% button_link(href="https://power.atomicgrader.com/submit/ec79bfd4-1311-4e27-9281-c1562d9f8f82") %} Power Round Submission Portal {% end %}
 
 ## 12/5 Main Event Logistics
 

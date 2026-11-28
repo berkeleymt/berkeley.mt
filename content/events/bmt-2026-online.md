@@ -32,20 +32,18 @@ can participate.
 You may register for BMT 2026 Online on ContestDojo starting Monday, September
 14 at 9:00 AM and until November 27, 2026 at 11:59 PM US Pacific Time.
 
-Registration is performed on ContestDojo. Coaches may register up to 6 people
-per team, and ContestDojo will allow them to assign and modify teams up until
-tournament day. In addition, for BMT Online, students may also register and form
-teams with other students without a coach.
+Registration is performed on ContestDojo, and both student and coach accounts
+can initiate registration. If you are unfamiliar with ContestDojo, please read
+our [ContestDojo Guide](https://docs.berkeley.mt/s/contestdojo-guide). To check
+that registration is complete, see the guide for
+[coaches](https://docs.berkeley.mt/s/contestdojo-guide#h-coaches-checking-that-registration-is-complete) or
+[students](https://docs.berkeley.mt/s/contestdojo-guide#h-students-checking-that-registration-is-complete).
 
 The fee for the online tournament is **$8 per student**.
 
 **All contestants are required to have their parent/guardian sign UC Berkeley’s
 consent waivers through this portal. Contestants will NOT be allowed to take the
 contest without having a signed liability waiver.**
-
-To check that registration is complete, see the FAQ for
-[coaches](/faqs/#check-registration-complete) or
-[students](/faqs/#check-registration-complete-student).
 
 Any questions about the ContestDojo portal should be directed to us at
 <team@berkeley.mt>.
@@ -77,27 +75,14 @@ BMT 2026 Online Teammate Finder
 
 ## Online Tournament Logistics
 
-BMT 2026 Online has two components:
+BMT 2026 Online will take place in two parts:
 
-- **Asynchronous Power Round**: November 28-29, 2026
-
-The problems will be released on November 28, 2026 at 7:00 AM US Pacific Time, and submissions will be due on November 29, 2026 at 11:59 PM US Pacific Time. 
-  
+- **Asynchronous Power Round**: November 28–29, 2026
+  ([details](/news/bmt-2026-online-logistics/#11-28-11-29-power-round-logistics))
 - **Live Event**: December 5, 2026
+  ([schedule and details](/news/bmt-2026-online-logistics/#12-5-main-event-logistics))
 
-The live event will take place on December 5, 2026. A **preliminary** schedule
-is provided below:
-
-| Time (US Pacific Time) | Event                      |
-| ---------------------- | -------------------------- |
-| 8:30 – 9:00 AM         | Opening Ceremony           |
-| 9:00 – 11:15 AM        | General / Focus            |
-| 11:15 AM – 12:15 PM    | Break                      |
-| 12:15 – 2:00 PM        | Guts                       |
-| 2:00 – 3:00 PM         | Activities and Tiebreakers |
-| 3:00 – 4:00 PM         | Awards Ceremony            |
-
-More details will be released closer to the event date.
+See the [logistics page](/news/bmt-2026-online-logistics/) for full details.
 
 ## Contest Format
 
