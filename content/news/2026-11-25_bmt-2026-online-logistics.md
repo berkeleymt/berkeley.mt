@@ -63,7 +63,9 @@ at 7:00 AM US Pacific Time on Saturday, November 28, 2026:
 
 Teams may spend as little or as much time as they would like on the test, as
 long as the test is submitted by 11:59 PM US Pacific Time on Sunday,
-November 29, 2026. 
+November 29, 2026. **Only one team member should upload their submission.** Upload one PDF for 
+your whole submission. Please also clearly indicate the team name, 
+team ID, and problem number on each page. 
 
 {% alert(title="Submission Template Required", status="info") %}
 Teams must use the submission template provided in the Google Driver folder
@@ -76,10 +78,6 @@ page.
 
 As this process might take some time, we encourage teams reserve at least 30 minutes 
 to submit their work to ensure that all work can be submitted before the deadline.
-
-**Only one team member should upload their submission.** Upload one PDF for 
-your whole submission. Please also clearly indicate the team name, 
-team ID, and problem number on each page. 
 
 {% button_link(href="https://power.atomicgrader.com/submit/ec79bfd4-1311-4e27-9281-c1562d9f8f82") %} Power Round Submission Portal {% end %}
 
